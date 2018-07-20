@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "OOO",
+    "OOO",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "blockman:bowl"
+    },
+    "O": {
+      "item": "blockman:beetroot"
+    }
+  },
+  "result": {
+    "item": "blockman:beetroot_soup"
+  }
+}

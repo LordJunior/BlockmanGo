@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:string"
+    }
+  },
+  "result": {
+    "item": "blockman:wool",
+    "data": 0
+  }
+}

@@ -1,0 +1,112 @@
+{"frames": {
+
+"Aim":
+{
+	"frame": {"x":0,"y":0,"w":74,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":74},
+	"sourceSize": {"w":74,"h":74},
+    "offset": {"x": 0,"y": 0},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"CancalAim":
+{
+	"frame": {"x":74,"y":0,"w":74,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":74},
+	"sourceSize": {"w":74,"h":74},
+    "offset": {"x": 0,"y": 0},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"CancelGunDetail":
+{
+	"frame": {"x":148,"y":0,"w":63,"h":63},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":63,"h":63},
+	"sourceSize": {"w":63,"h":63},
+    "offset": {"x": 0,"y": 0},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"GunBg":
+{
+	"frame": {"x":211,"y":0,"w":351,"h":155},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":351,"h":155},
+	"sourceSize": {"w":351,"h":155},
+    "offset": {"x": 0,"y": 0},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"GunNameBg":
+{
+	"frame": {"x":562,"y":0,"w":382,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":382,"h":50},
+	"sourceSize": {"w":382,"h":50},
+    "offset": {"x": 0,"y": 0},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"LeftShoot":
+{
+	"frame": {"x":944,"y":0,"w":74,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":74},
+	"sourceSize": {"w":74,"h":74},
+    "offset": {"x": 0,"y": 0},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"ReloadBullet":
+{
+	"frame": {"x":1018,"y":0,"w":74,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":74},
+	"sourceSize": {"w":74,"h":74},
+    "offset": {"x": 0,"y": 0},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"RightShoot":
+{
+	"frame": {"x":1092,"y":0,"w":74,"h":74},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":74,"h":74},
+	"sourceSize": {"w":74,"h":74},
+    "offset": {"x": 0,"y": 0},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"ShowGunDetail":
+{
+	"frame": {"x":1166,"y":0,"w":63,"h":63},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":63,"h":63},
+	"sourceSize": {"w":63,"h":63},
+    "offset": {"x": 0,"y": 0},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"SniperSight":
+{
+	"frame": {"x":0,"y":155,"w":1280,"h":720},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1280,"h":720},
+	"sourceSize": {"w":1280,"h":720},
+    "offset": {"x": 0,"y": 0},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "gun.png",
+	"format": "RGBA8888",
+	"size": {"w":1280,"h":875},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1b7d270725348dd6a99b7923ebdf52d3:1c9acdd77b0b195a929c8bc20e30b94e:b016575eaa78e6442745838179d5c285$"
+}
+}

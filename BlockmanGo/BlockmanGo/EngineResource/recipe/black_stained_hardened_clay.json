@@ -1,0 +1,23 @@
+{
+  "type": "crafting_shaped",
+  "group": "stained_hardened_clay",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:hardened_clay"
+    },
+    "X": {
+      "item": "blockman:dye",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "blockman:stained_hardened_clay",
+    "data": 15,
+    "count": 8
+  }
+}

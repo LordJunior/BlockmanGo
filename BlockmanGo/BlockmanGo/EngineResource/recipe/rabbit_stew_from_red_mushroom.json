@@ -1,0 +1,29 @@
+{
+  "type": "crafting_shaped",
+  "group": "rabbit_stew",
+  "pattern": [
+    " R ",
+    "CPD",
+    " B "
+  ],
+  "key": {
+    "P": {
+      "item": "blockman:baked_potato"
+    },
+    "R": {
+      "item": "blockman:cooked_rabbit"
+    },
+    "B": {
+      "item": "blockman:bowl"
+    },
+    "C": {
+      "item": "blockman:carrot"
+    },
+    "D": {
+      "item": "blockman:red_mushroom"
+    }
+  },
+  "result": {
+    "item": "blockman:rabbit_stew"
+  }
+}

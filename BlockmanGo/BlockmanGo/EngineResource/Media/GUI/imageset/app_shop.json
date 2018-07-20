@@ -1,0 +1,375 @@
+{
+	"frames": {
+		"app_shop_bg": {
+			"frame": {
+				"x": 113,
+				"y": 0,
+				"w": 30,
+				"h": 30
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 30,
+				"h": 30
+			},
+			"sourceSize": {
+				"w": 30,
+				"h": 30
+			}
+		},
+		"app_shop_btn_bg": {
+			"frame": {
+				"x": 16,
+				"y": 0,
+				"w": 18,
+				"h": 18
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 18
+			},
+			"sourceSize": {
+				"w": 18,
+				"h": 18
+			}
+		},
+		"app_shop_buy": {
+			"frame": {
+				"x": 34,
+				"y": 0,
+				"w": 19,
+				"h": 20
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 19,
+				"h": 20
+			},
+			"sourceSize": {
+				"w": 19,
+				"h": 20
+			}
+		},
+		"app_shop_has_get": {
+			"frame": {
+				"x": 35,
+				"y": 21,
+				"w": 16,
+				"h": 16
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 16,
+				"h": 16
+			},
+			"sourceSize": {
+				"w": 16,
+				"h": 16
+			}
+		},
+		"app_shop_has_use": {
+			"frame": {
+				"x": 326,
+				"y": 25,
+				"w": 16,
+				"h": 16
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 16,
+				"h": 16
+			},
+			"sourceSize": {
+				"w": 16,
+				"h": 16
+			}
+		},
+		"app_shop_diamonds": {
+			"frame": {
+				"x": 283,
+				"y": 0,
+				"w": 40,
+				"h": 40
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 40,
+				"h": 40
+			},
+			"sourceSize": {
+				"w": 40,
+				"h": 40
+			}
+		},
+		"app_shop_diamonds_mods": {
+			"frame": {
+				"x": 209,
+				"y": 0,
+				"w": 34,
+				"h": 34
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 34,
+				"h": 34
+			},
+			"sourceSize": {
+				"w": 34,
+				"h": 34
+			}
+		},
+		"app_shop_gold": {
+			"frame": {
+				"x": 243,
+				"y": 0,
+				"w": 40,
+				"h": 40
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 40,
+				"h": 40
+			},
+			"sourceSize": {
+				"w": 40,
+				"h": 40
+			}
+		},
+		"app_shop_icon_nor": {
+			"frame": {
+				"x": 53,
+				"y": 0,
+				"w": 30,
+				"h": 29
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 30,
+				"h": 29
+			},
+			"sourceSize": {
+				"w": 30,
+				"h": 29
+			}
+		},
+		"app_shop_icon_pre": {
+			"frame": {
+				"x": 83,
+				"y": 0,
+				"w": 30,
+				"h": 29
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 30,
+				"h": 29
+			},
+			"sourceSize": {
+				"w": 30,
+				"h": 29
+			}
+		},
+		"app_shop_item_bg": {
+			"frame": {
+				"x": 0,
+				"y": 40,
+				"w": 189,
+				"h": 261
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 189,
+				"h": 261
+			},
+			"sourceSize": {
+				"w": 189,
+				"h": 261
+			}
+		},
+		"app_shop_limit": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 16,
+				"h": 37
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 16,
+				"h": 37
+			},
+			"sourceSize": {
+				"w": 16,
+				"h": 37
+			}
+		},
+		"app_shop_tab_bg": {
+			"frame": {
+				"x": 323,
+				"y": 0,
+				"w": 43,
+				"h": 23
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 43,
+				"h": 23
+			},
+			"sourceSize": {
+				"w": 43,
+				"h": 23
+			}
+		},
+		"app_shop_tab_nor": {
+			"frame": {
+				"x": 143,
+				"y": 0,
+				"w": 33,
+				"h": 40
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 33,
+				"h": 40
+			},
+			"sourceSize": {
+				"w": 33,
+				"h": 40
+			}
+		},
+		"app_shop_tab_pre": {
+			"frame": {
+				"x": 176,
+				"y": 0,
+				"w": 33,
+				"h": 40
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 33,
+				"h": 40
+			},
+			"sourceSize": {
+				"w": 33,
+				"h": 40
+			}
+		},
+		"app_shop_title": {
+			"frame": {
+				"x": 0,
+				"y": 301,
+				"w": 360,
+				"h": 63
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 360,
+				"h": 63
+			},
+			"sourceSize": {
+				"w": 360,
+				"h": 63
+			}
+		},
+		"buy_success_bg": {
+			"frame": {
+				"x": 0,
+				"y": 364,
+				"w": 436,
+				"h": 136
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 436,
+				"h": 136
+			},
+			"sourceSize": {
+				"w": 436,
+				"h": 136
+			}
+		},
+		"app_shop_goods_bg": {
+			"frame": {
+				"x": 21,
+				"y": 25,
+				"w": 8,
+				"h": 8
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 8,
+				"h": 8
+			},
+			"sourceSize": {
+				"w": 8,
+				"h": 8
+			}
+		},
+		"app_shop_tip_dialog_bg": {
+			"frame": {
+				"x": 364,
+				"y": 311,
+				"w": 19,
+				"h": 53
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 19,
+				"h": 53
+			},
+			"sourceSize": {
+				"w": 19,
+				"h": 53
+			}
+		},
+		"app_shop_personal_icon": {
+			"frame": {
+				"x": 369,
+				"y": 0,
+				"w": 55,
+				"h": 48
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 55,
+				"h": 48
+			},
+			"sourceSize": {
+				"w": 55,
+				"h": 48
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "app_shop.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 436,
+			"h": 500
+		},
+		"scale": "1"
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blockman:ender_pearl"
+    },
+    {
+      "item": "blockman:blaze_powder"
+    }
+  ],
+  "result": {
+    "item": "blockman:ender_eye"
+  }
+}

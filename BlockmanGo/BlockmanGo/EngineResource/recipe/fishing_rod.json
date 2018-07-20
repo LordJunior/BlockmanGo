@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "  #",
+    " #X",
+    "# X"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:stick"
+    },
+    "X": {
+      "item": "blockman:string"
+    }
+  },
+  "result": {
+    "item": "blockman:fishing_rod"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:gold_ingot"
+    },
+    "X": {
+      "item": "blockman:redstone"
+    }
+  },
+  "result": {
+    "item": "blockman:clock"
+  }
+}

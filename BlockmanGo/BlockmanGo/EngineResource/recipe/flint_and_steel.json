@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blockman:iron_ingot"
+    },
+    {
+      "item": "blockman:flint"
+    }
+  ],
+  "result": {
+    "item": "blockman:flint_and_steel"
+  }
+}

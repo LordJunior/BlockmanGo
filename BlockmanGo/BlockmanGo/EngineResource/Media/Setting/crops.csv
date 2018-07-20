@@ -1,0 +1,3 @@
+CropsId		SeedId	StageTime1	StageTime2	StageTime3	StageTime4	RecoverTime	Quantity	StealQuantity	ProductionId
+作物ItemId	备注	种子ItemId	第一阶段时间（时间单位s）	第二阶段时间（时间单位s）	第三阶段时间（时间单位s）	第四阶段时间（时间单位s）	被采摘后恢复完整状态时间（时间单位s）	产量范围（3#5）	偷取范围（1#2）	产物ItemId
+1256	作物1	700	10	20	20	20	20	3#5	1#2	700

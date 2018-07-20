@@ -1,0 +1,23 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "X X",
+    "X#X",
+    "XRX"
+  ],
+  "key": {
+    "R": {
+      "item": "blockman:redstone"
+    },
+    "#": {
+      "item": "blockman:stone_pressure_plate"
+    },
+    "X": {
+      "item": "blockman:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "blockman:detector_rail",
+    "count": 6
+  }
+}

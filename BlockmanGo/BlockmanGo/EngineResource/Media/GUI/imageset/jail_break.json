@@ -1,0 +1,357 @@
+{
+	"frames": {
+		"jail_break_bandit_actor_bg": {
+			"frame": {
+				"x": 9,
+				"y": 0,
+				"w": 7,
+				"h": 6
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 7,
+				"h": 6
+			},
+			"sourceSize": {
+				"w": 7,
+				"h": 6
+			}
+		},
+		"jail_break_bandit_bottom_bg": {
+			"frame": {
+				"x": 0,
+				"y": 371,
+				"w": 201,
+				"h": 33
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 201,
+				"h": 33
+			},
+			"sourceSize": {
+				"w": 201,
+				"h": 33
+			}
+		},
+		"jail_break_bandit_title_bg": {
+			"frame": {
+				"x": 98,
+				"y": 0,
+				"w": 28,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 32
+			},
+			"sourceSize": {
+				"w": 28,
+				"h": 32
+			}
+		},
+		"jail_break_bandit_title_name_bg": {
+			"frame": {
+				"x": 153,
+				"y": 404,
+				"w": 153,
+				"h": 52
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 153,
+				"h": 52
+			},
+			"sourceSize": {
+				"w": 153,
+				"h": 52
+			}
+		},
+		"jail_break_btn_nor": {
+			"frame": {
+				"x": 34,
+				"y": 0,
+				"w": 18,
+				"h": 18
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 18
+			},
+			"sourceSize": {
+				"w": 18,
+				"h": 18
+			}
+		},
+		"jail_break_btn_pre": {
+			"frame": {
+				"x": 52,
+				"y": 0,
+				"w": 18,
+				"h": 18
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 18
+			},
+			"sourceSize": {
+				"w": 18,
+				"h": 18
+			}
+		},
+		"jail_break_content_bg": {
+			"frame": {
+				"x": 162,
+				"y": 0,
+				"w": 4,
+				"h": 371
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 4,
+				"h": 371
+			},
+			"sourceSize": {
+				"w": 4,
+				"h": 371
+			}
+		},
+		"jail_break_currency": {
+			"frame": {
+				"x": 126,
+				"y": 0,
+				"w": 36,
+				"h": 36
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 36,
+				"h": 36
+			},
+			"sourceSize": {
+				"w": 36,
+				"h": 36
+			}
+		},
+		"jail_break_escaped_prisoner": {
+			"frame": {
+				"x": 238,
+				"y": 0,
+				"w": 36,
+				"h": 46
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 36,
+				"h": 46
+			},
+			"sourceSize": {
+				"w": 36,
+				"h": 46
+			}
+		},
+		"jail_break_line": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 2,
+				"h": 2
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 2,
+				"h": 2
+			},
+			"sourceSize": {
+				"w": 2,
+				"h": 2
+			}
+		},
+		"jail_break_lock": {
+			"frame": {
+				"x": 274,
+				"y": 0,
+				"w": 64,
+				"h": 64
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 64,
+				"h": 64
+			},
+			"sourceSize": {
+				"w": 64,
+				"h": 64
+			}
+		},
+		"jail_break_police": {
+			"frame": {
+				"x": 202,
+				"y": 0,
+				"w": 36,
+				"h": 46
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 36,
+				"h": 46
+			},
+			"sourceSize": {
+				"w": 36,
+				"h": 46
+			}
+		},
+		"jail_break_police_actor_bg": {
+			"frame": {
+				"x": 2,
+				"y": 0,
+				"w": 7,
+				"h": 6
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 7,
+				"h": 6
+			},
+			"sourceSize": {
+				"w": 7,
+				"h": 6
+			}
+		},
+		"jail_break_police_bottom_bg": {
+			"frame": {
+				"x": 201,
+				"y": 371,
+				"w": 201,
+				"h": 33
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 201,
+				"h": 33
+			},
+			"sourceSize": {
+				"w": 201,
+				"h": 33
+			}
+		},
+		"jail_break_police_title_bg": {
+			"frame": {
+				"x": 70,
+				"y": 0,
+				"w": 28,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 28,
+				"h": 32
+			},
+			"sourceSize": {
+				"w": 28,
+				"h": 32
+			}
+		},
+		"jail_break_police_title_name_bg": {
+			"frame": {
+				"x": 0,
+				"y": 404,
+				"w": 153,
+				"h": 52
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 153,
+				"h": 52
+			},
+			"sourceSize": {
+				"w": 153,
+				"h": 52
+			}
+		},
+		"jail_break_prisoner": {
+			"frame": {
+				"x": 166,
+				"y": 0,
+				"w": 36,
+				"h": 46
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 36,
+				"h": 46
+			},
+			"sourceSize": {
+				"w": 36,
+				"h": 46
+			}
+		},
+		"jail_break_unknown": {
+			"frame": {
+				"x": 16,
+				"y": 0,
+				"w": 18,
+				"h": 16
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 18,
+				"h": 16
+			},
+			"sourceSize": {
+				"w": 18,
+				"h": 16
+			}
+		},
+		"jail_break_unlock": {
+			"frame": {
+				"x": 338,
+				"y": 0,
+				"w": 64,
+				"h": 64
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 64,
+				"h": 64
+			},
+			"sourceSize": {
+				"w": 64,
+				"h": 64
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "jail_break.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 402,
+			"h": 456
+		},
+		"scale": "1"
+	}
+}

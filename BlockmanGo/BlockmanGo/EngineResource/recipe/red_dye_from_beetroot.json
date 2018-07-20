@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "red_dye",
+  "ingredients": [
+    {
+      "item": "blockman:beetroot"
+    }
+  ],
+  "result": {
+    "item": "blockman:dye",
+    "data": 1
+  }
+}

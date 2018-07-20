@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "S",
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "blockman:piston"
+    },
+    "S": {
+      "item": "blockman:slime_ball"
+    }
+  },
+  "result": {
+    "item": "blockman:sticky_piston"
+  }
+}

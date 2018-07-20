@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "-",
+    "#",
+    "-"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:chest"
+    },
+    "-": {
+      "item": "blockman:shulker_shell"
+    }
+  },
+  "result": {
+    "item": "blockman:purple_shulker_box"
+  }
+}

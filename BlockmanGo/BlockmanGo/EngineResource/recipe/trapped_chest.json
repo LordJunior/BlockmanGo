@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blockman:chest"
+    },
+    {
+      "item": "blockman:tripwire_hook"
+    }
+  ],
+  "result": {
+    "item": "blockman:trapped_chest"
+  }
+}

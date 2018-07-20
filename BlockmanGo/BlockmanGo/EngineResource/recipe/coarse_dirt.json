@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "DG",
+    "GD"
+  ],
+  "key": {
+    "D": {
+      "item": "blockman:dirt",
+      "data": 0
+    },
+    "G": {
+      "item": "blockman:gravel"
+    }
+  },
+  "result": {
+    "item": "blockman:dirt",
+    "data": 1,
+    "count": 4
+  }
+}

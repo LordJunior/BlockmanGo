@@ -1,0 +1,164 @@
+{
+    "Dialog": {
+        "Window": {
+            "Type": "Layout",
+            "Name": "Countdown",
+            "Property": [
+                {
+                    "Name": "Area",
+                    "Value": "{{0,0},{0,0},{1,0},{1,0}}"
+                },
+                {
+                    "Name": "BackgroundColor",
+                    "Value": "0 0 0 0.254902"
+                },
+                {
+                    "Name": "WndOpenSound",
+                    "Value": "0"
+                },
+                {
+                    "Name": "WndCloseSound",
+                    "Value": "0"
+                },
+                {
+                    "Name": "TextColorLeftTop",
+                    "Value": "1 1 0 1"
+                },
+                {
+                    "Name": "TextColorRightTop",
+                    "Value": "1 1 0 1"
+                },
+                {
+                    "Name": "TextColorLeftBottom",
+                    "Value": "1 1 0 1"
+                },
+                {
+                    "Name": "TextColorRightBottom",
+                    "Value": "1 1 0 1"
+                },
+                {
+                    "Name": "MiddleLayoutChild",
+                    "Value": "true"
+                },
+                {
+                    "Name": "EnableLongTouch",
+                    "Value": "true"
+                }
+            ],
+            "Window": [
+                {
+                    "Type": "StaticText",
+                    "Name": "Countdown-Last-Time",
+                    "Property": [
+                        {
+                            "Name": "Area",
+                            "Value": "{{0.363281,0},{0.472222,0},{0.636719,0},{0.680556,0}}"
+                        },
+                        {
+                            "Name": "Text",
+                            "Value": "5"
+                        },
+                        {
+                            "Name": "AutoSize",
+                            "Value": "true"
+                        },
+                        {
+                            "Name": "WndOpenSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "WndCloseSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "TextColorLeftTop",
+                            "Value": "1 1 0 1"
+                        },
+                        {
+                            "Name": "TextColorRightTop",
+                            "Value": "1 1 0 1"
+                        },
+                        {
+                            "Name": "TextColorLeftBottom",
+                            "Value": "1 1 0 1"
+                        },
+                        {
+                            "Name": "TextColorRightBottom",
+                            "Value": "1 1 0 1"
+                        },
+                        {
+                            "Name": "TextColor",
+                            "Value": "1 0 0 1"
+                        },
+                        {
+                            "Name": "TextHorzAlignment",
+                            "Value": "Centre"
+                        },
+                        {
+                            "Name": "TextVertAlignment",
+                            "Value": "Centre"
+                        },
+                        {
+                            "Name": "TextWordWrap",
+                            "Value": "true"
+                        },
+                        {
+                            "Name": "TextShadow",
+                            "Value": "true"
+                        },
+                        {
+                            "Name": "TextShadowColor",
+                            "Value": "1 1 0 1"
+                        },
+                        {
+                            "Name": "TextBorderColor",
+                            "Value": "1 1 1 1"
+                        },
+                        {
+                            "Name": "TextScale",
+                            "Value": "10"
+                        }
+                    ]
+                },
+                {
+                    "Type": "StaticText",
+                    "Name": "Countdown-Respawn",
+                    "Property": [
+                        {
+                            "Name": "Area",
+                            "Value": "{{0.5,-135},{0.5,120},{0.5,135},{0.5,170}}"
+                        },
+                        {
+                            "Name": "Text",
+                            "Value": "等待复活"
+                        },
+                        {
+                            "Name": "Font",
+                            "Value": "HT20"
+                        },
+                        {
+                            "Name": "WndOpenSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "WndCloseSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "TextHorzAlignment",
+                            "Value": "Centre"
+                        },
+                        {
+                            "Name": "TextVertAlignment",
+                            "Value": "Centre"
+                        },
+                        {
+                            "Name": "TextShadow",
+                            "Value": "true"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

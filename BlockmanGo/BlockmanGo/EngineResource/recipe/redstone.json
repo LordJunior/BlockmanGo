@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:redstone_block"
+    }
+  },
+  "result": {
+    "item": "blockman:redstone",
+    "count": 9
+  }
+}

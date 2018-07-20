@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blockman:stonebrick",
+      "data": 0
+    },
+    {
+      "item": "blockman:vine"
+    }
+  ],
+  "result": {
+    "item": "blockman:stonebrick",
+    "data": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GSG",
+    "OOO"
+  ],
+  "key": {
+    "S": {
+      "item": "blockman:nether_star"
+    },
+    "G": {
+      "item": "blockman:glass"
+    },
+    "O": {
+      "item": "blockman:obsidian"
+    }
+  },
+  "result": {
+    "item": "blockman:beacon"
+  }
+}

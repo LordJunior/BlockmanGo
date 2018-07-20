@@ -1,0 +1,25 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blockman:paper",
+      "data": 0
+    },
+	{
+      "item": "blockman:paper",
+      "data": 0
+    },
+	{
+      "item": "blockman:paper",
+      "data": 0
+    },
+    {
+      "item": "blockman:leather",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "blockman:book",
+    "count": 1
+  }
+}

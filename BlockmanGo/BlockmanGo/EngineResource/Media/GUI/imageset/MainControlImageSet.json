@@ -1,0 +1,65 @@
+{"frames": {
+
+"back_move_.png":
+{
+	"frame": {"x":2,"y":74,"w":22,"h":22},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":22,"h":22}
+},
+"forward_move.png":
+{
+	"frame": {"x":2,"y":50,"w":22,"h":22},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":22,"h":22}
+},
+"jump_move_.png":
+{
+	"frame": {"x":2,"y":98,"w":18,"h":18},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":18,"h":18}
+},
+"left_move_.png":
+{
+	"frame": {"x":2,"y":26,"w":22,"h":22},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":22,"h":22}
+},
+"debug.png":
+{
+	"frame": {"x":0,"y":129,"w":40,"h":40},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":40,"h":40}
+},
+"camera.png":
+{
+	"frame": {"x":0,"y":170,"w":40,"h":40},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":40,"h":40}
+},
+"fly.png":
+{
+	"frame": {"x":0,"y":215,"w":40,"h":40},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":40,"h":40}
+},
+"right_move.png":
+{
+	"frame": {"x":2,"y":2,"w":22,"h":22},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":22,"h":22}
+},
+"cross_hair.png":
+{
+	"frame": {"x":0,"y":117,"w":11,"h":11},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":11,"h":11}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "MainControlImageSet.png",
+	"format": "RGBA8888",
+	"size": {"w":40,"h":260},
+	"scale": "1"
+}
+}

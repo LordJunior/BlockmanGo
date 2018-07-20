@@ -1,0 +1,249 @@
+{
+	"frames": {
+		"randWeekBg": {
+			"frame": {
+				"x": 0,
+				"y": 678,
+				"w": 264,
+				"h": 25
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 264,
+				"h": 25
+			},
+			"sourceSize": {
+				"w": 264,
+				"h": 25
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"pivot": {
+				"x": 0.5,
+				"y": 0.5
+			}
+		},
+		"rankDayBg": {
+			"frame": {
+				"x": 0,
+				"y": 703,
+				"w": 264,
+				"h": 25
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 264,
+				"h": 25
+			},
+			"sourceSize": {
+				"w": 264,
+				"h": 25
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"pivot": {
+				"x": 0.5,
+				"y": 0.5
+			}
+		},
+		"rankLeft": {
+			"frame": {
+				"x": 286,
+				"y": 0,
+				"w": 103,
+				"h": 678
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 103,
+				"h": 678
+			},
+			"sourceSize": {
+				"w": 103,
+				"h": 678
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"pivot": {
+				"x": 0.5,
+				"y": 0.5
+			}
+		},
+		"rankLeftBg": {
+			"frame": {
+				"x": 79,
+				"y": 0,
+				"w": 40,
+				"h": 72
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 40,
+				"h": 72
+			},
+			"sourceSize": {
+				"w": 40,
+				"h": 72
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"pivot": {
+				"x": 0.5,
+				"y": 0.5
+			}
+		},
+		"rankMidBg": {
+			"frame": {
+				"x": 0,
+				"y": 728,
+				"w": 376,
+				"h": 78
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 376,
+				"h": 78
+			},
+			"sourceSize": {
+				"w": 376,
+				"h": 78
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"pivot": {
+				"x": 0.5,
+				"y": 0.5
+			}
+		},
+		"rankRight": {
+			"frame": {
+				"x": 183,
+				"y": 0,
+				"w": 103,
+				"h": 678
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 103,
+				"h": 678
+			},
+			"sourceSize": {
+				"w": 103,
+				"h": 678
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"pivot": {
+				"x": 0.5,
+				"y": 0.5
+			}
+		},
+		"rankRightBg": {
+			"frame": {
+				"x": 39,
+				"y": 0,
+				"w": 40,
+				"h": 72
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 40,
+				"h": 72
+			},
+			"sourceSize": {
+				"w": 40,
+				"h": 72
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"pivot": {
+				"x": 0.5,
+				"y": 0.5
+			}
+		},
+		"sandBackHome": {
+			"frame": {
+				"x": 119,
+				"y": 0,
+				"w": 64,
+				"h": 64
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 64,
+				"h": 64
+			},
+			"sourceSize": {
+				"w": 64,
+				"h": 64
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"pivot": {
+				"x": 0.5,
+				"y": 0.5
+			}
+		},
+		"sandBlock": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 39,
+				"h": 45
+			},
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 39,
+				"h": 45
+			},
+			"sourceSize": {
+				"w": 39,
+				"h": 45
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"pivot": {
+				"x": 0.5,
+				"y": 0.5
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "sandDigger.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 389,
+			"h": 806
+		},
+		"scale": "1"
+	}
+}

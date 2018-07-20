@@ -1,0 +1,7 @@
+ScoreId	ScoreName	
+得分点Id	得分点多语言名字	备注
+1	score_point_kill	击杀
+2	score_point_die	死亡
+3	score_point_live	存活
+4	score_point_serial_kill	连杀
+5	score_point_destroy_bed	破坏床数

@@ -1,0 +1,271 @@
+{
+	"frames": {
+		"Background": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 180,
+				"h": 20
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 180,
+				"h": 20
+			}
+		},
+		"SelectFrame": {
+			"frame": {
+				"x": 1,
+				"y": 23,
+				"w": 22,
+				"h": 22
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 22,
+				"h": 22
+			}
+		},
+		"ButtonNormal": {
+			"frame": {
+				"x": 1,
+				"y": 67,
+				"w": 198,
+				"h": 17
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 198,
+				"h": 17
+			}
+		},
+		"ButtonPressed": {
+			"frame": {
+				"x": 1,
+				"y": 87,
+				"w": 198,
+				"h": 17
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 198,
+				"h": 17
+			}
+		},
+		"ButtonSmoothNormal": {
+			"frame": {
+				"x": 167,
+				"y": 185,
+				"w": 20,
+				"h": 20
+				},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 20,
+				"h": 20
+			}
+		},
+		"ButtonSmoothPressed": {
+			"frame": {
+				"x": 189,
+				"y": 185,
+				"w": 20,
+				"h": 20
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 20,
+				"h": 20
+			}
+		},
+		"LoadingPageProgressBackBg": {
+			"frame": {
+				"x": 231,
+				"y": 7,
+				"w": 1,
+				"h": 1
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 1,
+				"h": 1
+			}
+		},
+		"LoadingPageProgressBg": {
+			"frame": {
+				"x": 215,
+				"y": 7,
+				"w": 2,
+				"h": 2
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 2,
+				"h": 2
+			}
+		},
+		"LoadingPageProgressHeaderBg": {
+			"frame": {
+				"x": 25,
+				"y": 56,
+				"w": 2,
+				"h": 2
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 2,
+				"h": 2
+			}
+		},
+		"ChestBg":{
+			"frame": {
+				"x": 239,
+				"y": 66,
+				"w": 12,
+				"h": 12
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 12,
+				"h": 12
+			}
+		},
+		"BtnChatNormal":{
+			"frame": {
+				"x": 200,
+				"y": 82,
+				"w": 18,
+				"h": 18
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 18,
+				"h": 18
+			}
+		},
+		"BtnChatPressed":{
+			"frame": {
+				"x": 236,
+				"y": 64,
+				"w": 18,
+				"h": 18
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 18,
+				"h": 18
+			}
+		},
+		"EditTxetBg":{
+			"frame": {
+				"x": 130,
+				"y": 106,
+				"w": 120,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 120,
+				"h": 32
+			}
+		},
+		"TopLeftMove":{
+			"frame": {
+				"x": 2,
+				"y": 135,
+				"w": 22,
+				"h": 22
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 22,
+				"h": 22
+			}
+		},
+		"TopRightMove":{
+			"frame": {
+				"x": 28,
+				"y": 135,
+				"w": 22,
+				"h": 22
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 22,
+				"h": 22
+			}
+		},
+		"ProgressGreen": {
+			"frame": {
+				"x": 202,
+				"y": 2,
+				"w": 5,
+				"h": 5
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 5,
+				"h": 5
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker ",
+		"version": "1.0",
+		"image": "widgets.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 256,
+			"h": 256
+		},
+		"scale": "1"
+	}
+}

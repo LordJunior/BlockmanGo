@@ -1,0 +1,207 @@
+{
+	"frames": {
+		"playerInfoNullHP": {
+			"frame": {
+				"x": 530,
+				"y": 2,
+				"w": 26,
+				"h": 25
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 26,
+				"h": 25
+			}
+		},
+		"playerInfoNullHP2": {
+			"frame": {
+				"x": 764,
+				"y": 2,
+				"w": 26,
+				"h": 25
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 26,
+				"h": 25
+			}
+		},
+		"playerInfoFullHP": {
+			"frame": {
+				"x": 558,
+				"y": 2,
+				"w": 26,
+				"h": 25
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 26,
+				"h": 25
+			}
+		},
+		"playerInfoHalfHP": {
+			"frame": {
+				"x": 586,
+				"y": 2,
+				"w": 26,
+				"h": 25
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 26,
+				"h": 25
+			}
+		},
+		"playerInfoFoodSaturationFull": {
+			"frame": {
+				"x": 644,
+				"y": 2,
+				"w": 28,
+				"h": 29
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 28,
+				"h": 29
+			}
+		},
+		"playerInfoFoodSaturationHalf": {
+			"frame": {
+				"x": 674,
+				"y": 2,
+				"w": 28,
+				"h": 29
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 28,
+				"h": 29
+			}
+		},
+		"playerInfoFoodSaturationNull": {
+			"frame": {
+				"x": 614,
+				"y": 2,
+				"w": 28,
+				"h": 29
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 28,
+				"h": 29
+			}
+		},
+		"playerInfoAirFull": {
+			"frame": {
+				"x": 704,
+				"y": 2,
+				"w": 28,
+				"h": 28
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 28,
+				"h": 28
+			}
+		},
+		"playerInfoAirRupture": {
+			"frame": {
+				"x": 734,
+				"y": 2,
+				"w": 28,
+				"h": 28
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 28,
+				"h": 28
+			}
+		},
+		"playerInfoNullArmor": {
+			"frame": {
+				"x": 452,
+				"y": 2,
+				"w": 24,
+				"h": 28
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 24,
+				"h": 28
+			}
+		},
+		"playerInfoFullArmor": {
+			"frame": {
+				"x": 478,
+				"y": 2,
+				"w": 24,
+				"h": 28
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 24,
+				"h": 28
+			}
+		},
+		"playerInfoHalfArmor": {
+			"frame": {
+				"x": 504,
+				"y": 2,
+				"w": 24,
+				"h": 28
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 24,
+				"h": 28
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker ",
+		"version": "1.0",
+		"image": "new_gui_material.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 1024,
+			"h": 1024
+		},
+		"scale": "1"
+	}
+}

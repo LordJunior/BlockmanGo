@@ -1,0 +1,25 @@
+{
+	"frames": 
+	{
+		"change":
+		{
+			"frame": {"x":0,"y":0,"w":64,"h":64},
+			"offset": {"x": 0,"y": 0},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+			"sourceSize": {"w":64,"h":64},
+			"pivot": {"x":0.5,"y":0.5}
+		
+		}
+	},
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "hideandseek.png",
+		"format": "RGBA8888",
+		"size": {"w":64,"h":64},
+		"scale": "1",
+		"smartupdate": "$TexturePacker:SmartUpdate:8c1e7e0bb7fa8bb6b8cfacdc8a316444:df3f088355d75f5c8f77d73abc96e839:590503595c05abec1a4400fc0899820a$"
+	}
+}

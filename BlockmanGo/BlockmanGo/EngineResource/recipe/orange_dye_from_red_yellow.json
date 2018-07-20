@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shapeless",
+  "group": "orange_dye",
+  "ingredients": [
+    {
+      "item": "blockman:dye",
+      "data": 1
+    },
+    {
+      "item": "blockman:dye",
+      "data": 11
+    }
+  ],
+  "result": {
+    "item": "blockman:dye",
+    "data": 14,
+    "count": 2
+  }
+}

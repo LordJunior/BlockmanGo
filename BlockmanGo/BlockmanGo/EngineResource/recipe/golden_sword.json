@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:stick"
+    },
+    "X": {
+      "item": "blockman:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "blockman:golden_sword"
+  }
+}

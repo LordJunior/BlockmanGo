@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GEG",
+    "GTG"
+  ],
+  "key": {
+    "T": {
+      "item": "blockman:ghast_tear"
+    },
+    "E": {
+      "item": "blockman:ender_eye"
+    },
+    "G": {
+      "item": "blockman:glass"
+    }
+  },
+  "result": {
+    "item": "blockman:end_crystal"
+  }
+}

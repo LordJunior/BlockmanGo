@@ -1,0 +1,44 @@
+{
+  "type": "crafting_shaped",
+  "group": "bed",
+  "pattern": [
+    "###",
+    "XXX"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:wool",
+      "data": 14
+    },
+    "X": [
+      {
+        "item": "blockman:planks",
+        "data": 0
+      },
+      {
+        "item": "blockman:planks",
+        "data": 1
+      },
+      {
+        "item": "blockman:planks",
+        "data": 2
+      },
+      {
+        "item": "blockman:planks",
+        "data": 3
+      },
+      {
+        "item": "blockman:planks",
+        "data": 4
+      },
+      {
+        "item": "blockman:planks",
+        "data": 5
+      }
+    ]
+  },
+  "result": {
+    "item": "blockman:bed",
+    "data": 14
+  }
+}

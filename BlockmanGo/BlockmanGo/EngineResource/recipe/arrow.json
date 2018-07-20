@@ -1,0 +1,23 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "X",
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:stick"
+    },
+    "X": {
+      "item": "blockman:flint"
+    },
+    "Y": {
+      "item": "blockman:feather"
+    }
+  },
+  "result": {
+    "item": "blockman:arrow",
+    "count": 4
+  }
+}

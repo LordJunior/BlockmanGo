@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_fence_gate",
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:stick"
+    },
+    "W": {
+      "item": "blockman:planks",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "blockman:fence_gate"
+  }
+}

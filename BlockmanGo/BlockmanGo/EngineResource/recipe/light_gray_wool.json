@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shapeless",
+  "group": "wool",
+  "ingredients": [
+    {
+      "item": "blockman:dye",
+      "data": 7
+    },
+    {
+      "item": "blockman:wool",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "blockman:wool",
+    "data": 8
+  }
+}

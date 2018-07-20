@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    " R ",
+    "RGR",
+    " R "
+  ],
+  "key": {
+    "R": {
+      "item": "blockman:redstone"
+    },
+    "G": {
+      "item": "blockman:glowstone"
+    }
+  },
+  "result": {
+    "item": "blockman:redstone_lamp"
+  }
+}

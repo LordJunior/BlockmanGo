@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_door",
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:planks",
+      "data": 4
+    }
+  },
+  "result": {
+    "item": "blockman:acacia_door",
+    "count": 3
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "ShderDefineGroup": {
+    "BackgroundForEditor": {
+      "shader": {
+        "vs": "common.vs",
+        "ps": "common.ps"
+      }
+    },
+	"SkinedMeshForActorHigh": {
+	  "shader": {
+	    "vs": "skinned_high.vs",
+		"ps": "skinned_high.ps"
+	  }
+	},
+	"StaticMeshForActorHigh": {
+	  "shader": {
+	    "vs": "mesh_high.vs",
+		"ps": "skinned_high.ps"
+	  }
+	},
+	"SkinedMeshForActorXray": {
+	  "shader": {
+	    "vs": "skinned_xray.vs",
+		"ps": "xray.ps"
+	  }
+	},
+	"SkinedMeshForActor_WriteZ": {
+	  "shader": {
+	    "vs": "skinned_writez.vs",
+		"ps": "skinned_writez.ps"
+	  }
+	},
+	"SkinedMeshForActorTransparent": {
+	  "shader": {
+	    "vs": "skinned_high.vs",
+		"ps": "skinned_transparent.ps"
+	  }
+	},
+	"StaticMeshForActorXray": {
+	  "shader": {
+	    "vs": "mesh_xray.vs",
+		"ps": "xray.ps"
+	  }
+	},
+	"StaticMeshForActorTransparent": {
+	  "shader": {
+	    "vs": "mesh_high.vs",
+		"ps": "skinned_transparent.ps"
+	  }
+	},
+	"Effect": {
+	  "shader": {
+	    "vs": "common.vs",
+		"ps": "common.ps"
+	  }
+	},
+	"DistortionEffect": {
+	  "shader": {
+	    "vs": "commonwithsctex.vs",
+		"ps": "distortioneffect.ps"
+	  }
+	},
+    "Tess_Solid": {
+      "shader": {
+        "vs": "tesselator.vs",
+        "ps": "tesselator_alphatest.ps"
+      }
+    },
+    "Tess_UV_Anim": {
+      "shader": {
+        "vs": "tesselator_uv.vs",
+        "ps": "tesselator_alphatest.ps"
+      }
+    },
+	"Tess_Transparent_UV_Anim" :
+	{
+		"shader": {
+        "vs": "tesselator_uv.vs",
+        "ps": "tesselator.ps"
+      }
+	},
+    "Tess_Transparent": {
+      "shader": {
+        "vs": "tesselator.vs",
+        "ps": "tesselator_alphatest.ps"
+      }
+    },
+    "Tess_Sky": {
+      "shader": {
+        "vs": "tesselator_sky.vs",
+        "ps": "tesselator_sky.ps"
+      }
+    },
+    "Tess_Cloud": {
+      "shader": {
+        "vs": "tesselator_cloud.vs",
+        "ps": "tesselator_cloud.ps"
+      }
+    },
+    "Tess_Sun": {
+      "shader": {
+        "vs": "tesselator_sun.vs",
+        "ps": "tesselator_sun.ps"
+      }
+    },
+    "Tess_Glow": {
+      "shader": {
+        "vs": "tesselator_glow.vs",
+        "ps": "tesselator_glow.ps"
+      }
+    },
+	"Tess_Line": {
+	  "shader": {
+	    "vs": "tesselator_line.vs",
+		"ps": "tesselator_line.ps"
+	  }
+	},
+	"mcSkined_Solid": {
+	  "shader": {
+		"vs": "tesselator_skin.vs",
+		"ps": "tesselator_skin_alphatest.ps"
+	  }
+	},
+	"mcSkined_Enchant": {
+	  "shader": {
+		"vs": "tesselator_skin_enchant.vs",
+		"ps": "tesselator_skin_enchant.ps"
+	  }
+	},
+	"mcSkined_Transparent": {
+	  "shader": {
+		"vs": "tesselator_skin.vs",
+		"ps": "tesselator_skin.ps"
+	  }
+	},
+	"mcItem": {
+	  "shader": {
+	    "vs": "tesselator_item.vs",
+		"ps": "tesselator_item.ps"
+	  }
+	},
+ 	"mcItemEnchant": {
+	  "shader": {
+	    "vs": "tesselator_item_enchant.vs",
+		"ps": "tesselator_item_enchant.ps"
+	  }
+	},
+	"mcStandard":{
+	  "shader": {
+	    "vs": "tesselator_standard.vs",
+		"ps": "tesselator_standard.ps"
+	  }
+	},
+	"mcFont": {
+      "shader": {
+        "vs": "common.vs",
+        "ps": "tess_font.ps"
+      }
+    },
+    "UI": {
+      "shader": {
+        "vs": "common.vs",
+        "ps": "common.ps"
+      }
+    },
+    "UIMask": {
+      "shader": {
+        "vs": "common.vs",
+        "ps": "uimask.ps"
+      }
+    },
+    "UIDisable": {
+      "shader": {
+        "vs": "common.vs",
+        "ps": "commongray.ps"
+      }
+    },
+    "UIMaskDisable": {
+      "shader": {
+        "vs": "common.vs",
+        "ps": "uimaskgray.ps"
+      }
+    },
+    "Font": {
+      "shader": {
+        "vs": "common.vs",
+        "ps": "font.ps"
+      }
+    },
+    "HelperForEditor": {
+      "shader": {
+        "vs": "wireframe.vs",
+        "ps": "wireframe.ps"
+      }
+    }
+  }
+}

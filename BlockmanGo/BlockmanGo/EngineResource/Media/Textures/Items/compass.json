@@ -1,0 +1,176 @@
+{"frames": {
+"compass_0":
+{
+	"frame": {"x":0,"y":0,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},
+"compass_1":
+{
+	"frame": {"x":0,"y":16,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},
+"compass_2":
+{
+	"frame": {"x":0,"y":32,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},
+"compass_3":
+{
+	"frame": {"x":0,"y":48,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_4":
+{
+	"frame": {"x":0,"y":64,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_5":
+{
+	"frame": {"x":0,"y":80,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_6":
+{
+	"frame": {"x":0,"y":96,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_7":
+{
+	"frame": {"x":0,"y":112,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_8":
+{
+	"frame": {"x":0,"y":128,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_9":
+{
+	"frame": {"x":0,"y":144,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_10":
+{
+	"frame": {"x":0,"y":160,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_11":
+{
+	"frame": {"x":0,"y":176,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_12":
+{
+	"frame": {"x":0,"y":192,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_13":
+{
+	"frame": {"x":0,"y":208,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_14":
+{
+	"frame": {"x":0,"y":224,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_15":
+{
+	"frame": {"x":0,"y":240,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_16":
+{
+	"frame": {"x":0,"y":256,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_17":
+{
+	"frame": {"x":0,"y":272,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_18":
+{
+	"frame": {"x":0,"y":288,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_19":
+{
+	"frame": {"x":0,"y":304,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_20":
+{
+	"frame": {"x":0,"y":320,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_21":
+{
+	"frame": {"x":0,"y":336,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_22":
+{
+	"frame": {"x":0,"y":352,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_23":
+{
+	"frame": {"x":0,"y":368,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_24":
+{
+	"frame": {"x":0,"y":384,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_25":
+{
+	"frame": {"x":0,"y":400,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_26":
+{
+	"frame": {"x":0,"y":416,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_27":
+{
+	"frame": {"x":0,"y":432,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_28":
+{
+	"frame": {"x":0,"y":448,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_29":
+{
+	"frame": {"x":0,"y":464,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_30":
+{
+	"frame": {"x":0,"y":480,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+},"compass_31":
+{
+	"frame": {"x":0,"y":496,"w":16,"h":16},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":16}
+}},
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "compass.png",
+    "name": "compass",
+	"format": "RGBA8888",
+	"size": {"w":16,"h":512},
+	"scale": "1",
+    "type": "frame"
+}
+}

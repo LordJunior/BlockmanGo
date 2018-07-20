@@ -1,0 +1,33 @@
+{  
+    "frames":{  
+        "loading_page_bg":{  
+            "frame":{  
+                "x":0,
+                "y":0,
+                "w":128,
+                "h":128
+            },
+            "offset":{  
+                "x":0,
+                "y":0
+            },
+            "sourceSize":{  
+                "w":128,
+                "h":128
+            }
+        }
+    },
+    "meta":{  
+        "app":"http://www.texturepacker.com",
+        "version":"1.0",
+        "image":"loading_page_bg.png",
+        "name":"loading_page_bg1",
+        "format":"RGBA8888",
+        "size":{  
+            "w":128,
+            "h":128
+        },
+        "scale":"1",
+        "type":"frame"
+    }
+}

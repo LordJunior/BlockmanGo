@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    " B ",
+    "D#D",
+    "###"
+  ],
+  "key": {
+    "B": {
+      "item": "blockman:book"
+    },
+    "#": {
+      "item": "blockman:obsidian"
+    },
+    "D": {
+      "item": "blockman:diamond"
+    }
+  },
+  "result": {
+    "item": "blockman:enchanting_table"
+  }
+}

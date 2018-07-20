@@ -1,0 +1,19 @@
+#version 100
+
+uniform sampler2D texSampler;
+
+varying mediump vec4 oFogColor;
+varying mediump vec4 color;
+varying mediump vec2 texCoord1;
+varying mediump vec2 texCoord2;
+
+void main(void)
+{
+    mediump vec4 textureColor1 = texture2D(texSampler, texCoord1);
+	mediump vec4 textureColor2 = texture2D(texSampler, texCoord2);
+
+   	mediump vec4 finalColor = (textureColor1 + textureColor2) * color;
+	gl_FragColor = vec4(mix(oFogColor.rgb, finalColor.rgb, oFogColor.a), finalColor.a);
+}
+
+

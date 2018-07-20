@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blockman:spider_eye"
+    },
+    {
+      "item": "blockman:brown_mushroom"
+    },
+    {
+      "item": "blockman:sugar"
+    }
+  ],
+  "result": {
+    "item": "blockman:fermented_spider_eye"
+  }
+}

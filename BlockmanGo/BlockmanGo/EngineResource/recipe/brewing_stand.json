@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    " B ",
+    "###"
+  ],
+  "key": {
+    "B": {
+      "item": "blockman:blaze_rod"
+    },
+    "#": {
+      "item": "blockman:cobblestone"
+    }
+  },
+  "result": {
+    "item": "blockman:brewing_stand"
+  }
+}

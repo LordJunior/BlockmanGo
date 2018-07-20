@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:clay_ball"
+    }
+  },
+  "result": {
+    "item": "blockman:clay"
+  }
+}

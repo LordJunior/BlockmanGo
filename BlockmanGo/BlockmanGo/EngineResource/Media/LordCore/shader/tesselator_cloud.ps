@@ -1,0 +1,13 @@
+#version 100
+
+uniform sampler2D texSampler;
+
+varying mediump vec4 oFogColor;
+varying mediump vec4 color;
+
+void main(void)
+{
+	gl_FragColor = vec4(mix(oFogColor.rgb, color.rgb, oFogColor.a), 0.8);
+}
+
+

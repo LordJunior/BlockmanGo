@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "group": "yellow_dye",
+  "ingredients": [
+    {
+      "item": "blockman:yellow_flower",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "blockman:dye",
+    "data": 11
+  }
+}

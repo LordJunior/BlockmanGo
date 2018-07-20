@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:stick"
+    },
+    "X": {
+      "item": "blockman:redstone"
+    }
+  },
+  "result": {
+    "item": "blockman:redstone_torch"
+  }
+}

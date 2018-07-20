@@ -1,0 +1,3 @@
+Remark	GameType	ColumnCount	ColumnOne	ColumnTwo	ColumnThree	ColumnFour	ColumnFive
+备注	游戏平台标示	显示的列数	第一列多语言(不想显示不填就好了, 但是要按顺序)	第二列多语言(不想显示不填就好了, 但是要按顺序)	第三列多语言(不想显示不填就好了, 但是要按顺序)	第四列多语言(不想显示不填就好了, 但是要按顺序)	第五列多语言(不想显示不填就好了, 但是要按顺序)
+异星入侵	g1019	5	gui_real_time_rank_title_one_creepy_aliens	gui_real_time_rank_title_two_creepy_aliens	gui_real_time_rank_title_three_creepy_aliens	gui_real_time_rank_title_four_creepy_aliens	gui_real_time_rank_title_five_creepy_aliens

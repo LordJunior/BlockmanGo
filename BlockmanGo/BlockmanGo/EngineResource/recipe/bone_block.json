@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "blockman:dye",
+      "data": 15
+    }
+  },
+  "result": {
+    "item": "blockman:bone_block"
+  }
+}

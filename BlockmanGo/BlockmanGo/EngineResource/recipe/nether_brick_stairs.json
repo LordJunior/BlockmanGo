@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:nether_brick"
+    }
+  },
+  "result": {
+    "item": "blockman:nether_brick_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blockman:gunpowder"
+    },
+    {
+      "item": "blockman:blaze_powder"
+    },
+    [
+      {
+        "item": "blockman:coal",
+        "data": 0
+      },
+      {
+        "item": "blockman:coal",
+        "data": 1
+      }
+    ]
+  ],
+  "result": {
+    "item": "blockman:fire_charge",
+    "count": 3
+  }
+}

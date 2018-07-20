@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "NN",
+    "NN"
+  ],
+  "key": {
+    "N": {
+      "item": "blockman:netherbrick"
+    }
+  },
+  "result": {
+    "item": "blockman:nether_brick"
+  }
+}

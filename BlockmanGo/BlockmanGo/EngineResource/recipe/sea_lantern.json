@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "SCS",
+    "CCC",
+    "SCS"
+  ],
+  "key": {
+    "S": {
+      "item": "blockman:prismarine_shard"
+    },
+    "C": {
+      "item": "blockman:prismarine_crystals"
+    }
+  },
+  "result": {
+    "item": "blockman:sea_lantern"
+  }
+}

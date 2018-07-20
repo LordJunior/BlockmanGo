@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blockman:book"
+    },
+    {
+      "item": "blockman:dye",
+      "data": 0
+    },
+    {
+      "item": "blockman:feather"
+    }
+  ],
+  "result": {
+    "item": "blockman:writable_book"
+  }
+}

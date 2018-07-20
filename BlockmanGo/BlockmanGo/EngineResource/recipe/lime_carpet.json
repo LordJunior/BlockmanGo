@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "group": "carpet",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:wool",
+      "data": 5
+    }
+  },
+  "result": {
+    "item": "blockman:carpet",
+    "data": 5,
+    "count": 3
+  }
+}

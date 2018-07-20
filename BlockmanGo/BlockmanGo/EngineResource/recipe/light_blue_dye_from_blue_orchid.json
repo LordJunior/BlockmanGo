@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "group": "light_blue_dye",
+  "ingredients": [
+    {
+      "item": "blockman:red_flower",
+      "data": 1
+    }
+  ],
+  "result": {
+    "item": "blockman:dye",
+    "data": 12
+  }
+}

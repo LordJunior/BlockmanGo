@@ -1,0 +1,13 @@
+{
+"meta":
+{
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "lava_still.png",
+	"name": "lava_still",
+	"format": "RGBA8888",
+	"size": {"w":16,"h":320},
+	"scale": "1",
+	"type":"animation"
+}
+}

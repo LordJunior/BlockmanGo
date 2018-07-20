@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "group": "bonemeal",
+  "ingredients": [
+    {
+      "item": "blockman:bone_block"
+    }
+  ],
+  "result": {
+    "item": "blockman:dye",
+    "data": 15,
+    "count": 9
+  }
+}

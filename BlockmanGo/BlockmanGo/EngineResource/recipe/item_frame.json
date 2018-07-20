@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:stick"
+    },
+    "X": {
+      "item": "blockman:leather"
+    }
+  },
+  "result": {
+    "item": "blockman:item_frame"
+  }
+}

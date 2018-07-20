@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:redstone"
+    }
+  },
+  "result": {
+    "item": "blockman:redstone_block"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blockman:brown_mushroom"
+    },
+    {
+      "item": "blockman:red_mushroom"
+    },
+    {
+      "item": "blockman:bowl"
+    }
+  ],
+  "result": {
+    "item": "blockman:mushroom_stew"
+  }
+}

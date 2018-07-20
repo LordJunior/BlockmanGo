@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:cobblestone"
+    }
+  },
+  "result": {
+    "item": "blockman:stone_stairs",
+    "count": 4
+  }
+}

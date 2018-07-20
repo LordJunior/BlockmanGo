@@ -1,0 +1,9 @@
+GameType	Desc	TeamIcon0	TeamIcon1	TeamIcon2	TeamIcon3	TeamIcon4	TeamIcon5	TeamIcon6	TeamName1	TeamName2	TeamName3	TeamName4	TeamName5	TeamName6	TeamColor1	TeamColor2	TeamColor3	TeamColor4	TeamColor5	TeamColor6
+游戏类型	备注	例如起床战争的床被破坏的图标	一队图标	二队图标	三队图标	四队图标	五队图标	六队图标	一队名字	二队名字	三队名字	四队名字	五队名字	六队名字	一队颜色	二队颜色	三队颜色	四队颜色	五队颜色	六队颜色
+1	通用游戏		set:new_gui_material.json image:team_red	set:new_gui_material.json image:team_blue	set:new_gui_material.json image:team_green	set:new_gui_material.json image:team_yellow	set:new_gui_material.json image:team_purple	set:new_gui_material.json image:team_orange	gui_team_red	gui_team_blue	gui_team_green	gui_team_yellow	gui_team_purple	gui_team_orange						
+2	起床战争	set:new_gui_material.json image:bedwar_no_bed	set:new_gui_material.json image:bedwar_red_bed	set:new_gui_material.json image:bedwar_blue_bed	set:new_gui_material.json image:bedwar_green_bed	set:new_gui_material.json image:bedwar_yellow_bed			gui_team_red	gui_team_blue	gui_team_green	gui_team_yellow								
+3	神秘杀手		set:teamInfo.json image:Murderer	set:teamInfo.json image:Sheriff	set:teamInfo.json image:Civilian				gui_team_murderer	gui_team_sheriff	gui_team_civilian									
+4	生化危机		set:teamInfo.json image:Soilder	set:teamInfo.json image:Zombie					gui_team_soilder	gui_team_zombie										
+5	越狱		set:teamInfo.json image:Police	set:teamInfo.json image:Criminal	set:teamInfo.json image:Prisoner				gui_team_police	gui_team_criminal	gui_team_prisoner									
+8	躲猫猫		set:teamInfo.json image:Police	set:teamInfo.json image:Prisoner					gui_team_seek	gui_team_hide										
+9	龙蛋	set:teamInfo.json image:brokenEgg	set:teamInfo.json image:redEgg	set:teamInfo.json image:blueEgg	set:teamInfo.json image:greenEgg	set:teamInfo.json image:yellowEgg	set:new_gui_material.json image:team_purple	set:new_gui_material.json image:team_orange	gui_team_red	gui_team_blue	gui_team_green	gui_team_yellow	gui_team_purple	gui_team_orange						

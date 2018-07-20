@@ -1,0 +1,13 @@
+{
+"meta":
+{
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "lava_flow.png",
+	"name": "lava_flow",
+	"format": "RGBA8888",
+	"size": {"w":16,"h":512},
+	"scale": "1",
+	"type":"animation"
+}
+}

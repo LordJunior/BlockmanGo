@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SIS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "blockman:prismarine_shard"
+    },
+    "I": {
+      "item": "blockman:dye",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "blockman:prismarine",
+    "data": 2
+  }
+}

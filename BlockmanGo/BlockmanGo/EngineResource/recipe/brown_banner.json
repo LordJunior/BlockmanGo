@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "group": "banner",
+  "pattern": [
+    "###",
+    "###",
+    " | "
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:wool",
+      "data": 12
+    },
+    "|": {
+      "item": "blockman:stick"
+    }
+  },
+  "result": {
+    "item": "blockman:banner",
+    "data": 3
+  }
+}

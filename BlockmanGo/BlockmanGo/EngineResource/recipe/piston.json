@@ -1,0 +1,48 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "TTT",
+    "#X#",
+    "#R#"
+  ],
+  "key": {
+    "R": {
+      "item": "blockman:redstone"
+    },
+    "#": {
+      "item": "blockman:cobblestone"
+    },
+    "T": [
+      {
+        "item": "blockman:planks",
+        "data": 0
+      },
+      {
+        "item": "blockman:planks",
+        "data": 1
+      },
+      {
+        "item": "blockman:planks",
+        "data": 2
+      },
+      {
+        "item": "blockman:planks",
+        "data": 3
+      },
+      {
+        "item": "blockman:planks",
+        "data": 4
+      },
+      {
+        "item": "blockman:planks",
+        "data": 5
+      }
+    ],
+    "X": {
+      "item": "blockman:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "blockman:piston"
+  }
+}

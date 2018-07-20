@@ -1,0 +1,32 @@
+{"frames": {
+
+"pole_bg":
+{
+	"frame": {"x":0,"y":0,"w":320,"h":360},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":320,"h":360},
+	"sourceSize": {"w":320,"h":360},
+	"offset" : {"x":0,"y":0},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"pole_center":
+{
+	"frame": {"x":320,"y":0,"w":320,"h":360},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":320,"h":360},
+	"sourceSize": {"w":320,"h":360},
+	"offset" : {"x":0,"y":0},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "pole.png",
+	"format": "RGBA8888",
+	"size": {"w":640,"h":360},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5e968301701d05f22e0d07dd2a1d1e3f:aa48d7c9a3bc037439739f1a9bf15931:17ecd51149fa2f2e7e5d1fa0199460ec$"
+}
+}

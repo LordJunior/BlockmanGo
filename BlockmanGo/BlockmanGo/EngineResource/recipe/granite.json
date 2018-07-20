@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blockman:stone",
+      "data": 3
+    },
+    {
+      "item": "blockman:quartz"
+    }
+  ],
+  "result": {
+    "item": "blockman:stone",
+    "data": 1
+  }
+}

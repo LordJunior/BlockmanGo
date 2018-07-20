@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shapeless",
+  "group": "dyed_bed",
+  "ingredients": [
+    {
+      "item": "blockman:bed",
+      "data": 0
+    },
+    {
+      "item": "blockman:dye",
+      "data": 7
+    }
+  ],
+  "result": {
+    "item": "blockman:bed",
+    "data": 8
+  }
+}

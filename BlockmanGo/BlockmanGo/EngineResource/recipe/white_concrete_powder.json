@@ -1,0 +1,43 @@
+{
+  "type": "crafting_shapeless",
+  "group": "concrete_powder",
+  "ingredients": [
+    {
+      "item": "blockman:dye",
+      "data": 15
+    },
+    {
+      "item": "blockman:sand",
+      "data": 0
+    },
+    {
+      "item": "blockman:sand",
+      "data": 0
+    },
+    {
+      "item": "blockman:sand",
+      "data": 0
+    },
+    {
+      "item": "blockman:sand",
+      "data": 0
+    },
+    {
+      "item": "blockman:gravel"
+    },
+    {
+      "item": "blockman:gravel"
+    },
+    {
+      "item": "blockman:gravel"
+    },
+    {
+      "item": "blockman:gravel"
+    }
+  ],
+  "result": {
+    "item": "blockman:concrete_powder",
+    "data": 0,
+    "count": 8
+  }
+}

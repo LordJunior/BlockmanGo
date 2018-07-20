@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "~~ ",
+    "~O ",
+    "  ~"
+  ],
+  "key": {
+    "~": {
+      "item": "blockman:string"
+    },
+    "O": {
+      "item": "blockman:slime_ball"
+    }
+  },
+  "result": {
+    "item": "blockman:lead",
+    "count": 2
+  }
+}

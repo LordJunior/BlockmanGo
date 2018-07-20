@@ -1,0 +1,10 @@
+{
+    "frames": {},
+    "meta": {
+        "version": "1.0",
+        "image": "background.png",
+        "format": "RGBA8888",
+        "size": {"w":1,"h":1},
+        "scale": "1"
+    }
+}

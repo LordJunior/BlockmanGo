@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "group": "boat",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:planks",
+      "data": 2
+    }
+  },
+  "result": {
+    "item": "blockman:birch_boat"
+  }
+}

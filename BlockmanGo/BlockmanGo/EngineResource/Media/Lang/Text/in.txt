@@ -1,0 +1,5 @@
+gui_real_time_rank_title_one_creepy_aliens=Rank
+gui_real_time_rank_title_two_creepy_aliens=Name
+gui_real_time_rank_title_three_creepy_aliens=Level
+gui_real_time_rank_title_four_creepy_aliens=Kills
+gui_real_time_rank_title_five_creepy_aliens=Gold

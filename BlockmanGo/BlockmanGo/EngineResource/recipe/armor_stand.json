@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "///",
+    " / ",
+    "/_/"
+  ],
+  "key": {
+    "/": {
+      "item": "blockman:stick"
+    },
+    "_": {
+      "item": "blockman:stone_slab",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "blockman:armor_stand"
+  }
+}

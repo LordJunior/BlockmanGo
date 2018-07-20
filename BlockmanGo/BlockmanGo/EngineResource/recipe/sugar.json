@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:reeds"
+    }
+  },
+  "result": {
+    "item": "blockman:sugar"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blockman:pumpkin"
+    },
+    {
+      "item": "blockman:sugar"
+    },
+    {
+      "item": "blockman:egg"
+    }
+  ],
+  "result": {
+    "item": "blockman:pumpkin_pie"
+  }
+}

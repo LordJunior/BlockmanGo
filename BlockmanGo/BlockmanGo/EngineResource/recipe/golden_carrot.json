@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:gold_nugget"
+    },
+    "X": {
+      "item": "blockman:carrot"
+    }
+  },
+  "result": {
+    "item": "blockman:golden_carrot"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:stone_slab",
+      "data": 7
+    }
+  },
+  "result": {
+    "item": "blockman:quartz_block",
+    "data": 1
+  }
+}

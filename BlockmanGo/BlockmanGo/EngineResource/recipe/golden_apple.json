@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:gold_ingot"
+    },
+    "X": {
+      "item": "blockman:apple"
+    }
+  },
+  "result": {
+    "item": "blockman:golden_apple",
+    "data": 0
+  }
+}

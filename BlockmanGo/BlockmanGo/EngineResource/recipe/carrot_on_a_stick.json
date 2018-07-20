@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "# ",
+    " X"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:fishing_rod"
+    },
+    "X": {
+      "item": "blockman:carrot"
+    }
+  },
+  "result": {
+    "item": "blockman:carrot_on_a_stick"
+  }
+}

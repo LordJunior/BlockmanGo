@@ -1,0 +1,106 @@
+{
+    "Dialog": {
+        "Window": {
+            "Type": "StaticImage",
+            "Name": "MainInventoryPanel",
+            "Property": [
+                {
+                    "Name": "Area",
+                    "Value": "{{0,0},{0,0},{1,-80},{1,-50}}"
+                },
+                {
+                    "Name": "VerticalAlignment",
+                    "Value": "Centre"
+                },
+                {
+                    "Name": "HorizontalAlignment",
+                    "Value": "Centre"
+                },
+                {
+                    "Name": "StretchType",
+                    "Value": "NineGrid"
+                },
+                {
+                    "Name": "StretchOffset",
+                    "Value": "10 10 10 10"
+                },
+                {
+                    "Name": "ImageName",
+                    "Value": "set:gui_material.json image:wupindikuang"
+                },
+                {
+                    "Name": "HexgonTopImage",
+                    "Value": ""
+                },
+                {
+                    "Name": "HexgonTopColor",
+                    "Value": "1 1 1 1"
+                },
+                {
+                    "Name": "HexgonSideImage",
+                    "Value": ""
+                },
+                {
+                    "Name": "HexgonSideColor",
+                    "Value": "1 1 1 1"
+                },
+                {
+                    "Name": "HexgonOverlayerImage",
+                    "Value": ""
+                },
+                {
+                    "Name": "HexgonOverlayerColor",
+                    "Value": "1 1 1 1"
+                }
+            ],
+            "Window": [
+                {
+                    "Type": "ScrollableInventory",
+                    "Name": "MainInventoryPanel-Inventory",
+                    "Property": [
+                        {
+                            "Name": "Area",
+                            "Value": "{{0,0},{0,0},{1,-56},{1,-16}}"
+                        },
+                        {
+                            "Name": "VerticalAlignment",
+                            "Value": "Centre"
+                        },
+                        {
+                            "Name": "HorizontalAlignment",
+                            "Value": "Centre"
+                        },
+                        {
+                            "Name": "ClipChild",
+                            "Value": "true"
+                        },
+                        {
+                            "Name": "ColumnCount",
+                            "Value": "14"
+                        },
+                        {
+                            "Name": "SlotWidth",
+                            "Value": "80"
+                        },
+                        {
+                            "Name": "SlotHeight",
+                            "Value": "80"
+                        },
+                        {
+                            "Name": "ItemStackBackgroundColor",
+                            "Value": "0 0 0 0"
+                        },
+                        {
+                            "Name": "NumberVisibility",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "AutoColumnCount",
+                            "Value": "true"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

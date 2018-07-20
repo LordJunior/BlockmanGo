@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:sand",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "blockman:sandstone",
+    "data": 0
+  }
+}

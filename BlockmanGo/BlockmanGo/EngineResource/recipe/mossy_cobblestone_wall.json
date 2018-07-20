@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:mossy_cobblestone"
+    }
+  },
+  "result": {
+    "item": "blockman:cobblestone_wall",
+    "data": 1,
+    "count": 6
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:cobblestone"
+    },
+    "X": {
+      "item": "blockman:stick"
+    }
+  },
+  "result": {
+    "item": "blockman:lever"
+  }
+}

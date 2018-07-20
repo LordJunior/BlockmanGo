@@ -1,0 +1,4657 @@
+{
+	"frames": {
+		"fish_cooked": {
+			"frame": {
+				"x": 170,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"apple": {
+			"frame": {
+				"x": 374,
+				"y": 442,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"apple_golden": {
+			"frame": {
+				"x": 374,
+				"y": 408,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"arrow": {
+			"frame": {
+				"x": 374,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"arrow_poison": {
+			"frame": {
+				"x": 408,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bed": {
+			"frame": {
+				"x": 476,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"beef_cooked": {
+			"frame": {
+				"x": 442,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"beef_raw": {
+			"frame": {
+				"x": 408,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"blaze_powder": {
+			"frame": {
+				"x": 374,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"blaze_rod": {
+			"frame": {
+				"x": 340,
+				"y": 476,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"boat": {
+			"frame": {
+				"x": 340,
+				"y": 442,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bone": {
+			"frame": {
+				"x": 340,
+				"y": 408,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"book_enchanted": {
+			"frame": {
+				"x": 340,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"book_normal": {
+			"frame": {
+				"x": 340,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"book_writable": {
+			"frame": {
+				"x": 476,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"book_written": {
+			"frame": {
+				"x": 442,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bow_pulling_0": {
+			"frame": {
+				"x": 408,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bow_pulling_1": {
+			"frame": {
+				"x": 374,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bow_pulling_2": {
+			"frame": {
+				"x": 340,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bow_standby": {
+			"frame": {
+				"x": 306,
+				"y": 476,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bowl": {
+			"frame": {
+				"x": 306,
+				"y": 442,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bread": {
+			"frame": {
+				"x": 306,
+				"y": 408,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"brewing_stand": {
+			"frame": {
+				"x": 306,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"brick": {
+			"frame": {
+				"x": 306,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bucket_empty": {
+			"frame": {
+				"x": 306,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bucket_lava": {
+			"frame": {
+				"x": 476,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bucket_milk": {
+			"frame": {
+				"x": 442,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bucket_water": {
+			"frame": {
+				"x": 408,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"cake": {
+			"frame": {
+				"x": 374,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"carrot": {
+			"frame": {
+				"x": 340,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"carrot_golden": {
+			"frame": {
+				"x": 306,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"carrot_on_a_stick": {
+			"frame": {
+				"x": 272,
+				"y": 476,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"cauldron": {
+			"frame": {
+				"x": 272,
+				"y": 442,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"chainmail_boots": {
+			"frame": {
+				"x": 272,
+				"y": 408,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"chainmail_chestplate": {
+			"frame": {
+				"x": 272,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"chainmail_helmet": {
+			"frame": {
+				"x": 272,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"chainmail_leggings": {
+			"frame": {
+				"x": 272,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"charcoal": {
+			"frame": {
+				"x": 272,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"chicken_cooked": {
+			"frame": {
+				"x": 476,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"chicken_raw": {
+			"frame": {
+				"x": 442,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"clay_ball": {
+			"frame": {
+				"x": 408,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"coal": {
+			"frame": {
+				"x": 374,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"comparator": {
+			"frame": {
+				"x": 340,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"cookie": {
+			"frame": {
+				"x": 306,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"diamond": {
+			"frame": {
+				"x": 272,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"diamond_axe": {
+			"frame": {
+				"x": 238,
+				"y": 476,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"diamond_boots": {
+			"frame": {
+				"x": 238,
+				"y": 442,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"diamond_chestplate": {
+			"frame": {
+				"x": 238,
+				"y": 408,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"diamond_helmet": {
+			"frame": {
+				"x": 238,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"diamond_hoe": {
+			"frame": {
+				"x": 238,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"diamond_horse_armor": {
+			"frame": {
+				"x": 238,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"diamond_leggings": {
+			"frame": {
+				"x": 238,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"diamond_pickaxe": {
+			"frame": {
+				"x": 238,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"diamond_shovel": {
+			"frame": {
+				"x": 476,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"diamond_sword": {
+			"frame": {
+				"x": 442,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"door_iron": {
+			"frame": {
+				"x": 408,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"door_wood": {
+			"frame": {
+				"x": 374,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_black": {
+			"frame": {
+				"x": 340,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_blue": {
+			"frame": {
+				"x": 306,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_brown": {
+			"frame": {
+				"x": 272,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_cyan": {
+			"frame": {
+				"x": 238,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_gray": {
+			"frame": {
+				"x": 204,
+				"y": 476,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_green": {
+			"frame": {
+				"x": 204,
+				"y": 442,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_light_blue": {
+			"frame": {
+				"x": 204,
+				"y": 408,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_lime": {
+			"frame": {
+				"x": 204,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_magenta": {
+			"frame": {
+				"x": 204,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_orange": {
+			"frame": {
+				"x": 204,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_pink": {
+			"frame": {
+				"x": 204,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_purple": {
+			"frame": {
+				"x": 204,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_red": {
+			"frame": {
+				"x": 204,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_silver": {
+			"frame": {
+				"x": 476,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_white": {
+			"frame": {
+				"x": 442,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"dye_powder_yellow": {
+			"frame": {
+				"x": 408,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"egg": {
+			"frame": {
+				"x": 374,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"emerald": {
+			"frame": {
+				"x": 340,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"empty_armor_slot_boots": {
+			"frame": {
+				"x": 306,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"empty_armor_slot_chestplate": {
+			"frame": {
+				"x": 272,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"empty_armor_slot_helmet": {
+			"frame": {
+				"x": 238,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"empty_armor_slot_leggings": {
+			"frame": {
+				"x": 204,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"ender_eye": {
+			"frame": {
+				"x": 170,
+				"y": 476,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"ender_pearl": {
+			"frame": {
+				"x": 170,
+				"y": 442,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"experience_bottle": {
+			"frame": {
+				"x": 170,
+				"y": 408,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"feather": {
+			"frame": {
+				"x": 170,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"fireball": {
+			"frame": {
+				"x": 170,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"fireworks": {
+			"frame": {
+				"x": 170,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"fireworks_charge": {
+			"frame": {
+				"x": 170,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"fireworks_charge_overlay": {
+			"frame": {
+				"x": 170,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"fish_clownfish_raw": {
+			"frame": {
+				"x": 170,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"fish_cod_cooked": {
+			"frame": {
+				"x": 170,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"fish_cod_raw": {
+			"frame": {
+				"x": 476,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"fish_pufferfish_raw": {
+			"frame": {
+				"x": 442,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"fish_salmon_cooked": {
+			"frame": {
+				"x": 408,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"fish_salmon_raw": {
+			"frame": {
+				"x": 374,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"fishing_rod_cast": {
+			"frame": {
+				"x": 340,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"fishing_rod_uncast": {
+			"frame": {
+				"x": 306,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"flint": {
+			"frame": {
+				"x": 272,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"flint_and_steel": {
+			"frame": {
+				"x": 238,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"flower_pot": {
+			"frame": {
+				"x": 204,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"ghast_tear": {
+			"frame": {
+				"x": 170,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"glowstone_dust": {
+			"frame": {
+				"x": 136,
+				"y": 476,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gold_axe": {
+			"frame": {
+				"x": 136,
+				"y": 442,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gold_boots": {
+			"frame": {
+				"x": 136,
+				"y": 408,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gold_chestplate": {
+			"frame": {
+				"x": 136,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gold_helmet": {
+			"frame": {
+				"x": 136,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gold_hoe": {
+			"frame": {
+				"x": 136,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gold_horse_armor": {
+			"frame": {
+				"x": 136,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gold_ingot": {
+			"frame": {
+				"x": 136,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gold_leggings": {
+			"frame": {
+				"x": 136,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gold_nugget": {
+			"frame": {
+				"x": 136,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gold_pickaxe": {
+			"frame": {
+				"x": 136,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gold_shovel": {
+			"frame": {
+				"x": 476,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gold_sword": {
+			"frame": {
+				"x": 442,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gunpowder": {
+			"frame": {
+				"x": 408,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"hopper": {
+			"frame": {
+				"x": 374,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"iron_axe": {
+			"frame": {
+				"x": 340,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"iron_boots": {
+			"frame": {
+				"x": 306,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"iron_chestplate": {
+			"frame": {
+				"x": 272,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"iron_helmet": {
+			"frame": {
+				"x": 238,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"iron_hoe": {
+			"frame": {
+				"x": 204,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"iron_horse_armor": {
+			"frame": {
+				"x": 170,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"iron_ingot": {
+			"frame": {
+				"x": 136,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"iron_leggings": {
+			"frame": {
+				"x": 102,
+				"y": 476,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"iron_pickaxe": {
+			"frame": {
+				"x": 102,
+				"y": 442,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"iron_shovel": {
+			"frame": {
+				"x": 102,
+				"y": 408,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"iron_sword": {
+			"frame": {
+				"x": 102,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"item_frame": {
+			"frame": {
+				"x": 102,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"lead": {
+			"frame": {
+				"x": 102,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"leather": {
+			"frame": {
+				"x": 102,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"leather_boots": {
+			"frame": {
+				"x": 102,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"leather_boots_overlay": {
+			"frame": {
+				"x": 102,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"leather_chestplate": {
+			"frame": {
+				"x": 102,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"leather_chestplate_overlay": {
+			"frame": {
+				"x": 102,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"leather_helmet": {
+			"frame": {
+				"x": 102,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"leather_helmet_overlay": {
+			"frame": {
+				"x": 476,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"leather_leggings": {
+			"frame": {
+				"x": 442,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"leather_leggings_overlay": {
+			"frame": {
+				"x": 408,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"magma_cream": {
+			"frame": {
+				"x": 374,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"map_empty": {
+			"frame": {
+				"x": 340,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"map_filled": {
+			"frame": {
+				"x": 306,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"melon": {
+			"frame": {
+				"x": 272,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"melon_speckled": {
+			"frame": {
+				"x": 238,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"minecart_chest": {
+			"frame": {
+				"x": 204,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"minecart_command_block": {
+			"frame": {
+				"x": 170,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"minecart_furnace": {
+			"frame": {
+				"x": 136,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"minecart_hopper": {
+			"frame": {
+				"x": 102,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"minecart_normal": {
+			"frame": {
+				"x": 68,
+				"y": 476,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"minecart_tnt": {
+			"frame": {
+				"x": 68,
+				"y": 442,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"mushroom_stew": {
+			"frame": {
+				"x": 68,
+				"y": 408,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"name_tag": {
+			"frame": {
+				"x": 68,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"nether_star": {
+			"frame": {
+				"x": 68,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"nether_wart": {
+			"frame": {
+				"x": 68,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"netherbrick": {
+			"frame": {
+				"x": 68,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"painting": {
+			"frame": {
+				"x": 68,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"paper": {
+			"frame": {
+				"x": 68,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"rabbit_cooked": {
+			"frame": {
+				"x": 68,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"porkchop_cooked": {
+			"frame": {
+				"x": 68,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"porkchop_raw": {
+			"frame": {
+				"x": 68,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"potato": {
+			"frame": {
+				"x": 68,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"potato_baked": {
+			"frame": {
+				"x": 68,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"potato_poisonous": {
+			"frame": {
+				"x": 476,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"potion_bottle_drinkable": {
+			"frame": {
+				"x": 442,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"potion_bottle_empty": {
+			"frame": {
+				"x": 408,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"potion_bottle_splash": {
+			"frame": {
+				"x": 374,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"potion_overlay": {
+			"frame": {
+				"x": 340,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"pumpkin_pie": {
+			"frame": {
+				"x": 306,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"quartz": {
+			"frame": {
+				"x": 272,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"quiver": {
+			"frame": {
+				"x": 238,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"record_11": {
+			"frame": {
+				"x": 204,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"record_13": {
+			"frame": {
+				"x": 170,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"record_blocks": {
+			"frame": {
+				"x": 136,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"record_cat": {
+			"frame": {
+				"x": 102,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"record_chirp": {
+			"frame": {
+				"x": 68,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"record_far": {
+			"frame": {
+				"x": 34,
+				"y": 476,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"record_mall": {
+			"frame": {
+				"x": 34,
+				"y": 442,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"record_mellohi": {
+			"frame": {
+				"x": 34,
+				"y": 408,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"record_stal": {
+			"frame": {
+				"x": 34,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"record_strad": {
+			"frame": {
+				"x": 34,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"record_wait": {
+			"frame": {
+				"x": 34,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"record_ward": {
+			"frame": {
+				"x": 34,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"redstone_dust": {
+			"frame": {
+				"x": 34,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"reeds": {
+			"frame": {
+				"x": 34,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"repeater": {
+			"frame": {
+				"x": 34,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"rotten_flesh": {
+			"frame": {
+				"x": 34,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"ruby": {
+			"frame": {
+				"x": 34,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"saddle": {
+			"frame": {
+				"x": 34,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"seeds_melon": {
+			"frame": {
+				"x": 34,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"seeds_pumpkin": {
+			"frame": {
+				"x": 476,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"seeds_wheat": {
+			"frame": {
+				"x": 442,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"shears": {
+			"frame": {
+				"x": 408,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"sign": {
+			"frame": {
+				"x": 374,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"skull_creeper": {
+			"frame": {
+				"x": 340,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"skull_skeleton": {
+			"frame": {
+				"x": 306,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"skull_steve": {
+			"frame": {
+				"x": 272,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"skull_wither": {
+			"frame": {
+				"x": 238,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"skull_zombie": {
+			"frame": {
+				"x": 204,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"slimeball": {
+			"frame": {
+				"x": 170,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"snowball": {
+			"frame": {
+				"x": 136,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"spawn_egg": {
+			"frame": {
+				"x": 102,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"spawn_egg_overlay": {
+			"frame": {
+				"x": 68,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"spider_eye": {
+			"frame": {
+				"x": 34,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"spider_eye_fermented": {
+			"frame": {
+				"x": 0,
+				"y": 476,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"stick": {
+			"frame": {
+				"x": 0,
+				"y": 442,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"stone_axe": {
+			"frame": {
+				"x": 0,
+				"y": 408,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"stone_hoe": {
+			"frame": {
+				"x": 0,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"stone_pickaxe": {
+			"frame": {
+				"x": 0,
+				"y": 340,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"stone_shovel": {
+			"frame": {
+				"x": 0,
+				"y": 306,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"stone_sword": {
+			"frame": {
+				"x": 0,
+				"y": 272,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"string": {
+			"frame": {
+				"x": 0,
+				"y": 238,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"sugar": {
+			"frame": {
+				"x": 0,
+				"y": 204,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"wheat": {
+			"frame": {
+				"x": 0,
+				"y": 170,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"wood_axe": {
+			"frame": {
+				"x": 0,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"wood_hoe": {
+			"frame": {
+				"x": 0,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"wood_pickaxe": {
+			"frame": {
+				"x": 0,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"wood_shovel": {
+			"frame": {
+				"x": 0,
+				"y": 34,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"wood_sword": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun01": {
+			"frame": {
+				"x": 407,
+				"y": 411,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun02": {
+			"frame": {
+				"x": 477,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun03": {
+			"frame": {
+				"x": 442,
+				"y": 408,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun04": {
+			"frame": {
+				"x": 442,
+				"y": 410,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun05": {
+			"frame": {
+				"x": 409,
+				"y": 445,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun06": {
+			"frame": {
+				"x": 442,
+				"y": 374,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"grenade": {
+			"frame": {
+				"x": 478,
+				"y": 411,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bullet01": {
+			"frame": {
+				"x": 445,
+				"y": 445,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bullet02": {
+			"frame": {
+				"x": 479,
+				"y": 445,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bullet03": {
+			"frame": {
+				"x": 411,
+				"y": 480,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bullet04": {
+			"frame": {
+				"x": 444,
+				"y": 480,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bullet05": {
+			"frame": {
+				"x": 475,
+				"y": 480,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"keyToDoor": {
+			"frame": {
+				"x": 510,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"handcuffs": {
+			"frame": {
+				"x": 546,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"tpScroll01": {
+			"frame": {
+				"x": 579,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"tpScroll02": {
+			"frame": {
+				"x": 612,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bridgeEgg01": {
+			"frame": {
+				"x": 645,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bag_01": {
+			"frame": {
+				"x": 680,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bag_02": {
+			"frame": {
+				"x": 713,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bag_03": {
+			"frame": {
+				"x": 746,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bag_04": {
+			"frame": {
+				"x": 785,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bag_05": {
+			"frame": {
+				"x": 817,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bag_06": {
+			"frame": {
+				"x": 850,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bag_07": {
+			"frame": {
+				"x": 883,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bag_08": {
+			"frame": {
+				"x": 918,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bag_09": {
+			"frame": {
+				"x": 953,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bag_10": {
+			"frame": {
+				"x": 986,
+				"y": 1,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bag_11": {
+			"frame": {
+				"x": 512,
+				"y": 35,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"bag_12": {
+			"frame": {
+				"x": 545,
+				"y": 35,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"shovel_01": {
+			"frame": {
+				"x": 578,
+				"y": 35,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"shovel_02": {
+			"frame": {
+				"x": 612,
+				"y": 35,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"shovel_03": {
+			"frame": {
+				"x": 646,
+				"y": 35,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"shovel_04": {
+			"frame": {
+				"x": 680,
+				"y": 35,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"shovel_05": {
+			"frame": {
+				"x": 714,
+				"y": 35,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"shovel_06": {
+			"frame": {
+				"x": 748,
+				"y": 35,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"shovel_07": {
+			"frame": {
+				"x": 782,
+				"y": 35,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"shovel_08": {
+			"frame": {
+				"x": 815,
+				"y": 35,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"shovel_09": {
+			"frame": {
+				"x": 850,
+				"y": 35,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"shovel_10": {
+			"frame": {
+				"x": 883,
+				"y": 35,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"shovel_11": {
+			"frame": {
+				"x": 918,
+				"y": 35,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"missing": {
+			"frame": {
+				"x": 373,
+				"y": 478,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun11": {
+			"frame": {
+				"x": 953,
+				"y": 33,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun10": {
+			"frame": {
+				"x": 986,
+				"y": 33,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun08": {
+			"frame": {
+				"x": 510,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun09": {
+			"frame": {
+				"x": 543,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"parachute": {
+			"frame": {
+				"x": 578,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"potion_bottle_fill": {
+			"frame": {
+				"x": 613,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"medichine_pack": {
+			"frame": {
+				"x": 646,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"propExp": {
+			"frame": {
+				"x": 680,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"propGold": {
+			"frame": {
+				"x": 714,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"goldHeart": {
+			"frame": {
+				"x": 748,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"goldShoes": {
+			"frame": {
+				"x": 782,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"goldArrow": {
+			"frame": {
+				"x": 816,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"questionMark": {
+			"frame": {
+				"x": 850,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun13": {
+			"frame": {
+				"x": 918,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun15": {
+			"frame": {
+				"x": 986,
+				"y": 68,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun17": {
+			"frame": {
+				"x": 544,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun18": {
+			"frame": {
+				"x": 578,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun19": {
+			"frame": {
+				"x": 612,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun20": {
+			"frame": {
+				"x": 646,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun21": {
+			"frame": {
+				"x": 680,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun23": {
+			"frame": {
+				"x": 748,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun24": {
+			"frame": {
+				"x": 782,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun25": {
+			"frame": {
+				"x": 816,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun26": {
+			"frame": {
+				"x": 850,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun27": {
+			"frame": {
+				"x": 884,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun28": {
+			"frame": {
+				"x": 918,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun29": {
+			"frame": {
+				"x": 952,
+				"y": 102,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun31": {
+			"frame": {
+				"x": 510,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun33": {
+			"frame": {
+				"x": 578,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun34": {
+			"frame": {
+				"x": 612,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun35": {
+			"frame": {
+				"x": 646,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun36": {
+			"frame": {
+				"x": 680,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun37": {
+			"frame": {
+				"x": 714,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"gun38": {
+			"frame": {
+				"x": 748,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.texturepacker.com",
+		"version": "1.0",
+		"image": "items.png",
+		"name": "items",
+		"format": "RGBA8888",
+		"size": {
+			"w": 1024,
+			"h": 512
+		},
+		"scale": "1",
+		"type": "frame"
+	}
+}

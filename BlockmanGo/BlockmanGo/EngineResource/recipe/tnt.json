@@ -1,0 +1,26 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "X#X",
+    "#X#",
+    "X#X"
+  ],
+  "key": {
+    "#": [
+       {
+         "item": "blockman:sand",
+         "data": 0
+       },
+       {
+         "item": "blockman:sand",
+         "data": 1
+       }
+    ],
+    "X": {
+      "item": "blockman:gunpowder"
+    }
+  },
+  "result": {
+    "item": "blockman:tnt"
+  }
+}

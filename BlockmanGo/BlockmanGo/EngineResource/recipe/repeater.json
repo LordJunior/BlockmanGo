@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#X#",
+    "III"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:redstone_torch"
+    },
+    "X": {
+      "item": "blockman:redstone"
+    },
+    "I": {
+      "item": "blockman:stone",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "blockman:repeater"
+  }
+}

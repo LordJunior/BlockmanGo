@@ -1,0 +1,7 @@
+BulletClipId		MaxStack	Name	Icon	ClipModel	BulletIcon
+对应的弹匣道具Id(185+256~194+256)	中文备注	子弹容量	多语言名称	对应Item图标	弹匣模型	子弹图标
+441	手枪子弹	100	gui_bullet_name_1	bullet01	gun_01.mesh	set:items_gui.json image:bullet01
+442	ak子弹	100	gui_bullet_name_2	bullet02	gun_02.mesh	set:items_gui.json image:bullet02
+443	冲锋枪子弹	100	gui_bullet_name_3	bullet03	gun_03.mesh	set:items_gui.json image:bullet03
+444	散弹枪子弹	50	gui_bullet_name_4	bullet04	gun_04.mesh	set:items_gui.json image:bullet04
+446	狙击枪子弹	50	gui_bullet_name_5	bullet05	gun_06.mesh	set:items_gui.json image:bullet05

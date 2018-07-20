@@ -1,0 +1,13 @@
+{
+"meta":
+{
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "water_flow.png",
+	"name": "water_flow",
+	"format": "RGBA8888",
+	"size": {"w":32,"h":1024},
+	"scale": "1",
+	"type":"animation"
+}
+}

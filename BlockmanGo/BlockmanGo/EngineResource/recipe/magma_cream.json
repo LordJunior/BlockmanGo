@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blockman:blaze_powder"
+    },
+    {
+      "item": "blockman:slime_ball"
+    }
+  ],
+  "result": {
+    "item": "blockman:magma_cream"
+  }
+}

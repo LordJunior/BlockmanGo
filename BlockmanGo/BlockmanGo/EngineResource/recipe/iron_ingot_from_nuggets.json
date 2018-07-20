@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "group": "iron_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "blockman:iron_ingot"
+  }
+}

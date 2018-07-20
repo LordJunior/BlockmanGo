@@ -1,0 +1,231 @@
+{
+	"frames": {
+		"gun_info_icon": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 40,
+				"h": 40
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 40,
+				"h": 40
+			},
+			"sourceSize": {
+				"w": 40,
+				"h": 40
+			}
+		},
+		"icon_armor": {
+			"frame": {
+				"x": 0,
+				"y": 40,
+				"w": 31,
+				"h": 30
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 31,
+				"h": 30
+			},
+			"sourceSize": {
+				"w": 31,
+				"h": 30
+			}
+		},
+		"icon_block": {
+			"frame": {
+				"x": 31,
+				"y": 40,
+				"w": 31,
+				"h": 30
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 31,
+				"h": 30
+			},
+			"sourceSize": {
+				"w": 31,
+				"h": 30
+			}
+		},
+		"icon_enchantment": {
+			"frame": {
+				"x": 0,
+				"y": 70,
+				"w": 31,
+				"h": 30
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 31,
+				"h": 30
+			},
+			"sourceSize": {
+				"w": 31,
+				"h": 30
+			}
+		},
+		"icon_materials": {
+			"frame": {
+				"x": 31,
+				"y": 70,
+				"w": 31,
+				"h": 30
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 31,
+				"h": 30
+			},
+			"sourceSize": {
+				"w": 31,
+				"h": 30
+			}
+		},
+		"icon_other": {
+			"frame": {
+				"x": 0,
+				"y": 100,
+				"w": 31,
+				"h": 30
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 31,
+				"h": 30
+			},
+			"sourceSize": {
+				"w": 31,
+				"h": 30
+			}
+		},
+		"icon_potion": {
+			"frame": {
+				"x": 31,
+				"y": 100,
+				"w": 31,
+				"h": 30
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 31,
+				"h": 30
+			},
+			"sourceSize": {
+				"w": 31,
+				"h": 30
+			}
+		},
+		"icon_tool": {
+			"frame": {
+				"x": 0,
+				"y": 130,
+				"w": 30,
+				"h": 30
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 30,
+				"h": 30
+			},
+			"sourceSize": {
+				"w": 30,
+				"h": 30
+			}
+		},
+		"player_info_food_staturation_nor": {
+			"frame": {
+				"x": 30,
+				"y": 130,
+				"w": 16,
+				"h": 18
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 16,
+				"h": 18
+			},
+			"sourceSize": {
+				"w": 16,
+				"h": 18
+			}
+		},
+		"player_info_food_staturation_pre": {
+			"frame": {
+				"x": 46,
+				"y": 130,
+				"w": 16,
+				"h": 18
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 16,
+				"h": 18
+			},
+			"sourceSize": {
+				"w": 16,
+				"h": 18
+			}
+		},
+		"player_info_healt_nor": {
+			"frame": {
+				"x": 0,
+				"y": 160,
+				"w": 16,
+				"h": 18
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 16,
+				"h": 18
+			},
+			"sourceSize": {
+				"w": 16,
+				"h": 18
+			}
+		},
+		"player_info_healt_pre": {
+			"frame": {
+				"x": 16,
+				"y": 160,
+				"w": 16,
+				"h": 18
+			},
+			"offset": {
+				"x": 0,
+				"y": 0,
+				"w": 16,
+				"h": 18
+			},
+			"sourceSize": {
+				"w": 16,
+				"h": 18
+			}
+		}
+	},
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "other_icon.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 62,
+			"h": 178
+		},
+		"scale": "1"
+	}
+}

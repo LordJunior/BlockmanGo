@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "group": "orange_dye",
+  "ingredients": [
+    {
+      "item": "blockman:red_flower",
+      "data": 5
+    }
+  ],
+  "result": {
+    "item": "blockman:dye",
+    "data": 14
+  }
+}

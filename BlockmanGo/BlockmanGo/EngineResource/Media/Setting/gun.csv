@@ -1,0 +1,32 @@
+	GunId	Name	Desc	Model	GunIcon	GunType	BulletType	AdapedtBullet	BulletPerShoot	MaxBulletNum	ShootRange	PrepareTime	CdTime	SniperDistance	Damage	KnockBackDistance	SoundType	SwitchMagazineAction	EmptySoundType	BulletOffset	SwitchClipSoundType	PreviewMesh	BulletSpeed	ReloadTime	Recoil	FPVEffect	TPVEffect
+中文备注	枪械道具Id(426~440,700~714)-256 ) 	多语言名称	多语言描述	对应模型	对应Item图标	枪械类型(1手枪/2步枪/3狙击枪/4散弹枪/5冲锋枪)	子弹类型(实体/虚拟)	适配子弹Id(185+256~194+256)	击发子弹数量	最大子弹数量	射程	蓄力时间	射速	狙击距离	伤害	击退力	射击音效	换弹匣动作	空发音效	子弹偏移	换弹匣音效	预览Mesh	子弹速度(每tick几米)	换弹匣时间(多少个tick)	后座力	第一人称特效参数（眼睛偏移#向右偏移#下面偏移#缩放）	第三人称特效参数（眼睛偏移#向右偏移#下面偏移#缩放）
+手枪	426	gui_gun_name_1	gui_gun_desc_1	gun_01.mesh	gun01	1	1	441	1	50	50	0	0.5	0	1	1	120	pistol_reload	125	28	126	gun.1	8	10	0.2	0.3#0.12#0.14#1	1.2#0#0.4#2.1
+AK47	427	gui_gun_name_2	gui_gun_desc_2	gun_02.mesh	gun02	2	1	442	1	50	120	0	0.3	0	1.5	2	121	smg_reload	125	16	127	gun.2	12	20	0.2	0.3#0.1#0.14#1.6	1.5#0.3#0.5#2.1
+冲锋枪	428	gui_gun_name_3	gui_gun_desc_3	gun_03.mesh	gun03	5	1	442	1	50	100	0	0.15	0	1	1	122	smg_reload	125	22	127	gun.3	9	20	0.2	0.3#0.12#0.16#1.2	1.4#0.3#0.55#2.1
+散弹枪	429	gui_gun_name_4	gui_gun_desc_4	gun_04.mesh	gun04	4	1	444	1	20	50	0	1.5	0	5	1	123	smg_reload	125	60	127	gun.4	8	30	0.2	0.3#0.11#0.16#1.6	1.3#0.3#0.55#3
+狙击枪	430	gui_gun_name_6	gui_gun_desc_6	gun_06.mesh	gun06	3	1	446	1	20	200	0	2	8	12	2	124	smg_reload	125	10	127	gun.5	12	30	0.2	0.3#0.11#0.16#1.2	1.5#0.3#0.55#2.1
+M4A1	431	gui_gun_name_9	gui_gun_desc_9	gun_09.mesh	gun09	2	1	442	1	50	150		0.25		13	0	134	smg_reload	125	14	127	gun.6	12	20	0.2	0.3#0.1#0.15#1.2	1.5#0.3#0.55#2.1
+98K	432	gui_gun_name_8	gui_gun_desc_8	gun_08.mesh	gun08	3	1	446	1	20	500		3	10	140	0	132	smg_reload	125	8	127	gun.7	13	40	0.2	0.3#0.11#0.16#1.2	1.5#0.3#0.55#2.1
+加特林	433	gui_gun_name_11	gui_gun_desc_11	gun_11.mesh	gun11	2	1	442	1	50	150		0.1		20	0	130	smg_reload	125	35	131	gun.8	12	60	0.2	0.3#0.11#0.17#2	1.5#0.3#1#3
+巴雷特	434	gui_gun_name_10	gui_gun_desc_10	gun_10.mesh	gun10	3	1	446	1	20	500		3	12	250	0	133	smg_reload	125	6	127	gun.9	14	50	0.2	0.3#0.1#0.16#1.2	1.5#0.3#0.55#3
+R1895手枪	435	gui_gun_name_37	gui_gun_desc_37	gun_37.mesh	gun37	1	1	441	1	50	50	0	0.5	0	1	1	120	pistol_reload	125	28	126	gun.37	8	10	0.2	0.3#0.12#0.14#1	1.2#0#0.4#2.1
+Micro Uzi冲锋枪	436	gui_gun_name_27	gui_gun_desc_27	gun_27.mesh	gun27	5	1	442	1	50	100	0	0.15	0	1	1	122	smg_reload	125	22	127	gun.27	9	20	0.2	0.3#0.12#0.16#1.2	1.4#0.3#0.55#2.1
+SearsRanger霰弹枪	437	gui_gun_name_36	gui_gun_desc_36	gun_36.mesh	gun36	4	1	444	1	20	50	0	1.5	0	5	1	123	smg_reload	125	60	127	gun.36	8	30	0.2	0.3#0.11#0.16#1.6	1.3#0.3#0.55#3
+DessertEagle手枪	438	gui_gun_name_38	gui_gun_desc_38	gun_38.mesh	gun38	1	1	441	1	50	50	0	0.5	0	1	1	120	pistol_reload	125	28	126	gun.38	8	10	0.2	0.3#0.12#0.14#1	1.2#0#0.4#2.1
+Tommy Gun冲锋枪	439	gui_gun_name_25	gui_gun_desc_25	gun_25.mesh	gun25	5	1	442	1	50	100	0	0.15	0	1	1	122	smg_reload	125	22	127	gun.25	9	20	0.2	0.3#0.12#0.16#1.2	1.4#0.3#0.55#2.1
+M1014霰弹枪	440	gui_gun_name_29	gui_gun_desc_29	gun_29.mesh	gun29	4	1	444	1	20	50	0	1.5	0	5	1	123	smg_reload	125	60	127	gun.29	8	30	0.2	0.3#0.11#0.16#1.6	1.3#0.3#0.55#3
+Type100冲锋枪	700	gui_gun_name_28	gui_gun_desc_28	gun_28.mesh	gun28	5	1	442	1	50	100	0	0.15	0	1	1	122	smg_reload	125	22	127	gun.28	9	20	0.2	0.3#0.12#0.16#1.2	1.4#0.3#0.55#2.1
+MK5冲锋枪	701	gui_gun_name_34	gui_gun_desc_34	gun_34.mesh	gun34	5	1	442	1	50	100	0	0.15	0	1	1	122	smg_reload	125	22	127	gun.34	9	20	0.2	0.3#0.12#0.16#1.2	1.4#0.3#0.55#2.1
+M16A4步枪	702	gui_gun_name_23	gui_gun_desc_23	gun_23.mesh	gun23	2	1	442	1	50	120	0	0.3	0	1.5	2	121	smg_reload	125	16	127	gun.23	12	20	0.2	0.3#0.1#0.14#1.6	1.5#0.3#0.5#2.1
+AA12霰弹枪	703	gui_gun_name_35	gui_gun_desc_35	gun_35.mesh	gun35	4	1	444	1	20	50	0	1.5	0	5	1	123	smg_reload	125	60	127	gun.35	8	30	0.2	0.3#0.11#0.16#1.6	1.3#0.3#0.55#3
+Vector冲锋枪	704	gui_gun_name_26	gui_gun_desc_26	gun_26.mesh	gun26	5	1	442	1	50	100	0	0.15	0	1	1	122	smg_reload	125	22	127	gun.26	9	20	0.2	0.3#0.12#0.16#1.2	1.4#0.3#0.55#2.1
+Groza步枪	705	gui_gun_name_24	gui_gun_desc_24	gun_24.mesh	gun24	2	1	442	1	50	120	0	0.3	0	1.5	2	121	smg_reload	125	16	127	gun.24	12	20	0.2	0.3#0.1#0.14#1.6	1.5#0.3#0.5#2.1
+DP-28机枪	706	gui_gun_name_18	gui_gun_desc_18	gun_18.mesh	gun18	2	1	442	1	50	120	0	0.3	0	1.5	2	121	smg_reload	125	16	127	gun.18	12	20	0.2	0.3#0.1#0.14#1.6	1.5#0.3#0.5#2.1
+SCAR-L步枪	707	gui_gun_name_33	gui_gun_desc_33	gun_33.mesh	gun33	2	1	442	1	50	120	0	0.3	0	1.5	2	121	smg_reload	125	16	127	gun.33	12	20	0.2	0.3#0.1#0.14#1.6	1.5#0.3#0.5#2.1
+85狙击枪	708	gui_gun_name_13	gui_gun_desc_13	gun_13.mesh	gun13	3	1	446	1	20	200	0	2	8	12	2	124	smg_reload	125	10	127	gun.13	12	30	0.2	0.3#0.11#0.16#1.2	1.5#0.3#0.55#2.1
+95步枪	709	gui_gun_name_21	gui_gun_desc_21	gun_21.mesh	gun21	2	1	442	1	50	120	0	0.3	0	1.5	2	121	smg_reload	125	16	127	gun.21	12	20	0.2	0.3#0.1#0.14#1.6	1.5#0.3#0.5#2.1
+M1941机枪	710	gui_gun_name_17	gui_gun_desc_17	gun_17.mesh	gun17	2	1	442	1	50	120	0	0.3	0	1.5	2	121	smg_reload	125	16	127	gun.17	12	20	0.2	0.3#0.1#0.14#1.6	1.5#0.3#0.5#2.1
+W2000狙击枪	711	gui_gun_name_20	gui_gun_desc_20	gun_20.mesh	gun20	3	1	446	1	20	200	0	2	8	12	2	124	smg_reload	125	10	127	gun.20	12	30	0.2	0.3#0.11#0.16#1.2	1.5#0.3#0.55#2.1
+AUG A3步枪	712	gui_gun_name_31	gui_gun_desc_31	gun_31.mesh	gun31	2	1	442	1	50	120	0	0.3	0	1.5	2	121	smg_reload	125	16	127	gun.31	12	20	0.2	0.3#0.1#0.14#1.6	1.5#0.3#0.5#2.1
+MK14步枪	713	gui_gun_name_19	gui_gun_desc_19	gun_19.mesh	gun19	2	1	442	1	50	120	0	0.3	0	1.5	2	121	smg_reload	125	16	127	gun.19	12	20	0.2	0.3#0.1#0.14#1.6	1.5#0.3#0.5#2.1
+MK60机枪	714	gui_gun_name_15	gui_gun_desc_15	gun_15.mesh	gun15	2	1	442	1	50	120	0	0.3	0	1.5	2	121	smg_reload	125	16	127	gun.15	12	20	0.2	0.3#0.1#0.14#1.6	1.5#0.3#0.5#2.1

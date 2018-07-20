@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "RRQ",
+    "###"
+  ],
+  "key": {
+    "Q": {
+      "item": "blockman:quartz"
+    },
+    "R": {
+      "item": "blockman:redstone"
+    },
+    "#": {
+      "item": "blockman:cobblestone"
+    }
+  },
+  "result": {
+    "item": "blockman:observer"
+  }
+}

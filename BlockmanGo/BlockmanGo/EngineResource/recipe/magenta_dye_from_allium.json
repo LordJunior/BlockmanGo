@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "group": "magenta_dye",
+  "ingredients": [
+    {
+      "item": "blockman:red_flower",
+      "data": 2
+    }
+  ],
+  "result": {
+    "item": "blockman:dye",
+    "data": 13
+  }
+}

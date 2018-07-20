@@ -1,0 +1,107 @@
+{
+  "ResConfig": {
+    "Font": [
+	  {
+        "Type": "FreeType",
+        "Name": "HT16",
+        "Filename": "FZY4JW.ttf",
+		"Language": "zh_CN,en_US,zh_TW",
+        "Size": 16
+	  },
+	  {
+        "Type": "FreeType",
+        "Name": "HT16",
+        "Filename": "TahomaBold.ttf",
+		"Language": "tr_TR,vi_VN,it_IT,in_ID,fr_FR,es_ES,de_DE,pt_BR,ru_RU",
+        "Size": 16
+	  },
+	  {
+        "Type": "FreeType",
+        "Name": "HT16",
+        "Filename": "ko.TTF",
+		"Language": "ko_KR",
+        "Size": 16
+	  },
+	  {
+        "Type": "FreeType",
+        "Name": "HT20",
+        "Filename": "FZY4JW.ttf",
+		"Language": "zh_CN,en_US,zh_TW",
+        "Size": 20
+	  },
+	  {
+        "Type": "FreeType",
+        "Name": "HT20",
+        "Filename": "TahomaBold.ttf",
+		"Language": "tr_TR,vi_VN,it_IT,in_ID,fr_FR,es_ES,de_DE,pt_BR,ru_RU",
+        "Size": 20
+	  },
+	  {
+        "Type": "FreeType",
+        "Name": "HT20",
+        "Filename": "ko.TTF",
+		"Language": "ko_KR",
+        "Size": 20
+	  },
+	  {
+        "Type": "FreeType",
+        "Name": "HT24",
+        "Filename": "FZY4JW.ttf",
+		"Language": "zh_CN,en_US,zh_TW",
+        "Size": 24
+	  },
+	  {
+        "Type": "FreeType",
+        "Name": "HT24",
+        "Filename": "TahomaBold.ttf",
+		"Language": "tr_TR,vi_VN,it_IT,in_ID,fr_FR,es_ES,de_DE,pt_BR,ru_RU",
+        "Size": 24
+	  },
+	  {
+        "Type": "FreeType",
+        "Name": "HT24",
+        "Filename": "ko.TTF",
+		"Language": "ko_KR",
+        "Size": 24
+	  }
+    ],
+    "Imageset": [
+      { "Filename": "MainControlImageSet.json" },
+	  { "Filename": "inventory.json" },
+	  { "Filename": "widgets.json" }, 
+	  { "Filename": "compass_gui.json"},
+	  { "Filename": "clock_gui.json"},
+	  { "Filename": "creative_inventory.json"},
+	  { "Filename": "mask.json"},
+	  { "Filename": "Pack.json"},
+	  { "Filename": "background.json"},
+	  { "Filename": "icons.json"},
+	  { "Filename": "christmas_ui.json"},
+  	  { "Filename": "ender_ui.json"},
+  	  { "Filename": "normal_ui.json"},
+  	  { "Filename": "trapped_ui.json"},
+	  { "Filename": "gui_material.json"},
+	  { "Filename": "loading_page_bg.json"},
+	  { "Filename": "gui_inventory_icon.json"},
+	  { "Filename": "new_gui_material.json"},
+	  { "Filename": "player_info_icon.json"},
+	  { "Filename": "gui_shop.json"},
+	  { "Filename": "summary.json"},
+	  { "Filename": "wordart.json"},
+	  { "Filename": "wordart_zh_cn.json" },
+	  { "Filename": "gameloading.json" },
+	  { "Filename": "teamInfo.json" },
+	  { "Filename": "gun.json" },
+	  { "Filename": "app_shop.json" },
+	  { "Filename": "other_icon.json"},
+	  { "Filename": "jail_break.json"},
+	  { "Filename": "shop_tab_icon.json"},
+	  { "Filename": "sandDigger.json"},
+	  { "Filename": "loadingBlock.json"},
+	  { "Filename": "chicken_icon.json"},
+	  { "Filename": "pole.json"},
+	  { "Filename": "hideandseek.json"},
+	  { "Filename": "creepy_aliens.json"}
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:planks",
+      "data": 4
+    }
+  },
+  "result": {
+    "item": "blockman:acacia_stairs",
+    "count": 4
+  }
+}

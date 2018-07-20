@@ -1,0 +1,32 @@
+#version 100
+
+uniform sampler2D texSampler;
+uniform mediump vec4 naturalColor;
+uniform mediump vec4 customColor;
+uniform mediump vec4 alphaColor;
+
+varying mediump vec4 oFogColor;
+varying mediump vec4 color;
+varying mediump vec2 texCoord;
+
+void main(void)
+{
+	mediump vec4 textureColor = texture2D(texSampler, texCoord);
+	
+	if(textureColor.a < 0.3)
+	{
+		textureColor = textureColor * (1.0 - customColor.w) + customColor * customColor.w;
+		textureColor.w = 1.0;
+	}
+
+	mediump vec4 finalColor = textureColor * color;
+	if(naturalColor.x < 1.0 || naturalColor.y < 1.0 || naturalColor.z < 1.0)
+	{
+		textureColor.w = finalColor.r * 0.299 + finalColor.g * 0.587 + finalColor.b * 0.114;
+		finalColor = naturalColor * textureColor.w;
+	}
+	finalColor.a = alphaColor.a;
+
+	gl_FragColor = vec4(mix(oFogColor.rgb, finalColor.rgb, oFogColor.a), finalColor.a);
+}
+

@@ -1,0 +1,32 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "blockman:stonebrick",
+        "data": 0
+      },
+      {
+        "item": "blockman:stonebrick",
+        "data": 1
+      },
+      {
+        "item": "blockman:stonebrick",
+        "data": 2
+      },
+      {
+        "item": "blockman:stonebrick",
+        "data": 3
+      }
+    ]
+  },
+  "result": {
+    "item": "blockman:stone_brick_stairs",
+    "count": 4
+  }
+}

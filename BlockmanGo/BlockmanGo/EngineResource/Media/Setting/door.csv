@@ -1,0 +1,5 @@
+DoorId	Camp	KeyId	CloseTime
+门ID	阵营	需要钥匙ID	自动关闭延时(多少个tick后关闭)
+241	1	452	100
+242	2	452	100
+243	4	452	0

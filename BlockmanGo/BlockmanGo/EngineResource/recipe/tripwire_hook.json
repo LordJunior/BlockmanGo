@@ -1,0 +1,46 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "I",
+    "S",
+    "#"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "blockman:planks",
+        "data": 0
+      },
+      {
+        "item": "blockman:planks",
+        "data": 1
+      },
+      {
+        "item": "blockman:planks",
+        "data": 2
+      },
+      {
+        "item": "blockman:planks",
+        "data": 3
+      },
+      {
+        "item": "blockman:planks",
+        "data": 4
+      },
+      {
+        "item": "blockman:planks",
+        "data": 5
+      }
+    ],
+    "S": {
+      "item": "blockman:stick"
+    },
+    "I": {
+      "item": "blockman:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "blockman:tripwire_hook",
+    "count": 2
+  }
+}

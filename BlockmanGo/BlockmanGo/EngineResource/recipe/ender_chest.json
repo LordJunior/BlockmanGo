@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "#E#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:obsidian"
+    },
+    "E": {
+      "item": "blockman:ender_eye"
+    }
+  },
+  "result": {
+    "item": "blockman:ender_chest"
+  }
+}

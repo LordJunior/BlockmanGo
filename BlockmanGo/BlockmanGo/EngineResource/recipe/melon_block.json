@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "MMM",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "blockman:melon"
+    }
+  },
+  "result": {
+    "item": "blockman:melon_block"
+  }
+}

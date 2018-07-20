@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "blockman:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "blockman:iron_chestplate"
+  }
+}

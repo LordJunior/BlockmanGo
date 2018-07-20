@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:glowstone_dust"
+    },
+    "X": {
+      "item": "blockman:arrow"
+    }
+  },
+  "result": {
+    "item": "blockman:spectral_arrow",
+    "count": 2
+  }
+}

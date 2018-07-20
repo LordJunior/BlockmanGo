@@ -1,0 +1,39 @@
+ActionState		HoldItemId		SkillName
+状态(<1000的是下半身动作，1000及以上是上半身动作)	备注	手持物品Id	手持物品Id说明	对应的动作
+0	AS_IDLE：待机	0	无或者非特定物品	idle
+0	AS_IDLE：待机	476#477#478#479#482	挖沙双手持铲	shovel_idle
+0	AS_IDLE：待机	480#481	挖沙气锤类	hammer_idle
+0	AS_IDLE：待机	426	手枪	pistol_idle
+0	AS_IDLE：待机	427#428#429#430#431#432#433#434#435#436#437#438#439#440	双手持枪	smg_idle
+1	AS_RUN： 跑路	0	无或者非特定物品	run
+1	AS_RUN： 跑路	476#477#478#479#482	挖沙双手持铲	walk04
+1	AS_RUN： 跑路	480#481	挖沙气锤类	walk05
+2	AS_JUMP_BEGIN： 跳跃（空中循环）	0	无或者非特定物品	jump2
+3	AS_JUMP_END：落地	0	无或者非特定物品	jump3
+4	AS_SNEAK：慢走Idle	0	无或者非特定物品	sneak
+5	AS_WALK：慢走	0	无或者非特定物品	walk
+5	AS_WALK：慢走	476#477#478#479#482	挖沙双手持铲	walk04
+5	AS_WALK：慢走	480#481	挖沙气锤类	walk05
+6	AS_SPRINT：冲刺	0	无或者非特定物品	sprint
+6	AS_SPRINT：冲刺	476#477#478#479#482	挖沙双手持铲	walk06
+6	AS_SPRINT：冲刺	480#481	挖沙气锤类	walk07
+7	AS_SWIM：游泳	0	无或者非特定物品	swim
+8	AS_FLOAT：水中悬停	0	无或者非特定物品	swim_idle
+1000	AS_ATTACK：攻击	0	无或者非特定物品	attack2
+1000	AS_ATTACK：攻击	476#477#478#479#482	挖沙双手持铲	shovel
+1000	AS_ATTACK：攻击	480#481	挖沙气锤类	hammer
+1001	AS_AIM_BEGIN：瞄准	0	无或者非特定物品	aim2
+1002	AS_AIM_END： 射	0	无或者非特定物品	aim3
+1003	AS_THROW：投掷	0	无或者非特定物品	throw
+1004	AS_EAT_BEGIN：吃	0	无或者非特定物品	eat
+1005	AS_EAT_END：吃完	0	无或者非特定物品	eat_end
+1006	AS_DRINK_BEGIN：喝	0	无或者非特定物品	drink
+1007	AS_DRINK_END：喝完	0	无或者非特定物品	drink_end
+1008	AS_BLOCK：格挡	0	无或者非特定物品	block2
+1009	AS_GUN_RELOAD：枪械换弹匣	0	无或者非特定物品	pistol_reload
+1009	AS_GUN_RELOAD：枪械换弹匣	426	手枪	pistol_reload
+1009	AS_GUN_RELOAD：枪械换弹匣	427#428#429#430#431#432#433#434#435#436#437#438#439#440	双手持枪	smg_reload
+1010	AS_GUN_FIRE：枪械开火	0	无或者非特定物品	pistol_shoot
+1010	AS_GUN_FIRE：枪械开火	426	手枪	pistol_shoot
+1010	AS_GUN_FIRE：枪械开火	427#428#429#430#431#432#433#434#435#436#437#438#439#440	双手持枪	smg_shoot
+2000	AS_SKILL_POISION: 僵尸护士防毒技能	0	无或者非特定物品	attack4

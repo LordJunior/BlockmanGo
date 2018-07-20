@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shapeless",
+  "group": "pink_dye",
+  "ingredients": [
+    {
+      "item": "blockman:dye",
+      "data": 1
+    },
+    {
+      "item": "blockman:dye",
+      "data": 15
+    }
+  ],
+  "result": {
+    "item": "blockman:dye",
+    "data": 9,
+    "count": 2
+  }
+}

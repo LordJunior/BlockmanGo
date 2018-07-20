@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "key": {
+    "A": {
+      "item": "blockman:furnace"
+    },
+    "B": {
+      "item": "blockman:minecart"
+    }
+  },
+  "result": {
+    "item": "blockman:furnace_minecart"
+  }
+}

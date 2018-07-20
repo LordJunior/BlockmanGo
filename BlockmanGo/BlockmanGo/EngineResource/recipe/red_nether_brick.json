@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "NW",
+    "WN"
+  ],
+  "key": {
+    "W": {
+      "item": "blockman:nether_wart"
+    },
+    "N": {
+      "item": "blockman:netherbrick"
+    }
+  },
+  "result": {
+    "item": "blockman:red_nether_brick"
+  }
+}

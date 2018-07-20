@@ -1,0 +1,13 @@
+{
+"meta":
+{
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "fire_layer_0.png",
+	"name": "fire_layer_0",
+	"format": "RGBA8888",
+	"size": {"w":16,"h":512},
+	"scale": "1",
+	"type":"animation"
+}
+}

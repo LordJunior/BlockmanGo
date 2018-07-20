@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:gold_nugget"
+    },
+    "X": {
+      "item": "blockman:melon"
+    }
+  },
+  "result": {
+    "item": "blockman:speckled_melon"
+  }
+}

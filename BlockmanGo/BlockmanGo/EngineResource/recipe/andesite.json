@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blockman:stone",
+      "data": 3
+    },
+    {
+      "item": "blockman:cobblestone"
+    }
+  ],
+  "result": {
+    "item": "blockman:stone",
+    "data": 5,
+    "count": 2
+  }
+}

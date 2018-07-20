@@ -1,0 +1,14 @@
+{
+  "RenderQueueGroup": {
+    "RenderQueue": [
+      { "name": "Background" },
+      { "name": "Scene" },
+      { "name": "EffectSpecial" },
+      { "name": "SkinnedMeshSpecial" },
+      { "name": "Tessellator" },
+      { "name": "Effect" },
+      { "name": "HelperForEditor" },
+      { "name": "UI" }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:slime"
+    }
+  },
+  "result": {
+    "item": "blockman:slime_ball",
+    "count": 9
+  }
+}

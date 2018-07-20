@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#X#"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:wheat"
+    },
+    "X": {
+      "item": "blockman:dye",
+      "data": 3
+    }
+  },
+  "result": {
+    "item": "blockman:cookie",
+    "count": 8
+  }
+}

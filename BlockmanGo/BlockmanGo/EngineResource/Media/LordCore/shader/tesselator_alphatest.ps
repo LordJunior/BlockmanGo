@@ -1,0 +1,23 @@
+#version 100
+
+uniform sampler2D texSampler_texture;
+uniform sampler2D texSampler_lightmap;
+
+varying mediump vec4 oFogColor;
+varying mediump vec4 color;
+varying mediump vec2 texCoord_texture;
+varying mediump vec2 texCoord_lightmap;
+
+void main(void)
+{
+    mediump vec4 textureColor = texture2D(texSampler_texture, texCoord_texture);
+	
+    if(textureColor.w < 0.2 )
+    {
+        discard;
+    }
+	mediump vec4 lightmapColor = texture2D(texSampler_lightmap, texCoord_lightmap);
+	mediump vec4 finalColor = textureColor * color * lightmapColor;
+	gl_FragColor = vec4(mix(oFogColor.rgb, finalColor.rgb, oFogColor.a), finalColor.a);
+}
+

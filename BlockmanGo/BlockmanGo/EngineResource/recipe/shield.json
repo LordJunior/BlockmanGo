@@ -1,0 +1,42 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "WoW",
+    "WWW",
+    " W "
+  ],
+  "key": {
+    "W": [
+      {
+        "item": "blockman:planks",
+        "data": 0
+      },
+      {
+        "item": "blockman:planks",
+        "data": 1
+      },
+      {
+        "item": "blockman:planks",
+        "data": 2
+      },
+      {
+        "item": "blockman:planks",
+        "data": 3
+      },
+      {
+        "item": "blockman:planks",
+        "data": 4
+      },
+      {
+        "item": "blockman:planks",
+        "data": 5
+      }
+    ],
+    "o": {
+      "item": "blockman:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "blockman:shield"
+  }
+}

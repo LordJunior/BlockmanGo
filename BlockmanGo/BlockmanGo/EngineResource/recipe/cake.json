@@ -1,0 +1,25 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "AAA",
+    "BEB",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "blockman:milk_bucket"
+    },
+    "B": {
+      "item": "blockman:sugar"
+    },
+    "C": {
+      "item": "blockman:wheat"
+    },
+    "E": {
+      "item": "blockman:egg"
+    }
+  },
+  "result": {
+    "item": "blockman:cake"
+  }
+}

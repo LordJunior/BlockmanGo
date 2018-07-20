@@ -1,0 +1,27 @@
+{
+  "type": "crafting_shapeless",
+  "group": "magenta_dye",
+  "ingredients": [
+    {
+      "item": "blockman:dye",
+      "data": 4
+    },
+    {
+      "item": "blockman:dye",
+      "data": 1
+    },
+    {
+      "item": "blockman:dye",
+      "data": 1
+    },
+    {
+      "item": "blockman:dye",
+      "data": 15
+    }
+  ],
+  "result": {
+    "item": "blockman:dye",
+    "data": 13,
+    "count": 4
+  }
+}

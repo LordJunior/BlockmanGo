@@ -1,0 +1,108 @@
+{"frames": {
+
+"boss_life":
+{
+	"frame": {"x":0,"y":452,"w":344,"h":25},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":344,"h":25}
+},
+"countdown_time":
+{
+	"frame": {"x":170,"y":66,"w":174,"h":29},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":174,"h":29}
+},
+"game_tip":
+{
+	"frame": {"x":0,"y":502,"w":384,"h":49},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":384,"h":49}
+},
+"gun_1":
+{
+	"frame": {"x":73,"y":0,"w":66,"h":66},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":66,"h":66}
+},
+"gun_2":
+{
+	"frame": {"x":7,"y":0,"w":66,"h":66},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":66,"h":66}
+},
+"gun_3":
+{
+	"frame": {"x":139,"y":0,"w":66,"h":66},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":66,"h":66}
+},
+"map_name":
+{
+	"frame": {"x":0,"y":66,"w":170,"h":43},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":170,"h":43}
+},
+"map_name_back":
+{
+	"frame": {"x":0,"y":109,"w":233,"h":343},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":233,"h":343}
+},
+"rank_back":
+{
+	"frame": {"x":0,"y":477,"w":344,"h":25},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":344,"h":25}
+},
+"rank_btn":
+{
+	"frame": {"x":205,"y":0,"w":141,"h":51},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":141,"h":51}
+},
+"rank_title_space":
+{
+	"frame": {"x":0,"y":0,"w":2,"h":6},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":2,"h":6}
+},
+"rank_title_top_space":
+{
+	"frame": {"x":2,"y":0,"w":5,"h":2},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":5,"h":2}
+},
+"basement_life_bg":
+{
+	"frame": {"x":346,"y":67,"w":16,"h":11},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":16,"h":11}
+},
+"basement_life_green":
+{
+	"frame": {"x":367,"y":69,"w":12,"h":7},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":12,"h":7}
+},
+"basement_life_yellow":
+{
+	"frame": {"x":348,"y":83,"w":12,"h":7},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":12,"h":7}
+},
+"basement_life_red":
+{
+	"frame": {"x":367,"y":83,"w":12,"h":7},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":12,"h":7}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "creepy_aliens.png",
+	"format": "RGBA8888",
+	"size": {"w":384,"h":551},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:818affb305a72c652b58fb566d8e0ef6:9ffc7bfc543b913641a5c65bf7d6b5bf:6f0172229991674d9df23c19cb8f09c4$"
+}
+}

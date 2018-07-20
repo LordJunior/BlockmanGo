@@ -1,0 +1,160 @@
+<?xml version = "1.0" encoding = "GB2312"?>
+<ActorTemplates>
+	<ActorTemplate name="greys.actor" Originalscale="1 1 1" Skeleton="human_form_01.skel" AttackScale="1" TextHeight="0" IsShowShadow="true" WoundBone="" WoundAngle="25" SelectedRingSize="1" SoundName1="" SoundName2="" SoundName3="" SoundName4="" SoundName5="" SoundFileNum="0" Volume="0.8" MinDistance="1" MaxDistance="16" IntervalTime="2" Alpha="1">
+		<BodyParts>
+			<BodyPart MasterName="body" SlaveName="1" DefaultUse="true" EdgeColor="0 1 0.25098 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "greys.skin" ChangeColor = "2.10195e-44 8.87022e-43 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+		</BodyParts>
+		<Skills>
+			<Skill Name="aim1" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="aim2" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="aim3" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="attack" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_attack01.anim" BeginTime = "0" Times = "1" Length = "0.633" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="attack2" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_attack01.anim" BeginTime = "0" Times = "1" Length = "0.633" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="block1" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="block2" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="block3" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="dig" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="drink" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="drink_end" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="eat" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="eat_end" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="fly" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="fly_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="hitdown" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_hitdown01.anim" BeginTime = "0" Times = "1" Length = "1.233" FadeTime = "0.25" Channel = "" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="jump1" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="jump2" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="jump3" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="jump_attack" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="pistol_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="pistol_reload" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="pistol_shoot" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="run" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_walk02.anim" BeginTime = "0" Times = "-1" Length = "0.433" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="run_attack" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="smg_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="smg_reload" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="smg_shoot" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="sneak" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="sprint" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_walk02.anim" BeginTime = "0" Times = "1" Length = "0.433" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="swim" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="swim_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="throw" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="walk" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "human_form_01_walk01.anim" BeginTime = "0" Times = "-1" Length = "0.633" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+		</Skills>
+		<Anims>
+				<Anim Name="human_form_01_attack01.anim"/>
+				<Anim Name="human_form_01_stand01.anim"/>
+				<Anim Name="human_form_01_hitdown01.anim"/>
+				<Anim Name="human_form_01_walk01.anim"/>
+				<Anim Name="human_form_01_walk02.anim"/>
+		</Anims>
+	</ActorTemplate>
+</ActorTemplates>

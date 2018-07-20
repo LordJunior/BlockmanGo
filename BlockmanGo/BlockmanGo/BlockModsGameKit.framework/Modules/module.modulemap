@@ -1,0 +1,6 @@
+framework module BlockModsGameKit {
+  umbrella header "BlockModsGameKit.h"
+
+  export *
+  module * { export * }
+}

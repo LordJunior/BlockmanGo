@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_fence",
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:stick"
+    },
+    "W": {
+      "item": "blockman:planks",
+      "data": 3
+    }
+  },
+  "result": {
+    "item": "blockman:jungle_fence",
+    "count": 3
+  }
+}

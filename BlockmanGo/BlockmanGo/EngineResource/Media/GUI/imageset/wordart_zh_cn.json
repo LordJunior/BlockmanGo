@@ -1,0 +1,591 @@
+{
+	"frames": {
+		"wordart_achievement_nor": {
+			"frame": {
+				"x": 608,
+				"y": 552,
+				"w": 304,
+				"h": 86
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 304,
+				"h": 86
+			}
+		},
+		"wordart_achievement_pre": {
+			"frame": {
+				"x": 304,
+				"y": 466,
+				"w": 304,
+				"h": 86
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 304,
+				"h": 86
+			}
+		},
+		"wordart_bag": {
+			"frame": {
+				"x": 636,
+				"y": 126,
+				"w": 318,
+				"h": 63
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 318,
+				"h": 63
+			}
+		},
+		"wordart_big_chest": {
+			"frame": {
+				"x": 0,
+				"y": 252,
+				"w": 318,
+				"h": 63
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 318,
+				"h": 63
+			}
+		},
+		"wordart_block_icon": {
+			"frame": {
+				"x": 352,
+				"y": 316,
+				"w": 176,
+				"h": 64
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 176,
+				"h": 64
+			}
+		},
+		"wordart_chest": {
+			"frame": {
+				"x": 318,
+				"y": 189,
+				"w": 318,
+				"h": 63
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 318,
+				"h": 63
+			}
+		},
+		"wordart_compound_big": {
+			"frame": {
+				"x": 636,
+				"y": 189,
+				"w": 318,
+				"h": 63
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 318,
+				"h": 63
+			}
+		},
+		"wordart_compound_nor": {
+			"frame": {
+				"x": 304,
+				"y": 638,
+				"w": 86,
+				"h": 90
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 86,
+				"h": 90
+			}
+		},
+		"wordart_compound_pre": {
+			"frame": {
+				"x": 390,
+				"y": 638,
+				"w": 86,
+				"h": 90
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 86,
+				"h": 90
+			}
+		},
+		"wordart_course_nor": {
+			"frame": {
+				"x": 608,
+				"y": 466,
+				"w": 304,
+				"h": 86
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 304,
+				"h": 86
+			}
+		},
+		"wordart_course_pre": {
+			"frame": {
+				"x": 0,
+				"y": 552,
+				"w": 304,
+				"h": 86
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 304,
+				"h": 86
+			}
+		},
+		"wordart_create": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 318,
+				"h": 63
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 318,
+				"h": 63
+			}
+		},
+		"wordart_enchantment_table": {
+			"frame": {
+				"x": 318,
+				"y": 0,
+				"w": 318,
+				"h": 63
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 318,
+				"h": 63
+			}
+		},
+		"wordart_equipment_icon": {
+			"frame": {
+				"x": 528,
+				"y": 316,
+				"w": 176,
+				"h": 64
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 176,
+				"h": 64
+			}
+		},
+		"wordart_exit_game_nor": {
+			"frame": {
+				"x": 608,
+				"y": 380,
+				"w": 304,
+				"h": 86
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 304,
+				"h": 86
+			}
+		},
+		"wordart_exit_game_pre": {
+			"frame": {
+				"x": 0,
+				"y": 638,
+				"w": 304,
+				"h": 86
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 304,
+				"h": 86
+			}
+		},
+		"wordart_food_icon": {
+			"frame": {
+				"x": 318,
+				"y": 252,
+				"w": 176,
+				"h": 64
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 176,
+				"h": 64
+			}
+		},
+		"wordart_game_setting_nor": {
+			"frame": {
+				"x": 304,
+				"y": 380,
+				"w": 304,
+				"h": 86
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 304,
+				"h": 86
+			}
+		},
+		"wordart_game_setting_pre": {
+			"frame": {
+				"x": 304,
+				"y": 552,
+				"w": 304,
+				"h": 86
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 304,
+				"h": 86
+			}
+		},
+		"wordart_inventory_tabs": {
+			"frame": {
+				"x": 636,
+				"y": 63,
+				"w": 318,
+				"h": 63
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 318,
+				"h": 63
+			}
+		},
+		"wordart_others_icon": {
+			"frame": {
+				"x": 0,
+				"y": 316,
+				"w": 176,
+				"h": 64
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 176,
+				"h": 64
+			}
+		},
+		"wordart_player_list_nor": {
+			"frame": {
+				"x": 0,
+				"y": 466,
+				"w": 304,
+				"h": 86
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 304,
+				"h": 86
+			}
+		},
+		"wordart_player_list_pre": {
+			"frame": {
+				"x": 0,
+				"y": 380,
+				"w": 304,
+				"h": 86
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 304,
+				"h": 86
+			}
+		},
+		"wordart_role_big": {
+			"frame": {
+				"x": 318,
+				"y": 63,
+				"w": 318,
+				"h": 63
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 318,
+				"h": 63
+			}
+		},
+		"wordart_role_nor": {
+			"frame": {
+				"x": 476,
+				"y": 638,
+				"w": 86,
+				"h": 90
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 86,
+				"h": 90
+			}
+		},
+		"wordart_role_pre": {
+			"frame": {
+				"x": 562,
+				"y": 638,
+				"w": 86,
+				"h": 90
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 86,
+				"h": 90
+			}
+		},
+		"wordart_settlement": {
+			"frame": {
+				"x": 0,
+				"y": 126,
+				"w": 318,
+				"h": 63
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 318,
+				"h": 63
+			}
+		},
+		"wordart_shop": {
+			"frame": {
+				"x": 0,
+				"y": 63,
+				"w": 318,
+				"h": 63
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 318,
+				"h": 63
+			}
+		},
+		"wordart_smelter": {
+			"frame": {
+				"x": 318,
+				"y": 126,
+				"w": 318,
+				"h": 63
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 318,
+				"h": 63
+			}
+		},
+		"wordart_team_upgrade": {
+			"frame": {
+				"x": 636,
+				"y": 0,
+				"w": 318,
+				"h": 63
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 318,
+				"h": 63
+			}
+		},
+		"wordart_tool_icon": {
+			"frame": {
+				"x": 670,
+				"y": 252,
+				"w": 176,
+				"h": 64
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 176,
+				"h": 64
+			}
+		},
+		"wordart_upgrade_icon": {
+			"frame": {
+				"x": 176,
+				"y": 316,
+				"w": 176,
+				"h": 64
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 176,
+				"h": 64
+			}
+		},
+		"wordart_weapon_icon": {
+			"frame": {
+				"x": 494,
+				"y": 252,
+				"w": 176,
+				"h": 64
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 176,
+				"h": 64
+			}
+		},
+		"wordart_workbench_big": {
+			"frame": {
+				"x": 0,
+				"y": 189,
+				"w": 318,
+				"h": 63
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 318,
+				"h": 63
+			}
+		},
+		"wordart_resume_game_nor": {
+			"frame": {
+				"x": 664,
+				"y": 312,
+				"w": 269,
+				"h": 82
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 269,
+				"h": 82
+			}
+		},
+		"wordart_resume_game_pre": {
+			"frame": {
+				"x": 654,
+				"y": 335,
+				"w": 269,
+				"h": 82
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 269,
+				"h": 82
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "wordart_zh_cn.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 954,
+			"h": 728
+		},
+		"scale": "1"
+	}
+}

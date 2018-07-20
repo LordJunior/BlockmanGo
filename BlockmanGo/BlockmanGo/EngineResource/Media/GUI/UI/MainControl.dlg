@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Dialog>
+	<Window Type="StaticImage" Name="MainControl">
+		<Property Name="Area" Value="{{0,17},{0,-15},{0,295},{0,209}}"/>
+		<Property Name="VerticalAlignment" Value="Bottom"/>
+		<Property Name="SoundName" Value=""/>
+		<Window Type="StaticImage" Name="MainControl-forward">
+			<Property Name="DrawColor" Value="1 1 1 0.6"/>
+			<Property Name="Area" Value="{{0,104},{0,5},{0,174},{0,75}}"/>
+			<Property Name="Alpha" Value="0.6"/>
+			<Property Name="ImageName" Value="set:MainControl.xml image:forward_move"/>
+		</Window>
+		<Window Type="StaticImage" Name="MainControl-back">
+			<Property Name="DrawColor" Value="1 1 1 0.6"/>
+			<Property Name="Area" Value="{{0,104},{0,152},{0,174},{0,222}}"/>
+			<Property Name="Alpha" Value="0.6"/>
+			<Property Name="ImageName" Value="set:MainControl.xml image:back_move_"/>
+		</Window>
+		<Window Type="StaticImage" Name="MainControl-left">
+			<Property Name="DrawColor" Value="1 1 1 0.6"/>
+			<Property Name="Area" Value="{{0,19},{0,80},{0,89},{0,150}}"/>
+			<Property Name="Alpha" Value="0.6"/>
+			<Property Name="ImageName" Value="set:MainControl.xml image:left_move_"/>
+		</Window>
+		<Window Type="StaticImage" Name="MainControl-right">
+			<Property Name="DrawColor" Value="1 1 1 0.6"/>
+			<Property Name="Area" Value="{{0,187},{0,80},{0,257},{0,150}}"/>
+			<Property Name="Alpha" Value="0.6"/>
+			<Property Name="ImageName" Value="set:MainControl.xml image:right_move"/>
+		</Window>
+	</Window>
+</Dialog>
+

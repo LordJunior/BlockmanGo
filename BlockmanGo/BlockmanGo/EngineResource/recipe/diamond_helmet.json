@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "blockman:diamond"
+    }
+  },
+  "result": {
+    "item": "blockman:diamond_helmet"
+  }
+}

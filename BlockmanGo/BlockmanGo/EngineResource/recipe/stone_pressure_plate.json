@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:stone",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "blockman:stone_pressure_plate"
+  }
+}

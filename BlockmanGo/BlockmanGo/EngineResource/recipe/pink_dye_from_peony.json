@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shapeless",
+  "group": "pink_dye",
+  "ingredients": [
+    {
+      "item": "blockman:double_plant",
+      "data": 5
+    }
+  ],
+  "result": {
+    "item": "blockman:dye",
+    "data": 9,
+    "count": 2
+  }
+}

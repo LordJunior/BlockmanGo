@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:dye",
+      "data": 4
+    }
+  },
+  "result": {
+    "item": "blockman:lapis_block"
+  }
+}

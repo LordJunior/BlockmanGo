@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shapeless",
+  "group": "light_gray_dye",
+  "ingredients": [
+    {
+      "item": "blockman:dye",
+      "data": 8
+    },
+    {
+      "item": "blockman:dye",
+      "data": 15
+    }
+  ],
+  "result": {
+    "item": "blockman:dye",
+    "data": 7,
+    "count": 2
+  }
+}

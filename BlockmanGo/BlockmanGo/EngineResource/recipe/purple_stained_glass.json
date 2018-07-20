@@ -1,0 +1,23 @@
+{
+  "type": "crafting_shaped",
+  "group": "stained_glass",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "blockman:glass"
+    },
+    "X": {
+      "item": "blockman:dye",
+      "data": 5
+    }
+  },
+  "result": {
+    "item": "blockman:stained_glass",
+    "data": 10,
+    "count": 8
+  }
+}
