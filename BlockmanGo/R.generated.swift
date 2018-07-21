@@ -780,7 +780,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 38 images.
+  /// This `R.image` struct is generated, and contains static references to 42 images.
   struct image {
     /// Image `account_info_background`.
     static let account_info_background = Rswift.ImageResource(bundle: R.hostingBundle, name: "account_info_background")
@@ -828,6 +828,10 @@ struct R: Rswift.Validatable {
     static let general_button_background_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_button_background_selected")
     /// Image `general_close`.
     static let general_close = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_close")
+    /// Image `general_option_selected`.
+    static let general_option_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_option_selected")
+    /// Image `general_option`.
+    static let general_option = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_option")
     /// Image `general_recharge`.
     static let general_recharge = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_recharge")
     /// Image `general_red_dot`.
@@ -850,6 +854,10 @@ struct R: Rswift.Validatable {
     static let launch_logo = Rswift.ImageResource(bundle: R.hostingBundle, name: "launch_logo")
     /// Image `launch_sky`.
     static let launch_sky = Rswift.ImageResource(bundle: R.hostingBundle, name: "launch_sky")
+    /// Image `profile_name_tips`.
+    static let profile_name_tips = Rswift.ImageResource(bundle: R.hostingBundle, name: "profile_name_tips")
+    /// Image `profile_random`.
+    static let profile_random = Rswift.ImageResource(bundle: R.hostingBundle, name: "profile_random")
     /// Image `setting`.
     static let setting = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting")
     /// Image `shop`.
@@ -974,6 +982,16 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.general_close, compatibleWith: traitCollection)
     }
     
+    /// `UIImage(named: "general_option", bundle: ..., traitCollection: ...)`
+    static func general_option(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.general_option, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "general_option_selected", bundle: ..., traitCollection: ...)`
+    static func general_option_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.general_option_selected, compatibleWith: traitCollection)
+    }
+    
     /// `UIImage(named: "general_recharge", bundle: ..., traitCollection: ...)`
     static func general_recharge(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.general_recharge, compatibleWith: traitCollection)
@@ -1027,6 +1045,16 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "launch_sky", bundle: ..., traitCollection: ...)`
     static func launch_sky(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.launch_sky, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "profile_name_tips", bundle: ..., traitCollection: ...)`
+    static func profile_name_tips(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.profile_name_tips, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "profile_random", bundle: ..., traitCollection: ...)`
+    static func profile_random(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.profile_random, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "setting", bundle: ..., traitCollection: ...)`

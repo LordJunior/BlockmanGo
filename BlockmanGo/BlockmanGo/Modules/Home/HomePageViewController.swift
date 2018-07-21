@@ -37,10 +37,10 @@ class HomePageViewController: UIViewController {
         TransitionManager.pushViewController(GameViewController.self, animated: false)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-        
+        TransitionManager.present(InitializeProfileViewController.self, animated: false)
     }
 }
 

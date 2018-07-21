@@ -8,11 +8,6 @@
 
 import UIKit
 
-enum Gender: Int {
-    case male = 1
-    case female = 2
-}
-
 class AccountInfoView: UIView {
 
     var portraitURL: String? {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		50C4B36D55AF1DB5D3014E6F /* Pods_BlockmanGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D5A1A9B2FF2FE5E3B75D8C /* Pods_BlockmanGo.framework */; };
+		DD06D59D2102360B004A570B /* InitializeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06D59C2102360B004A570B /* InitializeProfileViewController.swift */; };
 		DD51605020EC6B740000B8DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51604F20EC6B740000B8DC /* AppDelegate.swift */; };
 		DD51605220EC6B740000B8DC /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51605120EC6B740000B8DC /* HomePageViewController.swift */; };
 		DD51605520EC6B740000B8DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD51605320EC6B740000B8DC /* Main.storyboard */; };
@@ -89,6 +90,9 @@
 		DD74031521002E7D00091B9D /* GameDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74031421002E7C00091B9D /* GameDetailModel.swift */; };
 		DD74037A21009AA800091B9D /* MoyaProvider+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74037921009AA800091B9D /* MoyaProvider+Sync.swift */; };
 		DD74038021018A1100091B9D /* EngineResource in Resources */ = {isa = PBXBuildFile; fileRef = DD74037F21018A1100091B9D /* EngineResource */; };
+		DD8EB6192103059700E7AE9B /* RandomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EB6182103059700E7AE9B /* RandomInputView.swift */; };
+		DD8EB61B21030F3400E7AE9B /* GenderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EB61A21030F3400E7AE9B /* GenderButton.swift */; };
+		DD8EB61E21030F7200E7AE9B /* GenderEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EB61D21030F7200E7AE9B /* GenderEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +122,7 @@
 /* Begin PBXFileReference section */
 		28E1B64E849E1474617FE6A2 /* Pods-BlockmanGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockmanGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo.release.xcconfig"; sourceTree = "<group>"; };
 		61D5A1A9B2FF2FE5E3B75D8C /* Pods_BlockmanGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockmanGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD06D59C2102360B004A570B /* InitializeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeProfileViewController.swift; sourceTree = "<group>"; };
 		DD51604C20EC6B740000B8DC /* BlockmanGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockmanGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD51604F20EC6B740000B8DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD51605120EC6B740000B8DC /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +207,9 @@
 		DD74031421002E7C00091B9D /* GameDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailModel.swift; sourceTree = "<group>"; };
 		DD74037921009AA800091B9D /* MoyaProvider+Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Sync.swift"; sourceTree = "<group>"; };
 		DD74037F21018A1100091B9D /* EngineResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EngineResource; sourceTree = "<group>"; };
+		DD8EB6182103059700E7AE9B /* RandomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomInputView.swift; sourceTree = "<group>"; };
+		DD8EB61A21030F3400E7AE9B /* GenderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderButton.swift; sourceTree = "<group>"; };
+		DD8EB61D21030F7200E7AE9B /* GenderEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderEnum.swift; sourceTree = "<group>"; };
 		E01837725EFD8265A16B0F5A /* Pods-BlockmanGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockmanGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -228,6 +236,14 @@
 				28E1B64E849E1474617FE6A2 /* Pods-BlockmanGo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD06D59B210234F7004A570B /* InitializeProfile */ = {
+			isa = PBXGroup;
+			children = (
+				DD06D59C2102360B004A570B /* InitializeProfileViewController.swift */,
+			);
+			path = InitializeProfile;
 			sourceTree = "<group>";
 		};
 		DD51604320EC6B740000B8DC = {
@@ -284,6 +300,7 @@
 			children = (
 				DD7402CD20FC779E00091B9D /* Launch */,
 				DD74030620FF3D9100091B9D /* Bulletin */,
+				DD06D59B210234F7004A570B /* InitializeProfile */,
 				DD51608720F457D70000B8DC /* Home */,
 				DD5160B520F4D6200000B8DC /* Game */,
 			);
@@ -328,6 +345,7 @@
 		DD51608820F458810000B8DC /* General */ = {
 			isa = PBXGroup;
 			children = (
+				DD8EB61C21030F6100E7AE9B /* Enum */,
 				DD51609D20F46AD80000B8DC /* Protocols */,
 				DD51608920F458B40000B8DC /* CustomViews */,
 				DD5160C820F5A63A0000B8DC /* Utils */,
@@ -342,6 +360,8 @@
 				DD51609F20F48F0F0000B8DC /* NetImageView.swift */,
 				DD51608C20F468300000B8DC /* AccountInfoView.swift */,
 				DD7402D320FC818E00091B9D /* ProgressView.swift */,
+				DD8EB6182103059700E7AE9B /* RandomInputView.swift */,
+				DD8EB61A21030F3400E7AE9B /* GenderButton.swift */,
 				DD7402D520FC8E8C00091B9D /* AlertController.swift */,
 			);
 			path = CustomViews;
@@ -586,6 +606,14 @@
 			path = Bulletin;
 			sourceTree = "<group>";
 		};
+		DD8EB61C21030F6100E7AE9B /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				DD8EB61D21030F7200E7AE9B /* GenderEnum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -749,9 +777,11 @@
 				DD74030D20FF5EC700091B9D /* UIButton+VerticalLayout.swift in Sources */,
 				DD5160C620F5A2330000B8DC /* Requester.swift in Sources */,
 				DD74030320FF219A00091B9D /* AnimatableProtocol.swift in Sources */,
+				DD8EB6192103059700E7AE9B /* RandomInputView.swift in Sources */,
 				DD5160A120F48F0F0000B8DC /* NetImageView.swift in Sources */,
 				DD51609720F46A310000B8DC /* UICollectionView+Extension.swift in Sources */,
 				DD5160EE20F5FFD00000B8DC /* GameModesTableCell.swift in Sources */,
+				DD06D59D2102360B004A570B /* InitializeProfileViewController.swift in Sources */,
 				DD5160D120F5A7EA0000B8DC /* GameEngineInfo.swift in Sources */,
 				DD7402F520FEDF1C00091B9D /* BMUserDefaults.swift in Sources */,
 				DD5160F020F60ACF0000B8DC /* GameCollectionViewCell.swift in Sources */,
@@ -769,6 +799,7 @@
 				DD7402EA20FDA62000091B9D /* ConfigurationRequester.swift in Sources */,
 				DD7402FF20FEF05F00091B9D /* BMFileManager+EngineResource.swift in Sources */,
 				DD7402D020FC791A00091B9D /* LaunchViewController.swift in Sources */,
+				DD8EB61E21030F7200E7AE9B /* GenderEnum.swift in Sources */,
 				DD5160E220F5B7A80000B8DC /* BlockHTTPResult.swift in Sources */,
 				DD7402E020FCC58C00091B9D /* ModalTransitionController.swift in Sources */,
 				DD51608220F357B80000B8DC /* TransitionManager.swift in Sources */,
@@ -786,6 +817,7 @@
 				DD51608D20F468300000B8DC /* AccountInfoView.swift in Sources */,
 				DD7402ED20FDC9C000091B9D /* CheckForAppUpdateModel.swift in Sources */,
 				DD5160E620F5F0350000B8DC /* JsonMapper.swift in Sources */,
+				DD8EB61B21030F3400E7AE9B /* GenderButton.swift in Sources */,
 				DD7402D220FC79D400091B9D /* CheckForUpdatesViewController.swift in Sources */,
 				DD74031321002C6B00091B9D /* GameDetailModelManager.swift in Sources */,
 				DD7402F120FDD41500091B9D /* AppInfo.swift in Sources */,
@@ -951,7 +983,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TUWZFZTDD4;
+				DEVELOPMENT_TEAM = R3LUB63PG7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -974,7 +1006,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TUWZFZTDD4;
+				DEVELOPMENT_TEAM = R3LUB63PG7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
