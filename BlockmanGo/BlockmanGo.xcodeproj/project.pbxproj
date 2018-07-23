@@ -92,9 +92,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DD5160B320F4AF640000B8DC /* PBXContainerItemProxy */ = {
+		DD766C582101EDB400D35006 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DD5160AB20F4AF630000B8DC /* BlockModsGameKit.xcodeproj */;
+			containerPortal = DD766C502101EDB200D35006 /* BlockModsGameKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = DDAD546A1FCF16C9001773F1;
 			remoteInfo = BlockModsGameKit;
@@ -149,7 +149,6 @@
 		DD5160A420F495D00000B8DC /* AppColor.clr */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = AppColor.clr; sourceTree = "<group>"; };
 		DD5160A620F49EA60000B8DC /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		DD5160A920F4A9D50000B8DC /* DecorationControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecorationControllerManager.swift; sourceTree = "<group>"; };
-		DD5160AB20F4AF630000B8DC /* BlockModsGameKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BlockModsGameKit.xcodeproj; path = "../../blockmango-client/dev/client/Shells/IOS/BlockModsGameKit/BlockModsGameKit.xcodeproj"; sourceTree = "<group>"; };
 		DD5160BF20F5A2330000B8DC /* UserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		DD5160C020F5A2330000B8DC /* UserRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequester.swift; sourceTree = "<group>"; };
 		DD5160C120F5A2330000B8DC /* URLQueryArrayEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryArrayEncoding.swift; sourceTree = "<group>"; };
@@ -202,6 +201,7 @@
 		DD74031421002E7C00091B9D /* GameDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailModel.swift; sourceTree = "<group>"; };
 		DD74037921009AA800091B9D /* MoyaProvider+Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Sync.swift"; sourceTree = "<group>"; };
 		DD74037F21018A1100091B9D /* EngineResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EngineResource; sourceTree = "<group>"; };
+		DD766C502101EDB200D35006 /* BlockModsGameKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BlockModsGameKit.xcodeproj; path = "../../../blockmango-client/dev/client/Shells/IOS/BlockModsGameKit/BlockModsGameKit.xcodeproj"; sourceTree = "<group>"; };
 		E01837725EFD8265A16B0F5A /* Pods-BlockmanGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockmanGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -253,7 +253,7 @@
 			children = (
 				DD74037F21018A1100091B9D /* EngineResource */,
 				DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */,
-				DD5160AB20F4AF630000B8DC /* BlockModsGameKit.xcodeproj */,
+				DD766C502101EDB200D35006 /* BlockModsGameKit.xcodeproj */,
 				DD51604F20EC6B740000B8DC /* AppDelegate.swift */,
 				DD51605620EC6B740000B8DC /* Assets.xcassets */,
 				DD51607C20F30AB00000B8DC /* Abstract */,
@@ -382,14 +382,6 @@
 				DD5160A920F4A9D50000B8DC /* DecorationControllerManager.swift */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		DD5160AC20F4AF630000B8DC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DD5160B420F4AF640000B8DC /* BlockModsGameKit.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		DD5160B520F4D6200000B8DC /* Game */ = {
@@ -586,6 +578,14 @@
 			path = Bulletin;
 			sourceTree = "<group>";
 		};
+		DD766C512101EDB200D35006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD766C592101EDB400D35006 /* BlockModsGameKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -640,8 +640,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = DD5160AC20F4AF630000B8DC /* Products */;
-					ProjectRef = DD5160AB20F4AF630000B8DC /* BlockModsGameKit.xcodeproj */;
+					ProductGroup = DD766C512101EDB200D35006 /* Products */;
+					ProjectRef = DD766C502101EDB200D35006 /* BlockModsGameKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -652,11 +652,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		DD5160B420F4AF640000B8DC /* BlockModsGameKit.framework */ = {
+		DD766C592101EDB400D35006 /* BlockModsGameKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = BlockModsGameKit.framework;
-			remoteRef = DD5160B320F4AF640000B8DC /* PBXContainerItemProxy */;
+			remoteRef = DD766C582101EDB400D35006 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
