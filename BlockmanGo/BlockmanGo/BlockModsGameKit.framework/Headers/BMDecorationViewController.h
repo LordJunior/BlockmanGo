@@ -22,6 +22,12 @@
 /// 恢复渲染
 - (void)resume;
 
+/// 设置装饰背景图
+- (void)setBackgroundImage:(NSString *)imageName;
+    
+/// 设置装饰人物位置
+- (void)setPosition:(float)x y:(float)y z:(float)z;
+    
 /// 1: 男 2: 女
 - (void)changeGender:(int)gender;
 

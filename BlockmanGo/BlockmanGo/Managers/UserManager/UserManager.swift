@@ -8,16 +8,39 @@
 
 import Foundation
 
-struct UserManager {
-    func aa() {
-
-        Requester.requestWithTarget(User.fetchDailyTasks()) { (result) in
-            switch result {
-            case .success(let reponse):
-                let model = try! reponse.mapModel(UserModel.self)
-            default:
-                break
-            }
+class UserManager {
+    
+    private var userModel: UserModel?
+    
+    static let shared = UserManager()
+    
+    private init() {
+        
+    }
+    
+    var userID: String {
+        get {
+            return userModel?.id ?? ""
         }
+    }
+    
+    var nickname: String {
+        get {
+            return userModel?.nickName ?? ""
+        }
+    }
+
+    var accessToken: String {
+        get {
+            return userModel?.accessToken ?? ""
+        }
+    }
+    
+    func setNickname(_ newValue: String) {
+        userModel?.nickName = newValue
+    }
+    
+    func setUserModel(_ model: UserModel) {
+        userModel = model
     }
 }

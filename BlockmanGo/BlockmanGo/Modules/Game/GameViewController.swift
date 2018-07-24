@@ -100,6 +100,15 @@ extension GameViewController: UICollectionViewDataSource, UICollectionViewDelega
         return collectionView.dequeueReusableCell(forIndexPath: indexPath) as GameCollectionViewCell
     }
     
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let gameCell = cell as! GameCollectionViewCell
+        gameCell.gameName = games[indexPath.item].gameTitle
+        gameCell.gameMode = games[indexPath.item].gameTypes.joined(separator: " | ")
+        gameCell.thumbnailURLString = games[indexPath.item].gameCoverPic
+        gameCell.playingNumber = games[indexPath.item].onlineNumber
+        gameCell.likesNumber = games[indexPath.item].praiseNumber
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         TransitionManager.present(GameDetailViewController.self, animated: false, parameter: (games[indexPath.row].gameId, self))
     }

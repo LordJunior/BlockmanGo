@@ -10,6 +10,36 @@ import UIKit
 
 class GameCollectionViewCell: UICollectionViewCell {
     
+    var gameName: String? = nil {
+        didSet {
+            nameLabel?.text = gameName
+        }
+    }
+    
+    var gameMode: String? = nil {
+        didSet {
+            modeLabel?.text = gameMode
+        }
+    }
+    
+    var thumbnailURLString: String? = nil {
+        didSet {
+            thumbnailView?.imageWithUrlString(thumbnailURLString)
+        }
+    }
+    
+    var playingNumber: Int? = nil {
+        didSet {
+            playingLabel?.text = "\(playingNumber ?? 0) Playing"
+        }
+    }
+
+    var likesNumber: Int? = nil {
+        didSet {
+            likesView?.setTitle("\(playingNumber ?? 0)", for: .normal)
+        }
+    }
+    
     private weak var thumbnailView: NetImageView?
     private weak var nameLabel: UILabel?
     private weak var modeLabel: UILabel?
@@ -73,6 +103,7 @@ class GameCollectionViewCell: UICollectionViewCell {
             button.setTitle("00", for: .normal)
             button.setTitleColor(R.clr.appColor._c38039(), for: .normal)
             button.titleLabel?.font = UIFont.size9
+            button.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 0)
         }).layout(snapKitMaker: { (make) in
             make.left.equalTo(thumbnailView!.snp.right).offset(12)
             make.top.equalTo(modeLabel!.snp.bottom).offset(6)

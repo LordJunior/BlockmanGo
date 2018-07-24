@@ -9,6 +9,8 @@
 import Foundation
 import HandyJSON
 
-struct UserModel: HandyJSON {
-    
+final class UserModel: HandyJSON {
+    var accessToken: String = ""
+    var id: String = ""
+    var nickName: String = ""
 }

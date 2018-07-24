@@ -11,7 +11,6 @@ import UIKit
 class LaunchViewController: UIViewController {
 
     private weak var checkForUpdateController: CheckForUpdatesViewController?
-    
     private weak var backgroundImageView: UIImageView?
     private weak var skyInfiniteView: LaunchInfiniteTranslationSkyView?
     private weak var logoImageView: UIImageView?
@@ -19,6 +18,8 @@ class LaunchViewController: UIViewController {
     private weak var rightCloudImageView: UIImageView?
     private weak var joinGameButton: UIButton?
     private weak var bulletinButton: UIButton?
+    
+    private let launchManager = LaunchModelManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,6 +81,7 @@ class LaunchViewController: UIViewController {
             button.addTarget(self, action: #selector(joinGameButtonClicked), for: .touchUpInside)
         }
 
+        /// add检查更新控制器
         let checkUpdateController = CheckForUpdatesViewController()
         checkUpdateController.delegate = self
         addChildViewController(checkUpdateController)
@@ -88,6 +90,9 @@ class LaunchViewController: UIViewController {
         }
         checkUpdateController.didMove(toParentViewController: self)
         checkForUpdateController = checkUpdateController
+        
+        /// 创建一个新账号
+        launchManager.generateNewAccount()
     }
     
     private func removeCheckForUpdateController() {

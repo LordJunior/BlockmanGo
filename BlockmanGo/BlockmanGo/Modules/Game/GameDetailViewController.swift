@@ -87,7 +87,7 @@ class GameDetailViewController: TemplateViewController {
             button.setTitle("0", for: .normal)
             button.setTitleColor(R.clr.appColor._653e00(), for: .normal)
             button.addTarget(self, action: #selector(likesButtonClicked), for: .touchUpInside)
-            button.titleEdgeInsets = UIEdgeInsetsMake(5, 0, 0, 0)
+            button.titleEdgeInsets = UIEdgeInsetsMake(14, 0, 0, 0)
             button.isEnabled = false
         }).layout(snapKitMaker: { (make) in
             make.size.equalTo(CGSize(width: 42, height: 43))
@@ -135,20 +135,14 @@ class GameDetailViewController: TemplateViewController {
     }
     
     private func refreshViewsWithModel(_ detailModel: GameDetailModel) {
+        playButton?.isEnabled = true
+        likesButton?.isEnabled = true
         thumbnailImageView?.imageWithUrlString(detailModel.gameCoverPic)
         nameLabel?.text = detailModel.gameTitle
         modeLabel?.text = detailModel.gameTypes.joined(separator: " | ")
         likesButton?.setTitle(String(detailModel.praiseNumber), for: .normal)
         likesButton?.isEnabled = !detailModel.appreciate
-        detailsTextView?.attributedText = attributedDetail(detailModel.gameDetail)
-    }
-    
-    private func attributedDetail(_ detail: String) -> NSAttributedString {
-        let paraStyle = NSMutableParagraphStyle()
-        paraStyle.alignment = .left
-        paraStyle.lineSpacing = 10
-        let attributes: [NSAttributedStringKey : Any] = [NSAttributedStringKey.foregroundColor : R.clr.appColor._653e00(), NSAttributedStringKey.font : UIFont.size11, NSAttributedStringKey.paragraphStyle : paraStyle]
-        return NSAttributedString(string: detail, attributes: attributes)
+        detailsTextView?.attributedText = detailModel.gameDetail
     }
     
     @objc private func closeButtonClicked() {

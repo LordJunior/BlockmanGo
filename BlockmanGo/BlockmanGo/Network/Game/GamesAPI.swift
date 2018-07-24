@@ -105,11 +105,11 @@ extension GamesAPI: TargetType {
         var header: [String : String] = [:]
         switch self{
         case let .enterGame(token, _):
-//            header["x-shahe-uid"] = AccountInfoManager.shared.userId.value
+            header["x-shahe-uid"] = UserManager.shared.userID
             header["x-shahe-token"] = token
         default:
-//            header["userId"] = AccountInfoManager.shared.userId.value
-//            header["Access-Token"] = AccountInfoManager.shared.token.value
+            header["userId"] = UserManager.shared.userID
+            header["Access-Token"] = UserManager.shared.accessToken
             header["language"] = Locale.current.identifier
         }
         return header

@@ -9,16 +9,16 @@
 import Foundation
 import Moya
 
-class UserRequester {
+struct UserRequester {
     
 //    class func modifyNickname(_ nickname: String, completion: (BlockHTTPResult<[String : Any]>)) {
 //        return NetServer.requestWithTarget(User.modifyNickname(nickname))
 //    }
     
-//    class func fetchVisitorInfo() -> Single<[String : Any]> {
-//        return NetServer.requestWithTarget(User.fetchVisitor(), showToast: false)
-//    }
-//    
+    static func fetchVisitorInfo(completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.fetchVisitor(), completion: completion)
+    }
+//
 //    class func register(account: String, password: String) -> Single<[String : Any]> {
 //        return NetServer.requestWithTarget(User.register(account: account, passwd: password))
 //    }

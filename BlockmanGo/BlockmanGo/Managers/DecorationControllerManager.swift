@@ -10,17 +10,17 @@ import UIKit
 import BlockModsGameKit
 import SnapKit
 
-class DecorationControllerManager {
+final class DecorationControllerManager {
     
     static let decorationControllerHeight = UIScreen.main.bounds.size.height * 0.43
     
-    public static let shared = DecorationControllerManager()
+    static let shared = DecorationControllerManager()
 
     private var decorationController: BMDecorationViewController?
     private weak var parentController: UIViewController?
     private var decorationIDsDict: [String : String] = [:]
 
-    public func add(toParent parent: UIViewController, layout: (ConstraintMaker) -> Void, finished: (() -> Void)? = nil) {
+    func add(toParent parent: UIViewController, layout: (ConstraintMaker) -> Void, finished: (() -> Void)? = nil) {
         if parentController == parent || parentController != nil {
             return
         }
@@ -56,7 +56,7 @@ class DecorationControllerManager {
 //        }
     }
 
-    public func removeFromParent() {
+    func removeFromParent() {
         decorationController?.view.snp.removeConstraints()
         decorationController?.suspend()
         decorationController?.view.removeFromSuperview()
@@ -65,26 +65,34 @@ class DecorationControllerManager {
         parentController = nil
     }
 
-    public func destory() {
+    func destory() {
         guard decorationController != nil else {return}
 
         removeFromParent()
         decorationController = nil
     }
 
-    public func suspendRendering() {
+    func suspendRendering() {
         decorationController?.suspend()
     }
     
-    public func resumeRendering() {
+    func resumeRendering() {
         decorationController?.resume()
     }
     
-    public func changeGender(_ gender: Int) {
+    func setBackgroundImage(_ imageName: String) {
+        decorationController?.setBackgroundImage(imageName)
+    }
+    
+    func setPosition(x: Float, y: Float, z: Float) {
+        decorationController?.setPosition(x, y: y, z: z)
+    }
+    
+    func setGender(_ gender: Int) {
         decorationController?.changeGender(Int32(gender))
     }
 
-    public func useDecoration(resourceID: String) {
+    func useDecoration(resourceID: String) {
         guard resourceID.contains(".") else {
             useSkin(resourceID: resourceID)
             return
@@ -94,7 +102,7 @@ class DecorationControllerManager {
         decorationController?.useDecoration(withResourceID: resourceID)
     }
 
-    public func unuseDecoration(resourceID: String) {
+    func unuseDecoration(resourceID: String) {
         guard resourceID.contains(".") else {
             unuseSkin(resourceID: resourceID)
             return
@@ -105,7 +113,7 @@ class DecorationControllerManager {
         
     }
     
-    public func resetToDefault() {
+    func resetToDefault() {
         for (_, resourceID) in decorationIDsDict {
             unuseDecoration(resourceID: resourceID)
         }

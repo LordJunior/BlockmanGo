@@ -36,6 +36,19 @@ struct GameDetailModel: HandyJSON {
     var praiseNumber: Int = 0
     var appreciate: Bool = false
     var bannerPic: [String] = []
-    var gameDetail: String = ""
+    var gameDetail: NSAttributedString = NSAttributedString(string: "")
     var visitorEnter: Int = 0
+    
+    mutating func mapping(mapper: HelpingMapper) {
+        mapper <<<
+            self.gameDetail <-- TransformOf<NSAttributedString, String>(fromJSON: { detail -> NSAttributedString in
+                let paraStyle = NSMutableParagraphStyle()
+                paraStyle.alignment = .left
+                paraStyle.lineSpacing = 10
+                let attributes: [NSAttributedStringKey : Any] = [NSAttributedStringKey.foregroundColor : R.clr.appColor._653e00(), NSAttributedStringKey.font : UIFont.size11, NSAttributedStringKey.paragraphStyle : paraStyle]
+                return NSAttributedString.init(string: detail ?? "", attributes: attributes)
+            }, toJSON: { attributedDetail -> String? in
+                attributedDetail?.string
+            })
+    }
 }

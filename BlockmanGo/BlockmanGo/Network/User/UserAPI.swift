@@ -23,7 +23,7 @@ enum Channel: String {
 
 let userPathPrefix = "/user"
 
-enum User {
+enum UserAPI {
     case fetchVisitor()
     case register(account: String, passwd: String)
     case registerInfo(nickname: String, gender: Int, picUrl: String, uid: String, token: String)
@@ -48,7 +48,7 @@ enum User {
     case fetchRongToken()
 }
 
-extension User : TargetType {
+extension UserAPI : TargetType {
     typealias ResultType = UserModel
     
     var baseURL: URL {
