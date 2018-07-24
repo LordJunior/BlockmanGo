@@ -20,4 +20,12 @@ struct GamesRequester {
     static func likesGame(gameID: String, completion: @escaping RequestJsonCallBack) {
         Requester.requestWithTarget(GamesAPI.appreciate(gameID), completion: completion)
     }
+    
+    static func fetchEnterGameToken(gameID: String, completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(GamesAPI.fetchEnterGameToken(gameID), completion: completion)
+    }
+    
+    static func dispatchEnterGameResource(token: String, region: Int, completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(GamesAPI.dispatchEnterGameResource(token, region), completion: completion)
+    }
 }

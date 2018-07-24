@@ -8,6 +8,8 @@
 
 import UIKit
 import SnapKit
+import BlockModsGameKit
+import StoreKit
 
 class GameViewController: UIViewController {
 
@@ -89,8 +91,48 @@ class GameViewController: UIViewController {
             }
         }
     }
+    
+    private func enterGame(gameID: String) {
+        gameModelManager.enterGame(gameID) { (result) in
+            switch result {
+            case .success(let dispatch):
+                // 进入游戏
+                let gameController = BMGameViewController.init()
+                gameController.bmDelegate = self
+                gameController.userID = NSNumber.init(value: UInt64(UserManager.shared.userID) ?? 0)
+                gameController.nickName = UserManager.shared.nickname
+                gameController.userToken = dispatch.signature
+                gameController.gameAddr = dispatch.gameAddr
+                gameController.mapName = dispatch.mapID
+                gameController.mapUrl = dispatch.mapURL
+                gameController.gameTimestamp = NSNumber.init(value: dispatch.timestamp)
+                gameController.language = Locale.current.identifier
+                gameController.gameType = gameID
+                self.present(gameController, animated:true, completion: nil)
+            case .failure(.enterGameInQueue):
+//                if self.gameInQueueController == nil {
+//                    let inQueueController = GameInQueueViewController(viewModelType: nil)
+//                    inQueueController.delegate = self
+//                    self.present(MainNavigationController(rootViewController: inQueueController), animated: true, completion: nil)
+//                    self.gameInQueueController = inQueueController
+//                }
+                AlertController.alert(title: "正在排队", message: nil, from: TransitionManager.rootViewController)
+            case .failure(.gameversionTooLow):
+                AlertController.alert(title: "游戏引擎版本过低，请升级", message: nil, from: TransitionManager.rootViewController, showCancelButton: true)?.done(completion: { _ in
+                    let appstore = SKStoreProductViewController()
+                    appstore.delegate = self
+                    appstore.loadProduct(withParameters: [SKStoreProductParameterITunesItemIdentifier : NSNumber(value: 1388175232)])
+                    self.present(appstore, animated: true, completion: nil)
+                })
+            default:
+                AlertController.alert(title: "进入游戏失败，请重试", message: nil, from: TransitionManager.rootViewController)
+//                BlockyAlert.show(title: R.string.localizable.notification(), message: NSLocalizedString("enter_game_fail_retry", comment: "进入游戏失败，请重试"))
+            }
+        }
+    }
 }
 
+// MARK: UICollectionView代理及数据源
 extension GameViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return games.count
@@ -102,6 +144,7 @@ extension GameViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let gameCell = cell as! GameCollectionViewCell
+        gameCell.delegate = self
         gameCell.gameName = games[indexPath.item].gameTitle
         gameCell.gameMode = games[indexPath.item].gameTypes.joined(separator: " | ")
         gameCell.thumbnailURLString = games[indexPath.item].gameCoverPic
@@ -130,14 +173,37 @@ extension GameViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
 }
 
+// MARK: GameCollectionViewCell代理
+extension GameViewController: GameCollectionViewCellDelegate {
+    func gameCollectionCellPlayButtonDidClicked(_ cell: GameCollectionViewCell) {
+        guard let indexPath = collectionView?.indexPath(for: cell) else {return}
+        enterGame(gameID: games[indexPath.item].gameId)
+    }
+}
+
+// MARK: SKStoreProductViewController代理
+extension GameViewController: SKStoreProductViewControllerDelegate {
+    func productViewControllerDidFinish(_ viewController: SKStoreProductViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+}
+
+// MARK: 游戏模式view代理
 extension GameViewController: GameModesViewDelegate {
     func gameModesView(_ modesView: GameModesView, didSelectModeAt index: Int) {
         fetchGamesWithMode(index)
     }
 }
 
+// MARK: 游戏详情控制器代理
 extension GameViewController: GameDetailViewControllerDelegate {
     func gameDetailViewControllerPlayGameButtonDidClicked(_ viewController: GameDetailViewController, gameID: String) {
-        
+        TransitionManager.dismiss(animated: false, completion: nil)
+        enterGame(gameID: gameID)
     }
+}
+
+// MARK: 游戏引擎控制器代理
+extension GameViewController: BMGameViewControllerDelegate {
+    
 }

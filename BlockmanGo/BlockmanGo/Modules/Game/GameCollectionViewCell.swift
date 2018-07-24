@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol GameCollectionViewCellDelegate: class {
+    func gameCollectionCellPlayButtonDidClicked(_ cell: GameCollectionViewCell)
+}
+
 class GameCollectionViewCell: UICollectionViewCell {
+    
+    weak var delegate: GameCollectionViewCellDelegate?
     
     var gameName: String? = nil {
         didSet {
@@ -45,7 +51,6 @@ class GameCollectionViewCell: UICollectionViewCell {
     private weak var modeLabel: UILabel?
     private weak var playingLabel: ExtraSizeLabel?
     private weak var likesView: UIButton?
-    private weak var playButton: UIButton?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -109,8 +114,9 @@ class GameCollectionViewCell: UICollectionViewCell {
             make.top.equalTo(modeLabel!.snp.bottom).offset(6)
         })
         
-        playButton = UIButton().addTo(superView: backgroundImageView).configure({ (button) in
+        UIButton().addTo(superView: backgroundImageView).configure({ (button) in
             button.setBackgroundImage(R.image.game_play(), for: .normal)
+            button.addTarget(self, action: #selector(playButtonDidClicked), for: .touchUpInside)
         }).layout(snapKitMaker: { (make) in
             make.right.equalToSuperview().inset(8)
             make.bottom.equalToSuperview().inset(12)
@@ -120,5 +126,9 @@ class GameCollectionViewCell: UICollectionViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc private func playButtonDidClicked() {
+        delegate?.gameCollectionCellPlayButtonDidClicked(self)
     }
 }

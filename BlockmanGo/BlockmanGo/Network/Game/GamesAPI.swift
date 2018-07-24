@@ -15,14 +15,15 @@ enum GamesAPI {
     case gamesList(Int) // 游戏列表
     case gameDetailInfo(String) // 游戏详情信息
     case appreciate(String) // 点赞
+    case fetchEnterGameToken(String)
+    case dispatchEnterGameResource(String, Int)
     
     case recommendationList // 推荐
     case recentlyPlayingList // 最近在玩
     case friendsPlayingList // 好友在玩
     
     
-    case fetchEnterGameToken(String)
-    case enterGame(String, Int)
+    
     case createGameChatRoom(String)
     case dissolveGameChatRoom(String)
 }
@@ -30,8 +31,8 @@ enum GamesAPI {
 extension GamesAPI: TargetType {
     var baseURL: URL {
         switch self {
-        case .enterGame(_, _):
-            return URL.init(string: enterGameHost)!
+        case .dispatchEnterGameResource(_, _):
+            return URL.init(string: dispatchEnterGameHost)!
         default:
             return URL.init(string: serverHost)!
         }
@@ -45,6 +46,10 @@ extension GamesAPI: TargetType {
             return "\(gamePathPrefix)/api/\(apiVersion)/games/\(gameId)"
         case let .appreciate(gameId):
             return "\(gamePathPrefix)/api/\(apiVersion)/games/\(gameId)/appreciation"
+        case .fetchEnterGameToken(_):
+            return "\(gamePathPrefix)/api/\(apiVersion)/game/auth"
+        case .dispatchEnterGameResource(_, _):
+            return "/v1/dispatch"
             
         case .recommendationList:
             return "\(gamePathPrefix)/api/\(apiVersion)/games/recommendation/all"
@@ -52,14 +57,12 @@ extension GamesAPI: TargetType {
             return "\(gamePathPrefix)/api/\(apiVersion)/games/playlist/recently"
         case .friendsPlayingList:
             return "\(gamePathPrefix)/api/\(apiVersion)/games/playlist/friends"
-        case .fetchEnterGameToken(_):
-            return "\(gamePathPrefix)/api/\(apiVersion)/game/auth"
+        
         case .createGameChatRoom(_):
             return "\(gamePathPrefix)/api/\(apiVersion)/game/chat/room"
         case .dissolveGameChatRoom(_):
             return "\(gamePathPrefix)/api/\(apiVersion)/game/chat/room"
-        case .enterGame(_, _):
-            return "/v1/dispatch"
+        
         }
     }
     
@@ -67,7 +70,7 @@ extension GamesAPI: TargetType {
         switch self {
         case .appreciate:
             return .put
-        case .enterGame(_), .createGameChatRoom(_):
+        case .dispatchEnterGameResource(_), .createGameChatRoom(_):
             return .post
         case .dissolveGameChatRoom(_):
             return .delete
@@ -83,9 +86,8 @@ extension GamesAPI: TargetType {
             
         case let .fetchEnterGameToken(gameType):
             return .requestParameters(parameters: ["typeId" : gameType, "gameVersion" : GameEngineInfo.engineVersion], encoding: URLEncoding.queryString)
-        case .enterGame(_, let region):
-//            return .requestParameters(parameters: ["clz" : 0, "rid" : region, "name" : AccountInfoManager.shared.nickname.value, "pioneer" : true, "ever" : GameEngineInfo.version], encoding: JSONEncoding.default)
-            return .requestParameters(parameters: ["clz" : 0, "rid" : region, "name" : "", "pioneer" : true, "ever" : GameEngineInfo.engineVersion], encoding: JSONEncoding.default)
+        case .dispatchEnterGameResource(_, let region):
+            return .requestParameters(parameters: ["clz" : 0, "rid" : region, "name" : UserManager.shared.nickname, "pioneer" : true, "ever" : GameEngineInfo.engineVersion], encoding: JSONEncoding.default)
         case .recommendationList:
             return .requestParameters(parameters: ["os" : "ios"], encoding: URLEncoding.queryString)
         case let .createGameChatRoom(roomName):
@@ -104,7 +106,7 @@ extension GamesAPI: TargetType {
     var headers: [String : String]? {
         var header: [String : String] = [:]
         switch self{
-        case let .enterGame(token, _):
+        case let .dispatchEnterGameResource(token, _):
             header["x-shahe-uid"] = UserManager.shared.userID
             header["x-shahe-token"] = token
         default:

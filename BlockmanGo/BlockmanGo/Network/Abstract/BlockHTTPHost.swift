@@ -8,7 +8,8 @@
 
 import Foundation
 
-var enterGameHost = ""
+var dispatchEnterGameHost = ""
+
 let apiVersion = "v1"
 
 #if BLOCKY_OVERSEA

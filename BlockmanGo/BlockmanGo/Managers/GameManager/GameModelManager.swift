@@ -28,4 +28,34 @@ class GameModelManager {
             }
         }
     }
+    
+    func enterGame(_ gameID: String, completion: @escaping (BlockHTTPResult<GameDispatchModel, BlockHTTPError>) -> Void) {
+        GamesRequester.fetchEnterGameToken(gameID: gameID) { [weak self] (result) in
+            switch result {
+            case .success(let response):
+                if var tokenDict = response["data"] as? [String : Any], !tokenDict.isEmpty {
+                    dispatchEnterGameHost = tokenDict["dispUrl"] as! String
+                    self?.dispatchEnterGameResource(tokenDict: tokenDict, completion: completion)
+                }else {
+                    completion(.failure(.unknown))
+                }
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    private func dispatchEnterGameResource(tokenDict: [String : Any], completion: @escaping (BlockHTTPResult<GameDispatchModel, BlockHTTPError>) -> Void) {
+        GamesRequester.dispatchEnterGameResource(token: tokenDict["token"] as! String, region: tokenDict["region"] as! Int) { (result) in
+            switch result {
+            case .success(let response):
+                var resourceDict = response["data"] as! [String : Any]
+                resourceDict += tokenDict
+                let dispatchModel = try! ["data" : resourceDict].mapModel(GameDispatchModel.self)
+                completion(.success(dispatchModel))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
 }

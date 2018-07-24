@@ -94,6 +94,7 @@
 		DD8EB61B21030F3400E7AE9B /* GenderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EB61A21030F3400E7AE9B /* GenderButton.swift */; };
 		DD8EB61E21030F7200E7AE9B /* GenderEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EB61D21030F7200E7AE9B /* GenderEnum.swift */; };
 		DDA4B0DE2105F60D004346C5 /* LaunchModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */; };
+		DDA4B0E02106BF75004346C5 /* GameDispatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,6 +213,7 @@
 		DD8EB61A21030F3400E7AE9B /* GenderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderButton.swift; sourceTree = "<group>"; };
 		DD8EB61D21030F7200E7AE9B /* GenderEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderEnum.swift; sourceTree = "<group>"; };
 		DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModelManager.swift; sourceTree = "<group>"; };
+		DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDispatchModel.swift; sourceTree = "<group>"; };
 		E01837725EFD8265A16B0F5A /* Pods-BlockmanGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockmanGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -518,6 +520,7 @@
 			children = (
 				DD5160F820F6F1CD0000B8DC /* GameModel.swift */,
 				DD74031421002E7C00091B9D /* GameDetailModel.swift */,
+				DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -853,6 +856,7 @@
 				DD74030120FEF21300091B9D /* CopyFileTool.swift in Sources */,
 				DD5160EC20F5FAE60000B8DC /* GameModesView.swift in Sources */,
 				DD74031120FF637E00091B9D /* GameDetailViewController.swift in Sources */,
+				DDA4B0E02106BF75004346C5 /* GameDispatchModel.swift in Sources */,
 				DD5160A020F48F0F0000B8DC /* ExtraSizeLabel.swift in Sources */,
 				DD5160C420F5A2330000B8DC /* UserRequester.swift in Sources */,
 				DD51607B20F3082E0000B8DC /* R.generated.swift in Sources */,

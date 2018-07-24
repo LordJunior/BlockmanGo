@@ -10,4 +10,5 @@
 #define BlockyModes_Briding_Header_h
 
 @import FCUUID;
+@import BlockModsGameKit;
 #endif /* BlockyModes_Briding_Header_h */
