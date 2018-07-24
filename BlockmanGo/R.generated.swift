@@ -1115,8 +1115,4150 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.string` struct is generated, and contains static references to 0 localization tables.
+  /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
+    /// This `R.string.localizable` struct is generated, and contains static references to 376 localization keys.
+    struct localizable {
+      /// en translation:    Friend list(%d/%d)
+      /// 
+      /// Locales: en
+      static let friends_count = Rswift.StringResource(key: "friends_count", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation:    Title: 
+      /// 
+      /// Locales: en
+      static let mail_title = Rswift.StringResource(key: "mail_title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: %@ Level task
+      /// 
+      /// Locales: en
+      static let tribe_task_for_level = Rswift.StringResource(key: "tribe_task_for_level", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: %@ in game
+      /// 
+      /// Locales: en
+      static let playing_game = Rswift.StringResource(key: "playing_game", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: (More than 3 digits or letters)
+      /// 
+      /// Locales: en
+      static let more_than_three_digits_or_letters = Rswift.StringResource(key: "more_than_three_digits_or_letters", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: (More than 6 digits or letters)
+      /// 
+      /// Locales: en
+      static let more_than_six_digits_or_letters = Rswift.StringResource(key: "more_than_six_digits_or_letters", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: 10% discount buy decoration
+      /// 
+      /// Locales: en
+      static let vip_vip_up_discount = Rswift.StringResource(key: "vip_vip_up_discount", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: 20% discount buy decoration
+      /// 
+      /// Locales: en
+      static let vip_mvp_discount = Rswift.StringResource(key: "vip_mvp_discount", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: AVG
+      /// 
+      /// Locales: en
+      static let category_adventure = Rswift.StringResource(key: "category_adventure", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: About Blockman go
+      /// 
+      /// Locales: en
+      static let about_me = Rswift.StringResource(key: "about_me", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Accept
+      /// 
+      /// Locales: en
+      static let accept_request = Rswift.StringResource(key: "accept_request", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Accept
+      /// 
+      /// Locales: en
+      static let tribe_task_receive = Rswift.StringResource(key: "tribe_task_receive", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Accepted
+      /// 
+      /// Locales: en
+      static let request_accepted = Rswift.StringResource(key: "request_accepted", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Account
+      /// 
+      /// Locales: en
+      static let account = Rswift.StringResource(key: "account", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Account
+      /// 
+      /// Locales: en
+      static let account_name = Rswift.StringResource(key: "account_name", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Account and security
+      /// 
+      /// Locales: en
+      static let account_and_security = Rswift.StringResource(key: "account_and_security", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Account exist
+      /// 
+      /// Locales: en
+      static let the_account_exist = Rswift.StringResource(key: "the_account_exist", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Account exist already
+      /// 
+      /// Locales: en
+      static let has_already_account = Rswift.StringResource(key: "has_already_account", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Account not exist
+      /// 
+      /// Locales: en
+      static let the_account_not_exist = Rswift.StringResource(key: "the_account_not_exist", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Add
+      /// 
+      /// Locales: en
+      static let add_friend = Rswift.StringResource(key: "add_friend", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Add new friends
+      /// 
+      /// Locales: en
+      static let search_new_friend = Rswift.StringResource(key: "search_new_friend", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Add note
+      /// 
+      /// Locales: en
+      static let add_alias = Rswift.StringResource(key: "add_alias", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Add tag
+      /// 
+      /// Locales: en
+      static let tribe_add_labels = Rswift.StringResource(key: "tribe_add_labels", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Added time
+      /// 
+      /// Locales: en
+      static let online_time = Rswift.StringResource(key: "online_time", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: All
+      /// 
+      /// Locales: en
+      static let category_all = Rswift.StringResource(key: "category_all", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Already in clan
+      /// 
+      /// Locales: en
+      static let tribe_user_have_in = Rswift.StringResource(key: "tribe_user_have_in", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: App logo
+      /// 
+      /// Locales: en
+      static let vip_mvp_app_logo = Rswift.StringResource(key: "vip_mvp_app_logo", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Apple Pay
+      /// 
+      /// Locales: en
+      static let recharge_record_apple_pay = Rswift.StringResource(key: "recharge_record_apple_pay", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Apply successfully
+      /// 
+      /// Locales: en
+      static let tribe_request_join_successful = Rswift.StringResource(key: "tribe_request_join_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Apply to join clan
+      /// 
+      /// Locales: en
+      static let tribe_notice_request_join_in = Rswift.StringResource(key: "tribe_notice_request_join_in", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Are you sure?
+      /// 
+      /// Locales: en
+      static let tribe_whether_dissolve = Rswift.StringResource(key: "tribe_whether_dissolve", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Are you sure?
+      /// 
+      /// Locales: en
+      static let tribe_whether_exit = Rswift.StringResource(key: "tribe_whether_exit", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Attachment:
+      /// 
+      /// Locales: en
+      static let mail_attachment = Rswift.StringResource(key: "mail_attachment", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Authorization fail, please log in
+      /// 
+      /// Locales: en
+      static let authorization_fail_log_in = Rswift.StringResource(key: "authorization_fail_log_in", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Avartas shop
+      /// 
+      /// Locales: en
+      static let title_decoration_shop = Rswift.StringResource(key: "title_decoration_shop", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Avatar
+      /// 
+      /// Locales: en
+      static let tab_title_decoration = Rswift.StringResource(key: "tab_title_decoration", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Avatar can not be empty
+      /// 
+      /// Locales: en
+      static let tribe_portrait_not_empty = Rswift.StringResource(key: "tribe_portrait_not_empty", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Battle Field
+      /// 
+      /// Locales: en
+      static let g1016 = Rswift.StringResource(key: "g1016", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Bcube
+      /// 
+      /// Locales: en
+      static let recharge_diamond = Rswift.StringResource(key: "recharge_diamond", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Bcube not enough
+      /// 
+      /// Locales: en
+      static let diamonds_not_enough = Rswift.StringResource(key: "diamonds_not_enough", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Become VIP after login
+      /// 
+      /// Locales: en
+      static let vip_after_login = Rswift.StringResource(key: "vip_after_login", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Bed Wars
+      /// 
+      /// Locales: en
+      static let g1008 = Rswift.StringResource(key: "g1008", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Bill
+      /// 
+      /// Locales: en
+      static let decoration_bill = Rswift.StringResource(key: "decoration_bill", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Bind_success
+      /// 
+      /// Locales: en
+      static let bind_success = Rswift.StringResource(key: "bind_success", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Birthday
+      /// 
+      /// Locales: en
+      static let birthday = Rswift.StringResource(key: "birthday", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Bow Spleef
+      /// 
+      /// Locales: en
+      static let g1007 = Rswift.StringResource(key: "g1007", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Camera
+      /// 
+      /// Locales: en
+      static let common_camera = Rswift.StringResource(key: "common_camera", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Can not add note for stranger
+      /// 
+      /// Locales: en
+      static let not_friend_not_add_alias = Rswift.StringResource(key: "not_friend_not_add_alias", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Can not refresh after receiving all tasks
+      /// 
+      /// Locales: en
+      static let tribe_task_not_refresh_until_done = Rswift.StringResource(key: "tribe_task_not_refresh_until_done", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Can't do it on yourself
+      /// 
+      /// Locales: en
+      static let tribe_not_operate_self = Rswift.StringResource(key: "tribe_not_operate_self", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Can't wear for inadequate clan level
+      /// 
+      /// Locales: en
+      static let tribe_tribe_level_not_enough_not_use_decoration = Rswift.StringResource(key: "tribe_tribe_level_not_enough_not_use_decoration", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Can't wear for no clan
+      /// 
+      /// Locales: en
+      static let tribe_no_tribe_not_use_decoration = Rswift.StringResource(key: "tribe_no_tribe_not_use_decoration", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Cancel
+      /// 
+      /// Locales: en
+      static let common_cancel = Rswift.StringResource(key: "common_cancel", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Cancel register?
+      /// 
+      /// Locales: en
+      static let is_cancel_register = Rswift.StringResource(key: "is_cancel_register", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Category
+      /// 
+      /// Locales: en
+      static let category = Rswift.StringResource(key: "category", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Change
+      /// 
+      /// Locales: en
+      static let change_another = Rswift.StringResource(key: "change_another", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Chat
+      /// 
+      /// Locales: en
+      static let chat = Rswift.StringResource(key: "chat", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Chat
+      /// 
+      /// Locales: en
+      static let tab_title_chat = Rswift.StringResource(key: "tab_title_chat", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Chat
+      /// 
+      /// Locales: en
+      static let tribe_chat = Rswift.StringResource(key: "tribe_chat", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Check update
+      /// 
+      /// Locales: en
+      static let check_update = Rswift.StringResource(key: "check_update", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Chief
+      /// 
+      /// Locales: en
+      static let tribe_role_chief = Rswift.StringResource(key: "tribe_role_chief", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Chief: %@
+      /// 
+      /// Locales: en
+      static let tribe_list_chief = Rswift.StringResource(key: "tribe_list_chief", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Clan information
+      /// 
+      /// Locales: en
+      static let tribe_information = Rswift.StringResource(key: "tribe_information", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Clan task
+      /// 
+      /// Locales: en
+      static let tribe_task = Rswift.StringResource(key: "tribe_task", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Clear  Cache
+      /// 
+      /// Locales: en
+      static let clear_cache = Rswift.StringResource(key: "clear_cache", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Clear all mails?
+      /// 
+      /// Locales: en
+      static let whether_clear_all_mails = Rswift.StringResource(key: "whether_clear_all_mails", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Close
+      /// 
+      /// Locales: en
+      static let close = Rswift.StringResource(key: "close", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Collect
+      /// 
+      /// Locales: en
+      static let tribe_task_receive_reward = Rswift.StringResource(key: "tribe_task_receive_reward", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Collect failed
+      /// 
+      /// Locales: en
+      static let tribe_receive_task_failed = Rswift.StringResource(key: "tribe_receive_task_failed", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Collect reward failed
+      /// 
+      /// Locales: en
+      static let tribe_receive_task_reward_failed = Rswift.StringResource(key: "tribe_receive_task_reward_failed", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Collect reward successfully
+      /// 
+      /// Locales: en
+      static let tribe_receive_task_reward_successful = Rswift.StringResource(key: "tribe_receive_task_reward_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Collect successfully
+      /// 
+      /// Locales: en
+      static let tribe_receive_task_successful = Rswift.StringResource(key: "tribe_receive_task_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Completed
+      /// 
+      /// Locales: en
+      static let tribe_task_done = Rswift.StringResource(key: "tribe_task_done", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Confirm password
+      /// 
+      /// Locales: en
+      static let confirm_password = Rswift.StringResource(key: "confirm_password", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Confirm payment
+      /// 
+      /// Locales: en
+      static let confirm_payment = Rswift.StringResource(key: "confirm_payment", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Congrats!You now get
+      /// 
+      /// Locales: en
+      static let tribe_congratrulate_you_fetch = Rswift.StringResource(key: "tribe_congratrulate_you_fetch", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Congratulations
+      /// 
+      /// Locales: en
+      static let tribe_congratrulation = Rswift.StringResource(key: "tribe_congratrulation", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Content: 
+      /// 
+      /// Locales: en
+      static let mail_content = Rswift.StringResource(key: "mail_content", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Create account
+      /// 
+      /// Locales: en
+      static let create_Account = Rswift.StringResource(key: "create_Account", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Create account
+      /// 
+      /// Locales: en
+      static let create_account = Rswift.StringResource(key: "create_account", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Create clan
+      /// 
+      /// Locales: en
+      static let tribe_create = Rswift.StringResource(key: "tribe_create", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Create clan  
+      /// 
+      /// Locales: en
+      static let tribe_create_tribe = Rswift.StringResource(key: "tribe_create_tribe", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Create successfully! Now, Invite your friends to join.
+      /// 
+      /// Locales: en
+      static let tribe_create_tribe_successful = Rswift.StringResource(key: "tribe_create_tribe_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Customer service
+      /// 
+      /// Locales: en
+      static let customer_service = Rswift.StringResource(key: "customer_service", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Daily limit:  
+      /// 
+      /// Locales: en
+      static let tribe_donate_doday_limit = Rswift.StringResource(key: "tribe_donate_doday_limit", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Dear %@: Your %@ will expire on %@
+      /// 
+      /// Locales: en
+      static let vip_title_has_vip_text = Rswift.StringResource(key: "vip_title_has_vip_text", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Dear %@:You have not open vip service
+      /// 
+      /// Locales: en
+      static let vip_title_text = Rswift.StringResource(key: "vip_title_text", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Delete
+      /// 
+      /// Locales: en
+      static let common_delete = Rswift.StringResource(key: "common_delete", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Delete Failed
+      /// 
+      /// Locales: en
+      static let common_delete_fail = Rswift.StringResource(key: "common_delete_fail", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Delete Successful
+      /// 
+      /// Locales: en
+      static let common_delete_success = Rswift.StringResource(key: "common_delete_success", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Delete friend
+      /// 
+      /// Locales: en
+      static let delete_friend = Rswift.StringResource(key: "delete_friend", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Delete note successful
+      /// 
+      /// Locales: en
+      static let delete_alias_successful = Rswift.StringResource(key: "delete_alias_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Dissolve clan
+      /// 
+      /// Locales: en
+      static let tribe_disslove = Rswift.StringResource(key: "tribe_disslove", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Donate
+      /// 
+      /// Locales: en
+      static let tribe_donate = Rswift.StringResource(key: "tribe_donate", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Donation
+      /// 
+      /// Locales: en
+      static let tribe_donation_value = Rswift.StringResource(key: "tribe_donation_value", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Donation history
+      /// 
+      /// Locales: en
+      static let tribe_donate_history = Rswift.StringResource(key: "tribe_donate_history", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Done
+      /// 
+      /// Locales: en
+      static let done = Rswift.StringResource(key: "done", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: E-mail format is incorrect
+      /// 
+      /// Locales: en
+      static let email_format_not_valid = Rswift.StringResource(key: "email_format_not_valid", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Edit profile
+      /// 
+      /// Locales: en
+      static let tribe_edit_information = Rswift.StringResource(key: "tribe_edit_information", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Elder
+      /// 
+      /// Locales: en
+      static let tribe_role_elder = Rswift.StringResource(key: "tribe_role_elder", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Email Binding
+      /// 
+      /// Locales: en
+      static let bind_email = Rswift.StringResource(key: "bind_email", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Engine
+      /// 
+      /// Locales: en
+      static let engine = Rswift.StringResource(key: "engine", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Enjoy privileges(%d/%d)
+      /// 
+      /// Locales: en
+      static let vip_page_title = Rswift.StringResource(key: "vip_page_title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Enter clan introduction
+      /// 
+      /// Locales: en
+      static let tribe_input_tribe_introduction = Rswift.StringResource(key: "tribe_input_tribe_introduction", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Enter clan name
+      /// 
+      /// Locales: en
+      static let tribe_input_tribe_name = Rswift.StringResource(key: "tribe_input_tribe_name", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Enter note
+      /// 
+      /// Locales: en
+      static let input_alias = Rswift.StringResource(key: "input_alias", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Exclusive action
+      /// 
+      /// Locales: en
+      static let vip_mvp_action = Rswift.StringResource(key: "vip_mvp_action", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Exclusive decoration
+      /// 
+      /// Locales: en
+      static let vip_mvp_clothes = Rswift.StringResource(key: "vip_mvp_clothes", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Existing clan name
+      /// 
+      /// Locales: en
+      static let tribe_tribe_name_exists = Rswift.StringResource(key: "tribe_tribe_name_exists", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Exit
+      /// 
+      /// Locales: en
+      static let log_out = Rswift.StringResource(key: "log_out", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Faild,please retry
+      /// 
+      /// Locales: en
+      static let common_request_fail_retry = Rswift.StringResource(key: "common_request_fail_retry", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Failed
+      /// 
+      /// Locales: en
+      static let common_fail = Rswift.StringResource(key: "common_fail", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Feedback
+      /// 
+      /// Locales: en
+      static let feedback = Rswift.StringResource(key: "feedback", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Female
+      /// 
+      /// Locales: en
+      static let female = Rswift.StringResource(key: "female", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Forget password
+      /// 
+      /// Locales: en
+      static let forget_password = Rswift.StringResource(key: "forget_password", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Format is incorrect
+      /// 
+      /// Locales: en
+      static let account_format_not_valid = Rswift.StringResource(key: "account_format_not_valid", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Free
+      /// 
+      /// Locales: en
+      static let free = Rswift.StringResource(key: "free", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Friend
+      /// 
+      /// Locales: en
+      static let friends = Rswift.StringResource(key: "friends", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Friends game
+      /// 
+      /// Locales: en
+      static let friends_playing = Rswift.StringResource(key: "friends_playing", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Friends now
+      /// 
+      /// Locales: en
+      static let has_friendship = Rswift.StringResource(key: "has_friendship", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Gain:
+      /// 
+      /// Locales: en
+      static let tribe_get = Rswift.StringResource(key: "tribe_get", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Game logo
+      /// 
+      /// Locales: en
+      static let vip_mvp_game_logo = Rswift.StringResource(key: "vip_mvp_game_logo", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Games
+      /// 
+      /// Locales: en
+      static let tab_title_games = Rswift.StringResource(key: "tab_title_games", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Games detail
+      /// 
+      /// Locales: en
+      static let title_games_detail = Rswift.StringResource(key: "title_games_detail", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Gender
+      /// 
+      /// Locales: en
+      static let gender = Rswift.StringResource(key: "gender", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Gender can not modify
+      /// 
+      /// Locales: en
+      static let gender_can_not_modify = Rswift.StringResource(key: "gender_can_not_modify", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Get 120% golds per game
+      /// 
+      /// Locales: en
+      static let vip_vip_gold_growth = Rswift.StringResource(key: "vip_vip_gold_growth", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Get 150% golds per game
+      /// 
+      /// Locales: en
+      static let vip_vip_up_gold_growth = Rswift.StringResource(key: "vip_vip_up_gold_growth", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Get 200% golds per game
+      /// 
+      /// Locales: en
+      static let vip_mvp_gold_growth = Rswift.StringResource(key: "vip_mvp_gold_growth", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Get reward after login
+      /// 
+      /// Locales: en
+      static let sign_in_after_login = Rswift.StringResource(key: "sign_in_after_login", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Golds
+      /// 
+      /// Locales: en
+      static let recharge_gold = Rswift.StringResource(key: "recharge_gold", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Golds Gift
+      /// 
+      /// Locales: en
+      static let golds_gift = Rswift.StringResource(key: "golds_gift", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Golds not enough
+      /// 
+      /// Locales: en
+      static let golds_not_enough = Rswift.StringResource(key: "golds_not_enough", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Google Pay
+      /// 
+      /// Locales: en
+      static let recharge_record_google_pay = Rswift.StringResource(key: "recharge_record_google_pay", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Google Refund
+      /// 
+      /// Locales: en
+      static let recharge_record_google_refund = Rswift.StringResource(key: "recharge_record_google_refund", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Had no this decoration now
+      /// 
+      /// Locales: en
+      static let the_system_has_no_the_decoration = Rswift.StringResource(key: "the_system_has_no_the_decoration", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Handover chief
+      /// 
+      /// Locales: en
+      static let tribe_transform_chief = Rswift.StringResource(key: "tribe_transform_chief", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Have not played the game yet
+      /// 
+      /// Locales: en
+      static let without_play_game = Rswift.StringResource(key: "without_play_game", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Help
+      /// 
+      /// Locales: en
+      static let help = Rswift.StringResource(key: "help", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Hold:
+      /// 
+      /// Locales: en
+      static let tribe_retain = Rswift.StringResource(key: "tribe_retain", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Images  Cache
+      /// 
+      /// Locales: en
+      static let image_cache = Rswift.StringResource(key: "image_cache", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: In progress
+      /// 
+      /// Locales: en
+      static let tribe_task_doing = Rswift.StringResource(key: "tribe_task_doing", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Inadequate golds, cost 60 bcubes to create a clan?
+      /// 
+      /// Locales: en
+      static let tribe_create_not_enough_gold_then_use_diamond = Rswift.StringResource(key: "tribe_create_not_enough_gold_then_use_diamond", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Individual
+      /// 
+      /// Locales: en
+      static let tribe_task_personal = Rswift.StringResource(key: "tribe_task_personal", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Input email
+      /// 
+      /// Locales: en
+      static let input_email = Rswift.StringResource(key: "input_email", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Input new password
+      /// 
+      /// Locales: en
+      static let input_new_password = Rswift.StringResource(key: "input_new_password", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Input nickname
+      /// 
+      /// Locales: en
+      static let input_nickname = Rswift.StringResource(key: "input_nickname", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Input origin password
+      /// 
+      /// Locales: en
+      static let input_origin_password = Rswift.StringResource(key: "input_origin_password", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Input verification code
+      /// 
+      /// Locales: en
+      static let input_verification_code = Rswift.StringResource(key: "input_verification_code", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Insufficient balance  Top up
+      /// 
+      /// Locales: en
+      static let balance_not_enough_then_recharge = Rswift.StringResource(key: "balance_not_enough_then_recharge", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Introduce
+      /// 
+      /// Locales: en
+      static let game_introduce = Rswift.StringResource(key: "game_introduce", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Introduce yourself
+      /// 
+      /// Locales: en
+      static let add_friend_tips = Rswift.StringResource(key: "add_friend_tips", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Introduce yourself
+      /// 
+      /// Locales: en
+      static let introduce_yourself = Rswift.StringResource(key: "introduce_yourself", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Introduction
+      /// 
+      /// Locales: en
+      static let title_introduction = Rswift.StringResource(key: "title_introduction", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Introduction
+      /// 
+      /// Locales: en
+      static let tribe_introduction = Rswift.StringResource(key: "tribe_introduction", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Introduction: 
+      /// 
+      /// Locales: en
+      static let introduction = Rswift.StringResource(key: "introduction", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Invite friend
+      /// 
+      /// Locales: en
+      static let tribe_invite_friends = Rswift.StringResource(key: "tribe_invite_friends", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Invite successfully
+      /// 
+      /// Locales: en
+      static let tribe_invite_successful = Rswift.StringResource(key: "tribe_invite_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Invite you to join %@ clan
+      /// 
+      /// Locales: en
+      static let tribe_notice_invite_you_to_join = Rswift.StringResource(key: "tribe_notice_invite_you_to_join", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Jail Break
+      /// 
+      /// Locales: en
+      static let g1014 = Rswift.StringResource(key: "g1014", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Join clan
+      /// 
+      /// Locales: en
+      static let tribe_request_join = Rswift.StringResource(key: "tribe_request_join", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Join game
+      /// 
+      /// Locales: en
+      static let enter_game = Rswift.StringResource(key: "enter_game", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Join game failed, please retry
+      /// 
+      /// Locales: en
+      static let enter_game_fail_retry = Rswift.StringResource(key: "enter_game_fail_retry", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: LV%d Unlock
+      /// 
+      /// Locales: en
+      static let tribe_decoration_level_unlock = Rswift.StringResource(key: "tribe_decoration_level_unlock", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Labels can not be empty
+      /// 
+      /// Locales: en
+      static let tribe_labels_not_empty = Rswift.StringResource(key: "tribe_labels_not_empty", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Leaderboard
+      /// 
+      /// Locales: en
+      static let tribe_rank = Rswift.StringResource(key: "tribe_rank", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Likes
+      /// 
+      /// Locales: en
+      static let appreciate = Rswift.StringResource(key: "appreciate", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Likes already
+      /// 
+      /// Locales: en
+      static let you_have_been_appreciate = Rswift.StringResource(key: "you_have_been_appreciate", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Limit of friends increase
+      /// 
+      /// Locales: en
+      static let vip_mvp_friend_num = Rswift.StringResource(key: "vip_mvp_friend_num", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Limit of gold daily *1.5
+      /// 
+      /// Locales: en
+      static let vip_vip_gold_1 = Rswift.StringResource(key: "vip_vip_gold_1", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Limit of gold daily *2
+      /// 
+      /// Locales: en
+      static let vip_vip_up_gold_2 = Rswift.StringResource(key: "vip_vip_up_gold_2", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Limit of gold daily *3
+      /// 
+      /// Locales: en
+      static let vip_mvp_gold_3 = Rswift.StringResource(key: "vip_mvp_gold_3", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Loading....
+      /// 
+      /// Locales: en
+      static let loading = Rswift.StringResource(key: "loading", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Log out account?
+      /// 
+      /// Locales: en
+      static let is_sure_log_out = Rswift.StringResource(key: "is_sure_log_out", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Long press to edit member
+      /// 
+      /// Locales: en
+      static let tribe_longpress_manage_member = Rswift.StringResource(key: "tribe_longpress_manage_member", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Low VIP level, please upgrade VIP level
+      /// 
+      /// Locales: en
+      static let vip_level_not_enough_then_payment = Rswift.StringResource(key: "vip_level_not_enough_then_payment", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: MVP 20%OFF: 
+      /// 
+      /// Locales: en
+      static let shop_car_mvp_discount = Rswift.StringResource(key: "shop_car_mvp_discount", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Mail
+      /// 
+      /// Locales: en
+      static let mail = Rswift.StringResource(key: "mail", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Mail will be deleted after 15 days
+      /// 
+      /// Locales: en
+      static let mail_delete_after_fifteen_days = Rswift.StringResource(key: "mail_delete_after_fifteen_days", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Mailbox
+      /// 
+      /// Locales: en
+      static let mailbox = Rswift.StringResource(key: "mailbox", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Male
+      /// 
+      /// Locales: en
+      static let male = Rswift.StringResource(key: "male", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Manage member
+      /// 
+      /// Locales: en
+      static let tribe_manage_member = Rswift.StringResource(key: "tribe_manage_member", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Maps  Cache
+      /// 
+      /// Locales: en
+      static let map_cache = Rswift.StringResource(key: "map_cache", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Maximum number of friends reached
+      /// 
+      /// Locales: en
+      static let friend_count_limit = Rswift.StringResource(key: "friend_count_limit", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Member
+      /// 
+      /// Locales: en
+      static let tribe_member_count = Rswift.StringResource(key: "tribe_member_count", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Member list (%d/%d)
+      /// 
+      /// Locales: en
+      static let tribe_member_list = Rswift.StringResource(key: "tribe_member_list", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Member%d/%d
+      /// 
+      /// Locales: en
+      static let tribe_list_member_count = Rswift.StringResource(key: "tribe_list_member_count", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Modify
+      /// 
+      /// Locales: en
+      static let tap_to_modify = Rswift.StringResource(key: "tap_to_modify", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Modify
+      /// 
+      /// Locales: en
+      static let tribe_modify_information = Rswift.StringResource(key: "tribe_modify_information", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Modify Password
+      /// 
+      /// Locales: en
+      static let modify_password = Rswift.StringResource(key: "modify_password", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Modify clan
+      /// 
+      /// Locales: en
+      static let tribe_modify = Rswift.StringResource(key: "tribe_modify", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Modify failed,please retry
+      /// 
+      /// Locales: en
+      static let modify_fail_retry = Rswift.StringResource(key: "modify_fail_retry", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Modify succeed
+      /// 
+      /// Locales: en
+      static let modify_success = Rswift.StringResource(key: "modify_success", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Modify successful
+      /// 
+      /// Locales: en
+      static let modify_alias_successful = Rswift.StringResource(key: "modify_alias_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Modify successfully
+      /// 
+      /// Locales: en
+      static let tribe_modify_successful = Rswift.StringResource(key: "tribe_modify_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Month
+      /// 
+      /// Locales: en
+      static let month = Rswift.StringResource(key: "month", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Monthly
+      /// 
+      /// Locales: en
+      static let tribe_rank_month = Rswift.StringResource(key: "tribe_rank_month", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: More
+      /// 
+      /// Locales: en
+      static let tab_title_profile = Rswift.StringResource(key: "tab_title_profile", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Msg send failed
+      /// 
+      /// Locales: en
+      static let the_msg_send_fail = Rswift.StringResource(key: "the_msg_send_fail", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Murder Mystery
+      /// 
+      /// Locales: en
+      static let g1009 = Rswift.StringResource(key: "g1009", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Network lost, please check
+      /// 
+      /// Locales: en
+      static let network_lost_please_check = Rswift.StringResource(key: "network_lost_please_check", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: New Friends
+      /// 
+      /// Locales: en
+      static let new_friends = Rswift.StringResource(key: "new_friends", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Next
+      /// 
+      /// Locales: en
+      static let next_step = Rswift.StringResource(key: "next_step", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Nickname
+      /// 
+      /// Locales: en
+      static let nickname = Rswift.StringResource(key: "nickname", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Nickname can not modify now
+      /// 
+      /// Locales: en
+      static let nickname_can_not_modify = Rswift.StringResource(key: "nickname_can_not_modify", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Nickname exist
+      /// 
+      /// Locales: en
+      static let the_nickname_exist = Rswift.StringResource(key: "the_nickname_exist", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Nickname not valid
+      /// 
+      /// Locales: en
+      static let the_nickname_not_valid = Rswift.StringResource(key: "the_nickname_not_valid", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: No authority
+      /// 
+      /// Locales: en
+      static let tribe_no_permisson = Rswift.StringResource(key: "tribe_no_permisson", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: No conversation. Start Chatting with friends
+      /// 
+      /// Locales: en
+      static let no_conversation_start_chatting = Rswift.StringResource(key: "no_conversation_start_chatting", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: No data
+      /// 
+      /// Locales: en
+      static let no_data = Rswift.StringResource(key: "no_data", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: No data, tap to retry
+      /// 
+      /// Locales: en
+      static let no_data_tap_rety = Rswift.StringResource(key: "no_data_tap_rety", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: No history
+      /// 
+      /// Locales: en
+      static let tribe_no_donate_history = Rswift.StringResource(key: "tribe_no_donate_history", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: No more than 4 tags
+      /// 
+      /// Locales: en
+      static let tribe_only_add_four_labels = Rswift.StringResource(key: "tribe_only_add_four_labels", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: No permission,please login
+      /// 
+      /// Locales: en
+      static let no_permission = Rswift.StringResource(key: "no_permission", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: No results
+      /// 
+      /// Locales: en
+      static let no_search_result = Rswift.StringResource(key: "no_search_result", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: No tag
+      /// 
+      /// Locales: en
+      static let tribe_no_labels = Rswift.StringResource(key: "tribe_no_labels", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Notice
+      /// 
+      /// Locales: en
+      static let message_notification = Rswift.StringResource(key: "message_notification", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Notice
+      /// 
+      /// Locales: en
+      static let tribe_notice = Rswift.StringResource(key: "tribe_notice", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Notice board
+      /// 
+      /// Locales: en
+      static let tribe_bulletin = Rswift.StringResource(key: "tribe_bulletin", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Notification
+      /// 
+      /// Locales: en
+      static let common_notification = Rswift.StringResource(key: "common_notification", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Offline
+      /// 
+      /// Locales: en
+      static let offline = Rswift.StringResource(key: "offline", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Online
+      /// 
+      /// Locales: en
+      static let online = Rswift.StringResource(key: "online", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Only chief can dissolve
+      /// 
+      /// Locales: en
+      static let tribe_dissolve_only_chief_or_elder = Rswift.StringResource(key: "tribe_dissolve_only_chief_or_elder", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Only chief can manage elder
+      /// 
+      /// Locales: en
+      static let tribe_only_chief_can_operate_elder = Rswift.StringResource(key: "tribe_only_chief_can_operate_elder", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Only chief or elder can accept task
+      /// 
+      /// Locales: en
+      static let tribe_only_chief_or_elder_can_receive_task = Rswift.StringResource(key: "tribe_only_chief_or_elder_can_receive_task", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Only chief or elder can refresh task
+      /// 
+      /// Locales: en
+      static let tribe_only_chief_or_elder_can_refresh_task = Rswift.StringResource(key: "tribe_only_chief_or_elder_can_refresh_task", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Open
+      /// 
+      /// Locales: en
+      static let vip_pay_open_vip = Rswift.StringResource(key: "vip_pay_open_vip", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Open VIP
+      /// 
+      /// Locales: en
+      static let vip_pay_title = Rswift.StringResource(key: "vip_pay_title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Open/Renew
+      /// 
+      /// Locales: en
+      static let vip_pay_open = Rswift.StringResource(key: "vip_pay_open", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Overall
+      /// 
+      /// Locales: en
+      static let tribe_rank_all = Rswift.StringResource(key: "tribe_rank_all", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: PVP
+      /// 
+      /// Locales: en
+      static let category_pvp = Rswift.StringResource(key: "category_pvp", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Password
+      /// 
+      /// Locales: en
+      static let account_password = Rswift.StringResource(key: "account_password", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Password
+      /// 
+      /// Locales: en
+      static let password = Rswift.StringResource(key: "password", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Password format is not valid
+      /// 
+      /// Locales: en
+      static let password_format_not_valid = Rswift.StringResource(key: "password_format_not_valid", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Password is wrong
+      /// 
+      /// Locales: en
+      static let the_password_error = Rswift.StringResource(key: "the_password_error", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Password not match
+      /// 
+      /// Locales: en
+      static let password_not_match = Rswift.StringResource(key: "password_not_match", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Pay failed
+      /// 
+      /// Locales: en
+      static let decoration_pay_failed = Rswift.StringResource(key: "decoration_pay_failed", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Pay succeed, dress now?
+      /// 
+      /// Locales: en
+      static let decoration_pay_successful = Rswift.StringResource(key: "decoration_pay_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Pay successful
+      /// 
+      /// Locales: en
+      static let pay_successful = Rswift.StringResource(key: "pay_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Phone Binding
+      /// 
+      /// Locales: en
+      static let bind_phone = Rswift.StringResource(key: "bind_phone", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Phone number format is not valid
+      /// 
+      /// Locales: en
+      static let phone_number_format_not_valid = Rswift.StringResource(key: "phone_number_format_not_valid", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Phone number has been used
+      /// 
+      /// Locales: en
+      static let the_phone_has_been_used = Rswift.StringResource(key: "the_phone_has_been_used", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Phone number not bind account
+      /// 
+      /// Locales: en
+      static let the_phone_not_bind_account = Rswift.StringResource(key: "the_phone_not_bind_account", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Phone_number
+      /// 
+      /// Locales: en
+      static let phone_number = Rswift.StringResource(key: "phone_number", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Photo Library
+      /// 
+      /// Locales: en
+      static let common_photo_library = Rswift.StringResource(key: "common_photo_library", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Play Game
+      /// 
+      /// Locales: en
+      static let recharge_record_fetch_from_game = Rswift.StringResource(key: "recharge_record_fetch_from_game", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Play this game after login
+      /// 
+      /// Locales: en
+      static let play_game_after_login = Rswift.StringResource(key: "play_game_after_login", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Popular
+      /// 
+      /// Locales: en
+      static let popular = Rswift.StringResource(key: "popular", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Portrait
+      /// 
+      /// Locales: en
+      static let portrait = Rswift.StringResource(key: "portrait", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Price
+      /// 
+      /// Locales: en
+      static let recharge_price = Rswift.StringResource(key: "recharge_price", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Privileged object
+      /// 
+      /// Locales: en
+      static let vip_detail_target = Rswift.StringResource(key: "vip_detail_target", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Privileges details
+      /// 
+      /// Locales: en
+      static let vip_detail_title = Rswift.StringResource(key: "vip_detail_title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Product request failed
+      /// 
+      /// Locales: en
+      static let apppurchase_product_request_fail = Rswift.StringResource(key: "apppurchase_product_request_fail", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Profile detail
+      /// 
+      /// Locales: en
+      static let title_profile_detail = Rswift.StringResource(key: "title_profile_detail", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Purchase Decorations
+      /// 
+      /// Locales: en
+      static let recharge_record_buy_decoration = Rswift.StringResource(key: "recharge_record_buy_decoration", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Purchase Game Props
+      /// 
+      /// Locales: en
+      static let recharge_record_game_buy_props = Rswift.StringResource(key: "recharge_record_game_buy_props", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Purchase Product Failed
+      /// 
+      /// Locales: en
+      static let recharge_record_purchase_fail_refund = Rswift.StringResource(key: "recharge_record_purchase_fail_refund", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Purchased
+      /// 
+      /// Locales: en
+      static let decoration_has_purchased = Rswift.StringResource(key: "decoration_has_purchased", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Purchased after login
+      /// 
+      /// Locales: en
+      static let buy_after_login = Rswift.StringResource(key: "buy_after_login", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Quit clan
+      /// 
+      /// Locales: en
+      static let tribe_exit = Rswift.StringResource(key: "tribe_exit", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Reached daily limit
+      /// 
+      /// Locales: en
+      static let tribe_member_join_in_day_limit = Rswift.StringResource(key: "tribe_member_join_in_day_limit", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Reached daily limit of added members
+      /// 
+      /// Locales: en
+      static let tribe_new_add_member_in_day_limit = Rswift.StringResource(key: "tribe_new_add_member_in_day_limit", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Reached daily limit of rewards
+      /// 
+      /// Locales: en
+      static let tribe_receive_task_reward_in_day_limit = Rswift.StringResource(key: "tribe_receive_task_reward_in_day_limit", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Reached donation limit
+      /// 
+      /// Locales: en
+      static let tribe_donate_limit = Rswift.StringResource(key: "tribe_donate_limit", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Reached limit of elders
+      /// 
+      /// Locales: en
+      static let tribe_elder_count_limit = Rswift.StringResource(key: "tribe_elder_count_limit", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Reached limit of invitation
+      /// 
+      /// Locales: en
+      static let tribe_invite_count_limit = Rswift.StringResource(key: "tribe_invite_count_limit", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Reached maximum members
+      /// 
+      /// Locales: en
+      static let tribe_member_full = Rswift.StringResource(key: "tribe_member_full", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Receive
+      /// 
+      /// Locales: en
+      static let receive = Rswift.StringResource(key: "receive", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Receive success
+      /// 
+      /// Locales: en
+      static let common_receive_success = Rswift.StringResource(key: "common_receive_success", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Received
+      /// 
+      /// Locales: en
+      static let has_received = Rswift.StringResource(key: "has_received", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Recently
+      /// 
+      /// Locales: en
+      static let recently_playing = Rswift.StringResource(key: "recently_playing", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Recommend
+      /// 
+      /// Locales: en
+      static let recommend = Rswift.StringResource(key: "recommend", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Recommend
+      /// 
+      /// Locales: en
+      static let section_recommend = Rswift.StringResource(key: "section_recommend", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Recycle Decoration
+      /// 
+      /// Locales: en
+      static let recharge_record_recycle_decoration = Rswift.StringResource(key: "recharge_record_recycle_decoration", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Refresh tasks in
+      /// 
+      /// Locales: en
+      static let tribe_task_remain_time_refresh = Rswift.StringResource(key: "tribe_task_remain_time_refresh", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Refuse
+      /// 
+      /// Locales: en
+      static let reject_request = Rswift.StringResource(key: "reject_request", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Refused
+      /// 
+      /// Locales: en
+      static let request_rejected = Rswift.StringResource(key: "request_rejected", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Register
+      /// 
+      /// Locales: en
+      static let register = Rswift.StringResource(key: "register", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Register succeed
+      /// 
+      /// Locales: en
+      static let register_success = Rswift.StringResource(key: "register_success", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Remaining
+      /// 
+      /// Locales: en
+      static let decoration_remain_quantity = Rswift.StringResource(key: "decoration_remain_quantity", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Remaining time of Season: 
+      /// 
+      /// Locales: en
+      static let tribe_rank_remain_time = Rswift.StringResource(key: "tribe_rank_remain_time", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Remember account and password
+      /// 
+      /// Locales: en
+      static let remember_your_account_password = Rswift.StringResource(key: "remember_your_account_password", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Remove Elder
+      /// 
+      /// Locales: en
+      static let tribe_transform_member = Rswift.StringResource(key: "tribe_transform_member", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Remove member
+      /// 
+      /// Locales: en
+      static let tribe_remove = Rswift.StringResource(key: "tribe_remove", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Repeat new password
+      /// 
+      /// Locales: en
+      static let double_input_new_password = Rswift.StringResource(key: "double_input_new_password", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Restore unfinished transaction
+      /// 
+      /// Locales: en
+      static let apppurchase_resolve_unfinished_transaction = Rswift.StringResource(key: "apppurchase_resolve_unfinished_transaction", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Return 10 diamonds daily
+      /// 
+      /// Locales: en
+      static let vip_mvp_diamond_gift = Rswift.StringResource(key: "vip_mvp_diamond_gift", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Return 3 diamonds daily
+      /// 
+      /// Locales: en
+      static let vip_vip_up_diamond_gift = Rswift.StringResource(key: "vip_vip_up_diamond_gift", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: SIM
+      /// 
+      /// Locales: en
+      static let category_manage = Rswift.StringResource(key: "category_manage", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: STG
+      /// 
+      /// Locales: en
+      static let category_gun = Rswift.StringResource(key: "category_gun", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Save
+      /// 
+      /// Locales: en
+      static let save_screenshot = Rswift.StringResource(key: "save_screenshot", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Save failed.Please retry
+      /// 
+      /// Locales: en
+      static let save_fail_retry = Rswift.StringResource(key: "save_fail_retry", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Save succeed
+      /// 
+      /// Locales: en
+      static let save_success = Rswift.StringResource(key: "save_success", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Select
+      /// 
+      /// Locales: en
+      static let please_select = Rswift.StringResource(key: "please_select", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Select
+      /// 
+      /// Locales: en
+      static let recharge_select_product = Rswift.StringResource(key: "recharge_select_product", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Send message
+      /// 
+      /// Locales: en
+      static let send_Message = Rswift.StringResource(key: "send_Message", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Send succeed.Please check mail
+      /// 
+      /// Locales: en
+      static let send_success_check_mail = Rswift.StringResource(key: "send_success_check_mail", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Send successful
+      /// 
+      /// Locales: en
+      static let request_send_successful = Rswift.StringResource(key: "request_send_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Set as elder
+      /// 
+      /// Locales: en
+      static let tribe_transform_elder = Rswift.StringResource(key: "tribe_transform_elder", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Setting
+      /// 
+      /// Locales: en
+      static let setting = Rswift.StringResource(key: "setting", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Shop
+      /// 
+      /// Locales: en
+      static let shop = Rswift.StringResource(key: "shop", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Shop
+      /// 
+      /// Locales: en
+      static let tribe_shop = Rswift.StringResource(key: "tribe_shop", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Shop cart
+      /// 
+      /// Locales: en
+      static let shop_cart = Rswift.StringResource(key: "shop_cart", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Shopping cart
+      /// 
+      /// Locales: en
+      static let title_shopping_cart = Rswift.StringResource(key: "title_shopping_cart", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Skin color switching (few)
+      /// 
+      /// Locales: en
+      static let vip_vip_up_change_skin = Rswift.StringResource(key: "vip_vip_up_change_skin", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Skin color switching (many)
+      /// 
+      /// Locales: en
+      static let vip_mvp_change_skin = Rswift.StringResource(key: "vip_mvp_change_skin", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Sky Wars
+      /// 
+      /// Locales: en
+      static let g1002 = Rswift.StringResource(key: "g1002", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Snow Ball 100 Kills
+      /// 
+      /// Locales: en
+      static let g1012 = Rswift.StringResource(key: "g1012", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Snow Ball Battle
+      /// 
+      /// Locales: en
+      static let g1011 = Rswift.StringResource(key: "g1011", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Special task
+      /// 
+      /// Locales: en
+      static let special_task = Rswift.StringResource(key: "special_task", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Succeed
+      /// 
+      /// Locales: en
+      static let add_successful = Rswift.StringResource(key: "add_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Succeed
+      /// 
+      /// Locales: en
+      static let common_success = Rswift.StringResource(key: "common_success", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Succeed
+      /// 
+      /// Locales: en
+      static let recharge_already_pay = Rswift.StringResource(key: "recharge_already_pay", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Survival Games
+      /// 
+      /// Locales: en
+      static let g1001 = Rswift.StringResource(key: "g1001", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: TNT Run
+      /// 
+      /// Locales: en
+      static let g1010 = Rswift.StringResource(key: "g1010", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Tag
+      /// 
+      /// Locales: en
+      static let tribe_label = Rswift.StringResource(key: "tribe_label", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Team
+      /// 
+      /// Locales: en
+      static let tribe_task_tribal = Rswift.StringResource(key: "tribe_task_tribal", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: The account has bind email
+      /// 
+      /// Locales: en
+      static let account_has_bind_email = Rswift.StringResource(key: "account_has_bind_email", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: The email has been used
+      /// 
+      /// Locales: en
+      static let email_has_been_used = Rswift.StringResource(key: "email_has_been_used", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: The email isn't bind account
+      /// 
+      /// Locales: en
+      static let email_not_bind_user = Rswift.StringResource(key: "email_not_bind_user", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: The first load may take more time
+      /// 
+      /// Locales: en
+      static let first_load_take_more_time = Rswift.StringResource(key: "first_load_take_more_time", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: The remaining VIP days will be converted to the equivalent days of higher level after upgrade
+      /// 
+      /// Locales: en
+      static let vip_upgrade_retain_exchange = Rswift.StringResource(key: "vip_upgrade_retain_exchange", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Third party login
+      /// 
+      /// Locales: en
+      static let third_party_log_in = Rswift.StringResource(key: "third_party_log_in", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Third-Party Payment
+      /// 
+      /// Locales: en
+      static let recharge_record_third_pay = Rswift.StringResource(key: "recharge_record_third_pay", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Third-Party Payment Refund
+      /// 
+      /// Locales: en
+      static let recharge_record_third_refund = Rswift.StringResource(key: "recharge_record_third_refund", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: This member hasn't joined clan
+      /// 
+      /// Locales: en
+      static let tribe_the_removed_user_not_in_triube = Rswift.StringResource(key: "tribe_the_removed_user_not_in_triube", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: This member is not in clan
+      /// 
+      /// Locales: en
+      static let tribe_the_user_not_in_tribe = Rswift.StringResource(key: "tribe_the_user_not_in_tribe", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Tips
+      /// 
+      /// Locales: en
+      static let notification = Rswift.StringResource(key: "notification", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Tips：VIP+ get 10% off，MVP get 20% off
+      /// 
+      /// Locales: en
+      static let shop_car_vip_discount_tips = Rswift.StringResource(key: "shop_car_vip_discount_tips", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Top Up
+      /// 
+      /// Locales: en
+      static let top_up = Rswift.StringResource(key: "top_up", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Top up
+      /// 
+      /// Locales: en
+      static let recharge = Rswift.StringResource(key: "recharge", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Top up after login
+      /// 
+      /// Locales: en
+      static let recharge_after_login = Rswift.StringResource(key: "recharge_after_login", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Top-up gift
+      /// 
+      /// Locales: en
+      static let vip_diamonds_gift = Rswift.StringResource(key: "vip_diamonds_gift", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Total: 
+      /// 
+      /// Locales: en
+      static let decoration_shopcart_total = Rswift.StringResource(key: "decoration_shopcart_total", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Treasure Hunter
+      /// 
+      /// Locales: en
+      static let g1015 = Rswift.StringResource(key: "g1015", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Tribe
+      /// 
+      /// Locales: en
+      static let tab_title_tribe = Rswift.StringResource(key: "tab_title_tribe", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Unable to purchase a VIP lower than yours
+      /// 
+      /// Locales: en
+      static let unable_pay_vip_lower_than_yours = Rswift.StringResource(key: "unable_pay_vip_lower_than_yours", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Unbind email?
+      /// 
+      /// Locales: en
+      static let is_unbind_email = Rswift.StringResource(key: "is_unbind_email", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Unbinding
+      /// 
+      /// Locales: en
+      static let unbind = Rswift.StringResource(key: "unbind", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Unknown
+      /// 
+      /// Locales: en
+      static let recharge_record_unknown = Rswift.StringResource(key: "recharge_record_unknown", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Unknown message type
+      /// 
+      /// Locales: en
+      static let unknown_message_type = Rswift.StringResource(key: "unknown_message_type", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Update after %@
+      /// 
+      /// Locales: en
+      static let daily_reward_update_after_time = Rswift.StringResource(key: "daily_reward_update_after_time", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Upgrade
+      /// 
+      /// Locales: en
+      static let vip_pay_renew_vip = Rswift.StringResource(key: "vip_pay_renew_vip", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Upgrade to VIP+、MVP for more discount
+      /// 
+      /// Locales: en
+      static let vip_discount_text = Rswift.StringResource(key: "vip_discount_text", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Upload
+      /// 
+      /// Locales: en
+      static let upload_portrait = Rswift.StringResource(key: "upload_portrait", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Upload failed,please retry
+      /// 
+      /// Locales: en
+      static let upload_fail_retry = Rswift.StringResource(key: "upload_fail_retry", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Upload succeed
+      /// 
+      /// Locales: en
+      static let upload_success = Rswift.StringResource(key: "upload_success", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: VIP extra gift %@ Bcube
+      /// 
+      /// Locales: en
+      static let recharge_gift_more = Rswift.StringResource(key: "recharge_gift_more", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: VIP+ 10%OFF: 
+      /// 
+      /// Locales: en
+      static let shop_car_vip_plus_discount = Rswift.StringResource(key: "shop_car_vip_plus_discount", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Verification code error
+      /// 
+      /// Locales: en
+      static let the_verification_code_error = Rswift.StringResource(key: "the_verification_code_error", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Verofication code format not valid
+      /// 
+      /// Locales: en
+      static let verofication_code_format_not_valid = Rswift.StringResource(key: "verofication_code_format_not_valid", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Version
+      /// 
+      /// Locales: en
+      static let version = Rswift.StringResource(key: "version", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Version is too low, please update
+      /// 
+      /// Locales: en
+      static let game_version_too_low = Rswift.StringResource(key: "game_version_too_low", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Video Load failed, close then retry
+      /// 
+      /// Locales: en
+      static let video_load_failed_close_retry = Rswift.StringResource(key: "video_load_failed_close_retry", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Waiting for server to dispatch resources   %@
+      /// 
+      /// Locales: en
+      static let game_dispatch_in_queue_time = Rswift.StringResource(key: "game_dispatch_in_queue_time", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: We have been friends. Start chatting
+      /// 
+      /// Locales: en
+      static let we_are_friend_start_chatting = Rswift.StringResource(key: "we_are_friend_start_chatting", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Weekly
+      /// 
+      /// Locales: en
+      static let tribe_rank_week = Rswift.StringResource(key: "tribe_rank_week", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Write something
+      /// 
+      /// Locales: en
+      static let tribe_say_something = Rswift.StringResource(key: "tribe_say_something", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Year
+      /// 
+      /// Locales: en
+      static let year = Rswift.StringResource(key: "year", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: You are in a clan
+      /// 
+      /// Locales: en
+      static let tribe_you_have_in = Rswift.StringResource(key: "tribe_you_have_in", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: You are not chief or elder
+      /// 
+      /// Locales: en
+      static let tribe_you_are_not_chief_or_elder = Rswift.StringResource(key: "tribe_you_are_not_chief_or_elder", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: You are promoted to elder
+      /// 
+      /// Locales: en
+      static let tribe_notice_you_have_been_elder = Rswift.StringResource(key: "tribe_notice_you_have_been_elder", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: You are removed
+      /// 
+      /// Locales: en
+      static let tribe_notice_you_have_been_remove = Rswift.StringResource(key: "tribe_notice_you_have_been_remove", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: You can chat with clan members,unlock more free avatars after creating or joining clan.These are the clans we recommended for you!
+      /// 
+      /// Locales: en
+      static let tribe_no_like_then_create_one = Rswift.StringResource(key: "tribe_no_like_then_create_one", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: You do not authorize this application to access the device's album, please go to "Settings" for authorization.
+      /// 
+      /// Locales: en
+      static let no_permission_album_go_settings = Rswift.StringResource(key: "no_permission_album_go_settings", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: You dont have this decoration
+      /// 
+      /// Locales: en
+      static let you_dont_have_decoration = Rswift.StringResource(key: "you_dont_have_decoration", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: You have already received this reward
+      /// 
+      /// Locales: en
+      static let daily_task_already_received = Rswift.StringResource(key: "daily_task_already_received", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: You have been chief
+      /// 
+      /// Locales: en
+      static let tribe_notice_you_have_been_chief = Rswift.StringResource(key: "tribe_notice_you_have_been_chief", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: You have no mails yet
+      /// 
+      /// Locales: en
+      static let have_no_mails = Rswift.StringResource(key: "have_no_mails", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: You have reached daily maximum tasks
+      /// 
+      /// Locales: en
+      static let tribe_receive_task_in_day_limit = Rswift.StringResource(key: "tribe_receive_task_in_day_limit", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: You haven't join any clan
+      /// 
+      /// Locales: en
+      static let tribe_you_not_in = Rswift.StringResource(key: "tribe_you_not_in", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Zombies infection
+      /// 
+      /// Locales: en
+      static let g1013 = Rswift.StringResource(key: "g1013", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: has dissolved clan
+      /// 
+      /// Locales: en
+      static let tribe_have_dissolved = Rswift.StringResource(key: "tribe_have_dissolved", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: has quited clan
+      /// 
+      /// Locales: en
+      static let tribe_have_exited = Rswift.StringResource(key: "tribe_have_exited", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: login
+      /// 
+      /// Locales: en
+      static let log_in = Rswift.StringResource(key: "log_in", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: upload failed
+      /// 
+      /// Locales: en
+      static let upload_fail = Rswift.StringResource(key: "upload_fail", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      
+      /// en translation:    Friend list(%d/%d)
+      /// 
+      /// Locales: en
+      static func friends_count(_ value1: Int, _ value2: Int) -> String {
+        return String(format: NSLocalizedString("friends_count", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1, value2)
+      }
+      
+      /// en translation:    Title: 
+      /// 
+      /// Locales: en
+      static func mail_title(_: Void = ()) -> String {
+        return NSLocalizedString("mail_title", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: %@ Level task
+      /// 
+      /// Locales: en
+      static func tribe_task_for_level(_ value1: String) -> String {
+        return String(format: NSLocalizedString("tribe_task_for_level", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: %@ in game
+      /// 
+      /// Locales: en
+      static func playing_game(_ value1: String) -> String {
+        return String(format: NSLocalizedString("playing_game", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: (More than 3 digits or letters)
+      /// 
+      /// Locales: en
+      static func more_than_three_digits_or_letters(_: Void = ()) -> String {
+        return NSLocalizedString("more_than_three_digits_or_letters", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: (More than 6 digits or letters)
+      /// 
+      /// Locales: en
+      static func more_than_six_digits_or_letters(_: Void = ()) -> String {
+        return NSLocalizedString("more_than_six_digits_or_letters", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: 10% discount buy decoration
+      /// 
+      /// Locales: en
+      static func vip_vip_up_discount(_: Void = ()) -> String {
+        return NSLocalizedString("vip_vip_up_discount", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: 20% discount buy decoration
+      /// 
+      /// Locales: en
+      static func vip_mvp_discount(_: Void = ()) -> String {
+        return NSLocalizedString("vip_mvp_discount", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: AVG
+      /// 
+      /// Locales: en
+      static func category_adventure(_: Void = ()) -> String {
+        return NSLocalizedString("category_adventure", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: About Blockman go
+      /// 
+      /// Locales: en
+      static func about_me(_: Void = ()) -> String {
+        return NSLocalizedString("about_me", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Accept
+      /// 
+      /// Locales: en
+      static func accept_request(_: Void = ()) -> String {
+        return NSLocalizedString("accept_request", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Accept
+      /// 
+      /// Locales: en
+      static func tribe_task_receive(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_task_receive", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Accepted
+      /// 
+      /// Locales: en
+      static func request_accepted(_: Void = ()) -> String {
+        return NSLocalizedString("request_accepted", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Account
+      /// 
+      /// Locales: en
+      static func account(_: Void = ()) -> String {
+        return NSLocalizedString("account", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Account
+      /// 
+      /// Locales: en
+      static func account_name(_: Void = ()) -> String {
+        return NSLocalizedString("account_name", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Account and security
+      /// 
+      /// Locales: en
+      static func account_and_security(_: Void = ()) -> String {
+        return NSLocalizedString("account_and_security", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Account exist
+      /// 
+      /// Locales: en
+      static func the_account_exist(_: Void = ()) -> String {
+        return NSLocalizedString("the_account_exist", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Account exist already
+      /// 
+      /// Locales: en
+      static func has_already_account(_: Void = ()) -> String {
+        return NSLocalizedString("has_already_account", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Account not exist
+      /// 
+      /// Locales: en
+      static func the_account_not_exist(_: Void = ()) -> String {
+        return NSLocalizedString("the_account_not_exist", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Add
+      /// 
+      /// Locales: en
+      static func add_friend(_: Void = ()) -> String {
+        return NSLocalizedString("add_friend", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Add new friends
+      /// 
+      /// Locales: en
+      static func search_new_friend(_: Void = ()) -> String {
+        return NSLocalizedString("search_new_friend", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Add note
+      /// 
+      /// Locales: en
+      static func add_alias(_: Void = ()) -> String {
+        return NSLocalizedString("add_alias", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Add tag
+      /// 
+      /// Locales: en
+      static func tribe_add_labels(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_add_labels", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Added time
+      /// 
+      /// Locales: en
+      static func online_time(_: Void = ()) -> String {
+        return NSLocalizedString("online_time", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: All
+      /// 
+      /// Locales: en
+      static func category_all(_: Void = ()) -> String {
+        return NSLocalizedString("category_all", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Already in clan
+      /// 
+      /// Locales: en
+      static func tribe_user_have_in(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_user_have_in", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: App logo
+      /// 
+      /// Locales: en
+      static func vip_mvp_app_logo(_: Void = ()) -> String {
+        return NSLocalizedString("vip_mvp_app_logo", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Apple Pay
+      /// 
+      /// Locales: en
+      static func recharge_record_apple_pay(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_record_apple_pay", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Apply successfully
+      /// 
+      /// Locales: en
+      static func tribe_request_join_successful(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_request_join_successful", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Apply to join clan
+      /// 
+      /// Locales: en
+      static func tribe_notice_request_join_in(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_notice_request_join_in", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Are you sure?
+      /// 
+      /// Locales: en
+      static func tribe_whether_dissolve(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_whether_dissolve", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Are you sure?
+      /// 
+      /// Locales: en
+      static func tribe_whether_exit(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_whether_exit", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Attachment:
+      /// 
+      /// Locales: en
+      static func mail_attachment(_: Void = ()) -> String {
+        return NSLocalizedString("mail_attachment", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Authorization fail, please log in
+      /// 
+      /// Locales: en
+      static func authorization_fail_log_in(_: Void = ()) -> String {
+        return NSLocalizedString("authorization_fail_log_in", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Avartas shop
+      /// 
+      /// Locales: en
+      static func title_decoration_shop(_: Void = ()) -> String {
+        return NSLocalizedString("title_decoration_shop", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Avatar
+      /// 
+      /// Locales: en
+      static func tab_title_decoration(_: Void = ()) -> String {
+        return NSLocalizedString("tab_title_decoration", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Avatar can not be empty
+      /// 
+      /// Locales: en
+      static func tribe_portrait_not_empty(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_portrait_not_empty", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Battle Field
+      /// 
+      /// Locales: en
+      static func g1016(_: Void = ()) -> String {
+        return NSLocalizedString("g1016", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Bcube
+      /// 
+      /// Locales: en
+      static func recharge_diamond(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_diamond", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Bcube not enough
+      /// 
+      /// Locales: en
+      static func diamonds_not_enough(_: Void = ()) -> String {
+        return NSLocalizedString("diamonds_not_enough", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Become VIP after login
+      /// 
+      /// Locales: en
+      static func vip_after_login(_: Void = ()) -> String {
+        return NSLocalizedString("vip_after_login", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Bed Wars
+      /// 
+      /// Locales: en
+      static func g1008(_: Void = ()) -> String {
+        return NSLocalizedString("g1008", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Bill
+      /// 
+      /// Locales: en
+      static func decoration_bill(_: Void = ()) -> String {
+        return NSLocalizedString("decoration_bill", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Bind_success
+      /// 
+      /// Locales: en
+      static func bind_success(_: Void = ()) -> String {
+        return NSLocalizedString("bind_success", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Birthday
+      /// 
+      /// Locales: en
+      static func birthday(_: Void = ()) -> String {
+        return NSLocalizedString("birthday", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Bow Spleef
+      /// 
+      /// Locales: en
+      static func g1007(_: Void = ()) -> String {
+        return NSLocalizedString("g1007", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Camera
+      /// 
+      /// Locales: en
+      static func common_camera(_: Void = ()) -> String {
+        return NSLocalizedString("common_camera", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Can not add note for stranger
+      /// 
+      /// Locales: en
+      static func not_friend_not_add_alias(_: Void = ()) -> String {
+        return NSLocalizedString("not_friend_not_add_alias", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Can not refresh after receiving all tasks
+      /// 
+      /// Locales: en
+      static func tribe_task_not_refresh_until_done(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_task_not_refresh_until_done", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Can't do it on yourself
+      /// 
+      /// Locales: en
+      static func tribe_not_operate_self(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_not_operate_self", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Can't wear for inadequate clan level
+      /// 
+      /// Locales: en
+      static func tribe_tribe_level_not_enough_not_use_decoration(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_tribe_level_not_enough_not_use_decoration", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Can't wear for no clan
+      /// 
+      /// Locales: en
+      static func tribe_no_tribe_not_use_decoration(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_no_tribe_not_use_decoration", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Cancel
+      /// 
+      /// Locales: en
+      static func common_cancel(_: Void = ()) -> String {
+        return NSLocalizedString("common_cancel", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Cancel register?
+      /// 
+      /// Locales: en
+      static func is_cancel_register(_: Void = ()) -> String {
+        return NSLocalizedString("is_cancel_register", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Category
+      /// 
+      /// Locales: en
+      static func category(_: Void = ()) -> String {
+        return NSLocalizedString("category", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Change
+      /// 
+      /// Locales: en
+      static func change_another(_: Void = ()) -> String {
+        return NSLocalizedString("change_another", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Chat
+      /// 
+      /// Locales: en
+      static func chat(_: Void = ()) -> String {
+        return NSLocalizedString("chat", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Chat
+      /// 
+      /// Locales: en
+      static func tab_title_chat(_: Void = ()) -> String {
+        return NSLocalizedString("tab_title_chat", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Chat
+      /// 
+      /// Locales: en
+      static func tribe_chat(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_chat", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Check update
+      /// 
+      /// Locales: en
+      static func check_update(_: Void = ()) -> String {
+        return NSLocalizedString("check_update", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Chief
+      /// 
+      /// Locales: en
+      static func tribe_role_chief(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_role_chief", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Chief: %@
+      /// 
+      /// Locales: en
+      static func tribe_list_chief(_ value1: String) -> String {
+        return String(format: NSLocalizedString("tribe_list_chief", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: Clan information
+      /// 
+      /// Locales: en
+      static func tribe_information(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_information", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Clan task
+      /// 
+      /// Locales: en
+      static func tribe_task(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_task", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Clear  Cache
+      /// 
+      /// Locales: en
+      static func clear_cache(_: Void = ()) -> String {
+        return NSLocalizedString("clear_cache", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Clear all mails?
+      /// 
+      /// Locales: en
+      static func whether_clear_all_mails(_: Void = ()) -> String {
+        return NSLocalizedString("whether_clear_all_mails", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Close
+      /// 
+      /// Locales: en
+      static func close(_: Void = ()) -> String {
+        return NSLocalizedString("close", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Collect
+      /// 
+      /// Locales: en
+      static func tribe_task_receive_reward(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_task_receive_reward", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Collect failed
+      /// 
+      /// Locales: en
+      static func tribe_receive_task_failed(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_receive_task_failed", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Collect reward failed
+      /// 
+      /// Locales: en
+      static func tribe_receive_task_reward_failed(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_receive_task_reward_failed", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Collect reward successfully
+      /// 
+      /// Locales: en
+      static func tribe_receive_task_reward_successful(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_receive_task_reward_successful", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Collect successfully
+      /// 
+      /// Locales: en
+      static func tribe_receive_task_successful(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_receive_task_successful", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Completed
+      /// 
+      /// Locales: en
+      static func tribe_task_done(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_task_done", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Confirm password
+      /// 
+      /// Locales: en
+      static func confirm_password(_: Void = ()) -> String {
+        return NSLocalizedString("confirm_password", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Confirm payment
+      /// 
+      /// Locales: en
+      static func confirm_payment(_: Void = ()) -> String {
+        return NSLocalizedString("confirm_payment", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Congrats!You now get
+      /// 
+      /// Locales: en
+      static func tribe_congratrulate_you_fetch(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_congratrulate_you_fetch", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Congratulations
+      /// 
+      /// Locales: en
+      static func tribe_congratrulation(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_congratrulation", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Content: 
+      /// 
+      /// Locales: en
+      static func mail_content(_: Void = ()) -> String {
+        return NSLocalizedString("mail_content", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Create account
+      /// 
+      /// Locales: en
+      static func create_Account(_: Void = ()) -> String {
+        return NSLocalizedString("create_Account", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Create account
+      /// 
+      /// Locales: en
+      static func create_account(_: Void = ()) -> String {
+        return NSLocalizedString("create_account", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Create clan
+      /// 
+      /// Locales: en
+      static func tribe_create(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_create", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Create clan  
+      /// 
+      /// Locales: en
+      static func tribe_create_tribe(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_create_tribe", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Create successfully! Now, Invite your friends to join.
+      /// 
+      /// Locales: en
+      static func tribe_create_tribe_successful(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_create_tribe_successful", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Customer service
+      /// 
+      /// Locales: en
+      static func customer_service(_: Void = ()) -> String {
+        return NSLocalizedString("customer_service", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Daily limit:  
+      /// 
+      /// Locales: en
+      static func tribe_donate_doday_limit(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_donate_doday_limit", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Dear %@: Your %@ will expire on %@
+      /// 
+      /// Locales: en
+      static func vip_title_has_vip_text(_ value1: String, _ value2: String, _ value3: String) -> String {
+        return String(format: NSLocalizedString("vip_title_has_vip_text", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1, value2, value3)
+      }
+      
+      /// en translation: Dear %@:You have not open vip service
+      /// 
+      /// Locales: en
+      static func vip_title_text(_ value1: String) -> String {
+        return String(format: NSLocalizedString("vip_title_text", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: Delete
+      /// 
+      /// Locales: en
+      static func common_delete(_: Void = ()) -> String {
+        return NSLocalizedString("common_delete", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Delete Failed
+      /// 
+      /// Locales: en
+      static func common_delete_fail(_: Void = ()) -> String {
+        return NSLocalizedString("common_delete_fail", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Delete Successful
+      /// 
+      /// Locales: en
+      static func common_delete_success(_: Void = ()) -> String {
+        return NSLocalizedString("common_delete_success", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Delete friend
+      /// 
+      /// Locales: en
+      static func delete_friend(_: Void = ()) -> String {
+        return NSLocalizedString("delete_friend", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Delete note successful
+      /// 
+      /// Locales: en
+      static func delete_alias_successful(_: Void = ()) -> String {
+        return NSLocalizedString("delete_alias_successful", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Dissolve clan
+      /// 
+      /// Locales: en
+      static func tribe_disslove(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_disslove", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Donate
+      /// 
+      /// Locales: en
+      static func tribe_donate(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_donate", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Donation
+      /// 
+      /// Locales: en
+      static func tribe_donation_value(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_donation_value", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Donation history
+      /// 
+      /// Locales: en
+      static func tribe_donate_history(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_donate_history", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Done
+      /// 
+      /// Locales: en
+      static func done(_: Void = ()) -> String {
+        return NSLocalizedString("done", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: E-mail format is incorrect
+      /// 
+      /// Locales: en
+      static func email_format_not_valid(_: Void = ()) -> String {
+        return NSLocalizedString("email_format_not_valid", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Edit profile
+      /// 
+      /// Locales: en
+      static func tribe_edit_information(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_edit_information", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Elder
+      /// 
+      /// Locales: en
+      static func tribe_role_elder(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_role_elder", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Email Binding
+      /// 
+      /// Locales: en
+      static func bind_email(_: Void = ()) -> String {
+        return NSLocalizedString("bind_email", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Engine
+      /// 
+      /// Locales: en
+      static func engine(_: Void = ()) -> String {
+        return NSLocalizedString("engine", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Enjoy privileges(%d/%d)
+      /// 
+      /// Locales: en
+      static func vip_page_title(_ value1: Int, _ value2: Int) -> String {
+        return String(format: NSLocalizedString("vip_page_title", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1, value2)
+      }
+      
+      /// en translation: Enter clan introduction
+      /// 
+      /// Locales: en
+      static func tribe_input_tribe_introduction(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_input_tribe_introduction", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Enter clan name
+      /// 
+      /// Locales: en
+      static func tribe_input_tribe_name(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_input_tribe_name", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Enter note
+      /// 
+      /// Locales: en
+      static func input_alias(_: Void = ()) -> String {
+        return NSLocalizedString("input_alias", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Exclusive action
+      /// 
+      /// Locales: en
+      static func vip_mvp_action(_: Void = ()) -> String {
+        return NSLocalizedString("vip_mvp_action", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Exclusive decoration
+      /// 
+      /// Locales: en
+      static func vip_mvp_clothes(_: Void = ()) -> String {
+        return NSLocalizedString("vip_mvp_clothes", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Existing clan name
+      /// 
+      /// Locales: en
+      static func tribe_tribe_name_exists(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_tribe_name_exists", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Exit
+      /// 
+      /// Locales: en
+      static func log_out(_: Void = ()) -> String {
+        return NSLocalizedString("log_out", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Faild,please retry
+      /// 
+      /// Locales: en
+      static func common_request_fail_retry(_: Void = ()) -> String {
+        return NSLocalizedString("common_request_fail_retry", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Failed
+      /// 
+      /// Locales: en
+      static func common_fail(_: Void = ()) -> String {
+        return NSLocalizedString("common_fail", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Feedback
+      /// 
+      /// Locales: en
+      static func feedback(_: Void = ()) -> String {
+        return NSLocalizedString("feedback", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Female
+      /// 
+      /// Locales: en
+      static func female(_: Void = ()) -> String {
+        return NSLocalizedString("female", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Forget password
+      /// 
+      /// Locales: en
+      static func forget_password(_: Void = ()) -> String {
+        return NSLocalizedString("forget_password", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Format is incorrect
+      /// 
+      /// Locales: en
+      static func account_format_not_valid(_: Void = ()) -> String {
+        return NSLocalizedString("account_format_not_valid", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Free
+      /// 
+      /// Locales: en
+      static func free(_: Void = ()) -> String {
+        return NSLocalizedString("free", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Friend
+      /// 
+      /// Locales: en
+      static func friends(_: Void = ()) -> String {
+        return NSLocalizedString("friends", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Friends game
+      /// 
+      /// Locales: en
+      static func friends_playing(_: Void = ()) -> String {
+        return NSLocalizedString("friends_playing", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Friends now
+      /// 
+      /// Locales: en
+      static func has_friendship(_: Void = ()) -> String {
+        return NSLocalizedString("has_friendship", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Gain:
+      /// 
+      /// Locales: en
+      static func tribe_get(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_get", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Game logo
+      /// 
+      /// Locales: en
+      static func vip_mvp_game_logo(_: Void = ()) -> String {
+        return NSLocalizedString("vip_mvp_game_logo", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Games
+      /// 
+      /// Locales: en
+      static func tab_title_games(_: Void = ()) -> String {
+        return NSLocalizedString("tab_title_games", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Games detail
+      /// 
+      /// Locales: en
+      static func title_games_detail(_: Void = ()) -> String {
+        return NSLocalizedString("title_games_detail", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Gender
+      /// 
+      /// Locales: en
+      static func gender(_: Void = ()) -> String {
+        return NSLocalizedString("gender", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Gender can not modify
+      /// 
+      /// Locales: en
+      static func gender_can_not_modify(_: Void = ()) -> String {
+        return NSLocalizedString("gender_can_not_modify", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Get 120% golds per game
+      /// 
+      /// Locales: en
+      static func vip_vip_gold_growth(_: Void = ()) -> String {
+        return NSLocalizedString("vip_vip_gold_growth", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Get 150% golds per game
+      /// 
+      /// Locales: en
+      static func vip_vip_up_gold_growth(_: Void = ()) -> String {
+        return NSLocalizedString("vip_vip_up_gold_growth", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Get 200% golds per game
+      /// 
+      /// Locales: en
+      static func vip_mvp_gold_growth(_: Void = ()) -> String {
+        return NSLocalizedString("vip_mvp_gold_growth", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Get reward after login
+      /// 
+      /// Locales: en
+      static func sign_in_after_login(_: Void = ()) -> String {
+        return NSLocalizedString("sign_in_after_login", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Golds
+      /// 
+      /// Locales: en
+      static func recharge_gold(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_gold", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Golds Gift
+      /// 
+      /// Locales: en
+      static func golds_gift(_: Void = ()) -> String {
+        return NSLocalizedString("golds_gift", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Golds not enough
+      /// 
+      /// Locales: en
+      static func golds_not_enough(_: Void = ()) -> String {
+        return NSLocalizedString("golds_not_enough", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Google Pay
+      /// 
+      /// Locales: en
+      static func recharge_record_google_pay(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_record_google_pay", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Google Refund
+      /// 
+      /// Locales: en
+      static func recharge_record_google_refund(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_record_google_refund", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Had no this decoration now
+      /// 
+      /// Locales: en
+      static func the_system_has_no_the_decoration(_: Void = ()) -> String {
+        return NSLocalizedString("the_system_has_no_the_decoration", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Handover chief
+      /// 
+      /// Locales: en
+      static func tribe_transform_chief(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_transform_chief", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Have not played the game yet
+      /// 
+      /// Locales: en
+      static func without_play_game(_: Void = ()) -> String {
+        return NSLocalizedString("without_play_game", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Help
+      /// 
+      /// Locales: en
+      static func help(_: Void = ()) -> String {
+        return NSLocalizedString("help", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Hold:
+      /// 
+      /// Locales: en
+      static func tribe_retain(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_retain", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Images  Cache
+      /// 
+      /// Locales: en
+      static func image_cache(_: Void = ()) -> String {
+        return NSLocalizedString("image_cache", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: In progress
+      /// 
+      /// Locales: en
+      static func tribe_task_doing(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_task_doing", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Inadequate golds, cost 60 bcubes to create a clan?
+      /// 
+      /// Locales: en
+      static func tribe_create_not_enough_gold_then_use_diamond(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_create_not_enough_gold_then_use_diamond", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Individual
+      /// 
+      /// Locales: en
+      static func tribe_task_personal(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_task_personal", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Input email
+      /// 
+      /// Locales: en
+      static func input_email(_: Void = ()) -> String {
+        return NSLocalizedString("input_email", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Input new password
+      /// 
+      /// Locales: en
+      static func input_new_password(_: Void = ()) -> String {
+        return NSLocalizedString("input_new_password", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Input nickname
+      /// 
+      /// Locales: en
+      static func input_nickname(_: Void = ()) -> String {
+        return NSLocalizedString("input_nickname", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Input origin password
+      /// 
+      /// Locales: en
+      static func input_origin_password(_: Void = ()) -> String {
+        return NSLocalizedString("input_origin_password", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Input verification code
+      /// 
+      /// Locales: en
+      static func input_verification_code(_: Void = ()) -> String {
+        return NSLocalizedString("input_verification_code", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Insufficient balance  Top up
+      /// 
+      /// Locales: en
+      static func balance_not_enough_then_recharge(_: Void = ()) -> String {
+        return NSLocalizedString("balance_not_enough_then_recharge", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Introduce
+      /// 
+      /// Locales: en
+      static func game_introduce(_: Void = ()) -> String {
+        return NSLocalizedString("game_introduce", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Introduce yourself
+      /// 
+      /// Locales: en
+      static func add_friend_tips(_: Void = ()) -> String {
+        return NSLocalizedString("add_friend_tips", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Introduce yourself
+      /// 
+      /// Locales: en
+      static func introduce_yourself(_: Void = ()) -> String {
+        return NSLocalizedString("introduce_yourself", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Introduction
+      /// 
+      /// Locales: en
+      static func title_introduction(_: Void = ()) -> String {
+        return NSLocalizedString("title_introduction", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Introduction
+      /// 
+      /// Locales: en
+      static func tribe_introduction(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_introduction", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Introduction: 
+      /// 
+      /// Locales: en
+      static func introduction(_: Void = ()) -> String {
+        return NSLocalizedString("introduction", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Invite friend
+      /// 
+      /// Locales: en
+      static func tribe_invite_friends(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_invite_friends", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Invite successfully
+      /// 
+      /// Locales: en
+      static func tribe_invite_successful(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_invite_successful", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Invite you to join %@ clan
+      /// 
+      /// Locales: en
+      static func tribe_notice_invite_you_to_join(_ value1: String) -> String {
+        return String(format: NSLocalizedString("tribe_notice_invite_you_to_join", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: Jail Break
+      /// 
+      /// Locales: en
+      static func g1014(_: Void = ()) -> String {
+        return NSLocalizedString("g1014", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Join clan
+      /// 
+      /// Locales: en
+      static func tribe_request_join(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_request_join", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Join game
+      /// 
+      /// Locales: en
+      static func enter_game(_: Void = ()) -> String {
+        return NSLocalizedString("enter_game", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Join game failed, please retry
+      /// 
+      /// Locales: en
+      static func enter_game_fail_retry(_: Void = ()) -> String {
+        return NSLocalizedString("enter_game_fail_retry", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: LV%d Unlock
+      /// 
+      /// Locales: en
+      static func tribe_decoration_level_unlock(_ value1: Int) -> String {
+        return String(format: NSLocalizedString("tribe_decoration_level_unlock", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: Labels can not be empty
+      /// 
+      /// Locales: en
+      static func tribe_labels_not_empty(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_labels_not_empty", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Leaderboard
+      /// 
+      /// Locales: en
+      static func tribe_rank(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_rank", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Likes
+      /// 
+      /// Locales: en
+      static func appreciate(_: Void = ()) -> String {
+        return NSLocalizedString("appreciate", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Likes already
+      /// 
+      /// Locales: en
+      static func you_have_been_appreciate(_: Void = ()) -> String {
+        return NSLocalizedString("you_have_been_appreciate", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Limit of friends increase
+      /// 
+      /// Locales: en
+      static func vip_mvp_friend_num(_: Void = ()) -> String {
+        return NSLocalizedString("vip_mvp_friend_num", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Limit of gold daily *1.5
+      /// 
+      /// Locales: en
+      static func vip_vip_gold_1(_: Void = ()) -> String {
+        return NSLocalizedString("vip_vip_gold_1", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Limit of gold daily *2
+      /// 
+      /// Locales: en
+      static func vip_vip_up_gold_2(_: Void = ()) -> String {
+        return NSLocalizedString("vip_vip_up_gold_2", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Limit of gold daily *3
+      /// 
+      /// Locales: en
+      static func vip_mvp_gold_3(_: Void = ()) -> String {
+        return NSLocalizedString("vip_mvp_gold_3", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Loading....
+      /// 
+      /// Locales: en
+      static func loading(_: Void = ()) -> String {
+        return NSLocalizedString("loading", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Log out account?
+      /// 
+      /// Locales: en
+      static func is_sure_log_out(_: Void = ()) -> String {
+        return NSLocalizedString("is_sure_log_out", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Long press to edit member
+      /// 
+      /// Locales: en
+      static func tribe_longpress_manage_member(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_longpress_manage_member", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Low VIP level, please upgrade VIP level
+      /// 
+      /// Locales: en
+      static func vip_level_not_enough_then_payment(_: Void = ()) -> String {
+        return NSLocalizedString("vip_level_not_enough_then_payment", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: MVP 20%OFF: 
+      /// 
+      /// Locales: en
+      static func shop_car_mvp_discount(_ value1: UInt) -> String {
+        return String(format: NSLocalizedString("shop_car_mvp_discount", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: Mail
+      /// 
+      /// Locales: en
+      static func mail(_: Void = ()) -> String {
+        return NSLocalizedString("mail", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Mail will be deleted after 15 days
+      /// 
+      /// Locales: en
+      static func mail_delete_after_fifteen_days(_: Void = ()) -> String {
+        return NSLocalizedString("mail_delete_after_fifteen_days", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Mailbox
+      /// 
+      /// Locales: en
+      static func mailbox(_: Void = ()) -> String {
+        return NSLocalizedString("mailbox", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Male
+      /// 
+      /// Locales: en
+      static func male(_: Void = ()) -> String {
+        return NSLocalizedString("male", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Manage member
+      /// 
+      /// Locales: en
+      static func tribe_manage_member(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_manage_member", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Maps  Cache
+      /// 
+      /// Locales: en
+      static func map_cache(_: Void = ()) -> String {
+        return NSLocalizedString("map_cache", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Maximum number of friends reached
+      /// 
+      /// Locales: en
+      static func friend_count_limit(_: Void = ()) -> String {
+        return NSLocalizedString("friend_count_limit", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Member
+      /// 
+      /// Locales: en
+      static func tribe_member_count(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_member_count", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Member list (%d/%d)
+      /// 
+      /// Locales: en
+      static func tribe_member_list(_ value1: Int, _ value2: Int) -> String {
+        return String(format: NSLocalizedString("tribe_member_list", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1, value2)
+      }
+      
+      /// en translation: Member%d/%d
+      /// 
+      /// Locales: en
+      static func tribe_list_member_count(_ value1: Int, _ value2: Int) -> String {
+        return String(format: NSLocalizedString("tribe_list_member_count", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1, value2)
+      }
+      
+      /// en translation: Modify
+      /// 
+      /// Locales: en
+      static func tap_to_modify(_: Void = ()) -> String {
+        return NSLocalizedString("tap_to_modify", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Modify
+      /// 
+      /// Locales: en
+      static func tribe_modify_information(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_modify_information", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Modify Password
+      /// 
+      /// Locales: en
+      static func modify_password(_: Void = ()) -> String {
+        return NSLocalizedString("modify_password", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Modify clan
+      /// 
+      /// Locales: en
+      static func tribe_modify(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_modify", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Modify failed,please retry
+      /// 
+      /// Locales: en
+      static func modify_fail_retry(_: Void = ()) -> String {
+        return NSLocalizedString("modify_fail_retry", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Modify succeed
+      /// 
+      /// Locales: en
+      static func modify_success(_: Void = ()) -> String {
+        return NSLocalizedString("modify_success", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Modify successful
+      /// 
+      /// Locales: en
+      static func modify_alias_successful(_: Void = ()) -> String {
+        return NSLocalizedString("modify_alias_successful", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Modify successfully
+      /// 
+      /// Locales: en
+      static func tribe_modify_successful(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_modify_successful", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Month
+      /// 
+      /// Locales: en
+      static func month(_: Void = ()) -> String {
+        return NSLocalizedString("month", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Monthly
+      /// 
+      /// Locales: en
+      static func tribe_rank_month(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_rank_month", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: More
+      /// 
+      /// Locales: en
+      static func tab_title_profile(_: Void = ()) -> String {
+        return NSLocalizedString("tab_title_profile", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Msg send failed
+      /// 
+      /// Locales: en
+      static func the_msg_send_fail(_: Void = ()) -> String {
+        return NSLocalizedString("the_msg_send_fail", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Murder Mystery
+      /// 
+      /// Locales: en
+      static func g1009(_: Void = ()) -> String {
+        return NSLocalizedString("g1009", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Network lost, please check
+      /// 
+      /// Locales: en
+      static func network_lost_please_check(_: Void = ()) -> String {
+        return NSLocalizedString("network_lost_please_check", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: New Friends
+      /// 
+      /// Locales: en
+      static func new_friends(_: Void = ()) -> String {
+        return NSLocalizedString("new_friends", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Next
+      /// 
+      /// Locales: en
+      static func next_step(_: Void = ()) -> String {
+        return NSLocalizedString("next_step", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Nickname
+      /// 
+      /// Locales: en
+      static func nickname(_: Void = ()) -> String {
+        return NSLocalizedString("nickname", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Nickname can not modify now
+      /// 
+      /// Locales: en
+      static func nickname_can_not_modify(_: Void = ()) -> String {
+        return NSLocalizedString("nickname_can_not_modify", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Nickname exist
+      /// 
+      /// Locales: en
+      static func the_nickname_exist(_: Void = ()) -> String {
+        return NSLocalizedString("the_nickname_exist", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Nickname not valid
+      /// 
+      /// Locales: en
+      static func the_nickname_not_valid(_: Void = ()) -> String {
+        return NSLocalizedString("the_nickname_not_valid", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: No authority
+      /// 
+      /// Locales: en
+      static func tribe_no_permisson(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_no_permisson", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: No conversation. Start Chatting with friends
+      /// 
+      /// Locales: en
+      static func no_conversation_start_chatting(_: Void = ()) -> String {
+        return NSLocalizedString("no_conversation_start_chatting", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: No data
+      /// 
+      /// Locales: en
+      static func no_data(_: Void = ()) -> String {
+        return NSLocalizedString("no_data", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: No data, tap to retry
+      /// 
+      /// Locales: en
+      static func no_data_tap_rety(_: Void = ()) -> String {
+        return NSLocalizedString("no_data_tap_rety", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: No history
+      /// 
+      /// Locales: en
+      static func tribe_no_donate_history(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_no_donate_history", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: No more than 4 tags
+      /// 
+      /// Locales: en
+      static func tribe_only_add_four_labels(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_only_add_four_labels", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: No permission,please login
+      /// 
+      /// Locales: en
+      static func no_permission(_: Void = ()) -> String {
+        return NSLocalizedString("no_permission", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: No results
+      /// 
+      /// Locales: en
+      static func no_search_result(_: Void = ()) -> String {
+        return NSLocalizedString("no_search_result", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: No tag
+      /// 
+      /// Locales: en
+      static func tribe_no_labels(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_no_labels", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Notice
+      /// 
+      /// Locales: en
+      static func message_notification(_: Void = ()) -> String {
+        return NSLocalizedString("message_notification", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Notice
+      /// 
+      /// Locales: en
+      static func tribe_notice(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_notice", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Notice board
+      /// 
+      /// Locales: en
+      static func tribe_bulletin(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_bulletin", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Notification
+      /// 
+      /// Locales: en
+      static func common_notification(_: Void = ()) -> String {
+        return NSLocalizedString("common_notification", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Offline
+      /// 
+      /// Locales: en
+      static func offline(_: Void = ()) -> String {
+        return NSLocalizedString("offline", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Online
+      /// 
+      /// Locales: en
+      static func online(_: Void = ()) -> String {
+        return NSLocalizedString("online", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Only chief can dissolve
+      /// 
+      /// Locales: en
+      static func tribe_dissolve_only_chief_or_elder(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_dissolve_only_chief_or_elder", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Only chief can manage elder
+      /// 
+      /// Locales: en
+      static func tribe_only_chief_can_operate_elder(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_only_chief_can_operate_elder", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Only chief or elder can accept task
+      /// 
+      /// Locales: en
+      static func tribe_only_chief_or_elder_can_receive_task(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_only_chief_or_elder_can_receive_task", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Only chief or elder can refresh task
+      /// 
+      /// Locales: en
+      static func tribe_only_chief_or_elder_can_refresh_task(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_only_chief_or_elder_can_refresh_task", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Open
+      /// 
+      /// Locales: en
+      static func vip_pay_open_vip(_: Void = ()) -> String {
+        return NSLocalizedString("vip_pay_open_vip", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Open VIP
+      /// 
+      /// Locales: en
+      static func vip_pay_title(_: Void = ()) -> String {
+        return NSLocalizedString("vip_pay_title", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Open/Renew
+      /// 
+      /// Locales: en
+      static func vip_pay_open(_: Void = ()) -> String {
+        return NSLocalizedString("vip_pay_open", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Overall
+      /// 
+      /// Locales: en
+      static func tribe_rank_all(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_rank_all", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: PVP
+      /// 
+      /// Locales: en
+      static func category_pvp(_: Void = ()) -> String {
+        return NSLocalizedString("category_pvp", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Password
+      /// 
+      /// Locales: en
+      static func account_password(_: Void = ()) -> String {
+        return NSLocalizedString("account_password", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Password
+      /// 
+      /// Locales: en
+      static func password(_: Void = ()) -> String {
+        return NSLocalizedString("password", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Password format is not valid
+      /// 
+      /// Locales: en
+      static func password_format_not_valid(_: Void = ()) -> String {
+        return NSLocalizedString("password_format_not_valid", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Password is wrong
+      /// 
+      /// Locales: en
+      static func the_password_error(_: Void = ()) -> String {
+        return NSLocalizedString("the_password_error", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Password not match
+      /// 
+      /// Locales: en
+      static func password_not_match(_: Void = ()) -> String {
+        return NSLocalizedString("password_not_match", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Pay failed
+      /// 
+      /// Locales: en
+      static func decoration_pay_failed(_: Void = ()) -> String {
+        return NSLocalizedString("decoration_pay_failed", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Pay succeed, dress now?
+      /// 
+      /// Locales: en
+      static func decoration_pay_successful(_: Void = ()) -> String {
+        return NSLocalizedString("decoration_pay_successful", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Pay successful
+      /// 
+      /// Locales: en
+      static func pay_successful(_: Void = ()) -> String {
+        return NSLocalizedString("pay_successful", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Phone Binding
+      /// 
+      /// Locales: en
+      static func bind_phone(_: Void = ()) -> String {
+        return NSLocalizedString("bind_phone", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Phone number format is not valid
+      /// 
+      /// Locales: en
+      static func phone_number_format_not_valid(_: Void = ()) -> String {
+        return NSLocalizedString("phone_number_format_not_valid", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Phone number has been used
+      /// 
+      /// Locales: en
+      static func the_phone_has_been_used(_: Void = ()) -> String {
+        return NSLocalizedString("the_phone_has_been_used", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Phone number not bind account
+      /// 
+      /// Locales: en
+      static func the_phone_not_bind_account(_: Void = ()) -> String {
+        return NSLocalizedString("the_phone_not_bind_account", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Phone_number
+      /// 
+      /// Locales: en
+      static func phone_number(_: Void = ()) -> String {
+        return NSLocalizedString("phone_number", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Photo Library
+      /// 
+      /// Locales: en
+      static func common_photo_library(_: Void = ()) -> String {
+        return NSLocalizedString("common_photo_library", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Play Game
+      /// 
+      /// Locales: en
+      static func recharge_record_fetch_from_game(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_record_fetch_from_game", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Play this game after login
+      /// 
+      /// Locales: en
+      static func play_game_after_login(_: Void = ()) -> String {
+        return NSLocalizedString("play_game_after_login", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Popular
+      /// 
+      /// Locales: en
+      static func popular(_: Void = ()) -> String {
+        return NSLocalizedString("popular", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Portrait
+      /// 
+      /// Locales: en
+      static func portrait(_: Void = ()) -> String {
+        return NSLocalizedString("portrait", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Price
+      /// 
+      /// Locales: en
+      static func recharge_price(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_price", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Privileged object
+      /// 
+      /// Locales: en
+      static func vip_detail_target(_: Void = ()) -> String {
+        return NSLocalizedString("vip_detail_target", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Privileges details
+      /// 
+      /// Locales: en
+      static func vip_detail_title(_: Void = ()) -> String {
+        return NSLocalizedString("vip_detail_title", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Product request failed
+      /// 
+      /// Locales: en
+      static func apppurchase_product_request_fail(_: Void = ()) -> String {
+        return NSLocalizedString("apppurchase_product_request_fail", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Profile detail
+      /// 
+      /// Locales: en
+      static func title_profile_detail(_: Void = ()) -> String {
+        return NSLocalizedString("title_profile_detail", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Purchase Decorations
+      /// 
+      /// Locales: en
+      static func recharge_record_buy_decoration(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_record_buy_decoration", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Purchase Game Props
+      /// 
+      /// Locales: en
+      static func recharge_record_game_buy_props(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_record_game_buy_props", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Purchase Product Failed
+      /// 
+      /// Locales: en
+      static func recharge_record_purchase_fail_refund(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_record_purchase_fail_refund", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Purchased
+      /// 
+      /// Locales: en
+      static func decoration_has_purchased(_: Void = ()) -> String {
+        return NSLocalizedString("decoration_has_purchased", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Purchased after login
+      /// 
+      /// Locales: en
+      static func buy_after_login(_: Void = ()) -> String {
+        return NSLocalizedString("buy_after_login", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Quit clan
+      /// 
+      /// Locales: en
+      static func tribe_exit(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_exit", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Reached daily limit
+      /// 
+      /// Locales: en
+      static func tribe_member_join_in_day_limit(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_member_join_in_day_limit", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Reached daily limit of added members
+      /// 
+      /// Locales: en
+      static func tribe_new_add_member_in_day_limit(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_new_add_member_in_day_limit", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Reached daily limit of rewards
+      /// 
+      /// Locales: en
+      static func tribe_receive_task_reward_in_day_limit(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_receive_task_reward_in_day_limit", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Reached donation limit
+      /// 
+      /// Locales: en
+      static func tribe_donate_limit(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_donate_limit", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Reached limit of elders
+      /// 
+      /// Locales: en
+      static func tribe_elder_count_limit(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_elder_count_limit", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Reached limit of invitation
+      /// 
+      /// Locales: en
+      static func tribe_invite_count_limit(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_invite_count_limit", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Reached maximum members
+      /// 
+      /// Locales: en
+      static func tribe_member_full(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_member_full", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Receive
+      /// 
+      /// Locales: en
+      static func receive(_: Void = ()) -> String {
+        return NSLocalizedString("receive", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Receive success
+      /// 
+      /// Locales: en
+      static func common_receive_success(_: Void = ()) -> String {
+        return NSLocalizedString("common_receive_success", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Received
+      /// 
+      /// Locales: en
+      static func has_received(_: Void = ()) -> String {
+        return NSLocalizedString("has_received", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Recently
+      /// 
+      /// Locales: en
+      static func recently_playing(_: Void = ()) -> String {
+        return NSLocalizedString("recently_playing", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Recommend
+      /// 
+      /// Locales: en
+      static func recommend(_: Void = ()) -> String {
+        return NSLocalizedString("recommend", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Recommend
+      /// 
+      /// Locales: en
+      static func section_recommend(_: Void = ()) -> String {
+        return NSLocalizedString("section_recommend", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Recycle Decoration
+      /// 
+      /// Locales: en
+      static func recharge_record_recycle_decoration(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_record_recycle_decoration", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Refresh tasks in
+      /// 
+      /// Locales: en
+      static func tribe_task_remain_time_refresh(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_task_remain_time_refresh", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Refuse
+      /// 
+      /// Locales: en
+      static func reject_request(_: Void = ()) -> String {
+        return NSLocalizedString("reject_request", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Refused
+      /// 
+      /// Locales: en
+      static func request_rejected(_: Void = ()) -> String {
+        return NSLocalizedString("request_rejected", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Register
+      /// 
+      /// Locales: en
+      static func register(_: Void = ()) -> String {
+        return NSLocalizedString("register", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Register succeed
+      /// 
+      /// Locales: en
+      static func register_success(_: Void = ()) -> String {
+        return NSLocalizedString("register_success", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Remaining
+      /// 
+      /// Locales: en
+      static func decoration_remain_quantity(_: Void = ()) -> String {
+        return NSLocalizedString("decoration_remain_quantity", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Remaining time of Season: 
+      /// 
+      /// Locales: en
+      static func tribe_rank_remain_time(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_rank_remain_time", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Remember account and password
+      /// 
+      /// Locales: en
+      static func remember_your_account_password(_: Void = ()) -> String {
+        return NSLocalizedString("remember_your_account_password", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Remove Elder
+      /// 
+      /// Locales: en
+      static func tribe_transform_member(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_transform_member", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Remove member
+      /// 
+      /// Locales: en
+      static func tribe_remove(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_remove", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Repeat new password
+      /// 
+      /// Locales: en
+      static func double_input_new_password(_: Void = ()) -> String {
+        return NSLocalizedString("double_input_new_password", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Restore unfinished transaction
+      /// 
+      /// Locales: en
+      static func apppurchase_resolve_unfinished_transaction(_: Void = ()) -> String {
+        return NSLocalizedString("apppurchase_resolve_unfinished_transaction", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Return 10 diamonds daily
+      /// 
+      /// Locales: en
+      static func vip_mvp_diamond_gift(_: Void = ()) -> String {
+        return NSLocalizedString("vip_mvp_diamond_gift", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Return 3 diamonds daily
+      /// 
+      /// Locales: en
+      static func vip_vip_up_diamond_gift(_: Void = ()) -> String {
+        return NSLocalizedString("vip_vip_up_diamond_gift", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: SIM
+      /// 
+      /// Locales: en
+      static func category_manage(_: Void = ()) -> String {
+        return NSLocalizedString("category_manage", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: STG
+      /// 
+      /// Locales: en
+      static func category_gun(_: Void = ()) -> String {
+        return NSLocalizedString("category_gun", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Save
+      /// 
+      /// Locales: en
+      static func save_screenshot(_: Void = ()) -> String {
+        return NSLocalizedString("save_screenshot", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Save failed.Please retry
+      /// 
+      /// Locales: en
+      static func save_fail_retry(_: Void = ()) -> String {
+        return NSLocalizedString("save_fail_retry", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Save succeed
+      /// 
+      /// Locales: en
+      static func save_success(_: Void = ()) -> String {
+        return NSLocalizedString("save_success", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Select
+      /// 
+      /// Locales: en
+      static func please_select(_: Void = ()) -> String {
+        return NSLocalizedString("please_select", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Select
+      /// 
+      /// Locales: en
+      static func recharge_select_product(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_select_product", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Send message
+      /// 
+      /// Locales: en
+      static func send_Message(_: Void = ()) -> String {
+        return NSLocalizedString("send_Message", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Send succeed.Please check mail
+      /// 
+      /// Locales: en
+      static func send_success_check_mail(_: Void = ()) -> String {
+        return NSLocalizedString("send_success_check_mail", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Send successful
+      /// 
+      /// Locales: en
+      static func request_send_successful(_: Void = ()) -> String {
+        return NSLocalizedString("request_send_successful", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Set as elder
+      /// 
+      /// Locales: en
+      static func tribe_transform_elder(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_transform_elder", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Setting
+      /// 
+      /// Locales: en
+      static func setting(_: Void = ()) -> String {
+        return NSLocalizedString("setting", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Shop
+      /// 
+      /// Locales: en
+      static func shop(_: Void = ()) -> String {
+        return NSLocalizedString("shop", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Shop
+      /// 
+      /// Locales: en
+      static func tribe_shop(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_shop", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Shop cart
+      /// 
+      /// Locales: en
+      static func shop_cart(_: Void = ()) -> String {
+        return NSLocalizedString("shop_cart", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Shopping cart
+      /// 
+      /// Locales: en
+      static func title_shopping_cart(_: Void = ()) -> String {
+        return NSLocalizedString("title_shopping_cart", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Skin color switching (few)
+      /// 
+      /// Locales: en
+      static func vip_vip_up_change_skin(_: Void = ()) -> String {
+        return NSLocalizedString("vip_vip_up_change_skin", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Skin color switching (many)
+      /// 
+      /// Locales: en
+      static func vip_mvp_change_skin(_: Void = ()) -> String {
+        return NSLocalizedString("vip_mvp_change_skin", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Sky Wars
+      /// 
+      /// Locales: en
+      static func g1002(_: Void = ()) -> String {
+        return NSLocalizedString("g1002", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Snow Ball 100 Kills
+      /// 
+      /// Locales: en
+      static func g1012(_: Void = ()) -> String {
+        return NSLocalizedString("g1012", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Snow Ball Battle
+      /// 
+      /// Locales: en
+      static func g1011(_: Void = ()) -> String {
+        return NSLocalizedString("g1011", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Special task
+      /// 
+      /// Locales: en
+      static func special_task(_: Void = ()) -> String {
+        return NSLocalizedString("special_task", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Succeed
+      /// 
+      /// Locales: en
+      static func add_successful(_: Void = ()) -> String {
+        return NSLocalizedString("add_successful", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Succeed
+      /// 
+      /// Locales: en
+      static func common_success(_: Void = ()) -> String {
+        return NSLocalizedString("common_success", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Succeed
+      /// 
+      /// Locales: en
+      static func recharge_already_pay(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_already_pay", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Survival Games
+      /// 
+      /// Locales: en
+      static func g1001(_: Void = ()) -> String {
+        return NSLocalizedString("g1001", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: TNT Run
+      /// 
+      /// Locales: en
+      static func g1010(_: Void = ()) -> String {
+        return NSLocalizedString("g1010", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Tag
+      /// 
+      /// Locales: en
+      static func tribe_label(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_label", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Team
+      /// 
+      /// Locales: en
+      static func tribe_task_tribal(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_task_tribal", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: The account has bind email
+      /// 
+      /// Locales: en
+      static func account_has_bind_email(_: Void = ()) -> String {
+        return NSLocalizedString("account_has_bind_email", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: The email has been used
+      /// 
+      /// Locales: en
+      static func email_has_been_used(_: Void = ()) -> String {
+        return NSLocalizedString("email_has_been_used", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: The email isn't bind account
+      /// 
+      /// Locales: en
+      static func email_not_bind_user(_: Void = ()) -> String {
+        return NSLocalizedString("email_not_bind_user", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: The first load may take more time
+      /// 
+      /// Locales: en
+      static func first_load_take_more_time(_: Void = ()) -> String {
+        return NSLocalizedString("first_load_take_more_time", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: The remaining VIP days will be converted to the equivalent days of higher level after upgrade
+      /// 
+      /// Locales: en
+      static func vip_upgrade_retain_exchange(_: Void = ()) -> String {
+        return NSLocalizedString("vip_upgrade_retain_exchange", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Third party login
+      /// 
+      /// Locales: en
+      static func third_party_log_in(_: Void = ()) -> String {
+        return NSLocalizedString("third_party_log_in", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Third-Party Payment
+      /// 
+      /// Locales: en
+      static func recharge_record_third_pay(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_record_third_pay", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Third-Party Payment Refund
+      /// 
+      /// Locales: en
+      static func recharge_record_third_refund(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_record_third_refund", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: This member hasn't joined clan
+      /// 
+      /// Locales: en
+      static func tribe_the_removed_user_not_in_triube(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_the_removed_user_not_in_triube", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: This member is not in clan
+      /// 
+      /// Locales: en
+      static func tribe_the_user_not_in_tribe(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_the_user_not_in_tribe", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Tips
+      /// 
+      /// Locales: en
+      static func notification(_: Void = ()) -> String {
+        return NSLocalizedString("notification", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Tips：VIP+ get 10% off，MVP get 20% off
+      /// 
+      /// Locales: en
+      static func shop_car_vip_discount_tips(_: Void = ()) -> String {
+        return NSLocalizedString("shop_car_vip_discount_tips", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Top Up
+      /// 
+      /// Locales: en
+      static func top_up(_: Void = ()) -> String {
+        return NSLocalizedString("top_up", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Top up
+      /// 
+      /// Locales: en
+      static func recharge(_: Void = ()) -> String {
+        return NSLocalizedString("recharge", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Top up after login
+      /// 
+      /// Locales: en
+      static func recharge_after_login(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_after_login", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Top-up gift
+      /// 
+      /// Locales: en
+      static func vip_diamonds_gift(_: Void = ()) -> String {
+        return NSLocalizedString("vip_diamonds_gift", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Total: 
+      /// 
+      /// Locales: en
+      static func decoration_shopcart_total(_: Void = ()) -> String {
+        return NSLocalizedString("decoration_shopcart_total", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Treasure Hunter
+      /// 
+      /// Locales: en
+      static func g1015(_: Void = ()) -> String {
+        return NSLocalizedString("g1015", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Tribe
+      /// 
+      /// Locales: en
+      static func tab_title_tribe(_: Void = ()) -> String {
+        return NSLocalizedString("tab_title_tribe", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Unable to purchase a VIP lower than yours
+      /// 
+      /// Locales: en
+      static func unable_pay_vip_lower_than_yours(_: Void = ()) -> String {
+        return NSLocalizedString("unable_pay_vip_lower_than_yours", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Unbind email?
+      /// 
+      /// Locales: en
+      static func is_unbind_email(_: Void = ()) -> String {
+        return NSLocalizedString("is_unbind_email", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Unbinding
+      /// 
+      /// Locales: en
+      static func unbind(_: Void = ()) -> String {
+        return NSLocalizedString("unbind", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Unknown
+      /// 
+      /// Locales: en
+      static func recharge_record_unknown(_: Void = ()) -> String {
+        return NSLocalizedString("recharge_record_unknown", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Unknown message type
+      /// 
+      /// Locales: en
+      static func unknown_message_type(_: Void = ()) -> String {
+        return NSLocalizedString("unknown_message_type", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Update after %@
+      /// 
+      /// Locales: en
+      static func daily_reward_update_after_time(_ value1: String) -> String {
+        return String(format: NSLocalizedString("daily_reward_update_after_time", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: Upgrade
+      /// 
+      /// Locales: en
+      static func vip_pay_renew_vip(_: Void = ()) -> String {
+        return NSLocalizedString("vip_pay_renew_vip", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Upgrade to VIP+、MVP for more discount
+      /// 
+      /// Locales: en
+      static func vip_discount_text(_: Void = ()) -> String {
+        return NSLocalizedString("vip_discount_text", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Upload
+      /// 
+      /// Locales: en
+      static func upload_portrait(_: Void = ()) -> String {
+        return NSLocalizedString("upload_portrait", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Upload failed,please retry
+      /// 
+      /// Locales: en
+      static func upload_fail_retry(_: Void = ()) -> String {
+        return NSLocalizedString("upload_fail_retry", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Upload succeed
+      /// 
+      /// Locales: en
+      static func upload_success(_: Void = ()) -> String {
+        return NSLocalizedString("upload_success", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: VIP extra gift %@ Bcube
+      /// 
+      /// Locales: en
+      static func recharge_gift_more(_ value1: String) -> String {
+        return String(format: NSLocalizedString("recharge_gift_more", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: VIP+ 10%OFF: 
+      /// 
+      /// Locales: en
+      static func shop_car_vip_plus_discount(_ value1: UInt) -> String {
+        return String(format: NSLocalizedString("shop_car_vip_plus_discount", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: Verification code error
+      /// 
+      /// Locales: en
+      static func the_verification_code_error(_: Void = ()) -> String {
+        return NSLocalizedString("the_verification_code_error", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Verofication code format not valid
+      /// 
+      /// Locales: en
+      static func verofication_code_format_not_valid(_: Void = ()) -> String {
+        return NSLocalizedString("verofication_code_format_not_valid", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Version
+      /// 
+      /// Locales: en
+      static func version(_: Void = ()) -> String {
+        return NSLocalizedString("version", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Version is too low, please update
+      /// 
+      /// Locales: en
+      static func game_version_too_low(_: Void = ()) -> String {
+        return NSLocalizedString("game_version_too_low", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Video Load failed, close then retry
+      /// 
+      /// Locales: en
+      static func video_load_failed_close_retry(_: Void = ()) -> String {
+        return NSLocalizedString("video_load_failed_close_retry", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Waiting for server to dispatch resources   %@
+      /// 
+      /// Locales: en
+      static func game_dispatch_in_queue_time(_ value1: String) -> String {
+        return String(format: NSLocalizedString("game_dispatch_in_queue_time", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: We have been friends. Start chatting
+      /// 
+      /// Locales: en
+      static func we_are_friend_start_chatting(_: Void = ()) -> String {
+        return NSLocalizedString("we_are_friend_start_chatting", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Weekly
+      /// 
+      /// Locales: en
+      static func tribe_rank_week(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_rank_week", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Write something
+      /// 
+      /// Locales: en
+      static func tribe_say_something(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_say_something", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Year
+      /// 
+      /// Locales: en
+      static func year(_: Void = ()) -> String {
+        return NSLocalizedString("year", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: You are in a clan
+      /// 
+      /// Locales: en
+      static func tribe_you_have_in(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_you_have_in", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: You are not chief or elder
+      /// 
+      /// Locales: en
+      static func tribe_you_are_not_chief_or_elder(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_you_are_not_chief_or_elder", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: You are promoted to elder
+      /// 
+      /// Locales: en
+      static func tribe_notice_you_have_been_elder(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_notice_you_have_been_elder", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: You are removed
+      /// 
+      /// Locales: en
+      static func tribe_notice_you_have_been_remove(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_notice_you_have_been_remove", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: You can chat with clan members,unlock more free avatars after creating or joining clan.These are the clans we recommended for you!
+      /// 
+      /// Locales: en
+      static func tribe_no_like_then_create_one(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_no_like_then_create_one", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: You do not authorize this application to access the device's album, please go to "Settings" for authorization.
+      /// 
+      /// Locales: en
+      static func no_permission_album_go_settings(_: Void = ()) -> String {
+        return NSLocalizedString("no_permission_album_go_settings", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: You dont have this decoration
+      /// 
+      /// Locales: en
+      static func you_dont_have_decoration(_: Void = ()) -> String {
+        return NSLocalizedString("you_dont_have_decoration", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: You have already received this reward
+      /// 
+      /// Locales: en
+      static func daily_task_already_received(_: Void = ()) -> String {
+        return NSLocalizedString("daily_task_already_received", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: You have been chief
+      /// 
+      /// Locales: en
+      static func tribe_notice_you_have_been_chief(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_notice_you_have_been_chief", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: You have no mails yet
+      /// 
+      /// Locales: en
+      static func have_no_mails(_: Void = ()) -> String {
+        return NSLocalizedString("have_no_mails", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: You have reached daily maximum tasks
+      /// 
+      /// Locales: en
+      static func tribe_receive_task_in_day_limit(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_receive_task_in_day_limit", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: You haven't join any clan
+      /// 
+      /// Locales: en
+      static func tribe_you_not_in(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_you_not_in", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Zombies infection
+      /// 
+      /// Locales: en
+      static func g1013(_: Void = ()) -> String {
+        return NSLocalizedString("g1013", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: has dissolved clan
+      /// 
+      /// Locales: en
+      static func tribe_have_dissolved(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_have_dissolved", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: has quited clan
+      /// 
+      /// Locales: en
+      static func tribe_have_exited(_: Void = ()) -> String {
+        return NSLocalizedString("tribe_have_exited", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: login
+      /// 
+      /// Locales: en
+      static func log_in(_: Void = ()) -> String {
+        return NSLocalizedString("log_in", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: upload failed
+      /// 
+      /// Locales: en
+      static func upload_fail(_: Void = ()) -> String {
+        return NSLocalizedString("upload_fail", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   

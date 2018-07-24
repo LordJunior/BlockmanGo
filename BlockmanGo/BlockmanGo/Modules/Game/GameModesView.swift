@@ -16,7 +16,7 @@ class GameModesView: UIView {
 
     weak var delegate: GameModesViewDelegate?
     
-    private let modeTitles = ["全部模式", "PVP模式", "经营模式", "策略模式"]
+    private let modeTitles = [R.string.localizable.category_all(), R.string.localizable.category_pvp(), R.string.localizable.category_manage(), R.string.localizable.category_adventure(), R.string.localizable.category_gun()]
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -50,7 +50,7 @@ class GameModesView: UIView {
 
 extension GameModesView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return modeTitles.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -95,6 +95,7 @@
 		DD8EB61E21030F7200E7AE9B /* GenderEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EB61D21030F7200E7AE9B /* GenderEnum.swift */; };
 		DDA4B0DE2105F60D004346C5 /* LaunchModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */; };
 		DDA4B0E02106BF75004346C5 /* GameDispatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */; };
+		DDA4B0E32106D9A1004346C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B0E52106D9A1004346C5 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,6 +215,7 @@
 		DD8EB61D21030F7200E7AE9B /* GenderEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderEnum.swift; sourceTree = "<group>"; };
 		DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModelManager.swift; sourceTree = "<group>"; };
 		DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDispatchModel.swift; sourceTree = "<group>"; };
+		DDA4B0E42106D9A1004346C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E01837725EFD8265A16B0F5A /* Pods-BlockmanGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockmanGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -320,6 +322,7 @@
 				DD51605820EC6B740000B8DC /* LaunchScreen.storyboard */,
 				DD51605B20EC6B740000B8DC /* Info.plist */,
 				DD51606320EF63490000B8DC /* BlockmanGo-Briding-Header.h */,
+				DDA4B0E52106D9A1004346C5 /* Localizable.strings */,
 			);
 			name = SuportFiles;
 			sourceTree = "<group>";
@@ -709,6 +712,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD51605A20EC6B740000B8DC /* LaunchScreen.storyboard in Resources */,
+				DDA4B0E32106D9A1004346C5 /* Localizable.strings in Resources */,
 				DD74038021018A1100091B9D /* EngineResource in Resources */,
 				DD51605720EC6B740000B8DC /* Assets.xcassets in Resources */,
 				DD51605520EC6B740000B8DC /* Main.storyboard in Resources */,
@@ -881,6 +885,14 @@
 				DD51605920EC6B740000B8DC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DDA4B0E52106D9A1004346C5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDA4B0E42106D9A1004346C5 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

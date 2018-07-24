@@ -98,7 +98,7 @@ class GameDetailViewController: TemplateViewController {
         playButton = UIButton().addTo(superView: containView).configure({ (button) in
             button.setBackgroundImage(R.image.general_button_background_selected(), for: .normal)
             button.titleLabel?.font = UIFont.boldSize15
-            button.setTitle("开始游戏", for: .normal)
+            button.setTitle(R.string.localizable.enter_game(), for: .normal)
             button.setTitleColor(R.clr.appColor._844501(), for: .normal)
             button.titleEdgeInsets = UIEdgeInsetsMake(-2, 0, 0, 0)
             button.addTarget(self, action: #selector(playButtonClicked), for: .touchUpInside)
@@ -136,7 +136,7 @@ class GameDetailViewController: TemplateViewController {
     
     private func refreshViewsWithModel(_ detailModel: GameDetailModel) {
         playButton?.isEnabled = true
-        likesButton?.isEnabled = true
+//        likesButton?.isEnabled = true
         thumbnailImageView?.imageWithUrlString(detailModel.gameCoverPic)
         nameLabel?.text = detailModel.gameTitle
         modeLabel?.text = detailModel.gameTypes.joined(separator: " | ")
@@ -156,9 +156,9 @@ class GameDetailViewController: TemplateViewController {
                 self.likesButton?.setTitle(String(likesNumber), for: .normal)
             case .failure(.alreadyAppreciated):
                 self.likesButton?.isEnabled = false
-                AlertController.alert(title: "你已点过赞", message: nil, from: self)
+                AlertController.alert(title: R.string.localizable.you_have_been_appreciate(), message: nil, from: self)
             default:
-                AlertController.alert(title: "请求失败，请重试", message: nil, from: self)
+                AlertController.alert(title: R.string.localizable.common_request_fail_retry(), message: nil, from: self)
             }
         }
     }

@@ -103,7 +103,7 @@ final class AlertController: UIViewController {
             button.setBackgroundImage(R.image.general_button_background_selected(), for: .normal)
             button.titleLabel?.font = UIFont.size14
             button.setTitleColor(R.clr.appColor._844501(), for: .normal)
-            button.setTitle("确定", for: .normal)
+            button.setTitle(R.string.localizable.done(), for: .normal)
             button.tag = ButtonTag.done.rawValue
             button.addTarget(self, action: #selector(buttonClickCallBack(_:)), for: .touchUpInside)
         }.layout { (make) in
@@ -122,7 +122,7 @@ final class AlertController: UIViewController {
                 button.setBackgroundImage(R.image.general_button_background_normal(), for: .normal)
                 button.titleLabel?.font = UIFont.size14
                 button.setTitleColor(R.clr.appColor._b17f63(), for: .normal)
-                button.setTitle("取消", for: .normal)
+                button.setTitle(R.string.localizable.common_cancel(), for: .normal)
                 button.tag = ButtonTag.cancel.rawValue
                 button.addTarget(self, action: #selector(buttonClickCallBack(_:)), for: .touchUpInside)
             }.layout(snapKitMaker: { (make) in

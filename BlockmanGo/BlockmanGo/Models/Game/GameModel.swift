@@ -21,6 +21,7 @@ import HandyJSON
  "冒险"
  ],
  "version": 0
+ "visitorEnter": 0
  */
 
 struct GameModel: HandyJSON {
@@ -31,4 +32,20 @@ struct GameModel: HandyJSON {
     var praiseNumber: Int = 0
     var onlineNumber: Int = 0
     var version: Int = 0
+    var visitorEnter: Bool = false
+    
+    mutating func mapping(mapper: HelpingMapper) {
+        mapper <<<
+            self.visitorEnter <-- TransformOf<Bool, Int>(fromJSON: { visitorEnter -> Bool in
+                guard let visitorEnter = visitorEnter else {
+                    return false
+                }
+                return visitorEnter == 1
+            }, toJSON: { visitorEnter -> Int in
+                guard let visitorEnter = visitorEnter else {
+                    return 0
+                }
+                return visitorEnter ? 1 : 0
+            })
+    }
 }

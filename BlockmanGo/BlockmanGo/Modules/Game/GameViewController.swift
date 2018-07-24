@@ -118,15 +118,14 @@ class GameViewController: UIViewController {
 //                }
                 AlertController.alert(title: "正在排队", message: nil, from: TransitionManager.rootViewController)
             case .failure(.gameversionTooLow):
-                AlertController.alert(title: "游戏引擎版本过低，请升级", message: nil, from: TransitionManager.rootViewController, showCancelButton: true)?.done(completion: { _ in
+                AlertController.alert(title: R.string.localizable.game_version_too_low(), message: nil, from: TransitionManager.rootViewController, showCancelButton: true)?.done(completion: { _ in
                     let appstore = SKStoreProductViewController()
                     appstore.delegate = self
                     appstore.loadProduct(withParameters: [SKStoreProductParameterITunesItemIdentifier : NSNumber(value: 1388175232)])
                     self.present(appstore, animated: true, completion: nil)
                 })
             default:
-                AlertController.alert(title: "进入游戏失败，请重试", message: nil, from: TransitionManager.rootViewController)
-//                BlockyAlert.show(title: R.string.localizable.notification(), message: NSLocalizedString("enter_game_fail_retry", comment: "进入游戏失败，请重试"))
+                AlertController.alert(title: R.string.localizable.enter_game_fail_retry(), message: nil, from: TransitionManager.rootViewController)
             }
         }
     }
