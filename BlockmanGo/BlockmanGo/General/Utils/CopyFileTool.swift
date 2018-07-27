@@ -75,10 +75,6 @@ class CopyFileTool: NSObject, FileManagerDelegate {
             }
             let progress = Float(copyingFileSize) / Float(originFileSize)
             self.delegate?.copyFileInProgress(progress)
-            if progress >= 1.0 {
-                self.destroyTimer()
-                self.delegate?.copyFileDidFinished()
-            }
         }
     }
     

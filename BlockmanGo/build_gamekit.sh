@@ -45,21 +45,21 @@ gamekit_destination_path="${project_path}/BlockmanGo/"
 xcodebuild build -workspace ${workspace_path} -scheme ${cloth_scheme} -configuration ${configuration}
 cp ${cloth_output_path} ${libs_destination_path}
 
-#编译Client
-xcodebuild build -workspace ${workspace_path} -scheme ${gameclient_scheme} -configuration ${configuration}
-cp ${gameclient_output_path} ${libs_destination_path}
-
 #编译Core
 xcodebuild build -workspace ${workspace_path} -scheme ${core_scheme} -configuration ${configuration}
 cp ${core_output_path} ${libs_destination_path}
 
 #编译Gender
 xcodebuild build -workspace ${workspace_path} -scheme ${gender_scheme} -configuration ${configuration}
-cp ${logic_output_path} ${libs_destination_path}
+cp ${gender_output_path} ${libs_destination_path}
 
 #编译Logic
 xcodebuild build -workspace ${workspace_path} -scheme ${logic_scheme} -configuration ${configuration}
-cp ${cloth_output_path} ${libs_destination_path}
+cp ${logic_output_path} ${libs_destination_path}
+
+#编译Client
+xcodebuild build -workspace ${workspace_path} -scheme ${gameclient_scheme} -configuration ${configuration}
+cp ${gameclient_output_path} ${libs_destination_path}
 
 #编译Gamekit
 xcodebuild build -workspace ${workspace_path} -scheme ${gamekit_scheme} -configuration ${configuration}

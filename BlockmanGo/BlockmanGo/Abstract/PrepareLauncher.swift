@@ -9,13 +9,16 @@
 import UIKit
 
 class PrepareLauncher {
+    static var window: UIWindow?
+    
     static func prepareRootViewController(_ window: inout UIWindow?) {
         
-        let rootController = MainNavigationController.init(rootViewController: LaunchViewController())
+        let rootController = MainNavigationController.init(rootViewController: LaunchBrandingViewController())
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
         window?.rootViewController = rootController
         window?.makeKeyAndVisible()
+        PrepareLauncher.window = window
         TransitionManager.rootViewController = rootController
         TransitionManager.navigationClass = MainNavigationController.self
         

@@ -780,10 +780,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 42 images.
+  /// This `R.image` struct is generated, and contains static references to 44 images.
   struct image {
+    /// Image `LaunchImage`.
+    static let launchImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "LaunchImage")
     /// Image `account_info_background`.
     static let account_info_background = Rswift.ImageResource(bundle: R.hostingBundle, name: "account_info_background")
+    /// Image `branding`.
+    static let branding = Rswift.ImageResource(bundle: R.hostingBundle, name: "branding")
     /// Image `check_update_background`.
     static let check_update_background = Rswift.ImageResource(bundle: R.hostingBundle, name: "check_update_background")
     /// Image `check_update_progress_background`.
@@ -867,9 +871,19 @@ struct R: Rswift.Validatable {
     /// Image `vip_1`.
     static let vip_1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "vip_1")
     
+    /// `UIImage(named: "LaunchImage", bundle: ..., traitCollection: ...)`
+    static func launchImage(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.launchImage, compatibleWith: traitCollection)
+    }
+    
     /// `UIImage(named: "account_info_background", bundle: ..., traitCollection: ...)`
     static func account_info_background(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.account_info_background, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "branding", bundle: ..., traitCollection: ...)`
+    static func branding(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.branding, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "check_update_background", bundle: ..., traitCollection: ...)`

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class LaunchViewController: UIViewController {
 
     private weak var checkForUpdateController: CheckForUpdatesViewController?

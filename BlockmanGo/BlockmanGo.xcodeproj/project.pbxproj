@@ -96,6 +96,7 @@
 		DDA4B0DE2105F60D004346C5 /* LaunchModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */; };
 		DDA4B0E02106BF75004346C5 /* GameDispatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */; };
 		DDA4B0E32106D9A1004346C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B0E52106D9A1004346C5 /* Localizable.strings */; };
+		DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -216,6 +217,7 @@
 		DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModelManager.swift; sourceTree = "<group>"; };
 		DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDispatchModel.swift; sourceTree = "<group>"; };
 		DDA4B0E42106D9A1004346C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchBrandingViewController.swift; sourceTree = "<group>"; };
 		E01837725EFD8265A16B0F5A /* Pods-BlockmanGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockmanGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -531,6 +533,7 @@
 		DD7402CD20FC779E00091B9D /* Launch */ = {
 			isa = PBXGroup;
 			children = (
+				DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */,
 				DD7402CF20FC791A00091B9D /* LaunchViewController.swift */,
 				DD7402D120FC79D400091B9D /* CheckForUpdatesViewController.swift */,
 				DD74030420FF311100091B9D /* LaunchInfiniteTranslationSkyView.swift */,
@@ -817,6 +820,7 @@
 				DD7402E220FCC58C00091B9D /* PresentAnimatedTransition.swift in Sources */,
 				DD7402EA20FDA62000091B9D /* ConfigurationRequester.swift in Sources */,
 				DD7402FF20FEF05F00091B9D /* BMFileManager+EngineResource.swift in Sources */,
+				DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */,
 				DD7402D020FC791A00091B9D /* LaunchViewController.swift in Sources */,
 				DD8EB61E21030F7200E7AE9B /* GenderEnum.swift in Sources */,
 				DD5160E220F5B7A80000B8DC /* BlockHTTPResult.swift in Sources */,
