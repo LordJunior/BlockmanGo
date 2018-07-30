@@ -84,7 +84,7 @@ final class DecorationControllerManager {
         decorationController?.setBackgroundImage(imageName)
     }
     
-    func setPosition(x: Float, y: Float, z: Float) {
+    func setPosition(x: Float, y: Float = 0, z: Float = -0.7) {
         decorationController?.setPosition(x, y: y, z: z)
     }
     

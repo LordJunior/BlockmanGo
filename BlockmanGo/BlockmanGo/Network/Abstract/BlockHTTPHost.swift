@@ -12,16 +12,8 @@ var dispatchEnterGameHost = ""
 
 let apiVersion = "v1"
 
-#if BLOCKY_OVERSEA
-#if DEBUG
-let serverHost = "http://mods.sandboxol.com"/* "http://120.92.158.119"*/
-    #else
-let serverHost = "http://mods.sandboxol.com"
-#endif
-#else
-#if DEBUG
+#if BLOCK_DEV
 let serverHost = "http://120.92.158.119"
-    #else
+#else
 let serverHost = "http://mods.sandboxol.com"
-#endif
 #endif

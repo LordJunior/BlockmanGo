@@ -9,6 +9,95 @@
 /* Begin PBXBuildFile section */
 		50C4B36D55AF1DB5D3014E6F /* Pods_BlockmanGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D5A1A9B2FF2FE5E3B75D8C /* Pods_BlockmanGo.framework */; };
 		DD06D59D2102360B004A570B /* InitializeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06D59C2102360B004A570B /* InitializeProfileViewController.swift */; };
+		DD456BD6210EBDE6009465FE /* BMFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402FC20FEEDF500091B9D /* BMFileManager.swift */; };
+		DD456BD7210EBDE6009465FE /* GamesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F520F631F40000B8DC /* GamesAPI.swift */; };
+		DD456BD8210EBDE6009465FE /* BulletinModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030A20FF485200091B9D /* BulletinModelManager.swift */; };
+		DD456BD9210EBDE6009465FE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160E820F5FA310000B8DC /* GameViewController.swift */; };
+		DD456BDA210EBDE6009465FE /* UIButton+VerticalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030C20FF5EC700091B9D /* UIButton+VerticalLayout.swift */; };
+		DD456BDB210EBDE6009465FE /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160C220F5A2330000B8DC /* Requester.swift */; };
+		DD456BDC210EBDE6009465FE /* AnimatableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030220FF219A00091B9D /* AnimatableProtocol.swift */; };
+		DD456BDD210EBDE6009465FE /* RandomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EB6182103059700E7AE9B /* RandomInputView.swift */; };
+		DD456BDE210EBDE6009465FE /* NetImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51609F20F48F0F0000B8DC /* NetImageView.swift */; };
+		DD456BDF210EBDE6009465FE /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51609320F46A310000B8DC /* UICollectionView+Extension.swift */; };
+		DD456BE0210EBDE6009465FE /* GameModesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160ED20F5FFD00000B8DC /* GameModesTableCell.swift */; };
+		DD456BE1210EBDE6009465FE /* InitializeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06D59C2102360B004A570B /* InitializeProfileViewController.swift */; };
+		DD456BE2210EBDE6009465FE /* GameEngineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160D020F5A7EA0000B8DC /* GameEngineInfo.swift */; };
+		DD456BE3210EBDE6009465FE /* BMUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402F420FEDF1C00091B9D /* BMUserDefaults.swift */; };
+		DD456BE4210EBDE6009465FE /* GameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160EF20F60ACF0000B8DC /* GameCollectionViewCell.swift */; };
+		DD456BE5210EBDE6009465FE /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51609220F46A310000B8DC /* UIView+Layout.swift */; };
+		DD456BE6210EBDE6009465FE /* LaunchModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */; };
+		DD456BE7210EBDE6009465FE /* BlockHTTPHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160DF20F5B75B0000B8DC /* BlockHTTPHost.swift */; };
+		DD456BE8210EBDE6009465FE /* TransitionManagerStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51608520F363FF0000B8DC /* TransitionManagerStack.swift */; };
+		DD456BE9210EBDE6009465FE /* CheckForResourceUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402EE20FDC9D100091B9D /* CheckForResourceUpdateModel.swift */; };
+		DD456BEA210EBDE6009465FE /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160CA20F5A6530000B8DC /* DebugLog.swift */; };
+		DD456BEB210EBDE6009465FE /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51607520F304A00000B8DC /* MainNavigationController.swift */; };
+		DD456BEC210EBDE6009465FE /* MoyaProvider+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74037921009AA800091B9D /* MoyaProvider+Sync.swift */; };
+		DD456BED210EBDE6009465FE /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D520FC8E8C00091B9D /* AlertController.swift */; };
+		DD456BEE210EBDE6009465FE /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160CE20F5A79B0000B8DC /* DeviceInfo.swift */; };
+		DD456BEF210EBDE6009465FE /* GamesRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51611520F747000000B8DC /* GamesRequester.swift */; };
+		DD456BF0210EBDE6009465FE /* PresentAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402DD20FCC58C00091B9D /* PresentAnimatedTransition.swift */; };
+		DD456BF1210EBDE6009465FE /* ConfigurationRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402E820FDA62000091B9D /* ConfigurationRequester.swift */; };
+		DD456BF2210EBDE6009465FE /* BMFileManager+EngineResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402FE20FEF05F00091B9D /* BMFileManager+EngineResource.swift */; };
+		DD456BF3210EBDE6009465FE /* LaunchBrandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */; };
+		DD456BF4210EBDE6009465FE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402CF20FC791A00091B9D /* LaunchViewController.swift */; };
+		DD456BF5210EBDE6009465FE /* GenderEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EB61D21030F7200E7AE9B /* GenderEnum.swift */; };
+		DD456BF6210EBDE6009465FE /* BlockHTTPResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160E120F5B7A80000B8DC /* BlockHTTPResult.swift */; };
+		DD456BF7210EBDE6009465FE /* ModalTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402DB20FCC58C00091B9D /* ModalTransitionController.swift */; };
+		DD456BF8210EBDE6009465FE /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51608120F357B80000B8DC /* TransitionManager.swift */; };
+		DD456BF9210EBDE6009465FE /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030E20FF620F00091B9D /* Delay.swift */; };
+		DD456BFA210EBDE6009465FE /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160A220F494CF0000B8DC /* UIFont+Extension.swift */; };
+		DD456BFB210EBDE6009465FE /* URLQueryArrayEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160C120F5A2330000B8DC /* URLQueryArrayEncoding.swift */; };
+		DD456BFC210EBDE6009465FE /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51608320F358690000B8DC /* TemplateViewController.swift */; };
+		DD456BFD210EBDE6009465FE /* ConfigurationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402E720FDA62000091B9D /* ConfigurationAPI.swift */; };
+		DD456BFE210EBDE6009465FE /* PrepareLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51608A20F464980000B8DC /* PrepareLauncher.swift */; };
+		DD456BFF210EBDE6009465FE /* BulletinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030720FF3DA700091B9D /* BulletinViewController.swift */; };
+		DD456C00210EBDE6009465FE /* UIView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51609420F46A310000B8DC /* UIView+Chainable.swift */; };
+		DD456C01210EBDE6009465FE /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F820F6F1CD0000B8DC /* GameModel.swift */; };
+		DD456C02210EBDE6009465FE /* ReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51609920F46AAB0000B8DC /* ReusableProtocol.swift */; };
+		DD456C03210EBDE6009465FE /* AccountInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51608C20F468300000B8DC /* AccountInfoView.swift */; };
+		DD456C04210EBDE6009465FE /* CheckForAppUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402EC20FDC9C000091B9D /* CheckForAppUpdateModel.swift */; };
+		DD456C05210EBDE6009465FE /* JsonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160E520F5F0350000B8DC /* JsonMapper.swift */; };
+		DD456C06210EBDE6009465FE /* GenderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EB61A21030F3400E7AE9B /* GenderButton.swift */; };
+		DD456C07210EBDE6009465FE /* CheckForUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D120FC79D400091B9D /* CheckForUpdatesViewController.swift */; };
+		DD456C08210EBDE6009465FE /* GameDetailModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74031221002C6B00091B9D /* GameDetailModelManager.swift */; };
+		DD456C09210EBDE6009465FE /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402F020FDD41500091B9D /* AppInfo.swift */; };
+		DD456C0A210EBDE6009465FE /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160D520F5B2FB0000B8DC /* UserManager.swift */; };
+		DD456C0B210EBDE6009465FE /* DismissAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D920FCC58C00091B9D /* DismissAnimatedTransition.swift */; };
+		DD456C0C210EBDE6009465FE /* GameModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F220F6319E0000B8DC /* GameModelManager.swift */; };
+		DD456C0D210EBDE6009465FE /* GameDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74031421002E7C00091B9D /* GameDetailModel.swift */; };
+		DD456C0E210EBDE6009465FE /* EngineResourceManagerResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402F720FEEBE300091B9D /* EngineResourceManagerResourceManager.swift */; };
+		DD456C0F210EBDE6009465FE /* DecorationControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160A920F4A9D50000B8DC /* DecorationControllerManager.swift */; };
+		DD456C10210EBDE6009465FE /* BlockHTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160DD20F5B7030000B8DC /* BlockHTTPError.swift */; };
+		DD456C11210EBDE6009465FE /* CheckForAppUpdatesModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402E420FD930900091B9D /* CheckForAppUpdatesModelManager.swift */; };
+		DD456C12210EBDE6009465FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160DA20F5B5440000B8DC /* UserModel.swift */; };
+		DD456C13210EBDE6009465FE /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D320FC818E00091B9D /* ProgressView.swift */; };
+		DD456C14210EBDE6009465FE /* LaunchInfiniteTranslationSkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030420FF311100091B9D /* LaunchInfiniteTranslationSkyView.swift */; };
+		DD456C15210EBDE6009465FE /* OpenURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402F220FDDAE800091B9D /* OpenURL.swift */; };
+		DD456C16210EBDE6009465FE /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160CC20F5A6750000B8DC /* Dictionary+Extension.swift */; };
+		DD456C17210EBDE6009465FE /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51605120EC6B740000B8DC /* HomePageViewController.swift */; };
+		DD456C18210EBDE6009465FE /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51609120F46A310000B8DC /* UITableView+Extension.swift */; };
+		DD456C19210EBDE6009465FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51604F20EC6B740000B8DC /* AppDelegate.swift */; };
+		DD456C1A210EBDE6009465FE /* String+ConvertToDigit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51609A20F46AAB0000B8DC /* String+ConvertToDigit.swift */; };
+		DD456C1B210EBDE6009465FE /* CopyFileTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030020FEF21300091B9D /* CopyFileTool.swift */; };
+		DD456C1C210EBDE6009465FE /* GameModesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160EB20F5FAE60000B8DC /* GameModesView.swift */; };
+		DD456C1D210EBDE6009465FE /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74031020FF637E00091B9D /* GameDetailViewController.swift */; };
+		DD456C1E210EBDE6009465FE /* GameDispatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */; };
+		DD456C1F210EBDE6009465FE /* ExtraSizeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51609E20F48F0F0000B8DC /* ExtraSizeLabel.swift */; };
+		DD456C20210EBDE6009465FE /* UserRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160C020F5A2330000B8DC /* UserRequester.swift */; };
+		DD456C21210EBDE6009465FE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51607A20F3082E0000B8DC /* R.generated.swift */; };
+		DD456C22210EBDE6009465FE /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160BF20F5A2330000B8DC /* UserAPI.swift */; };
+		DD456C24210EBDE6009465FE /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606C20EF63D60000B8DC /* libbz2.1.0.tbd */; };
+		DD456C25210EBDE6009465FE /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606A20EF63CF0000B8DC /* libc++.1.tbd */; };
+		DD456C26210EBDE6009465FE /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606820EF63CA0000B8DC /* libstdc++.6.0.9.tbd */; };
+		DD456C27210EBDE6009465FE /* BlockModsGameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; };
+		DD456C28210EBDE6009465FE /* Pods_BlockmanGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D5A1A9B2FF2FE5E3B75D8C /* Pods_BlockmanGo.framework */; };
+		DD456C2A210EBDE6009465FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD51605820EC6B740000B8DC /* LaunchScreen.storyboard */; };
+		DD456C2B210EBDE6009465FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B0E52106D9A1004346C5 /* Localizable.strings */; };
+		DD456C2C210EBDE6009465FE /* EngineResource in Resources */ = {isa = PBXBuildFile; fileRef = DD74037F21018A1100091B9D /* EngineResource */; };
+		DD456C2D210EBDE6009465FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD51605620EC6B740000B8DC /* Assets.xcassets */; };
+		DD456C2E210EBDE6009465FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD51605320EC6B740000B8DC /* Main.storyboard */; };
+		DD456C2F210EBDE6009465FE /* AppColor.clr in Resources */ = {isa = PBXBuildFile; fileRef = DD5160A420F495D00000B8DC /* AppColor.clr */; };
+		DD456C31210EBDE6009465FE /* BlockModsGameKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DD51605020EC6B740000B8DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51604F20EC6B740000B8DC /* AppDelegate.swift */; };
 		DD51605220EC6B740000B8DC /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51605120EC6B740000B8DC /* HomePageViewController.swift */; };
 		DD51605520EC6B740000B8DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD51605320EC6B740000B8DC /* Main.storyboard */; };
@@ -36,7 +125,6 @@
 		DD5160A120F48F0F0000B8DC /* NetImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51609F20F48F0F0000B8DC /* NetImageView.swift */; };
 		DD5160A320F494CF0000B8DC /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160A220F494CF0000B8DC /* UIFont+Extension.swift */; };
 		DD5160A520F495D10000B8DC /* AppColor.clr in Resources */ = {isa = PBXBuildFile; fileRef = DD5160A420F495D00000B8DC /* AppColor.clr */; };
-		DD5160A720F49EA60000B8DC /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160A620F49EA60000B8DC /* ViewController2.swift */; };
 		DD5160AA20F4A9D50000B8DC /* DecorationControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160A920F4A9D50000B8DC /* DecorationControllerManager.swift */; };
 		DD5160C320F5A2330000B8DC /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160BF20F5A2330000B8DC /* UserAPI.swift */; };
 		DD5160C420F5A2330000B8DC /* UserRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160C020F5A2330000B8DC /* UserRequester.swift */; };
@@ -110,6 +198,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		DD456C30210EBDE6009465FE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DD456C31210EBDE6009465FE /* BlockModsGameKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD51606620EF63AC0000B8DC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,6 +226,8 @@
 		28E1B64E849E1474617FE6A2 /* Pods-BlockmanGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockmanGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo.release.xcconfig"; sourceTree = "<group>"; };
 		61D5A1A9B2FF2FE5E3B75D8C /* Pods_BlockmanGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockmanGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD06D59C2102360B004A570B /* InitializeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeProfileViewController.swift; sourceTree = "<group>"; };
+		DD456C38210EBDE6009465FE /* BlockmanGo_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockmanGo_Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD456C39210EBDE6009465FE /* BlockmanGo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "BlockmanGo copy-Info.plist"; path = "/Users/kiben/BlockmanGo/BlockmanGo/BlockmanGo copy-Info.plist"; sourceTree = "<absolute>"; };
 		DD51604C20EC6B740000B8DC /* BlockmanGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockmanGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD51604F20EC6B740000B8DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD51605120EC6B740000B8DC /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -156,7 +257,6 @@
 		DD51609F20F48F0F0000B8DC /* NetImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetImageView.swift; sourceTree = "<group>"; };
 		DD5160A220F494CF0000B8DC /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		DD5160A420F495D00000B8DC /* AppColor.clr */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = AppColor.clr; sourceTree = "<group>"; };
-		DD5160A620F49EA60000B8DC /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		DD5160A920F4A9D50000B8DC /* DecorationControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecorationControllerManager.swift; sourceTree = "<group>"; };
 		DD5160BF20F5A2330000B8DC /* UserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		DD5160C020F5A2330000B8DC /* UserRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequester.swift; sourceTree = "<group>"; };
@@ -222,6 +322,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DD456C23210EBDE6009465FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD456C24210EBDE6009465FE /* libbz2.1.0.tbd in Frameworks */,
+				DD456C25210EBDE6009465FE /* libc++.1.tbd in Frameworks */,
+				DD456C26210EBDE6009465FE /* libstdc++.6.0.9.tbd in Frameworks */,
+				DD456C27210EBDE6009465FE /* BlockModsGameKit.framework in Frameworks */,
+				DD456C28210EBDE6009465FE /* Pods_BlockmanGo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD51604920EC6B740000B8DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,6 +373,7 @@
 				DD51604D20EC6B740000B8DC /* Products */,
 				DD51606720EF63C90000B8DC /* Frameworks */,
 				4DA4E4A6F478762B420008FB /* Pods */,
+				DD456C39210EBDE6009465FE /* BlockmanGo copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -268,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				DD51604C20EC6B740000B8DC /* BlockmanGo.app */,
+				DD456C38210EBDE6009465FE /* BlockmanGo_Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -346,7 +460,6 @@
 			isa = PBXGroup;
 			children = (
 				DD51605120EC6B740000B8DC /* HomePageViewController.swift */,
-				DD5160A620F49EA60000B8DC /* ViewController2.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -637,6 +750,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DD456BD2210EBDE6009465FE /* BlockmanGo_Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD456C35210EBDE6009465FE /* Build configuration list for PBXNativeTarget "BlockmanGo_Dev" */;
+			buildPhases = (
+				DD456BD3210EBDE6009465FE /* [CP] Check Pods Manifest.lock */,
+				DD456BD4210EBDE6009465FE /* ShellScript */,
+				DD456BD5210EBDE6009465FE /* Sources */,
+				DD456C23210EBDE6009465FE /* Frameworks */,
+				DD456C29210EBDE6009465FE /* Resources */,
+				DD456C30210EBDE6009465FE /* Embed Frameworks */,
+				DD456C32210EBDE6009465FE /* [CP] Embed Pods Frameworks */,
+				DD456C33210EBDE6009465FE /* [CP] Copy Pods Resources */,
+				DD456C34210EBDE6009465FE /* Increment Build Number */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockmanGo_Dev;
+			productName = BlockmanGo;
+			productReference = DD456C38210EBDE6009465FE /* BlockmanGo_Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
 		DD51604B20EC6B740000B8DC /* BlockmanGo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD51605E20EC6B740000B8DC /* Build configuration list for PBXNativeTarget "BlockmanGo" */;
@@ -649,6 +785,7 @@
 				DD51606620EF63AC0000B8DC /* Embed Frameworks */,
 				28B9CD7081F60163038D2E32 /* [CP] Embed Pods Frameworks */,
 				EB9B0279D604202F7F904326 /* [CP] Copy Pods Resources */,
+				DD456BD0210EB75E009465FE /* Increment Build Number */,
 			);
 			buildRules = (
 			);
@@ -669,6 +806,9 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = SanboxOL;
 				TargetAttributes = {
+					DD456BD2210EBDE6009465FE = {
+						ProvisioningStyle = Automatic;
+					};
 					DD51604B20EC6B740000B8DC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -695,6 +835,7 @@
 			projectRoot = "";
 			targets = (
 				DD51604B20EC6B740000B8DC /* BlockmanGo */,
+				DD456BD2210EBDE6009465FE /* BlockmanGo_Dev */,
 			);
 		};
 /* End PBXProject section */
@@ -710,6 +851,19 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DD456C29210EBDE6009465FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD456C2A210EBDE6009465FE /* LaunchScreen.storyboard in Resources */,
+				DD456C2B210EBDE6009465FE /* Localizable.strings in Resources */,
+				DD456C2C210EBDE6009465FE /* EngineResource in Resources */,
+				DD456C2D210EBDE6009465FE /* Assets.xcassets in Resources */,
+				DD456C2E210EBDE6009465FE /* Main.storyboard in Resources */,
+				DD456C2F210EBDE6009465FE /* AppColor.clr in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD51604A20EC6B740000B8DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -756,6 +910,92 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		DD456BD0210EB75E009465FE /* Increment Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		DD456BD3210EBDE6009465FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD456BD4210EBDE6009465FE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
+		DD456C32210EBDE6009465FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD456C33210EBDE6009465FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD456C34210EBDE6009465FE /* Increment Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
 		DD51607920F307730000B8DC /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -787,6 +1027,90 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DD456BD5210EBDE6009465FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD456BD6210EBDE6009465FE /* BMFileManager.swift in Sources */,
+				DD456BD7210EBDE6009465FE /* GamesAPI.swift in Sources */,
+				DD456BD8210EBDE6009465FE /* BulletinModelManager.swift in Sources */,
+				DD456BD9210EBDE6009465FE /* GameViewController.swift in Sources */,
+				DD456BDA210EBDE6009465FE /* UIButton+VerticalLayout.swift in Sources */,
+				DD456BDB210EBDE6009465FE /* Requester.swift in Sources */,
+				DD456BDC210EBDE6009465FE /* AnimatableProtocol.swift in Sources */,
+				DD456BDD210EBDE6009465FE /* RandomInputView.swift in Sources */,
+				DD456BDE210EBDE6009465FE /* NetImageView.swift in Sources */,
+				DD456BDF210EBDE6009465FE /* UICollectionView+Extension.swift in Sources */,
+				DD456BE0210EBDE6009465FE /* GameModesTableCell.swift in Sources */,
+				DD456BE1210EBDE6009465FE /* InitializeProfileViewController.swift in Sources */,
+				DD456BE2210EBDE6009465FE /* GameEngineInfo.swift in Sources */,
+				DD456BE3210EBDE6009465FE /* BMUserDefaults.swift in Sources */,
+				DD456BE4210EBDE6009465FE /* GameCollectionViewCell.swift in Sources */,
+				DD456BE5210EBDE6009465FE /* UIView+Layout.swift in Sources */,
+				DD456BE6210EBDE6009465FE /* LaunchModelManager.swift in Sources */,
+				DD456BE7210EBDE6009465FE /* BlockHTTPHost.swift in Sources */,
+				DD456BE8210EBDE6009465FE /* TransitionManagerStack.swift in Sources */,
+				DD456BE9210EBDE6009465FE /* CheckForResourceUpdateModel.swift in Sources */,
+				DD456BEA210EBDE6009465FE /* DebugLog.swift in Sources */,
+				DD456BEB210EBDE6009465FE /* MainNavigationController.swift in Sources */,
+				DD456BEC210EBDE6009465FE /* MoyaProvider+Sync.swift in Sources */,
+				DD456BED210EBDE6009465FE /* AlertController.swift in Sources */,
+				DD456BEE210EBDE6009465FE /* DeviceInfo.swift in Sources */,
+				DD456BEF210EBDE6009465FE /* GamesRequester.swift in Sources */,
+				DD456BF0210EBDE6009465FE /* PresentAnimatedTransition.swift in Sources */,
+				DD456BF1210EBDE6009465FE /* ConfigurationRequester.swift in Sources */,
+				DD456BF2210EBDE6009465FE /* BMFileManager+EngineResource.swift in Sources */,
+				DD456BF3210EBDE6009465FE /* LaunchBrandingViewController.swift in Sources */,
+				DD456BF4210EBDE6009465FE /* LaunchViewController.swift in Sources */,
+				DD456BF5210EBDE6009465FE /* GenderEnum.swift in Sources */,
+				DD456BF6210EBDE6009465FE /* BlockHTTPResult.swift in Sources */,
+				DD456BF7210EBDE6009465FE /* ModalTransitionController.swift in Sources */,
+				DD456BF8210EBDE6009465FE /* TransitionManager.swift in Sources */,
+				DD456BF9210EBDE6009465FE /* Delay.swift in Sources */,
+				DD456BFA210EBDE6009465FE /* UIFont+Extension.swift in Sources */,
+				DD456BFB210EBDE6009465FE /* URLQueryArrayEncoding.swift in Sources */,
+				DD456BFC210EBDE6009465FE /* TemplateViewController.swift in Sources */,
+				DD456BFD210EBDE6009465FE /* ConfigurationAPI.swift in Sources */,
+				DD456BFE210EBDE6009465FE /* PrepareLauncher.swift in Sources */,
+				DD456BFF210EBDE6009465FE /* BulletinViewController.swift in Sources */,
+				DD456C00210EBDE6009465FE /* UIView+Chainable.swift in Sources */,
+				DD456C01210EBDE6009465FE /* GameModel.swift in Sources */,
+				DD456C02210EBDE6009465FE /* ReusableProtocol.swift in Sources */,
+				DD456C03210EBDE6009465FE /* AccountInfoView.swift in Sources */,
+				DD456C04210EBDE6009465FE /* CheckForAppUpdateModel.swift in Sources */,
+				DD456C05210EBDE6009465FE /* JsonMapper.swift in Sources */,
+				DD456C06210EBDE6009465FE /* GenderButton.swift in Sources */,
+				DD456C07210EBDE6009465FE /* CheckForUpdatesViewController.swift in Sources */,
+				DD456C08210EBDE6009465FE /* GameDetailModelManager.swift in Sources */,
+				DD456C09210EBDE6009465FE /* AppInfo.swift in Sources */,
+				DD456C0A210EBDE6009465FE /* UserManager.swift in Sources */,
+				DD456C0B210EBDE6009465FE /* DismissAnimatedTransition.swift in Sources */,
+				DD456C0C210EBDE6009465FE /* GameModelManager.swift in Sources */,
+				DD456C0D210EBDE6009465FE /* GameDetailModel.swift in Sources */,
+				DD456C0E210EBDE6009465FE /* EngineResourceManagerResourceManager.swift in Sources */,
+				DD456C0F210EBDE6009465FE /* DecorationControllerManager.swift in Sources */,
+				DD456C10210EBDE6009465FE /* BlockHTTPError.swift in Sources */,
+				DD456C11210EBDE6009465FE /* CheckForAppUpdatesModelManager.swift in Sources */,
+				DD456C12210EBDE6009465FE /* UserModel.swift in Sources */,
+				DD456C13210EBDE6009465FE /* ProgressView.swift in Sources */,
+				DD456C14210EBDE6009465FE /* LaunchInfiniteTranslationSkyView.swift in Sources */,
+				DD456C15210EBDE6009465FE /* OpenURL.swift in Sources */,
+				DD456C16210EBDE6009465FE /* Dictionary+Extension.swift in Sources */,
+				DD456C17210EBDE6009465FE /* HomePageViewController.swift in Sources */,
+				DD456C18210EBDE6009465FE /* UITableView+Extension.swift in Sources */,
+				DD456C19210EBDE6009465FE /* AppDelegate.swift in Sources */,
+				DD456C1A210EBDE6009465FE /* String+ConvertToDigit.swift in Sources */,
+				DD456C1B210EBDE6009465FE /* CopyFileTool.swift in Sources */,
+				DD456C1C210EBDE6009465FE /* GameModesView.swift in Sources */,
+				DD456C1D210EBDE6009465FE /* GameDetailViewController.swift in Sources */,
+				DD456C1E210EBDE6009465FE /* GameDispatchModel.swift in Sources */,
+				DD456C1F210EBDE6009465FE /* ExtraSizeLabel.swift in Sources */,
+				DD456C20210EBDE6009465FE /* UserRequester.swift in Sources */,
+				DD456C21210EBDE6009465FE /* R.generated.swift in Sources */,
+				DD456C22210EBDE6009465FE /* UserAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD51604820EC6B740000B8DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -834,7 +1158,6 @@
 				DD51608B20F464980000B8DC /* PrepareLauncher.swift in Sources */,
 				DD74030820FF3DA700091B9D /* BulletinViewController.swift in Sources */,
 				DD51609820F46A310000B8DC /* UIView+Chainable.swift in Sources */,
-				DD5160A720F49EA60000B8DC /* ViewController2.swift in Sources */,
 				DD5160F920F6F1CD0000B8DC /* GameModel.swift in Sources */,
 				DD51609B20F46AAB0000B8DC /* ReusableProtocol.swift in Sources */,
 				DD51608D20F468300000B8DC /* AccountInfoView.swift in Sources */,
@@ -902,6 +1225,53 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DD456C36210EBDE6009465FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E01837725EFD8265A16B0F5A /* Pods-BlockmanGo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R3LUB63PG7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlockmanGo",
+				);
+				INFOPLIST_FILE = "BlockmanGo copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DBLOCK_DEV";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandboxol.BlockmanGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BlockmanGo/BlockmanGo-Briding-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DD456C37210EBDE6009465FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28E1B64E849E1474617FE6A2 /* Pods-BlockmanGo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R3LUB63PG7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlockmanGo",
+				);
+				INFOPLIST_FILE = "BlockmanGo copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandboxol.BlockmanGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BlockmanGo/BlockmanGo-Briding-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		DD51605C20EC6B740000B8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1058,6 +1428,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DD456C35210EBDE6009465FE /* Build configuration list for PBXNativeTarget "BlockmanGo_Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD456C36210EBDE6009465FE /* Debug */,
+				DD456C37210EBDE6009465FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DD51604720EC6B740000B8DC /* Build configuration list for PBXProject "BlockmanGo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -24,7 +24,7 @@ class AccountInfoView: UIView {
     
     var userID: String? {
         didSet {
-            userIDLabel?.text = userID
+            userIDLabel?.text = "ID: " + (userID ?? "")
         }
     }
     
@@ -72,7 +72,6 @@ class AccountInfoView: UIView {
         nicknameLabel = UILabel().addTo(superView: backgroundImageView).configure({ (label) in
             label.font = UIFont.size14
             label.textColor = R.clr.appColor._5e3f00()
-            label.text = "三生三世十里桃花"
         }).layout(snapKitMaker: { (make) in
             make.left.equalTo(genderImageView!.snp.right).offset(5)
             make.top.equalToSuperview().offset(14)
@@ -81,13 +80,12 @@ class AccountInfoView: UIView {
         userIDLabel = UILabel().addTo(superView: backgroundImageView).configure({ (label) in
             label.font = UIFont.size11
             label.textColor = R.clr.appColor._b39558()
-            label.text = "ID: 1254635"
         }).layout(snapKitMaker: { (make) in
             make.left.equalTo(genderImageView!.snp.right).offset(5)
             make.top.equalTo(nicknameLabel!.snp.bottom).offset(3)
         })
         
-        vipLevelImageView = UIImageView(image: R.image.vip_1()).addTo(superView: backgroundImageView).layout(snapKitMaker: { (make) in
+        vipLevelImageView = UIImageView().addTo(superView: backgroundImageView).layout(snapKitMaker: { (make) in
             make.right.bottom.equalToSuperview()
         })
     }

@@ -31,7 +31,7 @@ class CheckForUpdatesViewController: UIViewController {
         let appVersionLabel = UILabel().addTo(superView: view).configure { (label) in
             label.textColor = UIColor.white
             label.font = UIFont.size13
-            label.text = "Version 1.3.20"
+            label.text = "APP: " + AppInfo.currentShortVersion + " Res: " + GameEngineInfo.resourceVersion
         }.layout { (make) in
             make.right.equalToSuperview().inset(10)
             make.bottom.equalToSuperview().inset(8)
@@ -40,7 +40,6 @@ class CheckForUpdatesViewController: UIViewController {
         progressView = ProgressView().addTo(superView: view).configure({ (progressView) in
             progressView.displayInfo = "正在检查资源..."
             progressView.progress = 0
-            progressView.isHidden = true
         }).layout { (make) in
             make.left.right.equalToSuperview().inset(24)
             make.bottom.equalTo(appVersionLabel.snp.top).inset(-20)
@@ -80,19 +79,23 @@ class CheckForUpdatesViewController: UIViewController {
         }else if engineResourceManager.checkResourceUpdateIfNeed() {
             engineResourceManager.downloadResource()
         }else {
-            delegate?.checkForUpdatesDidFinished()
+            self.progressView?.setProgress(1.0, animated: true)
+            delay(0.5, exeute: {
+                self.delegate?.checkForUpdatesDidFinished()
+            })
         }
     }
 }
 
 extension CheckForUpdatesViewController: EngineResourceModelManagerDelegate {
     func engineResourceCopyInProgress(_ progress: Float) {
-        print("engineResourceCopyInProgress \(progress)")
+        DebugLog("engineResourceCopyInProgress \(progress)")
         progressView?.displayInfo = "正在初始化游戏资源..."
         progressView?.setProgress(progress, animated: true)
     }
     
     func engineResourceCopyDidFinished() {
+        DebugLog("engineResourceCopyDidFinished 初始化完成")
         progressView?.displayInfo = "初始化完成"
         progressView?.setProgress(1.0, animated: true)
         delay(0.2) {

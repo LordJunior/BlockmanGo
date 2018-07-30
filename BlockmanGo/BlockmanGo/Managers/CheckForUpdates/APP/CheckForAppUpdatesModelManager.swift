@@ -14,24 +14,22 @@ class CheckForAppUpdatesModelManager {
     private var appVersionForItunes: String?
     
     func checkForAppUpdates(completion: @escaping (BlockHTTPResult<AppUpdatesResult, BlockHTTPError>) -> Void) {
-        completion(.success(AppUpdatesResult(true, false, "")))
-        return;
             
         /// 先从iTunes获取对应的APP 版本信息
-//        Requester.requestWithTarget(ConfigurationAPI.fetchAppInfoFromiTunes) { [unowned self] (result) in
-//            switch result {
-//            case .success(let response):
-//                let results = response["results"] as! [[String : Any]]
-//                if !results.isEmpty {
-//                    self.appVersionForItunes = results.first!["version"] as? String
-//                }
-//                self.fetchAppUpdatesInfo(completion: completion)
-//            case .failure(_):
-//                self.appVersionForItunes = "2.0.0"
-//                self.fetchAppUpdatesInfo(completion: completion)
-//                break
-//            }
-//        }
+        Requester.requestWithTarget(ConfigurationAPI.fetchAppInfoFromiTunes) { [unowned self] (result) in
+            switch result {
+            case .success(let response):
+                let results = response["results"] as! [[String : Any]]
+                if !results.isEmpty {
+                    self.appVersionForItunes = results.first!["version"] as? String
+                }
+                self.fetchAppUpdatesInfo(completion: completion)
+            case .failure(_):
+                self.appVersionForItunes = "2.0.0"
+                self.fetchAppUpdatesInfo(completion: completion)
+                break
+            }
+        }
     }
     
     /// 从服务器获取更新配置表

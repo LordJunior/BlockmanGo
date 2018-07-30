@@ -7,13 +7,11 @@
 //
 
 import UIKit
-import SnapKit
 import BlockModsGameKit
 import StoreKit
 
 class GameViewController: UIViewController {
 
-    private var collectionViewToSuperTopConstraint: Constraint?
     private weak var collectionView: UICollectionView?
     private var gameModelManager = GameModelManager()
     
@@ -40,9 +38,10 @@ class GameViewController: UIViewController {
             collectionView.dataSource = self
             collectionView.delegate = self
             self.view.insertSubview(collectionView, belowSubview: gameModesView)
+            collectionView.transform = CGAffineTransform.init(translationX: 0, y: view.height)
         }.layout { (make) in
             make.left.equalTo(gameModesView.snp.right)
-            self.collectionViewToSuperTopConstraint = make.top.equalToSuperview().offset(self.view.height * 0.5).constraint
+            make.top.equalToSuperview()
             make.bottom.equalToSuperview()
             make.right.equalToSuperview()
         }
@@ -65,7 +64,6 @@ class GameViewController: UIViewController {
         }
         
         fetchGamesWithMode(0) // 默认全部
-        perform(#selector(updateCollectionViewConstaint), with: nil, afterDelay: 0.5)
     }
     
     @objc private func backButtonClicked() {
@@ -73,10 +71,9 @@ class GameViewController: UIViewController {
     }
     
     @objc private func updateCollectionViewConstaint() {
-        self.collectionViewToSuperTopConstraint?.update(offset: 0)
-        UIView.animate(withDuration: 0.25, animations: {
+        UIView.animate(withDuration: 0.45, animations: {
             self.collectionView?.alpha = 1.0
-            self.view.layoutIfNeeded()
+            self.collectionView?.transform = CGAffineTransform.identity
         })
     }
     
@@ -86,6 +83,9 @@ class GameViewController: UIViewController {
             case .success(let games):
                 self?.games = games
                 self?.collectionView?.reloadData()
+                delay(0.35, exeute: {
+                    self?.updateCollectionViewConstaint()
+                })
             case .failure(_):
                 break
             }

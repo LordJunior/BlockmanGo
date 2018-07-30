@@ -14,16 +14,22 @@ class HomePageViewController: UIViewController {
         super.viewDidLoad()
         
         DecorationControllerManager.shared.removeFromParent()
-        DecorationControllerManager.shared.add(toParent: self, layout: { (make) in
+        DecorationControllerManager.shared.add(toParent: self, layout: { (make)  in
             make.left.right.top.bottom.equalToSuperview()
-        })
-        
-        let accountInfoView = AccountInfoView().addTo(superView: view).layout { (make) in
-            make.center.equalToSuperview()
-            make.size.equalTo(CGSize(width: 160, height: 53))
+        }) {
+            DecorationControllerManager.shared.setPosition(x: -0.8)
         }
         
-        let button = UIButton().addTo(superView: view).configure { (button) in
+        let nicknameTextSize = (UserManager.shared.nickname as NSString).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : UIFont.size14], context: nil).size
+        AccountInfoView().addTo(superView: view).layout { (make) in
+            make.top.left.equalToSuperview().inset(5)
+            make.size.equalTo(CGSize(width: nicknameTextSize.width + 80, height: 53))
+        }.configure { (infoView) in
+            infoView.nickname = UserManager.shared.nickname
+            infoView.userID = UserManager.shared.userID
+        }
+        
+        UIButton().addTo(superView: view).configure { (button) in
             button.setBackgroundImage(R.image.home_play(), for: .normal)
             button.addTarget(self, action: #selector(playButtonClicked(sender:)), for: .touchUpInside)
         }.layout { (make) in
@@ -31,36 +37,28 @@ class HomePageViewController: UIViewController {
             make.centerY.equalToSuperview()
             make.right.equalToSuperview().inset(64)
         }
-        
-        let button1 = UIButton().addTo(superView: view).configure { (button) in
-            button.setBackgroundImage(R.image.home_play(), for: .normal)
-            button.addTarget(self, action: #selector(changePosition(sender:)), for: .touchUpInside)
-            button.setTitle("改变位置", for: .normal)
-            }.layout { (make) in
-                make.size.equalTo(CGSize(width: 200, height: 84))
-                make.centerY.equalToSuperview()
-                make.right.equalToSuperview().inset(164)
-        }
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        DecorationControllerManager.shared.suspendRendering()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        DecorationControllerManager.shared.resumeRendering()
+    }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//
+//        TransitionManager.present(InitializeProfileViewController.self, animated: false)
+//    }
     
     @objc private func playButtonClicked(sender: UIButton) {
         TransitionManager.pushViewController(GameViewController.self, animated: false)
-    }
-    
-    @objc private func changePosition(sender: UIButton) {
-        if sender.isSelected {
-            DecorationControllerManager.shared.setPosition(x: 0.6, y: 0.0, z: -0.7)
-        }else {
-            DecorationControllerManager.shared.setPosition(x: -0.6, y: 0.0, z: -0.7)
-        }
-        sender.isSelected = !sender.isSelected
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        TransitionManager.present(InitializeProfileViewController.self, animated: false)
     }
 }
 

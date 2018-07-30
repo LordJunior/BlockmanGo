@@ -141,7 +141,7 @@ class GameDetailViewController: TemplateViewController {
         nameLabel?.text = detailModel.gameTitle
         modeLabel?.text = detailModel.gameTypes.joined(separator: " | ")
         likesButton?.setTitle(String(detailModel.praiseNumber), for: .normal)
-        likesButton?.isEnabled = !detailModel.appreciate
+//        likesButton?.isEnabled = !detailModel.appreciate
         detailsTextView?.attributedText = detailModel.gameDetail
     }
     
