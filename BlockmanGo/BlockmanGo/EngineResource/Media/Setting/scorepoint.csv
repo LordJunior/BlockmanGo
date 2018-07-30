@@ -5,3 +5,5 @@ ScoreId	ScoreName
 3	score_point_live	存活
 4	score_point_serial_kill	连杀
 5	score_point_destroy_bed	破坏床数
+6	score_point_flag	夺旗数
+7	score_point_point	跑酷触发点

@@ -414,7 +414,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,-115},{0,-38},{0,215},{0,0}}"
+                                    "Value": "{{0,-115},{0,-38},{1,-345},{0,0}}"
                                 },
                                 {
                                     "Name": "HorizontalAlignment",

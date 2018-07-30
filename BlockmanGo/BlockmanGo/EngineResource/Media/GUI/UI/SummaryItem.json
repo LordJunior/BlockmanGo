@@ -124,14 +124,10 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,0},{0,0},{0,50},{1,0}}"
+                            "Value": "{{0.375,0},{0,0},{0.375,50},{1,0}}"
                         },
                         {
                             "Name": "VerticalAlignment",
-                            "Value": "Centre"
-                        },
-                        {
-                            "Name": "HorizontalAlignment",
                             "Value": "Centre"
                         },
                         {
@@ -165,6 +161,10 @@
                         {
                             "Name": "TextBorder",
                             "Value": "true"
+                        },
+                        {
+                            "Name": "TextLineExtraSpace",
+                            "Value": "0"
                         }
                     ]
                 },
@@ -174,7 +174,11 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{1,-150},{0,15},{1,-116.25},{0,48.75}}"
+                            "Value": "{{0.7,0},{0,0},{0.7,33.75},{0,33.75}}"
+                        },
+                        {
+                            "Name": "VerticalAlignment",
+                            "Value": "Centre"
                         },
                         {
                             "Name": "Touchable",
@@ -224,7 +228,11 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{1,-125},{0,-1},{1,-73},{1,-1}}"
+                            "Value": "{{0.7441,0},{0,0},{0.7441,52},{1,0}}"
+                        },
+                        {
+                            "Name": "VerticalAlignment",
+                            "Value": "Centre"
                         },
                         {
                             "Name": "Text",
@@ -249,6 +257,10 @@
                         {
                             "Name": "TextVertAlignment",
                             "Value": "Centre"
+                        },
+                        {
+                            "Name": "TextLineExtraSpace",
+                            "Value": "0"
                         }
                     ]
                 },
@@ -258,7 +270,7 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,13},{0,66},{0,497},{0,68}}"
+                            "Value": "{{0,13},{0,66},{1,-13},{0,68}}"
                         },
                         {
                             "Name": "Touchable",
@@ -432,11 +444,15 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{1,-75},{0,0},{1,-13.125},{0,22.5}}"
+                            "Value": "{{0,-10},{0,0},{0,51.875},{0,22.5}}"
                         },
                         {
                             "Name": "VerticalAlignment",
                             "Value": "Centre"
+                        },
+                        {
+                            "Name": "HorizontalAlignment",
+                            "Value": "Right"
                         },
                         {
                             "Name": "Touchable",
@@ -486,7 +502,7 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,100},{0,0},{0,170.875},{0,36}}"
+                            "Value": "{{0.16,0},{0,0},{0.16,70.875},{0,36}}"
                         },
                         {
                             "Name": "VerticalAlignment",
@@ -536,7 +552,7 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{1,-120},{0,10},{1,-69},{0,28}}"
+                            "Value": "{{0.7441,0},{0,8},{0.7441,51},{0,26}}"
                         },
                         {
                             "Name": "Touchable",
@@ -598,11 +614,205 @@
                         },
                         {
                             "Name": "Text",
-                            "Value": "5655555"
+                            "Value": "55567"
                         },
                         {
                             "Name": "Visible",
                             "Value": "false"
+                        },
+                        {
+                            "Name": "WndOpenSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "WndCloseSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "TextHorzAlignment",
+                            "Value": "Right"
+                        },
+                        {
+                            "Name": "TextVertAlignment",
+                            "Value": "Centre"
+                        },
+                        {
+                            "Name": "TextScale",
+                            "Value": "1.2"
+                        },
+                        {
+                            "Name": "TextLineExtraSpace",
+                            "Value": "0"
+                        }
+                    ]
+                },
+                {
+                    "Type": "Button",
+                    "Name": "SummaryItem-Button",
+                    "Property": [
+                        {
+                            "Name": "Area",
+                            "Value": "{{0,-10},{0,0},{0,70},{0,49}}"
+                        },
+                        {
+                            "Name": "VerticalAlignment",
+                            "Value": "Centre"
+                        },
+                        {
+                            "Name": "HorizontalAlignment",
+                            "Value": "Right"
+                        },
+                        {
+                            "Name": "Text",
+                            "Value": "拜访"
+                        },
+                        {
+                            "Name": "WndOpenSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "WndCloseSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "StretchType",
+                            "Value": "NineGrid"
+                        },
+                        {
+                            "Name": "StretchOffset",
+                            "Value": "8 10 8 10"
+                        },
+                        {
+                            "Name": "NormalImage",
+                            "Value": "set:new_gui_material.json image:btn_green_nor"
+                        },
+                        {
+                            "Name": "PushedImage",
+                            "Value": "set:new_gui_material.json image:btn_green_nor"
+                        },
+                        {
+                            "Name": "SoundName",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "HexgonTopImage",
+                            "Value": ""
+                        },
+                        {
+                            "Name": "HexgonTopColor",
+                            "Value": "1 1 1 1"
+                        },
+                        {
+                            "Name": "HexgonSideImage",
+                            "Value": ""
+                        },
+                        {
+                            "Name": "HexgonSideColor",
+                            "Value": "1 1 1 1"
+                        },
+                        {
+                            "Name": "HexgonOverlayerImage",
+                            "Value": ""
+                        },
+                        {
+                            "Name": "HexgonOverlayerColor",
+                            "Value": "1 1 1 1"
+                        }
+                    ]
+                },
+                {
+                    "Type": "Button",
+                    "Name": "SummaryItem-VisitBtn",
+                    "Property": [
+                        {
+                            "Name": "Area",
+                            "Value": "{{0,-10},{0,0},{0,50},{0,40}}"
+                        },
+                        {
+                            "Name": "VerticalAlignment",
+                            "Value": "Centre"
+                        },
+                        {
+                            "Name": "HorizontalAlignment",
+                            "Value": "Right"
+                        },
+                        {
+                            "Name": "Text",
+                            "Value": "前往"
+                        },
+                        {
+                            "Name": "Visible",
+                            "Value": "false"
+                        },
+                        {
+                            "Name": "WndOpenSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "WndCloseSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "StretchType",
+                            "Value": "NineGrid"
+                        },
+                        {
+                            "Name": "StretchOffset",
+                            "Value": "8 10 8 10"
+                        },
+                        {
+                            "Name": "TextShadow",
+                            "Value": "true"
+                        },
+                        {
+                            "Name": "NormalImage",
+                            "Value": "set:new_gui_material.json image:btn_green_nor"
+                        },
+                        {
+                            "Name": "PushedImage",
+                            "Value": "set:new_gui_material.json image:btn_green_nor"
+                        },
+                        {
+                            "Name": "SoundName",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "HexgonTopImage",
+                            "Value": ""
+                        },
+                        {
+                            "Name": "HexgonTopColor",
+                            "Value": "1 1 1 1"
+                        },
+                        {
+                            "Name": "HexgonSideImage",
+                            "Value": ""
+                        },
+                        {
+                            "Name": "HexgonSideColor",
+                            "Value": "1 1 1 1"
+                        },
+                        {
+                            "Name": "HexgonOverlayerImage",
+                            "Value": ""
+                        },
+                        {
+                            "Name": "HexgonOverlayerColor",
+                            "Value": "1 1 1 1"
+                        }
+                    ]
+                },
+                {
+                    "Type": "StaticText",
+                    "Name": "SummaryItem-BuildWarScore",
+                    "Property": [
+                        {
+                            "Name": "Area",
+                            "Value": "{{0.6,0},{0,0},{0.6,50},{1,0}}"
+                        },
+                        {
+                            "Name": "VerticalAlignment",
+                            "Value": "Centre"
                         },
                         {
                             "Name": "WndOpenSound",
@@ -621,8 +831,8 @@
                             "Value": "Centre"
                         },
                         {
-                            "Name": "TextScale",
-                            "Value": "1.2"
+                            "Name": "TextLineExtraSpace",
+                            "Value": "0"
                         }
                     ]
                 }

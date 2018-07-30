@@ -1,0 +1,236 @@
+<?xml version = "1.0" encoding = "GB2312"?>
+<ActorTemplates>
+	<ActorTemplate name="furnish.actor" Originalscale="1 1 1" Skeleton="furnish.skel" AttackScale="1" TextHeight="0" IsShowShadow="true" WoundBone="" WoundAngle="25" SelectedRingSize="1" SoundName1="" SoundName2="" SoundName3="" SoundName4="" SoundName5="" SoundFileNum="0" Volume="0.8" MinDistance="1" MaxDistance="16" IntervalTime="2" Alpha="1">
+		<BodyParts>
+			<BodyPart MasterName="body" SlaveName="1" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture01.skin" ChangeColor = "2.10195e-44 8.88423e-43 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="10" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture10.skin" ChangeColor = "2.10195e-44 6.09845e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="11" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture11.skin" ChangeColor = "2.10195e-44 6.27081e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="12" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture12.skin" ChangeColor = "2.10195e-44 6.44317e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="13" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture13.skin" ChangeColor = "2.10195e-44 6.61553e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="14" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture14.skin" ChangeColor = "2.10195e-44 6.78789e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="15" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture15.skin" ChangeColor = "2.10195e-44 6.96025e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="16" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture16.skin" ChangeColor = "2.10195e-44 7.13261e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="17" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture17.skin" ChangeColor = "2.10195e-44 7.30497e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="18" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture18.skin" ChangeColor = "2.10195e-44 7.47733e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="19" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture19.skin" ChangeColor = "2.10195e-44 7.64969e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="2" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture02.skin" ChangeColor = "2.10195e-44 4.71957e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="20" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture20.skin" ChangeColor = "2.10195e-44 7.82205e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="21" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture21.skin" ChangeColor = "2.10195e-44 9.20093e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="22" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture22.skin" ChangeColor = "2.10195e-44 9.37329e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="23" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture23.skin" ChangeColor = "2.10195e-44 9.54565e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="24" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture24.skin" ChangeColor = "2.10195e-44 9.718e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="25" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture25.skin" ChangeColor = "2.10195e-44 9.88756e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="26" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture26.skin" ChangeColor = "2.10195e-44 1.00599e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="27" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture27.skin" ChangeColor = "2.10195e-44 1.02323e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="28" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture28.skin" ChangeColor = "2.10195e-44 1.40242e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="29" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture29.skin" ChangeColor = "2.10195e-44 1.41966e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="3" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture03.skin" ChangeColor = "2.10195e-44 4.89193e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="30" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture30.skin" ChangeColor = "2.10195e-44 1.43689e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="31" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture31.skin" ChangeColor = "2.10195e-44 1.45413e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="32" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture32.skin" ChangeColor = "2.10195e-44 1.47136e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="33" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture33.skin" ChangeColor = "2.10195e-44 1.4886e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="34" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture34.skin" ChangeColor = "2.10195e-44 1.5057e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="35" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture35.skin" ChangeColor = "2.10195e-44 1.52279e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="36" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture36.skin" ChangeColor = "2.10195e-44 1.54003e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="37" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture37.skin" ChangeColor = "2.10195e-44 1.55726e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="38" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture38.skin" ChangeColor = "2.10195e-44 1.5745e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="39" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture39.skin" ChangeColor = "2.10195e-44 1.59159e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="4" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture04.skin" ChangeColor = "2.10195e-44 5.06429e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="40" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture40.skin" ChangeColor = "2.10195e-44 1.60883e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="41" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture41.skin" ChangeColor = "2.10195e-44 1.62607e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="42" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture42.skin" ChangeColor = "2.10195e-44 1.6433e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="43" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture43.skin" ChangeColor = "2.10195e-44 1.6604e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="44" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture44.skin" ChangeColor = "2.10195e-44 1.67749e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="45" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture45.skin" ChangeColor = "2.10195e-44 1.69473e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="46" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture46.skin" ChangeColor = "2.10195e-44 1.71197e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="47" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture47.skin" ChangeColor = "2.10195e-44 1.7292e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="48" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture48.skin" ChangeColor = "2.10195e-44 1.7463e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="49" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture49.skin" ChangeColor = "2.10195e-44 1.88405e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="5" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture05.skin" ChangeColor = "2.10195e-44 5.23665e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="50" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture50.skin" ChangeColor = "2.10195e-44 1.90128e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="51" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture51.skin" ChangeColor = "2.10195e-44 1.91852e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="52" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture52.skin" ChangeColor = "2.10195e-44 1.93575e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="53" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture53.skin" ChangeColor = "2.10195e-44 1.95299e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="54" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture54.skin" ChangeColor = "2.10195e-44 1.97023e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="55" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture55.skin" ChangeColor = "2.10195e-44 1.98746e-41 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="6" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture06.skin" ChangeColor = "2.10195e-44 5.40901e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="7" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture07.skin" ChangeColor = "2.10195e-44 5.58137e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="8" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture08.skin" ChangeColor = "2.10195e-44 5.75373e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="body" SlaveName="9" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "furniture09.skin" ChangeColor = "2.10195e-44 5.92609e-42 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+		</BodyParts>
+		<Skills>
+			<Skill Name="idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "furnish_stand01.anim" BeginTime = "0" Times = "-1" Length = "0.7" FadeTime = "0.25" Channel = "" TimeScale = "1">
+				</Animation>
+			</Skill>
+		</Skills>
+		<Anims>
+				<Anim Name="furnish_stand01.anim"/>
+		</Anims>
+	</ActorTemplate>
+</ActorTemplates>

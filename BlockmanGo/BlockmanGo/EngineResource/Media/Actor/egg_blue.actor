@@ -8,8 +8,13 @@
 			</BodyPart>
 		</BodyParts>
 		<Skills>
+			<Skill Name="idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "dragon_egg_stand01.anim" BeginTime = "0" Times = "-1" Length = "3.366" FadeTime = "0.25" Channel = "" TimeScale = "1">
+				</Animation>
+			</Skill>
 		</Skills>
 		<Anims>
+				<Anim Name="dragon_egg_stand01.anim"/>
 		</Anims>
 	</ActorTemplate>
 </ActorTemplates>

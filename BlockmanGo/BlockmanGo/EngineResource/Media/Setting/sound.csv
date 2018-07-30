@@ -123,6 +123,15 @@ SoundId	IsRepeat	RepeatInterval_min	RepeatInterval_max	SoundFile	Type	SubType	De
 132	0	0	0	Media/Sound/random/98k		枪械	98k	
 133	0	0	0	Media/Sound/random/baleite		枪械	巴雷特	
 134	0	0	0	Media/Sound/random/m4a1		枪械	m4a1	
+135	0	0	0	Media/Sound/note/grade1			建筑战争打分1	
+136	0	0	0	Media/Sound/note/grade2			建筑战争打分2	
+137	0	0	0	Media/Sound/note/grade3			建筑战争打分3	
+138	0	0	0	Media/Sound/note/grade4			建筑战争打分4	
+139	0	0	0	Media/Sound/note/grade5			建筑战争打分5	
+140	0	0	0	Media/Sound/note/grade6			建筑战争打分6	
+141	0	0	0	Media/Sound/note/telepos			建筑战争传送	
+142	0	0	0	Media/Sound/note/trans			建筑战争环节切换	
+143	0	0	0	Media/Sound/note/fire			建筑战争烟花	
 10000	1	35	10	Media/Sound/bgm/theme_sea			主题音乐1	
 10001	1	35	10	Media/Sound/bgm/theme_home			主题音乐2	
 10002	0	0	0	Media/Sound/bgm/theme_dead			死亡	
@@ -152,6 +161,8 @@ SoundId	IsRepeat	RepeatInterval_min	RepeatInterval_max	SoundFile	Type	SubType	De
 10026	0	0	0	Media/Sound/random/landing			降落	
 10027	0	0	0	Media/Sound/random/hit			攻击音效	需要替换
 10028	0	0	0	Media/Sound/random/crash			塌方	TNT跑酷独有
+10029	1	0	0	Media/Sound/bgm/theme_parkour			主题音乐	彩虹跑酷
+10030	1	0	0	Media/Sound/bgm/theme_buildbattle			主题音乐	建筑战争
 -1	1	0	0	Media/Sound/ambient/cave/cave13 		ambient	洞穴	
 -1	1	0	0	Media/Sound/ambient/cave/cave14 		ambient	洞穴	
 -1	1	0	0	Media/Sound/ambient/cave/cave15 		ambient	洞穴	
@@ -279,10 +290,10 @@ SoundId	IsRepeat	RepeatInterval_min	RepeatInterval_max	SoundFile	Type	SubType	De
 -1	0	0	0	Media/Sound/dig/wood2 		dig	破坏木头方块2	
 -1	0	0	0	Media/Sound/dig/wood3 		dig	破坏木头方块3	
 -1	0	0	0	Media/Sound/dig/wood4 		dig	破坏木头方块4	
--1	0	0	0	Media/Sound/enchant/thorns/hit1 				
--1	0	0	0	Media/Sound/enchant/thorns/hit2 				
--1	0	0	0	Media/Sound/enchant/thorns/hit3 				
--1	0	0	0	Media/Sound/enchant/thorns/hit4 				
+-1	0	0	0	Media/Sound/enchant/thorns/hit1				
+-1	0	0	0	Media/Sound/enchant/thorns/hit2				
+-1	0	0	0	Media/Sound/enchant/thorns/hit3				
+-1	0	0	0	Media/Sound/enchant/thorns/hit4				
 -1	0	0	0	Media/Sound/entity/armorstand/break1 		entity		
 -1	0	0	0	Media/Sound/entity/armorstand/break2 		entity		
 -1	0	0	0	Media/Sound/entity/armorstand/break3 		entity		
@@ -1176,18 +1187,18 @@ SoundId	IsRepeat	RepeatInterval_min	RepeatInterval_max	SoundFile	Type	SubType	De
 -1	0	0	0	Media/Sound/random/splash 		entity		
 -1	0	0	0	Media/Sound/random/successful_hit 		entity		
 -1	0	0	0	Media/Sound/random/wood_click 		entity		
--1	0	0	0	Media/Sound/records/11 				
--1	0	0	0	Media/Sound/records/13 				
--1	0	0	0	Media/Sound/records/blocks 				
--1	0	0	0	Media/Sound/records/cat 				
--1	0	0	0	Media/Sound/records/chirp 				
--1	0	0	0	Media/Sound/records/far 				
--1	0	0	0	Media/Sound/records/mall 				
--1	0	0	0	Media/Sound/records/mellohi 				
--1	0	0	0	Media/Sound/records/stal 				
--1	0	0	0	Media/Sound/records/strad 				
--1	0	0	0	Media/Sound/records/wait 				
--1	0	0	0	Media/Sound/records/ward 				
+-1	0	0	0	Media/Sound/records/11				
+-1	0	0	0	Media/Sound/records/13				
+-1	0	0	0	Media/Sound/records/blocks				
+-1	0	0	0	Media/Sound/records/cat				
+-1	0	0	0	Media/Sound/records/chirp				
+-1	0	0	0	Media/Sound/records/far				
+-1	0	0	0	Media/Sound/records/mall				
+-1	0	0	0	Media/Sound/records/mellohi				
+-1	0	0	0	Media/Sound/records/stal				
+-1	0	0	0	Media/Sound/records/strad				
+-1	0	0	0	Media/Sound/records/wait				
+-1	0	0	0	Media/Sound/records/ward				
 -1	0	0	0	Media/Sound/step/cloth1 			行走，布质表面1	
 -1	0	0	0	Media/Sound/step/cloth2 			行走，布质表面2	
 -1	0	0	0	Media/Sound/step/cloth3 			行走，布质表面3	

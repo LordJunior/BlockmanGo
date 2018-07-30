@@ -1245,6 +1245,10 @@
                                                     "Value": "Centre"
                                                 },
                                                 {
+                                                    "Name": "Text",
+                                                    "Value": "退出游戏"
+												},
+												{
                                                     "Name": "Font",
                                                     "Value": "HT20"
                                                 },

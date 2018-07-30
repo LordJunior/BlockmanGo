@@ -32,7 +32,11 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,168},{0,60},{0,1128},{0,663}}"
+                            "Value": "{{0,0},{0,60},{0.75,0},{0.8375,60}}"
+                        },
+                        {
+                            "Name": "HorizontalAlignment",
+                            "Value": "Centre"
                         },
                         {
                             "Name": "WndOpenSound",
@@ -78,7 +82,11 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,167},{0,61},{0,1127},{0,664}}"
+                            "Value": "{{0,0},{0,61},{0.75,0},{0.8375,61}}"
+                        },
+                        {
+                            "Name": "HorizontalAlignment",
+                            "Value": "Centre"
                         },
                         {
                             "Name": "WndOpenSound",
@@ -96,7 +104,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,233},{0,164},{0,419},{0,213}}"
+                                    "Value": "{{0.2427,0},{0.272,0},{0.43645,0},{0.272,49}}"
                                 },
                                 {
                                     "Name": "Text",
@@ -130,7 +138,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,196},{0,216},{0,764},{0,218}}"
+                                    "Value": "{{0.2042,0},{0.3582,0},{0.7959,0},{0.3582,2}}"
                                 },
                                 {
                                     "Name": "WndOpenSound",
@@ -176,7 +184,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,220},{0,250},{0,770},{0,325}}"
+                                    "Value": "{{0.2292,0},{0.4146,0},{0.8021,0},{0.4146,75}}"
                                 },
                                 {
                                     "Name": "WndOpenSound",
@@ -482,7 +490,7 @@
                                                     "Property": [
                                                         {
                                                             "Name": "Area",
-                                                            "Value": "{{0,-41},{0,-1},{0,-3},{0,34}}"
+                                                            "Value": "{{0,-30},{0,-1},{0,8},{0,34}}"
                                                         },
                                                         {
                                                             "Name": "VerticalAlignment",
@@ -506,7 +514,7 @@
                                                         },
                                                         {
                                                             "Name": "TextHorzAlignment",
-                                                            "Value": "Centre"
+                                                            "Value": "Right"
                                                         },
                                                         {
                                                             "Name": "TextVertAlignment",
@@ -524,7 +532,7 @@
                                                     "Property": [
                                                         {
                                                             "Name": "Area",
-                                                            "Value": "{{0,20},{0,0},{0,130},{1,0}}"
+                                                            "Value": "{{0,20},{0,0},{0.4,20},{1,0}}"
                                                         },
                                                         {
                                                             "Name": "VerticalAlignment",
@@ -541,10 +549,6 @@
                                                         {
                                                             "Name": "WndCloseSound",
                                                             "Value": "0"
-                                                        },
-                                                        {
-                                                            "Name": "TextHorzAlignment",
-                                                            "Value": "Centre"
                                                         },
                                                         {
                                                             "Name": "TextVertAlignment",
@@ -860,7 +864,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,0},{0,420},{0.41,0},{0,470}}"
+                                    "Value": "{{0,0},{0.6965,0},{0.41,0},{0.6965,50}}"
                                 },
                                 {
                                     "Name": "HorizontalAlignment",
@@ -1148,7 +1152,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,319},{0,-2},{0,648},{0,68}}"
+                                    "Value": "{{0,0},{0,0},{1,0},{0,70}}"
                                 },
                                 {
                                     "Name": "Text",
@@ -1190,7 +1194,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,220},{0,325},{0,770},{0,400}}"
+                                    "Value": "{{0.2292,0},{0.539,0},{0.8021,0},{0.539,75}}"
                                 },
                                 {
                                     "Name": "WndOpenSound",
@@ -1458,7 +1462,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,5},{0,99},{0,405},{0,148}}"
+                                    "Value": "{{0,5},{0,99},{0.4167,5},{0,148}}"
                                 },
                                 {
                                     "Name": "HorizontalAlignment",

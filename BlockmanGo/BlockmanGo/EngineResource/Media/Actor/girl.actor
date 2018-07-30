@@ -375,6 +375,10 @@
 				<Skin MeshName = "girl_trousers33.skin" ChangeColor = "2.10195e-44 1.34519e-40 3.46623e+30 0" UVSpeed = "0 0">
 				</Skin>
 			</BodyPart>
+			<BodyPart MasterName="clothes_pants" SlaveName="34" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trousers34.skin" ChangeColor = "2.10195e-44 1.6363e-40 7.20161e+22 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
 			<BodyPart MasterName="clothes_pants" SlaveName="4" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<Skin MeshName = "girl_trousers04.skin" ChangeColor = "2.10195e-44 2.16599e-41 7.20161e+22 0" UVSpeed = "0 0">
 				</Skin>
@@ -547,6 +551,10 @@
 				<Skin MeshName = "girl_trunk33.skin" ChangeColor = "2.10195e-44 1.39169e-40 3.46623e+30 0" UVSpeed = "0 0">
 				</Skin>
 			</BodyPart>
+			<BodyPart MasterName="clothes_tops" SlaveName="34" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trunk34.skin" ChangeColor = "2.10195e-44 1.6399e-40 7.20161e+22 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
 			<BodyPart MasterName="clothes_tops" SlaveName="4" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<Skin MeshName = "girl_trunk04.skin" ChangeColor = "2.10195e-44 2.14889e-41 7.20161e+22 0" UVSpeed = "0 0">
 				</Skin>
@@ -570,6 +578,32 @@
 			<BodyPart MasterName="clothes_tops" SlaveName="9" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<Skin MeshName = "girl_trunk09.skin" ChangeColor = "2.10195e-44 3.93232e-41 3.46623e+30 0" UVSpeed = "0 0">
 				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="custom_decorate_hat" SlaveName="1" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="hat_flagwar_01.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_decorate_hat" SlaveName="2" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="hat_flagwar_02.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
 			</BodyPart>
 			<BodyPart MasterName="custom_face" SlaveName="1" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
@@ -808,6 +842,19 @@
 			<BodyPart MasterName="custom_glasses" SlaveName="2" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="glasses02.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_glasses" SlaveName="3" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="glasses03.mesh"/>
 					<SocketName value="s_Head"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
@@ -1194,6 +1241,32 @@
 					<scale value="1"/>
 				</StaticMesh>
 			</BodyPart>
+			<BodyPart MasterName="custom_hand" SlaveName="1" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="gun_flagwar_01.mesh"/>
+					<SocketName value="s_Hand_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_hand" SlaveName="2" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="gun_flagwar_02.mesh"/>
+					<SocketName value="s_Hand_l"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
 			<BodyPart MasterName="custom_hat" SlaveName="2" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="headdress02.mesh"/>
@@ -1505,6 +1578,30 @@
 					<scale value="1"/>
 				</StaticMesh>
 			</BodyPart>
+			<BodyPart MasterName="custom_shoes" SlaveName="18" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="shoes_flagwar_01l.mesh"/>
+					<SocketName value="s_foot_l"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+				<StaticMesh>
+					<FileName value="shoes_flagwar_01r.mesh"/>
+					<SocketName value="s_foot_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
 			<BodyPart MasterName="custom_shoes" SlaveName="2" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="shoes_d02_l.mesh"/>
@@ -1784,6 +1881,19 @@
 			<BodyPart MasterName="custom_wing" SlaveName="10" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="wing10.mesh"/>
+					<SocketName value="s_back"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_wing" SlaveName="11" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="bag_flagwar_01.mesh"/>
 					<SocketName value="s_back"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
@@ -2118,6 +2228,32 @@
 				<Skin MeshName = "wing09.skin" ChangeColor = "2.10195e-44 1.41217e-40 3.46623e+30 0" UVSpeed = "0 0">
 				</Skin>
 			</BodyPart>
+			<BodyPart MasterName="custom_wing_flag" SlaveName="1" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="flag_back_red01.mesh"/>
+					<SocketName value="s_back"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_wing_flag" SlaveName="2" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="flag_back_blue01.mesh"/>
+					<SocketName value="s_back"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
 			<BodyPart MasterName="gun" SlaveName="gun_01.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="gun_01.mesh"/>
@@ -2365,6 +2501,149 @@
 					<scale value="1"/>
 				</StaticMesh>
 			</BodyPart>
+			<BodyPart MasterName="gun" SlaveName="gun_2000.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="gun_2000.mesh"/>
+					<SocketName value="s_Hand_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="gun" SlaveName="gun_2001.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="gun_2001.mesh"/>
+					<SocketName value="s_Hand_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="gun" SlaveName="gun_2002.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="gun_2002.mesh"/>
+					<SocketName value="s_Hand_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="gun" SlaveName="gun_2003.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="gun_2003.mesh"/>
+					<SocketName value="s_Hand_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="gun" SlaveName="gun_2004.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="gun_2004.mesh"/>
+					<SocketName value="s_Hand_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="gun" SlaveName="gun_2005.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="gun_2005.mesh"/>
+					<SocketName value="s_Hand_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="gun" SlaveName="gun_2006.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="gun_2006.mesh"/>
+					<SocketName value="s_Hand_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="gun" SlaveName="gun_2007.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="gun_2007.mesh"/>
+					<SocketName value="s_Hand_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="gun" SlaveName="gun_2008.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="gun_2008.mesh"/>
+					<SocketName value="s_Hand_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="gun" SlaveName="gun_2009.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="gun_2009.mesh"/>
+					<SocketName value="s_Hand_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="gun" SlaveName="gun_2010.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="gun_2010.mesh"/>
+					<SocketName value="s_Hand_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
 			<BodyPart MasterName="gun" SlaveName="gun_21.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="gun_21.mesh"/>
@@ -2589,149 +2868,6 @@
 			<BodyPart MasterName="gun" SlaveName="gun_38.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="gun_38.mesh"/>
-					<SocketName value="s_Hand_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="gun" SlaveName="gun_2000.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="gun_2000.mesh"/>
-					<SocketName value="s_Hand_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="gun" SlaveName="gun_2001.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="gun_2001.mesh"/>
-					<SocketName value="s_Hand_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="gun" SlaveName="gun_2002.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="gun_2002.mesh"/>
-					<SocketName value="s_Hand_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="gun" SlaveName="gun_2003.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="gun_2003.mesh"/>
-					<SocketName value="s_Hand_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="gun" SlaveName="gun_2004.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="gun_2004.mesh"/>
-					<SocketName value="s_Hand_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="gun" SlaveName="gun_2005.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="gun_2005.mesh"/>
-					<SocketName value="s_Hand_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="gun" SlaveName="gun_2006.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="gun_2006.mesh"/>
-					<SocketName value="s_Hand_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="gun" SlaveName="gun_2007.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="gun_2007.mesh"/>
-					<SocketName value="s_Hand_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="gun" SlaveName="gun_2008.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="gun_2008.mesh"/>
-					<SocketName value="s_Hand_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="gun" SlaveName="gun_2009.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="gun_2009.mesh"/>
-					<SocketName value="s_Hand_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="gun" SlaveName="gun_2010.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="gun_2010.mesh"/>
 					<SocketName value="s_Hand_r"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>

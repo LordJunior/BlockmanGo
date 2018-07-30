@@ -884,14 +884,10 @@
                                     "Property": [
                                         {
                                             "Name": "Area",
-                                            "Value": "{{0,0},{0,0},{0,51},{1,0}}"
+                                            "Value": "{{0.375,0},{0,0},{0.375,51},{1,0}}"
                                         },
                                         {
                                             "Name": "VerticalAlignment",
-                                            "Value": "Centre"
-                                        },
-                                        {
-                                            "Name": "HorizontalAlignment",
                                             "Value": "Centre"
                                         },
                                         {
@@ -926,15 +922,11 @@
                                     "Property": [
                                         {
                                             "Name": "Area",
-                                            "Value": "{{0,-100},{0,0},{0,-50},{1,0}}"
+                                            "Value": "{{0.7441,0},{0,0},{0.7441,50},{1,0}}"
                                         },
                                         {
                                             "Name": "VerticalAlignment",
                                             "Value": "Centre"
-                                        },
-                                        {
-                                            "Name": "HorizontalAlignment",
-                                            "Value": "Right"
                                         },
                                         {
                                             "Name": "Text",
@@ -1126,14 +1118,10 @@
                                     "Property": [
                                         {
                                             "Name": "Area",
-                                            "Value": "{{0,0},{0,0},{0,50},{1,0}}"
+                                            "Value": "{{0.375,0},{0,0},{0.375,50},{1,0}}"
                                         },
                                         {
                                             "Name": "VerticalAlignment",
-                                            "Value": "Centre"
-                                        },
-                                        {
-                                            "Name": "HorizontalAlignment",
                                             "Value": "Centre"
                                         },
                                         {
@@ -1168,11 +1156,7 @@
                                     "Property": [
                                         {
                                             "Name": "Area",
-                                            "Value": "{{0,-100},{0,0},{0,-50},{1,0}}"
-                                        },
-                                        {
-                                            "Name": "HorizontalAlignment",
-                                            "Value": "Right"
+                                            "Value": "{{0.7441,0},{0,0},{0.7441,50},{1,0}}"
                                         },
                                         {
                                             "Name": "Text",
@@ -1254,7 +1238,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,33},{0,0},{0,133},{1,0}}"
+                                    "Value": "{{0,33},{0,0},{0.2,33},{1,0}}"
                                 },
                                 {
                                     "Name": "VerticalAlignment",
@@ -1271,10 +1255,6 @@
                                 {
                                     "Name": "WndCloseSound",
                                     "Value": "0"
-                                },
-                                {
-                                    "Name": "TextHorzAlignment",
-                                    "Value": "Centre"
                                 },
                                 {
                                     "Name": "TextVertAlignment",
@@ -1396,7 +1376,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0.5,0},{0,0},{0.5,210},{0,50}}"
+                                    "Value": "{{0.5,0},{0,0},{0.5,90},{0,50}}"
                                 },
                                 {
                                     "Name": "VerticalAlignment",
@@ -1404,7 +1384,7 @@
                                 },
                                 {
                                     "Name": "Text",
-                                    "Value": "我的积分："
+                                    "Value": "我的积分:"
                                 },
                                 {
                                     "Name": "WndOpenSound",
@@ -1434,7 +1414,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0.5,100},{0,0},{0.5,220},{0,50}}"
+                                    "Value": "{{0.62,35},{0,0},{0.82,35},{0,50}}"
                                 },
                                 {
                                     "Name": "VerticalAlignment",
@@ -1457,10 +1437,6 @@
                                     "Value": "0.501961 0.25098 0.25098 1"
                                 },
                                 {
-                                    "Name": "TextHorzAlignment",
-                                    "Value": "Centre"
-                                },
-                                {
                                     "Name": "TextVertAlignment",
                                     "Value": "Centre"
                                 }
@@ -1472,7 +1448,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,147},{0,0},{0,197},{0,50}}"
+                                    "Value": "{{0.2,35},{0,0},{0.2,85},{0,50}}"
                                 },
                                 {
                                     "Name": "VerticalAlignment",
@@ -1538,7 +1514,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,33},{0,0},{0,133},{1,0}}"
+                                    "Value": "{{0,33},{0,0},{0.2,33},{1,0}}"
                                 },
                                 {
                                     "Name": "VerticalAlignment",
@@ -1555,10 +1531,6 @@
                                 {
                                     "Name": "WndCloseSound",
                                     "Value": "0"
-                                },
-                                {
-                                    "Name": "TextHorzAlignment",
-                                    "Value": "Centre"
                                 },
                                 {
                                     "Name": "TextVertAlignment",
@@ -1680,7 +1652,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0.5,0},{0,0},{0.5,210},{0,50}}"
+                                    "Value": "{{0.5,0},{0,0},{0.5,90},{0,50}}"
                                 },
                                 {
                                     "Name": "VerticalAlignment",
@@ -1697,6 +1669,10 @@
                                 {
                                     "Name": "WndCloseSound",
                                     "Value": "0"
+                                },
+                                {
+                                    "Name": "TextHorzAlignment",
+                                    "Value": "Right"
                                 },
                                 {
                                     "Name": "TextVertAlignment",
@@ -1718,7 +1694,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0.5,91},{0,0},{0.5,191},{0,50}}"
+                                    "Value": "{{0.62,35},{0,0},{0.62,135},{0,50}}"
                                 },
                                 {
                                     "Name": "VerticalAlignment",
@@ -1741,10 +1717,6 @@
                                     "Value": "0.501961 0.25098 0.25098 1"
                                 },
                                 {
-                                    "Name": "TextHorzAlignment",
-                                    "Value": "Centre"
-                                },
-                                {
                                     "Name": "TextVertAlignment",
                                     "Value": "Centre"
                                 },
@@ -1760,7 +1732,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,147},{0,0},{0,197},{0,50}}"
+                                    "Value": "{{0.2,35},{0,0},{0.2,85},{0,50}}"
                                 },
                                 {
                                     "Name": "VerticalAlignment",

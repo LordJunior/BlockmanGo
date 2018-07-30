@@ -1,0 +1,215 @@
+{"frames": {
+
+"manor_add_friend_icon":
+{
+	"frame": {"x":96,"y":0,"w":39,"h":30},
+	"offset": {"x":0,"y":0,"w":39,"h":30},
+	"sourceSize": {"w":39,"h":30}
+},
+"manor_btn_delete":
+{
+	"frame": {"x":156,"y":42,"w":52,"h":49},
+	"offset": {"x":0,"y":0,"w":52,"h":49},
+	"sourceSize": {"w":52,"h":49}
+},
+"manor_charm_icon":
+{
+	"frame": {"x":72,"y":42,"w":36,"h":42},
+	"offset": {"x":0,"y":0,"w":36,"h":42},
+	"sourceSize": {"w":36,"h":42}
+},
+"manor_check_nor":
+{
+	"frame": {"x":310,"y":0,"w":41,"h":40},
+	"offset": {"x":0,"y":0,"w":41,"h":40},
+	"sourceSize": {"w":41,"h":40}
+},
+"manor_check_pre":
+{
+	"frame": {"x":269,"y":0,"w":41,"h":40},
+	"offset": {"x":0,"y":0,"w":41,"h":40},
+	"sourceSize": {"w":41,"h":40}
+},
+"manor_furniture_icon":
+{
+	"frame": {"x":0,"y":174,"w":88,"h":73},
+	"offset": {"x":0,"y":0,"w":88,"h":73},
+	"sourceSize": {"w":88,"h":73}
+},
+"manor_ground_icon":
+{
+	"frame": {"x":0,"y":42,"w":36,"h":42},
+	"offset": {"x":0,"y":0,"w":36,"h":42},
+	"sourceSize": {"w":36,"h":42}
+},
+"manor_house_icon":
+{
+	"frame": {"x":347,"y":101,"w":88,"h":73},
+	"offset": {"x":0,"y":0,"w":88,"h":73},
+	"sourceSize": {"w":88,"h":73}
+},
+"manor_house_preview":
+{
+	"frame": {"x":108,"y":42,"w":48,"h":46},
+	"offset": {"x":0,"y":0,"w":48,"h":46},
+	"sourceSize": {"w":48,"h":46}
+},
+"manor_icon":
+{
+	"frame": {"x":274,"y":101,"w":73,"h":73},
+	"offset": {"x":0,"y":0,"w":73,"h":73},
+	"sourceSize": {"w":73,"h":73}
+},
+"manor_info_icon":
+{
+	"frame": {"x":88,"y":174,"w":88,"h":73},
+	"offset": {"x":0,"y":0,"w":88,"h":73},
+	"sourceSize": {"w":88,"h":73}
+},
+"manor_item_can_unlock":
+{
+	"frame": {"x":351,"y":0,"w":37,"h":41},
+	"offset": {"x":0,"y":0,"w":37,"h":41},
+	"sourceSize": {"w":37,"h":41}
+},
+"manor_item_lock":
+{
+	"frame": {"x":389,"y":42,"w":46,"h":50},
+	"offset": {"x":0,"y":0,"w":46,"h":50},
+	"sourceSize": {"w":46,"h":50}
+},
+"manor_item_nor":
+{
+	"frame": {"x":16,"y":0,"w":24,"h":24},
+	"offset": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24}
+},
+"manor_item_pre":
+{
+	"frame": {"x":40,"y":0,"w":24,"h":24},
+	"offset": {"x":0,"y":0,"w":24,"h":24},
+	"sourceSize": {"w":24,"h":24}
+},
+"manor_main_bg":
+{
+	"frame": {"x":64,"y":0,"w":32,"h":26},
+	"offset": {"x":0,"y":0,"w":32,"h":26},
+	"sourceSize": {"w":32,"h":26}
+},
+"manor_message_icon":
+{
+	"frame": {"x":176,"y":174,"w":88,"h":73},
+	"offset": {"x":0,"y":0,"w":88,"h":73},
+	"sourceSize": {"w":88,"h":73}
+},
+"manor_message_item_nor":
+{
+	"frame": {"x":166,"y":0,"w":33,"h":33},
+	"offset": {"x":0,"y":0,"w":33,"h":33},
+	"sourceSize": {"w":33,"h":33}
+},
+"manor_message_item_pre":
+{
+	"frame": {"x":199,"y":0,"w":33,"h":33},
+	"offset": {"x":0,"y":0,"w":33,"h":33},
+	"sourceSize": {"w":33,"h":33}
+},
+"manor_message_panel_bg":
+{
+	"frame": {"x":435,"y":42,"w":60,"h":59},
+	"offset": {"x":0,"y":0,"w":60,"h":59},
+	"sourceSize": {"w":60,"h":59}
+},
+"manor_panel_bg":
+{
+	"frame": {"x":232,"y":0,"w":37,"h":38},
+	"offset": {"x":0,"y":0,"w":37,"h":38},
+	"sourceSize": {"w":37,"h":38}
+},
+"manor_player_operation_item":
+{
+	"frame": {"x":208,"y":42,"w":181,"h":50},
+	"offset": {"x":0,"y":0,"w":181,"h":50},
+	"sourceSize": {"w":181,"h":50}
+},
+"manor_praise":
+{
+	"frame": {"x":0,"y":101,"w":64,"h":64},
+	"offset": {"x":0,"y":0,"w":64,"h":64},
+	"sourceSize": {"w":64,"h":64}
+},
+"manor_put_furniture_cancel":
+{
+	"frame": {"x":264,"y":174,"w":74,"h":74},
+	"offset": {"x":0,"y":0,"w":74,"h":74},
+	"sourceSize": {"w":74,"h":74}
+},
+"manor_put_furniture_sure":
+{
+	"frame": {"x":338,"y":174,"w":74,"h":74},
+	"offset": {"x":0,"y":0,"w":74,"h":74},
+	"sourceSize": {"w":74,"h":74}
+},
+"manor_radio_nor":
+{
+	"frame": {"x":0,"y":278,"w":226,"h":111},
+	"offset": {"x":0,"y":0,"w":226,"h":111},
+	"sourceSize": {"w":226,"h":111}
+},
+"manor_radio_pre":
+{
+	"frame": {"x":226,"y":278,"w":226,"h":111},
+	"offset": {"x":0,"y":0,"w":226,"h":111},
+	"sourceSize": {"w":226,"h":111}
+},
+"manor_rose_icon":
+{
+	"frame": {"x":36,"y":42,"w":36,"h":42},
+	"offset": {"x":0,"y":0,"w":36,"h":42},
+	"sourceSize": {"w":36,"h":42}
+},
+"manor_seed_icon":
+{
+	"frame": {"x":388,"y":0,"w":36,"h":42},
+	"offset": {"x":0,"y":0,"w":36,"h":42},
+	"sourceSize": {"w":36,"h":42}
+},
+"manor_title":
+{
+	"frame": {"x":64,"y":101,"w":210,"h":65},
+	"offset": {"x":0,"y":0,"w":210,"h":65},
+	"sourceSize": {"w":210,"h":65}
+},
+"manor_upgrade_item_bg":
+{
+	"frame": {"x":135,"y":0,"w":31,"h":31},
+	"offset": {"x":0,"y":0,"w":31,"h":31},
+	"sourceSize": {"w":31,"h":31}
+},
+"manor_upgrade_main_bg":
+{
+	"frame": {"x":412,"y":174,"w":48,"h":104},
+	"offset": {"x":0,"y":0,"w":48,"h":104},
+	"sourceSize": {"w":48,"h":104}
+},
+"manor_value_icon":
+{
+	"frame": {"x":424,"y":0,"w":36,"h":42},
+	"offset": {"x":0,"y":0,"w":36,"h":42},
+	"sourceSize": {"w":36,"h":42}
+},
+"setting_red_point":
+{
+	"frame": {"x":0,"y":0,"w":16,"h":16},
+	"offset": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "manor_atlas.png",
+	"format": "RGBA8888",
+	"size": {"w":495,"h":389},
+	"scale": "1"
+}
+}

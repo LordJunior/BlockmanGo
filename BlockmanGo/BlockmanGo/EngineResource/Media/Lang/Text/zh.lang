@@ -56,6 +56,7 @@ gui.continue=下一局
 final.summary.rank=排名
 final.summary.player=玩家
 final.summary.reward=奖励
+final.summary.score=分数
 
 gui.shop.title=道具商店
 gui.shop.tab.tool=工具
@@ -912,6 +913,14 @@ purple.merchant.name=▢FF884898商人▥
 orange.merchant.name=▢FFFF8000商人▥
 tool.merchant.name=▢FF0000FF工具商人▥
 backpack.merchant.name=▢FFFF0000背包商人▥
+carpet.merchant.name=▢FF0000FF地毯商人▥
+wool.merchant.name=▢FF0000FF羊毛商人▥
+wood.merchant.name=▢FF0000FF木头商人▥
+clay.merchant.name=▢FF0000FF粘土商人▥
+light.merchant.name=▢FF0000FF灯具商人▥
+seed.merchant.name=▢FF0000FF种子商人▥
+farmer.merchant.name=▢FF0000FF农产品收购商人▥
+stone.merchant.name=▢FF0000FF石材商人▥
 
 store.goods.storeUpgrade=商店升级，升到2级商店，有更多物品出售
 store.goods.ironUpgrade=铁矿升级，本队伍铁矿产出速度增加一倍
@@ -1015,9 +1024,14 @@ jail_item_name_shovel=铁锹，可挖沙子
 jail_item_name_key=钥匙，开门必需品
 jail_item_name_bullet=通用子弹
 jail_item_name_cash1700=现金1700元
+jail_item_name_cash1000=现金1000元
+jail_item_name_cash2000=现金2000元
+jail_item_name_cash4000=现金4000元
 jail_item_name_cash5000=现金5000元
 jail_item_name_cash10000=现金10000元
 jail_item_name_cash20000=现金20000元
+jail_item_name_cash50000=现金50000元
+jail_item_name_cash100000=现金100000元
 
 gui_buy_goods_successful=购买物品成功
 gui_buy_goods_failure=购买物品失败
@@ -1091,11 +1105,12 @@ dead.summary.chicken.tip.luck=祝下次好运！
   
 toolbar_member_left=剩余
 toolbar_kill_number=击败
-gui_olayer_list_item_add_friend=加好友 
+
 
 item.medicinePack.name=熟鸡肉
 item.medicinePotion.name=药水
 
+gui_player_list_item_add_friend=加好友 
 gui_player_list_item_add_friend_msg_sent=已发送
 gui_player_list_item_add_friend_msg_send_failure=好友请求发送失败，请重试
 gui_player_list_item_add_friend_msg_agree_failure=同意好友请求失败，请重试
@@ -1254,4 +1269,361 @@ gui_real_time_rank_title_one_creepy_aliens=排名
 gui_real_time_rank_title_two_creepy_aliens=名字
 gui_real_time_rank_title_three_creepy_aliens=等级
 gui_real_time_rank_title_four_creepy_aliens=杀敌数
-gui_real_time_rank_title_five_creepy_aliens=金币数
+gui_real_time_rank_title_five_creepy_aliens=金币数 
+gui_rank_vice_title_hist_name=历史通关榜
+gui_rank_hist_rank=我的排名
+score_point_point=通关数
+
+default.session.name=Npc
+street.session.name=商业街Npc
+guidenpc.g1020.01.name=小镇指导员
+gui_dialog_tip_btn_sure_get_manor=领取
+gui_dialog_tip_content_get_manor=亲爱的【%s】,我这里有一块免费的土地要不要领取呢？
+gui_dialog_tip_content_sell_manor=亲爱的【%s】,您的领地现在价值【%d】,要不要卖给我再换一块地啊？ 
+gui_dialog_tip_content_sure_sell_manor=您确定以【%d】的价格，卖掉您现在的土地吗？
+gui_manor_radio_info=详情
+gui_manor_radio_house=房子
+gui_manor_radio_furniture=家具
+gui_manor_radio_message=消息
+gui_manor_info_btn_teleport=传送
+gui_manor_info_btn_upgrade=%d 升级
+gui_manor_title_name=%s的府邸
+gui_manor_info_ground=土地
+gui_manor_info_rose=点赞
+gui_manor_info_seed=种子
+gui_manor_info_charm=魅力
+gui_manor_info_value=估值
+gui_manor_house_btn_buy=%d 解锁
+gui_manor_house_btn_build=建造
+gui_manor_furniture_btn_buy=购买
+gui_manor_furniture_btn_use=摆放
+gui_manor_furniture_btn_recycle=回收
+gui_manor_upgrade_info_ground=领地面积
+gui_manor_upgrade_info_rose=点赞数量
+gui_manor_upgrade_info_seed=可种植物
+gui_manor_upgrade_info_charm=魅力值
+gui_manor_upgrade_title=升级%d级领地
+gui_manor_upgrade_expenditure=花费
+gui_manor_house_not_can_unlock=%d级领地可解锁
+gui_back_platform_top_up=回平台充值
+gui_tip_need_currency=您还缺
+gui_need_back_platform_top_up=需要回平台充值，去充值吗？
+gui_manor_message_btn_give=回赠
+gui_manor_message_btn_call_on=拜访
+gui_manor_give_rose=点赞
+gui_manor_call_on=拜访领地
+gui.update.successful=升级成功
+gui.update.failed=升级失败
+gui_manor_max_level=MAX
+gui_manor_build_house_tip=建造房屋需要一小段时间，并且放置方块回收至背包，家具重置，确定建造吗？
+gui_manor_target_user_not_manor=拜访失败，对方未领取领地！
+gui_manor_sell_failure=出售领地失败，请重试
+gui_manor_sell_succeed=出售领地成功
+gui_manor_give_rose_succeed=点赞成功！
+gui_manor_give_rose_failure=点赞失败，请重试！
+gui_manor_give_rose_failure_not_manor=点赞失败，对方未领取领地！
+gui_manor_give_rose_failure_num_is_zero=您已经没有点赞次数了，升级领地可以有更多次数！
+gui_manor_message_call_on_tip=%s拜访您了
+gui_manor_message_give_rose_tip=%s给您点赞
+gui_manor_message_vegeteal_tip=%s偷了您的菜
+gui_manor_place_and_build_message=需要在自己领地范围内进行操作
+gui_manor_steal_count_message=超过可偷取次数
+gui_game_setting_background_music=背景音乐
+gui_manor_call_on_failure=拜访失败，请重试！
+gui_manor_tp_failure=传送失败，请重试！
+gui_manor_operation_failure=操作失败，请重试！
+gui_manor_give_rose_failure_given=点赞失败，您已给对方点过赞！
+gui_manor_upgrade_failure=领地升级失败
+gui_manor_lack_of_level_message=等级不足,请升级你的领地
+gui_manor_build_house_message=你可以去你的领地建造房子了
+gui_manor_make_money_buy_furniture_message=你可以去点赞赚钱购买家具
+gui_manor_street_guide_npc_tip=商业一条街就在我前面，你不去买点儿东西吗？
+
+guidenpc_g1020_01=要回你自己的领地吗？你可以在领地详情面板里点传送按钮立刻到达
+guidenpc_g1020_02=前面过了中央公园就是商业街
+guidenpc_g1020_03=每个商人都有不同的东西出售，你想要什么？
+guidenpc_g1020_04=这里以后会建起荣誉市长的雕像，说不定就是你呢
+guidenpc_g1020_05=点赞，或者被点赞，都能赚钱。快找朋友们去互相点赞把
+guidenpc_g1020_06=你可以在被围起来的院子范围内自由摆放方块
+guidenpc_g1020_07=家具有点贵，但是可以让你的家里美美的
+guidenpc_g1020_08=偷过你的菜，给你点过赞的，都会在消息里显示。偷回来，或者回个赞吧
+guidenpc_g1020_09=升级院子，才能建造更漂亮的房子
+guidenpc_g1020_10=种子一共有5种，越贵的种子成长时间越长，当然收益也越大
+guidenpc_g1020_11=别人家种了菜的话，你可以去偷一些卖钱。不过次数有限哦
+guidenpc_g1020_12=点赞，或者被别人点赞，都可以赚钱
+guidenpc_g1020_13=多加好友吧，你可以很方便的去他家访问，点赞，或者偷菜
+guidenpc_g1020_14=魅力值可以提升你领地的价值。被点赞，建房子，买东西，都可以得到魅力值
+
+gui_manor_street_npc_tip=欢迎来到商业街！你想要什么？
+item.seeds_wheat=小麦种子
+item.seeds_carrot=小麦种子
+item.seeds_tomato=西红柿种子
+item.seeds_cabbage=白菜种子
+item.seeds_pea=豌豆种子
+item.seeds_wheat.name=小麦种子
+item.seeds_carrot.name=胡萝卜种子
+item.seeds_tomato.name=西红柿种子
+item.seeds_cabbage.name=白菜种子
+item.seeds_pea.name=豌豆种子
+item.wheat.name=小麦
+item.carrot.name=胡萝卜
+item.tomato.name=西红柿
+item.cabbage.name=白菜
+item.pea.name=豌豆
+manor_officer_npc_name=市政厅官员
+manor_sell_npc_name=土地商人
+npc14.npc.name=指引者
+gui_rank_charm=魅力榜
+gui_rank_charm_value=魅力值
+gui_rank_assessment=估值榜
+gui_rank_assessment_price=评估值
+gui_rank_my_charm=我的魅力排名
+gui_rank_my_charm_value=我的魅力值
+gui_rank_my_assessment=我的估值排名
+gui_rank_my_assessment_price=我的评估值
+gui_manor_get_already_exists=你已经有领地了，去种菜、建造，交些朋友吧
+gui_manor_sell_not_exists=你还没有领地，去找市政厅官员领取
+gui_manor_call_on_in_vehicle=访问失败，下车后方可拜访他人领地！
+gui_manor_call_tp_in_vehicle=传送失败，下车后方可传送！
+gui_manor_furniture_operation_tip=编辑模式，点击家具可以移动它们
+gui_manor_is_not_load=出售失败，当前服务器未加载您的领地，请传送后重试！
+gui_manor_sell_failure_by_times=出售领地失败，今天出售次数用完，请明日再来！
+gui_manor_edit_ban_get_on=家具状态下禁止上车
+gui_manor_is_furniture_actor=您当前已经处于家具状态了！
+gui_manor_call_on_failure_vistors_full=拜访失败,访客数量已满
+gui_manor_call_on_failure_version_not_matched=拜访失败，与对方版本号不一致
+
+flag.war.swordsman.dsc1=自身持续加速与回血
+flag.war.swordsman.dsc2=短时间内，自身免疫伤害
+flag.war.swordsman.dsc3=对前方1个敌人造成伤害
+flag.war.shooter.dsc1=造成范围伤害
+flag.war.shooter.dsc2=短时间内，增加自身伤害
+flag.war.shooter.dsc3=对前方1个敌人造成伤害，并减速
+flag.war.thieves.dsc1=隐身一段时间
+flag.war.thieves.dsc2=增加自身移速
+flag.war.thieves.dsc3=使范围敌人中毒
+flag.war.wizard.dsc1=为范围内的友军治疗
+flag.war.wizard.dsc2=对范围内的敌人造成持续伤害
+flag.war.wizard.dsc3=使范围内的友军加速
+flag.war.bomber.dsc1=对范围内的敌人造成持续伤害
+flag.war.bomber.dsc2=对范围内的敌人造成瞬间伤害
+flag.war.bomber.dsc3=对前方1个敌人造成大量伤害
+flag.war.icemage.dsc1=对范围内的敌人造成伤害并减速
+flag.war.icemage.dsc2=对范围内的敌人进行冻结
+flag.war.icemage.dsc3=对范围内的敌人造成大量伤害，并短暂减速
+
+flag.war.swordsman.skillname1=冲锋
+flag.war.swordsman.skillname2=无敌
+flag.war.swordsman.skillname3=审判
+flag.war.shooter.skillname1=万箭齐发
+flag.war.shooter.skillname2=神射手
+flag.war.shooter.skillname3=爆头
+flag.war.thieves.skillname1=神偷
+flag.war.thieves.skillname2=疾跑
+flag.war.thieves.skillname3=毒气弹
+flag.war.wizard.skillname1=治疗术
+flag.war.wizard.skillname2=巫术
+flag.war.wizard.skillname3=鼓舞
+flag.war.bomber.skillname1=燃烧弹
+flag.war.bomber.skillname2=爆炸
+flag.war.bomber.skillname3=微型炸弹
+flag.war.icemage.skillname1=暴风雪
+flag.war.icemage.skillname2=冰冻术
+flag.war.icemage.skillname3=碎冰
+  
+
+item.skill_01.name=技能 1
+item.skill_02.name=技能 2
+item.skill_03.name=技能 3
+  
+
+parkour.rank.name1=仙人掌赛道排行榜
+parkour.rank.name2=高空坠落赛道排行榜
+
+
+
+
+score_point_flag=夺旗数
+
+flag.war.swordsman=剑士
+flag.war.shooter=射手
+flag.war.thieves=盗贼
+flag.war.wizard=巫师
+flag.war.bomber=炸弹人
+flag.war.icemage=法师
+
+flag.war.select.swordsman=是否要选择“剑士”
+flag.war.select.shooter=是否要选择“射手”
+flag.war.select.thieves=是否要选择“盗贼”
+flag.war.select.wizard=是否要选择“巫师”
+flag.war.select.bomber=是否要选择“炸弹人”
+flag.war.select.icemage=是否要选择“法师”
+
+flag.war.shop.tab.fashion=光环
+flag.war.shop.tab.skill=技能
+  
+
+
+flag.war.shop.Halo.name1=生命光环
+flag.war.shop.Halo.name2=加速光环
+flag.war.shop.Halo.name3=跳跃光环
+
+flag.war.attribute=属性
+  
+
+
+
+flag.war.swordsman.dsc1=对1个敌人造成15伤害---冷却:5 ; 距离:5
+flag.war.swordsman.dsc2=大量增加自身移速，持续1秒---冷却:9
+flag.war.swordsman.dsc3=自身受到的伤害减少99%，持续5秒---冷却:20
+flag.war.shooter.dsc1=对2x2范围内所有敌人造成10伤害---冷却:6 ; 距离:15
+flag.war.shooter.dsc2=对1个敌人造成10伤害，并使其减速X%，持续2秒---冷却:9 ; 距离:15
+flag.war.shooter.dsc3=对1个敌人造成30伤害---冷却:20 ; 距离:25
+flag.war.thieves.dsc1=对1个敌人造成20伤害---冷却:6 ; 距离:5
+flag.war.thieves.dsc2=增加自身移速，持续3秒---冷却:9
+flag.war.thieves.dsc3=使自身进入隐身状态，持续3秒---冷却:20
+flag.war.wizard.dsc1=使1个友军回复10生命---冷却:4 ; 距离:10
+flag.war.wizard.dsc2=使身边12x12范围内随机1个敌人中毒，持续5秒，共造成21伤害---冷却:9
+flag.war.wizard.dsc3=使8x8范围内的友军大量回生命，持续5秒，共回复600生命---冷却:20 ; 距离:10
+flag.war.bomber.dsc1=对1个敌人造成持续伤害，持续2秒，共造成6伤害---冷却:2 ; 距离:12
+flag.war.bomber.dsc2=对3x3范围内的敌人造成15伤害，并使其减速X%，持续3秒---冷却:9 ; 距离:12
+flag.war.bomber.dsc3=对8x8范围内的敌人造成20伤害---冷却:20 ; 距离:30
+flag.war.icemage.dsc1=对1个敌人造成4伤害，并使其减速X%，持续1秒---冷却:2 ; 距离:12
+flag.war.icemage.dsc2=使自己身边12x12范围内的敌人无法移动，持续3秒---冷却:9
+flag.war.icemage.dsc3=对5x5范围内的敌人造成持续伤害并减速，持续5秒，共造成18伤害---冷却:20 ; 距离:12
+
+flag.war.swordsman.skillname1=英勇打击
+flag.war.swordsman.skillname2=冲锋
+flag.war.swordsman.skillname3=盾牌格挡
+flag.war.shooter.skillname1=万箭齐发
+flag.war.shooter.skillname2=寒冰箭
+flag.war.shooter.skillname3=神射手
+flag.war.thieves.skillname1=刺骨
+flag.war.thieves.skillname2=疾跑
+flag.war.thieves.skillname3=消失
+flag.war.wizard.skillname1=治疗术
+flag.war.wizard.skillname2=腐蚀术
+flag.war.wizard.skillname3=治疗波
+flag.war.bomber.skillname1=微型燃烧弹
+flag.war.bomber.skillname2=减速地雷
+flag.war.bomber.skillname3=巨型炸弹
+flag.war.icemage.skillname1=碎冰
+flag.war.icemage.skillname2=冰冻术
+flag.war.icemage.skillname3=暴风雪
+  
+
+
+flag.war.swordsman.attribute.dsc=生命值：70；攻击力：10；防御力：300
+flag.war.shooter.attribute.dsc=生命值：50；攻击力：8；防御力：200
+flag.war.thieves.attribute.dsc=生命值：60；攻击力：10；防御力：200
+flag.war.wizard.attribute.dsc=生命值：50；攻击力：8；防御力：200
+flag.war.bomber.attribute.dsc=生命值：50；攻击力：8；防御力：200
+flag.war.icemage.attribute.dsc=生命值：50；攻击力：8；防御力：200
+
+  
+
+flag.war.swordsman.attribute.dsc0=生命值：70；攻击力：10；防御力：3
+flag.war.shooter.attribute.dsc=0生命值：50；攻击力：8；防御力：2
+flag.war.thieves.attribute.dsc0=生命值：60；攻击力：10；防御力：2
+flag.war.wizard.attribute.dsc0=生命值：50；攻击力：8；防御力：2
+flag.war.bomber.attribute.dsc0=生命值：50；攻击力：8；防御力：2
+flag.war.icemage.attribute.dsc0=生命值：50；攻击力：8；防御力：2
+
+  
+
+flag.war.swordsman.dsc11=对1个敌人造成600伤害---冷却:5 ; 距离:5
+flag.war.swordsman.dsc12=大量增加自身移速，持续1秒---冷却:9
+flag.war.swordsman.dsc13=自身受到的伤害减少99%，持续5秒---冷却:20
+flag.war.shooter.dsc11=对2x2范围内所有敌人造成550伤害---冷却:6 ; 距离:15
+flag.war.shooter.dsc12=对1个敌人造成1000伤害，并使其减速40%，持续2秒---冷却:9 ; 距离:15
+flag.war.shooter.dsc13=对1个敌人造成3000伤害---冷却:20 ; 距离:25
+flag.war.thieves.dsc11=对1个敌人造成600伤害---冷却:6 ; 距离:5
+flag.war.thieves.dsc12=增加自身移速，持续3秒---冷却:9
+flag.war.thieves.dsc13=使自身进入隐身状态，持续3秒---冷却:20
+flag.war.wizard.dsc11=使1个友军回复500生命---冷却:4 ; 距离:10
+flag.war.wizard.dsc12=使身边12x12范围内随机1个敌人中毒，持续5秒，共造成800伤害---冷却:9
+flag.war.wizard.dsc13=使8x8范围内的友军大量回生命，持续5秒，共回复2000生命---冷却:20 ; 距离:10
+flag.war.bomber.dsc11=对1个敌人造成持续伤害，持续2秒，共造成250伤害---冷却:2 ; 距离:12
+flag.war.bomber.dsc12=对3x3范围内的敌人造成650伤害，并使其减速X%，持续3秒---冷却:9 ; 距离:12
+flag.war.bomber.dsc13=对8x8范围内的敌人造成1500伤害---冷却:20 ; 距离:30
+flag.war.icemage.dsc11=对1个敌人造成200伤害，并使其减速40%，持续1秒---冷却:2 ; 距离:12
+flag.war.icemage.dsc12=使自己身边12x12范围内的敌人无法移动，持续3秒---冷却:9
+flag.war.icemage.dsc13=对5x5范围内的敌人造成持续伤害并减速，持续5秒，共造成1800伤害---冷却:20 ; 距离:12
+  
+flag.war.swordsman.attribute.dsc1=生命值：7500；攻击力：300；防御力：500
+flag.war.shooter.attribute.dsc1=生命值：4000；攻击力：360；防御力：200
+flag.war.thieves.attribute.dsc1=生命值：6000；攻击力：400；防御力：400
+flag.war.wizard.attribute.dsc1=生命值：5000；攻击力：180；防御力：250
+flag.war.bomber.attribute.dsc1=生命值：4500；攻击力：150；防御力：350
+flag.war.icemage.attribute.dsc=1生命值：3500；攻击力：120；防御力：300
+
+flag.war.swordsman.dsc21=对1个敌人造成1000伤害---冷却:9 ; 距离:10
+flag.war.swordsman.dsc22=大量增加自身移速，持续1秒---冷却:9
+flag.war.swordsman.dsc23=自身受到的伤害减少99%，持续2秒---冷却:20
+flag.war.shooter.dsc21=对2x2范围内所有敌人造成1000伤害---冷却:6 ; 距离:15
+flag.war.shooter.dsc22=对1个敌人造成1500伤害，并使其减速40%，持续2秒---冷却:9 ; 距离:15
+flag.war.shooter.dsc23=对1个敌人造成3000伤害---冷却:20 ; 距离:25
+flag.war.thieves.dsc21=对1个敌人造成1500伤害---冷却:9 ; 距离:10
+flag.war.thieves.dsc22=增加自身移速，持续3秒---冷却:9
+flag.war.thieves.dsc23=使自身进入隐身状态，持续2秒---冷却:20
+flag.war.wizard.dsc21=使1个友军回复300生命---冷却:3 ; 距离:10
+flag.war.wizard.dsc22=使身边12x12范围内随机1个敌人中毒，持续5秒，共造成1200伤害---冷却:6
+flag.war.wizard.dsc23=使8x8范围内的友军大量回生命，持续5秒，共回复1200生命---冷却:20 ; 距离:10
+flag.war.bomber.dsc21=对1个敌人造成持续伤害，持续2秒，共造成250伤害---冷却:2 ; 距离:12
+flag.war.bomber.dsc22=对3x3范围内的敌人造成650伤害，并使其减速X%，持续3秒---冷却:9 ; 距离:12
+flag.war.bomber.dsc23=对8x8范围内的敌人造成1500伤害---冷却:20 ; 距离:30
+flag.war.icemage.dsc21=对1个敌人造成200伤害，并使其减速40%，持续1秒---冷却:2 ; 距离:12
+flag.war.icemage.dsc22=使自己身边12x12范围内的敌人无法移动，持续3秒---冷却:9
+flag.war.icemage.dsc23=对5x5范围内的敌人造成持续伤害并减速，持续5秒，共造成3000伤害---冷却:20 ; 距离:12
+
+
+flag.war.swordsman.attribute.dsc2=生命值：7500；攻击力：250；防御力：500
+flag.war.shooter.attribute.dsc2=生命值：4000；攻击力：800；防御力：200
+flag.war.thieves.attribute.dsc2=生命值：6000；攻击力：500；防御力：400
+flag.war.wizard.attribute.dsc2=生命值：3000；攻击力：180；防御力：250
+flag.war.bomber.attribute.dsc2=生命值：4500；攻击力：150；防御力：350
+flag.war.icemage.attribute.dsc2=生命值：4000；攻击力：120；防御力：300
+
+
+gui_rank_vice_title_hist_name=总榜  
+
+
+parkour.rank.name01=仙人掌赛道排行榜
+parkour.rank.name02=高空坠落赛道排行榜  
+
+flag.war.shop.Halo.attribute1=增加生命值\\n（永久）
+flag.war.shop.Halo.attribute2=增加速度\\n（永久）
+flag.war.shop.Halo.attribute3=增加跳跃高度\\n（永久）
+
+gui_buildwar_title=建筑战争
+gui_buildwar_player_num=%d/%d
+gui_buildwar_left_time=剩余: %d
+gui_buildwar_grade=%s  (%d秒)
+score.rank.name=总积分排行榜
+winner.rank.name=第一名排行榜
+gui_build_war_title_all=总榜
+gui_build_war_guess_result_btn=结算界面
+gui_build_war_guess_item_visit_btn=前往
+gui_build_war_guess_item_guess_btn=押注
+gui_build_war_guess_title=押注(心形标注为你最喜欢的三个作品)
+gui_build_war_guess_suc=押注成功
+gui_build_war_guess_tip=只可以押注一次，你确定押注【%s】的作品吗？
+shop_btn_select=选择
+shop_btn_unlock=解锁
+gui_dialog_tip_content_unlock_commodity=解锁【%s】需要花费
+gui_build_war_has_guess_item_guess_btn=已押注
+gui.shop.tab.color=彩色
+gui.shop.tab.wood=木头
+gui.shop.tab.stone=石头
+gui.shop.tab.metal=金属
+gui_rank_all_rank=我的总排名
+gui_rank_all_score_rank=总评分
+gui_rank_all_winner_rank=总第一次数
+gui_rank_week_score_rank=周评分
+gui_rank_week_winner_rank=周第一次数
+gui_rank_winner=第一次数
+gui_build_war_guess_reward_title=押注奖励
+gui_build_war_guess_result_title=我的押注
+gui_build_war_my_rank_title=我的排名
+gui_build_war_my_guess_title=押注结果
+gui_have_already_got_block=已经拥有该方块

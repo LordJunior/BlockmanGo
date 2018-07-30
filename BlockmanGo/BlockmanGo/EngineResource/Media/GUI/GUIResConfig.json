@@ -101,7 +101,10 @@
 	  { "Filename": "chicken_icon.json"},
 	  { "Filename": "pole.json"},
 	  { "Filename": "hideandseek.json"},
-	  { "Filename": "creepy_aliens.json"}
+	  { "Filename": "manor_atlas.json"},
+	  { "Filename": "creepy_aliens.json"},
+	  { "Filename": "flagwar.json"},
+	  { "Filename": "buildwar.json"}
     ]
   }
 }

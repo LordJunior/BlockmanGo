@@ -772,142 +772,6 @@
                 },
                 {
                     "Type": "Layout",
-                    "Name": "GameSetting-Content-Function-Toggle-Jump-Sneak-Pos",
-                    "Property": [
-                        {
-                            "Name": "Area",
-                            "Value": "{{0,0},{0.75,0},{0.5,-7.5},{1,-7}}"
-                        },
-                        {
-                            "Name": "WndOpenSound",
-                            "Value": "0"
-                        },
-                        {
-                            "Name": "WndCloseSound",
-                            "Value": "0"
-                        },
-                        {
-                            "Name": "StretchType",
-                            "Value": "NineGrid"
-                        },
-                        {
-                            "Name": "StretchOffset",
-                            "Value": "232 3 39 3"
-                        },
-                        {
-                            "Name": "LayoutBackImage",
-                            "Value": "set:new_gui_material.json image:menu_setting_item_bg"
-                        }
-                    ],
-                    "Window": [
-                        {
-                            "Type": "CheckBox",
-                            "Name": "GameSetting-Content-Function-Toggle-Jump-Sneak-Pos-State",
-                            "Property": [
-                                {
-                                    "Name": "Area",
-                                    "Value": "{{0,0},{0,-32},{0,89},{0,6}}"
-                                },
-                                {
-                                    "Name": "VerticalAlignment",
-                                    "Value": "Bottom"
-                                },
-                                {
-                                    "Name": "HorizontalAlignment",
-                                    "Value": "Centre"
-                                },
-                                {
-                                    "Name": "WndOpenSound",
-                                    "Value": "0"
-                                },
-                                {
-                                    "Name": "WndCloseSound",
-                                    "Value": "0"
-                                },
-                                {
-                                    "Name": "NormalImage",
-                                    "Value": "set:new_gui_material.json image:menu_setting_switch_close"
-                                },
-                                {
-                                    "Name": "PushedImage",
-                                    "Value": "set:new_gui_material.json image:menu_setting_switch_open"
-                                },
-                                {
-                                    "Name": "SoundName",
-                                    "Value": "0"
-                                },
-                                {
-                                    "Name": "HexgonTopImage",
-                                    "Value": ""
-                                },
-                                {
-                                    "Name": "HexgonTopColor",
-                                    "Value": "1 1 1 1"
-                                },
-                                {
-                                    "Name": "HexgonSideImage",
-                                    "Value": ""
-                                },
-                                {
-                                    "Name": "HexgonSideColor",
-                                    "Value": "1 1 1 1"
-                                },
-                                {
-                                    "Name": "HexgonOverlayerImage",
-                                    "Value": ""
-                                },
-                                {
-                                    "Name": "HexgonOverlayerColor",
-                                    "Value": "1 1 1 1"
-                                }
-                            ]
-                        },
-                        {
-                            "Type": "StaticText",
-                            "Name": "GameSetting-Content-Function-Toggle-Jump-Sneak-Pos-Name",
-                            "Property": [
-                                {
-                                    "Name": "Area",
-                                    "Value": "{{0,6},{0,-2},{0,221},{0,41}}"
-                                },
-                                {
-                                    "Name": "Text",
-                                    "Value": "跳跃潜行切换"
-                                },
-                                {
-                                    "Name": "Font",
-                                    "Value": "HT20"
-                                },
-                                {
-                                    "Name": "WndOpenSound",
-                                    "Value": "0"
-                                },
-                                {
-                                    "Name": "WndCloseSound",
-                                    "Value": "0"
-                                },
-                                {
-                                    "Name": "TextVertAlignment",
-                                    "Value": "Centre"
-                                },
-                                {
-                                    "Name": "TextBorder",
-                                    "Value": "true"
-                                },
-                                {
-                                    "Name": "TextBorderColor",
-                                    "Value": "0.290196 0.262745 0.2 1"
-                                },
-                                {
-                                    "Name": "TextScale",
-                                    "Value": "0.7"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "Type": "Layout",
                     "Name": "GameSetting-Content-Function-Toggle-PoleControl",
                     "Property": [
                         {
@@ -1047,6 +911,282 @@
                     ]
                 },
                 {
+                    "Type": "Layout",
+                    "Name": "GameSetting-Content-Function-Toggle-Jump-Sneak-Pos",
+                    "Property": [
+                        {
+                            "Name": "Area",
+                            "Value": "{{0,0},{0.75,0},{0.5,-7.5},{1,-7}}"
+                        },
+                        {
+                            "Name": "WndOpenSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "WndCloseSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "StretchType",
+                            "Value": "NineGrid"
+                        },
+                        {
+                            "Name": "StretchOffset",
+                            "Value": "232 3 39 3"
+                        },
+                        {
+                            "Name": "LayoutBackImage",
+                            "Value": "set:new_gui_material.json image:menu_setting_item_bg"
+                        }
+                    ],
+                    "Window": [
+                        {
+                            "Type": "CheckBox",
+                            "Name": "GameSetting-Content-Function-Toggle-Jump-Sneak-Pos-State",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,0},{0,-32},{0,89},{0,6}}"
+                                },
+                                {
+                                    "Name": "VerticalAlignment",
+                                    "Value": "Bottom"
+                                },
+                                {
+                                    "Name": "HorizontalAlignment",
+                                    "Value": "Centre"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "NormalImage",
+                                    "Value": "set:new_gui_material.json image:menu_setting_switch_close"
+                                },
+                                {
+                                    "Name": "PushedImage",
+                                    "Value": "set:new_gui_material.json image:menu_setting_switch_open"
+                                },
+                                {
+                                    "Name": "SoundName",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "HexgonTopImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonTopColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonSideImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonSideColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonOverlayerImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonOverlayerColor",
+                                    "Value": "1 1 1 1"
+                                }
+                            ]
+                        },
+                        {
+                            "Type": "StaticText",
+                            "Name": "GameSetting-Content-Function-Toggle-Jump-Sneak-Pos-Name",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,6},{0,-2},{0,221},{0,41}}"
+                                },
+                                {
+                                    "Name": "Text",
+                                    "Value": "跳跃潜行切换"
+                                },
+                                {
+                                    "Name": "Font",
+                                    "Value": "HT20"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "TextVertAlignment",
+                                    "Value": "Centre"
+                                },
+                                {
+                                    "Name": "TextBorder",
+                                    "Value": "true"
+                                },
+                                {
+                                    "Name": "TextBorderColor",
+                                    "Value": "0.290196 0.262745 0.2 1"
+                                },
+                                {
+                                    "Name": "TextScale",
+                                    "Value": "0.7"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Type": "Layout",
+                    "Name": "GameSetting-Content-Function-BackgroundMusic",
+                    "Property": [
+                        {
+                            "Name": "Area",
+                            "Value": "{{0,-3},{0.75,0},{0.5,-10.5},{1,-7}}"
+                        },
+                        {
+                            "Name": "HorizontalAlignment",
+                            "Value": "Right"
+                        },
+                        {
+                            "Name": "WndOpenSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "WndCloseSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "StretchType",
+                            "Value": "NineGrid"
+                        },
+                        {
+                            "Name": "StretchOffset",
+                            "Value": "232 3 39 3"
+                        },
+                        {
+                            "Name": "LayoutBackImage",
+                            "Value": "set:new_gui_material.json image:menu_setting_item_bg"
+                        }
+                    ],
+                    "Window": [
+                        {
+                            "Type": "CheckBox",
+                            "Name": "GameSetting-Content-Function-BackgroundMusic-State",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,0},{0,-32},{0,89},{0,6}}"
+                                },
+                                {
+                                    "Name": "VerticalAlignment",
+                                    "Value": "Bottom"
+                                },
+                                {
+                                    "Name": "HorizontalAlignment",
+                                    "Value": "Centre"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "NormalImage",
+                                    "Value": "set:new_gui_material.json image:menu_setting_switch_close"
+                                },
+                                {
+                                    "Name": "PushedImage",
+                                    "Value": "set:new_gui_material.json image:menu_setting_switch_open"
+                                },
+                                {
+                                    "Name": "SoundName",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "HexgonTopImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonTopColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonSideImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonSideColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonOverlayerImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonOverlayerColor",
+                                    "Value": "1 1 1 1"
+                                }
+                            ]
+                        },
+                        {
+                            "Type": "StaticText",
+                            "Name": "GameSetting-Content-Function-BackgroundMusic-Name",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,6},{0,-1},{0,221},{0,42}}"
+                                },
+                                {
+                                    "Name": "Text",
+                                    "Value": "背景音乐"
+                                },
+                                {
+                                    "Name": "Font",
+                                    "Value": "HT20"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "TextVertAlignment",
+                                    "Value": "Centre"
+                                },
+                                {
+                                    "Name": "TextBorder",
+                                    "Value": "true"
+                                },
+                                {
+                                    "Name": "TextBorderColor",
+                                    "Value": "0.290196 0.262745 0.2 1"
+                                },
+                                {
+                                    "Name": "TextScale",
+                                    "Value": "0.7"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "Type": "StaticText",
                     "Name": "GameSetting-EffectTest",
                     "Property": [
@@ -1061,10 +1201,6 @@
                         {
                             "Name": "WndCloseSound",
                             "Value": "0"
-                        },
-                        {
-                            "Name": "EffectFileName",
-                            "Value": "fireworks_blue01.effect"
                         }
                     ]
                 }

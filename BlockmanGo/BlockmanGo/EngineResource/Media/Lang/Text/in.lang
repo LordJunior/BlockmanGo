@@ -1108,4 +1108,220 @@ gui_real_time_rank_title_one_creepy_aliens=Rank
 gui_real_time_rank_title_two_creepy_aliens=Name
 gui_real_time_rank_title_three_creepy_aliens=Level
 gui_real_time_rank_title_four_creepy_aliens=Kills
-gui_real_time_rank_title_five_creepy_aliens=Gold
+gui_real_time_rank_title_five_creepy_aliens=Gold  
+gui_rank_vice_title_hist_name=History rank
+gui_rank_hist_rank=My Rank
+score_point_point=Level  
+
+flag.war.swordsman.dsc1=increase movement speed and regenerate health
+flag.war.swordsman.dsc2=player takes no damage for a short amount of time
+flag.war.swordsman.dsc3=deals damage to an enemy
+flag.war.shooter.dsc1=deals damage to an area
+flag.war.shooter.dsc2=increase damage for a short amount of time
+flag.war.shooter.dsc3=deals damage to an enemy and decreases his/her movement speed
+flag.war.thieves.dsc1=becomes invisible for a period of time
+flag.war.thieves.dsc2=increase player’s movement speed
+flag.war.thieves.dsc3=poison enemies in the area of effect
+flag.war.wizard.dsc1=heals teammates in the area of effect
+flag.war.wizard.dsc2=deals damage over time to enemies in the area of effect
+flag.war.wizard.dsc3=increase movement speed of teammates in the area of effect
+flag.war.bomber.dsc1=deals damage over time to enemies in the area of effect
+flag.war.bomber.dsc2=deals damage to enemies in the area of effect
+flag.war.bomber.dsc3=deals massive damage to enemies in the area of effect
+flag.war.icemage.dsc1=deals damage to enemies in the area of effect and decreases their movement speed
+flag.war.icemage.dsc2=freeze enemies in the area of effect
+flag.war.icemage.dsc3=deals massive damage to an enemy and decreases his/her movement speed
+
+
+flag.war.swordsman.skillname1=charge
+flag.war.swordsman.skillname2=invincibility
+flag.war.swordsman.skillname3=judgment
+flag.war.shooter.skillname1=arrow rain
+flag.war.shooter.skillname2=sharpshooter
+flag.war.shooter.skillname3=headshot
+flag.war.thieves.skillname1=thief
+flag.war.thieves.skillname2=sprint
+flag.war.thieves.skillname3=toxic bomb
+flag.war.wizard.skillname1=heal
+flag.war.wizard.skillname2=witchery
+flag.war.wizard.skillname3=drum dance
+flag.war.bomber.skillname1=napalm
+flag.war.bomber.skillname2=explosion
+flag.war.bomber.skillname3=dynamic
+flag.war.icemage.skillname1=blizzard
+flag.war.icemage.skillname2=freeze
+flag.war.icemage.skillname3=ice shards
+  
+
+item.skill_01.name=skill 1
+item.skill_02.name=skill 2
+item.skill_03.name=skill 3
+  
+
+parkour.rank.name1=Cactus track rank
+parkour.rank.name2=Freefall track rank
+  
+
+score_point_flag=number of captured flag
+
+flag.war.swordsman=swordsman
+flag.war.shooter=shooter
+flag.war.thieves=thieves
+flag.war.wizard=wizard
+flag.war.bomber=bomber
+flag.war.icemage=master
+
+flag.war.select.swordsman=Do you want to be "swordsman"？
+flag.war.select.shooter=Do you want to be "shooter"？
+flag.war.select.thieves=Do you want to be "thieves"？
+flag.war.select.wizard=Do you want to be "wizard"？
+flag.war.select.bomber=Do you want to be "bomber"？
+flag.war.select.icemage=Do you want to be "master"？
+
+flag.war.shop.tab.fashion=Halo
+flag.war.shop.tab.skill=skill
+  
+
+
+flag.war.shop.Halo.name1=Heal Halo
+flag.war.shop.Halo.name2=Speed Halo
+flag.war.shop.Halo.name3=Jump Halo
+
+flag.war.attribute=attribute
+  
+
+
+
+flag.war.swordsman.dsc1=Deals 15 damage to an enemy --- cooldown: 5; range: 5
+flag.war.swordsman.dsc2=Greatly increased player's movement speed for one second - cooldown: 9
+flag.war.swordsman.dsc3=Reduces damage recieved by 99% for 5 seconds cooldown: 20
+flag.war.shooter.dsc1=Will cause 10 damage to all enemies within 2x2 radius - cooldown: 6; range: 15
+flag.war.shooter.dsc2=Deals 10 damage to an enemy and slows him/her by X% for 2 seconds - cooldown: 9; range: 15
+flag.war.shooter.dsc3=Deals 30 damage to an enemy: cooldown: 20; range: 25
+flag.war.thieves.dsc1=Deals 20 damage to an enemy - cooldown: 6; range: 5
+flag.war.thieves.dsc2=Increases player's movement speed for 3 seconds - cooldown: 9
+flag.war.thieves.dsc3=Allows player to become invisible for 3 seconds - cooldown: 20
+flag.war.wizard.dsc1=Heals 10hp to a teammate - cooldown: 4; range: 10
+flag.war.wizard.dsc2=Causes 1 random enemies in the 12x12 radius to be poisoned for 5 seconds, deals 21 damage in full effect - cooldown: 9
+flag.war.wizard.dsc3=Heals all teamates in the area of a 8X8 radius, lasting 5 seconds, restoring a total 600 hp - cooldown: 20; range: 10
+flag.war.bomber.dsc1=Will cause continuous damage to an enemy for 2 seconds, resulting in a total of 6 damage - cooldown: 2; range: 12
+flag.war.bomber.dsc2=Cause 15 damage to enemies within a 3x3 radius and slow them by X% for 3 seconds - cooldown: 9; range: 12
+flag.war.bomber.dsc3=Deals 20 damage to enemies within a 8x8 radius - cooldown: 20; range: 30
+flag.war.icemage.dsc1=Deals 4 damage to an enemy and slows them by X% for one second - cooldown: 2; range: 12
+flag.war.icemage.dsc2=Freezes enemies within a 12x12 radius for 3 seconds - cooldown: 9
+flag.war.icemage.dsc3=Causes continuous damage and decelerate enemies in a 5x5 radius for 5 seconds, resulting in a total of 18 damage - cooldown: 20; range: 12
+
+
+flag.war.swordsman.skillname1=Heroic Strike
+flag.war.swordsman.skillname2=Charge
+flag.war.swordsman.skillname3=Shield Block
+flag.war.shooter.skillname1=Arrow Rain
+flag.war.shooter.skillname2=Icy arrow
+flag.war.shooter.skillname3=Sharpshooter
+flag.war.thieves.skillname1=Eviscerate
+flag.war.thieves.skillname2=Sprint
+flag.war.thieves.skillname3=Disappearance
+flag.war.wizard.skillname1=Treatment
+flag.war.wizard.skillname2=Corrosion
+flag.war.wizard.skillname3=The Healing Wave
+flag.war.bomber.skillname1=The Mini Bomb
+flag.war.bomber.skillname2=Deceleration Mines
+flag.war.bomber.skillname3=Mega Bombs
+flag.war.icemage.skillname1=Crushed Ice
+flag.war.icemage.skillname2=Freezing
+flag.war.icemage.skillname3=Snowstorm
+  
+
+
+flag.war.swordsman.attribute.dsc=Heal：70；Aggressivity：10；Defenses：300
+flag.war.shooter.attribute.dsc=Heal：50；Aggressivity：8；Defenses：200
+flag.war.thieves.attribute.dsc=Heal：60；Aggressivity：10；Defenses：200
+flag.war.wizard.attribute.dsc=Heal：50；Aggressivity：8；Defenses：200
+flag.war.bomber.attribute.dsc=Heal：50；Aggressivity：8；Defenses：200
+flag.war.icemage.attribute.dsc=Heal：50；Aggressivity：8；Defenses：200
+
+  
+
+flag.war.swordsman.attribute.dsc0=Heal：70；Aggressivity：10；Defenses：3
+flag.war.shooter.attribute.dsc0=Heal：50；Aggressivity：8；Defenses：2
+flag.war.thieves.attribute.dsc0=Heal：60；Aggressivity：10；Defenses：2
+flag.war.wizard.attribute.dsc0=Heal：50；Aggressivity：8；Defenses：2
+flag.war.bomber.attribute.dsc0=Heal：50；Aggressivity：8；Defenses：2
+flag.war.icemage.attribute.dsc0=Heal：50；Aggressivity：8；Defenses：2
+  
+
+flag.war.swordsman.dsc11=Deals 600 damage to an enemy --- cooldown: 5; range: 5
+flag.war.swordsman.dsc12=Greatly increased player's movement speed for one second - cooldown: 9
+flag.war.swordsman.dsc13=Reduces damage recieved by 99% for 5 seconds cooldown: 20
+flag.war.shooter.dsc11=Will cause 550 damage to all enemies within 2x2 radius - cooldown: 6; range: 15
+flag.war.shooter.dsc12=Deals 1000 damage to an enemy and slows him/her by 40% for 2 seconds - cooldown: 9; range: 15
+flag.war.shooter.dsc13=Deals 3000 damage to an enemy: cooldown: 20; range: 25
+flag.war.thieves.dsc11=Deals 600 damage to an enemy - cooldown: 6; range: 5
+flag.war.thieves.dsc12=Increases player's movement speed for 3 seconds - cooldown: 9
+flag.war.thieves.dsc13=Allows player to become invisible for 3 seconds - cooldown: 20
+flag.war.wizard.dsc11=Heals 500hp to a teammate - cooldown: 4; range: 10
+flag.war.wizard.dsc12=Causes 1 random enemies in the 12x12 radius to be poisoned for 5 seconds, deals 800 damage in full effect - cooldown: 9
+flag.war.wizard.dsc13=Heals all teamates in the area of a 8X8 radius, lasting 5 seconds, restoring a total 2000 hp - cooldown: 20; range: 10
+flag.war.bomber.dsc11=Will cause continuous damage to an enemy for 2 seconds, resulting in a total of 250 damage - cooldown: 2; range: 12
+flag.war.bomber.dsc12=Cause 650 damage to enemies within a 3x3 radius and slow them by 40% for 3 seconds - cooldown: 9; range: 12
+flag.war.bomber.dsc13=Deals 1500 damage to enemies within a 8x8 radius - cooldown: 20; range: 30
+flag.war.icemage.dsc11=Deals 200 damage to an enemy and slows them by 40% for one second - cooldown: 2; range: 12
+flag.war.icemage.dsc12=Freezes enemies within a 12x12 radius for 3 seconds - cooldown: 9
+flag.war.icemage.dsc13=Causes continuous damage and decelerate enemies in a 5x5 radius for 5 seconds, resulting in a total of 1800 damage - cooldown: 20; range: 12
+  
+
+flag.war.swordsman.attribute.dsc1=Hp：7500；Damage：300；Defence：500
+flag.war.shooter.attribute.dsc1=Hp：4000；Damage：360；Defence：200
+flag.war.thieves.attribute.dsc1=Hp：6000；Damage：400；Defence：400
+flag.war.wizard.attribute.dsc1=Hp：5000；Damage：180；Defence：250
+flag.war.bomber.attribute.dsc1=Hp：4500；Damage：150；Defence：350
+flag.war.icemage.attribute.dsc1=Hp：3500；Damage：120；Defence：300
+  
+
+flag.war.swordsman.dsc21=Deals 1000 damage to an enemy --- cooldown: 9; range: 10
+flag.war.swordsman.dsc22=Greatly increased player's movement speed for one second - cooldown: 9
+flag.war.swordsman.dsc23=Reduces damage recieved by 99% for 2 seconds cooldown: 20
+flag.war.shooter.dsc21=Will cause 1000 damage to all enemies within 2x2 radius - cooldown: 6; range: 15
+flag.war.shooter.dsc22=Deals 1500 damage to an enemy and slows him/her by 40% for 2 seconds - cooldown: 9; range: 15
+flag.war.shooter.dsc23=Deals 3000 damage to an enemy: cooldown: 20; range: 25
+flag.war.thieves.dsc21=Deals 1500 damage to an enemy - cooldown: 9; range: 10
+flag.war.thieves.dsc22=Increases player's movement speed for 3 seconds - cooldown: 9
+flag.war.thieves.dsc23=Allows player to become invisible for 2 seconds - cooldown: 20
+flag.war.wizard.dsc21=Heals 300hp to a teammate - cooldown: 3; range: 10
+flag.war.wizard.dsc22=Causes 1 random enemies in the 12x12 radius to be poisoned for 5 seconds, deals 1200 damage in full effect - cooldown: 6
+flag.war.wizard.dsc23=Heals all teamates in the area of a 8X8 radius, lasting 5 seconds, restoring a total 1200 hp - cooldown: 20; range: 10
+flag.war.bomber.dsc21=Will cause continuous damage to an enemy for 2 seconds, resulting in a total of 250 damage - cooldown: 2; range: 12
+flag.war.bomber.dsc22=Cause 650 damage to enemies within a 3x3 radius and slow them by 40% for 3 seconds - cooldown: 9; range: 12
+flag.war.bomber.dsc23=Deals 1500 damage to enemies within a 8x8 radius - cooldown: 20; range: 30
+flag.war.icemage.dsc21=Deals 200 damage to an enemy and slows them by 40% for one second - cooldown: 2; range: 12
+flag.war.icemage.dsc22=Freezes enemies within a 12x12 radius for 3 seconds - cooldown: 9
+flag.war.icemage.dsc23=Causes continuous damage and decelerate enemies in a 5x5 radius for 5 seconds, resulting in a total of 3000 damage - cooldown: 20; range: 12
+
+
+
+flag.war.swordsman.attribute.dsc2=Hp：7500；Damage：250；Defence：500
+flag.war.shooter.attribute.dsc2=Hp：4000；Damage：800；Defence：200
+flag.war.thieves.attribute.dsc2=Hp：6000；Damage：500；Defence：400
+flag.war.wizard.attribute.dsc2=Hp：3000；Damage：180；Defence：250
+flag.war.bomber.attribute.dsc2=Hp：4500；Damage：150；Defence：350
+flag.war.icemage.attribute.dsc2=Hp：4000；Damage：120；Defence：300
+  
+
+
+parkour.rank.name01=Cactus  Track  Rank
+parkour.rank.name02=Freefall  Track  Rank
+  
+
+
+flag.war.shop.Halo.attribute1=Increase maxium Hp\\n(permanent)
+flag.war.shop.Halo.attribute2=Increase movement speed\\n(permanent)
+flag.war.shop.Halo.attribute3=Increase jump height\\n(permanent)
+
+shop_btn_select=select
+shop_btn_unlock=unlock
+gui_dialog_tip_content_unlock_commodity=Unlock【%s】need
+gui.shop.tab.color=Color
+gui.shop.tab.wood=Wood
+gui.shop.tab.stone=Stone
+gui.shop.tab.metal=Metal
+gui_have_already_got_block=have already got block

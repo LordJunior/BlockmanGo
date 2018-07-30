@@ -431,6 +431,92 @@
                     ]
                 },
                 {
+                    "Type": "Button",
+                    "Name": "MenuPlayerItem-Btn-CallOn",
+                    "Property": [
+                        {
+                            "Name": "Area",
+                            "Value": "{{0,-31},{0,0},{0,86},{0,54}}"
+                        },
+                        {
+                            "Name": "VerticalAlignment",
+                            "Value": "Centre"
+                        },
+                        {
+                            "Name": "HorizontalAlignment",
+                            "Value": "Right"
+                        },
+                        {
+                            "Name": "Text",
+                            "Value": "拜访"
+                        },
+                        {
+                            "Name": "WndOpenSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "WndCloseSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "StretchType",
+                            "Value": "NineGrid"
+                        },
+                        {
+                            "Name": "StretchOffset",
+                            "Value": "8 10 8 10"
+                        },
+                        {
+                            "Name": "BtnTextColor",
+                            "Value": "0.92549 0.870588 0.788235 1"
+                        },
+                        {
+                            "Name": "TextShadow",
+                            "Value": "true"
+                        },
+                        {
+                            "Name": "TextBorder",
+                            "Value": "true"
+                        },
+                        {
+                            "Name": "NormalImage",
+                            "Value": "set:new_gui_material.json image:btn_green_nor"
+                        },
+                        {
+                            "Name": "PushedImage",
+                            "Value": "set:new_gui_material.json image:btn_green_nor"
+                        },
+                        {
+                            "Name": "SoundName",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "HexgonTopImage",
+                            "Value": ""
+                        },
+                        {
+                            "Name": "HexgonTopColor",
+                            "Value": "1 1 1 1"
+                        },
+                        {
+                            "Name": "HexgonSideImage",
+                            "Value": ""
+                        },
+                        {
+                            "Name": "HexgonSideColor",
+                            "Value": "1 1 1 1"
+                        },
+                        {
+                            "Name": "HexgonOverlayerImage",
+                            "Value": ""
+                        },
+                        {
+                            "Name": "HexgonOverlayerColor",
+                            "Value": "1 1 1 1"
+                        }
+                    ]
+                },
+                {
                     "Type": "StaticImage",
                     "Name": "MenuPlayerItem-Line",
                     "Property": [

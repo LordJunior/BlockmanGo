@@ -40,7 +40,7 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,0},{0,4},{0,182},{0,234}}"
+                            "Value": "{{0,0},{0,4},{0.95,0},{0,234}}"
                         },
                         {
                             "Name": "HorizontalAlignment",
@@ -190,7 +190,7 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,0},{0,245},{0,182},{0,270}}"
+                            "Value": "{{0,0},{0,245},{0.95,0},{0,270}}"
                         },
                         {
                             "Name": "HorizontalAlignment",
@@ -228,7 +228,7 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,0},{0,265},{0,182},{0,445}}"
+                            "Value": "{{0,0},{0,265},{0.95,0},{0,445}}"
                         },
                         {
                             "Name": "HorizontalAlignment",

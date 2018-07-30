@@ -289,6 +289,60 @@
                         {
                             "Name": "TextScale",
                             "Value": "0.7"
+                        },
+                        {
+                            "Name": "TextLineExtraSpace",
+                            "Value": "0"
+                        }
+                    ]
+                },
+                {
+                    "Type": "StaticText",
+                    "Name": "ItemSlot-CountDown-Time",
+                    "Property": [
+                        {
+                            "Name": "DrawColor",
+                            "Value": "0 0 0 1"
+                        },
+                        {
+                            "Name": "Area",
+                            "Value": "{{0.2,0},{0.29,0},{0.7,0},{0.79,0}}"
+                        },
+                        {
+                            "Name": "Touchable",
+                            "Value": "false"
+                        },
+                        {
+                            "Name": "Level",
+                            "Value": "30"
+                        },
+                        {
+                            "Name": "BackgroundColor",
+                            "Value": "0.501961 0.501961 0.501961 0"
+                        },
+                        {
+                            "Name": "WndOpenSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "WndCloseSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "TextColor",
+                            "Value": "1 0 0 1"
+                        },
+                        {
+                            "Name": "TextHorzAlignment",
+                            "Value": "Centre"
+                        },
+                        {
+                            "Name": "TextVertAlignment",
+                            "Value": "Centre"
+                        },
+                        {
+                            "Name": "TextLineExtraSpace",
+                            "Value": "0"
                         }
                     ]
                 }

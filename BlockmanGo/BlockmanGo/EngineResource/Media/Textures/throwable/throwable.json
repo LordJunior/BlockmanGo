@@ -1,0 +1,108 @@
+{"frames": {
+
+"arrow_rain":
+{
+	"frame": {"x":64,"y":32,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"offset": {"x": 0,"y": 0}
+},
+"blizzard":
+{
+	"frame": {"x":96,"y":32,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"offset": {"x": 0,"y": 0}
+},
+"drum_dance":
+{
+	"frame": {"x":64,"y":64,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"offset": {"x": 0,"y": 0}
+},
+"dynamic":
+{
+	"frame": {"x":96,"y":64,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"offset": {"x": 0,"y": 0}
+},
+"explosion":
+{
+	"frame": {"x":32,"y":64,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"offset": {"x": 0,"y": 0}
+},
+"freeze":
+{
+	"frame": {"x":0,"y":64,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"offset": {"x": 0,"y": 0}
+},
+"headshot":
+{
+	"frame": {"x":32,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"offset": {"x": 0,"y": 0}
+},
+"heal":
+{
+	"frame": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"offset": {"x": 0,"y": 0}
+},
+"ice_shards":
+{
+	"frame": {"x":32,"y":32,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"offset": {"x": 0,"y": 0}
+},
+"napalm":
+{
+	"frame": {"x":0,"y":32,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"offset": {"x": 0,"y": 0}
+},
+"skill_01":
+{
+	"frame": {"x":0,"y":370,"w":100,"h":100},
+	"sourceSize": {"w":100,"h":100},
+	"offset": {"x": 0,"y": 0}
+},
+"skill_02":
+{
+	"frame": {"x":0,"y":170,"w":100,"h":100},
+	"sourceSize": {"w":100,"h":100},
+	"offset": {"x": 0,"y": 0}
+},
+"skill_03":
+{
+	"frame": {"x":0,"y":270,"w":100,"h":100},
+	"sourceSize": {"w":100,"h":100},
+	"offset": {"x": 0,"y": 0}
+},
+"skill_btn":
+{
+	"frame": {"x":0,"y":96,"w":74,"h":74},
+	"sourceSize": {"w":74,"h":74},
+	"offset": {"x": 0,"y": 0}
+},
+"toxic_bomb":
+{
+	"frame": {"x":96,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"offset": {"x": 0,"y": 0}
+},
+"witchery":
+{
+	"frame": {"x":64,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32},
+	"offset": {"x": 0,"y": 0}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "throwable.png",
+	"format": "RGBA8888",
+	"size": {"w":128,"h":470},
+	"scale": "1",
+	"type": "frame"
+}
+}

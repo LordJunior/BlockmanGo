@@ -6,7 +6,7 @@
             "Property": [
                 {
                     "Name": "Area",
-                    "Value": "{{0,0},{0,83},{0.75,0},{1,-34}}"
+                    "Value": "{{0,0},{0,83},{0.75,0},{0.8375,83}}"
                 },
                 {
                     "Name": "HorizontalAlignment",
@@ -78,7 +78,7 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,60},{0,82},{0.335,60},{0,468}}"
+                            "Value": "{{0.0625,0},{0,82},{0.3975,0},{0.6401,82}}"
                         },
                         {
                             "Name": "WndOpenSound",
@@ -96,7 +96,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,0},{0,0},{0,324.125},{0,386.375}}"
+                                    "Value": "{{0,0},{0,0},{1,0},{1,1}}"
                                 },
                                 {
                                     "Name": "WndOpenSound",
@@ -242,7 +242,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,2},{0,-1},{0,322},{0,128}}"
+                                    "Value": "{{0,2},{0,-1},{1,2},{0.333,-1}}"
                                 },
                                 {
                                     "Name": "WndOpenSound",
@@ -293,6 +293,10 @@
                                         {
                                             "Name": "TextBorderColor",
                                             "Value": "0.290196 0.262745 0.2 1"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -358,7 +362,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,2},{0,126},{0,320},{0,249}}"
+                                    "Value": "{{0,2},{0.3333,0},{1,2},{0.6663,0}}"
                                 },
                                 {
                                     "Name": "WndOpenSound",
@@ -376,7 +380,7 @@
                                     "Property": [
                                         {
                                             "Name": "Area",
-                                            "Value": "{{0,27},{0,1},{0,112},{1,1}}"
+                                            "Value": "{{0,27},{0,1},{0.5,27},{1,1}}"
                                         },
                                         {
                                             "Name": "VerticalAlignment",
@@ -395,10 +399,6 @@
                                             "Value": "0"
                                         },
                                         {
-                                            "Name": "TextHorzAlignment",
-                                            "Value": "Centre"
-                                        },
-                                        {
                                             "Name": "TextVertAlignment",
                                             "Value": "Centre"
                                         },
@@ -409,6 +409,10 @@
                                         {
                                             "Name": "TextBorderColor",
                                             "Value": "0.290196 0.262745 0.2 1"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -472,7 +476,15 @@
                                     "Property": [
                                         {
                                             "Name": "Area",
-                                            "Value": "{{0,143},{0,40},{0,177.125},{0,83.75}}"
+                                            "Value": "{{0,0},{0,0},{0,34.125},{0,43.75}}"
+                                        },
+                                        {
+                                            "Name": "VerticalAlignment",
+                                            "Value": "Centre"
+                                        },
+                                        {
+                                            "Name": "HorizontalAlignment",
+                                            "Value": "Centre"
                                         },
                                         {
                                             "Name": "WndOpenSound",
@@ -514,7 +526,7 @@
                                     "Property": [
                                         {
                                             "Name": "Area",
-                                            "Value": "{{0,-1},{0,-1},{0,59},{0,59}}"
+                                            "Value": "{{0,0},{0,0},{0,60},{0,60}}"
                                         },
                                         {
                                             "Name": "VerticalAlignment",
@@ -636,7 +648,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,4},{0,257},{0,321},{0,384}}"
+                                    "Value": "{{0,4},{0.666,0},{1,4},{0.996,0}}"
                                 },
                                 {
                                     "Name": "AlwaysOnTop",
@@ -676,7 +688,7 @@
                                             "Property": [
                                                 {
                                                     "Name": "Area",
-                                                    "Value": "{{0,27},{0,0},{0,110},{0,34}}"
+                                                    "Value": "{{0,26},{0,-5},{0,109},{0,29}}"
                                                 },
                                                 {
                                                     "Name": "VerticalAlignment",
@@ -695,10 +707,6 @@
                                                     "Value": "0"
                                                 },
                                                 {
-                                                    "Name": "TextHorzAlignment",
-                                                    "Value": "Centre"
-                                                },
-                                                {
                                                     "Name": "TextVertAlignment",
                                                     "Value": "Centre"
                                                 },
@@ -709,6 +717,10 @@
                                                 {
                                                     "Name": "TextBorderColor",
                                                     "Value": "0.290196 0.262745 0.2 1"
+                                                },
+                                                {
+                                                    "Name": "TextLineExtraSpace",
+                                                    "Value": "0"
                                                 }
                                             ]
                                         },
@@ -718,7 +730,7 @@
                                             "Property": [
                                                 {
                                                     "Name": "Area",
-                                                    "Value": "{{0,0},{0,0},{0,33.75},{0,33.75}}"
+                                                    "Value": "{{0,0},{0,-5},{0,33.75},{0,28.75}}"
                                                 },
                                                 {
                                                     "Name": "VerticalAlignment",
@@ -772,10 +784,14 @@
                                             "Property": [
                                                 {
                                                     "Name": "Area",
-                                                    "Value": "{{0,195},{0,1},{0,230},{0,34}}"
+                                                    "Value": "{{0,50},{0,-5},{0,85},{0,28}}"
                                                 },
                                                 {
                                                     "Name": "VerticalAlignment",
+                                                    "Value": "Centre"
+                                                },
+                                                {
+                                                    "Name": "HorizontalAlignment",
                                                     "Value": "Centre"
                                                 },
                                                 {
@@ -801,6 +817,298 @@
                                                 {
                                                     "Name": "TextShadow",
                                                     "Value": "true"
+                                                },
+                                                {
+                                                    "Name": "TextLineExtraSpace",
+                                                    "Value": "0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Type": "StaticText",
+                                            "Name": "FinalSummary-Self-GuessRewardTitle",
+                                            "Property": [
+                                                {
+                                                    "Name": "Area",
+                                                    "Value": "{{0,26},{0.53,0},{0,109},{0.53,34}}"
+                                                },
+                                                {
+                                                    "Name": "VerticalAlignment",
+                                                    "Value": "Centre"
+                                                },
+                                                {
+                                                    "Name": "Text",
+                                                    "Value": "押注奖励"
+                                                },
+                                                {
+                                                    "Name": "Visible",
+                                                    "Value": "false"
+                                                },
+                                                {
+                                                    "Name": "WndOpenSound",
+                                                    "Value": "0"
+                                                },
+                                                {
+                                                    "Name": "WndCloseSound",
+                                                    "Value": "0"
+                                                },
+                                                {
+                                                    "Name": "TextHorzAlignment",
+                                                    "Value": "Centre"
+                                                },
+                                                {
+                                                    "Name": "TextVertAlignment",
+                                                    "Value": "Centre"
+                                                },
+                                                {
+                                                    "Name": "TextBorder",
+                                                    "Value": "true"
+                                                },
+                                                {
+                                                    "Name": "TextBorderColor",
+                                                    "Value": "0.290196 0.262745 0.2 1"
+                                                },
+                                                {
+                                                    "Name": "TextLineExtraSpace",
+                                                    "Value": "0"
+                                                }
+                                            ],
+                                            "Window": [
+                                                {
+                                                    "Type": "StaticImage",
+                                                    "Name": "FinalSummary-Self-GuessRewardIcon",
+                                                    "Property": [
+                                                        {
+                                                            "Name": "Area",
+                                                            "Value": "{{1.1,2},{0,0},{1.1,38},{0,36}}"
+                                                        },
+                                                        {
+                                                            "Name": "VerticalAlignment",
+                                                            "Value": "Centre"
+                                                        },
+                                                        {
+                                                            "Name": "HorizontalAlignment",
+                                                            "Value": "Centre"
+                                                        },
+                                                        {
+                                                            "Name": "WndOpenSound",
+                                                            "Value": "0"
+                                                        },
+                                                        {
+                                                            "Name": "WndCloseSound",
+                                                            "Value": "0"
+                                                        },
+                                                        {
+                                                            "Name": "ImageName",
+                                                            "Value": "set:jail_break.json image:jail_break_currency"
+                                                        },
+                                                        {
+                                                            "Name": "HexgonTopImage",
+                                                            "Value": ""
+                                                        },
+                                                        {
+                                                            "Name": "HexgonTopColor",
+                                                            "Value": "1 1 1 1"
+                                                        },
+                                                        {
+                                                            "Name": "HexgonSideImage",
+                                                            "Value": ""
+                                                        },
+                                                        {
+                                                            "Name": "HexgonSideColor",
+                                                            "Value": "1 1 1 1"
+                                                        },
+                                                        {
+                                                            "Name": "HexgonOverlayerImage",
+                                                            "Value": ""
+                                                        },
+                                                        {
+                                                            "Name": "HexgonOverlayerColor",
+                                                            "Value": "1 1 1 1"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Type": "StaticText",
+                                                    "Name": "FinalSummary-Self-GuessReward",
+                                                    "Property": [
+                                                        {
+                                                            "Name": "Area",
+                                                            "Value": "{{2.04,0},{0,0},{2.04,35},{0,33}}"
+                                                        },
+                                                        {
+                                                            "Name": "VerticalAlignment",
+                                                            "Value": "Centre"
+                                                        },
+                                                        {
+                                                            "Name": "WndOpenSound",
+                                                            "Value": "0"
+                                                        },
+                                                        {
+                                                            "Name": "WndCloseSound",
+                                                            "Value": "0"
+                                                        },
+                                                        {
+                                                            "Name": "TextHorzAlignment",
+                                                            "Value": "Centre"
+                                                        },
+                                                        {
+                                                            "Name": "TextVertAlignment",
+                                                            "Value": "Centre"
+                                                        },
+                                                        {
+                                                            "Name": "TextShadow",
+                                                            "Value": "true"
+                                                        },
+                                                        {
+                                                            "Name": "TextLineExtraSpace",
+                                                            "Value": "0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Type": "StaticText",
+                                            "Name": "FinalSummary-Self-GuessResultTitle",
+                                            "Property": [
+                                                {
+                                                    "Name": "Area",
+                                                    "Value": "{{0,26},{-0.8,0},{0,109},{-0.8,34}}"
+                                                },
+                                                {
+                                                    "Name": "VerticalAlignment",
+                                                    "Value": "Centre"
+                                                },
+                                                {
+                                                    "Name": "Text",
+                                                    "Value": "我的押注"
+                                                },
+                                                {
+                                                    "Name": "Visible",
+                                                    "Value": "false"
+                                                },
+                                                {
+                                                    "Name": "WndOpenSound",
+                                                    "Value": "0"
+                                                },
+                                                {
+                                                    "Name": "WndCloseSound",
+                                                    "Value": "0"
+                                                },
+                                                {
+                                                    "Name": "TextHorzAlignment",
+                                                    "Value": "Centre"
+                                                },
+                                                {
+                                                    "Name": "TextVertAlignment",
+                                                    "Value": "Centre"
+                                                },
+                                                {
+                                                    "Name": "TextBorder",
+                                                    "Value": "true"
+                                                },
+                                                {
+                                                    "Name": "TextBorderColor",
+                                                    "Value": "0.290196 0.262745 0.2 1"
+                                                },
+                                                {
+                                                    "Name": "TextLineExtraSpace",
+                                                    "Value": "0"
+                                                }
+                                            ],
+                                            "Window": [
+                                                {
+                                                    "Type": "StaticText",
+                                                    "Name": "FinalSummary-Self-GuessName",
+                                                    "Property": [
+                                                        {
+                                                            "Name": "Area",
+                                                            "Value": "{{1.2,0},{0,0},{1.2,96},{0,33}}"
+                                                        },
+                                                        {
+                                                            "Name": "VerticalAlignment",
+                                                            "Value": "Centre"
+                                                        },
+                                                        {
+                                                            "Name": "WndOpenSound",
+                                                            "Value": "0"
+                                                        },
+                                                        {
+                                                            "Name": "WndCloseSound",
+                                                            "Value": "0"
+                                                        },
+                                                        {
+                                                            "Name": "TextHorzAlignment",
+                                                            "Value": "Centre"
+                                                        },
+                                                        {
+                                                            "Name": "TextVertAlignment",
+                                                            "Value": "Centre"
+                                                        },
+                                                        {
+                                                            "Name": "TextShadow",
+                                                            "Value": "true"
+                                                        },
+                                                        {
+                                                            "Name": "TextLineExtraSpace",
+                                                            "Value": "0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Type": "StaticImage",
+                                                    "Name": "FinalSummary-Self-GuessRewardRightIcon",
+                                                    "Property": [
+                                                        {
+                                                            "Name": "Area",
+                                                            "Value": "{{2.3,2},{0,0},{2.3,37},{0,31}}"
+                                                        },
+                                                        {
+                                                            "Name": "VerticalAlignment",
+                                                            "Value": "Centre"
+                                                        },
+                                                        {
+                                                            "Name": "HorizontalAlignment",
+                                                            "Value": "Centre"
+                                                        },
+                                                        {
+                                                            "Name": "WndOpenSound",
+                                                            "Value": "0"
+                                                        },
+                                                        {
+                                                            "Name": "WndCloseSound",
+                                                            "Value": "0"
+                                                        },
+                                                        {
+                                                            "Name": "ImageName",
+                                                            "Value": "set:buildwar.json image:cha"
+                                                        },
+                                                        {
+                                                            "Name": "HexgonTopImage",
+                                                            "Value": ""
+                                                        },
+                                                        {
+                                                            "Name": "HexgonTopColor",
+                                                            "Value": "1 1 1 1"
+                                                        },
+                                                        {
+                                                            "Name": "HexgonSideImage",
+                                                            "Value": ""
+                                                        },
+                                                        {
+                                                            "Name": "HexgonSideColor",
+                                                            "Value": "1 1 1 1"
+                                                        },
+                                                        {
+                                                            "Name": "HexgonOverlayerImage",
+                                                            "Value": ""
+                                                        },
+                                                        {
+                                                            "Name": "HexgonOverlayerColor",
+                                                            "Value": "1 1 1 1"
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
@@ -948,7 +1256,7 @@
                                             "Property": [
                                                 {
                                                     "Name": "Area",
-                                                    "Value": "{{0,27},{0,0},{0,228},{0,21}}"
+                                                    "Value": "{{0,27},{0,0},{0.6,27},{0,21}}"
                                                 },
                                                 {
                                                     "Name": "VerticalAlignment",
@@ -1008,7 +1316,7 @@
                                                     "Property": [
                                                         {
                                                             "Name": "Area",
-                                                            "Value": "{{0,0},{0,0},{0,100},{1,0}}"
+                                                            "Value": "{{0,0},{0,0},{1,0},{1,0}}"
                                                         },
                                                         {
                                                             "Name": "VerticalAlignment",
@@ -1031,8 +1339,16 @@
                                                             "Value": "0"
                                                         },
                                                         {
+                                                            "Name": "TextHorzAlignment",
+                                                            "Value": "Centre"
+                                                        },
+                                                        {
                                                             "Name": "TextShadow",
                                                             "Value": "true"
+                                                        },
+                                                        {
+                                                            "Name": "TextLineExtraSpace",
+                                                            "Value": "0"
                                                         }
                                                     ]
                                                 }
@@ -1050,7 +1366,7 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,-60},{0,82},{0.529,-60},{1,-135}}"
+                            "Value": "{{-0.0625,0},{0,82},{0.4665,0},{0.6401,82}}"
                         },
                         {
                             "Name": "HorizontalAlignment",
@@ -1173,6 +1489,10 @@
                                         {
                                             "Name": "TextShadow",
                                             "Value": "true"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -1182,7 +1502,11 @@
                                     "Property": [
                                         {
                                             "Name": "Area",
-                                            "Value": "{{0.5,-49},{0,0},{0.5,1},{1,0}}"
+                                            "Value": "{{0.375,0},{0,0},{0.375,50},{1,0}}"
+                                        },
+                                        {
+                                            "Name": "VerticalAlignment",
+                                            "Value": "Centre"
                                         },
                                         {
                                             "Name": "Text",
@@ -1207,6 +1531,10 @@
                                         {
                                             "Name": "TextShadow",
                                             "Value": "true"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -1216,7 +1544,11 @@
                                     "Property": [
                                         {
                                             "Name": "Area",
-                                            "Value": "{{0,378},{0,0},{0,428},{1,0}}"
+                                            "Value": "{{0.7441,0},{0,0},{0.7441,50},{1,0}}"
+                                        },
+                                        {
+                                            "Name": "VerticalAlignment",
+                                            "Value": "Centre"
                                         },
                                         {
                                             "Name": "Text",
@@ -1241,6 +1573,10 @@
                                         {
                                             "Name": "TextShadow",
                                             "Value": "true"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -1289,6 +1625,48 @@
                                             "Value": "1 1 1 1"
                                         }
                                     ]
+                                },
+                                {
+                                    "Type": "StaticText",
+                                    "Name": "FinalSummary-AllRank-Title-Score",
+                                    "Property": [
+                                        {
+                                            "Name": "Area",
+                                            "Value": "{{0.6,0},{0,0},{0.6,50},{1,0}}"
+                                        },
+                                        {
+                                            "Name": "VerticalAlignment",
+                                            "Value": "Centre"
+                                        },
+                                        {
+                                            "Name": "Text",
+                                            "Value": "分数"
+                                        },
+                                        {
+                                            "Name": "WndOpenSound",
+                                            "Value": "0"
+                                        },
+                                        {
+                                            "Name": "WndCloseSound",
+                                            "Value": "0"
+                                        },
+                                        {
+                                            "Name": "TextHorzAlignment",
+                                            "Value": "Centre"
+                                        },
+                                        {
+                                            "Name": "TextVertAlignment",
+                                            "Value": "Centre"
+                                        },
+                                        {
+                                            "Name": "TextShadow",
+                                            "Value": "true"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -1298,7 +1676,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,0},{0,44},{1,0},{0,386}}"
+                                    "Value": "{{0,0},{0,44},{1,0},{1,0}}"
                                 },
                                 {
                                     "Name": "WndOpenSound",
@@ -1316,7 +1694,7 @@
                                     "Property": [
                                         {
                                             "Name": "Area",
-                                            "Value": "{{0,0},{0,0},{1,0},{0,342}}"
+                                            "Value": "{{0,0},{0,0},{1,0},{1,0}}"
                                         },
                                         {
                                             "Name": "ClipChild",
@@ -1342,7 +1720,7 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,0},{0,480},{0.41,0},{0,541}}"
+                            "Value": "{{0,0},{0.796,0},{0.41,0},{0.796,61}}"
                         },
                         {
                             "Name": "HorizontalAlignment",
@@ -1583,6 +1961,84 @@
                                     "Value": "1 1 1 1"
                                 }
                             ]
+                        },
+                        {
+                            "Type": "Button",
+                            "Name": "FinalSummary-Close",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{1.1,0},{0,0},{1.45,0},{1,0}}"
+                                },
+                                {
+                                    "Name": "VerticalAlignment",
+                                    "Value": "Centre"
+                                },
+                                {
+                                    "Name": "Text",
+                                    "Value": "返回"
+                                },
+                                {
+                                    "Name": "Visible",
+                                    "Value": "false"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "StretchType",
+                                    "Value": "NineGrid"
+                                },
+                                {
+                                    "Name": "StretchOffset",
+                                    "Value": "9 9 9 9"
+                                },
+                                {
+                                    "Name": "TextShadow",
+                                    "Value": "true"
+                                },
+                                {
+                                    "Name": "NormalImage",
+                                    "Value": "set:new_gui_material.json image:blue_btn_nor"
+                                },
+                                {
+                                    "Name": "PushedImage",
+                                    "Value": "set:new_gui_material.json image:blue_btn_pre"
+                                },
+                                {
+                                    "Name": "SoundName",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "HexgonTopImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonTopColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonSideImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonSideColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonOverlayerImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonOverlayerColor",
+                                    "Value": "1 1 1 1"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -1638,7 +2094,11 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,319},{0,-1},{0,645},{0,61}}"
+                            "Value": "{{0,0},{0,-1},{0.5,0},{0,61}}"
+                        },
+                        {
+                            "Name": "HorizontalAlignment",
+                            "Value": "Centre"
                         },
                         {
                             "Name": "Text",
@@ -1671,6 +2131,10 @@
                         {
                             "Name": "TextBorderColor",
                             "Value": "0.215686 0.0235294 0.0901961 1"
+                        },
+                        {
+                            "Name": "TextLineExtraSpace",
+                            "Value": "0"
                         }
                     ]
                 }

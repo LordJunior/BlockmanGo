@@ -4639,6 +4639,214 @@
 				"w": 32,
 				"h": 32
 			}
+		},
+		"seeds_wheat1": {
+			"frame": {
+				"x": 781,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"seeds_carrot": {
+			"frame": {
+				"x": 813,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"seeds_tomato": {
+			"frame": {
+				"x": 850,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"tomato": {
+			"frame": {
+				"x": 883,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"seeds_cabbage": {
+			"frame": {
+				"x": 918,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"cabbage": {
+			"frame": {
+				"x": 952,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"seeds_pea": {
+			"frame": {
+				"x": 984,
+				"y": 136,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"pea": {
+			"frame": {
+				"x": 512,
+				"y": 169,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"skill_01": {
+			"frame": {
+				"x": 546,
+				"y": 169,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"skill_02": {
+			"frame": {
+				"x": 580,
+				"y": 169,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"skill_03": {
+			"frame": {
+				"x": 614,
+				"y": 169,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"potion_bottle_yellow": {
+			"frame": {
+				"x": 648,
+				"y": 169,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
+		},
+		"potion_bottle_green": {
+			"frame": {
+				"x": 682,
+				"y": 169,
+				"w": 32,
+				"h": 32
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w": 32,
+				"h": 32
+			}
 		}
 	},
 	"meta": {
