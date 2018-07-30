@@ -11,7 +11,6 @@ import Foundation
 protocol CopyFileToolDelegate: class {
     func copyFileInProgress(_ progress: Float)
     func copyFileDidFinished()
-    func shouldCopy(afterError error: Error, copyingItemAtPath srcPath: String, toPath dstPath: String) -> Bool
 }
 
 class CopyFileTool: NSObject, FileManagerDelegate {
@@ -97,7 +96,17 @@ class CopyFileTool: NSObject, FileManagerDelegate {
     }
     
     func fileManager(_ fileManager: FileManager, shouldProceedAfterError error: Error, copyingItemAtPath srcPath: String, toPath dstPath: String) -> Bool {
-        return delegate?.shouldCopy(afterError: error, copyingItemAtPath: srcPath, toPath: dstPath) ?? false
+        if (error as NSError).code == 516 {
+            do {
+                var isdirectory: ObjCBool = false
+                let _ = fileManager.fileExists(atPath: dstPath, isDirectory: &isdirectory)
+                let srcURL = URL(fileURLWithPath: srcPath, isDirectory: isdirectory.boolValue)
+                let dstURL = URL(fileURLWithPath: dstPath, isDirectory: isdirectory.boolValue)
+                let _ = try fileManager.replaceItemAt(dstURL, withItemAt: srcURL)
+            }catch { }
+            return true
+        }
+        return false
     }
 }
 

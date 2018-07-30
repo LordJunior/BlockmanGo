@@ -40,6 +40,7 @@ final class EngineResourceModelManager {
     
     /// 拷贝安装包里的资源到缓存目录
     func copyBundleResourceToCache() {
+        BMFileManager.removeItem(atPath: BMFileManager.engineResourceCacheDirectory)
         copyFileTool.copyFiles(atDirectory: BMFileManager.engineResourceBundleDirectory, toDirectory: BMFileManager.engineResourceCacheDirectory)
     }
     
@@ -65,10 +66,6 @@ final class EngineResourceModelManager {
 extension EngineResourceModelManager: CopyFileToolDelegate {
     func copyFileInProgress(_ progress: Float) {
         delegate?.engineResourceCopyInProgress(progress)
-    }
-    
-    func shouldCopy(afterError error: Error, copyingItemAtPath srcPath: String, toPath dstPath: String) -> Bool {
-        return (error as NSError).code == 516
     }
     
     func copyFileDidFinished() {

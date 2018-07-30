@@ -47,4 +47,12 @@ struct BMFileManager {
         }
         return totalSize
     }
+    
+    static func removeItem(atPath path: String) {
+        do {
+            try fileManager.removeItem(atPath: path)
+        }catch {
+            
+        }
+    }
 }
