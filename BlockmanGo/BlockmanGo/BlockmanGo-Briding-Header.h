@@ -11,4 +11,5 @@
 
 @import FCUUID;
 @import BlockModsGameKit;
+@import MBProgressHUD;
 #endif /* BlockyModes_Briding_Header_h */
