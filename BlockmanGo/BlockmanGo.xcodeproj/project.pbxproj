@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08AF722324723ABB46375BE4 /* Pods_BlockmanGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D5A1A9B2FF2FE5E3B75D8C /* Pods_BlockmanGo.framework */; };
 		50C4B36D55AF1DB5D3014E6F /* Pods_BlockmanGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D5A1A9B2FF2FE5E3B75D8C /* Pods_BlockmanGo.framework */; };
 		DD06D59D2102360B004A570B /* InitializeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06D59C2102360B004A570B /* InitializeProfileViewController.swift */; };
 		DD456BD6210EBDE6009465FE /* BMFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402FC20FEEDF500091B9D /* BMFileManager.swift */; };
@@ -90,7 +91,6 @@
 		DD456C25210EBDE6009465FE /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606A20EF63CF0000B8DC /* libc++.1.tbd */; };
 		DD456C26210EBDE6009465FE /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606820EF63CA0000B8DC /* libstdc++.6.0.9.tbd */; };
 		DD456C27210EBDE6009465FE /* BlockModsGameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; };
-		DD456C28210EBDE6009465FE /* Pods_BlockmanGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D5A1A9B2FF2FE5E3B75D8C /* Pods_BlockmanGo.framework */; };
 		DD456C2A210EBDE6009465FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD51605820EC6B740000B8DC /* LaunchScreen.storyboard */; };
 		DD456C2B210EBDE6009465FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B0E52106D9A1004346C5 /* Localizable.strings */; };
 		DD456C2C210EBDE6009465FE /* EngineResource in Resources */ = {isa = PBXBuildFile; fileRef = DD74037F21018A1100091B9D /* EngineResource */; };
@@ -223,7 +223,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		28E1B64E849E1474617FE6A2 /* Pods-BlockmanGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockmanGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo.release.xcconfig"; sourceTree = "<group>"; };
+		29553FA2844304738BC78A3F /* Pods-BlockmanGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockmanGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo.debug.xcconfig"; sourceTree = "<group>"; };
 		61D5A1A9B2FF2FE5E3B75D8C /* Pods_BlockmanGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockmanGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD06D59C2102360B004A570B /* InitializeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeProfileViewController.swift; sourceTree = "<group>"; };
 		DD456C38210EBDE6009465FE /* BlockmanGo_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockmanGo_Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -318,7 +318,7 @@
 		DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDispatchModel.swift; sourceTree = "<group>"; };
 		DDA4B0E42106D9A1004346C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchBrandingViewController.swift; sourceTree = "<group>"; };
-		E01837725EFD8265A16B0F5A /* Pods-BlockmanGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockmanGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo.debug.xcconfig"; sourceTree = "<group>"; };
+		FA8505300ED87CEC9DEECD2B /* Pods-BlockmanGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockmanGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,7 +330,6 @@
 				DD456C25210EBDE6009465FE /* libc++.1.tbd in Frameworks */,
 				DD456C26210EBDE6009465FE /* libstdc++.6.0.9.tbd in Frameworks */,
 				DD456C27210EBDE6009465FE /* BlockModsGameKit.framework in Frameworks */,
-				DD456C28210EBDE6009465FE /* Pods_BlockmanGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +342,7 @@
 				DD51606920EF63CA0000B8DC /* libstdc++.6.0.9.tbd in Frameworks */,
 				DD51606420EF63AC0000B8DC /* BlockModsGameKit.framework in Frameworks */,
 				50C4B36D55AF1DB5D3014E6F /* Pods_BlockmanGo.framework in Frameworks */,
+				08AF722324723ABB46375BE4 /* Pods_BlockmanGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,8 +352,8 @@
 		4DA4E4A6F478762B420008FB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E01837725EFD8265A16B0F5A /* Pods-BlockmanGo.debug.xcconfig */,
-				28E1B64E849E1474617FE6A2 /* Pods-BlockmanGo.release.xcconfig */,
+				29553FA2844304738BC78A3F /* Pods-BlockmanGo.debug.xcconfig */,
+				FA8505300ED87CEC9DEECD2B /* Pods-BlockmanGo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -754,14 +754,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD456C35210EBDE6009465FE /* Build configuration list for PBXNativeTarget "BlockmanGo_Dev" */;
 			buildPhases = (
-				DD456BD3210EBDE6009465FE /* [CP] Check Pods Manifest.lock */,
 				DD456BD4210EBDE6009465FE /* ShellScript */,
 				DD456BD5210EBDE6009465FE /* Sources */,
 				DD456C23210EBDE6009465FE /* Frameworks */,
 				DD456C29210EBDE6009465FE /* Resources */,
 				DD456C30210EBDE6009465FE /* Embed Frameworks */,
-				DD456C32210EBDE6009465FE /* [CP] Embed Pods Frameworks */,
-				DD456C33210EBDE6009465FE /* [CP] Copy Pods Resources */,
 				DD456C34210EBDE6009465FE /* Increment Build Number */,
 			);
 			buildRules = (
@@ -924,21 +921,6 @@
 			shellPath = /bin/sh;
 			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
 		};
-		DD456BD3210EBDE6009465FE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		DD456BD4210EBDE6009465FE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -951,36 +933,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
-		};
-		DD456C32210EBDE6009465FE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DD456C33210EBDE6009465FE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		DD456C34210EBDE6009465FE /* Increment Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1227,7 +1179,6 @@
 /* Begin XCBuildConfiguration section */
 		DD456C36210EBDE6009465FE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E01837725EFD8265A16B0F5A /* Pods-BlockmanGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1251,7 +1202,6 @@
 		};
 		DD456C37210EBDE6009465FE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28E1B64E849E1474617FE6A2 /* Pods-BlockmanGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1381,7 +1331,7 @@
 		};
 		DD51605F20EC6B740000B8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E01837725EFD8265A16B0F5A /* Pods-BlockmanGo.debug.xcconfig */;
+			baseConfigurationReference = 29553FA2844304738BC78A3F /* Pods-BlockmanGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1404,7 +1354,7 @@
 		};
 		DD51606020EC6B740000B8DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28E1B64E849E1474617FE6A2 /* Pods-BlockmanGo.release.xcconfig */;
+			baseConfigurationReference = FA8505300ED87CEC9DEECD2B /* Pods-BlockmanGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
