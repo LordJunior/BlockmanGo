@@ -20,7 +20,9 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.layer.contents = R.image.game_backgorund()?.cgImage
+        UIImageView(image: R.image.game_backgorund()).addTo(superView: view).layout { (make) in
+            make.edges.equalToSuperview()
+        }
         
         let gameModesView = GameModesView().addTo(superView: view).layout { (make) in
             make.left.bottom.equalToSuperview().inset(15)
@@ -65,8 +67,9 @@ class GameViewController: UIViewController {
         
         fetchGamesWithMode(0) // 默认全部
     }
-    
+
     @objc private func backButtonClicked() {
+        DecorationControllerManager.shared.removeFromParent()
         TransitionManager.popViewController(animated: false)
     }
     
@@ -93,6 +96,8 @@ class GameViewController: UIViewController {
     }
     
     private func enterGame(gameID: String) {
+        DecorationControllerManager.shared.destory()
+        
         gameModelManager.enterGame(gameID) { (result) in
             switch result {
             case .success(let dispatch):
@@ -204,5 +209,12 @@ extension GameViewController: GameDetailViewControllerDelegate {
 
 // MARK: 游戏引擎控制器代理
 extension GameViewController: BMGameViewControllerDelegate {
-    
+    func gameViewControllerdidDismissed(_ controller: BMGameViewController!, autoStartNextGame isAutoStart: Bool) {
+        // 先提前创建好装饰view
+        DecorationControllerManager.shared.add(toParent: self, layout: { (make) in
+            make.left.right.top.bottom.equalToSuperview()
+        }) {
+            DecorationControllerManager.shared.suspendRendering()
+        }
+    }
 }

@@ -11,6 +11,7 @@ import BlockModsGameKit
 import SnapKit
 
 final class DecorationControllerManager {
+    static let decorationHomeMaskImageName = "decorate_default_bg"
     
     static let decorationControllerHeight = UIScreen.main.bounds.size.height * 0.43
     
@@ -19,6 +20,7 @@ final class DecorationControllerManager {
     private var decorationController: BMDecorationViewController?
     private weak var parentController: UIViewController?
     private var decorationIDsDict: [String : String] = [:]
+    private weak var decorationMaskImageView: UIImageView?
 
     func add(toParent parent: UIViewController, layout: (ConstraintMaker) -> Void, finished: (() -> Void)? = nil) {
         if parentController == parent || parentController != nil {
@@ -36,24 +38,22 @@ final class DecorationControllerManager {
         }else {
             parent.view.addSubview(decorationController!.view)
         }
-//        decorationController?.view.alpha = 0
         decorationController?.view.snp.makeConstraints { (make) in
             layout(make)
         }
+//        if decorationMaskImageView == nil {
+//            decorationMaskImageView = UIImageView(image: UIImage(named: DecorationControllerManager.decorationHomeMaskImageName)).addTo(superView: decorationController!.view).layout { (make) in
+//                make.edges.equalToSuperview()
+//            }
+//        }else {
+//            decorationMaskImageView?.isHidden = false
+//        }
         decorationController?.didMove(toParentViewController: parent)
         self.decorationController?.resume()
+//        decorationMaskImageView?.isHidden = true
         if let finished = finished {
             finished()
         }
-        
-//        UIView.animate(withDuration: 0.25, animations: {
-//            self.decorationController?.view.alpha = 1
-//        }) { _ in
-//            self.decorationController?.resume()
-//            if let finished = finished {
-//                finished()
-//            }
-//        }
     }
 
     func removeFromParent() {
@@ -81,6 +81,7 @@ final class DecorationControllerManager {
     }
     
     func setBackgroundImage(_ imageName: String) {
+        decorationMaskImageView?.image = UIImage(named: imageName)
         decorationController?.setBackgroundImage(imageName)
     }
     
@@ -132,6 +133,7 @@ final class DecorationControllerManager {
         decorationController!.generateFinished = { [unowned self] (controller) -> Void in
             guard let decorationController = controller else { return }
 //            decorationController.changeGender(Int32(AccountInfoManager.shared.gender.value.rawValue))
+//            self.decorationMaskImageView?.isHidden = true
             for (_, resourceID) in self.decorationIDsDict {
                 self.useDecoration(resourceID: resourceID)
             }

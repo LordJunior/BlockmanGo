@@ -13,13 +13,6 @@ class HomePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DecorationControllerManager.shared.removeFromParent()
-        DecorationControllerManager.shared.add(toParent: self, layout: { (make)  in
-            make.left.right.top.bottom.equalToSuperview()
-        }) {
-            DecorationControllerManager.shared.setPosition(x: -0.8)
-        }
-        
         let nicknameTextSize = (UserManager.shared.nickname as NSString).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : UIFont.size14], context: nil).size
         AccountInfoView().addTo(superView: view).layout { (make) in
             make.top.left.equalToSuperview().inset(5)
@@ -49,13 +42,10 @@ class HomePageViewController: UIViewController {
         super.viewWillAppear(animated)
         
         DecorationControllerManager.shared.resumeRendering()
+        DecorationControllerManager.shared.add(toParent: self, layout: { (make) in
+            make.left.right.top.bottom.equalToSuperview()
+        })
     }
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//
-//        TransitionManager.present(InitializeProfileViewController.self, animated: false)
-//    }
     
     @objc private func playButtonClicked(sender: UIButton) {
         TransitionManager.pushViewController(GameViewController.self, animated: false)

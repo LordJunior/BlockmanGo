@@ -116,6 +116,7 @@ class GameDetailViewController: TemplateViewController {
             textView.clipsToBounds = true
             textView.textContainerInset = UIEdgeInsetsMake(10, 5, 10, 5)
             textView.backgroundColor = R.clr.appColor._ead5b6()
+            textView.showsVerticalScrollIndicator = false
         }).layout(snapKitMaker: { (make) in
             make.top.equalTo(thumbnailImageView!.snp.bottom).offset(10)
             make.left.right.bottom.equalToSuperview().inset(22)

@@ -123,6 +123,7 @@ class LaunchViewController: UIViewController {
     
     @objc private func joinGameButtonClicked() {
         skyInfiniteView?.stopTranslating()
+        DecorationControllerManager.shared.removeFromParent()
         TransitionManager.currentNavigationController()?.setViewControllers([HomePageViewController()], animated: false)
     }
     
