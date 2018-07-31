@@ -25,6 +25,10 @@ class HomePageViewController: UIViewController {
         UIButton().addTo(superView: view).configure { (button) in
             button.setBackgroundImage(R.image.home_play(), for: .normal)
             button.addTarget(self, action: #selector(playButtonClicked(sender:)), for: .touchUpInside)
+            button.titleLabel?.font = UIFont.size15
+            button.setTitle("Multiplayer", for: .normal)
+            button.setTitleColor(UIColor.white, for: .normal)
+            button.titleEdgeInsets = UIEdgeInsetsMake(17, 0, 0, 0)
         }.layout { (make) in
             make.size.equalTo(CGSize(width: 200, height: 84))
             make.centerY.equalToSuperview()

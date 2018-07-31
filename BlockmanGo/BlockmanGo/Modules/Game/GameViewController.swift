@@ -82,7 +82,11 @@ class GameViewController: UIViewController {
     }
     
     private func fetchGamesWithMode(_ mode: Int) {
+        BlockHUD.showLoading(inView: collectionView!)
         gameModelManager.fetchGamesWithMode(mode) { [weak self] (result) in
+            if self != nil {
+                BlockHUD.hide(forView: self!.collectionView!)
+            }
             switch result {
             case .success(let games):
                 self?.games = games
@@ -129,9 +133,13 @@ class GameViewController: UIViewController {
                     appstore.delegate = self
                     appstore.loadProduct(withParameters: [SKStoreProductParameterITunesItemIdentifier : NSNumber(value: 1388175232)])
                     self.present(appstore, animated: true, completion: nil)
+                }).cancel(completion: { (_) in
+                    self.preloadDecorationView()
                 })
             default:
-                AlertController.alert(title: R.string.localizable.enter_game_fail_retry(), message: nil, from: TransitionManager.rootViewController)
+                AlertController.alert(title: R.string.localizable.enter_game_fail_retry(), message: nil, from: TransitionManager.rootViewController)?.done(completion: { (_) in
+                    self.preloadDecorationView()
+                })
             }
         }
     }

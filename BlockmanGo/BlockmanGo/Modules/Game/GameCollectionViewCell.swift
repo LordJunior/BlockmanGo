@@ -108,13 +108,13 @@ class GameCollectionViewCell: UICollectionViewCell {
         likesView = UIButton().addTo(superView: backgroundImageView).configure({ (button) in
             button.isUserInteractionEnabled = false
             button.setImage(R.image.game_like_number(), for: .normal)
-            button.setTitle("00", for: .normal)
             button.setTitleColor(R.clr.appColor._c38039(), for: .normal)
             button.titleLabel?.font = UIFont.size9
-            button.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 0)
+            button.contentHorizontalAlignment = .left
         }).layout(snapKitMaker: { (make) in
             make.left.equalTo(thumbnailView!.snp.right).offset(12)
             make.top.equalTo(modeLabel!.snp.bottom).offset(6)
+            make.size.equalTo(CGSize(width: 100, height: 20))
         })
         
         UIButton().addTo(superView: backgroundImageView).configure({ (button) in
