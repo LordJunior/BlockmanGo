@@ -43,6 +43,7 @@ class GameCollectionViewCell: UICollectionViewCell {
     var likesNumber: Int? = nil {
         didSet {
             likesView?.setTitle("\(playingNumber ?? 0)", for: .normal)
+            likesView?.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 0)
         }
     }
     

@@ -14,8 +14,9 @@ class GameViewController: UIViewController {
 
     private weak var collectionView: UICollectionView?
     private var gameModelManager = GameModelManager()
-    
+    private var isPresentedInQueue = false
     private var games: [GameModel] = []
+    private var enteringGameID = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +56,7 @@ class GameViewController: UIViewController {
             make.height.equalTo(75)
         }
         
-        // 返回按钮
+        /// 返回按钮
         UIButton().addTo(superView: view).configure { (button) in
             button.setBackgroundImage(R.image.general_back(), for: .normal)
             button.addTarget(self, action: #selector(backButtonClicked), for: .touchUpInside)
@@ -65,7 +66,7 @@ class GameViewController: UIViewController {
             make.left.equalToSuperview().offset(30)
         }
         
-        fetchGamesWithMode(0) // 默认全部
+        fetchGamesWithMode(0) /// 默认全部
     }
 
     @objc private func backButtonClicked() {
@@ -98,10 +99,11 @@ class GameViewController: UIViewController {
     private func enterGame(gameID: String) {
         DecorationControllerManager.shared.destory()
         
+        enteringGameID = gameID /// 保存一份当前正在进入游戏的游戏id
         gameModelManager.enterGame(gameID) { (result) in
             switch result {
             case .success(let dispatch):
-                // 进入游戏
+                /// 进入游戏
                 let gameController = BMGameViewController.init()
                 gameController.bmDelegate = self
                 gameController.userID = NSNumber.init(value: UInt64(UserManager.shared.userID) ?? 0)
@@ -114,14 +116,11 @@ class GameViewController: UIViewController {
                 gameController.language = Locale.current.identifier
                 gameController.gameType = gameID
                 self.present(gameController, animated:true, completion: nil)
-            case .failure(.enterGameInQueue):
-//                if self.gameInQueueController == nil {
-//                    let inQueueController = GameInQueueViewController(viewModelType: nil)
-//                    inQueueController.delegate = self
-//                    self.present(MainNavigationController(rootViewController: inQueueController), animated: true, completion: nil)
-//                    self.gameInQueueController = inQueueController
-//                }
-                AlertController.alert(title: "正在排队", message: nil, from: TransitionManager.rootViewController)
+            case .failure(.enterGameInQueue): /// 进入排队
+                if !self.isPresentedInQueue {
+                    self.isPresentedInQueue = true
+                    TransitionManager.present(GameInQueueViewController.self, animated: false, parameter: self, completion: nil)
+                }
             case .failure(.gameversionTooLow):
                 AlertController.alert(title: R.string.localizable.game_version_too_low(), message: nil, from: TransitionManager.rootViewController, showCancelButton: true)?.done(completion: { _ in
                     let appstore = SKStoreProductViewController()
@@ -132,6 +131,15 @@ class GameViewController: UIViewController {
             default:
                 AlertController.alert(title: R.string.localizable.enter_game_fail_retry(), message: nil, from: TransitionManager.rootViewController)
             }
+        }
+    }
+    
+    private func preloadDecorationView() {
+        // 先提前创建好装饰view
+        DecorationControllerManager.shared.add(toParent: self, layout: { (make) in
+            make.left.right.top.bottom.equalToSuperview()
+        }) {
+            DecorationControllerManager.shared.suspendRendering()
         }
     }
 }
@@ -207,14 +215,21 @@ extension GameViewController: GameDetailViewControllerDelegate {
     }
 }
 
+// MARK: 游戏排队控制器代理
+extension GameViewController: GameInQueueViewControllerDelegate {
+    func gameInQueueViewControllerIntervalDidArrived(_ controller: GameInQueueViewController) {
+        enterGame(gameID: enteringGameID) /// 排队计时触发
+    }
+    
+    func gameInQueueViewControllerCancelButtonDidClicked(_ controller: GameInQueueViewController) {
+        preloadDecorationView() /// 预先加载好装饰view
+        TransitionManager.dismiss(animated: false)
+    }
+}
+
 // MARK: 游戏引擎控制器代理
 extension GameViewController: BMGameViewControllerDelegate {
     func gameViewControllerdidDismissed(_ controller: BMGameViewController!, autoStartNextGame isAutoStart: Bool) {
-        // 先提前创建好装饰view
-        DecorationControllerManager.shared.add(toParent: self, layout: { (make) in
-            make.left.right.top.bottom.equalToSuperview()
-        }) {
-            DecorationControllerManager.shared.suspendRendering()
-        }
+        preloadDecorationView() /// 预先加载好装饰view
     }
 }

@@ -753,14 +753,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 3 files.
+  /// This `R.file` struct is generated, and contains static references to 2 files.
   struct file {
     /// Resource file `AppColor.clr`.
     static let appColorClr = Rswift.FileResource(bundle: R.hostingBundle, name: "AppColor", pathExtension: "clr")
     /// Resource file `EngineResource`.
     static let engineResource = Rswift.FileResource(bundle: R.hostingBundle, name: "EngineResource", pathExtension: "")
-    /// Resource file `loading.gif`.
-    static let loadingGif = Rswift.FileResource(bundle: R.hostingBundle, name: "loading", pathExtension: "gif")
     
     /// `bundle.url(forResource: "AppColor", withExtension: "clr")`
     static func appColorClr(_: Void = ()) -> Foundation.URL? {
@@ -774,12 +772,6 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
     
-    /// `bundle.url(forResource: "loading", withExtension: "gif")`
-    static func loadingGif(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.loadingGif
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
     fileprivate init() {}
   }
   
@@ -788,7 +780,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 45 images.
+  /// This `R.image` struct is generated, and contains static references to 44 images.
   struct image {
     /// Image `account_info_background`.
     static let account_info_background = Rswift.ImageResource(bundle: R.hostingBundle, name: "account_info_background")
@@ -866,8 +858,6 @@ struct R: Rswift.Validatable {
     static let launch_logo = Rswift.ImageResource(bundle: R.hostingBundle, name: "launch_logo")
     /// Image `launch_sky`.
     static let launch_sky = Rswift.ImageResource(bundle: R.hostingBundle, name: "launch_sky")
-    /// Image `loading.gif`.
-    static let loadingGif = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading.gif")
     /// Image `profile_name_tips`.
     static let profile_name_tips = Rswift.ImageResource(bundle: R.hostingBundle, name: "profile_name_tips")
     /// Image `profile_random`.
@@ -1069,11 +1059,6 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "launch_sky", bundle: ..., traitCollection: ...)`
     static func launch_sky(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.launch_sky, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "loading.gif", bundle: ..., traitCollection: ...)`
-    static func loadingGif(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.loadingGif, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "profile_name_tips", bundle: ..., traitCollection: ...)`
