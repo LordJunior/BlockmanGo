@@ -31,14 +31,14 @@ class CheckForUpdatesViewController: UIViewController {
         let appVersionLabel = UILabel().addTo(superView: view).configure { (label) in
             label.textColor = UIColor.white
             label.font = UIFont.size13
-            label.text = "APP: " + AppInfo.currentShortVersion + " Res: " + GameEngineInfo.resourceVersion
+            label.text = " Res: " + GameEngineInfo.resourceVersion
         }.layout { (make) in
             make.right.equalToSuperview().inset(10)
             make.bottom.equalToSuperview().inset(8)
         }
         
         progressView = ProgressView().addTo(superView: view).configure({ (progressView) in
-            progressView.displayInfo = "正在检查资源..."
+            progressView.displayInfo = R.string.localizable.checking_engine_resource()
             progressView.progress = 0
         }).layout { (make) in
             make.left.right.equalToSuperview().inset(24)
@@ -57,7 +57,7 @@ class CheckForUpdatesViewController: UIViewController {
                     self.checkForResourceUpdates()
                     return
                 }
-                AlertController.alert(title: "发现新版本", message: "需要下载更新客户端", from: TransitionManager.rootViewController, showCancelButton: !appUpdateResult.forceUpdateIfNeed)?.done(completion: { (_) in
+                AlertController.alert(title: R.string.localizable.find_new_version(), message: R.string.localizable.need_to_download_new_version(), from: TransitionManager.rootViewController, showCancelButton: !appUpdateResult.forceUpdateIfNeed)?.done(completion: { (_) in
                     openURL(appUpdateResult.downloadURL)
                 }).cancel(completion: { (_) in
                     if appUpdateResult.forceUpdateIfNeed {
@@ -90,13 +90,13 @@ class CheckForUpdatesViewController: UIViewController {
 extension CheckForUpdatesViewController: EngineResourceModelManagerDelegate {
     func engineResourceCopyInProgress(_ progress: Float) {
         DebugLog("engineResourceCopyInProgress \(progress)")
-        progressView?.displayInfo = "正在初始化游戏资源..."
+        progressView?.displayInfo = R.string.localizable.initializing_resources()
         progressView?.setProgress(progress, animated: true)
     }
     
     func engineResourceCopyDidFinished() {
         DebugLog("engineResourceCopyDidFinished 初始化完成")
-        progressView?.displayInfo = "初始化完成"
+        progressView?.displayInfo = R.string.localizable.loading_finished()
         progressView?.setProgress(1.0, animated: true)
         delay(0.2) {
             self.delegate?.checkForUpdatesDidFinished()

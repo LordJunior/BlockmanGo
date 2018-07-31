@@ -1278,7 +1278,7 @@ struct R: Rswift.Validatable {
   
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 376 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 384 localization keys.
     struct localizable {
       /// en translation:    Friend list(%d/%d)
       /// 
@@ -1520,6 +1520,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let check_update = Rswift.StringResource(key: "check_update", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Checking resources
+      /// 
+      /// Locales: en
+      static let checking_engine_resource = Rswift.StringResource(key: "checking_engine_resource", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Chief
       /// 
       /// Locales: en
@@ -1668,6 +1672,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let done = Rswift.StringResource(key: "done", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Download in APP Store
+      /// 
+      /// Locales: en
+      static let need_to_download_new_version = Rswift.StringResource(key: "need_to_download_new_version", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: E-mail format is incorrect
       /// 
       /// Locales: en
@@ -1692,6 +1700,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let vip_page_title = Rswift.StringResource(key: "vip_page_title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Enter Game
+      /// 
+      /// Locales: en
+      static let click_enter_game = Rswift.StringResource(key: "click_enter_game", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Enter clan introduction
       /// 
       /// Locales: en
@@ -1820,6 +1832,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let recharge_record_google_refund = Rswift.StringResource(key: "recharge_record_google_refund", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Got it
+      /// 
+      /// Locales: en
+      static let i_know = Rswift.StringResource(key: "I_know", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Had no this decoration now
       /// 
       /// Locales: en
@@ -1856,6 +1872,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let tribe_task_personal = Rswift.StringResource(key: "tribe_task_personal", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Initializing resources
+      /// 
+      /// Locales: en
+      static let initializing_resources = Rswift.StringResource(key: "initializing_resources", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Input email
       /// 
       /// Locales: en
@@ -1968,6 +1988,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let vip_mvp_gold_3 = Rswift.StringResource(key: "vip_mvp_gold_3", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Loading finished
+      /// 
+      /// Locales: en
+      static let loading_finished = Rswift.StringResource(key: "loading_finished", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Loading....
       /// 
       /// Locales: en
@@ -2644,6 +2668,14 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let unknown_message_type = Rswift.StringResource(key: "unknown_message_type", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Update Bulletin
+      /// 
+      /// Locales: en
+      static let update_bulletin = Rswift.StringResource(key: "update_bulletin", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Update Version
+      /// 
+      /// Locales: en
+      static let find_new_version = Rswift.StringResource(key: "find_new_version", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Update after %@
       /// 
       /// Locales: en
@@ -3205,6 +3237,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("check_update", bundle: R.hostingBundle, comment: "")
       }
       
+      /// en translation: Checking resources
+      /// 
+      /// Locales: en
+      static func checking_engine_resource(_: Void = ()) -> String {
+        return NSLocalizedString("checking_engine_resource", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// en translation: Chief
       /// 
       /// Locales: en
@@ -3464,6 +3503,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("done", bundle: R.hostingBundle, comment: "")
       }
       
+      /// en translation: Download in APP Store
+      /// 
+      /// Locales: en
+      static func need_to_download_new_version(_: Void = ()) -> String {
+        return NSLocalizedString("need_to_download_new_version", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// en translation: E-mail format is incorrect
       /// 
       /// Locales: en
@@ -3504,6 +3550,13 @@ struct R: Rswift.Validatable {
       /// Locales: en
       static func vip_page_title(_ value1: Int, _ value2: Int) -> String {
         return String(format: NSLocalizedString("vip_page_title", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1, value2)
+      }
+      
+      /// en translation: Enter Game
+      /// 
+      /// Locales: en
+      static func click_enter_game(_: Void = ()) -> String {
+        return NSLocalizedString("click_enter_game", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Enter clan introduction
@@ -3730,6 +3783,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("recharge_record_google_refund", bundle: R.hostingBundle, comment: "")
       }
       
+      /// en translation: Got it
+      /// 
+      /// Locales: en
+      static func i_know(_: Void = ()) -> String {
+        return NSLocalizedString("I_know", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// en translation: Had no this decoration now
       /// 
       /// Locales: en
@@ -3791,6 +3851,13 @@ struct R: Rswift.Validatable {
       /// Locales: en
       static func tribe_task_personal(_: Void = ()) -> String {
         return NSLocalizedString("tribe_task_personal", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Initializing resources
+      /// 
+      /// Locales: en
+      static func initializing_resources(_: Void = ()) -> String {
+        return NSLocalizedString("initializing_resources", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Input email
@@ -3987,6 +4054,13 @@ struct R: Rswift.Validatable {
       /// Locales: en
       static func vip_mvp_gold_3(_: Void = ()) -> String {
         return NSLocalizedString("vip_mvp_gold_3", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Loading finished
+      /// 
+      /// Locales: en
+      static func loading_finished(_: Void = ()) -> String {
+        return NSLocalizedString("loading_finished", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Loading....
@@ -5170,6 +5244,20 @@ struct R: Rswift.Validatable {
       /// Locales: en
       static func unknown_message_type(_: Void = ()) -> String {
         return NSLocalizedString("unknown_message_type", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Update Bulletin
+      /// 
+      /// Locales: en
+      static func update_bulletin(_: Void = ()) -> String {
+        return NSLocalizedString("update_bulletin", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Update Version
+      /// 
+      /// Locales: en
+      static func find_new_version(_: Void = ()) -> String {
+        return NSLocalizedString("find_new_version", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Update after %@

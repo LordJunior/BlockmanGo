@@ -932,3 +932,19 @@
 "game_version_too_low" = "Version is too low, please update";
 
 "game_dispatch_in_queue_time" = "Waiting for server to dispatch resources \n %@";
+
+"update_bulletin" = "Update Bulletin";
+
+"I_know" = "Got it";
+
+"checking_engine_resource" = "Checking resources";
+
+"find_new_version" = "Update Version";
+
+"need_to_download_new_version" = "Download in APP Store";
+
+"initializing_resources" = "Initializing resources";
+
+"loading_finished" = "Loading finished";
+
+"click_enter_game" = "Enter Game";

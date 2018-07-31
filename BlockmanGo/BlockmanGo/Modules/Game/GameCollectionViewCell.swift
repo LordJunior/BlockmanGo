@@ -61,6 +61,8 @@ class GameCollectionViewCell: UICollectionViewCell {
         
         let backgroundImageView = UIImageView(image: R.image.game_item_background()).addTo(superView: contentView).layout { (make) in
             make.edges.equalToSuperview()
+        }.configure { (imageView) in
+            imageView.isUserInteractionEnabled = true
         }
         
         thumbnailView = NetImageView(image: R.image.common_default_userimage()).addTo(superView: backgroundImageView).layout(snapKitMaker: { (make) in

@@ -73,7 +73,7 @@ class LaunchViewController: UIViewController {
             make.height.equalTo(40)
         }.configure { (button) in
             button.setBackgroundImage(R.image.launch_join_background(), for: .normal)
-            button.setTitle("点击进入游戏", for: .normal)
+            button.setTitle(R.string.localizable.click_enter_game(), for: .normal)
             button.titleLabel?.font = UIFont.boldSize16
             button.setTitleColor(UIColor.white, for: .normal)
             button.isHidden = true

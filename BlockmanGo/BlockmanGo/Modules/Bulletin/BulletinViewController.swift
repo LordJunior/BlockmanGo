@@ -44,7 +44,7 @@ class BulletinViewController: TemplateViewController {
         let bulletinTitleLabel = UILabel().addTo(superView: contentContainView).configure({ (label) in
             label.textColor = R.clr.appColor._844501()
             label.font = UIFont.boldSize15
-            label.text = "更新公告"
+            label.text = R.string.localizable.update_bulletin()
         }).layout(snapKitMaker: { (make) in
             make.left.top.equalToSuperview().offset(10)
         })
@@ -63,7 +63,7 @@ class BulletinViewController: TemplateViewController {
             button.setBackgroundImage(R.image.general_button_background_selected(), for: .normal)
             button.titleLabel?.font = UIFont.boldSize15
             button.setTitleColor(R.clr.appColor._844501(), for: .normal)
-            button.setTitle("我知道了", for: .normal)
+            button.setTitle(R.string.localizable.i_know(), for: .normal)
             button.addTarget(self, action: #selector(doneButtonClickCallBack), for: .touchUpInside)
         }.layout { (make) in
             make.top.equalTo(contentContainView.snp.bottom).offset(10)
