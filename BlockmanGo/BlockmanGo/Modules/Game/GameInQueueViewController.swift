@@ -91,11 +91,11 @@ class GameInQueueViewController: TemplateViewController {
     
     @objc private func timerCallback() {
         time += 1
+        let minutes = time / 60
+        let seconds = time % 60
+        let timeString = String(format: "正在等待服务器分配资源\n%02d:%02d", minutes, seconds)
+        inQueueTimeLabel?.text = timeString
         guard time % triggerInterval == 0 else {
-            let minutes = time / 60
-            let seconds = time % 60
-            let timeString = String(format: "正在等待服务器分配资源\n%02d:%02d", minutes, seconds)
-            inQueueTimeLabel?.text = timeString
             return
         }
         delegate?.gameInQueueViewControllerIntervalDidArrived(self)

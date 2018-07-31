@@ -109,6 +109,9 @@ class GameViewController: UIViewController {
             BlockHUD.hide(forView: self.view)
             switch result {
             case .success(let dispatch):
+                if self.isPresentedInQueue {
+                    TransitionManager.dismiss(animated: false)
+                }
                 /// 进入游戏
                 let gameController = BMGameViewController.init()
                 gameController.bmDelegate = self
@@ -233,6 +236,7 @@ extension GameViewController: GameInQueueViewControllerDelegate {
     
     func gameInQueueViewControllerCancelButtonDidClicked(_ controller: GameInQueueViewController) {
         preloadDecorationView() /// 预先加载好装饰view
+        isPresentedInQueue = false
         TransitionManager.dismiss(animated: false)
     }
 }
