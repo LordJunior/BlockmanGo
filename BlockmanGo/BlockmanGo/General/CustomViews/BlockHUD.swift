@@ -7,30 +7,35 @@
 //
 
 import Foundation
-import Kingfisher
 
 struct BlockHUD {
     
     private static var loadingCustomView: UIImageView {
         var images: [UIImage] = []
-        for index in 0..<30 {
+        for index in 1...21 {
             images.append(UIImage(named: "loading_\(index)")!)
         }
-        let imageView = UIImageView(image: UIImage(named: "loading_0"))
+        let imageView = UIImageView(image: UIImage(named: "loading_1"))
         imageView.animationImages = images
-        imageView.animationDuration = 1
+        imageView.animationDuration = 1.2
         imageView.startAnimating()
         return imageView
     }
     
     /// MARK: 展示指示器，不会自动隐藏
     public static func showLoading(inView view: UIView) {
-//        showLoading(withText: "", inView: view)
+        showLoading(withText: "", inView: view)
+    }
+    
+    /// 展示指示器跟文字提示，view表示显示的主view，不会自动隐藏
+    public static func showLoading(withText text: String, inView view: UIView) {
         let showingHUD = hud(forView: view)
+        showingHUD.mode = .customView
         showingHUD.bezelView.style = .solidColor
         showingHUD.bezelView.backgroundColor = UIColor.clear
-        showingHUD.mode = .customView
         showingHUD.customView = loadingCustomView
+        showingHUD.label.text = text
+        showingHUD.label.font = UIFont.systemFont(ofSize: 14)
         showingHUD.show(animated: true)
     }
     
@@ -43,17 +48,7 @@ struct BlockHUD {
         showingHUD.label.font = UIFont.systemFont(ofSize: 14)
         showingHUD.hide(animated: true, afterDelay: delay)
     }
-    
-    /// 展示指示器跟文字提示，view表示显示的主view，不会自动隐藏
-    public static func showLoading(withText text: String, inView view: UIView) {
-        let showingHUD = hud(forView: view)
-        showingHUD.mode = .customView
-        showingHUD.customView = loadingCustomView
-        showingHUD.label.text = text
-        showingHUD.label.font = UIFont.systemFont(ofSize: 14)
-        showingHUD.show(animated: true)
-    }
-    
+
     /// 展示成功/完成状态，view表示显示的主view，默认0.65秒消失
     public static func showSuccess(text: String, inView view: UIView) {
         let showingHUD = hud(forView: view)

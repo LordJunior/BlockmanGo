@@ -780,7 +780,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 44 images.
+  /// This `R.image` struct is generated, and contains static references to 65 images.
   struct image {
     /// Image `account_info_background`.
     static let account_info_background = Rswift.ImageResource(bundle: R.hostingBundle, name: "account_info_background")
@@ -858,6 +858,48 @@ struct R: Rswift.Validatable {
     static let launch_logo = Rswift.ImageResource(bundle: R.hostingBundle, name: "launch_logo")
     /// Image `launch_sky`.
     static let launch_sky = Rswift.ImageResource(bundle: R.hostingBundle, name: "launch_sky")
+    /// Image `loading_10`.
+    static let loading_10 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_10")
+    /// Image `loading_11`.
+    static let loading_11 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_11")
+    /// Image `loading_12`.
+    static let loading_12 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_12")
+    /// Image `loading_13`.
+    static let loading_13 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_13")
+    /// Image `loading_14`.
+    static let loading_14 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_14")
+    /// Image `loading_15`.
+    static let loading_15 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_15")
+    /// Image `loading_16`.
+    static let loading_16 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_16")
+    /// Image `loading_17`.
+    static let loading_17 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_17")
+    /// Image `loading_18`.
+    static let loading_18 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_18")
+    /// Image `loading_19`.
+    static let loading_19 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_19")
+    /// Image `loading_1`.
+    static let loading_1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_1")
+    /// Image `loading_20`.
+    static let loading_20 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_20")
+    /// Image `loading_21`.
+    static let loading_21 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_21")
+    /// Image `loading_2`.
+    static let loading_2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_2")
+    /// Image `loading_3`.
+    static let loading_3 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_3")
+    /// Image `loading_4`.
+    static let loading_4 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_4")
+    /// Image `loading_5`.
+    static let loading_5 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_5")
+    /// Image `loading_6`.
+    static let loading_6 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_6")
+    /// Image `loading_7`.
+    static let loading_7 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_7")
+    /// Image `loading_8`.
+    static let loading_8 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_8")
+    /// Image `loading_9`.
+    static let loading_9 = Rswift.ImageResource(bundle: R.hostingBundle, name: "loading_9")
     /// Image `profile_name_tips`.
     static let profile_name_tips = Rswift.ImageResource(bundle: R.hostingBundle, name: "profile_name_tips")
     /// Image `profile_random`.
@@ -1059,6 +1101,111 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "launch_sky", bundle: ..., traitCollection: ...)`
     static func launch_sky(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.launch_sky, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_1", bundle: ..., traitCollection: ...)`
+    static func loading_1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_1, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_10", bundle: ..., traitCollection: ...)`
+    static func loading_10(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_10, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_11", bundle: ..., traitCollection: ...)`
+    static func loading_11(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_11, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_12", bundle: ..., traitCollection: ...)`
+    static func loading_12(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_12, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_13", bundle: ..., traitCollection: ...)`
+    static func loading_13(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_13, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_14", bundle: ..., traitCollection: ...)`
+    static func loading_14(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_14, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_15", bundle: ..., traitCollection: ...)`
+    static func loading_15(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_15, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_16", bundle: ..., traitCollection: ...)`
+    static func loading_16(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_16, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_17", bundle: ..., traitCollection: ...)`
+    static func loading_17(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_17, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_18", bundle: ..., traitCollection: ...)`
+    static func loading_18(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_18, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_19", bundle: ..., traitCollection: ...)`
+    static func loading_19(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_19, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_2", bundle: ..., traitCollection: ...)`
+    static func loading_2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_2, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_20", bundle: ..., traitCollection: ...)`
+    static func loading_20(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_20, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_21", bundle: ..., traitCollection: ...)`
+    static func loading_21(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_21, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_3", bundle: ..., traitCollection: ...)`
+    static func loading_3(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_3, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_4", bundle: ..., traitCollection: ...)`
+    static func loading_4(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_4, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_5", bundle: ..., traitCollection: ...)`
+    static func loading_5(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_5, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_6", bundle: ..., traitCollection: ...)`
+    static func loading_6(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_6, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_7", bundle: ..., traitCollection: ...)`
+    static func loading_7(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_7, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_8", bundle: ..., traitCollection: ...)`
+    static func loading_8(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_8, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "loading_9", bundle: ..., traitCollection: ...)`
+    static func loading_9(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.loading_9, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "profile_name_tips", bundle: ..., traitCollection: ...)`

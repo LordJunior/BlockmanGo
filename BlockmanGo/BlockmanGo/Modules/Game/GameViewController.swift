@@ -99,8 +99,10 @@ class GameViewController: UIViewController {
     private func enterGame(gameID: String) {
         DecorationControllerManager.shared.destory()
         
+        BlockHUD.showLoading(inView: view)
         enteringGameID = gameID /// 保存一份当前正在进入游戏的游戏id
         gameModelManager.enterGame(gameID) { (result) in
+            BlockHUD.hide(forView: self.view)
             switch result {
             case .success(let dispatch):
                 /// 进入游戏
