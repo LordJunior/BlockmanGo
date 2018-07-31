@@ -191,6 +191,8 @@
 		DDA4B0E02106BF75004346C5 /* GameDispatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */; };
 		DDA4B0E32106D9A1004346C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B0E52106D9A1004346C5 /* Localizable.strings */; };
 		DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */; };
+		DDFFC8E82110C613008B80C0 /* GravityImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC8E72110C613008B80C0 /* GravityImageView.swift */; };
+		DDFFC8E92110C613008B80C0 /* GravityImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC8E72110C613008B80C0 /* GravityImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -332,6 +334,7 @@
 		DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDispatchModel.swift; sourceTree = "<group>"; };
 		DDA4B0E42106D9A1004346C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchBrandingViewController.swift; sourceTree = "<group>"; };
+		DDFFC8E72110C613008B80C0 /* GravityImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravityImageView.swift; sourceTree = "<group>"; };
 		FA8505300ED87CEC9DEECD2B /* Pods-BlockmanGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockmanGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -508,6 +511,7 @@
 				DD8EB61A21030F3400E7AE9B /* GenderButton.swift */,
 				DD7402D520FC8E8C00091B9D /* AlertController.swift */,
 				DD456C3B210ECAA2009465FE /* BlockHUD.swift */,
+				DDFFC8E72110C613008B80C0 /* GravityImageView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -1098,6 +1102,7 @@
 				DD456BE7210EBDE6009465FE /* BlockHTTPHost.swift in Sources */,
 				DD456BE8210EBDE6009465FE /* TransitionManagerStack.swift in Sources */,
 				DD456BE9210EBDE6009465FE /* CheckForResourceUpdateModel.swift in Sources */,
+				DDFFC8E92110C613008B80C0 /* GravityImageView.swift in Sources */,
 				DD456BEA210EBDE6009465FE /* DebugLog.swift in Sources */,
 				DD456BEB210EBDE6009465FE /* MainNavigationController.swift in Sources */,
 				DD456BEC210EBDE6009465FE /* MoyaProvider+Sync.swift in Sources */,
@@ -1184,6 +1189,7 @@
 				DD51608620F363FF0000B8DC /* TransitionManagerStack.swift in Sources */,
 				DD7402EF20FDC9D100091B9D /* CheckForResourceUpdateModel.swift in Sources */,
 				DD5160CB20F5A6530000B8DC /* DebugLog.swift in Sources */,
+				DDFFC8E82110C613008B80C0 /* GravityImageView.swift in Sources */,
 				DD51607620F304A00000B8DC /* MainNavigationController.swift in Sources */,
 				DD74037A21009AA800091B9D /* MoyaProvider+Sync.swift in Sources */,
 				DD7402D620FC8E8C00091B9D /* AlertController.swift in Sources */,

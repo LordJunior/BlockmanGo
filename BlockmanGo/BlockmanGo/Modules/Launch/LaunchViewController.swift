@@ -10,7 +10,7 @@ import UIKit
 class LaunchViewController: UIViewController {
 
     private weak var checkForUpdateController: CheckForUpdatesViewController?
-    private weak var backgroundImageView: UIImageView?
+    private weak var backgroundImageView: GravityImageView?
     private weak var skyInfiniteView: LaunchInfiniteTranslationSkyView?
     private weak var logoImageView: UIImageView?
     private weak var leftCloudImageView: UIImageView?
@@ -23,7 +23,7 @@ class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        backgroundImageView = UIImageView(image: R.image.launch_background()).addTo(superView: view).layout { (make) in
+        backgroundImageView = GravityImageView(image: R.image.launch_background()).addTo(superView: view).layout { (make) in
             make.edges.equalToSuperview()
         }.configure { (imageView) in
             imageView.transform = CGAffineTransform.init(scaleX: 1.5, y: 1.5)
@@ -115,6 +115,7 @@ class LaunchViewController: UIViewController {
         }, completion: { (finished) in
             self.joinGameButton?.isHidden = false
             self.joinGameButton?.makeBreathAnimation(duration: 1)
+            self.backgroundImageView?.startGravityMotion()
             delay(0.75, exeute: {
                 self.bulletinButtonClicked()
             })
@@ -123,6 +124,7 @@ class LaunchViewController: UIViewController {
     
     @objc private func joinGameButtonClicked() {
         skyInfiniteView?.stopTranslating()
+        backgroundImageView?.stopGravityMotion()
         DecorationControllerManager.shared.removeFromParent()
         TransitionManager.currentNavigationController()?.setViewControllers([HomePageViewController()], animated: false)
     }

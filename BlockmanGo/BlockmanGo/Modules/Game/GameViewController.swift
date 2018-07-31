@@ -73,7 +73,7 @@ class GameViewController: UIViewController {
     }
     
     @objc private func updateCollectionViewConstaint() {
-        UIView.animate(withDuration: 0.45, animations: {
+        UIView.animate(withDuration: 0.35, animations: {
             self.collectionView?.alpha = 1.0
             self.collectionView?.transform = CGAffineTransform.identity
         })
