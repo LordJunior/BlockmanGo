@@ -16,7 +16,7 @@ class GameModesView: UIView {
 
     weak var delegate: GameModesViewDelegate?
     
-    private let modeTitles = [R.string.localizable.category_all(), R.string.localizable.category_pvp(), /*R.string.localizable.category_manage(),*/ R.string.localizable.category_adventure(), /*R.string.localizable.category_gun()*/]
+    private let modeTitles = [R.string.localizable.category_all(), R.string.localizable.category_pvp(), R.string.localizable.category_manage(), R.string.localizable.category_adventure(), R.string.localizable.category_gun()]
     
     override init(frame: CGRect) {
         super.init(frame: frame)

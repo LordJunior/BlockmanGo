@@ -37,11 +37,9 @@ class GameViewController: UIViewController {
             collectionView.register(cellForClass: GameCollectionViewCell.self)
             collectionView.backgroundColor = UIColor.clear
             collectionView.showsVerticalScrollIndicator = false
-            collectionView.alpha = 0
             collectionView.dataSource = self
             collectionView.delegate = self
             self.view.insertSubview(collectionView, belowSubview: gameModesView)
-            collectionView.transform = CGAffineTransform.init(translationX: 0, y: view.height)
         }.layout { (make) in
             make.left.equalTo(gameModesView.snp.right)
             make.top.equalToSuperview()
@@ -66,9 +64,9 @@ class GameViewController: UIViewController {
             make.left.equalToSuperview().offset(30)
         }
         
-        fetchGamesWithMode(0) /// 默认全部
+        self.fetchGamesWithMode(0) /// 默认全部
     }
-
+    
     @objc private func backButtonClicked() {
         DecorationControllerManager.shared.removeFromParent()
         TransitionManager.popViewController(animated: false)
@@ -85,6 +83,8 @@ class GameViewController: UIViewController {
         BlockHUD.showLoading(inView: collectionView!)
         gameModelManager.fetchGamesWithMode(mode) { [weak self] (result) in
             if self != nil {
+                self?.collectionView?.alpha = 0
+                self?.collectionView?.transform = CGAffineTransform.init(translationX: 0, y: self!.view.height)
                 BlockHUD.hide(forView: self!.collectionView!)
             }
             switch result {
