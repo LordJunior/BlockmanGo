@@ -91,8 +91,10 @@ class GameCollectionViewCell: UICollectionViewCell {
             label.textColor = R.clr.appColor._653e00()
             label.font = UIFont.boldSize13
             label.text = "垃圾游戏"
+            label.numberOfLines = 0
         }).layout(snapKitMaker: { (make) in
             make.left.equalTo(thumbnailView!.snp.right).offset(12)
+            make.right.equalToSuperview().inset(12)
             make.top.equalToSuperview().offset(18)
         })
         

@@ -47,5 +47,18 @@ struct GameModel: HandyJSON {
                 }
                 return visitorEnter ? 1 : 0
             })
+        
+        mapper <<<
+            self.gameTitle <-- TransformOf<String, String>(fromJSON: { gameTitle -> String in
+                guard let gameTitle = gameTitle else {
+                    return ""
+                }
+                return gameTitle + "\nMode"
+            }, toJSON: { gameTitle -> String in
+                guard let gameTitle = gameTitle else {
+                    return ""
+                }
+                return gameTitle
+            })
     }
 }

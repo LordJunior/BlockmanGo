@@ -39,21 +39,21 @@ class GravityImageView: UIView {
         
         let heightDiff = imageView!.height - bounds.size.height
         let widthDiff = imageView!.width - bounds.size.width
-        motionManager.deviceMotionUpdateInterval = 1 / 60
+        motionManager.deviceMotionUpdateInterval = 1 / 50
         motionManager.startDeviceMotionUpdates(to: operationQueue) { (motion, error) in
             guard let motion = motion, error == nil else {
                 self.motionManager.stopDeviceMotionUpdates()
                 return
             }
             DispatchQueue.main.async {
-                self.imageView?.frame.origin.x += CGFloat(1.5 * motion.rotationRate.x)
+                self.imageView?.frame.origin.x += CGFloat(1.2 * motion.rotationRate.x)
                 if self.imageView!.frame.origin.x > 0 {
                     self.imageView?.frame.origin.x = 0
                 }else if self.imageView!.frame.origin.x <= -widthDiff {
                     self.imageView?.frame.origin.x = -widthDiff
                 }
                 
-                self.imageView?.frame.origin.y += CGFloat(1.5 * motion.rotationRate.y)
+                self.imageView?.frame.origin.y += CGFloat(1.2 * motion.rotationRate.y)
                 if self.imageView!.frame.origin.y > 0 {
                     self.imageView?.frame.origin.y = 0
                 }else if self.imageView!.frame.origin.y <= -heightDiff {

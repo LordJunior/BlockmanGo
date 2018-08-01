@@ -16,7 +16,8 @@ class GameModesView: UIView {
 
     weak var delegate: GameModesViewDelegate?
     
-    private let modeTitles = [R.string.localizable.category_all(), R.string.localizable.category_pvp(), R.string.localizable.category_manage(), R.string.localizable.category_adventure(), R.string.localizable.category_gun()]
+    private let modeTitles = [R.string.localizable.category_all(), "Battle", "FPS", "Adventure"]
+    private let modeTitlesMapper = [R.string.localizable.category_all() : 0, "Battle" : 1, "FPS" : 5, "Adventure" : 3]
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -67,6 +68,6 @@ extension GameModesView: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.gameModesView(self, didSelectModeAt: indexPath.row)
+        delegate?.gameModesView(self, didSelectModeAt: modeTitlesMapper[modeTitles[indexPath.row]] ?? 0)
     }
 }
