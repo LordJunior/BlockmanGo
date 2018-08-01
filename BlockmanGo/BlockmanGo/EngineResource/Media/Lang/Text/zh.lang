@@ -123,7 +123,7 @@ gui_str_gun_details_text=枪械详情
 #AppShop
 gui_str_app_shop_shop=商店
 gui_str_app_shop_limit=限购%d
-gui_str_app_shop_insufficient_inventory=库存不足
+gui_str_app_shop_insufficient_inventory=物品库存不足
 gui_str_app_shop_inventory_is_full=物品栏已满
 
 
@@ -1269,7 +1269,7 @@ gui_real_time_rank_title_one_creepy_aliens=排名
 gui_real_time_rank_title_two_creepy_aliens=名字
 gui_real_time_rank_title_three_creepy_aliens=等级
 gui_real_time_rank_title_four_creepy_aliens=杀敌数
-gui_real_time_rank_title_five_creepy_aliens=金币数 
+gui_real_time_rank_title_five_creepy_aliens=金币数
 gui_rank_vice_title_hist_name=历史通关榜
 gui_rank_hist_rank=我的排名
 score_point_point=通关数
@@ -1595,6 +1595,63 @@ flag.war.shop.Halo.attribute1=增加生命值\\n（永久）
 flag.war.shop.Halo.attribute2=增加速度\\n（永久）
 flag.war.shop.Halo.attribute3=增加跳跃高度\\n（永久）
 
+item.skill.chip.chest.1.name=惊奇宝箱(x1)
+item.skill.chip.chest.2.name=惊奇宝箱(x2)
+item.skill.chip.chest.3.name=惊奇宝箱(x3)
+item.skill.book.1.name=闪现技能书
+item.skill.book.2.name=加速技能书
+item.skill.book.3.name=隐身技能书
+item.skill.book.4.name=飞行技能书
+item.skill.book.5.name=无敌技能书
+item.skill.book.6.name=传送技能书
+item.skill.book.7.name=黑暗技能书
+item.skill.chip.1.name=闪现技能书碎片
+item.skill.chip.2.name=加速技能书碎片
+item.skill.chip.3.name=隐身技能书碎片
+item.skill.chip.4.name=飞行技能书碎片
+item.skill.chip.5.name=无敌技能书碎片
+item.skill.chip.6.name=传送技能书碎片
+item.skill.chip.7.name=黑暗技能书碎片
+
+throw.pot.shop.tab.title=称号
+throw.pot.chip.chest=惊奇宝箱
+throw.pot.money=现金
+
+throw.pot.title.name.1=初学者
+throw.pot.title.name.2=丢锅天才
+throw.pot.title.name.3=无法阻挡
+throw.pot.title.name.4=百战之王
+throw.pot.title.name.5=千人斩
+throw.pot.title.name.6=全职达人
+
+gui.shop.tab.skill.book=技能书
+gui.shop.tab.skill.book.fragmentation=技能碎片
+
+throw.pot.last.week.rank=上周排行
+
+throw.pot.title.desc.1=获得条件：参与3场游戏后可以购买。\\n\\n（小提示：称号使用后会显示在头上！）
+throw.pot.title.desc.2=获得条件：获得1次一局游戏的第一名可以购买。\\n\\n（小提示：称号使用后会显示在头上！）
+throw.pot.title.desc.3=获得条件：参与50场游戏可以购买。\\n\\n（小提示：称号使用后会显示在头上！）
+throw.pot.title.desc.4=获得条件：参与100场游戏可以购买。\\n\\n（小提示：称号使用后会显示在头上！）
+throw.pot.title.desc.5=获得条件：拥有1000积分时可以购买。\\n\\n（小提示：称号使用后会显示在头上！）
+throw.pot.title.desc.6=获得条件：拥有7种不同的技能书可以购买。\\n\\n（小提示：称号使用后会显示在头上！）
+item.skill.book.1.desc=品质：普通\\n\\n使用效果：使用后自己会向面朝的方向闪现5个格子。\\n\\n（小提示：游戏中使用，而且一局游戏只能使用一种技能书哦！）
+item.skill.book.2.desc=品质：普通\\n\\n使用效果：使用后在10s内增加自己的移动速度。\\n\\n（小提示：游戏中使用，而且一局游戏只能使用一种技能书哦！）
+item.skill.book.3.desc=品质：稀有\\n\\n使用效果：使用后隐身5s，攻击或被攻击时效果失效。\\n\\n（小提示：游戏中使用，而且一局游戏只能使用一种技能书哦！）
+item.skill.book.4.desc=品质：稀有\\n\\n使用效果：使用后在10s内可以飞行。\\n\\n（小提示：游戏中使用，而且一局游戏只能使用一种技能书哦！）
+item.skill.book.5.desc=品质：史诗\\n\\n使用效果：使用后在3s内无敌，但不能移动。\\n\\n（小提示：游戏中使用，而且一局游戏只能使用一种技能书哦！）
+item.skill.book.6.desc=品质：史诗\\n\\n使用效果：使用后会将所有玩家传送回出生点。\\n\\n（小提示：游戏中使用，而且一局游戏只能使用一种技能书哦！）
+item.skill.book.7.desc=品质：史诗\\n\\n使用效果：使用后会令除自己外所有玩家陷入黑暗，持续2s。\\n\\n（小提示：游戏中使用，而且一局游戏只能使用一种技能书哦！）
+item.skill.chip.1.desc=品质：普通\\n\\n用于兑换闪现技能书。\\n\\n（小提示：每局游戏结束都可以获得金钱哦。）
+item.skill.chip.2.desc=品质：普通 \\n\\n用于兑换加速技能书。\\n\\n（小提示：每局游戏结束都可以获得金钱哦。）
+item.skill.chip.3.desc=品质：稀有 \\n\\n用于兑换隐身技能书。\\n\\n（小提示：每局游戏结束都可以获得金钱哦。）
+item.skill.chip.4.desc=品质：稀有 \\n\\n用于兑换飞行技能书。\\n\\n（小提示：每局游戏结束都可以获得金钱哦。）
+item.skill.chip.5.desc=品质：史诗 \\n\\n用于兑换无敌技能书。\\n\\n（小提示：每局游戏结束都可以获得金钱哦。）
+item.skill.chip.6.desc=品质：史诗 \\n\\n用于兑换传送技能书。\\n\\n（小提示：每局游戏结束都可以获得金钱哦。）
+item.skill.chip.7.desc=品质：史诗 \\n\\n用于兑换黑暗技能书。\\n\\n（小提示：每局游戏结束都可以获得金钱哦。）
+item.skill.chip.chest.1.desc=购买后会随机获得一种技能书碎片。\\n\\n（小提示：每局游戏结束都可以获得金钱哦。）
+throw.pot.money.desc=出售每种技能书碎片都可以获得金钱。\\n\\n（小提示：多余的碎片可以在这里卖掉！）
+
 gui_buildwar_title=建筑战争
 gui_buildwar_player_num=%d/%d
 gui_buildwar_left_time=剩余: %d
@@ -1627,3 +1684,53 @@ gui_build_war_guess_result_title=我的押注
 gui_build_war_my_rank_title=我的排名
 gui_build_war_my_guess_title=押注结果
 gui_have_already_got_block=已经拥有该方块
+
+gui_shop_lack_of_item=出售的物品不足
+gui_player_operation_greetings=打招呼
+gui_team_resources_max_team_pool=%s资源池
+gui_team_resources_my_team_pool=我方资源池
+gui_team_resources_other_team_pool=敌方资源池
+gui_settlement_jewel_knight=宝石骑士  (%s)
+gui_jewel_knight_game_name=宝石骑士
+gui_player_operation_greetings_message=玩家▢FFFF0000【%s】▢FFFFFFFF给你打了声招呼
+gui_player_operation_greetings_message_for_me=你给玩家▢FFFF0000【%s】▢FFFFFFFF打了声招呼
+item.gemstone.name=宝石
+
+gui_rank_victory_title_name=胜利榜
+gui_rank_jewel_knight_title_name=宝石骑士榜
+
+gui_jewel_not_your_team_statue=这不是你队伍的神像
+gui_jewel_no_have_jewel=你还没有获得宝石，快去寻找
+gui_jewel_fill_team_source=神像未激活，你需要先填满资源池
+
+gem_diggertip1=铁铲，挖掘力1。下一级机械铲，挖掘力2。
+gem_diggertip2=机械铲，挖掘力2。下一级金铲，挖掘力3。
+gem_diggertip3=金铲，挖掘力3。
+
+gem_NPC1_name=背景故事
+gem_NPC2_name=游戏规则
+gem_NPC3_name=资源商人
+gem_NPC4_name=指引
+gem_NPC5_name=游戏设计师
+
+gem_NPC1_content1=恭喜你被世界宝石所选中，你将和其他被选中的孩子一起进入宝石世界。
+gem_NPC1_content2=和队友一起寻找世界宝石吧。会有其他三个队伍和你们争夺，将宝石放回神像的队伍才可以回到现实世界中.
+gem_NPC1_content3=胜利队伍每个成员会获得丰厚的奖励，成功将宝石放回神像的孩子会获得宝石骑士的称号。
+gem_NPC1_content4=但是宝石只有一颗，最终只有一队会获得胜利。失败的玩家只能永远留在这个被诅咒的世界了。
+gem_NPC1_content5=准备好了吗，开始游戏吧。寻到宝石成为最后的胜利者。
+gem_NPC2_content1=你需要在地图中的矿石区域挖掘矿石，并将矿石带回到资源商人处来换取资源。
+gem_NPC2_content2=任意队伍资源池填满都会激活宝石的位置，你可以在矿石区域中找到它的名字。宝石名称是蓝色字体。
+gem_NPC2_content3=当有玩家获得宝石时，所有玩家都会知道他所在的队伍和名字，并且拥有宝石的玩家身上会有特殊特效，一定要阻止他将宝石放回神像。
+gem_NPC2_content4=升级工具会使你更有效率的寻找宝石。
+gem_NPC2_content5=地图中会有很多惊喜等着你寻找，好奇心有时候会是一件好事情。地图中会有很多惊喜等着你寻找，好奇心有时候会是一件好事情。"
+gem_NPC3_content=将收集到的矿石带回我这里来换取资源。\\n绿宝石 = 40\\n钻石 = 30\\n金锭 = 20\\n铁锭 = 10
+gem_NPC4_content=这里有很多惊喜等着你去寻找。去吧，赢得这场比赛。
+gem_NPC5_content=亲爱的玩家，我是游戏的设计师Shahe_Yida。在这里我准备了很多惊喜，去寻找吧。
+gem_NPC5_content2=聪明的玩家，这是为你准备的。
+
+gem.win.rank.name=胜利榜
+gem.win.rank.title=胜利榜
+gem.knight.rank.name=宝石骑士榜
+gem.knight.rank.title=宝石骑士榜
+
+gui.shop.tab.sell=出售

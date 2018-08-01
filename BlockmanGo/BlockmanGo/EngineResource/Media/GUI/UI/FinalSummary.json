@@ -1357,6 +1357,44 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "Type": "StaticText",
+                            "Name": "FinalSummary-Self-JewelKnight",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,30},{0.66,-27.5},{1,-30},{0.66,6.5}}"
+                                },
+                                {
+                                    "Name": "Text",
+                                    "Value": "宝石骑士  (nananan)"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "TextVertAlignment",
+                                    "Value": "Centre"
+                                },
+                                {
+                                    "Name": "TextBorder",
+                                    "Value": "true"
+                                },
+                                {
+                                    "Name": "TextBorderColor",
+                                    "Value": "0.290196 0.262745 0.2 1"
+                                },
+                                {
+                                    "Name": "TextLineExtraSpace",
+                                    "Value": "0"
+                                }
+                            ]
                         }
                     ]
                 },

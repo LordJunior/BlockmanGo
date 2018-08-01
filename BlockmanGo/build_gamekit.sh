@@ -26,6 +26,9 @@ configuration="Release"
 #指定项目地址
 workspace_path="$project_path/BlockmanGo.xcworkspace"
 
+#指定资源目的地址
+engine_resource_destination_path="$project_path/BlockmanGo/EngineResource/"
+
 #库的输出路径
 cloth_output_path="/Users/kiben/blockmango-client/dev/clothes/Bin/Release/lib${cloth_scheme}.a"
 gameclient_output_path="/Users/kiben/blockmango-client/dev/client/Bin/Release/lib${gameclient_scheme}.a"
@@ -64,6 +67,11 @@ cp ${gameclient_output_path} ${libs_destination_path}
 #编译Gamekit
 xcodebuild build -workspace ${workspace_path} -scheme ${gamekit_scheme} -configuration ${configuration}
 cp -R ${gamekit_output_path} ${gamekit_destination_path}
+
+#引用拷贝资源脚本
+source ./copyResource.sh $engine_resource_destination_path
+#替换装饰路径下的默认背景图
+cp $project_path/decorate_default_bg.png $engine_resource_destination_path/Media/Decorate/decorate_default_bg.png
 
 #输出总用时
 echo "-----Finished. Total time: ${SECONDS}s -----"

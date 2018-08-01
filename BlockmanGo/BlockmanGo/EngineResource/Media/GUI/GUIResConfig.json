@@ -104,6 +104,7 @@
 	  { "Filename": "manor_atlas.json"},
 	  { "Filename": "creepy_aliens.json"},
 	  { "Filename": "flagwar.json"},
+	  { "Filename": "throwpot.json"},
 	  { "Filename": "buildwar.json"}
     ]
   }

@@ -238,7 +238,11 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,98},{0,42},{1,-98},{1,-81}}"
+                            "Value": "{{0,0},{0,43},{0.87,0},{0.825,43}}"
+                        },
+                        {
+                            "Name": "HorizontalAlignment",
+                            "Value": "Centre"
                         },
                         {
                             "Name": "WndOpenSound",
@@ -281,6 +285,10 @@
                                 {
                                     "Name": "TextVertAlignment",
                                     "Value": "Centre"
+                                },
+                                {
+                                    "Name": "TextLineExtraSpace",
+                                    "Value": "0"
                                 }
                             ],
                             "Window": [
@@ -354,7 +362,15 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,68},{0,98},{1,-68},{1,-24}}"
+                                    "Value": "{{0,0},{0.065,0},{0.875,0},{0.855,0}}"
+                                },
+                                {
+                                    "Name": "VerticalAlignment",
+                                    "Value": "Centre"
+                                },
+                                {
+                                    "Name": "HorizontalAlignment",
+                                    "Value": "Centre"
                                 },
                                 {
                                     "Name": "WndOpenSound",
@@ -405,6 +421,264 @@
                                             "Value": "0"
                                         }
                                     ]
+                                },
+                                {
+                                    "Type": "Layout",
+                                    "Name": "Shop-ItemTip",
+                                    "Property": [
+                                        {
+                                            "Name": "Area",
+                                            "Value": "{{0,0},{0,0},{0.5,0},{0.6,0}}"
+                                        },
+                                        {
+                                            "Name": "VerticalAlignment",
+                                            "Value": "Centre"
+                                        },
+                                        {
+                                            "Name": "HorizontalAlignment",
+                                            "Value": "Centre"
+                                        },
+                                        {
+                                            "Name": "Touchable",
+                                            "Value": "false"
+                                        },
+                                        {
+                                            "Name": "WndOpenSound",
+                                            "Value": "0"
+                                        },
+                                        {
+                                            "Name": "WndCloseSound",
+                                            "Value": "0"
+                                        },
+                                        {
+                                            "Name": "StretchType",
+                                            "Value": "NineGrid"
+                                        },
+                                        {
+                                            "Name": "LayoutBackImage",
+                                            "Value": "set:gui_shop.json image:shop_bg"
+                                        }
+                                    ],
+                                    "Window": [
+                                        {
+                                            "Type": "Layout",
+                                            "Name": "Shop-Item-Solt",
+                                            "Property": [
+                                                {
+                                                    "Name": "Area",
+                                                    "Value": "{{0.06,0},{0.2,0},{0.36,0},{0.95,0}}"
+                                                },
+                                                {
+                                                    "Name": "WndOpenSound",
+                                                    "Value": "0"
+                                                },
+                                                {
+                                                    "Name": "WndCloseSound",
+                                                    "Value": "0"
+                                                },
+                                                {
+                                                    "Name": "StretchType",
+                                                    "Value": "NineGrid"
+                                                },
+                                                {
+                                                    "Name": "LayoutBackImage",
+                                                    "Value": "set:gui_shop.json image:show_item_bg"
+                                                }
+                                            ],
+                                            "Window": [
+                                                {
+                                                    "Type": "StaticImage",
+                                                    "Name": "Shop-Item-Icon",
+                                                    "Property": [
+                                                        {
+                                                            "Name": "Area",
+                                                            "Value": "{{0.24,0},{0.1,0},{0.74,0},{0.48,0}}"
+                                                        },
+                                                        {
+                                                            "Name": "WndOpenSound",
+                                                            "Value": "0"
+                                                        },
+                                                        {
+                                                            "Name": "WndCloseSound",
+                                                            "Value": "0"
+                                                        },
+                                                        {
+                                                            "Name": "HexgonTopImage",
+                                                            "Value": ""
+                                                        },
+                                                        {
+                                                            "Name": "HexgonTopColor",
+                                                            "Value": "1 1 1 1"
+                                                        },
+                                                        {
+                                                            "Name": "HexgonSideImage",
+                                                            "Value": ""
+                                                        },
+                                                        {
+                                                            "Name": "HexgonSideColor",
+                                                            "Value": "1 1 1 1"
+                                                        },
+                                                        {
+                                                            "Name": "HexgonOverlayerImage",
+                                                            "Value": ""
+                                                        },
+                                                        {
+                                                            "Name": "HexgonOverlayerColor",
+                                                            "Value": "1 1 1 1"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Type": "StaticText",
+                                                    "Name": "Shop-Item-Tip-Name",
+                                                    "Property": [
+                                                        {
+                                                            "Name": "Area",
+                                                            "Value": "{{0.1,0},{0.55,0},{0.9,0},{0.71,0}}"
+                                                        },
+                                                        {
+                                                            "Name": "Text",
+                                                            "Value": "物品名字"
+                                                        },
+                                                        {
+                                                            "Name": "WndOpenSound",
+                                                            "Value": "0"
+                                                        },
+                                                        {
+                                                            "Name": "WndCloseSound",
+                                                            "Value": "0"
+                                                        },
+                                                        {
+                                                            "Name": "TextHorzAlignment",
+                                                            "Value": "Centre"
+                                                        },
+                                                        {
+                                                            "Name": "TextVertAlignment",
+                                                            "Value": "Centre"
+                                                        },
+                                                        {
+                                                            "Name": "TextWordWrap",
+                                                            "Value": "true"
+                                                        },
+                                                        {
+                                                            "Name": "TextLineExtraSpace",
+                                                            "Value": "0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Type": "Layout",
+                                                    "Name": "Shop-Item-buy-btn",
+                                                    "Property": [
+                                                        {
+                                                            "Name": "Area",
+                                                            "Value": "{{0,0},{0.78,0},{1,0},{0.96,0}}"
+                                                        },
+                                                        {
+                                                            "Name": "WndOpenSound",
+                                                            "Value": "0"
+                                                        },
+                                                        {
+                                                            "Name": "WndCloseSound",
+                                                            "Value": "0"
+                                                        }
+                                                    ],
+                                                    "Window": [
+                                                        {
+                                                            "Type": "StaticImage",
+                                                            "Name": "Shop-Item-buy-img",
+                                                            "Property": [
+                                                                {
+                                                                    "Name": "Area",
+                                                                    "Value": "{{0,0},{0,0},{0.3,0},{1,0}}"
+                                                                },
+                                                                {
+                                                                    "Name": "WndOpenSound",
+                                                                    "Value": "0"
+                                                                },
+                                                                {
+                                                                    "Name": "WndCloseSound",
+                                                                    "Value": "0"
+                                                                },
+                                                                {
+                                                                    "Name": "HexgonTopImage",
+                                                                    "Value": ""
+                                                                },
+                                                                {
+                                                                    "Name": "HexgonTopColor",
+                                                                    "Value": "1 1 1 1"
+                                                                },
+                                                                {
+                                                                    "Name": "HexgonSideImage",
+                                                                    "Value": ""
+                                                                },
+                                                                {
+                                                                    "Name": "HexgonSideColor",
+                                                                    "Value": "1 1 1 1"
+                                                                },
+                                                                {
+                                                                    "Name": "HexgonOverlayerImage",
+                                                                    "Value": ""
+                                                                },
+                                                                {
+                                                                    "Name": "HexgonOverlayerColor",
+                                                                    "Value": "1 1 1 1"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "Type": "StaticText",
+                                                            "Name": "Shop-Item-buy-desc",
+                                                            "Property": [
+                                                                {
+                                                                    "Name": "Area",
+                                                                    "Value": "{{0.3,0},{0,0},{1,0},{1,0}}"
+                                                                },
+                                                                {
+                                                                    "Name": "Text",
+                                                                    "Value": "货币描述"
+                                                                },
+                                                                {
+                                                                    "Name": "WndOpenSound",
+                                                                    "Value": "0"
+                                                                },
+                                                                {
+                                                                    "Name": "WndCloseSound",
+                                                                    "Value": "0"
+                                                                },
+                                                                {
+                                                                    "Name": "TextVertAlignment",
+                                                                    "Value": "Centre"
+                                                                },
+                                                                {
+                                                                    "Name": "TextLineExtraSpace",
+                                                                    "Value": "0"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Type": "Layout",
+                                            "Name": "Shop-Item-Tips-Desc",
+                                            "Property": [
+                                                {
+                                                    "Name": "Area",
+                                                    "Value": "{{0.375,0},{0.2,0},{0.925,0},{0.92,0}}"
+                                                },
+                                                {
+                                                    "Name": "WndOpenSound",
+                                                    "Value": "0"
+                                                },
+                                                {
+                                                    "Name": "WndCloseSound",
+                                                    "Value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -414,11 +688,11 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,-115},{0,-38},{1,-345},{0,0}}"
+                                    "Value": "{{0,0},{0,-38},{0.85,0},{0,0}}"
                                 },
                                 {
                                     "Name": "HorizontalAlignment",
-                                    "Value": "Right"
+                                    "Value": "Centre"
                                 },
                                 {
                                     "Name": "WndOpenSound",
@@ -481,6 +755,10 @@
                                 {
                                     "Name": "TextShadow",
                                     "Value": "true"
+                                },
+                                {
+                                    "Name": "TextLineExtraSpace",
+                                    "Value": "0"
                                 }
                             ]
                         },
@@ -499,10 +777,6 @@
                                 {
                                     "Name": "Text",
                                     "Value": "道具商城"
-                                },
-                                {
-                                    "Name": "Font",
-                                    "Value": "HT24"
                                 },
                                 {
                                     "Name": "WndOpenSound",
@@ -527,8 +801,62 @@
                                 {
                                     "Name": "TextBorderColor",
                                     "Value": "0.141176 0.0431373 0.0431373 1"
+                                },
+                                {
+                                    "Name": "TextLineExtraSpace",
+                                    "Value": "0"
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "Type": "Button",
+                    "Name": "Shop-Item-Tip-button",
+                    "Property": [
+                        {
+                            "Name": "Area",
+                            "Value": "{{0,1},{0,0},{1,1},{1,0}}"
+                        },
+                        {
+                            "Name": "Touchable",
+                            "Value": "false"
+                        },
+                        {
+                            "Name": "WndOpenSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "WndCloseSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "SoundName",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "HexgonTopImage",
+                            "Value": ""
+                        },
+                        {
+                            "Name": "HexgonTopColor",
+                            "Value": "1 1 1 1"
+                        },
+                        {
+                            "Name": "HexgonSideImage",
+                            "Value": ""
+                        },
+                        {
+                            "Name": "HexgonSideColor",
+                            "Value": "1 1 1 1"
+                        },
+                        {
+                            "Name": "HexgonOverlayerImage",
+                            "Value": ""
+                        },
+                        {
+                            "Name": "HexgonOverlayerColor",
+                            "Value": "1 1 1 1"
                         }
                     ]
                 }

@@ -7,3 +7,4 @@ GameType	Desc	TeamIcon0	TeamIcon1	TeamIcon2	TeamIcon3	TeamIcon4	TeamIcon5	TeamIc
 5	越狱		set:teamInfo.json image:Police	set:teamInfo.json image:Criminal	set:teamInfo.json image:Prisoner				gui_team_police	gui_team_criminal	gui_team_prisoner									
 8	躲猫猫		set:teamInfo.json image:Police	set:teamInfo.json image:Prisoner					gui_team_seek	gui_team_hide										
 9	龙蛋	set:teamInfo.json image:brokenEgg	set:teamInfo.json image:redEgg	set:teamInfo.json image:blueEgg	set:teamInfo.json image:greenEgg	set:teamInfo.json image:yellowEgg	set:new_gui_material.json image:team_purple	set:new_gui_material.json image:team_orange	gui_team_red	gui_team_blue	gui_team_green	gui_team_yellow	gui_team_purple	gui_team_orange						
+15	宝石骑士		set:jewel_knight.json image:team_icon_red	set:jewel_knight.json image:team_icon_blue	set:jewel_knight.json image:team_icon_green	set:jewel_knight.json image:team_icon_yellow			gui_team_red	gui_team_blue	gui_team_green	gui_team_yellow								

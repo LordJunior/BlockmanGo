@@ -823,6 +823,14 @@
                         {
                             "Name": "TextVertAlignment",
                             "Value": "Centre"
+                        },
+                        {
+                            "Name": "TextWordWrap",
+                            "Value": "true"
+                        },
+                        {
+                            "Name": "TextLineExtraSpace",
+                            "Value": "0"
                         }
                     ]
                 },
@@ -832,7 +840,7 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,0},{0,0},{0.5,50},{0,60}}"
+                            "Value": "{{0,0},{0,0},{0.6,50},{0,60}}"
                         },
                         {
                             "Name": "VerticalAlignment",
@@ -861,6 +869,10 @@
                         {
                             "Name": "TextVertAlignment",
                             "Value": "Centre"
+                        },
+                        {
+                            "Name": "TextWordWrap",
+                            "Value": "true"
                         },
                         {
                             "Name": "TextScale",
@@ -2342,7 +2354,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,-36},{-0.347,0},{0.0656,-36},{-0.23,0}}"
+                                    "Value": "{{0,-36},{-0.33,0},{0.0656,-36},{-0.213,0}}"
                                 },
                                 {
                                     "Name": "VerticalAlignment",
@@ -2404,7 +2416,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0,-36},{-0.347,0},{0.0656,-36},{-0.23,0}}"
+                                    "Value": "{{0,-36},{-0.33,0},{0.0656,-36},{-0.213,0}}"
                                 },
                                 {
                                     "Name": "VerticalAlignment",
@@ -3466,11 +3478,7 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,-75},{0,-100},{0,-15},{0,-40}}"
-                        },
-                        {
-                            "Name": "VerticalAlignment",
-                            "Value": "Centre"
+                            "Value": "{{0,-24},{0.4,0},{0,36},{0.4,60}}"
                         },
                         {
                             "Name": "HorizontalAlignment",
@@ -4851,6 +4859,226 @@
                         {
                             "Name": "HexgonOverlayerColor",
                             "Value": "1 1 1 1"
+                        }
+                    ]
+                },
+                {
+                    "Type": "Layout",
+                    "Name": "Main-throwpot-Controls",
+                    "Property": [
+                        {
+                            "Name": "Area",
+                            "Value": "{{0.75,0},{0.5,0},{0.95,0},{0.8,0}}"
+                        },
+                        {
+                            "Name": "Touchable",
+                            "Value": "false"
+                        },
+                        {
+                            "Name": "WndOpenSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "WndCloseSound",
+                            "Value": "0"
+                        }
+                    ],
+                    "Window": [
+                        {
+                            "Type": "Button",
+                            "Name": "Main-Attack-Btn",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,0},{0.55,0},{0,77},{0.55,77}}"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "NormalImage",
+                                    "Value": "set:flagwar.json image:skill_btn"
+                                },
+                                {
+                                    "Name": "PushedImage",
+                                    "Value": "set:flagwar.json image:skill_btn"
+                                },
+                                {
+                                    "Name": "SoundName",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "HexgonTopImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonTopColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonSideImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonSideColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonOverlayerImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonOverlayerColor",
+                                    "Value": "1 1 1 1"
+                                }
+                            ]
+                        },
+                        {
+                            "Type": "DefaultWindow",
+                            "Name": "Main-AutoRun-Btn",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0.35,0},{0,0},{0.35,77},{0,77}}"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                }
+                            ],
+                            "Window": [
+                                {
+                                    "Type": "StaticImage",
+                                    "Name": "Main-AutoRun-False-Btn",
+                                    "Property": [
+                                        {
+                                            "Name": "Area",
+                                            "Value": "{{0,0},{0,0},{0,77.625},{0,77.625}}"
+                                        },
+                                        {
+                                            "Name": "WndOpenSound",
+                                            "Value": "0"
+                                        },
+                                        {
+                                            "Name": "WndCloseSound",
+                                            "Value": "0"
+                                        },
+                                        {
+                                            "Name": "ImageName",
+                                            "Value": "set:throwpot.json image:auto_run_false"
+                                        },
+                                        {
+                                            "Name": "HexgonTopImage",
+                                            "Value": ""
+                                        },
+                                        {
+                                            "Name": "HexgonTopColor",
+                                            "Value": "1 1 1 1"
+                                        },
+                                        {
+                                            "Name": "HexgonSideImage",
+                                            "Value": ""
+                                        },
+                                        {
+                                            "Name": "HexgonSideColor",
+                                            "Value": "1 1 1 1"
+                                        },
+                                        {
+                                            "Name": "HexgonOverlayerImage",
+                                            "Value": ""
+                                        },
+                                        {
+                                            "Name": "HexgonOverlayerColor",
+                                            "Value": "1 1 1 1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Type": "StaticImage",
+                                    "Name": "Main-AutoRun-True-Btn",
+                                    "Property": [
+                                        {
+                                            "Name": "Area",
+                                            "Value": "{{0,0},{0,0},{0,77.625},{0,77.625}}"
+                                        },
+                                        {
+                                            "Name": "WndOpenSound",
+                                            "Value": "0"
+                                        },
+                                        {
+                                            "Name": "WndCloseSound",
+                                            "Value": "0"
+                                        },
+                                        {
+                                            "Name": "ImageName",
+                                            "Value": "set:throwpot.json image:auto_run_true"
+                                        },
+                                        {
+                                            "Name": "HexgonTopImage",
+                                            "Value": ""
+                                        },
+                                        {
+                                            "Name": "HexgonTopColor",
+                                            "Value": "1 1 1 1"
+                                        },
+                                        {
+                                            "Name": "HexgonSideImage",
+                                            "Value": ""
+                                        },
+                                        {
+                                            "Name": "HexgonSideColor",
+                                            "Value": "1 1 1 1"
+                                        },
+                                        {
+                                            "Name": "HexgonOverlayerImage",
+                                            "Value": ""
+                                        },
+                                        {
+                                            "Name": "HexgonOverlayerColor",
+                                            "Value": "1 1 1 1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Type": "Layout",
+                    "Name": "Main-Mask-Info",
+                    "Property": [
+                        {
+                            "Name": "Area",
+                            "Value": "{{0,0},{0,0},{1,0},{1,0}}"
+                        },
+                        {
+                            "Name": "Touchable",
+                            "Value": "false"
+                        },
+                        {
+                            "Name": "Level",
+                            "Value": "60"
+                        },
+                        {
+                            "Name": "BackgroundColor",
+                            "Value": "0 0 0 0.980392"
+                        },
+                        {
+                            "Name": "WndOpenSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "WndCloseSound",
+                            "Value": "0"
                         }
                     ]
                 }

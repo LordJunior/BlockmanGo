@@ -37,3 +37,4 @@ ActionState		HoldItemId		SkillName
 1010	AS_GUN_FIRE：枪械开火	426	手枪	pistol_shoot
 1010	AS_GUN_FIRE：枪械开火	427#428#429#430#431#432#433#434#435#436#437#438#439#440	双手持枪	smg_shoot
 2000	AS_SKILL_POISION: 僵尸护士防毒技能	0	无或者非特定物品	attack4
+1011	AS_GREETINGS:打招呼动作	0	无或者非特定物品	hello

@@ -1,0 +1,113 @@
+{"frames": {
+
+"game_icon":
+{
+	"frame": {"x":0,"y":93,"w":44,"h":44},
+	"offset": {"x":0,"y":0,"w":44,"h":44},
+	"sourceSize": {"w":44,"h":44}
+},
+"greetings":
+{
+	"frame": {"x":112,"y":23,"w":30,"h":35},
+	"offset": {"x":0,"y":0,"w":30,"h":35},
+	"sourceSize": {"w":30,"h":35}
+},
+"page_next":
+{
+	"frame": {"x":142,"y":23,"w":41,"h":70},
+	"offset": {"x":0,"y":0,"w":41,"h":70},
+	"sourceSize": {"w":41,"h":70}
+},
+"page_up":
+{
+	"frame": {"x":183,"y":23,"w":41,"h":70},
+	"offset": {"x":0,"y":0,"w":41,"h":70},
+	"sourceSize": {"w":41,"h":70}
+},
+"progress_bar_blue_nor":
+{
+	"frame": {"x":175,"y":0,"w":25,"h":23},
+	"offset": {"x":0,"y":0,"w":25,"h":23},
+	"sourceSize": {"w":25,"h":23}
+},
+"progress_bar_blue_pre":
+{
+	"frame": {"x":25,"y":0,"w":25,"h":23},
+	"offset": {"x":0,"y":0,"w":25,"h":23},
+	"sourceSize": {"w":25,"h":23}
+},
+"progress_bar_green_nor":
+{
+	"frame": {"x":0,"y":0,"w":25,"h":23},
+	"offset": {"x":0,"y":0,"w":25,"h":23},
+	"sourceSize": {"w":25,"h":23}
+},
+"progress_bar_green_pre":
+{
+	"frame": {"x":125,"y":0,"w":25,"h":23},
+	"offset": {"x":0,"y":0,"w":25,"h":23},
+	"sourceSize": {"w":25,"h":23}
+},
+"progress_bar_red_nor":
+{
+	"frame": {"x":150,"y":0,"w":25,"h":23},
+	"offset": {"x":0,"y":0,"w":25,"h":23},
+	"sourceSize": {"w":25,"h":23}
+},
+"progress_bar_red_pre":
+{
+	"frame": {"x":50,"y":0,"w":25,"h":23},
+	"offset": {"x":0,"y":0,"w":25,"h":23},
+	"sourceSize": {"w":25,"h":23}
+},
+"progress_bar_yellow_nor":
+{
+	"frame": {"x":100,"y":0,"w":25,"h":23},
+	"offset": {"x":0,"y":0,"w":25,"h":23},
+	"sourceSize": {"w":25,"h":23}
+},
+"progress_bar_yellow_pre":
+{
+	"frame": {"x":75,"y":0,"w":25,"h":23},
+	"offset": {"x":0,"y":0,"w":25,"h":23},
+	"sourceSize": {"w":25,"h":23}
+},
+"team_icon_blue":
+{
+	"frame": {"x":0,"y":23,"w":28,"h":40},
+	"offset": {"x":0,"y":0,"w":28,"h":40},
+	"sourceSize": {"w":28,"h":40}
+},
+"team_icon_green":
+{
+	"frame": {"x":28,"y":23,"w":28,"h":40},
+	"offset": {"x":0,"y":0,"w":28,"h":40},
+	"sourceSize": {"w":28,"h":40}
+},
+"team_icon_red":
+{
+	"frame": {"x":84,"y":23,"w":28,"h":40},
+	"offset": {"x":0,"y":0,"w":28,"h":40},
+	"sourceSize": {"w":28,"h":40}
+},
+"team_icon_yellow":
+{
+	"frame": {"x":56,"y":23,"w":28,"h":40},
+	"offset": {"x":0,"y":0,"w":28,"h":40},
+	"sourceSize": {"w":28,"h":40}
+},
+"team_resources_bg":
+{
+	"frame": {"x":44,"y":93,"w":162,"h":234},
+	"offset": {"x":0,"y":0,"w":162,"h":234},
+	"sourceSize": {"w":162,"h":234}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "jewel_knight.png",
+	"format": "RGBA8888",
+	"size": {"w":224,"h":327},
+	"scale": "1"
+}
+}

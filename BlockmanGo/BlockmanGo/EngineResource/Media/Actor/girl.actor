@@ -722,6 +722,19 @@
 					<scale value="1"/>
 				</StaticMesh>
 			</BodyPart>
+			<BodyPart MasterName="custom_face" SlaveName="19" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="face01_tnt.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
 			<BodyPart MasterName="custom_face" SlaveName="2" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="girl_face02.mesh"/>
@@ -1111,6 +1124,19 @@
 					<scale value="1"/>
 				</StaticMesh>
 			</BodyPart>
+			<BodyPart MasterName="custom_hair" SlaveName="30" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="hair01_tnt.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
 			<BodyPart MasterName="custom_hair" SlaveName="3001" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="hair3001bl.mesh"/>
@@ -1258,6 +1284,19 @@
 				<StaticMesh>
 					<FileName value="gun_flagwar_02.mesh"/>
 					<SocketName value="s_Hand_l"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_hand" SlaveName="3" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="hand01_tnt.mesh"/>
+					<SocketName value="s_Hand_r"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
 					<Position_Z value="0"/>
@@ -2878,6 +2917,19 @@
 					<scale value="1"/>
 				</StaticMesh>
 			</BodyPart>
+			<BodyPart MasterName="gun" SlaveName="jewel02.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="jewel02.mesh"/>
+					<SocketName value="s_Hand_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
 		</BodyParts>
 		<Skills>
 			<Skill Name="aim1" EnableWound="false" UserDefineTime="-2" TextMode="0">
@@ -2946,6 +2998,10 @@
 			</Skill>
 			<Skill Name="hammer_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
 				<Animation Name = "girl_stand10.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="hello" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_standby01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
 				</Animation>
 			</Skill>
 			<Skill Name="idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
@@ -3082,6 +3138,7 @@
 				<Anim Name="girl_walk06.anim"/>
 				<Anim Name="girl_walk05.anim"/>
 				<Anim Name="girl_walk04.anim"/>
+				<Anim Name="girl_standby01.anim"/>
 		</Anims>
 	</ActorTemplate>
 </ActorTemplates>

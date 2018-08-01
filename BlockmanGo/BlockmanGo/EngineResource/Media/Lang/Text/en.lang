@@ -1047,7 +1047,7 @@ wordart_course=Course
 wordart_game_setting=Game setting
 wordart_exit_game=Exit game
 wordart_resume_game=Resume game
-wordart_compound=Compound
+wordart_compound=Make
 wordart_role=Role
 wordart_bag=Inventory
 wordart_inventory_tabs=Inventory tabs
@@ -1332,7 +1332,7 @@ gui_manor_sell_succeed=Yard Selled!
 gui_manor_give_rose_succeed=Successful Liked!
 gui_manor_give_rose_failure=LIKE failed. Please try again.
 gui_manor_give_rose_failure_not_manor=Unable to LIKE. He has no YARD.
-gui_manor_give_rose_failure_num_is_zero=Come back tomorrow or Upgrade your yard to get more LIKEs
+gui_manor_give_rose_failure_num_is_zero=Upgrade your yard to get more LIKEs
 gui_manor_target_user_not_manor=Unable to visit. He has no YARD.
 gui_manor_message_call_on_tip=%s Visited your yard!
 gui_manor_message_give_rose_tip=%s Liked your yard!
@@ -1351,12 +1351,12 @@ gui_manor_make_money_buy_furniture_message=Make money to buy furniture.
 item.seeds_wheat.name=Seed of Wheat
 item.seeds_carrot.name=Seed of Carrot
 item.seeds_tomato.name=Seed of Tomato
-item.seeds_cabbage.name=Seed of Vabbage
+item.seeds_cabbage.name=Seed of Cabbage
 item.seeds_pea.name=Seed of Pea
 item.wheat.name=Wheat
 item.carrot.name=Carrot
 item.tomato.name=Tomato
-item.cabbage.name=Vabbage
+item.cabbage.name=Cabbage
 item.pea.name=Pea
 manor_officer_npc_name=Town Officials
 manor_sell_npc_name=Yard Trader
@@ -1398,7 +1398,6 @@ gui_manor_is_furniture_actor=You are a furniture now!
 gui_manor_call_on_failure_vistors_full=Visit failed,visitors full
 gui_manor_call_on_failure_version_not_matched=Visit failed for inconsistent game version
 gui_manor_sell_failure_by_times=You have sold yard today.Please come back tomorrow
-  
 
 flag.war.swordsman.dsc1=increase movement speed and regenerate health
 flag.war.swordsman.dsc2=player takes no damage for a short amount of time
@@ -1438,16 +1437,16 @@ flag.war.bomber.skillname3=dynamic
 flag.war.icemage.skillname1=blizzard
 flag.war.icemage.skillname2=freeze
 flag.war.icemage.skillname3=ice shards
-  
+
 
 item.skill_01.name=skill 1
 item.skill_02.name=skill 2
 item.skill_03.name=skill 3
-  
+
 
 parkour.rank.name1=Cactus track rank
 parkour.rank.name2=Freefall track rank
-  
+
 
 score_point_flag=number of captured flag
 
@@ -1517,36 +1516,35 @@ flag.war.bomber.skillname3=Mega Bombs
 flag.war.icemage.skillname1=Crushed Ice
 flag.war.icemage.skillname2=Freezing
 flag.war.icemage.skillname3=Snowstorm
-  
 
 
-flag.war.swordsman.attribute.dsc=Heal：70；Aggressivity：10；Defenses：300
-flag.war.shooter.attribute.dsc=Heal：50；Aggressivity：8；Defenses：200
-flag.war.thieves.attribute.dsc=Heal：60；Aggressivity：10；Defenses：200
-flag.war.wizard.attribute.dsc=Heal：50；Aggressivity：8；Defenses：200
-flag.war.bomber.attribute.dsc=Heal：50；Aggressivity：8；Defenses：200
-flag.war.icemage.attribute.dsc=Heal：50；Aggressivity：8；Defenses：200
 
-  
+flag.war.swordsman.attribute.dsc=HP：70；ATK：10；DEF：300
+flag.war.shooter.attribute.dsc=HP：50；ATK：8；DEF：200
+flag.war.thieves.attribute.dsc=HP：60；ATK：10；DEF：200
+flag.war.wizard.attribute.dsc=HP：50；ATK：8；DEF：200
+flag.war.bomber.attribute.dsc=HP：50；ATK：8；DEF：200
+flag.war.icemage.attribute.dsc=HP：50；ATK：8；DEF：200
 
-flag.war.swordsman.attribute.dsc0=Heal：70；Aggressivity：10；Defenses：3
-flag.war.shooter.attribute.dsc0=Heal：50；Aggressivity：8；Defenses：2
-flag.war.thieves.attribute.dsc0=Heal：60；Aggressivity：10；Defenses：2
-flag.war.wizard.attribute.dsc0=Heal：50；Aggressivity：8；Defenses：2
-flag.war.bomber.attribute.dsc0=Heal：50；Aggressivity：8；Defenses：2
-flag.war.icemage.attribute.dsc0=Heal：50；Aggressivity：8；Defenses：2
+
+flag.war.swordsman.attribute.dsc0=HP：70；ATK：10；DEF：3
+flag.war.shooter.attribute.dsc0=HP：50；ATK：8；DEF：2
+flag.war.thieves.attribute.dsc0=HP：60；ATK：10；DEF：2
+flag.war.wizard.attribute.dsc0=HP：50；ATK：8；DEF：2
+flag.war.bomber.attribute.dsc0=HP：50；ATK：8；DEF：2
+flag.war.icemage.attribute.dsc0=HP：50；ATK：8；DEF：2
   
 
 flag.war.swordsman.dsc11=Deals 600 damage to an enemy --- cooldown: 5; range: 5
-flag.war.swordsman.dsc12=Greatly increased player's movement speed for one second - cooldown: 9
+flag.war.swordsman.dsc12=Greatly increased player's movement speed for 1s - cooldown: 9
 flag.war.swordsman.dsc13=Reduces damage recieved by 99% for 5 seconds cooldown: 20
-flag.war.shooter.dsc11=Will cause 550 damage to all enemies within 2x2 radius - cooldown: 6; range: 15
+flag.war.shooter.dsc11=Cause 550 damage to all enemies within 2x2 radius - cooldown: 6; range: 15
 flag.war.shooter.dsc12=Deals 1000 damage to an enemy and slows him/her by 40% for 2 seconds - cooldown: 9; range: 15
 flag.war.shooter.dsc13=Deals 3000 damage to an enemy: cooldown: 20; range: 25
 flag.war.thieves.dsc11=Deals 600 damage to an enemy - cooldown: 6; range: 5
 flag.war.thieves.dsc12=Increases player's movement speed for 3 seconds - cooldown: 9
 flag.war.thieves.dsc13=Allows player to become invisible for 3 seconds - cooldown: 20
-flag.war.wizard.dsc11=Heals 500hp to a teammate - cooldown: 4; range: 10
+flag.war.wizard.dsc11=Heals 500 hp to a teammate - cooldown: 4; range: 10
 flag.war.wizard.dsc12=Causes 1 random enemies in the 12x12 radius to be poisoned for 5 seconds, deals 800 damage in full effect - cooldown: 9
 flag.war.wizard.dsc13=Heals all teamates in the area of a 8X8 radius, lasting 5 seconds, restoring a total 2000 hp - cooldown: 20; range: 10
 flag.war.bomber.dsc11=Will cause continuous damage to an enemy for 2 seconds, resulting in a total of 250 damage - cooldown: 2; range: 12
@@ -1555,14 +1553,13 @@ flag.war.bomber.dsc13=Deals 1500 damage to enemies within a 8x8 radius - cooldow
 flag.war.icemage.dsc11=Deals 200 damage to an enemy and slows them by 40% for one second - cooldown: 2; range: 12
 flag.war.icemage.dsc12=Freezes enemies within a 12x12 radius for 3 seconds - cooldown: 9
 flag.war.icemage.dsc13=Causes continuous damage and decelerate enemies in a 5x5 radius for 5 seconds, resulting in a total of 1800 damage - cooldown: 20; range: 12
-  
 
-flag.war.swordsman.attribute.dsc1=Hp：7500；Damage：300；Defence：500
-flag.war.shooter.attribute.dsc1=Hp：4000；Damage：360；Defence：200
-flag.war.thieves.attribute.dsc1=Hp：6000；Damage：400；Defence：400
-flag.war.wizard.attribute.dsc1=Hp：5000；Damage：180；Defence：250
-flag.war.bomber.attribute.dsc1=Hp：4500；Damage：150；Defence：350
-flag.war.icemage.attribute.dsc1=Hp：3500；Damage：120；Defence：300
+flag.war.swordsman.attribute.dsc1=HP：7500；ATK：300；DEF：500
+flag.war.shooter.attribute.dsc1=HP：4000；ATK：360；DEF：200
+flag.war.thieves.attribute.dsc1=HP：6000；ATK：400；DEF：400
+flag.war.wizard.attribute.dsc1=HP：5000；ATK：180；DEF：250
+flag.war.bomber.attribute.dsc1=HP：4500；ATK：150；DEF：350
+flag.war.icemage.attribute.dsc1=HP：3500；ATK：120；DEF：300
   
 
 flag.war.swordsman.dsc21=Deals 1000 damage to an enemy --- cooldown: 9; range: 10
@@ -1584,27 +1581,79 @@ flag.war.icemage.dsc21=Deals 200 damage to an enemy and slows them by 40% for on
 flag.war.icemage.dsc22=Freezes enemies within a 12x12 radius for 3 seconds - cooldown: 9
 flag.war.icemage.dsc23=Causes continuous damage and decelerate enemies in a 5x5 radius for 5 seconds, resulting in a total of 3000 damage - cooldown: 20; range: 12
 
-
-
-flag.war.swordsman.attribute.dsc2=Hp：7500；Damage：250；Defence：500
-flag.war.shooter.attribute.dsc2=Hp：4000；Damage：800；Defence：200
-flag.war.thieves.attribute.dsc2=Hp：6000；Damage：500；Defence：400
-flag.war.wizard.attribute.dsc2=Hp：3000；Damage：180；Defence：250
-flag.war.bomber.attribute.dsc2=Hp：4500；Damage：150；Defence：350
-flag.war.icemage.attribute.dsc2=Hp：4000；Damage：120；Defence：300
+flag.war.swordsman.attribute.dsc2=HP：7500；ATK：250；DEF：500
+flag.war.shooter.attribute.dsc2=HP：4000；ATK：800；DEF：200
+flag.war.thieves.attribute.dsc2=HP：6000；ATK：500；DEF：400
+flag.war.wizard.attribute.dsc2=HP：3000；ATK：180；DEF：250
+flag.war.bomber.attribute.dsc2=HP：4500；ATK：150；DEF：350
+flag.war.icemage.attribute.dsc2=HP：4000；ATK：120；DEF：300
   
 gui_rank_vice_title_hist_name=All
 
 parkour.rank.name01=Cactus  Track  Rank
 parkour.rank.name02=Freefall  Track  Rank
-  
-
 
 flag.war.shop.Halo.attribute1=Increase maxium Hp\\n(permanent)
 flag.war.shop.Halo.attribute2=Increase movement speed\\n(permanent)
 flag.war.shop.Halo.attribute3=Increase jump height\\n(permanent)
 
-gui_buildwar_title=Building Battle
+item.skill.chip.chest.1.name=Chip Chest(x1)
+item.skill.chip.chest.2.name=Chip Chest(x2)
+item.skill.chip.chest.3.name=Chip Chest(x3)
+item.skill.book.1.name=Flash book
+item.skill.book.2.name=Speed book
+item.skill.book.3.name=Invisibility book
+item.skill.book.4.name=Fly book
+item.skill.book.5.name=Invincible book
+item.skill.book.6.name=Teleport book
+item.skill.book.7.name=Dark book
+item.skill.chip.1.name=Flash chip
+item.skill.chip.2.name=Speed chip
+item.skill.chip.3.name=Invisibility chip
+item.skill.chip.4.name=Fly chip
+item.skill.chip.5.name=Invincible chip
+item.skill.chip.6.name=Teleport chip
+item.skill.chip.7.name=Dark chip
+
+throw.pot.shop.tab.title=Title
+throw.pot.chip.chest=Chip Chest
+throw.pot.money=Cash  
+
+throw.pot.title.name.1=Tyro
+throw.pot.title.name.2=Shot to fame
+throw.pot.title.name.3=Unstoppable
+throw.pot.title.name.4=TNT King
+throw.pot.title.name.5=1000 Kills
+throw.pot.title.name.6=Almighty
+
+gui.shop.tab.skill.book=Skill book
+gui.shop.tab.skill.book.fragmentation=Skill chip
+throw.pot.last.week.rank=Last Week
+
+throw.pot.title.desc.1=Condition: Play 3 games.\\n(Tip: titles will appear above the head when used!)
+throw.pot.title.desc.2=Condition: Be No.1 in a game.\\n(Tip: titles will appear above the head when used!)
+throw.pot.title.desc.3=Condition: Play 50 games.\\n(Tip: titles will appear above the head when used!)
+throw.pot.title.desc.4=Condition: Play 100 games.\\n(Tip: titles will appear above the head when used!)
+throw.pot.title.desc.5=Condition: Get 1000 points.\\n(Tip: titles will appear above the head when used!)
+throw.pot.title.desc.6=Condition: Have 7 different skill books.\\n(Tip: titles will appear above the head when used!)
+item.skill.book.1.desc=Quality: Ordinary\\nEffects: Flashing 5 blocks forward\\n(Tip: Only one skill book can be used in a game!)
+item.skill.book.2.desc=Quality: Ordinary\\nEffects: Increase movement speed within 10s \\n(Tip: Only one skill book can be used in a game!)
+item.skill.book.3.desc=Quality: Rare\\nEffects: Invisibility within 5s , attack or be attacked will appear.\\n(Tip: Only one skill book can be used in a game!)
+item.skill.book.4.desc=Quality: Rare\\nEffects: Fly within 10s.\\n(Tip: Only one skill book can be used in a game!)
+item.skill.book.5.desc=Quality: Epic\\nEffects: Invincible in 3s, but cannot move.\\n(Tip: Only one skill book can be used in a game!)
+item.skill.book.6.desc=Quality: Epic\\nEffects: All players will be sent back to respawn point.\\n(Tip: Only one skill book can be used in a game!)
+item.skill.book.7.desc=Quality: Epic\\nEffects: All players except you will be plunged into darkness within 2s.\\n(Tip: Only one skill book can be used in a game!)
+item.skill.chip.1.desc=Quality: Ordinary\\nUsed to exchange Flash book.\\n(Tip: Get cash at the end of each game.)
+item.skill.chip.2.desc=Quality: Ordinary \\nUsed to exchange Speed book.\\n(Tip: Get cash at the end of each game.)
+item.skill.chip.3.desc=Quality: Rare \\nUsed to exchange Invisibility book.\\n(Tip: Get cash at the end of each game.)
+item.skill.chip.4.desc=Quality: Rare \\nUsed to exchange Fly book.\\n(Tip: Get cash at the end of each game.)
+item.skill.chip.5.desc=Quality: Epic \\nUsed to exchange Invincible book.\\n(Tip: Get cash at the end of each game.)
+item.skill.chip.6.desc=Quality: Epic \\nUsed to exchange Teleport book.\\n(Tip: Get cash at the end of each game.)
+item.skill.chip.7.desc=Quality: Epic \\nUsed to exchange Dark book.\\n(Tip: Get cash at the end of each game.)
+item.skill.chip.chest.1.desc=Get a skill book chip randomly.\\n(Tip: Get cash at the end of each game.)
+throw.pot.money.desc=Selling chips could get cash.\\n(Tip: Extra chips can be sold here!)
+
+gui_buildwar_title=Build Battle
 gui_buildwar_player_num=%d/%d
 gui_buildwar_left_time=Left: %d
 gui_buildwar_grade=%s  (%d S)
@@ -1616,7 +1665,7 @@ gui_build_war_guess_item_visit_btn=Visit
 gui_build_war_guess_item_guess_btn=Guess
 gui_build_war_guess_title=Guess(Heart means you like)
 gui_build_war_guess_suc=Guess success
-gui_build_war_guess_tip=Guess only once,sure to guess [%s] is winner?
+gui_build_war_guess_tip=Sure to guess [%s] is winner?
 shop_btn_select=Select
 shop_btn_unlock=Unlock
 gui_dialog_tip_content_unlock_commodity=Unlock【%s】need
@@ -1636,3 +1685,53 @@ gui_build_war_guess_result_title=My guess
 gui_build_war_my_rank_title=My rank
 gui_build_war_my_guess_title=Result
 gui_have_already_got_block=Already had it
+
+gui.shop.tab.sell=Sell
+
+gui_shop_lack_of_item=Lack of item
+gui_player_operation_greetings=Greet
+gui_team_resources_max_team_pool=%s Resource Pool
+gui_team_resources_my_team_pool=Own Pool
+gui_team_resources_other_team_pool=Enemy Pool
+gui_settlement_jewel_knight=Gem Knight  (%s)
+gui_jewel_knight_game_name=Gem Knight
+gui_player_operation_greetings_message=Player ▢FFFF0000【%s】▢FFFFFFFF greet you.
+gui_player_operation_greetings_message_for_me=You greet player ▢FFFF0000【%s】.
+item.gemstone.name=Gem
+
+gui_rank_victory_title_name=Winner Rank
+gui_rank_jewel_knight_title_name=Knight Rank
+
+gui_jewel_not_your_team_statue=This is not statue of your team.
+gui_jewel_no_have_jewel=You haven't got a gem, look for it now.
+gui_jewel_fill_team_source=The statue is not activated, fill the pool first.
+
+gem_diggertip1=Shovel, STR:1. Next LV:Mechanical Shovel, STR:2.
+gem_diggertip2=Mechanical Shovel, STR:2. Next LV:Gold Shovel, STR:3.
+gem_diggertip3=Gold Shovel, STR:3.
+
+gem_NPC1_name=Back-story
+gem_NPC2_name=Rules
+gem_NPC3_name=Merchant
+gem_NPC4_name=Guide
+gem_NPC5_name=Designer
+
+gem_NPC1_content1=Congratulations on being selected by the world gemstone, and you will enter the gem world with other selected players.
+gem_NPC1_content2=Look for world gemstone with your teammates. There will be three other teams competing with you to return gem to the statue team before returning to the real world.
+gem_NPC1_content3=Winners will be rewarded. The player who successfully returns the gem to the statue will win the title of the Gem Knight.
+gem_NPC1_content4=But there is only one gem, and only one team will win. The defeated player will remain in the cursed world forever.
+gem_NPC1_content5=Are you ready to start the game? Search for gem now!
+gem_NPC2_content1=Dig the ore in the ore area and bring it back to the resource merchant to exchange resources.
+gem_NPC2_content2=Filling up any resource pool will activate the location of the gem. Ore area shows its name and the color is blue.
+gem_NPC2_content3=When a player gets a gem, all players will know his team and his name, and there will be special effects in him. Prevent him from putting the gem back to the statue.
+gem_NPC2_content4=Upgrading tools will make you more efficient in finding gemstones.
+gem_NPC2_content5=There are a lot of surprises waiting for you. Curiosity can be a good thing sometimes.
+gem_NPC3_content=The ore collected will be brought back to mine for resources。\\nEmerald = 40\\nDiamond = 30\\nGold = 20\\nIron = 10
+gem_NPC4_content=A lot of surprises waiting for you in game. Go ahead and win the game.
+gem_NPC5_content=Dear players, I'm Shahe_Yida, the designer of the game. I have prepared many surprises here. Look for them now!
+gem_NPC5_content2=Smart player,This is for you .
+
+gem.win.rank.name=Winner Rank
+gem.win.rank.title=Winner Rank
+gem.knight.rank.name=Knight Rank
+gem.knight.rank.title=Knight Rank

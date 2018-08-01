@@ -132,6 +132,17 @@ SoundId	IsRepeat	RepeatInterval_min	RepeatInterval_max	SoundFile	Type	SubType	De
 141	0	0	0	Media/Sound/note/telepos			建筑战争传送	
 142	0	0	0	Media/Sound/note/trans			建筑战争环节切换	
 143	0	0	0	Media/Sound/note/fire			建筑战争烟花	
+300	0	0	0	Media/Sound/ThrowPot/dark_skill			黑暗技能	
+301	0	0	0	Media/Sound/ThrowPot/equip_title			装备称号	
+302	0	0	0	Media/Sound/ThrowPot/flash_skill			闪现技能	
+303	0	0	0	Media/Sound/ThrowPot/fly_skill			飞行技能	
+304	0	0	0	Media/Sound/ThrowPot/get_TNT			获得TNT	
+305	0	0	0	Media/Sound/ThrowPot/invincible_skill			无敌技能	
+306	0	0	0	Media/Sound/ThrowPot/invisibility_skill			隐身技能	
+307	0	0	0	Media/Sound/ThrowPot/speed_skill			加速技能	
+308	0	0	0	Media/Sound/ThrowPot/teleport_skill			传送技能	
+309	0	0	0	Media/Sound/ThrowPot/throw_TNT			传递别人TNT	
+310	0	0	0	Media/Sound/ThrowPot/TNT_boom			TNT爆炸	
 10000	1	35	10	Media/Sound/bgm/theme_sea			主题音乐1	
 10001	1	35	10	Media/Sound/bgm/theme_home			主题音乐2	
 10002	0	0	0	Media/Sound/bgm/theme_dead			死亡	
@@ -163,6 +174,7 @@ SoundId	IsRepeat	RepeatInterval_min	RepeatInterval_max	SoundFile	Type	SubType	De
 10028	0	0	0	Media/Sound/random/crash			塌方	TNT跑酷独有
 10029	1	0	0	Media/Sound/bgm/theme_parkour			主题音乐	彩虹跑酷
 10030	1	0	0	Media/Sound/bgm/theme_buildbattle			主题音乐	建筑战争
+10031	1	35	10	Media/Sound/ThrowPot/theme_ThrowPot_waiting			等待进入音乐	丢锅大战
 -1	1	0	0	Media/Sound/ambient/cave/cave13 		ambient	洞穴	
 -1	1	0	0	Media/Sound/ambient/cave/cave14 		ambient	洞穴	
 -1	1	0	0	Media/Sound/ambient/cave/cave15 		ambient	洞穴	

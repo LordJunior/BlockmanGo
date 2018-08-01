@@ -274,7 +274,7 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0.16,0},{0,0},{0.8944,0},{1,0}}"
+                            "Value": "{{0.15,0},{0,0},{0.8844,0},{1,0}}"
                         },
                         {
                             "Name": "VerticalAlignment",
@@ -405,6 +405,10 @@
                                 {
                                     "Name": "TextVertAlignment",
                                     "Value": "Centre"
+                                },
+                                {
+                                    "Name": "TextLineExtraSpace",
+                                    "Value": "0"
                                 }
                             ]
                         }
@@ -525,6 +529,10 @@
                                 {
                                     "Name": "TextShadow",
                                     "Value": "true"
+                                },
+                                {
+                                    "Name": "TextLineExtraSpace",
+                                    "Value": "0"
                                 }
                             ]
                         }
@@ -645,6 +653,10 @@
                                 {
                                     "Name": "TextShadow",
                                     "Value": "true"
+                                },
+                                {
+                                    "Name": "TextLineExtraSpace",
+                                    "Value": "0"
                                 }
                             ]
                         }
@@ -891,6 +903,10 @@
                                         {
                                             "Name": "TextShadow",
                                             "Value": "true"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -925,6 +941,10 @@
                                         {
                                             "Name": "TextShadow",
                                             "Value": "true"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 }
@@ -1207,6 +1227,10 @@
                                         {
                                             "Name": "TextShadow",
                                             "Value": "true"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -1253,6 +1277,10 @@
                                         {
                                             "Name": "TextShadow",
                                             "Value": "true"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 }
@@ -1361,6 +1389,10 @@
                                         {
                                             "Name": "TextShadow",
                                             "Value": "true"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -1407,6 +1439,10 @@
                                         {
                                             "Name": "TextShadow",
                                             "Value": "true"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 }
@@ -1445,6 +1481,10 @@
                         {
                             "Name": "TextVertAlignment",
                             "Value": "Centre"
+                        },
+                        {
+                            "Name": "TextLineExtraSpace",
+                            "Value": "0"
                         }
                     ]
                 },
@@ -1547,6 +1587,10 @@
                                         {
                                             "Name": "TextVertAlignment",
                                             "Value": "Centre"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -1577,6 +1621,10 @@
                                         {
                                             "Name": "TextVertAlignment",
                                             "Value": "Centre"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -1607,6 +1655,10 @@
                                         {
                                             "Name": "TextVertAlignment",
                                             "Value": "Centre"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -1687,6 +1739,10 @@
                                                 {
                                                     "Name": "TextVertAlignment",
                                                     "Value": "Centre"
+                                                },
+                                                {
+                                                    "Name": "TextLineExtraSpace",
+                                                    "Value": "0"
                                                 }
                                             ]
                                         }
@@ -1819,6 +1875,10 @@
                                         {
                                             "Name": "TextVertAlignment",
                                             "Value": "Centre"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -1849,6 +1909,10 @@
                                         {
                                             "Name": "TextVertAlignment",
                                             "Value": "Centre"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -1879,6 +1943,10 @@
                                         {
                                             "Name": "TextVertAlignment",
                                             "Value": "Centre"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -1909,6 +1977,10 @@
                                         {
                                             "Name": "TextVertAlignment",
                                             "Value": "Centre"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -1939,6 +2011,10 @@
                                         {
                                             "Name": "TextVertAlignment",
                                             "Value": "Centre"
+                                        },
+                                        {
+                                            "Name": "TextLineExtraSpace",
+                                            "Value": "0"
                                         }
                                     ]
                                 },
@@ -2233,6 +2309,160 @@
                                 {
                                     "Name": "TextVertAlignment",
                                     "Value": "Centre"
+                                },
+                                {
+                                    "Name": "TextLineExtraSpace",
+                                    "Value": "0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Type": "Layout",
+                    "Name": "ToolBar-GameInfo",
+                    "Property": [
+                        {
+                            "Name": "Area",
+                            "Value": "{{0.15,0},{0,0},{0.29,0},{1,0}}"
+                        },
+                        {
+                            "Name": "WndOpenSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "WndCloseSound",
+                            "Value": "0"
+                        }
+                    ],
+                    "Window": [
+                        {
+                            "Type": "StaticImage",
+                            "Name": "ToolBar-GameInfo-Icon",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,0},{0,0},{0,44},{0,44}}"
+                                },
+                                {
+                                    "Name": "VerticalAlignment",
+                                    "Value": "Centre"
+                                },
+                                {
+                                    "Name": "Touchable",
+                                    "Value": "false"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "ImageName",
+                                    "Value": "set:jewel_knight.json image:game_icon"
+                                },
+                                {
+                                    "Name": "HexgonTopImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonTopColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonSideImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonSideColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonOverlayerImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonOverlayerColor",
+                                    "Value": "1 1 1 1"
+                                }
+                            ]
+                        },
+                        {
+                            "Type": "StaticText",
+                            "Name": "ToolBar-GameInfo-Name",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,44},{0,0},{1,0},{0.5,0}}"
+                                },
+                                {
+                                    "Name": "Text",
+                                    "Value": "宝石骑士"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "TextHorzAlignment",
+                                    "Value": "Centre"
+                                },
+                                {
+                                    "Name": "TextVertAlignment",
+                                    "Value": "Centre"
+                                },
+                                {
+                                    "Name": "TextBorder",
+                                    "Value": "true"
+                                },
+                                {
+                                    "Name": "TextBorderColor",
+                                    "Value": "0.290196 0.262745 0.2 1"
+                                },
+                                {
+                                    "Name": "TextLineExtraSpace",
+                                    "Value": "0"
+                                }
+                            ]
+                        },
+                        {
+                            "Type": "StaticText",
+                            "Name": "ToolBar-GameInfo-Num",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,44},{0.5,0},{1,0},{1,0}}"
+                                },
+                                {
+                                    "Name": "Text",
+                                    "Value": "10/10"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "TextHorzAlignment",
+                                    "Value": "Centre"
+                                },
+                                {
+                                    "Name": "TextVertAlignment",
+                                    "Value": "Centre"
+                                },
+                                {
+                                    "Name": "TextLineExtraSpace",
+                                    "Value": "0"
                                 }
                             ]
                         }
