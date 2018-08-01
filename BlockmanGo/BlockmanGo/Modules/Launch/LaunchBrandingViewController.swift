@@ -15,22 +15,18 @@ class LaunchBrandingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        brandingImageView = UIImageView(image: R.image.branding()).addTo(superView: view).layout(snapKitMaker: { (make) in
-//            make.center.equalToSuperview()
-//        }).configure({ (imageView) in
-//            imageView.alpha = 0.0
-//            imageView.transform = CGAffineTransform.init(translationX: 0, y: -view.height * 0.3)
-//        })
-        
-        let gravityImageView = GravityImageView(image: R.image.launch_background()).addTo(superView: view).layout { (make) in
-            make.edges.equalToSuperview()
-        }
+        brandingImageView = UIImageView(image: R.image.branding()).addTo(superView: view).layout(snapKitMaker: { (make) in
+            make.center.equalToSuperview()
+        }).configure({ (imageView) in
+            imageView.alpha = 0.0
+            imageView.transform = CGAffineTransform.init(translationX: 0, y: -view.height * 0.3)
+        })
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-//        triggerAnimation()
+        triggerAnimation()
     }
     
     private func triggerAnimation() {

@@ -14,8 +14,6 @@
 		DD3255A6210FFB8600739E00 /* GameInQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3255A4210FFB8600739E00 /* GameInQueueViewController.swift */; };
 		DD3255A7210FFB8600739E00 /* GameInQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3255A4210FFB8600739E00 /* GameInQueueViewController.swift */; };
 		DD3255B02110281A00739E00 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3255AF2110281A00739E00 /* StoreKit.framework */; };
-		DD3255B22110841900739E00 /* GravityImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3255B12110841900739E00 /* GravityImageView.swift */; };
-		DD3255B32110841900739E00 /* GravityImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3255B12110841900739E00 /* GravityImageView.swift */; };
 		DD456BD6210EBDE6009465FE /* BMFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402FC20FEEDF500091B9D /* BMFileManager.swift */; };
 		DD456BD7210EBDE6009465FE /* GamesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F520F631F40000B8DC /* GamesAPI.swift */; };
 		DD456BD8210EBDE6009465FE /* BulletinModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030A20FF485200091B9D /* BulletinModelManager.swift */; };
@@ -241,7 +239,6 @@
 		DD3255A9211016F000739E00 /* BlockmanGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlockmanGo.entitlements; sourceTree = "<group>"; };
 		DD3255AD211017B700739E00 /* BlockmanGo_Dev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlockmanGo_Dev.entitlements; sourceTree = "<group>"; };
 		DD3255AF2110281A00739E00 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		DD3255B12110841900739E00 /* GravityImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravityImageView.swift; sourceTree = "<group>"; };
 		DD456C38210EBDE6009465FE /* BlockmanGo_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockmanGo_Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD456C39210EBDE6009465FE /* BlockmanGo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "BlockmanGo copy-Info.plist"; path = "/Users/kiben/BlockmanGo/BlockmanGo/BlockmanGo copy-Info.plist"; sourceTree = "<absolute>"; };
 		DD456C3B210ECAA2009465FE /* BlockHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockHUD.swift; sourceTree = "<group>"; };
@@ -511,7 +508,6 @@
 				DD8EB61A21030F3400E7AE9B /* GenderButton.swift */,
 				DD7402D520FC8E8C00091B9D /* AlertController.swift */,
 				DD456C3B210ECAA2009465FE /* BlockHUD.swift */,
-				DD3255B12110841900739E00 /* GravityImageView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -1102,7 +1098,6 @@
 				DD456BE7210EBDE6009465FE /* BlockHTTPHost.swift in Sources */,
 				DD456BE8210EBDE6009465FE /* TransitionManagerStack.swift in Sources */,
 				DD456BE9210EBDE6009465FE /* CheckForResourceUpdateModel.swift in Sources */,
-				DD3255B32110841900739E00 /* GravityImageView.swift in Sources */,
 				DD456BEA210EBDE6009465FE /* DebugLog.swift in Sources */,
 				DD456BEB210EBDE6009465FE /* MainNavigationController.swift in Sources */,
 				DD456BEC210EBDE6009465FE /* MoyaProvider+Sync.swift in Sources */,
@@ -1189,7 +1184,6 @@
 				DD51608620F363FF0000B8DC /* TransitionManagerStack.swift in Sources */,
 				DD7402EF20FDC9D100091B9D /* CheckForResourceUpdateModel.swift in Sources */,
 				DD5160CB20F5A6530000B8DC /* DebugLog.swift in Sources */,
-				DD3255B22110841900739E00 /* GravityImageView.swift in Sources */,
 				DD51607620F304A00000B8DC /* MainNavigationController.swift in Sources */,
 				DD74037A21009AA800091B9D /* MoyaProvider+Sync.swift in Sources */,
 				DD7402D620FC8E8C00091B9D /* AlertController.swift in Sources */,
