@@ -60,8 +60,26 @@ done
 #取当前时间字符串添加到文件结尾
 now=$(date +"%Y-%m-%d-%H-%M-%S")
 
-printf "\n\033[32;1m请输入想要打包的scheme \033[0m"
-read scheme
+#列取出该工程的所有scheme
+source ./list_schemes.sh $workspaceName $hasWorkspace
+printf "\n\033[32;1m请选择想要打包的scheme(输入对应数字，回车即可) \033[0m\n"
+let i=0
+while (( ${#all_schemes[@]} > i )); do
+    index=`expr $i + 1`
+    printf "\033[34;1m${index}. ${all_schemes[i++]}\033[0m\n"
+done
+
+while :
+do
+    read scheme_index
+    if [ $scheme_index -le ${#all_schemes[@]} ] && [ $scheme_index -ge 1 ]; then
+        index=`expr $scheme_index - 1`
+        scheme=${all_schemes[${index}]}
+        break
+    else
+        printf "\033[28;1;5m请选择正确的scheme\033[0m\n"
+    fi
+done
 
 printf "${__LINE_BREAK_LEFT}请选择打包的模式(输入对应数字，回车即可)${__LINE_BREAK_RIGHT}"
 printf "\033[34;1m1. app-store模式\033[0m"
@@ -79,26 +97,34 @@ case $mode in
         ;;
 esac
 
+#while :
+#do
+#    printf "${__LINE_BREAK_LEFT}请输入ipa导出路径${__LINE_BREAK_RIGHT}"
+#    read path
+#    if [ ! -d $path ]; then
+#        printf "\033[28;1;5m输入的路径不是目录！请重新输入\033[0m\n"
+#    elif [ ! -e $path ]; then
+#        mkdir $path
+#        break
+#    else
+#        break
+#    fi
+#done
+path="/Users/kiben/Desktop/BlockyArchive"
+
 #指定打包的配置名
 configuration="Release"
 
 #指定项目地址
 workspace_path="./${workspaceName}"
 project_path="./${projectName}"
-
-while :
-do
-    printf "${__LINE_BREAK_LEFT}请输入ipa导出路径${__LINE_BREAK_RIGHT}"
-    read path
-    if [ ! -d $path ]; then
-        printf "\033[28;1;5m输入的路径不是目录！请重新输入\033[0m\n"
-    elif [ ! -e $path ]; then
-        mkdir $path
-        break
-    else
-        break
-    fi
-done
+output_path="${path}/${scheme}_${now}"
+#指定输出归档文件地址
+archive_path="$output_path/${scheme}.xcarchive"
+#指定输出ipa名称
+ipa_name="${scheme}.ipa"
+#指定输出ipa地址
+ipa_path="$output_path/${scheme}"
 
 #build之前先clean
 #echo "fastlane gym --workspace ${workspace_path} --scheme ${scheme} --clean --configuration ${configuration} --archive_path ${archive_path} --include_bitcode false --export_method ${export_method} --output_directory ${output_path} --output_name ${ipa_name}"

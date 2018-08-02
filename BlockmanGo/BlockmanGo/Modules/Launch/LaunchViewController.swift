@@ -33,19 +33,19 @@ class LaunchViewController: UIViewController {
             make.edges.equalToSuperview()
         })
         
-        bulletinButton = UIButton().addTo(superView: view).layout(snapKitMaker: { (make) in
-            make.size.equalTo(CGSize(width: 30, height: 44))
-            make.top.equalToSuperview()
-            make.right.equalToSuperview().inset(10)
-        }).configure({ (button) in
-            button.setImage(R.image.launch_bulletin(), for: .normal)
-            button.titleLabel?.font = UIFont.size11
-            button.setTitleColor(UIColor.white, for: .normal)
-            button.setTitle(R.string.localizable.bulletion(), for: .normal)
-            button.transform = CGAffineTransform.init(translationX: 0, y: -44)
-            button.addTarget(self, action: #selector(bulletinButtonClicked), for: .touchUpInside)
-            button.centerVertically()
-        })
+//        bulletinButton = UIButton().addTo(superView: view).layout(snapKitMaker: { (make) in
+//            make.size.equalTo(CGSize(width: 30, height: 44))
+//            make.top.equalToSuperview()
+//            make.right.equalToSuperview().inset(10)
+//        }).configure({ (button) in
+//            button.setImage(R.image.launch_bulletin(), for: .normal)
+//            button.titleLabel?.font = UIFont.size11
+//            button.setTitleColor(UIColor.white, for: .normal)
+//            button.setTitle(R.string.localizable.bulletion(), for: .normal)
+//            button.transform = CGAffineTransform.init(translationX: 0, y: -44)
+//            button.addTarget(self, action: #selector(bulletinButtonClicked), for: .touchUpInside)
+//            button.centerVertically()
+//        })
         
         logoImageView = UIImageView(image: R.image.launch_logo()).addTo(superView: view).layout { (make) in
             make.center.equalToSuperview()
@@ -116,9 +116,9 @@ class LaunchViewController: UIViewController {
             self.joinGameButton?.isHidden = false
             self.joinGameButton?.makeBreathAnimation(duration: 1)
             self.backgroundImageView?.startGravityMotion()
-            delay(0.75, exeute: {
-                self.bulletinButtonClicked()
-            })
+//            delay(0.75, exeute: {
+//                self.bulletinButtonClicked()
+//            })
         })
     }
     

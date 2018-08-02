@@ -109,8 +109,6 @@
 		DD51605520EC6B740000B8DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD51605320EC6B740000B8DC /* Main.storyboard */; };
 		DD51605720EC6B740000B8DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD51605620EC6B740000B8DC /* Assets.xcassets */; };
 		DD51605A20EC6B740000B8DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD51605820EC6B740000B8DC /* LaunchScreen.storyboard */; };
-		DD51606420EF63AC0000B8DC /* BlockModsGameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; };
-		DD51606520EF63AC0000B8DC /* BlockModsGameKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DD51606920EF63CA0000B8DC /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606820EF63CA0000B8DC /* libstdc++.6.0.9.tbd */; };
 		DD51606B20EF63CF0000B8DC /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606A20EF63CF0000B8DC /* libc++.1.tbd */; };
 		DD51606D20EF63D60000B8DC /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606C20EF63D60000B8DC /* libbz2.1.0.tbd */; };
@@ -191,6 +189,8 @@
 		DDA4B0E02106BF75004346C5 /* GameDispatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */; };
 		DDA4B0E32106D9A1004346C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B0E52106D9A1004346C5 /* Localizable.strings */; };
 		DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */; };
+		DDE09F9B21131F1700BD5CF8 /* BlockModsGameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; };
+		DDE09F9C21131F1700BD5CF8 /* BlockModsGameKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DDFFC8E82110C613008B80C0 /* GravityImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC8E72110C613008B80C0 /* GravityImageView.swift */; };
 		DDFFC8E92110C613008B80C0 /* GravityImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC8E72110C613008B80C0 /* GravityImageView.swift */; };
 /* End PBXBuildFile section */
@@ -217,13 +217,13 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD51606620EF63AC0000B8DC /* Embed Frameworks */ = {
+		DDE09F9D21131F1700BD5CF8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DD51606520EF63AC0000B8DC /* BlockModsGameKit.framework in Embed Frameworks */,
+				DDE09F9C21131F1700BD5CF8 /* BlockModsGameKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,10 +358,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE09F9B21131F1700BD5CF8 /* BlockModsGameKit.framework in Frameworks */,
 				DD51606D20EF63D60000B8DC /* libbz2.1.0.tbd in Frameworks */,
 				DD51606B20EF63CF0000B8DC /* libc++.1.tbd in Frameworks */,
 				DD51606920EF63CA0000B8DC /* libstdc++.6.0.9.tbd in Frameworks */,
-				DD51606420EF63AC0000B8DC /* BlockModsGameKit.framework in Frameworks */,
 				50C4B36D55AF1DB5D3014E6F /* Pods_BlockmanGo.framework in Frameworks */,
 				08AF722324723ABB46375BE4 /* Pods_BlockmanGo.framework in Frameworks */,
 			);
@@ -812,10 +812,10 @@
 				DD51604820EC6B740000B8DC /* Sources */,
 				DD51604920EC6B740000B8DC /* Frameworks */,
 				DD51604A20EC6B740000B8DC /* Resources */,
-				DD51606620EF63AC0000B8DC /* Embed Frameworks */,
 				28B9CD7081F60163038D2E32 /* [CP] Embed Pods Frameworks */,
 				EB9B0279D604202F7F904326 /* [CP] Copy Pods Resources */,
 				DD456BD0210EB75E009465FE /* Increment Build Number */,
+				DDE09F9D21131F1700BD5CF8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
