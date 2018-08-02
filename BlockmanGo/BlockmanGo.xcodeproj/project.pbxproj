@@ -241,6 +241,8 @@
 		DD3255A9211016F000739E00 /* BlockmanGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlockmanGo.entitlements; sourceTree = "<group>"; };
 		DD3255AD211017B700739E00 /* BlockmanGo_Dev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlockmanGo_Dev.entitlements; sourceTree = "<group>"; };
 		DD3255AF2110281A00739E00 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DD3C3FF72112A98100838E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD3C3FF92112A99500838E02 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DD456C38210EBDE6009465FE /* BlockmanGo_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockmanGo_Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD456C39210EBDE6009465FE /* BlockmanGo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "BlockmanGo copy-Info.plist"; path = "/Users/kiben/BlockmanGo/BlockmanGo/BlockmanGo copy-Info.plist"; sourceTree = "<absolute>"; };
 		DD456C3B210ECAA2009465FE /* BlockHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockHUD.swift; sourceTree = "<group>"; };
@@ -872,6 +874,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = DD51604320EC6B740000B8DC;
 			productRefGroup = DD51604D20EC6B740000B8DC /* Products */;
@@ -1274,6 +1277,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				DDA4B0E42106D9A1004346C5 /* en */,
+				DD3C3FF72112A98100838E02 /* Base */,
+				DD3C3FF92112A99500838E02 /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1334,6 +1339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1391,6 +1397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

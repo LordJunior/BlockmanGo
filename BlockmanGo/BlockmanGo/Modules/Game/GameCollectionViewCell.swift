@@ -95,7 +95,7 @@ class GameCollectionViewCell: UICollectionViewCell {
         }).layout(snapKitMaker: { (make) in
             make.left.equalTo(thumbnailView!.snp.right).offset(12)
             make.right.equalToSuperview().inset(12)
-            make.top.equalToSuperview().offset(18)
+            make.top.equalToSuperview().offset(10)
         })
         
         modeLabel = UILabel().addTo(superView: backgroundImageView).configure({ (label) in

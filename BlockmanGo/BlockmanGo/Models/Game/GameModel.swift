@@ -53,7 +53,7 @@ struct GameModel: HandyJSON {
                 guard let gameTitle = gameTitle else {
                     return ""
                 }
-                return gameTitle + "\nMode"
+                return gameTitle + "\n\(R.string.localizable.mode())"
             }, toJSON: { gameTitle -> String in
                 guard let gameTitle = gameTitle else {
                     return ""

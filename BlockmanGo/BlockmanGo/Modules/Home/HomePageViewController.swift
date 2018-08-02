@@ -14,9 +14,11 @@ class HomePageViewController: UIViewController {
         super.viewDidLoad()
         
         let nicknameTextSize = (UserManager.shared.nickname as NSString).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : UIFont.size14], context: nil).size
+        let idTextSize = ("ID: " + UserManager.shared.userID as NSString).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : UIFont.size11], context: nil).size
+        let accountViewWidth = nicknameTextSize.width > idTextSize.width ? nicknameTextSize.width : idTextSize.width
         AccountInfoView().addTo(superView: view).layout { (make) in
             make.top.left.equalToSuperview().inset(5)
-            make.size.equalTo(CGSize(width: nicknameTextSize.width + 80, height: 53))
+            make.size.equalTo(CGSize(width: accountViewWidth + 80, height: 53))
         }.configure { (infoView) in
             infoView.nickname = UserManager.shared.nickname
             infoView.userID = UserManager.shared.userID

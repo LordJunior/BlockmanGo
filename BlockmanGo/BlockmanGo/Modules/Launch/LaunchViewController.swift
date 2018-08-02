@@ -41,7 +41,7 @@ class LaunchViewController: UIViewController {
             button.setImage(R.image.launch_bulletin(), for: .normal)
             button.titleLabel?.font = UIFont.size11
             button.setTitleColor(UIColor.white, for: .normal)
-            button.setTitle("公告", for: .normal)
+            button.setTitle(R.string.localizable.bulletion(), for: .normal)
             button.transform = CGAffineTransform.init(translationX: 0, y: -44)
             button.addTarget(self, action: #selector(bulletinButtonClicked), for: .touchUpInside)
             button.centerVertically()

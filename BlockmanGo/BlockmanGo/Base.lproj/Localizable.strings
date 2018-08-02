@@ -1,0 +1,954 @@
+/* 
+  Localizable.strings
+  BlockmanGo
+
+  Created by KiBen on 2018/7/24.
+  Copyright © 2018年 SanboxOL. All rights reserved.
+*/
+
+/* 关于Blocky Mods */
+"about_me" = "About Blockman go";
+
+/* 账号: */
+"account" = "Account";
+
+/* 账号与安全 */
+"account_and_security" = "Account and security";
+
+/* 账号格式不正确 */
+"account_format_not_valid" = "Format is incorrect";
+
+/* 账号 */
+"account_name" = "Account";
+
+/* 密码 */
+"account_password" = "Password";
+
+/* 点赞数 */
+"appreciate" = "Likes";
+
+/* 绑定成功 */
+"bind_success" = "Bind_success";
+
+/* 生日 */
+"birthday" = "Birthday";
+
+/* 分类 */
+"category" = "Category";
+
+/* 冒险 */
+"category_adventure" = "AVG";
+
+/* 全部 */
+"category_all" = "All";
+
+/* 枪战 */
+"category_gun" = "STG";
+
+/* 经营 */
+"category_manage" = "SIM";
+
+/* PVP */
+"category_pvp" = "PVP";
+
+/* 换一批 */
+"change_another" = "Change";
+
+/* 检查更新 */
+"check_update" = "Check update";
+
+/* 关闭 */
+"close" = "Close";
+
+/* 失败 */
+"common_fail" = "Failed";
+
+/* 取消 */
+"common_cancel" = "Cancel";
+
+/* 取消 */
+"common_cancel" = "Cancel";
+
+/* 相册 */
+"common_photo_library" = "Photo Library";
+
+/* 相机 */
+"common_camera" = "Camera";
+
+/* 请求失败，请重试 */
+"common_request_fail_retry" = "Faild,please retry";
+
+/* 成功 */
+"common_success" = "Succeed";
+
+/* 确认密码 */
+"confirm_password" = "Confirm password";
+
+/* 确认付款 */
+"confirm_payment" = "Confirm payment";
+
+/* 创建账号 */
+"create_Account" = "Create account";
+
+/* 创建账号 */
+"create_account" = "Create account";
+
+/* 服装账单 */
+"decoration_bill" = "Bill";
+
+/* decoration_has_purchased */
+"decoration_has_purchased" = "Purchased";
+
+/* 购买失败 */
+"decoration_pay_failed" = "Pay failed";
+
+/* 购买成功 */
+"decoration_pay_successful" = "Pay succeed, dress now?";
+
+/* decoration_remain_quantity */
+"decoration_remain_quantity" = "Remaining";
+
+/* 合计: */
+"decoration_shopcart_total" = "Total: ";
+
+/* 魔方不足 */
+"diamonds_not_enough" = "Bcube not enough";
+
+/* 完成 */
+"done" = "Done";
+
+/* 重复新密码 */
+"double_input_new_password" = "Repeat new password";
+
+/* 邮件格式不正确 */
+"email_format_not_valid" = "E-mail format is incorrect";
+
+/* 进入游戏 */
+"enter_game" = "Join game";
+
+/* 进入游戏失败，请重试 */
+"enter_game_fail_retry" = "Join game failed, please retry";
+
+/* 问题反馈 */
+"feedback" = "Feedback";
+
+/* 女 */
+"female" = "Female";
+
+/* 忘记密码 */
+"forget_password" = "Forget password";
+
+/* 朋友在玩 */
+"friends_playing" = "Friends game";
+
+/* 游戏介绍: */
+"game_introduce" = "Introduce";
+
+/* 性别
+ 性别: */
+"gender" = "Gender";
+
+/* 性别暂不支持修改 */
+"gender_can_not_modify" = "Gender can not modify";
+
+/* 金币不足 */
+"golds_not_enough" = "Golds not enough";
+
+/* 已有账号 */
+"has_already_account" = "Account exist already";
+
+/* 帮助 */
+"help" = "Help";
+
+/* 输入邮箱 */
+"input_email" = "Input email";
+
+/* 输入新密码 */
+"input_new_password" = "Input new password";
+
+/* 输入昵称 */
+"input_nickname" = "Input nickname";
+
+/* 输入原密码 */
+"input_origin_password" = "Input origin password";
+
+/* 输入验证码 */
+"input_verification_code" = "Input verification code";
+
+/* 介绍一下你自己吧... */
+"introduce_yourself" = "Introduce yourself";
+
+/* 个人简介
+ 简介: */
+"introduction" = "Introduction: ";
+
+/* 是否放弃注册? */
+"is_cancel_register" = "Cancel register?";
+
+/* 是否退出当前账号? */
+"is_sure_log_out" = "Log out account?";
+
+/* 是否解绑邮箱 */
+"is_unbind_email" = "Unbind email?";
+
+/* 登录 */
+"log_in" = "login";
+
+/* 退出登录 */
+"log_out" = "Exit";
+
+/* 邮箱 */
+"mail" = "Mail";
+
+/* 男 */
+"male" = "Male";
+
+/* 消息提醒 */
+"message_notification" = "Notice";
+
+/* 修改失败，请重试 */
+"modify_fail_retry" = "Modify failed,please retry";
+
+/* 修改密码 */
+"modify_password" = "Modify password";
+
+/* 修改成功 */
+"modify_success" = "Modify succeed";
+
+/* 下一步 */
+"next_step" = "Next";
+
+/* 昵称 */
+"nickname" = "Nickname";
+
+/* 头像 */
+"portrait" = "Portrait";
+
+/* 昵称暂不支持修改 */
+"nickname_can_not_modify" = "Nickname can not modify now";
+
+/* 没有权限，请登录 */
+"no_permission" = "No permission,please login";
+
+/* 提示 */
+"notification" = "Tips";
+
+/* 上架时间
+ 上架时间 ▾ */
+"online_time" = "Added time";
+
+/* 密  码: */
+"password" = "Password";
+
+/* 密码格式不正确 */
+"password_format_not_valid" = "Password format is not valid";
+
+/* 验证密码不匹配 */
+"password_not_match" = "Password not match";
+
+/* 手机号码 */
+"phone_number" = "Phone_number";
+
+/* 手机号码不正确 */
+"phone_number_format_not_valid" = "Phone number format is not valid";
+
+/* 人气 */
+"popular" = "Popular";
+
+/* 最近在玩 */
+"recently_playing" = "Recently";
+
+/* 充值 */
+"recharge" = "Top up";
+
+/* 成功 */
+"recharge_already_pay" = "Succeed";
+
+/* 魔方 */
+"recharge_diamond" = "Bcube";
+
+/* 赠送%@ */
+"recharge_gift_more" = "VIP extra gift %@ Bcube";
+
+/* 金币 */
+"recharge_gold" = "Golds";
+
+/* 价格: */
+"recharge_price" = "Price";
+
+/* l 选择充值额度 */
+"recharge_select_product" = "Select";
+
+/* 推荐 */
+"recommend" = "Recommend";
+
+/* 推荐 */
+"section_recommend" = "Recommend";
+
+/* 注册 */
+"register" = "Register";
+
+/* 注册成功 */
+"register_success" = "Register succeed";
+
+/* *请牢记你的用户名和密码 */
+"remember_your_account_password" = "Remember account and password";
+
+/* 保存失败, 请重试 */
+"save_fail_retry" = "Save failed.Please retry";
+
+/* 保存截图 */
+"save_screenshot" = "Save";
+
+/* 保存成功 */
+"save_success" = "Save succeed";
+
+/* 发送成功，请检查邮箱 */
+"send_success_check_mail" = "Send succeed.Please check mail";
+
+/* 设置 */
+"setting" = "Setting";
+
+/* 商店 */
+"shop" = "Shop";
+
+/* shop_cart */
+"shop_cart" = "Shop cart";
+
+/* 聊天 */
+"tab_title_chat" = "Chat";
+
+/* 装饰 */
+"tab_title_decoration" = "Avatar";
+
+/* 部落 */
+"tab_title_tribe" = "Tribe";
+
+/* 游戏 */
+"tab_title_games" = "Games";
+
+/* 个人详情 */
+"tab_title_profile" = "More";
+
+/* 点击修改 */
+"tap_to_modify" = "Modify";
+
+/* 该账号已存在 */
+"the_account_exist" = "Account exist";
+
+/* 该账号不存在 */
+"the_account_not_exist" = "Account not exist";
+
+/* 短信发送失败 */
+"the_msg_send_fail" = "Msg send failed";
+
+/* 该昵称已存在 */
+"the_nickname_exist" = "Nickname exist";
+
+/* 昵称不合格 */
+"the_nickname_not_valid" = "Nickname not valid";
+
+/* 密码错误 */
+"the_password_error" = "Password is wrong";
+
+/* 该手机已被使用 */
+"the_phone_has_been_used" = "Phone number has been used";
+
+/* 该手机未绑定账号 */
+"the_phone_not_bind_account" = "Phone number not bind account";
+
+/* 系统无此装饰 */
+"the_system_has_no_the_decoration" = "Had no this decoration now";
+
+/* 验证码错误 */
+"the_verification_code_error" = "Verification code error";
+
+/* 第三方账号登录 */
+"third_party_log_in" = "Third party login";
+
+/* 装饰商城 */
+"title_decoration_shop" = "Avartas shop";
+
+/* title_games_detail */
+"title_games_detail" = "Games detail";
+
+/* 个人信息 */
+"title_profile_detail" = "Profile detail";
+
+/* 购物车 */
+"title_shopping_cart" = "Shopping cart";
+
+/* 上传失败，请重试 */
+"upload_fail" = "upload failed";
+
+/* 上传失败，请重试 */
+"upload_fail_retry" = "Upload failed,please retry";
+
+/* 上传头像 */
+"upload_portrait" = "Upload";
+
+/* 上传成功 */
+"upload_success" = "Upload succeed";
+
+/* 验证码格式不正确 */
+"verofication_code_format_not_valid" = "Verofication code format not valid";
+
+/* 版本 */
+"version" = "Version";
+
+/* 您未拥有此装饰 */
+"you_dont_have_decoration" = "You dont have this decoration";
+
+/* 你已经点过赞了 */
+"you_have_been_appreciate" = "Likes already";
+
+/* 账号验证失效，重新登录 */
+"authorization_fail_log_in" = "Authorization fail, please log in";
+
+/* 当前网络不可用，请检查网络 */
+"network_lost_please_check" = "Network lost, please check";
+
+/* 绑定邮箱 */
+"bind_email" = "Email Binding";
+
+/* 绑定手机 */
+"bind_phone" = "Phone Binding";
+
+/* 修改密码 */
+"modify_password" = "Modify Password";
+
+/* 请选择 */
+"please_select" = "Select";
+
+/* 未绑定 */
+"unbind" = "Unbinding";
+
+/* 个人简介 */
+"title_introduction" = "Introduction";
+
+/* 暂无数据，轻点重试 */
+"no_data_tap_rety" = "No data, tap to retry";
+
+/* 暂无数据 */
+"no_data" = "No data";
+
+/* 还没玩过该游戏 */
+"without_play_game" = "Have not played the game yet";
+
+/* 该邮箱未绑定账号 */
+"email_not_bind_user" = "The email isn't bind account";
+
+/* 该邮箱已被使用 */
+"email_has_been_used" = "The email has been used";
+
+/* 该账号已绑定邮箱 */
+"account_has_bind_email" = "The account has bind email";
+
+/* 未知来源 */
+"recharge_record_unknown" = "Unknown";
+
+/* 谷歌支付 */
+"recharge_record_google_pay" = "Google Pay";
+
+/* 谷歌退款 */
+"recharge_record_google_refund" = "Google Refund";
+
+/* 购买装饰 */
+"recharge_record_buy_decoration" = "Purchase Decorations";
+
+/* 回收装饰 */
+"recharge_record_recycle_decoration" = "Recycle Decoration";
+
+/* 游戏内购买道具 */
+"recharge_record_game_buy_props" = "Purchase Game Props";
+
+/* 购买物品失败退款 */
+"recharge_record_purchase_fail_refund" = "Purchase Product Failed";
+
+/* 第三方支付 */
+"recharge_record_third_pay" = "Third-Party Payment";
+
+/* 第三方支付退款 */
+"recharge_record_third_refund" = "Third-Party Payment Refund";
+
+/* 苹果支付 */
+"recharge_record_apple_pay" = "Apple Pay";
+
+/* 游戏获取 */
+"recharge_record_fetch_from_game" = "Play Game";
+
+/* 您未授权此应用访问设备的相册，请前往“设置”授权 */
+"no_permission_album_go_settings" = "You do not authorize this application to access the device's album, please go to \"Settings\" for authorization.";
+
+/* 正在加载.... */
+"loading" = "Loading....";
+
+/* 6位以上数字或字母 */
+"more_than_six_digits_or_letters" = "(More than 6 digits or letters)";
+
+/* 3位以上数字或字母 */
+"more_than_three_digits_or_letters" = "(More than 3 digits or letters)";
+
+/* 商品数据请求失败 */
+"apppurchase_product_request_fail" = "Product request failed";
+
+/* 处理未完成交易 */
+"apppurchase_resolve_unfinished_transaction" = "Restore unfinished transaction";
+
+"vip_after_login" = "Become VIP after login";
+
+"recharge_after_login" = "Top up after login";
+
+"buy_after_login" = "Purchased after login";
+
+"top_up" = "Top Up";
+
+"vip_diamonds_gift" = "Top-up gift";
+
+"vip_mvp_app_logo" = "App logo";
+
+"vip_mvp_game_logo" = "Game logo";
+
+"vip_mvp_change_skin" = "Skin color switching (many)";
+
+"vip_mvp_diamond_gift" = "Return 10 diamonds daily";
+
+"vip_mvp_clothes" = "Exclusive decoration";
+
+"vip_mvp_discount" = "20% discount buy decoration";
+
+"vip_mvp_gold_3" = "Limit of gold daily *3";
+
+"vip_mvp_friend_num" = "Limit of friends increase";
+
+"vip_mvp_gold_growth" = "Get 200% golds per game";
+
+"vip_mvp_action" = "Exclusive action";
+
+"vip_vip_up_change_skin" = "Skin color switching (few)";
+
+"vip_vip_up_diamond_gift" = "Return 3 diamonds daily";
+
+"vip_vip_up_discount" = "10% discount buy decoration";
+
+"vip_vip_up_gold_growth" = "Get 150% golds per game";
+
+"vip_vip_up_gold_2" = "Limit of gold daily *2";
+
+"vip_vip_gold_1" = "Limit of gold daily *1.5";
+
+"vip_vip_gold_growth" = "Get 120% golds per game";
+
+"vip_title_text" = "Dear %@:You have not open vip service";
+
+"vip_title_has_vip_text" = "Dear %@: Your %@ will expire on %@";
+
+"shop_car_vip_discount_tips" = "Tips：VIP+ get 10% off，MVP get 20% off";
+
+"shop_car_vip_plus_discount" = "VIP+ 10\%OFF: ";
+
+"shop_car_mvp_discount" = "MVP 20\%OFF: ";
+
+"common_notification" = "Notification";
+
+"common_receive_success" = "Receive success";
+
+"video_load_failed_close_retry" = "Video Load failed, close then retry";
+
+"daily_task_already_received" = "You have already received this reward";
+
+"golds_gift" = "Golds Gift";
+
+"receive" = "Receive";
+
+"has_received" = "Received";
+
+"daily_reward_update_after_time" = "Update after %@";
+
+"balance_not_enough_then_recharge" = "Insufficient balance \nTop up";
+
+"mailbox" = "Mailbox";
+
+"have_no_mails" = "You have no mails yet";
+
+"whether_clear_all_mails" = "Clear all mails?";
+
+"mail_title" = "   Title: ";
+
+"mail_content" = "Content: ";
+
+"mail_delete_after_fifteen_days" = "Mail will be deleted after 15 days";
+
+"mail_attachment" = "Attachment:";
+
+"common_delete" = "Delete";
+
+"common_delete_success" = "Delete Successful";
+
+"common_delete_fail" = "Delete Failed";
+
+"vip_level_not_enough_then_payment" = "Low VIP level, please upgrade VIP level";
+
+"sign_in_after_login" = "Get reward after login";
+
+"play_game_after_login" = "Play this game after login";
+
+"vip_page_title" = "Enjoy privileges(%d/%d)";
+
+"month" = "Month";
+
+"year" = "Year";
+
+"vip_discount_text" = "Upgrade to VIP+、MVP for more discount";
+
+"vip_pay_title" = "Open VIP";
+
+"vip_pay_open" = "Open/Renew";
+
+"vip_pay_open_vip" = "Open";
+
+"vip_pay_renew_vip" = "Renew";
+
+"vip_pay_renew_vip" = "Upgrade";
+
+"vip_detail_title" = "Privileges details";
+
+"vip_detail_target" = "Privileged object";
+
+"unable_pay_vip_lower_than_yours" = "Unable to purchase a VIP lower than yours";
+
+"chat" = "Chat";
+
+"friends" = "Friend";
+
+"new_friends" = "New Friends";
+
+"friends_count" = "   Friend list(%d/%d)";
+
+"customer_service" = "Customer service";
+
+"online" = "Online";
+
+"offline" = "Offline";
+
+"playing_game" = "%@ in game";
+
+"add_alias" = "Add note";
+
+"delete_friend" = "Delete friend";
+
+"send_Message" = "Send message";
+
+"accept_request" = "Accept";
+
+"reject_request" = "Refuse";
+
+"request_accepted" = "Accepted";
+
+"request_rejected" = "Refused";
+
+"search_new_friend" = "Add new friends";
+
+"no_search_result" = "No results";
+
+"search_new_friend" = "Add new friends";
+
+"add_friend" = "Add";
+
+"has_friendship" = "Friends now";
+
+"add_friend_tips" = "Introduce yourself";
+
+"add_successful" = "Succeed";
+
+"not_friend_not_add_alias" = "Can not add note for stranger";
+
+"input_alias" = "Enter note";
+
+"request_send_successful" = "Send successful";
+
+"g1001" = "Survival Games";
+
+"g1002" = "Sky Wars";
+
+"g1007" = "Bow Spleef";
+
+"g1008" = "Bed Wars";
+
+"g1009" = "Murder Mystery";
+
+"g1010" = "TNT Run";
+
+"g1011" = "Snow Ball Battle";
+
+"g1012" = "Snow Ball 100 Kills";
+
+"g1013" = "Zombies infection";
+
+"g1014" = "Jail Break";
+
+"g1015" = "Treasure Hunter";
+
+"g1016" = "Battle Field";
+
+// 把现在所有的游戏，都按这样的格式加上
+
+"modify_alias_successful" = "Modify successful";
+
+"we_are_friend_start_chatting" = "We have been friends. Start chatting";
+
+"engine" = "Engine";
+
+"unknown_message_type" = "Unknown message type";
+
+"delete_alias_successful" = "Delete note successful";
+
+"friend_count_limit" = "Maximum number of friends reached";
+
+"no_conversation_start_chatting" = "No conversation. Start Chatting with friends";
+
+"tribe_shop" = "Shop";
+
+"tribe_rank" = "Leaderboard";
+
+"tribe_bulletin" = "Notice board";
+
+"tribe_chat" = "Chat";
+
+"tribe_notice" = "Notice";
+
+"tribe_member_list" = "Member list (%d/%d)";
+
+"tribe_donation_value" = "Donation";
+
+"tribe_edit_information" = "Edit profile";
+
+"tribe_manage_member" = "Manage member";
+
+"tribe_member_count" = "Member";
+
+"tribe_no_labels" = "No tag";
+
+"tribe_role_chief" = "Chief";
+
+"tribe_role_elder" = "Elder";
+
+"tribe_introduction" = "Introduction";
+
+"tribe_disslove" = "Dissolve clan";
+
+"tribe_request_join" = "Join clan";
+
+"tribe_exit" = "Quit clan";
+
+"tribe_label" = "Tag";
+
+"tribe_modify_information" = "Modify";
+
+"tribe_longpress_manage_member" = "Long press to edit member";
+
+"tribe_not_operate_self" = "Can't do it on yourself";
+
+"tribe_transform_chief" = "Handover chief";
+
+"tribe_transform_elder" = "Set as elder";
+
+"tribe_transform_member" = "Remove Elder";
+
+"tribe_remove" = "Remove member";
+
+"tribe_invite_friends" = "Invite friend";
+
+"tribe_task" = "Clan task";
+
+"tribe_donate_history" = "Donation history";
+
+"tribe_task_for_level" = "%@ Level task";
+
+"tribe_task_tribal" = "Team";
+
+"tribe_task_personal" = "Individual";
+
+"tribe_task_remain_time_refresh" = "Refresh tasks in";
+
+"tribe_task_receive" = "Accept";
+
+"tribe_task_receive_reward" = "Collect";
+
+"tribe_task_doing" = "In progress";
+
+"tribe_task_done" = "Completed";
+
+"tribe_rank_week" = "Weekly";
+
+"tribe_rank_month" = "Monthly";
+
+"tribe_rank_all" = "Overall";
+
+"tribe_rank_remain_time" = "Remaining time of Season: ";
+
+"tribe_user_have_in" = "Already in clan";
+
+"tribe_member_join_in_day_limit" = "Reached daily limit";
+
+"tribe_member_full" = "Reached maximum members";
+
+"tribe_no_permisson" = "No authority";
+
+"tribe_new_add_member_in_day_limit" = "Reached daily limit of added members";
+
+"tribe_request_join_successful" = "Apply successfully";
+
+"tribe_have_exited" = "has quited clan";
+
+"tribe_you_not_in" = "You haven't join any clan";
+
+"tribe_have_dissolved" = "has dissolved clan";
+
+"tribe_dissolve_only_chief_or_elder" = "Only chief can dissolve";
+
+"tribe_whether_exit" = "Are you sure?";
+
+"tribe_whether_dissolve" = "Are you sure?";
+
+"tribe_say_something" = "Write something";
+
+"tribe_no_donate_history" = "No history";
+
+"tribe_donate_limit" = "Reached donation limit";
+
+"tribe_input_tribe_name" = "Enter clan name";
+
+"tribe_input_tribe_introduction" = "Enter clan introduction";
+
+"tribe_create_tribe" = "Create clan  ";
+
+"tribe_modify_successful" = "Modify successfully";
+
+"tribe_congratrulation" = "Congratulations";
+
+"tribe_create_tribe_successful" = "Create successfully!\nNow, Invite your friends to join.";
+
+"tribe_you_are_not_chief_or_elder" = "You are not chief or elder";
+
+"tribe_tribe_name_exists" = "Existing clan name";
+
+"tribe_only_add_four_labels" = "No more than 4 tags";
+
+"tribe_add_labels" = "Add tag";
+
+"tribe_the_removed_user_not_in_triube" = "This member hasn't joined clan";
+
+"tribe_elder_count_limit" = "Reached limit of elders";
+
+"tribe_only_chief_can_operate_elder" = "Only chief can manage elder";
+
+"tribe_invite_successful" = "Invite successfully";
+
+"tribe_invite_count_limit" = "Reached limit of invitation";
+
+"tribe_only_chief_or_elder_can_receive_task" = "Only chief or elder can accept task";
+
+"tribe_only_chief_or_elder_can_refresh_task" = "Only chief or elder can refresh task";
+
+"tribe_receive_task_successful" = "Collect successfully";
+
+"tribe_receive_task_failed" = "Collect failed";
+
+"tribe_receive_task_reward_successful" = "Collect reward successfully";
+
+"tribe_receive_task_reward_failed" = "Collect reward failed";
+
+"tribe_receive_task_reward_in_day_limit" = "Reached daily limit of rewards";
+
+"tribe_notice_request_join_in" = "Apply to join clan";
+
+"tribe_notice_you_have_been_elder" = "You are promoted to elder";
+
+"tribe_notice_you_have_been_chief" = "You have been chief";
+
+"tribe_notice_you_have_been_remove" = "You are removed";
+
+"tribe_notice_invite_you_to_join" = "Invite you to join %@ clan";
+
+"tribe_no_like_then_create_one" = "You can chat with clan members,unlock more free avatars after creating or joining clan.These are the clans we recommended for you!";
+
+"tribe_create" = "Create clan";
+
+"tribe_list_chief" = "Chief: %@";
+
+"tribe_list_member_count" = "Member%d/%d";
+
+"tribe_you_have_in" = "You are in a clan";
+
+"tribe_the_user_not_in_tribe" = "This member is not in clan";
+
+"tribe_donate" = "Donate";
+
+"tribe_get" = "Gain:";
+
+"tribe_retain" = "Hold:";
+
+"tribe_donate_doday_limit" = "Daily limit:  ";
+
+"tribe_congratrulate_you_fetch" = "Congrats!You now get";
+
+"tribe_information" = "Clan information";
+
+"tribe_modify" = "Modify clan";
+
+"tribe_receive_task_in_day_limit" = "You have reached daily maximum tasks";
+
+"tribe_create_not_enough_gold_then_use_diamond" = "Inadequate golds, cost 60 bcubes to create a clan?";
+
+"tribe_no_tribe_not_use_decoration" = "Can't wear for no clan";
+
+"tribe_tribe_level_not_enough_not_use_decoration" = "Can't wear for inadequate clan level";
+
+"tribe_task_not_refresh_until_done" = "Can not refresh after receiving all tasks";
+
+"vip_upgrade_retain_exchange" = "The remaining VIP days will be converted to the equivalent days of higher level after upgrade";
+
+"clear_cache" = "Clear  Cache";
+
+"image_cache" = "Images  Cache";
+
+"map_cache" = "Maps  Cache";
+
+"special_task" = "Special task";
+
+"tribe_labels_not_empty" = "Labels can not be empty";
+
+"tribe_portrait_not_empty" = "Avatar can not be empty";
+
+"tribe_decoration_level_unlock" = "LV%d Unlock";
+
+"pay_successful" = "Pay successful";
+
+"free" = "Free";
+
+"first_load_take_more_time" = "The first load may take more time";
+
+"game_version_too_low" = "Version is too low, please update";
+
+"game_dispatch_in_queue_time" = "Waiting for server to dispatch resources \n %@";
+
+"update_bulletin" = "Update Bulletin";
+
+"I_know" = "Got it";
+
+"checking_engine_resource" = "Checking resources";
+
+"find_new_version" = "Update Version";
+
+"need_to_download_new_version" = "Download in APP Store";
+
+"initializing_resources" = "Initializing resources";
+
+"loading_finished" = "Loading finished";
+
+"click_enter_game" = "Enter Game";
+
+"mode" = "mode";
+
+"bulletion" = "Board";
