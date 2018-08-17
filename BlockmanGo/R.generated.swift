@@ -1278,7 +1278,7 @@ struct R: Rswift.Validatable {
   
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 386 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 388 localization keys.
     struct localizable {
       /// Base translation:    Friend list(%d/%d)
       /// 
@@ -1388,6 +1388,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let vip_mvp_app_logo = Rswift.StringResource(key: "vip_mvp_app_logo", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: App will take some time to unpacking the local game resources for you. Continue? (Need decompress before play normally)
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let unpacking_resources_if_continue = Rswift.StringResource(key: "unpacking_resources_if_continue", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Apple Pay
       /// 
       /// Locales: en, Base, zh-Hans
@@ -1528,6 +1532,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let checking_engine_resource = Rswift.StringResource(key: "checking_engine_resource", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Cheking finished. Enjoy game.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let checking_done = Rswift.StringResource(key: "checking_done", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Chief
       /// 
       /// Locales: en, Base, zh-Hans
@@ -1876,10 +1884,6 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let tribe_task_personal = Rswift.StringResource(key: "tribe_task_personal", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
-      /// Base translation: Initializing resources
-      /// 
-      /// Locales: en, Base, zh-Hans
-      static let initializing_resources = Rswift.StringResource(key: "initializing_resources", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Input email
       /// 
       /// Locales: en, Base, zh-Hans
@@ -1992,10 +1996,6 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let vip_mvp_gold_3 = Rswift.StringResource(key: "vip_mvp_gold_3", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
-      /// Base translation: Loading finished
-      /// 
-      /// Locales: en, Base, zh-Hans
-      static let loading_finished = Rswift.StringResource(key: "loading_finished", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Loading....
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2672,6 +2672,14 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let unknown_message_type = Rswift.StringResource(key: "unknown_message_type", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Unpacking finished. Enjoy game.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let unpacking_finished = Rswift.StringResource(key: "unpacking_finished", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Unpacking local resources %.1fM. (Process does not consume traffic)
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let unpacking_resources = Rswift.StringResource(key: "unpacking_resources", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Update Bulletin
       /// 
       /// Locales: en, Base, zh-Hans
@@ -3014,6 +3022,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("vip_mvp_app_logo", bundle: R.hostingBundle, value: "App logo", comment: "")
       }
       
+      /// Base translation: App will take some time to unpacking the local game resources for you. Continue? (Need decompress before play normally)
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func unpacking_resources_if_continue(_: Void = ()) -> String {
+        return NSLocalizedString("unpacking_resources_if_continue", bundle: R.hostingBundle, value: "App will take some time to unpacking the local game resources for you. Continue?\n(Need decompress before play normally)", comment: "")
+      }
+      
       /// Base translation: Apple Pay
       /// 
       /// Locales: en, Base, zh-Hans
@@ -3257,6 +3272,13 @@ struct R: Rswift.Validatable {
       /// Locales: en, Base, zh-Hans
       static func checking_engine_resource(_: Void = ()) -> String {
         return NSLocalizedString("checking_engine_resource", bundle: R.hostingBundle, value: "Checking resources", comment: "")
+      }
+      
+      /// Base translation: Cheking finished. Enjoy game.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func checking_done(_: Void = ()) -> String {
+        return NSLocalizedString("checking_done", bundle: R.hostingBundle, value: "Cheking finished. Enjoy game.", comment: "")
       }
       
       /// Base translation: Chief
@@ -3868,13 +3890,6 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("tribe_task_personal", bundle: R.hostingBundle, value: "Individual", comment: "")
       }
       
-      /// Base translation: Initializing resources
-      /// 
-      /// Locales: en, Base, zh-Hans
-      static func initializing_resources(_: Void = ()) -> String {
-        return NSLocalizedString("initializing_resources", bundle: R.hostingBundle, value: "Initializing resources", comment: "")
-      }
-      
       /// Base translation: Input email
       /// 
       /// Locales: en, Base, zh-Hans
@@ -4069,13 +4084,6 @@ struct R: Rswift.Validatable {
       /// Locales: en, Base, zh-Hans
       static func vip_mvp_gold_3(_: Void = ()) -> String {
         return NSLocalizedString("vip_mvp_gold_3", bundle: R.hostingBundle, value: "Limit of gold daily *3", comment: "")
-      }
-      
-      /// Base translation: Loading finished
-      /// 
-      /// Locales: en, Base, zh-Hans
-      static func loading_finished(_: Void = ()) -> String {
-        return NSLocalizedString("loading_finished", bundle: R.hostingBundle, value: "Loading finished", comment: "")
       }
       
       /// Base translation: Loading....
@@ -5259,6 +5267,20 @@ struct R: Rswift.Validatable {
       /// Locales: en, Base, zh-Hans
       static func unknown_message_type(_: Void = ()) -> String {
         return NSLocalizedString("unknown_message_type", bundle: R.hostingBundle, value: "Unknown message type", comment: "")
+      }
+      
+      /// Base translation: Unpacking finished. Enjoy game.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func unpacking_finished(_: Void = ()) -> String {
+        return NSLocalizedString("unpacking_finished", bundle: R.hostingBundle, value: "Unpacking finished. Enjoy game.", comment: "")
+      }
+      
+      /// Base translation: Unpacking local resources %.1fM. (Process does not consume traffic)
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func unpacking_resources(_ value1: Double) -> String {
+        return String(format: NSLocalizedString("unpacking_resources", bundle: R.hostingBundle, value: "Unpacking local resources %.1fM. (Process does not consume traffic)", comment: ""), locale: R.applicationLocale, value1)
       }
       
       /// Base translation: Update Bulletin

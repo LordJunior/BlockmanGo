@@ -939,13 +939,17 @@
 
 "checking_engine_resource" = "Checking resources";
 
+"checking_done" = "Cheking finished. Enjoy game.";
+
 "find_new_version" = "Update Version";
 
 "need_to_download_new_version" = "Download in APP Store";
 
-"initializing_resources" = "Initializing resources";
+"unpacking_resources_if_continue" = "App will take some time to unpacking the local game resources for you. Continue?\n(Need decompress before play normally)";
 
-"loading_finished" = "Loading finished";
+"unpacking_resources" = "Unpacking local resources %.1fM. (Process does not consume traffic)";
+
+"unpacking_finished" = "Unpacking finished. Enjoy game.";
 
 "click_enter_game" = "Enter Game";
 

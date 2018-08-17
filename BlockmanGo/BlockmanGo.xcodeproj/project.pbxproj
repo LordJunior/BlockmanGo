@@ -13,7 +13,6 @@
 		DD06D59D2102360B004A570B /* InitializeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06D59C2102360B004A570B /* InitializeProfileViewController.swift */; };
 		DD3255A6210FFB8600739E00 /* GameInQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3255A4210FFB8600739E00 /* GameInQueueViewController.swift */; };
 		DD3255A7210FFB8600739E00 /* GameInQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3255A4210FFB8600739E00 /* GameInQueueViewController.swift */; };
-		DD3255B02110281A00739E00 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3255AF2110281A00739E00 /* StoreKit.framework */; };
 		DD456BD6210EBDE6009465FE /* BMFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402FC20FEEDF500091B9D /* BMFileManager.swift */; };
 		DD456BD7210EBDE6009465FE /* GamesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F520F631F40000B8DC /* GamesAPI.swift */; };
 		DD456BD8210EBDE6009465FE /* BulletinModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030A20FF485200091B9D /* BulletinModelManager.swift */; };
@@ -240,7 +239,6 @@
 		DD3255A4210FFB8600739E00 /* GameInQueueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInQueueViewController.swift; sourceTree = "<group>"; };
 		DD3255A9211016F000739E00 /* BlockmanGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlockmanGo.entitlements; sourceTree = "<group>"; };
 		DD3255AD211017B700739E00 /* BlockmanGo_Dev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlockmanGo_Dev.entitlements; sourceTree = "<group>"; };
-		DD3255AF2110281A00739E00 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DD3C3FF72112A98100838E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DD3C3FF92112A99500838E02 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DD456C38210EBDE6009465FE /* BlockmanGo_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockmanGo_Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -348,7 +346,6 @@
 				DD456C24210EBDE6009465FE /* libbz2.1.0.tbd in Frameworks */,
 				DD456C25210EBDE6009465FE /* libc++.1.tbd in Frameworks */,
 				DD456C26210EBDE6009465FE /* libstdc++.6.0.9.tbd in Frameworks */,
-				DD3255B02110281A00739E00 /* StoreKit.framework in Frameworks */,
 				DD456C27210EBDE6009465FE /* BlockModsGameKit.framework in Frameworks */,
 				BAA2FD9B21D037FF16457CA7 /* Pods_BlockmanGo_Dev.framework in Frameworks */,
 			);
@@ -434,7 +431,6 @@
 		DD51606720EF63C90000B8DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DD3255AF2110281A00739E00 /* StoreKit.framework */,
 				DD51606C20EF63D60000B8DC /* libbz2.1.0.tbd */,
 				DD51606A20EF63CF0000B8DC /* libc++.1.tbd */,
 				DD51606820EF63CA0000B8DC /* libstdc++.6.0.9.tbd */,
@@ -840,13 +836,13 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Keychain = {
 								enabled = 1;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -855,13 +851,13 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Keychain = {
 								enabled = 1;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -1293,7 +1289,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BlockmanGo_Dev.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R3LUB63PG7;
+				DEVELOPMENT_TEAM = TUWZFZTDD4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1303,7 +1299,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DBLOCK_DEV";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sandbox.blockmango;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandboxol.blockmango;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BlockmanGo/BlockmanGo-Briding-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -1318,7 +1314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BlockmanGo_Dev.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R3LUB63PG7;
+				DEVELOPMENT_TEAM = TUWZFZTDD4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1327,7 +1323,7 @@
 				INFOPLIST_FILE = "BlockmanGo copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sandbox.blockmango;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandboxol.blockmango;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BlockmanGo/BlockmanGo-Briding-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -1450,8 +1446,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BlockmanGo/BlockmanGo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R3LUB63PG7;
+				DEVELOPMENT_TEAM = TUWZFZTDD4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1460,8 +1457,9 @@
 				INFOPLIST_FILE = BlockmanGo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sandbox.blockmango;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandboxol.blockmango;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BlockmanGo/BlockmanGo-Briding-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1474,8 +1472,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BlockmanGo/BlockmanGo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R3LUB63PG7;
+				DEVELOPMENT_TEAM = TUWZFZTDD4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1484,8 +1483,9 @@
 				INFOPLIST_FILE = BlockmanGo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sandbox.blockmango;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandboxol.blockmango;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BlockmanGo/BlockmanGo-Briding-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
