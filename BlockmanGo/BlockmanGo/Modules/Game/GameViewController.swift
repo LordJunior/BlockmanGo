@@ -112,6 +112,7 @@ class GameViewController: UIViewController {
                 if self.isPresentedInQueue {
                     TransitionManager.dismiss(animated: false)
                 }
+                AnalysisService.trackEvent(.stargame_success)
                 /// 进入游戏
                 let gameController = BMGameViewController.init()
                 gameController.bmDelegate = self
@@ -178,7 +179,9 @@ extension GameViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        TransitionManager.present(GameDetailViewController.self, animated: false, parameter: (games[indexPath.row].gameId, self))
+        let gameID = games[indexPath.row].gameId
+        AnalysisService.trackEvent(.click_game_detail_page, parameters: ["gameID" : gameID])
+        TransitionManager.present(GameDetailViewController.self, animated: false, parameter: (gameID, self))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -202,6 +205,7 @@ extension GameViewController: UICollectionViewDataSource, UICollectionViewDelega
 extension GameViewController: GameCollectionViewCellDelegate {
     func gameCollectionCellPlayButtonDidClicked(_ cell: GameCollectionViewCell) {
         guard let indexPath = collectionView?.indexPath(for: cell) else {return}
+        AnalysisService.trackEvent(.click_stargame, parameters: ["gameID" : games[indexPath.item].gameId])
         enterGame(gameID: games[indexPath.item].gameId)
     }
 }
@@ -216,6 +220,18 @@ extension GameViewController: SKStoreProductViewControllerDelegate {
 // MARK: 游戏模式view代理
 extension GameViewController: GameModesViewDelegate {
     func gameModesView(_ modesView: GameModesView, didSelectModeAt index: Int) {
+        switch index {
+        case 0:
+            AnalysisService.trackEvent(.click_all_tab)
+        case 1:
+            AnalysisService.trackEvent(.click_battle_tab)
+        case 3:
+            AnalysisService.trackEvent(.click_adv_tab)
+        case 5:
+            AnalysisService.trackEvent(.click_fps_tab)
+        default:
+            break
+        }
         fetchGamesWithMode(index)
     }
 }
@@ -224,6 +240,7 @@ extension GameViewController: GameModesViewDelegate {
 extension GameViewController: GameDetailViewControllerDelegate {
     func gameDetailViewControllerPlayGameButtonDidClicked(_ viewController: GameDetailViewController, gameID: String) {
         TransitionManager.dismiss(animated: false, completion: nil)
+        AnalysisService.trackEvent(.click_joingame, parameters: ["gameID" : gameID])
         enterGame(gameID: gameID)
     }
 }

@@ -76,9 +76,12 @@ class CheckForUpdatesViewController: UIViewController {
     private func checkForResourceUpdates() {
         self.progressView?.isHidden = false
         if engineResourceManager.copyResourceFromBundleIfNeed() {
+            AnalysisService.trackEvent(.resource_win_time)
             AlertController.alert(title:R.string.localizable.notification() , message: R.string.localizable.unpacking_resources_if_continue(), from: TransitionManager.rootViewController, showCancelButton: true)?.setCancelTitle("Exit").setDoneTitle("OK").done(completion: { (_) in
+                AnalysisService.trackEvent(.click_ok)
                 self.engineResourceManager.copyBundleResourceToCache()
             }).cancel(completion: { (_) in
+                AnalysisService.trackEvent(.click_exit)
                 abort()
             })
         }else if engineResourceManager.checkResourceUpdateIfNeed() {
@@ -102,6 +105,7 @@ extension CheckForUpdatesViewController: EngineResourceModelManagerDelegate {
     
     func engineResourceCopyDidFinished() {
         DebugLog("engineResourceCopyDidFinished 初始化完成")
+        AnalysisService.trackEvent(.resource_success)
         progressView?.displayInfo = R.string.localizable.unpacking_finished()
         progressView?.setProgress(1.0, animated: true)
         delay(0.2) {

@@ -94,6 +94,12 @@ class LaunchViewController: UIViewController {
         launchManager.generateNewAccount()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        AnalysisService.trackEvent(.enter_blockmango_page)
+    }
+    
     private func removeCheckForUpdateController() {
         checkForUpdateController?.willMove(toParentViewController: nil)
         checkForUpdateController?.view.removeFromSuperview()
@@ -126,6 +132,7 @@ class LaunchViewController: UIViewController {
         skyInfiniteView?.stopTranslating()
         backgroundImageView?.stopGravityMotion()
         DecorationControllerManager.shared.removeFromParent()
+        AnalysisService.trackEvent(.click_entergame)
         TransitionManager.currentNavigationController()?.setViewControllers([HomePageViewController()], animated: false)
     }
     

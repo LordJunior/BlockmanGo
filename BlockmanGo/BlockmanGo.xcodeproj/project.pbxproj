@@ -190,6 +190,12 @@
 		DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */; };
 		DDE09F9B21131F1700BD5CF8 /* BlockModsGameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; };
 		DDE09F9C21131F1700BD5CF8 /* BlockModsGameKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DDFB644C2126B6F30036AE0F /* AnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB644B2126B6F30036AE0F /* AnalysisService.swift */; };
+		DDFB644D2126B6F30036AE0F /* AnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB644B2126B6F30036AE0F /* AnalysisService.swift */; };
+		DDFB64502126C29B0036AE0F /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFB644F2126C29B0036AE0F /* libTalkingData.a */; };
+		DDFB64512126C29B0036AE0F /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFB644F2126C29B0036AE0F /* libTalkingData.a */; };
+		DDFB64532126C4A30036AE0F /* ThirdPartyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB64522126C4A30036AE0F /* ThirdPartyService.swift */; };
+		DDFB64542126C4A30036AE0F /* ThirdPartyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB64522126C4A30036AE0F /* ThirdPartyService.swift */; };
 		DDFFC8E82110C613008B80C0 /* GravityImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC8E72110C613008B80C0 /* GravityImageView.swift */; };
 		DDFFC8E92110C613008B80C0 /* GravityImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC8E72110C613008B80C0 /* GravityImageView.swift */; };
 /* End PBXBuildFile section */
@@ -334,6 +340,10 @@
 		DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDispatchModel.swift; sourceTree = "<group>"; };
 		DDA4B0E42106D9A1004346C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchBrandingViewController.swift; sourceTree = "<group>"; };
+		DDFB64452126B3D90036AE0F /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
+		DDFB644B2126B6F30036AE0F /* AnalysisService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisService.swift; sourceTree = "<group>"; };
+		DDFB644F2126C29B0036AE0F /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
+		DDFB64522126C4A30036AE0F /* ThirdPartyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartyService.swift; sourceTree = "<group>"; };
 		DDFFC8E72110C613008B80C0 /* GravityImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravityImageView.swift; sourceTree = "<group>"; };
 		FA8505300ED87CEC9DEECD2B /* Pods-BlockmanGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockmanGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockmanGo/Pods-BlockmanGo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -347,6 +357,7 @@
 				DD456C25210EBDE6009465FE /* libc++.1.tbd in Frameworks */,
 				DD456C26210EBDE6009465FE /* libstdc++.6.0.9.tbd in Frameworks */,
 				DD456C27210EBDE6009465FE /* BlockModsGameKit.framework in Frameworks */,
+				DDFB64512126C29B0036AE0F /* libTalkingData.a in Frameworks */,
 				BAA2FD9B21D037FF16457CA7 /* Pods_BlockmanGo_Dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +368,7 @@
 			files = (
 				DDE09F9B21131F1700BD5CF8 /* BlockModsGameKit.framework in Frameworks */,
 				DD51606D20EF63D60000B8DC /* libbz2.1.0.tbd in Frameworks */,
+				DDFB64502126C29B0036AE0F /* libTalkingData.a in Frameworks */,
 				DD51606B20EF63CF0000B8DC /* libc++.1.tbd in Frameworks */,
 				DD51606920EF63CA0000B8DC /* libstdc++.6.0.9.tbd in Frameworks */,
 				50C4B36D55AF1DB5D3014E6F /* Pods_BlockmanGo.framework in Frameworks */,
@@ -423,6 +435,8 @@
 				DD5160BC20F5A18F0000B8DC /* Network */,
 				DD51608820F458810000B8DC /* General */,
 				DD51608E20F469E40000B8DC /* Extensions */,
+				DDFB644A2126B6CD0036AE0F /* ThirdPartyServices */,
+				DDFB64422126B3B30036AE0F /* ThirdPartyLib */,
 				DD51607820F304BE0000B8DC /* SuportFiles */,
 			);
 			path = BlockmanGo;
@@ -773,6 +787,40 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
+		DDFB64422126B3B30036AE0F /* ThirdPartyLib */ = {
+			isa = PBXGroup;
+			children = (
+				DDFB64482126B3E80036AE0F /* Talkingdata */,
+			);
+			path = ThirdPartyLib;
+			sourceTree = "<group>";
+		};
+		DDFB64482126B3E80036AE0F /* Talkingdata */ = {
+			isa = PBXGroup;
+			children = (
+				DDFB644F2126C29B0036AE0F /* libTalkingData.a */,
+				DDFB64452126B3D90036AE0F /* TalkingData.h */,
+			);
+			path = Talkingdata;
+			sourceTree = "<group>";
+		};
+		DDFB644A2126B6CD0036AE0F /* ThirdPartyServices */ = {
+			isa = PBXGroup;
+			children = (
+				DDFB64522126C4A30036AE0F /* ThirdPartyService.swift */,
+				DDFB64552126C4AB0036AE0F /* Analysis */,
+			);
+			path = ThirdPartyServices;
+			sourceTree = "<group>";
+		};
+		DDFB64552126C4AB0036AE0F /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				DDFB644B2126B6F30036AE0F /* AnalysisService.swift */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1094,6 +1142,7 @@
 				DD456BE1210EBDE6009465FE /* InitializeProfileViewController.swift in Sources */,
 				DD456BE2210EBDE6009465FE /* GameEngineInfo.swift in Sources */,
 				DD456BE3210EBDE6009465FE /* BMUserDefaults.swift in Sources */,
+				DDFB644D2126B6F30036AE0F /* AnalysisService.swift in Sources */,
 				DD456BE4210EBDE6009465FE /* GameCollectionViewCell.swift in Sources */,
 				DD456C42210ED44B009465FE /* BlockHUD.swift in Sources */,
 				DD456BE5210EBDE6009465FE /* UIView+Layout.swift in Sources */,
@@ -1157,6 +1206,7 @@
 				DD456C1D210EBDE6009465FE /* GameDetailViewController.swift in Sources */,
 				DD456C1E210EBDE6009465FE /* GameDispatchModel.swift in Sources */,
 				DD456C1F210EBDE6009465FE /* ExtraSizeLabel.swift in Sources */,
+				DDFB64542126C4A30036AE0F /* ThirdPartyService.swift in Sources */,
 				DD456C20210EBDE6009465FE /* UserRequester.swift in Sources */,
 				DD456C21210EBDE6009465FE /* R.generated.swift in Sources */,
 				DD456C22210EBDE6009465FE /* UserAPI.swift in Sources */,
@@ -1181,6 +1231,7 @@
 				DD06D59D2102360B004A570B /* InitializeProfileViewController.swift in Sources */,
 				DD5160D120F5A7EA0000B8DC /* GameEngineInfo.swift in Sources */,
 				DD7402F520FEDF1C00091B9D /* BMUserDefaults.swift in Sources */,
+				DDFB644C2126B6F30036AE0F /* AnalysisService.swift in Sources */,
 				DD5160F020F60ACF0000B8DC /* GameCollectionViewCell.swift in Sources */,
 				DD51609620F46A310000B8DC /* UIView+Layout.swift in Sources */,
 				DDA4B0DE2105F60D004346C5 /* LaunchModelManager.swift in Sources */,
@@ -1244,6 +1295,7 @@
 				DD74031120FF637E00091B9D /* GameDetailViewController.swift in Sources */,
 				DDA4B0E02106BF75004346C5 /* GameDispatchModel.swift in Sources */,
 				DD5160A020F48F0F0000B8DC /* ExtraSizeLabel.swift in Sources */,
+				DDFB64532126C4A30036AE0F /* ThirdPartyService.swift in Sources */,
 				DD5160C420F5A2330000B8DC /* UserRequester.swift in Sources */,
 				DD51607B20F3082E0000B8DC /* R.generated.swift in Sources */,
 				DD5160C320F5A2330000B8DC /* UserAPI.swift in Sources */,
@@ -1298,7 +1350,12 @@
 				INFOPLIST_FILE = "BlockmanGo copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DBLOCK_DEV";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlockmanGo/ThirdPartyLib",
+					"$(PROJECT_DIR)/BlockmanGo/ThirdPartyLib/Talkingdata",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DBLOCK_DEV -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sandboxol.blockmango;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BlockmanGo/BlockmanGo-Briding-Header.h";
@@ -1323,6 +1380,11 @@
 				INFOPLIST_FILE = "BlockmanGo copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlockmanGo/ThirdPartyLib",
+					"$(PROJECT_DIR)/BlockmanGo/ThirdPartyLib/Talkingdata",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sandboxol.blockmango;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BlockmanGo/BlockmanGo-Briding-Header.h";
@@ -1457,6 +1519,12 @@
 				INFOPLIST_FILE = BlockmanGo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlockmanGo/ThirdPartyLib",
+					"$(PROJECT_DIR)/BlockmanGo/ThirdPartyLib/Talkingdata",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sandboxol.blockmango;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1483,6 +1551,12 @@
 				INFOPLIST_FILE = BlockmanGo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlockmanGo/ThirdPartyLib",
+					"$(PROJECT_DIR)/BlockmanGo/ThirdPartyLib/Talkingdata",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sandboxol.blockmango;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

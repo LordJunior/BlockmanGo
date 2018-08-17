@@ -26,6 +26,7 @@ class LaunchBrandingViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        AnalysisService.trackEvent(.enter_sandbox_page)
         triggerAnimation()
     }
     

@@ -151,6 +151,7 @@ class GameDetailViewController: TemplateViewController {
     }
     
     @objc private func likesButtonClicked() {
+        AnalysisService.trackEvent(.click_like)
         detailModelManager.likesGame(gameID: (parameter as! (String, GameDetailViewControllerDelegate)).0) { (result) in
             switch result {
             case .success(let likesNumber):

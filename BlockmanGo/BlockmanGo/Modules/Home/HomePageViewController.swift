@@ -58,7 +58,14 @@ class HomePageViewController: UIViewController {
         })
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        AnalysisService.trackEvent(.enter_homepage)
+    }
+    
     @objc private func playButtonClicked(sender: UIButton) {
+        AnalysisService.trackEvent(.click_play)
         TransitionManager.pushViewController(GameViewController.self, animated: false)
     }
 }

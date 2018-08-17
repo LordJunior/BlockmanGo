@@ -12,4 +12,6 @@
 @import FCUUID;
 @import BlockModsGameKit;
 @import MBProgressHUD;
+
+#import "TalkingData.h"
 #endif /* BlockyModes_Briding_Header_h */
