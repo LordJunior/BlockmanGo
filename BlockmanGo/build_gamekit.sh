@@ -37,7 +37,7 @@ gender_output_path="/Users/kiben/blockmango-client/dev/engine/Bin/Release/libLor
 logic_output_path="/Users/kiben/blockmango-client/dev/logic/Bin/Release/lib${logic_scheme}.a"
 
 #GameKit的输出路径
-gamekit_output_path="/Users/kiben/blockmango-client/dev/client/Shells/IOS/BlockModsGameKit/BlockModsGameKit/Bin/Release/${gamekit_scheme}.framework"
+gamekit_output_path="/Users/kiben/blockmango-client/dev/client/Shells/IOS/BlockModsGameKit/BlockModsGameKit/Bin/Release/${gamekit_scheme}.framework/"
 
 #把引擎相关的库拷贝到指定路径
 libs_destination_path="/Users/kiben/blockmango-client/dev/client/Shells/IOS/BlockModsGameKit/BlockModsGameKit/"

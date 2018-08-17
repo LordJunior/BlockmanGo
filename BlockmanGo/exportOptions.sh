@@ -10,8 +10,12 @@ exportPlist="<?xml version=\"1.0\" encoding=\"UTF-8\"?>\
 <string>automatic</string>\
 <key>stripSwiftSymbols</key>\
 <true/>\
+<key>compileBitcode</key>\
+<false/>\
 <key>teamID</key>\
 <string>$1</string>\
+<key>signingCertificate</key>\
+<string>iPhone Distribution</string>\
 <key>uploadBitcode</key>\
 <false/>\
 <key>uploadSymbols</key>\

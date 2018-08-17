@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #你们证书的teamID xcode可以查看，或者去钥匙串查看
-teamID="R3LUB63PG7"
+teamID="TUWZFZTDD4"
 
 # 换行符
 __LINE_BREAK_LEFT="\n\033[32;1m"
@@ -95,7 +95,7 @@ case $mode in
         export_method="ad-hoc"
         ;;
 esac
-
+:<<!
 while :
 do
     printf "${__LINE_BREAK_LEFT}请输入ipa导出路径${__LINE_BREAK_RIGHT}"
@@ -109,9 +109,9 @@ do
         break
     fi
 done
-
+!
 #配置默认导出路径
-#path="/Users/kiben/Desktop/BlockyArchive"
+path="/Users/kiben/Desktop/BlockyArchive"
 
 #指定打包的配置名
 configuration="Release"
