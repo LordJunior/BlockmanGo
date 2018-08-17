@@ -20,7 +20,7 @@ class ProgressView: UIView {
         }
     }
     
-    var displayInfo: String = "" {
+    var displayInfo: String? = nil {
         didSet {
             displayInfoLabel?.text = displayInfo
         }

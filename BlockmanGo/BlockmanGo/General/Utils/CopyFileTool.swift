@@ -9,7 +9,7 @@
 import Foundation
 
 protocol CopyFileToolDelegate: class {
-    func copyFileInProgress(_ progress: Float)
+    func copyFileInProgress(_ progress: Float, totalSize: UInt64)
     func copyFileDidFinished()
 }
 
@@ -20,6 +20,7 @@ class CopyFileTool: NSObject, FileManagerDelegate {
     private var sourcePath: String?
     private var targetPath: String?
     private let fileManager = FileManager.default
+    private var totalSize: UInt64 = 0
     
     override init() {
         super.init()
@@ -72,8 +73,9 @@ class CopyFileTool: NSObject, FileManagerDelegate {
                 originFileSize = BMFileManager.calculateFileSize(filePath: self.sourcePath!)
                 copyingFileSize = BMFileManager.calculateFileSize(filePath: self.targetPath!)
             }
+            self.totalSize = originFileSize
             let progress = Float(copyingFileSize) / Float(originFileSize)
-            self.delegate?.copyFileInProgress(progress)
+            self.delegate?.copyFileInProgress(progress, totalSize: originFileSize)
         }
     }
     
@@ -84,7 +86,7 @@ class CopyFileTool: NSObject, FileManagerDelegate {
             try! self.fileManager.copyItem(atPath: self.sourcePath!, toPath: self.targetPath!)
             self.destroyTimer()
             DispatchQueue.main.async {
-                self.delegate?.copyFileInProgress(1.0)
+                self.delegate?.copyFileInProgress(1.0, totalSize: self.totalSize)
                 self.delegate?.copyFileDidFinished()
             }
         }

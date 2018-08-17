@@ -46,7 +46,8 @@ class CheckForUpdatesViewController: UIViewController {
             make.height.equalTo(41)
         }
         
-        checkForAppUpdates()
+//        checkForAppUpdates()
+        checkForResourceUpdates()
     }
     
     private func checkForAppUpdates() {
@@ -75,10 +76,15 @@ class CheckForUpdatesViewController: UIViewController {
     private func checkForResourceUpdates() {
         self.progressView?.isHidden = false
         if engineResourceManager.copyResourceFromBundleIfNeed() {
-            engineResourceManager.copyBundleResourceToCache()
+            AlertController.alert(title:R.string.localizable.notification() , message: R.string.localizable.unpacking_resources_if_continue(), from: TransitionManager.rootViewController, showCancelButton: true)?.setCancelTitle("Exit").setDoneTitle("OK").done(completion: { (_) in
+                self.engineResourceManager.copyBundleResourceToCache()
+            }).cancel(completion: { (_) in
+                abort()
+            })
         }else if engineResourceManager.checkResourceUpdateIfNeed() {
             engineResourceManager.downloadResource()
         }else {
+            progressView?.displayInfo = R.string.localizable.checking_done()
             self.progressView?.setProgress(1.0, animated: true)
             delay(0.5, exeute: {
                 self.delegate?.checkForUpdatesDidFinished()
@@ -88,15 +94,15 @@ class CheckForUpdatesViewController: UIViewController {
 }
 
 extension CheckForUpdatesViewController: EngineResourceModelManagerDelegate {
-    func engineResourceCopyInProgress(_ progress: Float) {
+    func engineResourceCopyInProgress(_ progress: Float, totalSize: UInt64) {
         DebugLog("engineResourceCopyInProgress \(progress)")
-        progressView?.displayInfo = R.string.localizable.initializing_resources()
+        progressView?.displayInfo = R.string.localizable.unpacking_resources(Double(totalSize) / 1024.0 / 1024.0)
         progressView?.setProgress(progress, animated: true)
     }
     
     func engineResourceCopyDidFinished() {
         DebugLog("engineResourceCopyDidFinished 初始化完成")
-        progressView?.displayInfo = R.string.localizable.loading_finished()
+        progressView?.displayInfo = R.string.localizable.unpacking_finished()
         progressView?.setProgress(1.0, animated: true)
         delay(0.2) {
             self.delegate?.checkForUpdatesDidFinished()

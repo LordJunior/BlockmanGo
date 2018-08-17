@@ -10,7 +10,7 @@ import Foundation
 import Moya
 
 protocol EngineResourceModelManagerDelegate: class {
-    func engineResourceCopyInProgress(_ progress: Float)
+    func engineResourceCopyInProgress(_ progress: Float, totalSize: UInt64)
     func engineResourceCopyDidFinished()
     
 //    func engineResourceWillDownload()
@@ -64,8 +64,8 @@ final class EngineResourceModelManager {
 }
 
 extension EngineResourceModelManager: CopyFileToolDelegate {
-    func copyFileInProgress(_ progress: Float) {
-        delegate?.engineResourceCopyInProgress(progress)
+    func copyFileInProgress(_ progress: Float, totalSize: UInt64) {
+        delegate?.engineResourceCopyInProgress(progress, totalSize: totalSize)
     }
     
     func copyFileDidFinished() {

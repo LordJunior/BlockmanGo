@@ -34,6 +34,8 @@ final class AlertController: UIViewController {
     
     private weak var alertTitleLabel: UILabel?
     private weak var alertMessageLabel: UILabel?
+    private weak var alertDoneButton: UIButton?
+    private weak var alertCancelButton: UIButton?
     private var alertTitleLabelTopToSuperConstraint: Constraint?
     private var alertTitleLabelCenterYToSuperConstraint: Constraint?
     private var alertDoneButtonCenterXToSuperConstraint: Constraint?
@@ -62,7 +64,7 @@ final class AlertController: UIViewController {
         
         let containView = UIImageView(image: R.image.general_alert_background()).addTo(superView: view).layout { (make) in
             make.center.equalToSuperview()
-            make.width.equalToSuperview().multipliedBy(0.45)
+            make.width.equalToSuperview().multipliedBy(0.5)
         }.configure { (containView) in
             containView.isUserInteractionEnabled = true
         }
@@ -91,7 +93,8 @@ final class AlertController: UIViewController {
             label.numberOfLines = 0
             label.attributedText = self.alertAttributedMessage(self.alertMessage)
         }).layout(snapKitMaker: { (make) in
-            make.top.equalTo(alertTitleLabel!.snp.bottom).offset(36)
+            make.top.equalTo(alertTitleLabel!.snp.bottom).offset(24)
+            make.width.equalToSuperview().multipliedBy(0.9)
             make.centerX.equalToSuperview()
         })
         
@@ -99,7 +102,7 @@ final class AlertController: UIViewController {
             make.bottom.equalTo(alertMessageLabel!.snp.bottom).offset(20)
         }
         
-        let alertDoneButton = UIButton().addTo(superView: containView).configure { (button) in
+        alertDoneButton = UIButton().addTo(superView: containView).configure { (button) in
             button.setBackgroundImage(R.image.general_button_background_selected(), for: .normal)
             button.titleLabel?.font = UIFont.size14
             button.setTitleColor(R.clr.appColor._844501(), for: .normal)
@@ -113,12 +116,12 @@ final class AlertController: UIViewController {
         }
         
         if showCancelButton {
-            alertDoneButton.layout(snapKitMaker: { (make) in
+            alertDoneButton?.layout(snapKitMaker: { (make) in
                 make.right.equalTo(contentContainView)
             })
             
             /// cancel button
-            UIButton().addTo(superView: containView).configure { (button) in
+            alertCancelButton = UIButton().addTo(superView: containView).configure { (button) in
                 button.setBackgroundImage(R.image.general_button_background_normal(), for: .normal)
                 button.titleLabel?.font = UIFont.size14
                 button.setTitleColor(R.clr.appColor._b17f63(), for: .normal)
@@ -126,17 +129,17 @@ final class AlertController: UIViewController {
                 button.tag = ButtonTag.cancel.rawValue
                 button.addTarget(self, action: #selector(buttonClickCallBack(_:)), for: .touchUpInside)
             }.layout(snapKitMaker: { (make) in
-                make.top.height.width.equalTo(alertDoneButton)
+                make.top.height.width.equalTo(alertDoneButton!)
                 make.left.equalTo(contentContainView)
             })
         }else {
-            alertDoneButton.layout(snapKitMaker: { (make) in
+            alertDoneButton?.layout(snapKitMaker: { (make) in
                 make.centerX.equalToSuperview()
             })
         }
 
         containView.layout { (make) in
-            make.bottom.equalTo(alertDoneButton.snp.bottom).offset(20)
+            make.bottom.equalTo(alertDoneButton!.snp.bottom).offset(20)
         }
     }
     
@@ -148,6 +151,18 @@ final class AlertController: UIViewController {
         let alertController = AlertController(title: title, message: message, showCancelButton: showCancelButton)
         controller.present(alertController, animated: false, completion: nil)
         return alertController
+    }
+    
+    @discardableResult
+    func setDoneTitle(_ doneTitle: String?) -> AlertController {
+        alertDoneButton?.setTitle(doneTitle, for: .normal)
+        return self
+    }
+    
+    @discardableResult
+    func setCancelTitle(_ cancelTitle: String?) -> AlertController {
+        alertCancelButton?.setTitle(cancelTitle, for: .normal)
+        return self
     }
     
     @discardableResult
