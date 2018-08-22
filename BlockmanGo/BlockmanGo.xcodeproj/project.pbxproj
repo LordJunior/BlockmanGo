@@ -158,6 +158,10 @@
 		DD67B023212CF733002C12D1 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD67B022212CF733002C12D1 /* AdSupport.framework */; };
 		DD67B02D212D53D0002C12D1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67B02C212D53D0002C12D1 /* SettingViewController.swift */; };
 		DD67B02E212D53D0002C12D1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67B02C212D53D0002C12D1 /* SettingViewController.swift */; };
+		DD67B03A212D622B002C12D1 /* ClosableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67B039212D622B002C12D1 /* ClosableProtocol.swift */; };
+		DD67B03B212D622B002C12D1 /* ClosableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67B039212D622B002C12D1 /* ClosableProtocol.swift */; };
+		DD67B03E212D68FF002C12D1 /* SettingOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67B03D212D68FF002C12D1 /* SettingOptionTableViewCell.swift */; };
+		DD67B03F212D68FF002C12D1 /* SettingOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67B03D212D68FF002C12D1 /* SettingOptionTableViewCell.swift */; };
 		DD7402D020FC791A00091B9D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402CF20FC791A00091B9D /* LaunchViewController.swift */; };
 		DD7402D220FC79D400091B9D /* CheckForUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D120FC79D400091B9D /* CheckForUpdatesViewController.swift */; };
 		DD7402D420FC818E00091B9D /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D320FC818E00091B9D /* ProgressView.swift */; };
@@ -315,6 +319,8 @@
 		DD67B020212CF72A002C12D1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		DD67B022212CF733002C12D1 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		DD67B02C212D53D0002C12D1 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		DD67B039212D622B002C12D1 /* ClosableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosableProtocol.swift; sourceTree = "<group>"; };
+		DD67B03D212D68FF002C12D1 /* SettingOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionTableViewCell.swift; sourceTree = "<group>"; };
 		DD7402CF20FC791A00091B9D /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		DD7402D120FC79D400091B9D /* CheckForUpdatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckForUpdatesViewController.swift; sourceTree = "<group>"; };
 		DD7402D320FC818E00091B9D /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
@@ -573,6 +579,7 @@
 			children = (
 				DD51609920F46AAB0000B8DC /* ReusableProtocol.swift */,
 				DD74030220FF219A00091B9D /* AnimatableProtocol.swift */,
+				DD67B039212D622B002C12D1 /* ClosableProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -711,6 +718,7 @@
 			isa = PBXGroup;
 			children = (
 				DD67B02C212D53D0002C12D1 /* SettingViewController.swift */,
+				DD67B03D212D68FF002C12D1 /* SettingOptionTableViewCell.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1200,6 +1208,7 @@
 				DD456BF6210EBDE6009465FE /* BlockHTTPResult.swift in Sources */,
 				DD456BF7210EBDE6009465FE /* ModalTransitionController.swift in Sources */,
 				DD456BF8210EBDE6009465FE /* TransitionManager.swift in Sources */,
+				DD67B03B212D622B002C12D1 /* ClosableProtocol.swift in Sources */,
 				DD456BF9210EBDE6009465FE /* Delay.swift in Sources */,
 				DD456BFA210EBDE6009465FE /* UIFont+Extension.swift in Sources */,
 				DD456BFB210EBDE6009465FE /* URLQueryArrayEncoding.swift in Sources */,
@@ -1220,6 +1229,7 @@
 				DD456C0A210EBDE6009465FE /* UserManager.swift in Sources */,
 				DD456C0B210EBDE6009465FE /* DismissAnimatedTransition.swift in Sources */,
 				DD456C0C210EBDE6009465FE /* GameModelManager.swift in Sources */,
+				DD67B03F212D68FF002C12D1 /* SettingOptionTableViewCell.swift in Sources */,
 				DD456C0D210EBDE6009465FE /* GameDetailModel.swift in Sources */,
 				DD456C0E210EBDE6009465FE /* EngineResourceManagerResourceManager.swift in Sources */,
 				DD456C0F210EBDE6009465FE /* DecorationControllerManager.swift in Sources */,
@@ -1290,6 +1300,7 @@
 				DD5160E220F5B7A80000B8DC /* BlockHTTPResult.swift in Sources */,
 				DD7402E020FCC58C00091B9D /* ModalTransitionController.swift in Sources */,
 				DD51608220F357B80000B8DC /* TransitionManager.swift in Sources */,
+				DD67B03A212D622B002C12D1 /* ClosableProtocol.swift in Sources */,
 				DD74030F20FF620F00091B9D /* Delay.swift in Sources */,
 				DD5160A320F494CF0000B8DC /* UIFont+Extension.swift in Sources */,
 				DD5160C520F5A2330000B8DC /* URLQueryArrayEncoding.swift in Sources */,
@@ -1310,6 +1321,7 @@
 				DD5160D620F5B2FB0000B8DC /* UserManager.swift in Sources */,
 				DD7402DE20FCC58C00091B9D /* DismissAnimatedTransition.swift in Sources */,
 				DD5160F320F6319E0000B8DC /* GameModelManager.swift in Sources */,
+				DD67B03E212D68FF002C12D1 /* SettingOptionTableViewCell.swift in Sources */,
 				DD74031521002E7D00091B9D /* GameDetailModel.swift in Sources */,
 				DD7402F820FEEBE300091B9D /* EngineResourceManagerResourceManager.swift in Sources */,
 				DD5160AA20F4A9D50000B8DC /* DecorationControllerManager.swift in Sources */,

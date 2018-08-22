@@ -73,7 +73,7 @@ class HomePageViewController: UIViewController {
     }
     
     @objc private func settingButtonClicked(sender: UIButton) {
-        
+        TransitionManager.present(SettingViewController.self, animated: false)
     }
     
     @objc private func playButtonClicked(sender: UIButton) {

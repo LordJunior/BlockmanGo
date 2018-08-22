@@ -45,14 +45,13 @@ class GameDetailViewController: TemplateViewController {
             containView.isUserInteractionEnabled = true
         }
         
-        UIButton().addTo(superView: view).configure({ (button) in
-            button.setBackgroundImage(R.image.general_close(), for: .normal)
-            button.addTarget(self, action: #selector(closeButtonClicked), for: .touchUpInside)
-        }).layout(snapKitMaker: { (make) in
-            make.size.equalTo(CGSize(width: 45, height: 47))
+        addCloseButton(layout: { (make) in
+            make.size.equalTo(closeButtonSize)
             make.left.equalTo(containView.snp.right).offset(5)
             make.top.equalTo(containView)
-        })
+        }) {[unowned self] (_)  in
+            self.delegate?.gameDetailViewControllerDidClose(self)
+        }
         
         thumbnailImageView = NetImageView().addTo(superView: containView).configure({ (imageView) in
             imageView.layer.cornerRadius = 18
@@ -144,10 +143,6 @@ class GameDetailViewController: TemplateViewController {
         likesButton?.setTitle(String(detailModel.praiseNumber), for: .normal)
 //        likesButton?.isEnabled = !detailModel.appreciate
         detailsTextView?.attributedText = detailModel.gameDetail
-    }
-    
-    @objc private func closeButtonClicked() {
-        delegate?.gameDetailViewControllerDidClose(self)
     }
     
     @objc private func likesButtonClicked() {
