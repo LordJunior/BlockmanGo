@@ -13,6 +13,8 @@
 		DD06D59D2102360B004A570B /* InitializeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06D59C2102360B004A570B /* InitializeProfileViewController.swift */; };
 		DD3255A6210FFB8600739E00 /* GameInQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3255A4210FFB8600739E00 /* GameInQueueViewController.swift */; };
 		DD3255A7210FFB8600739E00 /* GameInQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3255A4210FFB8600739E00 /* GameInQueueViewController.swift */; };
+		DD3BAF72212DCA1900672C26 /* SwitchAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BAF71212DCA1900672C26 /* SwitchAccountViewController.swift */; };
+		DD3BAF73212DCA1900672C26 /* SwitchAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BAF71212DCA1900672C26 /* SwitchAccountViewController.swift */; };
 		DD456BD6210EBDE6009465FE /* BMFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402FC20FEEDF500091B9D /* BMFileManager.swift */; };
 		DD456BD7210EBDE6009465FE /* GamesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F520F631F40000B8DC /* GamesAPI.swift */; };
 		DD456BD8210EBDE6009465FE /* BulletinModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030A20FF485200091B9D /* BulletinModelManager.swift */; };
@@ -256,6 +258,7 @@
 		DD3255A4210FFB8600739E00 /* GameInQueueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInQueueViewController.swift; sourceTree = "<group>"; };
 		DD3255A9211016F000739E00 /* BlockmanGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlockmanGo.entitlements; sourceTree = "<group>"; };
 		DD3255AD211017B700739E00 /* BlockmanGo_Dev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlockmanGo_Dev.entitlements; sourceTree = "<group>"; };
+		DD3BAF71212DCA1900672C26 /* SwitchAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchAccountViewController.swift; sourceTree = "<group>"; };
 		DD3C3FF72112A98100838E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DD3C3FF92112A99500838E02 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DD456C38210EBDE6009465FE /* BlockmanGo_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockmanGo_Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -719,6 +722,7 @@
 			children = (
 				DD67B02C212D53D0002C12D1 /* SettingViewController.swift */,
 				DD67B03D212D68FF002C12D1 /* SettingOptionTableViewCell.swift */,
+				DD3BAF71212DCA1900672C26 /* SwitchAccountViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1228,6 +1232,7 @@
 				DD456C09210EBDE6009465FE /* AppInfo.swift in Sources */,
 				DD456C0A210EBDE6009465FE /* UserManager.swift in Sources */,
 				DD456C0B210EBDE6009465FE /* DismissAnimatedTransition.swift in Sources */,
+				DD3BAF73212DCA1900672C26 /* SwitchAccountViewController.swift in Sources */,
 				DD456C0C210EBDE6009465FE /* GameModelManager.swift in Sources */,
 				DD67B03F212D68FF002C12D1 /* SettingOptionTableViewCell.swift in Sources */,
 				DD456C0D210EBDE6009465FE /* GameDetailModel.swift in Sources */,
@@ -1320,6 +1325,7 @@
 				DD7402F120FDD41500091B9D /* AppInfo.swift in Sources */,
 				DD5160D620F5B2FB0000B8DC /* UserManager.swift in Sources */,
 				DD7402DE20FCC58C00091B9D /* DismissAnimatedTransition.swift in Sources */,
+				DD3BAF72212DCA1900672C26 /* SwitchAccountViewController.swift in Sources */,
 				DD5160F320F6319E0000B8DC /* GameModelManager.swift in Sources */,
 				DD67B03E212D68FF002C12D1 /* SettingOptionTableViewCell.swift in Sources */,
 				DD74031521002E7D00091B9D /* GameDetailModel.swift in Sources */,

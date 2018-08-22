@@ -13,8 +13,8 @@ class TemplateViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
-        modalPresentationStyle = .custom
-        transitioningDelegate = ModalTransitionController()
+//        modalPresentationStyle = .custom
+//        transitioningDelegate = ModalTransitionController()
     }
     
     required init?(coder aDecoder: NSCoder) {

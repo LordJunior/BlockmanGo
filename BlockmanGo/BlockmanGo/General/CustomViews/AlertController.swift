@@ -50,7 +50,7 @@ final class AlertController: UIViewController {
         self.showCancelButton = showCancelButton
         self.alertMessage = message
         modalPresentationStyle = .custom
-        transitioningDelegate = ModalTransitionController()
+        transitioningDelegate = ModalTransitionController.normalTransition
     }
     
     required init?(coder aDecoder: NSCoder) {

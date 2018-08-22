@@ -129,7 +129,7 @@ class GameViewController: UIViewController {
             case .failure(.enterGameInQueue): /// 进入排队
                 if !self.isPresentedInQueue {
                     self.isPresentedInQueue = true
-                    TransitionManager.present(GameInQueueViewController.self, animated: false, parameter: self, completion: nil)
+                    TransitionManager.present(GameInQueueViewController.self, animated: false, parameter: self, customTransition: ModalTransitionController.normalTransition)
                 }
             case .failure(.gameversionTooLow):
                 AlertController.alert(title: R.string.localizable.game_version_too_low(), message: nil, from: TransitionManager.rootViewController, showCancelButton: true)?.done(completion: { _ in
@@ -181,7 +181,7 @@ extension GameViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let gameID = games[indexPath.row].gameId
         AnalysisService.trackEvent(.click_game_detail_page, parameters: ["gameID" : gameID])
-        TransitionManager.present(GameDetailViewController.self, animated: false, parameter: (gameID, self))
+        TransitionManager.presentInNormalTransition(GameDetailViewController.self, parameter: (gameID, self))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

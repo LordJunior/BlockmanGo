@@ -8,6 +8,16 @@
 
 import UIKit
 
+extension TransitionManager {
+    static func presentInNormalTransition(_ viewControllerToPresent: UIViewController.Type, parameter: Any? = nil) {
+        present(viewControllerToPresent, animated: true, parameter: parameter, customTransition: ModalTransitionController.normalTransition, needNavigation: false, completion: nil)
+    }
+    
+    static func presentInHidePresentingTransition(_ viewControllerToPresent: UIViewController.Type, parameter: Any? = nil) {
+        present(viewControllerToPresent, animated: true, parameter: parameter, customTransition: ModalTransitionController.hidePresentingTransition, needNavigation: false, completion: nil)
+    }
+}
+
 class TransitionManager: NSObject {
     
     static func currentNavigationController() -> UINavigationController? {
@@ -34,8 +44,10 @@ class TransitionManager: NSObject {
         currentNavigationController()?.popToRootViewController(animated: animated)
     }
     
-    static func present(_ viewControllerToPresent: UIViewController.Type, animated: Bool, needNavigation: Bool = false, parameter: Any? = nil, completion: (() -> Void)? = nil) {
+    static func present(_ viewControllerToPresent: UIViewController.Type, animated: Bool, parameter: Any? = nil, customTransition: UIViewControllerTransitioningDelegate? = nil, needNavigation: Bool = false, completion: (() -> Void)? = nil) {
         let controllerToPresent = controllerWithType(viewControllerToPresent, parameter: parameter)
+        controllerToPresent.modalPresentationStyle = .custom
+        controllerToPresent.transitioningDelegate = customTransition
         controllerToPresent.parameter = parameter
         var appearViewController = controllerToPresent
         if needNavigation {

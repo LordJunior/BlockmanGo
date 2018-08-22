@@ -9,9 +9,29 @@
 import UIKit
 
 class ModalTransitionController: NSObject, UIViewControllerTransitioningDelegate {
+    
+    static let hidePresentingTransition = ModalTransitionController(hidePresenting: true)
+    
+    static let normalTransition = ModalTransitionController()
+    
+    private var presentAnimation: UIViewControllerAnimatedTransitioning?
+    private var dismissAnimation: UIViewControllerAnimatedTransitioning?
+    
+    required init(hidePresenting: Bool = false) {
+        super.init()
+        
+        let presentAnimation = PresentAnimatedTransition()
+        presentAnimation.hidePresenting = hidePresenting
+        self.presentAnimation = presentAnimation
+        dismissAnimation = DismissAnimatedTransition()
+    }
 
-    private let presentAnimation = PresentAnimatedTransition()
-    private let dismissAnimation = DismissAnimatedTransition()
+    private override init() {
+        super.init()
+        
+        presentAnimation = PresentAnimatedTransition()
+        dismissAnimation = DismissAnimatedTransition()
+    }
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return presentAnimation
@@ -22,6 +42,6 @@ class ModalTransitionController: NSObject, UIViewControllerTransitioningDelegate
     }
     
     deinit {
-        DebugLog("TransitionController Deinit")
+        DebugLog("ModalTransitionController Deinit")
     }
 }

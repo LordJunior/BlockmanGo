@@ -10,6 +10,7 @@ import UIKit
 
 class SettingViewController: TemplateViewController {
 
+    private weak var tableView: UITableView?
     private let optionTitles = ["切换账号", "切换账号与安全", "关于Blockman GO", "清除缓存", "退出游戏"]
     
     override func viewDidLoad() {
@@ -22,7 +23,7 @@ class SettingViewController: TemplateViewController {
             imageView.isUserInteractionEnabled = true
         }
         
-        let tableView = UITableView().addTo(superView: backgroundView).configure { (tableView) in
+        tableView = UITableView().addTo(superView: backgroundView).configure { (tableView) in
             tableView.separatorStyle = .none
             tableView.backgroundColor = UIColor.clear
             tableView.bounces = false
@@ -39,7 +40,7 @@ class SettingViewController: TemplateViewController {
             make.top.equalTo(backgroundView).offset(-5)
             make.size.equalTo(closeButtonSize)
         }) { _ in
-            TransitionManager.dismiss(animated: false)
+            TransitionManager.dismiss(animated: true)
         }
     }
 
@@ -57,11 +58,8 @@ extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as SettingOptionTableViewCell
         cell.optionTitle = optionTitles[indexPath.section]
+        cell.delegate = self
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        TransitionManager.present(GameDetailViewController.self, animated: false)
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -73,5 +71,14 @@ extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
             return 20
         }
         return 5
+    }
+}
+
+extension SettingViewController: SettingOptionTableViewCellDelegate {
+    func settingOptionCellDidSelected(_ cell: SettingOptionTableViewCell) {
+        guard let section = tableView?.indexPath(for: cell)?.section else {
+            return
+        }
+        TransitionManager.presentInHidePresentingTransition(SwitchAccountViewController.self)
     }
 }

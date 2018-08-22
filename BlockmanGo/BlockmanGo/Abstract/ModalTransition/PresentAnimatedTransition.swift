@@ -10,12 +10,15 @@ import UIKit
 
 class PresentAnimatedTransition: NSObject, UIViewControllerAnimatedTransitioning {
 
+    var hidePresenting: Bool = false
+    
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.6
+        return 0.01
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
+        let fromController = transitionContext.viewController(forKey: .from)
         let toController = transitionContext.viewController(forKey: .to)
         
         let finalFrame = transitionContext.finalFrame(for: toController!)
@@ -27,6 +30,7 @@ class PresentAnimatedTransition: NSObject, UIViewControllerAnimatedTransitioning
         let animationInterval = transitionDuration(using: transitionContext)
         UIView.animate(withDuration: animationInterval, delay: 0, usingSpringWithDamping: 0.65 , initialSpringVelocity: 0, options: .curveEaseOut, animations: {
             toController?.view.frame = finalFrame
+            fromController?.view.alpha = self.hidePresenting ? 0 : 1
         }) { (finished) in
             if finished {
                 transitionContext.completeTransition(finished)
@@ -35,6 +39,6 @@ class PresentAnimatedTransition: NSObject, UIViewControllerAnimatedTransitioning
     }
     
     deinit {
-        DebugLog("PresentAnimation Deinit")
+        DebugLog("PresentAnimatedTransition Deinit")
     }
 }

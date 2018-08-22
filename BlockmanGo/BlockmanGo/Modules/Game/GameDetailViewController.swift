@@ -15,7 +15,7 @@ protocol GameDetailViewControllerDelegate: class {
 
 extension GameDetailViewControllerDelegate {
     func gameDetailViewControllerDidClose(_ viewController: GameDetailViewController) {
-        TransitionManager.dismiss(animated: false)
+        TransitionManager.dismiss(animated: true)
     }
 }
 
