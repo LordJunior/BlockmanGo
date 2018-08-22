@@ -11,6 +11,7 @@ import Foundation
 extension BMUserDefaults {
     enum Key: String {
         case engineResourceVersion
+        case appShortVersion
     }
 }
 
