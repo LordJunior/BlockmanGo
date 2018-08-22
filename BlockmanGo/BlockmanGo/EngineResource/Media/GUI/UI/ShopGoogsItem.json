@@ -179,10 +179,6 @@
                             "Value": "0"
                         },
                         {
-                            "Name": "TextRenderOffset",
-                            "Value": "30 0"
-                        },
-                        {
                             "Name": "HexgonTopImage",
                             "Value": ""
                         },
@@ -358,7 +354,11 @@
                     "Property": [
                         {
                             "Name": "Area",
-                            "Value": "{{0,0},{0,0},{1,0},{0.75,0}}"
+                            "Value": "{{0,0},{0,22},{0.48,0},{0.38,22}}"
+                        },
+                        {
+                            "Name": "HorizontalAlignment",
+                            "Value": "Centre"
                         },
                         {
                             "Name": "WndOpenSound",

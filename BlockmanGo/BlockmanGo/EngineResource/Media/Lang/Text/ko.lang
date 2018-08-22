@@ -1336,7 +1336,7 @@ item.skill.chip.7.name=Dark chip
 
 throw.pot.shop.tab.title=Title
 throw.pot.chip.chest=Chip Chest
-throw.pot.money=Cash  
+throw.pot.money=Cash
 
 throw.pot.title.name.1=Tyro
 throw.pot.title.name.2=Shot to fame
@@ -1407,3 +1407,30 @@ gui_have_already_got_block=Already had it
 
   
 gui.shop.tab.sell=Sell
+
+item.equipment.set.1.name=Leather suit
+item.equipment.set.2.name=Chain suit
+item.equipment.set.3.name=Armor suit
+item.equipment.set.4.name=Gold suit
+item.equipment.set.5.name=Diamond suit
+gui.shop.tab.equipment.set=Suit
+score_point_win=Wins
+
+budokai.wins.rank.wins=Wins
+budokai.wins.rank.my.wins=My wins
+budokai.no.1.rank.no.1=Final Wins:
+budokai.no.1.rank.my.no.1=My Wins:
+budokai.score.rank.name=▢FFFFD700Score    Rank
+budokai.wins.rank.name=▢FFFFD700Wins    Rank
+budokai.no.1.rank.name=▢FFFFD700Final    Wins    Rank
+
+budokai.score.rank.title=Score Rank
+budokai.wins.rank.title=Wins Rank
+budokai.no.1.rank.title=Final Wins Rank
+
+item.skill_04.name=Slay
+item.skill_05.name=Immunity
+item.skill_06.name=Cloak
+item.skill_07.name=Speed up
+item.skill_08.name=Immobility
+item.skill_09.name=Mind control

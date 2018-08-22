@@ -1127,8 +1127,8 @@ flag.war.bomber.dsc3=Deals massive damage to enemies in the area
 flag.war.icemage.dsc1=Deals damage to enemies in the area and decreases their movement speed
 flag.war.icemage.dsc2=Freeze enemies in the area of effect
 flag.war.icemage.dsc3=Deals massive damage to an enemy and decreases his/her movement speed
-	
-	
+
+
 flag.war.swordsman.skillname1=Charge
 flag.war.swordsman.skillname2=Invincibility
 flag.war.swordsman.skillname3=Judgment
@@ -1147,16 +1147,16 @@ flag.war.bomber.skillname3=Dynamic
 flag.war.icemage.skillname1=Blizzard
 flag.war.icemage.skillname2=Freeze
 flag.war.icemage.skillname3=Ice shards
-  
+
 
 item.skill_01.name=Skill 1
 item.skill_02.name=Skill 2
 item.skill_03.name=Skill 3
-  
+
 
 parkour.rank.name1=Cactus track rank
 parkour.rank.name2=Freefall track rank
-  
+
 
 score_point_flag=number of captured flag
 
@@ -1176,17 +1176,12 @@ flag.war.select.icemage=Do you want to be "master"？
 
 flag.war.shop.tab.fashion=Halo
 flag.war.shop.tab.skill=Skill
-  
-
 
 flag.war.shop.Halo.name1=Heal Halo
 flag.war.shop.Halo.name2=Speed Halo
 flag.war.shop.Halo.name3=Jump Halo
 
 flag.war.attribute=Attribute
-  
-
-
 
 flag.war.swordsman.dsc1=Deals 15 damage to an enemy --- cooldown: 5; range: 5
 flag.war.swordsman.dsc2=Greatly increased player's movement speed for one second - cooldown: 9
@@ -1207,7 +1202,6 @@ flag.war.icemage.dsc1=Deals 4 damage to an enemy and slows them by X% for one se
 flag.war.icemage.dsc2=Freezes enemies within a 12x12 radius for 3 seconds - cooldown: 9
 flag.war.icemage.dsc3=Causes continuous damage and decelerate enemies in a 5x5 radius for 5 seconds, resulting in a total of 18 damage - cooldown: 20; range: 12
 
-
 flag.war.swordsman.skillname1=Heroic Strike
 flag.war.swordsman.skillname2=Charge
 flag.war.swordsman.skillname3=Shield Block
@@ -1226,8 +1220,6 @@ flag.war.bomber.skillname3=Mega Bombs
 flag.war.icemage.skillname1=Crushed Ice
 flag.war.icemage.skillname2=Freezing
 flag.war.icemage.skillname3=Snowstorm
-  
-
 
 flag.war.swordsman.attribute.dsc=HP：70；ATK：10；DEF：300
 flag.war.shooter.attribute.dsc=HP：50；ATK：8；DEF：200
@@ -1236,15 +1228,12 @@ flag.war.wizard.attribute.dsc=HP：50；ATK：8；DEF：200
 flag.war.bomber.attribute.dsc=HP：50；ATK：8；DEF：200
 flag.war.icemage.attribute.dsc=HP：50；ATK：8；DEF：200
 
-  
-
 flag.war.swordsman.attribute.dsc0=HP：70；ATK：10；DEF：3
 flag.war.shooter.attribute.dsc0=HP：50；ATK：8；DEF：2
 flag.war.thieves.attribute.dsc0=HP：60；ATK：10；DEF：2
 flag.war.wizard.attribute.dsc0=HP：50；ATK：8；DEF：2
 flag.war.bomber.attribute.dsc0=HP：50；ATK：8；DEF：2
 flag.war.icemage.attribute.dsc0=HP：50；ATK：8；DEF：2
-  
 
 flag.war.swordsman.dsc11=Deals 600 damage to an enemy --- cooldown: 5; range: 5
 flag.war.swordsman.dsc12=Greatly increased player's movement speed for 1s - cooldown: 9
@@ -1264,7 +1253,6 @@ flag.war.bomber.dsc13=Deals 1500 damage to enemies within a 8x8 radius - cooldow
 flag.war.icemage.dsc11=Deals 200 damage to an enemy and slows them by 40% for one second - cooldown: 2; range: 12
 flag.war.icemage.dsc12=Freezes enemies within a 12x12 radius for 3 seconds - cooldown: 9
 flag.war.icemage.dsc13=Causes continuous damage and decelerate enemies in a 5x5 radius for 5 seconds, resulting in a total of 1800 damage - cooldown: 20; range: 12
-  
 
 flag.war.swordsman.attribute.dsc1=HP：7500；ATK：300；DEF：500
 flag.war.shooter.attribute.dsc1=HP：4000；ATK：360；DEF：200
@@ -1293,8 +1281,6 @@ flag.war.icemage.dsc21=Deals 200 damage to an enemy and slows them by 40% for on
 flag.war.icemage.dsc22=Freezes enemies within a 12x12 radius for 3 seconds - cooldown: 9
 flag.war.icemage.dsc23=Causes continuous damage and decelerate enemies in a 5x5 radius for 5 seconds, resulting in a total of 3000 damage - cooldown: 20; range: 12
 
-
-
 flag.war.swordsman.attribute.dsc2=HP：7500；ATK：250；DEF：500
 flag.war.shooter.attribute.dsc2=HP：4000；ATK：800；DEF：200
 flag.war.thieves.attribute.dsc2=HP：6000；ATK：500；DEF：400
@@ -1306,8 +1292,6 @@ gui_rank_vice_title_hist_name=All
 
 parkour.rank.name01=Cactus  Track  Rank
 parkour.rank.name02=Freefall  Track  Rank
-  
-
 
 flag.war.shop.Halo.attribute1=Increase maxium Hp\\n(permanent)
 flag.war.shop.Halo.attribute2=Increase movement speed\\n(permanent)
@@ -1333,7 +1317,7 @@ item.skill.chip.7.name=Dark chip
 
 throw.pot.shop.tab.title=Title
 throw.pot.chip.chest=Chip Chest
-throw.pot.money=Cash  
+throw.pot.money=Cash
 
 throw.pot.title.name.1=Tyro
 throw.pot.title.name.2=Shot to fame
@@ -1404,3 +1388,30 @@ gui_have_already_got_block=Already had it
 
   
 gui.shop.tab.sell=Sell
+
+item.equipment.set.1.name=Leather suit
+item.equipment.set.2.name=Chain suit
+item.equipment.set.3.name=Armor suit
+item.equipment.set.4.name=Gold suit
+item.equipment.set.5.name=Diamond suit
+gui.shop.tab.equipment.set=Suit
+score_point_win=Wins
+
+budokai.wins.rank.wins=Wins
+budokai.wins.rank.my.wins=My wins
+budokai.no.1.rank.no.1=Final Wins:
+budokai.no.1.rank.my.no.1=My Wins:
+budokai.score.rank.name=▢FFFFD700Score    Rank
+budokai.wins.rank.name=▢FFFFD700Wins    Rank
+budokai.no.1.rank.name=▢FFFFD700Final    Wins    Rank
+
+budokai.score.rank.title=Score Rank
+budokai.wins.rank.title=Wins Rank
+budokai.no.1.rank.title=Final Wins Rank
+
+item.skill_04.name=Slay
+item.skill_05.name=Immunity
+item.skill_06.name=Cloak
+item.skill_07.name=Speed up
+item.skill_08.name=Immobility
+item.skill_09.name=Mind control

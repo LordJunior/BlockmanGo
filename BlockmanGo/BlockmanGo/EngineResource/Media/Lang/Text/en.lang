@@ -1438,16 +1438,12 @@ flag.war.icemage.skillname1=blizzard
 flag.war.icemage.skillname2=freeze
 flag.war.icemage.skillname3=ice shards
 
-
 item.skill_01.name=skill 1
 item.skill_02.name=skill 2
 item.skill_03.name=skill 3
 
-
 parkour.rank.name1=Cactus track rank
 parkour.rank.name2=Freefall track rank
-
-
 score_point_flag=number of captured flag
 
 flag.war.swordsman=swordsman
@@ -1516,8 +1512,6 @@ flag.war.bomber.skillname3=Mega Bombs
 flag.war.icemage.skillname1=Crushed Ice
 flag.war.icemage.skillname2=Freezing
 flag.war.icemage.skillname3=Snowstorm
-
-
 
 flag.war.swordsman.attribute.dsc=HP：70；ATK：10；DEF：300
 flag.war.shooter.attribute.dsc=HP：50；ATK：8；DEF：200
@@ -1617,7 +1611,7 @@ item.skill.chip.7.name=Dark chip
 
 throw.pot.shop.tab.title=Title
 throw.pot.chip.chest=Chip Chest
-throw.pot.money=Cash  
+throw.pot.money=Cash
 
 throw.pot.title.name.1=Tyro
 throw.pot.title.name.2=Shot to fame
@@ -1735,3 +1729,36 @@ gem.win.rank.name=Winner Rank
 gem.win.rank.title=Winner Rank
 gem.knight.rank.name=Knight Rank
 gem.knight.rank.title=Knight Rank
+
+item.equipment.set.1.name=Leather suit
+item.equipment.set.2.name=Chain suit
+item.equipment.set.3.name=Armor suit
+item.equipment.set.4.name=Gold suit
+item.equipment.set.5.name=Diamond suit
+gui.shop.tab.equipment.set=Suit
+score_point_win=Wins
+
+budokai.wins.rank.wins=Wins
+budokai.wins.rank.my.wins=My wins
+budokai.no.1.rank.no.1=Final Wins:
+budokai.no.1.rank.my.no.1=My Wins:
+budokai.score.rank.name=▢FFFFD700Score    Rank
+budokai.wins.rank.name=▢FFFFD700Wins    Rank
+budokai.no.1.rank.name=▢FFFFD700Final    Wins    Rank
+
+budokai.score.rank.title=Score Rank
+budokai.wins.rank.title=Wins Rank
+budokai.no.1.rank.title=Final Wins Rank
+
+item.skill_04.name=Slay
+item.skill_05.name=Immunity
+item.skill_06.name=Cloak
+item.skill_07.name=Speed up
+item.skill_08.name=Immobility
+item.skill_09.name=Mind control
+
+gui_shop_tab_enchantment=Enchantment
+shop_btn_have_bought=Purchased
+gui_real_time_rank_title_kill=Kills
+gui_real_time_rank_title_die=Death
+gui_rank_my_rank_not_rank=No Rank

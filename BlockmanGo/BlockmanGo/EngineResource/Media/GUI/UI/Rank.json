@@ -1293,6 +1293,10 @@
                                     "Value": "0"
                                 },
                                 {
+                                    "Name": "TextHorzAlignment",
+                                    "Value": "Right"
+                                },
+                                {
                                     "Name": "TextVertAlignment",
                                     "Value": "Centre"
                                 },
@@ -1496,7 +1500,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0.2,35},{0,0},{0.2,85},{0,50}}"
+                                    "Value": "{{0.2,45},{0,0},{0.2,95},{0,50}}"
                                 },
                                 {
                                     "Name": "VerticalAlignment",
@@ -1504,7 +1508,7 @@
                                 },
                                 {
                                     "Name": "Text",
-                                    "Value": "1001"
+                                    "Value": "1"
                                 },
                                 {
                                     "Name": "WndOpenSound",
@@ -1800,7 +1804,7 @@
                             "Property": [
                                 {
                                     "Name": "Area",
-                                    "Value": "{{0.2,35},{0,0},{0.2,85},{0,50}}"
+                                    "Value": "{{0.2,45},{0,0},{0.2,95},{0,50}}"
                                 },
                                 {
                                     "Name": "VerticalAlignment",
@@ -1808,7 +1812,7 @@
                                 },
                                 {
                                     "Name": "Text",
-                                    "Value": "1001"
+                                    "Value": "1"
                                 },
                                 {
                                     "Name": "WndOpenSound",

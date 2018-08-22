@@ -1125,8 +1125,8 @@ flag.war.bomber.dsc3=Deals massive damage to enemies in the area
 flag.war.icemage.dsc1=Deals damage to enemies in the area and decreases their movement speed
 flag.war.icemage.dsc2=Freeze enemies in the area of effect
 flag.war.icemage.dsc3=Deals massive damage to an enemy and decreases his/her movement speed
-	
-	
+
+
 flag.war.swordsman.skillname1=Charge
 flag.war.swordsman.skillname2=Invincibility
 flag.war.swordsman.skillname3=Judgment
@@ -1145,12 +1145,12 @@ flag.war.bomber.skillname3=Dynamic
 flag.war.icemage.skillname1=Blizzard
 flag.war.icemage.skillname2=Freeze
 flag.war.icemage.skillname3=Ice shards
-  
+
 
 item.skill_01.name=Skill 1
 item.skill_02.name=Skill 2
 item.skill_03.name=Skill 3
-  
+
 
 parkour.rank.name1=Cactus track rank
 parkour.rank.name2=Freefall track rank
@@ -1331,7 +1331,7 @@ item.skill.chip.7.name=Dark chip
 
 throw.pot.shop.tab.title=Title
 throw.pot.chip.chest=Chip Chest
-throw.pot.money=Cash  
+throw.pot.money=Cash
 
 throw.pot.title.name.1=Tyro
 throw.pot.title.name.2=Shot to fame
@@ -1402,3 +1402,23 @@ gui_have_already_got_block=Already had it
 
   
 gui.shop.tab.sell=Sell
+
+item.equipment.set.1.name=Leather suit
+item.equipment.set.2.name=Chain suit
+item.equipment.set.3.name=Armor suit
+item.equipment.set.4.name=Gold suit
+item.equipment.set.5.name=Diamond suit
+gui.shop.tab.equipment.set=Suit
+score_point_win=Wins
+
+budokai.wins.rank.wins=Wins
+budokai.wins.rank.my.wins=My wins
+budokai.no.1.rank.no.1=Final Wins:
+budokai.no.1.rank.my.no.1=My Wins:
+budokai.score.rank.name=▢FFFFD700Score    Rank
+budokai.wins.rank.name=▢FFFFD700Wins    Rank
+budokai.no.1.rank.name=▢FFFFD700Final    Wins    Rank
+
+budokai.score.rank.title=Score Rank
+budokai.wins.rank.title=Wins Rank
+budokai.no.1.rank.title=Final Wins Rank

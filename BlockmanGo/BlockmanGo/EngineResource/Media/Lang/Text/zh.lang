@@ -1435,7 +1435,6 @@ flag.war.icemage.skillname3=碎冰
 item.skill_01.name=技能 1
 item.skill_02.name=技能 2
 item.skill_03.name=技能 3
-  
 
 parkour.rank.name1=仙人掌赛道排行榜
 parkour.rank.name2=高空坠落赛道排行榜
@@ -1734,3 +1733,37 @@ gem.knight.rank.name=宝石骑士榜
 gem.knight.rank.title=宝石骑士榜
 
 gui.shop.tab.sell=出售
+
+item.equipment.set.1.name=皮革套装
+item.equipment.set.2.name=链甲套装
+item.equipment.set.3.name=铁甲套装
+item.equipment.set.4.name=黄金套装
+item.equipment.set.5.name=钻石套装
+gui.shop.tab.equipment.set=套装
+score_point_win=胜局数
+budokai.score.rank.name=▢FFFFD700积分排行榜
+budokai.wins.rank.name=▢FFFFD700胜局排行榜
+budokai.no.1.rank.name=▢FFFFD700夺冠排行榜
+
+budokai.wins.rank.wins=胜局数
+budokai.wins.rank.my.wins=我的胜局
+budokai.no.1.rank.no.1=夺冠
+budokai.no.1.rank.my.no.1=我的夺冠
+
+budokai.score.rank.title=积分排行榜
+budokai.wins.rank.title=胜局排行榜
+budokai.no.1.rank.title=夺冠排行榜
+
+item.skill_04.name=收割
+item.skill_05.name=免伤
+item.skill_06.name=隐身
+item.skill_07.name=加速
+item.skill_08.name=定身
+item.skill_09.name=心理掌握
+
+gui.shop.tab.sell=出售
+gui_shop_tab_enchantment=附魔
+shop_btn_have_bought=已购买
+gui_real_time_rank_title_kill=击杀数
+gui_real_time_rank_title_die=死亡数
+gui_rank_my_rank_not_rank=未上榜

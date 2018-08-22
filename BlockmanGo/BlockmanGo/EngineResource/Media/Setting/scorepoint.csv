@@ -7,3 +7,4 @@ ScoreId	ScoreName
 5	score_point_destroy_bed	破坏床数
 6	score_point_flag	夺旗数
 7	score_point_point	跑酷触发点
+8	score_point_win	胜局数

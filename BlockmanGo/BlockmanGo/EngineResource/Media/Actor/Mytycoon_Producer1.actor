@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "GB2312"?>
+<ActorTemplates>
+	<ActorTemplate name="Mytycoon_Producer1.actor" Originalscale="1 1 1" Skeleton="producer.skel" AttackScale="2.41" TextHeight="0" IsShowShadow="true" WoundBone="" WoundAngle="25" SelectedRingSize="0.01" SoundName1="" SoundName2="" SoundName3="" SoundName4="" SoundName5="" SoundFileNum="0" Volume="0.8" MinDistance="1" MaxDistance="16" IntervalTime="2" Alpha="1">
+		<BodyParts>
+			<BodyPart MasterName="body" SlaveName="1" DefaultUse="true" EdgeColor="0.8 0.8 0.8 1" ColorParams="0.2 0.6 1 1">
+				<Skin MeshName = "producer_01.skin" ChangeColor = "2.10195e-44 1.31162e-42 7.20161e+22 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+		</BodyParts>
+		<Skills>
+			<Skill Name="idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "producer_stand01.anim" BeginTime = "0" Times = "-1" Length = "2.766" FadeTime = "0.25" Channel = "" TimeScale = "1">
+				</Animation>
+			</Skill>
+		</Skills>
+		<Anims>
+				<Anim Name="producer_stand01.anim"/>
+		</Anims>
+	</ActorTemplate>
+</ActorTemplates>

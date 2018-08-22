@@ -13,3 +13,6 @@ Remark	GameType	RankType	Title	LeftSubTitle	LeftScore	LeftMyRank	LeftMyScore	Rig
 宝石骑士(胜利榜)	g1024	1	gui_rank_victory_title_name	gui_rank_vice_title_hist_name	gui_rank_score	gui_rank_my_rank	gui_rank_self_score	gui_rank_vice_title_right_name	gui_rank_score	gui_rank_my_rank	gui_rank_self_score
 宝石骑士(宝石骑士榜)	g1024	2	gui_rank_jewel_knight_title_name	gui_rank_vice_title_hist_name	gui_rank_score	gui_rank_my_rank	gui_rank_self_score	gui_rank_vice_title_right_name	gui_rank_score	gui_rank_my_rank	gui_rank_self_score
 丢锅大战	g1026	0	gui_rank_default_title_name	throw.pot.last.week.rank	gui_rank_score	gui_rank_my_rank	gui_rank_self_score	gui_rank_vice_title_right_name	gui_rank_score	gui_rank_my_rank	gui_rank_self_score
+武道大会(积分榜)	g1028	1	budokai.score.rank.title	throw.pot.last.week.rank	gui_rank_score	gui_rank_my_rank	gui_rank_self_score	gui_rank_vice_title_right_name	gui_rank_score	gui_rank_my_rank	gui_rank_self_score
+武道大会(胜局榜)	g1028	2	budokai.wins.rank.title	throw.pot.last.week.rank	budokai.wins.rank.wins	gui_rank_my_rank	budokai.wins.rank.my.wins	gui_rank_vice_title_right_name	budokai.wins.rank.wins	gui_rank_my_rank	budokai.wins.rank.my.wins
+武道大会(第一榜)	g1028	3	budokai.no.1.rank.title	throw.pot.last.week.rank	budokai.no.1.rank.no.1	gui_rank_my_rank	budokai.no.1.rank.my.no.1	gui_rank_vice_title_right_name	budokai.no.1.rank.no.1	gui_rank_my_rank	budokai.no.1.rank.my.no.1

@@ -1,0 +1,267 @@
+<?xml version = "1.0" encoding = "GB2312"?>
+<ActorTemplates>
+	<ActorTemplate name="Mytycoon_Punisher_girl.actor" Originalscale="1 1 1" Skeleton="girl.skel" AttackScale="1" TextHeight="0" IsShowShadow="true" WoundBone="" WoundAngle="25" SelectedRingSize="1" SoundName1="" SoundName2="" SoundName3="" SoundName4="" SoundName5="" SoundFileNum="0" Volume="0.8" MinDistance="1" MaxDistance="16" IntervalTime="2" Alpha="1">
+		<BodyParts>
+			<BodyPart MasterName="body" SlaveName="1" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trunk39.skin" ChangeColor = "2.10195e-44 1.80347e-42 7.20161e+22 0" UVSpeed = "0 0">
+				</Skin>
+				<Skin MeshName = "girl_trousers39.skin" ChangeColor = "2.10195e-44 1.97583e-42 7.20161e+22 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="face" SlaveName="1" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="girl_face010.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="feet" SlaveName="1" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="shoes_d04_l.mesh"/>
+					<SocketName value="s_foot_l"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+				<StaticMesh>
+					<FileName value="shoes_d04_r.mesh"/>
+					<SocketName value="s_foot_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="hair" SlaveName="1" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="girl_hair18.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+		</BodyParts>
+<Skills>
+			<Skill Name="aim1" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_attack02_a.anim" BeginTime = "0" Times = "1" Length = "0.166" FadeTime = "0.05" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="aim2" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_attack02_b.anim" BeginTime = "0" Times = "-1" Length = "0.5" FadeTime = "0.05" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="aim3" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_attack02_c.anim" BeginTime = "0" Times = "1" Length = "0.433" FadeTime = "0.05" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="attack" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_attack01.anim" BeginTime = "0" Times = "1" Length = "0.833" FadeTime = "0.05" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="attack2" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_attack03.anim" BeginTime = "0" Times = "1" Length = "0.333" FadeTime = "0.05" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="block1" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_block01_a.anim" BeginTime = "0" Times = "1" Length = "0.566" FadeTime = "0.05" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="block2" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_block01_b.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.05" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="block3" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_block01_c.anim" BeginTime = "0" Times = "1" Length = "0.566" FadeTime = "0.05" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="dig" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_attack03.anim" BeginTime = "0" Times = "1" Length = "0.333" FadeTime = "0.05" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="drink" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_eat02.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.05" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="drink_end" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_eat03.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.05" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="eat" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_eat01.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.05" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="eat_end" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_eat03.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.05" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="fly" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_fly02.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.05" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="fly_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_fly01.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.05" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="hammer" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_attack09.anim" BeginTime = "0" Times = "-1" Length = "0.433" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="hammer_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_stand10.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_stand05.anim" BeginTime = "0" Times = "-1" Length = "12.4" FadeTime = "0.05" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="jump1" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_jump01_a.anim" BeginTime = "0" Times = "1" Length = "0.233" FadeTime = "0.05" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="jump2" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_jump01_b.anim" BeginTime = "0" Times = "-1" Length = "0.433" FadeTime = "0.05" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="jump3" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_jump01_c.anim" BeginTime = "0" Times = "1" Length = "0.5" FadeTime = "0.05" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="jump_attack" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_attack05.anim" BeginTime = "0" Times = "1" Length = "0.366" FadeTime = "0.05" Channel = "" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="pistol_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_stand06.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="pistol_reload" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_atstand01.anim" BeginTime = "0" Times = "1" Length = "0.7" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="pistol_shoot" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_attack06.anim" BeginTime = "0" Times = "1" Length = "0.433" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="run" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_walk01.anim" BeginTime = "0" Times = "-1" Length = "0.7" FadeTime = "0.05" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="run_attack" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_attack04.anim" BeginTime = "0" Times = "1" Length = "0.366" FadeTime = "0.05" Channel = "" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="shovel" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_attack08.anim" BeginTime = "0" Times = "-1" Length = "0.5" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="shovel_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_stand09.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="smg_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_stand07.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="smg_reload" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_atstand02.anim" BeginTime = "0" Times = "1" Length = "0.7" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="smg_shoot" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_attack07.anim" BeginTime = "0" Times = "1" Length = "0.433" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="sneak" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_stand03.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.05" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="sprint" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_walk03.anim" BeginTime = "0" Times = "-1" Length = "0.433" FadeTime = "0.05" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="throw" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_attack03.anim" BeginTime = "0" Times = "1" Length = "0.333" FadeTime = "0.05" Channel = "upper" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="walk" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_walk02.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.05" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="walk04" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_walk04.anim" BeginTime = "0" Times = "-1" Length = "0.7" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="walk05" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_walk05.anim" BeginTime = "0" Times = "-1" Length = "0.7" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="walk06" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_walk06.anim" BeginTime = "0" Times = "-1" Length = "0.433" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="walk07" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "girl_walk07.anim" BeginTime = "0" Times = "-1" Length = "0.433" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				</Animation>
+			</Skill>
+		</Skills>
+		<Anims>
+				<Anim Name="girl_attack01.anim"/>
+				<Anim Name="girl_attack02_a.anim"/>
+				<Anim Name="girl_attack02_b.anim"/>
+				<Anim Name="girl_attack02_c.anim"/>
+				<Anim Name="girl_attack03.anim"/>
+				<Anim Name="girl_eat01.anim"/>
+				<Anim Name="girl_fly01.anim"/>
+				<Anim Name="girl_fly02.anim"/>
+				<Anim Name="girl_jump01_a.anim"/>
+				<Anim Name="girl_jump01_b.anim"/>
+				<Anim Name="girl_jump01_c.anim"/>
+				<Anim Name="girl_stand01.anim"/>
+				<Anim Name="girl_stand02.anim"/>
+				<Anim Name="girl_stand03.anim"/>
+				<Anim Name="girl_stand05.anim"/>
+				<Anim Name="girl_walk01.anim"/>
+				<Anim Name="girl_block01_a.anim"/>
+				<Anim Name="girl_block01_b.anim"/>
+				<Anim Name="girl_block01_c.anim"/>
+				<Anim Name="girl_eat02.anim"/>
+				<Anim Name="girl_eat03.anim"/>
+				<Anim Name="girl_stand04.anim"/>
+				<Anim Name="girl_walk02.anim"/>
+				<Anim Name="girl_walk03.anim"/>
+				<Anim Name="girl_attack04.anim"/>
+				<Anim Name="girl_attack05.anim"/>
+				<Anim Name="girl_atstand01.anim"/>
+				<Anim Name="girl_atstand02.anim"/>
+				<Anim Name="girl_attack06.anim"/>
+				<Anim Name="girl_attack07.anim"/>
+				<Anim Name="girl_stand06.anim"/>
+				<Anim Name="girl_stand07.anim"/>
+				<Anim Name="girl_stand09.anim"/>
+				<Anim Name="girl_stand10.anim"/>
+				<Anim Name="girl_attack08.anim"/>
+				<Anim Name="girl_attack09.anim"/>
+				<Anim Name="girl_walk07.anim"/>
+				<Anim Name="girl_walk06.anim"/>
+				<Anim Name="girl_walk05.anim"/>
+				<Anim Name="girl_walk04.anim"/>
+		</Anims>
+	</ActorTemplate>
+</ActorTemplates>

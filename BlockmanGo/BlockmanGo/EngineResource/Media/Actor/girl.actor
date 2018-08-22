@@ -303,6 +303,10 @@
 				<Skin MeshName = "girl_trousers02.skin" ChangeColor = "2.10195e-44 2.16599e-41 7.20161e+22 0" UVSpeed = "0 0">
 				</Skin>
 			</BodyPart>
+			<BodyPart MasterName="clothes_pants" SlaveName="20" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trousers20.skin" ChangeColor = "2.10195e-44 1.32382e-40 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
 			<BodyPart MasterName="clothes_pants" SlaveName="21" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<Skin MeshName = "girl_trousers21.skin" ChangeColor = "2.10195e-44 1.32382e-40 3.46623e+30 0" UVSpeed = "0 0">
 				</Skin>
@@ -377,6 +381,26 @@
 			</BodyPart>
 			<BodyPart MasterName="clothes_pants" SlaveName="34" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<Skin MeshName = "girl_trousers34.skin" ChangeColor = "2.10195e-44 1.6363e-40 7.20161e+22 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="clothes_pants" SlaveName="35" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trousers35.skin" ChangeColor = "2.10195e-44 1.6363e-40 7.20161e+22 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="clothes_pants" SlaveName="36" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trousers36.skin" ChangeColor = "2.10195e-44 1.6363e-40 7.20161e+22 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="clothes_pants" SlaveName="37" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trousers37.skin" ChangeColor = "2.10195e-44 1.6363e-40 7.20161e+22 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="clothes_pants" SlaveName="38" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trousers38.skin" ChangeColor = "2.10195e-44 1.6363e-40 7.20161e+22 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="clothes_pants" SlaveName="39" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trousers39.skin" ChangeColor = "2.10195e-44 1.6363e-40 7.20161e+22 0" UVSpeed = "0 0">
 				</Skin>
 			</BodyPart>
 			<BodyPart MasterName="clothes_pants" SlaveName="4" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
@@ -479,6 +503,10 @@
 				<Skin MeshName = "girl_trunk02.skin" ChangeColor = "2.10195e-44 2.14889e-41 7.20161e+22 0" UVSpeed = "0 0">
 				</Skin>
 			</BodyPart>
+			<BodyPart MasterName="clothes_tops" SlaveName="20" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trunk20.skin" ChangeColor = "2.10195e-44 2.14889e-41 7.20161e+22 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
 			<BodyPart MasterName="clothes_tops" SlaveName="21" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<Skin MeshName = "girl_trunk21.skin" ChangeColor = "2.10195e-44 1.37083e-40 3.46623e+30 0" UVSpeed = "0 0">
 				</Skin>
@@ -553,6 +581,26 @@
 			</BodyPart>
 			<BodyPart MasterName="clothes_tops" SlaveName="34" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<Skin MeshName = "girl_trunk34.skin" ChangeColor = "2.10195e-44 1.6399e-40 7.20161e+22 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="clothes_tops" SlaveName="35" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trunk35.skin" ChangeColor = "2.10195e-44 1.38821e-40 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="clothes_tops" SlaveName="36" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trunk36.skin" ChangeColor = "2.10195e-44 1.38995e-40 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="clothes_tops" SlaveName="37" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trunk37.skin" ChangeColor = "2.10195e-44 1.39169e-40 3.46623e+30 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="clothes_tops" SlaveName="38" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trunk38.skin" ChangeColor = "2.10195e-44 1.6399e-40 7.20161e+22 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+			<BodyPart MasterName="clothes_tops" SlaveName="39" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<Skin MeshName = "girl_trunk39.skin" ChangeColor = "2.10195e-44 1.6399e-40 7.20161e+22 0" UVSpeed = "0 0">
 				</Skin>
 			</BodyPart>
 			<BodyPart MasterName="clothes_tops" SlaveName="4" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
@@ -709,22 +757,9 @@
 					<scale value="1"/>
 				</StaticMesh>
 			</BodyPart>
-			<BodyPart MasterName="custom_face" SlaveName="18" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="face18.mesh"/>
-					<SocketName value="s_Head"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
 			<BodyPart MasterName="custom_face" SlaveName="19" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
-					<FileName value="face01_tnt.mesh"/>
+					<FileName value="girl_face19.mesh"/>
 					<SocketName value="s_Head"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
@@ -738,6 +773,58 @@
 			<BodyPart MasterName="custom_face" SlaveName="2" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="girl_face02.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_face" SlaveName="20" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="girl_face20.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_face" SlaveName="24" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="girl_face24.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_face" SlaveName="25" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="face25.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_face" SlaveName="28" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="face01_tnt.mesh"/>
 					<SocketName value="s_Head"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
@@ -994,9 +1081,48 @@
 					<scale value="1"/>
 				</StaticMesh>
 			</BodyPart>
+			<BodyPart MasterName="custom_hair" SlaveName="18" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="girl_hair18.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_hair" SlaveName="19" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="girl_hair19.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
 			<BodyPart MasterName="custom_hair" SlaveName="2" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="girl_hair02.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_hair" SlaveName="20" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="girl_hair20.mesh"/>
 					<SocketName value="s_Head"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
@@ -1023,6 +1149,19 @@
 			<BodyPart MasterName="custom_hair" SlaveName="22" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="hair09.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_hair" SlaveName="23" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="girl_hair23.mesh"/>
 					<SocketName value="s_Head"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
@@ -1126,7 +1265,7 @@
 			</BodyPart>
 			<BodyPart MasterName="custom_hair" SlaveName="30" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
-					<FileName value="hair01_tnt.mesh"/>
+					<FileName value="hair30.mesh"/>
 					<SocketName value="s_Head"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
@@ -1179,6 +1318,19 @@
 			<BodyPart MasterName="custom_hair" SlaveName="3004" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="hair3004bl.mesh"/>
+					<SocketName value="s_Head"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_hair" SlaveName="32" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="hair01_tnt.mesh"/>
 					<SocketName value="s_Head"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
@@ -1293,7 +1445,7 @@
 					<scale value="1"/>
 				</StaticMesh>
 			</BodyPart>
-			<BodyPart MasterName="custom_hand" SlaveName="3" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+			<BodyPart MasterName="custom_hand" SlaveName="4" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="hand01_tnt.mesh"/>
 					<SocketName value="s_Hand_r"/>
@@ -1473,6 +1625,54 @@
 					<scale value="1"/>
 				</StaticMesh>
 			</BodyPart>
+			<BodyPart MasterName="custom_shoes" SlaveName="10" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="shoes_d10_l.mesh"/>
+					<SocketName value="s_foot_l"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+				<StaticMesh>
+					<FileName value="shoes_d10_r.mesh"/>
+					<SocketName value="s_foot_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_shoes" SlaveName="11" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="shoes_d11_l.mesh"/>
+					<SocketName value="s_foot_l"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+				<StaticMesh>
+					<FileName value="shoes_d11_r.mesh"/>
+					<SocketName value="s_foot_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
 			<BodyPart MasterName="custom_shoes" SlaveName="12" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="shoes_d12_l.mesh"/>
@@ -1641,6 +1841,30 @@
 					<scale value="1"/>
 				</StaticMesh>
 			</BodyPart>
+			<BodyPart MasterName="custom_shoes" SlaveName="19" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="shoes19_r.mesh"/>
+					<SocketName value="s_foot_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+				<StaticMesh>
+					<FileName value="shoes19_l.mesh"/>
+					<SocketName value="s_foot_l"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
 			<BodyPart MasterName="custom_shoes" SlaveName="2" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="shoes_d02_l.mesh"/>
@@ -1656,6 +1880,30 @@
 				<StaticMesh>
 					<FileName value="shoes_d02_r.mesh"/>
 					<SocketName value="s_foot_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_shoes" SlaveName="20" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="shoes18_r.mesh"/>
+					<SocketName value="s_foot_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+				<StaticMesh>
+					<FileName value="shoes18_l.mesh"/>
+					<SocketName value="s_foot_l"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
 					<Position_Z value="0"/>
@@ -1895,6 +2143,30 @@
 				</StaticMesh>
 				<StaticMesh>
 					<FileName value="shoes_d08_r.mesh"/>
+					<SocketName value="s_foot_r"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+			</BodyPart>
+			<BodyPart MasterName="custom_shoes" SlaveName="9" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
+				<StaticMesh>
+					<FileName value="shoes_d09_l.mesh"/>
+					<SocketName value="s_foot_l"/>
+					<Position_X value="0"/>
+					<Position_Y value="0"/>
+					<Position_Z value="0"/>
+					<yaw value="0"/>
+					<pitch value="0"/>
+					<roll value="0"/>
+					<scale value="1"/>
+				</StaticMesh>
+				<StaticMesh>
+					<FileName value="shoes_d09_r.mesh"/>
 					<SocketName value="s_foot_r"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
@@ -2917,19 +3189,6 @@
 					<scale value="1"/>
 				</StaticMesh>
 			</BodyPart>
-			<BodyPart MasterName="gun" SlaveName="jewel02.mesh" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="jewel02.mesh"/>
-					<SocketName value="s_Hand_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
 		</BodyParts>
 		<Skills>
 			<Skill Name="aim1" EnableWound="false" UserDefineTime="-2" TextMode="0">
@@ -2998,10 +3257,6 @@
 			</Skill>
 			<Skill Name="hammer_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
 				<Animation Name = "girl_stand10.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="hello" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "girl_standby01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
 				</Animation>
 			</Skill>
 			<Skill Name="idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
@@ -3138,7 +3393,6 @@
 				<Anim Name="girl_walk06.anim"/>
 				<Anim Name="girl_walk05.anim"/>
 				<Anim Name="girl_walk04.anim"/>
-				<Anim Name="girl_standby01.anim"/>
 		</Anims>
 	</ActorTemplate>
 </ActorTemplates>

@@ -1,0 +1,22 @@
+{
+    "Dialog": {
+        "Window": {
+            "Type": "Layout",
+            "Name": "EnchantmentPropsPanel",
+            "Property": [
+                {
+                    "Name": "Area",
+                    "Value": "{{0,0},{0,0},{1,0},{1,0}}"
+                },
+                {
+                    "Name": "WndOpenSound",
+                    "Value": "0"
+                },
+                {
+                    "Name": "WndCloseSound",
+                    "Value": "0"
+                }
+            ]
+        }
+    }
+}
