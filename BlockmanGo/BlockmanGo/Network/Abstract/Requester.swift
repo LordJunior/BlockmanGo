@@ -73,7 +73,7 @@ class Requester {
                         }
                         
                         guard let code = json["code"] as? Int else {
-                            completion(.failure(.parseResponseFailed))
+                            completion(.success(json))
                             return
                         }
                         guard code == 1 else {

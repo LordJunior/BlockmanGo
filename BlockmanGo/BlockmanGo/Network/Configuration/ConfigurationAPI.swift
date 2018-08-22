@@ -40,7 +40,7 @@ extension ConfigurationAPI: TargetType {
     var task: Task {
         switch self {
         case .fetchAppInfoFromiTunes:
-            return .requestParameters(parameters: ["id" : 1388175232], encoding: URLEncoding.queryString)
+            return .requestParameters(parameters: ["id" : 1426189000], encoding: URLEncoding.queryString)
         default:
             return .requestPlain
         }

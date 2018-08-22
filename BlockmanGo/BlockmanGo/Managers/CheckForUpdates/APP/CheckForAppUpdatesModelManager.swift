@@ -25,7 +25,6 @@ class CheckForAppUpdatesModelManager {
                 }
                 self.fetchAppUpdatesInfo(completion: completion)
             case .failure(_):
-                self.appVersionForItunes = "2.0.0"
                 self.fetchAppUpdatesInfo(completion: completion)
                 break
             }

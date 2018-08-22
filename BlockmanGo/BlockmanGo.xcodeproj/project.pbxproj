@@ -151,6 +151,11 @@
 		DD5160F620F631F40000B8DC /* GamesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F520F631F40000B8DC /* GamesAPI.swift */; };
 		DD5160F920F6F1CD0000B8DC /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F820F6F1CD0000B8DC /* GameModel.swift */; };
 		DD51611620F747000000B8DC /* GamesRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51611520F747000000B8DC /* GamesRequester.swift */; };
+		DD67B01B212CF70B002C12D1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD67B019212CF70B002C12D1 /* SystemConfiguration.framework */; };
+		DD67B01D212CF717002C12D1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD67B01C212CF716002C12D1 /* Security.framework */; };
+		DD67B01F212CF71F002C12D1 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD67B01E212CF71F002C12D1 /* CoreMotion.framework */; };
+		DD67B021212CF72A002C12D1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD67B020212CF72A002C12D1 /* CoreTelephony.framework */; };
+		DD67B023212CF733002C12D1 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD67B022212CF733002C12D1 /* AdSupport.framework */; };
 		DD7402D020FC791A00091B9D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402CF20FC791A00091B9D /* LaunchViewController.swift */; };
 		DD7402D220FC79D400091B9D /* CheckForUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D120FC79D400091B9D /* CheckForUpdatesViewController.swift */; };
 		DD7402D420FC818E00091B9D /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D320FC818E00091B9D /* ProgressView.swift */; };
@@ -302,6 +307,11 @@
 		DD5160F520F631F40000B8DC /* GamesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesAPI.swift; sourceTree = "<group>"; };
 		DD5160F820F6F1CD0000B8DC /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		DD51611520F747000000B8DC /* GamesRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesRequester.swift; sourceTree = "<group>"; };
+		DD67B019212CF70B002C12D1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DD67B01C212CF716002C12D1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DD67B01E212CF71F002C12D1 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		DD67B020212CF72A002C12D1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		DD67B022212CF733002C12D1 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		DD7402CF20FC791A00091B9D /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		DD7402D120FC79D400091B9D /* CheckForUpdatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckForUpdatesViewController.swift; sourceTree = "<group>"; };
 		DD7402D320FC818E00091B9D /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
@@ -366,6 +376,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD67B023212CF733002C12D1 /* AdSupport.framework in Frameworks */,
+				DD67B021212CF72A002C12D1 /* CoreTelephony.framework in Frameworks */,
+				DD67B01F212CF71F002C12D1 /* CoreMotion.framework in Frameworks */,
+				DD67B01D212CF717002C12D1 /* Security.framework in Frameworks */,
+				DD67B01B212CF70B002C12D1 /* SystemConfiguration.framework in Frameworks */,
 				DDE09F9B21131F1700BD5CF8 /* BlockModsGameKit.framework in Frameworks */,
 				DD51606D20EF63D60000B8DC /* libbz2.1.0.tbd in Frameworks */,
 				DDFB64502126C29B0036AE0F /* libTalkingData.a in Frameworks */,
@@ -445,6 +460,11 @@
 		DD51606720EF63C90000B8DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD67B022212CF733002C12D1 /* AdSupport.framework */,
+				DD67B020212CF72A002C12D1 /* CoreTelephony.framework */,
+				DD67B01E212CF71F002C12D1 /* CoreMotion.framework */,
+				DD67B01C212CF716002C12D1 /* Security.framework */,
+				DD67B019212CF70B002C12D1 /* SystemConfiguration.framework */,
 				DD51606C20EF63D60000B8DC /* libbz2.1.0.tbd */,
 				DD51606A20EF63CF0000B8DC /* libc++.1.tbd */,
 				DD51606820EF63CA0000B8DC /* libstdc++.6.0.9.tbd */,
@@ -1385,6 +1405,7 @@
 					"$(PROJECT_DIR)/BlockmanGo/ThirdPartyLib",
 					"$(PROJECT_DIR)/BlockmanGo/ThirdPartyLib/Talkingdata",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DBLOCK_DEV";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sandboxol.blockmango;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BlockmanGo/BlockmanGo-Briding-Header.h";
@@ -1556,7 +1577,7 @@
 					"$(PROJECT_DIR)/BlockmanGo/ThirdPartyLib",
 					"$(PROJECT_DIR)/BlockmanGo/ThirdPartyLib/Talkingdata",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDEBUG";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sandboxol.blockmango;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

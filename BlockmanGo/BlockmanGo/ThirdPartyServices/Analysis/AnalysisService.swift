@@ -32,7 +32,7 @@ struct AnalysisService {
     }
 
     static func start() {
-        TalkingData.sessionStarted("F36C73916ACC4939BE27FE2C4F5E438C", withChannelId: "App Store")
+        TalkingData.sessionStarted("94FC268A15884348AB38611CE69766FE", withChannelId: "App Store")
         TalkingData.setSignalReportEnabled(true)
         TalkingData.setExceptionReportEnabled(true)
     }

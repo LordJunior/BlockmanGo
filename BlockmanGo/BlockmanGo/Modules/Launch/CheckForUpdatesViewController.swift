@@ -46,8 +46,12 @@ class CheckForUpdatesViewController: UIViewController {
             make.height.equalTo(41)
         }
         
-//        checkForAppUpdates()
-        checkForResourceUpdates()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        checkForAppUpdates()
     }
     
     private func checkForAppUpdates() {
