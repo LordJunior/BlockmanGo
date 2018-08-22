@@ -29,6 +29,14 @@ class HomePageViewController: UIViewController {
             infoView.userID = UserManager.shared.userID
         }
         
+        let settingButton = UIButton().addTo(superView: view).configure { (button) in
+            button.setBackgroundImage(R.image.setting(), for: .normal)
+            button.addTarget(self, action: #selector(settingButtonClicked(sender:)), for: .touchUpInside)
+        }.layout { (make) in
+            make.size.equalTo(CGSize(width: 40, height: 40))
+            make.right.top.equalToSuperview().inset(10)
+        }
+        
         UIButton().addTo(superView: view).configure { (button) in
             button.setBackgroundImage(R.image.home_play(), for: .normal)
             button.addTarget(self, action: #selector(playButtonClicked(sender:)), for: .touchUpInside)
@@ -62,6 +70,10 @@ class HomePageViewController: UIViewController {
         super.viewDidAppear(animated)
         
         AnalysisService.trackEvent(.enter_homepage)
+    }
+    
+    @objc private func settingButtonClicked(sender: UIButton) {
+        
     }
     
     @objc private func playButtonClicked(sender: UIButton) {
