@@ -18,7 +18,7 @@ extension GameInQueueViewControllerDelegate {
     func gameInQueueViewControllerCancelButtonDidClicked(_ controller: GameInQueueViewController) {}
 }
 
-class GameInQueueViewController: TemplateViewController {
+class GameInQueueViewController: UIViewController {
 
     /// 触发代理的时间间隔
     /// 默认为5秒

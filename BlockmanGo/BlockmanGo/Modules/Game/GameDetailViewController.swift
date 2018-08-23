@@ -19,7 +19,7 @@ extension GameDetailViewControllerDelegate {
     }
 }
 
-class GameDetailViewController: TemplateViewController {
+class GameDetailViewController: UIViewController {
 
     weak var delegate: GameDetailViewControllerDelegate?
     

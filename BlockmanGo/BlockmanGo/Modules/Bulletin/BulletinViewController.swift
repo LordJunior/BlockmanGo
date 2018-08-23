@@ -12,7 +12,7 @@ protocol BulletinViewControllerDelegate: class {
     func bulletinViewControllerDoneButtonDidClicked(_ viewController: BulletinViewController)
 }
 
-class BulletinViewController: TemplateViewController {
+class BulletinViewController: UIViewController {
 
     weak var delegate: BulletinViewControllerDelegate?
     

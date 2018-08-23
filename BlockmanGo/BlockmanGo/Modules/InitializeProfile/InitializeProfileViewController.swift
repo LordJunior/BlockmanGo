@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class InitializeProfileViewController: TemplateViewController {
+class InitializeProfileViewController: UIViewController {
 
     private weak var selectedGenderButton: UIButton?
     private weak var randomInputView: RandomInputView?
