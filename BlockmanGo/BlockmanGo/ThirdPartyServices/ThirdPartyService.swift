@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import IQKeyboardManagerSwift
 
 struct ThirdPartyService {
     private init() {
@@ -14,6 +15,7 @@ struct ThirdPartyService {
     }
     
     static func initialize(launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
+        IQKeyboardManager.shared.enable = true
 #if DEBUG
 #else
         AnalysisService.start() // 启动统计服务
