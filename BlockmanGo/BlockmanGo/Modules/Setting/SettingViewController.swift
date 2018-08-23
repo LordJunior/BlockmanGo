@@ -8,13 +8,15 @@
 
 import UIKit
 
-class SettingViewController: TemplateViewController {
+class SettingViewController: UIViewController {
 
     private weak var tableView: UITableView?
     private let optionTitles = ["切换账号", "切换账号与安全", "关于Blockman GO", "清除缓存", "退出游戏"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         
         let backgroundView = UIImageView(image: R.image.general_alert_background()).addTo(superView: view).layout { (make) in
             make.center.equalToSuperview()
@@ -36,14 +38,13 @@ class SettingViewController: TemplateViewController {
         }
         
         addCloseButton(layout: { (make) in
-            make.left.equalTo(backgroundView).offset(10)
+            make.left.equalTo(backgroundView.snp.right).offset(10)
             make.top.equalTo(backgroundView).offset(-5)
             make.size.equalTo(closeButtonSize)
         }) { _ in
             TransitionManager.dismiss(animated: true)
         }
     }
-
 }
 
 extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
@@ -58,9 +59,14 @@ extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as SettingOptionTableViewCell
         cell.optionTitle = optionTitles[indexPath.section]
-        cell.delegate = self
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        TransitionManager.presentInHidePresentingTransition(SwitchAccountViewController.self)
+    }
+
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return UIView()
@@ -71,14 +77,5 @@ extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
             return 20
         }
         return 5
-    }
-}
-
-extension SettingViewController: SettingOptionTableViewCellDelegate {
-    func settingOptionCellDidSelected(_ cell: SettingOptionTableViewCell) {
-        guard let section = tableView?.indexPath(for: cell)?.section else {
-            return
-        }
-        TransitionManager.presentInHidePresentingTransition(SwitchAccountViewController.self)
     }
 }

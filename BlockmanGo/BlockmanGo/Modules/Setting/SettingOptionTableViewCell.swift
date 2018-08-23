@@ -8,21 +8,15 @@
 
 import UIKit
 
-protocol SettingOptionTableViewCellDelegate: class {
-    func settingOptionCellDidSelected(_ cell: SettingOptionTableViewCell)
-}
-
 class SettingOptionTableViewCell: UITableViewCell {
-
-    weak var delegate: SettingOptionTableViewCellDelegate?
     
     var optionTitle: String? {
         didSet {
-            optionButton?.setTitle(optionTitle, for: .normal)
+            titleLabel?.text = optionTitle
         }
     }
-    
-    private weak var optionButton: UIButton?
+    private weak var titleLabel: UILabel?
+    private weak var backgroundImageView: UIImageView?
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -31,15 +25,17 @@ class SettingOptionTableViewCell: UITableViewCell {
         backgroundColor = UIColor.clear
         contentView.backgroundColor = UIColor.clear
         
-        optionButton = UIButton().addTo(superView: contentView).configure { (button) in
-            button.setBackgroundImage(R.image.setting_option(), for: .normal)
-            button.setBackgroundImage(R.image.setting_option_selected(), for: .highlighted)
-            button.setTitleColor(R.clr.appColor._844501(), for: .normal)
-            button.titleLabel?.font = UIFont.size14
-            button.addTarget(self, action: #selector(optionButtonClicked), for: .touchUpInside)
-        }.layout { (make) in
+        backgroundImageView = UIImageView(image: R.image.setting_option()).addTo(superView: contentView).layout { (make) in
             make.left.right.equalToSuperview().inset(20)
             make.top.bottom.equalToSuperview()
+        }
+        
+        titleLabel = UILabel().addTo(superView: contentView).configure { (label) in
+            label.textColor = R.clr.appColor._844501()
+            label.font = UIFont.size14
+            label.textAlignment = .center
+        }.layout { (make) in
+            make.center.equalToSuperview()
         }
     }
     
@@ -47,7 +43,13 @@ class SettingOptionTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc private func optionButtonClicked() {
-        delegate?.settingOptionCellDidSelected(self)
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        if selected {
+            backgroundImageView?.image = R.image.setting_option_selected()
+        }else {
+            backgroundImageView?.image = R.image.setting_option()
+        }
     }
 }

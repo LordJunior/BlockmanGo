@@ -53,7 +53,6 @@
 		DD456BF9210EBDE6009465FE /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030E20FF620F00091B9D /* Delay.swift */; };
 		DD456BFA210EBDE6009465FE /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160A220F494CF0000B8DC /* UIFont+Extension.swift */; };
 		DD456BFB210EBDE6009465FE /* URLQueryArrayEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160C120F5A2330000B8DC /* URLQueryArrayEncoding.swift */; };
-		DD456BFC210EBDE6009465FE /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51608320F358690000B8DC /* TemplateViewController.swift */; };
 		DD456BFD210EBDE6009465FE /* ConfigurationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402E720FDA62000091B9D /* ConfigurationAPI.swift */; };
 		DD456BFE210EBDE6009465FE /* PrepareLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51608A20F464980000B8DC /* PrepareLauncher.swift */; };
 		DD456BFF210EBDE6009465FE /* BulletinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030720FF3DA700091B9D /* BulletinViewController.swift */; };
@@ -116,7 +115,6 @@
 		DD51607620F304A00000B8DC /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51607520F304A00000B8DC /* MainNavigationController.swift */; };
 		DD51607B20F3082E0000B8DC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51607A20F3082E0000B8DC /* R.generated.swift */; };
 		DD51608220F357B80000B8DC /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51608120F357B80000B8DC /* TransitionManager.swift */; };
-		DD51608420F358690000B8DC /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51608320F358690000B8DC /* TemplateViewController.swift */; };
 		DD51608620F363FF0000B8DC /* TransitionManagerStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51608520F363FF0000B8DC /* TransitionManagerStack.swift */; };
 		DD51608B20F464980000B8DC /* PrepareLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51608A20F464980000B8DC /* PrepareLauncher.swift */; };
 		DD51608D20F468300000B8DC /* AccountInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51608C20F468300000B8DC /* AccountInfoView.swift */; };
@@ -281,7 +279,6 @@
 		DD51607520F304A00000B8DC /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		DD51607A20F3082E0000B8DC /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		DD51608120F357B80000B8DC /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
-		DD51608320F358690000B8DC /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
 		DD51608520F363FF0000B8DC /* TransitionManagerStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManagerStack.swift; sourceTree = "<group>"; };
 		DD51608A20F464980000B8DC /* PrepareLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareLauncher.swift; sourceTree = "<group>"; };
 		DD51608C20F468300000B8DC /* AccountInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoView.swift; sourceTree = "<group>"; };
@@ -520,7 +517,6 @@
 			isa = PBXGroup;
 			children = (
 				DD7402D820FCC58C00091B9D /* ModalTransition */,
-				DD51608320F358690000B8DC /* TemplateViewController.swift */,
 				DD51607520F304A00000B8DC /* MainNavigationController.swift */,
 				DD51608120F357B80000B8DC /* TransitionManager.swift */,
 				DD51608520F363FF0000B8DC /* TransitionManagerStack.swift */,
@@ -727,6 +723,7 @@
 				DD67B02C212D53D0002C12D1 /* SettingViewController.swift */,
 				DD67B03D212D68FF002C12D1 /* SettingOptionTableViewCell.swift */,
 				DD67B045212E56D0002C12D1 /* SwitchAccount */,
+				DD67B04D212E910D002C12D1 /* Login */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -737,6 +734,13 @@
 				DD3BAF71212DCA1900672C26 /* SwitchAccountViewController.swift */,
 			);
 			path = SwitchAccount;
+			sourceTree = "<group>";
+		};
+		DD67B04D212E910D002C12D1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		DD7402CD20FC779E00091B9D /* Launch */ = {
@@ -1229,7 +1233,6 @@
 				DD456BF9210EBDE6009465FE /* Delay.swift in Sources */,
 				DD456BFA210EBDE6009465FE /* UIFont+Extension.swift in Sources */,
 				DD456BFB210EBDE6009465FE /* URLQueryArrayEncoding.swift in Sources */,
-				DD456BFC210EBDE6009465FE /* TemplateViewController.swift in Sources */,
 				DD456BFD210EBDE6009465FE /* ConfigurationAPI.swift in Sources */,
 				DD456BFE210EBDE6009465FE /* PrepareLauncher.swift in Sources */,
 				DD456BFF210EBDE6009465FE /* BulletinViewController.swift in Sources */,
@@ -1323,7 +1326,6 @@
 				DD74030F20FF620F00091B9D /* Delay.swift in Sources */,
 				DD5160A320F494CF0000B8DC /* UIFont+Extension.swift in Sources */,
 				DD5160C520F5A2330000B8DC /* URLQueryArrayEncoding.swift in Sources */,
-				DD51608420F358690000B8DC /* TemplateViewController.swift in Sources */,
 				DD7402E920FDA62000091B9D /* ConfigurationAPI.swift in Sources */,
 				DD51608B20F464980000B8DC /* PrepareLauncher.swift in Sources */,
 				DD74030820FF3DA700091B9D /* BulletinViewController.swift in Sources */,

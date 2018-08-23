@@ -10,31 +10,93 @@ import UIKit
 
 class SwitchAccountViewController: UIViewController {
 
+    private weak var accountTypeImageView: UIImageView?
+    private weak var idLabel: UILabel?
+    private weak var nicknameLabel: UILabel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        let containView = UIImageView(image: R.image.general_alert_background()).addTo(superView: view).layout { (make) in
+            make.size.equalTo(CGSize(width: 310, height: 200))
+            make.center.equalToSuperview()
+        }.configure { (imageView) in
+            imageView.isUserInteractionEnabled = true
+        }
+        
+        let shadowContainView = UIView().addTo(superView: containView).configure { (view) in
+            view.backgroundColor = R.clr.appColor._eed5a0()
+            view.layer.cornerRadius = 12
+            view.clipsToBounds = true
+        }.layout { (make) in
+            make.left.right.top.equalToSuperview().inset(20)
+            make.height.equalTo(100)
+        }
+        
+        let idContainView = UIView().addTo(superView: shadowContainView).configure { (view) in
+            view.layer.cornerRadius = 8
+            view.clipsToBounds = true
+            view.backgroundColor = UIColor.white
+        }.layout { (make) in
+            make.left.right.equalToSuperview().inset(10)
+            make.top.bottom.equalToSuperview().inset(20)
+        }
+        
+        accountTypeImageView = UIImageView(image: R.image.setting_facebook()).addTo(superView: idContainView).layout(snapKitMaker: { (make) in
+            make.left.equalToSuperview().offset(10)
+            make.centerY.equalToSuperview()
+            make.size.equalTo(CGSize(width: 34, height: 34))
+        })
+        
+        idLabel = UILabel().addTo(superView: idContainView).configure({ (label) in
+            label.font = UIFont.size13
+            label.textColor = R.clr.appColor._844501()
+            label.text = "ID: 1234567"
+        }).layout(snapKitMaker: { (make) in
+            make.left.equalTo(accountTypeImageView!.snp.right).offset(10)
+            make.centerY.equalTo(accountTypeImageView!).offset(-8)
+        })
+        
+        nicknameLabel = UILabel().addTo(superView: idContainView).configure({ (label) in
+            label.font = UIFont.size12
+            label.textColor = R.clr.appColor._aaaaaa()
+            label.text = "昵称: 垃圾游戏"
+        }).layout(snapKitMaker: { (make) in
+            make.left.equalTo(idLabel!)
+            make.top.equalTo(idLabel!.snp.bottom).offset(5)
+        })
+        
+        UIImageView(image: R.image.setting_checked()).addTo(superView: idContainView).layout { (make) in
+            make.size.equalTo(CGSize(width: 12, height: 12))
+            make.right.equalToSuperview().inset(10)
+            make.centerY.equalToSuperview()
+        }
+        
+        UIButton().addTo(superView: containView).configure({ (button) in
+            button.setBackgroundImage(R.image.general_button_background_selected(), for: .normal)
+            button.titleLabel?.font = UIFont.boldSize15
+            button.setTitle("切换账号", for: .normal)
+            button.setTitleColor(R.clr.appColor._844501(), for: .normal)
+            button.titleEdgeInsets = UIEdgeInsetsMake(-2, 0, 0, 0)
+            button.addTarget(self, action: #selector(switchAccountButtonClicked), for: .touchUpInside)
+        }).layout(snapKitMaker: { (make) in
+            make.size.equalTo(CGSize(width: 212, height: 42))
+            make.centerX.equalToSuperview()
+            make.top.equalTo(shadowContainView.snp.bottom).offset(15)
+        })
+        
+        addCloseButton(layout: { (make) in
+            make.size.equalTo(closeButtonSize)
+            make.left.equalTo(containView.snp.right).offset(5)
+            make.top.equalTo(containView)
+        }) { _ in
+            TransitionManager.dismiss(animated: true)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        TransitionManager.dismiss(animated: true)
+    @objc private func switchAccountButtonClicked() {
+        
     }
 }
