@@ -74,18 +74,13 @@ class SwitchAccountViewController: UIViewController {
             make.centerY.equalToSuperview()
         }
         
-        UIButton().addTo(superView: containView).configure({ (button) in
-            button.setBackgroundImage(R.image.general_button_background_selected(), for: .normal)
-            button.titleLabel?.font = UIFont.boldSize15
-            button.setTitle("切换账号", for: .normal)
-            button.setTitleColor(R.clr.appColor._844501(), for: .normal)
-            button.titleEdgeInsets = UIEdgeInsetsMake(-2, 0, 0, 0)
+        CommonButton(title: "切换账号").addTo(superView: containView).configure { (button) in
             button.addTarget(self, action: #selector(switchAccountButtonClicked), for: .touchUpInside)
-        }).layout(snapKitMaker: { (make) in
+        }.layout { (make) in
             make.size.equalTo(CGSize(width: 212, height: 42))
             make.centerX.equalToSuperview()
             make.top.equalTo(shadowContainView.snp.bottom).offset(15)
-        })
+        }
         
         addCloseButton(layout: { (make) in
             make.size.equalTo(closeButtonSize)
