@@ -68,7 +68,7 @@ struct R: Rswift.Validatable {
       /// <span style='background-color: #341E00; color: #CBE1FF; padding: 1px 3px;'>#341E00</span> _341e00
       static let _341e00 = Rswift.ColorPaletteItemResource(name: "_341e00", red: 0.2039215686, green: 0.1176470588, blue: 0.0, alpha: 1.0)
       /// <span style='background-color: #555555; color: #AAAAAA; padding: 1px 3px;'>#555555</span> _555555
-      static let _555555 = Rswift.ColorPaletteItemResource(name: "_555555", red: 0.333333333333333, green: 0.333333333333333, blue: 0.333333333333333, alpha: 1.0)
+      static let _555555 = Rswift.ColorPaletteItemResource(name: "_555555", red: 0.3333333333, green: 0.3333333333, blue: 0.3333333333, alpha: 1.0)
       /// <span style='background-color: #5E3F00; color: #A1C0FF; padding: 1px 3px;'>#5E3F00</span> _5e3f00
       static let _5e3f00 = Rswift.ColorPaletteItemResource(name: "_5e3f00", red: 0.368627451, green: 0.2470588235, blue: 0.0, alpha: 1.0)
       /// <span style='background-color: #644D22; color: #9BB2DD; padding: 1px 3px;'>#644D22</span> _644d22
@@ -96,7 +96,7 @@ struct R: Rswift.Validatable {
       /// <span style='background-color: #A7A7A7; color: #585858; padding: 1px 3px;'>#A7A7A7</span> _a7a7a7
       static let _a7a7a7 = Rswift.ColorPaletteItemResource(name: "_a7a7a7", red: 0.6549019608, green: 0.6549019608, blue: 0.6549019608, alpha: 1.0)
       /// <span style='background-color: #AAAAAA; color: #555555; padding: 1px 3px;'>#AAAAAA</span> _aaaaaa
-      static let _aaaaaa = Rswift.ColorPaletteItemResource(name: "_aaaaaa", red: 0.666666666666667, green: 0.666666666666667, blue: 0.666666666666667, alpha: 1.0)
+      static let _aaaaaa = Rswift.ColorPaletteItemResource(name: "_aaaaaa", red: 0.6666666667, green: 0.6666666667, blue: 0.6666666667, alpha: 1.0)
       /// <span style='background-color: #B17F63; color: #4E809C; padding: 1px 3px;'>#B17F63</span> _b17f63
       static let _b17f63 = Rswift.ColorPaletteItemResource(name: "_b17f63", red: 0.6941176471, green: 0.4980392157, blue: 0.3882352941, alpha: 1.0)
       /// <span style='background-color: #B39558; color: #4C6AA7; padding: 1px 3px;'>#B39558</span> _b39558
@@ -345,9 +345,9 @@ struct R: Rswift.Validatable {
       
       /// <span style='background-color: #555555; color: #AAAAAA; padding: 1px 3px;'>#555555</span> _555555
       /// 
-      /// UIColor(red: 0.333333333333333, green: 0.333333333333333, blue: 0.333333333333333, alpha: 1.0)
+      /// UIColor(red: 0.3333333333, green: 0.3333333333, blue: 0.3333333333, alpha: 1.0)
       static func _555555(_: Void = ()) -> UIKit.UIColor {
-        return UIKit.UIColor(red: 0.333333333333333, green: 0.333333333333333, blue: 0.333333333333333, alpha: 1.0)
+        return UIKit.UIColor(red: 0.3333333333, green: 0.3333333333, blue: 0.3333333333, alpha: 1.0)
       }
       
       /// <span style='background-color: #5E3F00; color: #A1C0FF; padding: 1px 3px;'>#5E3F00</span> _5e3f00
@@ -443,9 +443,9 @@ struct R: Rswift.Validatable {
       
       /// <span style='background-color: #AAAAAA; color: #555555; padding: 1px 3px;'>#AAAAAA</span> _aaaaaa
       /// 
-      /// UIColor(red: 0.666666666666667, green: 0.666666666666667, blue: 0.666666666666667, alpha: 1.0)
+      /// UIColor(red: 0.6666666667, green: 0.6666666667, blue: 0.6666666667, alpha: 1.0)
       static func _aaaaaa(_: Void = ()) -> UIKit.UIColor {
-        return UIKit.UIColor(red: 0.666666666666667, green: 0.666666666666667, blue: 0.666666666666667, alpha: 1.0)
+        return UIKit.UIColor(red: 0.6666666667, green: 0.6666666667, blue: 0.6666666667, alpha: 1.0)
       }
       
       /// <span style='background-color: #B17F63; color: #4E809C; padding: 1px 3px;'>#B17F63</span> _b17f63

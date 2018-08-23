@@ -164,6 +164,8 @@
 		DD67B03B212D622B002C12D1 /* ClosableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67B039212D622B002C12D1 /* ClosableProtocol.swift */; };
 		DD67B03E212D68FF002C12D1 /* SettingOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67B03D212D68FF002C12D1 /* SettingOptionTableViewCell.swift */; };
 		DD67B03F212D68FF002C12D1 /* SettingOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67B03D212D68FF002C12D1 /* SettingOptionTableViewCell.swift */; };
+		DD67B04B212E61FA002C12D1 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67B04A212E61F9002C12D1 /* String+Crypto.swift */; };
+		DD67B04C212E61FA002C12D1 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67B04A212E61F9002C12D1 /* String+Crypto.swift */; };
 		DD7402D020FC791A00091B9D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402CF20FC791A00091B9D /* LaunchViewController.swift */; };
 		DD7402D220FC79D400091B9D /* CheckForUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D120FC79D400091B9D /* CheckForUpdatesViewController.swift */; };
 		DD7402D420FC818E00091B9D /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D320FC818E00091B9D /* ProgressView.swift */; };
@@ -324,6 +326,7 @@
 		DD67B02C212D53D0002C12D1 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		DD67B039212D622B002C12D1 /* ClosableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosableProtocol.swift; sourceTree = "<group>"; };
 		DD67B03D212D68FF002C12D1 /* SettingOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionTableViewCell.swift; sourceTree = "<group>"; };
+		DD67B04A212E61F9002C12D1 /* String+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
 		DD7402CF20FC791A00091B9D /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		DD7402D120FC79D400091B9D /* CheckForUpdatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckForUpdatesViewController.swift; sourceTree = "<group>"; };
 		DD7402D320FC818E00091B9D /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
@@ -565,6 +568,7 @@
 			isa = PBXGroup;
 			children = (
 				DD51609A20F46AAB0000B8DC /* String+ConvertToDigit.swift */,
+				DD67B04A212E61F9002C12D1 /* String+Crypto.swift */,
 				DD5160CC20F5A6750000B8DC /* Dictionary+Extension.swift */,
 				DD51609320F46A310000B8DC /* UICollectionView+Extension.swift */,
 				DD51609120F46A310000B8DC /* UITableView+Extension.swift */,
@@ -722,9 +726,17 @@
 			children = (
 				DD67B02C212D53D0002C12D1 /* SettingViewController.swift */,
 				DD67B03D212D68FF002C12D1 /* SettingOptionTableViewCell.swift */,
-				DD3BAF71212DCA1900672C26 /* SwitchAccountViewController.swift */,
+				DD67B045212E56D0002C12D1 /* SwitchAccount */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		DD67B045212E56D0002C12D1 /* SwitchAccount */ = {
+			isa = PBXGroup;
+			children = (
+				DD3BAF71212DCA1900672C26 /* SwitchAccountViewController.swift */,
+			);
+			path = SwitchAccount;
 			sourceTree = "<group>";
 		};
 		DD7402CD20FC779E00091B9D /* Launch */ = {
@@ -1207,6 +1219,7 @@
 				DD3255A7210FFB8600739E00 /* GameInQueueViewController.swift in Sources */,
 				DD456BF2210EBDE6009465FE /* BMFileManager+EngineResource.swift in Sources */,
 				DD456BF3210EBDE6009465FE /* LaunchBrandingViewController.swift in Sources */,
+				DD67B04C212E61FA002C12D1 /* String+Crypto.swift in Sources */,
 				DD456BF4210EBDE6009465FE /* LaunchViewController.swift in Sources */,
 				DD456BF5210EBDE6009465FE /* GenderEnum.swift in Sources */,
 				DD456BF6210EBDE6009465FE /* BlockHTTPResult.swift in Sources */,
@@ -1300,6 +1313,7 @@
 				DD3255A6210FFB8600739E00 /* GameInQueueViewController.swift in Sources */,
 				DD7402FF20FEF05F00091B9D /* BMFileManager+EngineResource.swift in Sources */,
 				DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */,
+				DD67B04B212E61FA002C12D1 /* String+Crypto.swift in Sources */,
 				DD7402D020FC791A00091B9D /* LaunchViewController.swift in Sources */,
 				DD8EB61E21030F7200E7AE9B /* GenderEnum.swift in Sources */,
 				DD5160E220F5B7A80000B8DC /* BlockHTTPResult.swift in Sources */,

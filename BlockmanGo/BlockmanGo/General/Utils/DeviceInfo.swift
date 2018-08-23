@@ -21,6 +21,10 @@ struct DeviceInfo {
         return FCUUID.uuidForDevice()
     }
     
+    static var uuid_SHA1: String {
+        return uuid.sha1()
+    }
+    
     static var isPhone_SE: Bool {
         return deviceSize!.equalTo(CGSize(width: 640, height: 1136))
     }
