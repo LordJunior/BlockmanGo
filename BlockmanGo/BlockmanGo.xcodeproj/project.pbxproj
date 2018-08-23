@@ -205,6 +205,16 @@
 		DDA4B0E02106BF75004346C5 /* GameDispatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */; };
 		DDA4B0E32106D9A1004346C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B0E52106D9A1004346C5 /* Localizable.strings */; };
 		DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */; };
+		DDB94558212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */; };
+		DDB94559212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */; };
+		DDB9455B212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9455A212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift */; };
+		DDB9455C212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9455A212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift */; };
+		DDB9455F212ED6BF0009933A /* PasswordSecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9455E212ED6BF0009933A /* PasswordSecurityViewController.swift */; };
+		DDB94560212ED6BF0009933A /* PasswordSecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9455E212ED6BF0009933A /* PasswordSecurityViewController.swift */; };
+		DDB94564212EDE410009933A /* MailSecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94563212EDE410009933A /* MailSecurityViewController.swift */; };
+		DDB94565212EDE410009933A /* MailSecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94563212EDE410009933A /* MailSecurityViewController.swift */; };
+		DDB94567212EDE840009933A /* ThirdLoginSecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94566212EDE840009933A /* ThirdLoginSecurityViewController.swift */; };
+		DDB94568212EDE840009933A /* ThirdLoginSecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94566212EDE840009933A /* ThirdLoginSecurityViewController.swift */; };
 		DDE09F9B21131F1700BD5CF8 /* BlockModsGameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; };
 		DDE09F9C21131F1700BD5CF8 /* BlockModsGameKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DDFB644C2126B6F30036AE0F /* AnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB644B2126B6F30036AE0F /* AnalysisService.swift */; };
@@ -368,6 +378,11 @@
 		DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDispatchModel.swift; sourceTree = "<group>"; };
 		DDA4B0E42106D9A1004346C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchBrandingViewController.swift; sourceTree = "<group>"; };
+		DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityOptionViewController.swift; sourceTree = "<group>"; };
+		DDB9455A212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityOptionTableViewCell.swift; sourceTree = "<group>"; };
+		DDB9455E212ED6BF0009933A /* PasswordSecurityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSecurityViewController.swift; sourceTree = "<group>"; };
+		DDB94563212EDE410009933A /* MailSecurityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailSecurityViewController.swift; sourceTree = "<group>"; };
+		DDB94566212EDE840009933A /* ThirdLoginSecurityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLoginSecurityViewController.swift; sourceTree = "<group>"; };
 		DDFB64452126B3D90036AE0F /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
 		DDFB644B2126B6F30036AE0F /* AnalysisService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisService.swift; sourceTree = "<group>"; };
 		DDFB644F2126C29B0036AE0F /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
@@ -729,8 +744,9 @@
 			children = (
 				DD67B02C212D53D0002C12D1 /* SettingViewController.swift */,
 				DD67B03D212D68FF002C12D1 /* SettingOptionTableViewCell.swift */,
-				DD67B045212E56D0002C12D1 /* SwitchAccount */,
 				DD67B04D212E910D002C12D1 /* Login */,
+				DD67B045212E56D0002C12D1 /* SwitchAccount */,
+				DDB94555212EBF7D0009933A /* AccountSecurityOption */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -853,6 +869,42 @@
 				DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		DDB94555212EBF7D0009933A /* AccountSecurityOption */ = {
+			isa = PBXGroup;
+			children = (
+				DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */,
+				DDB9455A212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift */,
+				DDB9455D212ED6120009933A /* PasswordSecurity */,
+				DDB94561212EDE030009933A /* MailSecurity */,
+				DDB94562212EDE0F0009933A /* ThirdLoginSecurity */,
+			);
+			path = AccountSecurityOption;
+			sourceTree = "<group>";
+		};
+		DDB9455D212ED6120009933A /* PasswordSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				DDB9455E212ED6BF0009933A /* PasswordSecurityViewController.swift */,
+			);
+			path = PasswordSecurity;
+			sourceTree = "<group>";
+		};
+		DDB94561212EDE030009933A /* MailSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				DDB94563212EDE410009933A /* MailSecurityViewController.swift */,
+			);
+			path = MailSecurity;
+			sourceTree = "<group>";
+		};
+		DDB94562212EDE0F0009933A /* ThirdLoginSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				DDB94566212EDE840009933A /* ThirdLoginSecurityViewController.swift */,
+			);
+			path = ThirdLoginSecurity;
 			sourceTree = "<group>";
 		};
 		DDFB64422126B3B30036AE0F /* ThirdPartyLib */ = {
@@ -1230,6 +1282,7 @@
 				DD456BF1210EBDE6009465FE /* ConfigurationRequester.swift in Sources */,
 				DD3255A7210FFB8600739E00 /* GameInQueueViewController.swift in Sources */,
 				DD456BF2210EBDE6009465FE /* BMFileManager+EngineResource.swift in Sources */,
+				DDB9455C212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift in Sources */,
 				DD456BF3210EBDE6009465FE /* LaunchBrandingViewController.swift in Sources */,
 				DD67B04C212E61FA002C12D1 /* String+Crypto.swift in Sources */,
 				DD456BF4210EBDE6009465FE /* LaunchViewController.swift in Sources */,
@@ -1249,6 +1302,7 @@
 				DD456C01210EBDE6009465FE /* GameModel.swift in Sources */,
 				DD456C02210EBDE6009465FE /* ReusableProtocol.swift in Sources */,
 				DD456C03210EBDE6009465FE /* AccountInfoView.swift in Sources */,
+				DDB94559212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */,
 				DD456C04210EBDE6009465FE /* CheckForAppUpdateModel.swift in Sources */,
 				DD456C05210EBDE6009465FE /* JsonMapper.swift in Sources */,
 				DD456C06210EBDE6009465FE /* GenderButton.swift in Sources */,
@@ -1257,6 +1311,7 @@
 				DD456C09210EBDE6009465FE /* AppInfo.swift in Sources */,
 				DD456C0A210EBDE6009465FE /* UserManager.swift in Sources */,
 				DD456C0B210EBDE6009465FE /* DismissAnimatedTransition.swift in Sources */,
+				DDB94568212EDE840009933A /* ThirdLoginSecurityViewController.swift in Sources */,
 				DD3BAF73212DCA1900672C26 /* SwitchAccountViewController.swift in Sources */,
 				DD456C0C210EBDE6009465FE /* GameModelManager.swift in Sources */,
 				DD67B03F212D68FF002C12D1 /* SettingOptionTableViewCell.swift in Sources */,
@@ -1264,6 +1319,7 @@
 				DD456C0D210EBDE6009465FE /* GameDetailModel.swift in Sources */,
 				DD456C0E210EBDE6009465FE /* EngineResourceManagerResourceManager.swift in Sources */,
 				DD456C0F210EBDE6009465FE /* DecorationControllerManager.swift in Sources */,
+				DDB94565212EDE410009933A /* MailSecurityViewController.swift in Sources */,
 				DD456C10210EBDE6009465FE /* BlockHTTPError.swift in Sources */,
 				DD456C11210EBDE6009465FE /* CheckForAppUpdatesModelManager.swift in Sources */,
 				DD456C12210EBDE6009465FE /* UserModel.swift in Sources */,
@@ -1274,6 +1330,7 @@
 				DD456C17210EBDE6009465FE /* HomePageViewController.swift in Sources */,
 				DD456C18210EBDE6009465FE /* UITableView+Extension.swift in Sources */,
 				DD456C19210EBDE6009465FE /* AppDelegate.swift in Sources */,
+				DDB94560212ED6BF0009933A /* PasswordSecurityViewController.swift in Sources */,
 				DD456C1A210EBDE6009465FE /* String+ConvertToDigit.swift in Sources */,
 				DD456C1B210EBDE6009465FE /* CopyFileTool.swift in Sources */,
 				DD456C1C210EBDE6009465FE /* GameModesView.swift in Sources */,
@@ -1325,6 +1382,7 @@
 				DD7402EA20FDA62000091B9D /* ConfigurationRequester.swift in Sources */,
 				DD3255A6210FFB8600739E00 /* GameInQueueViewController.swift in Sources */,
 				DD7402FF20FEF05F00091B9D /* BMFileManager+EngineResource.swift in Sources */,
+				DDB9455B212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift in Sources */,
 				DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */,
 				DD67B04B212E61FA002C12D1 /* String+Crypto.swift in Sources */,
 				DD7402D020FC791A00091B9D /* LaunchViewController.swift in Sources */,
@@ -1344,6 +1402,7 @@
 				DD5160F920F6F1CD0000B8DC /* GameModel.swift in Sources */,
 				DD51609B20F46AAB0000B8DC /* ReusableProtocol.swift in Sources */,
 				DD51608D20F468300000B8DC /* AccountInfoView.swift in Sources */,
+				DDB94558212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */,
 				DD7402ED20FDC9C000091B9D /* CheckForAppUpdateModel.swift in Sources */,
 				DD5160E620F5F0350000B8DC /* JsonMapper.swift in Sources */,
 				DD8EB61B21030F3400E7AE9B /* GenderButton.swift in Sources */,
@@ -1352,6 +1411,7 @@
 				DD7402F120FDD41500091B9D /* AppInfo.swift in Sources */,
 				DD5160D620F5B2FB0000B8DC /* UserManager.swift in Sources */,
 				DD7402DE20FCC58C00091B9D /* DismissAnimatedTransition.swift in Sources */,
+				DDB94567212EDE840009933A /* ThirdLoginSecurityViewController.swift in Sources */,
 				DD3BAF72212DCA1900672C26 /* SwitchAccountViewController.swift in Sources */,
 				DD5160F320F6319E0000B8DC /* GameModelManager.swift in Sources */,
 				DD67B03E212D68FF002C12D1 /* SettingOptionTableViewCell.swift in Sources */,
@@ -1359,6 +1419,7 @@
 				DD74031521002E7D00091B9D /* GameDetailModel.swift in Sources */,
 				DD7402F820FEEBE300091B9D /* EngineResourceManagerResourceManager.swift in Sources */,
 				DD5160AA20F4A9D50000B8DC /* DecorationControllerManager.swift in Sources */,
+				DDB94564212EDE410009933A /* MailSecurityViewController.swift in Sources */,
 				DD5160DE20F5B7030000B8DC /* BlockHTTPError.swift in Sources */,
 				DD7402E520FD930900091B9D /* CheckForAppUpdatesModelManager.swift in Sources */,
 				DD5160DB20F5B5440000B8DC /* UserModel.swift in Sources */,
@@ -1369,6 +1430,7 @@
 				DD51605220EC6B740000B8DC /* HomePageViewController.swift in Sources */,
 				DD51609520F46A310000B8DC /* UITableView+Extension.swift in Sources */,
 				DD51605020EC6B740000B8DC /* AppDelegate.swift in Sources */,
+				DDB9455F212ED6BF0009933A /* PasswordSecurityViewController.swift in Sources */,
 				DD51609C20F46AAB0000B8DC /* String+ConvertToDigit.swift in Sources */,
 				DD74030120FEF21300091B9D /* CopyFileTool.swift in Sources */,
 				DD5160EC20F5FAE60000B8DC /* GameModesView.swift in Sources */,

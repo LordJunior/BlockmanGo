@@ -64,7 +64,14 @@ extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        TransitionManager.presentInHidePresentingTransition(LoginViewController.self)
+        switch indexPath.section {
+        case 0:
+            TransitionManager.presentInHidePresentingTransition(LoginViewController.self)
+        case 1:
+            TransitionManager.presentInHidePresentingTransition(AccountSecurityOptionViewController.self)
+        default:
+            break
+        }
     }
 
     
