@@ -19,7 +19,7 @@ struct R: Rswift.Validatable {
   /// This `R.clr` struct is generated, and contains static references to 1 color palettes.
   /// NOTE: R.clr is deprecated and will be removed in a future R.swift version.
   struct clr {
-    /// This `R.clr.appColor` struct is generated, and contains static references to 84 colors.
+    /// This `R.clr.appColor` struct is generated, and contains static references to 87 colors.
     struct appColor {
       /// <span style='background-color: #000000; color: #FFFFFF; padding: 1px 3px;'>#000000</span> black
       static let black = Rswift.ColorPaletteItemResource(name: "black", red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
@@ -87,6 +87,8 @@ struct R: Rswift.Validatable {
       static let text_normal = Rswift.ColorPaletteItemResource(name: "text_normal", red: 0.4980392157, green: 0.7254901961, blue: 0.662745098, alpha: 1.0)
       /// <span style='background-color: #844501; color: #7BBAFE; padding: 1px 3px;'>#844501</span> _844501
       static let _844501 = Rswift.ColorPaletteItemResource(name: "_844501", red: 0.5176470588, green: 0.2705882353, blue: 0.003921568627, alpha: 1.0)
+      /// <span style='background-color: #89D250; color: #762DAF; padding: 1px 3px;'>#89D250</span> _89d250
+      static let _89d250 = Rswift.ColorPaletteItemResource(name: "_89d250", red: 0.537254902, green: 0.8235294118, blue: 0.3137254902, alpha: 1.0)
       /// <span style='background-color: #8F4D00; color: #70B2FF; padding: 1px 3px;'>#8F4D00</span> _8f4d00
       static let _8f4d00 = Rswift.ColorPaletteItemResource(name: "_8f4d00", red: 0.5607843137, green: 0.3019607843, blue: 0.0, alpha: 1.0)
       /// <span style='background-color: #91660B; color: #6E99F4; padding: 1px 3px;'>#91660B</span> _91660b
@@ -139,6 +141,8 @@ struct R: Rswift.Validatable {
       static let _ead5b6 = Rswift.ColorPaletteItemResource(name: "_ead5b6", red: 0.9176470588, green: 0.8352941176, blue: 0.7137254902, alpha: 1.0)
       /// <span style='background-color: #EB8A00; color: #1475FF; padding: 1px 3px;'>#EB8A00</span> _eb8a00
       static let _eb8a00 = Rswift.ColorPaletteItemResource(name: "_eb8a00", red: 0.9215686275, green: 0.5411764706, blue: 0.0, alpha: 1.0)
+      /// <span style='background-color: #ED8B74; color: #12748B; padding: 1px 3px;'>#ED8B74</span> _ed8b74
+      static let _ed8b74 = Rswift.ColorPaletteItemResource(name: "_ed8b74", red: 0.9294117647, green: 0.5450980392, blue: 0.4549019608, alpha: 1.0)
       /// <span style='background-color: #EED5A0; color: #112A5F; padding: 1px 3px;'>#EED5A0</span> _eed5a0
       static let _eed5a0 = Rswift.ColorPaletteItemResource(name: "_eed5a0", red: 0.9333333333, green: 0.8352941176, blue: 0.6274509804, alpha: 1.0)
       /// <span style='background-color: #EF2B1C; color: #10D4E3; padding: 1px 3px;'>#EF2B1C</span> _ef2b1c
@@ -171,6 +175,8 @@ struct R: Rswift.Validatable {
       static let _ff8839 = Rswift.ColorPaletteItemResource(name: "_ff8839", red: 1.0, green: 0.5333333333, blue: 0.2235294118, alpha: 1.0)
       /// <span style='background-color: #FFA800; color: #0057FF; padding: 1px 3px;'>#FFA800</span> _fa800
       static let _fa800 = Rswift.ColorPaletteItemResource(name: "_fa800", red: 1.0, green: 0.6588235294, blue: 0.0, alpha: 1.0)
+      /// <span style='background-color: #FFE4AB; color: #001B54; padding: 1px 3px;'>#FFE4AB</span> _ffe4ab
+      static let _ffe4ab = Rswift.ColorPaletteItemResource(name: "_ffe4ab", red: 1.0, green: 0.8941176471, blue: 0.6705882353, alpha: 1.0)
       /// <span style='background-color: #FFE6B1; color: #00194E; padding: 1px 3px;'>#FFE6B1</span> _ffe6b1
       static let _ffe6b1 = Rswift.ColorPaletteItemResource(name: "_ffe6b1", red: 1.0, green: 0.9019607843, blue: 0.6941176471, alpha: 1.0)
       /// <span style='background-color: #FFF1DB; color: #000E24; padding: 1px 3px;'>#FFF1DB</span> _fff1db
@@ -421,6 +427,13 @@ struct R: Rswift.Validatable {
         return UIKit.UIColor(red: 0.5176470588, green: 0.2705882353, blue: 0.003921568627, alpha: 1.0)
       }
       
+      /// <span style='background-color: #89D250; color: #762DAF; padding: 1px 3px;'>#89D250</span> _89d250
+      /// 
+      /// UIColor(red: 0.537254902, green: 0.8235294118, blue: 0.3137254902, alpha: 1.0)
+      static func _89d250(_: Void = ()) -> UIKit.UIColor {
+        return UIKit.UIColor(red: 0.537254902, green: 0.8235294118, blue: 0.3137254902, alpha: 1.0)
+      }
+      
       /// <span style='background-color: #8F4D00; color: #70B2FF; padding: 1px 3px;'>#8F4D00</span> _8f4d00
       /// 
       /// UIColor(red: 0.5607843137, green: 0.3019607843, blue: 0.0, alpha: 1.0)
@@ -603,6 +616,13 @@ struct R: Rswift.Validatable {
         return UIKit.UIColor(red: 0.9215686275, green: 0.5411764706, blue: 0.0, alpha: 1.0)
       }
       
+      /// <span style='background-color: #ED8B74; color: #12748B; padding: 1px 3px;'>#ED8B74</span> _ed8b74
+      /// 
+      /// UIColor(red: 0.9294117647, green: 0.5450980392, blue: 0.4549019608, alpha: 1.0)
+      static func _ed8b74(_: Void = ()) -> UIKit.UIColor {
+        return UIKit.UIColor(red: 0.9294117647, green: 0.5450980392, blue: 0.4549019608, alpha: 1.0)
+      }
+      
       /// <span style='background-color: #EED5A0; color: #112A5F; padding: 1px 3px;'>#EED5A0</span> _eed5a0
       /// 
       /// UIColor(red: 0.9333333333, green: 0.8352941176, blue: 0.6274509804, alpha: 1.0)
@@ -713,6 +733,13 @@ struct R: Rswift.Validatable {
       /// UIColor(red: 1.0, green: 0.6588235294, blue: 0.0, alpha: 1.0)
       static func _fa800(_: Void = ()) -> UIKit.UIColor {
         return UIKit.UIColor(red: 1.0, green: 0.6588235294, blue: 0.0, alpha: 1.0)
+      }
+      
+      /// <span style='background-color: #FFE4AB; color: #001B54; padding: 1px 3px;'>#FFE4AB</span> _ffe4ab
+      /// 
+      /// UIColor(red: 1.0, green: 0.8941176471, blue: 0.6705882353, alpha: 1.0)
+      static func _ffe4ab(_: Void = ()) -> UIKit.UIColor {
+        return UIKit.UIColor(red: 1.0, green: 0.8941176471, blue: 0.6705882353, alpha: 1.0)
       }
       
       /// <span style='background-color: #FFE6B1; color: #00194E; padding: 1px 3px;'>#FFE6B1</span> _ffe6b1

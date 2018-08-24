@@ -14,9 +14,10 @@ class ExtraSizeLabel: UILabel {
     
     public var extraHeight: CGFloat = 1.0
     
+    public var contentInset: UIEdgeInsets = .zero
+    
     override func drawText(in rect: CGRect) {
-        textAlignment = .center
-        super.drawText(in: rect)
+        super.drawText(in: UIEdgeInsetsInsetRect(rect, contentInset))
     }
 
     override var intrinsicContentSize: CGSize {

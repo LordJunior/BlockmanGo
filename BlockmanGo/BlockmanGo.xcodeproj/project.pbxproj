@@ -217,6 +217,8 @@
 		DDB94568212EDE840009933A /* ThirdLoginSecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94566212EDE840009933A /* ThirdLoginSecurityViewController.swift */; };
 		DDB9456A212FA4570009933A /* ThirdLoginSecurityOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94569212FA4570009933A /* ThirdLoginSecurityOptionTableViewCell.swift */; };
 		DDB9456B212FA4570009933A /* ThirdLoginSecurityOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94569212FA4570009933A /* ThirdLoginSecurityOptionTableViewCell.swift */; };
+		DDB9456E212FB0380009933A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9456D212FB0380009933A /* RegisterViewController.swift */; };
+		DDB9456F212FB0380009933A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9456D212FB0380009933A /* RegisterViewController.swift */; };
 		DDE09F9B21131F1700BD5CF8 /* BlockModsGameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; };
 		DDE09F9C21131F1700BD5CF8 /* BlockModsGameKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DDFB644C2126B6F30036AE0F /* AnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB644B2126B6F30036AE0F /* AnalysisService.swift */; };
@@ -386,6 +388,7 @@
 		DDB94563212EDE410009933A /* MailSecurityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailSecurityViewController.swift; sourceTree = "<group>"; };
 		DDB94566212EDE840009933A /* ThirdLoginSecurityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLoginSecurityViewController.swift; sourceTree = "<group>"; };
 		DDB94569212FA4570009933A /* ThirdLoginSecurityOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLoginSecurityOptionTableViewCell.swift; sourceTree = "<group>"; };
+		DDB9456D212FB0380009933A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DDFB64452126B3D90036AE0F /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
 		DDFB644B2126B6F30036AE0F /* AnalysisService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisService.swift; sourceTree = "<group>"; };
 		DDFB644F2126C29B0036AE0F /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
@@ -747,6 +750,7 @@
 			children = (
 				DD67B02C212D53D0002C12D1 /* SettingViewController.swift */,
 				DD67B03D212D68FF002C12D1 /* SettingOptionTableViewCell.swift */,
+				DDB9456C212FB0180009933A /* Register */,
 				DD67B04D212E910D002C12D1 /* Login */,
 				DD67B045212E56D0002C12D1 /* SwitchAccount */,
 				DDB94555212EBF7D0009933A /* AccountSecurityOption */,
@@ -909,6 +913,14 @@
 				DDB94569212FA4570009933A /* ThirdLoginSecurityOptionTableViewCell.swift */,
 			);
 			path = ThirdLoginSecurity;
+			sourceTree = "<group>";
+		};
+		DDB9456C212FB0180009933A /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				DDB9456D212FB0380009933A /* RegisterViewController.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		DDFB64422126B3B30036AE0F /* ThirdPartyLib */ = {
@@ -1313,6 +1325,7 @@
 				DD456C06210EBDE6009465FE /* GenderButton.swift in Sources */,
 				DD456C07210EBDE6009465FE /* CheckForUpdatesViewController.swift in Sources */,
 				DD456C08210EBDE6009465FE /* GameDetailModelManager.swift in Sources */,
+				DDB9456F212FB0380009933A /* RegisterViewController.swift in Sources */,
 				DD456C09210EBDE6009465FE /* AppInfo.swift in Sources */,
 				DD456C0A210EBDE6009465FE /* UserManager.swift in Sources */,
 				DD456C0B210EBDE6009465FE /* DismissAnimatedTransition.swift in Sources */,
@@ -1414,6 +1427,7 @@
 				DD8EB61B21030F3400E7AE9B /* GenderButton.swift in Sources */,
 				DD7402D220FC79D400091B9D /* CheckForUpdatesViewController.swift in Sources */,
 				DD74031321002C6B00091B9D /* GameDetailModelManager.swift in Sources */,
+				DDB9456E212FB0380009933A /* RegisterViewController.swift in Sources */,
 				DD7402F120FDD41500091B9D /* AppInfo.swift in Sources */,
 				DD5160D620F5B2FB0000B8DC /* UserManager.swift in Sources */,
 				DD7402DE20FCC58C00091B9D /* DismissAnimatedTransition.swift in Sources */,

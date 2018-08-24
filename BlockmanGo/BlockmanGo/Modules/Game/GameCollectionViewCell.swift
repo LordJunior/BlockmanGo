@@ -82,6 +82,7 @@ class GameCollectionViewCell: UICollectionViewCell {
             label.extraHeight = 5
             label.layer.cornerRadius = 6
             label.clipsToBounds = true
+            label.textAlignment = .center
             label.backgroundColor = UIColor.black.withAlphaComponent(0.45)
         }).layout(snapKitMaker: { (make) in
             make.left.top.equalToSuperview().offset(2)
