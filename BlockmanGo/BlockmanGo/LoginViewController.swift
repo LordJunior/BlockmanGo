@@ -27,16 +27,33 @@ class LoginViewController: UIViewController {
         let containView = UIImageView(image: R.image.general_alert_background()).addTo(superView: view).configure { (imageView) in
             imageView.isUserInteractionEnabled = true
         }.layout { (make) in
-            make.size.equalTo(CGSize(width: 310, height: 314))
+            make.width.equalTo(310)
             make.center.equalToSuperview()
         }
         
-        let currentIDLabel = UILabel().addTo(superView: containView).configure { (label) in
-            label.textColor = R.clr.appColor._844501()
-            label.font = UIFont.size13
-            label.text = "当前ID: 1234567"
-        }.layout { (make) in
-            make.left.top.equalToSuperview().offset(20)
+        var topLabel = UILabel()
+        let random = (arc4random() % 100) > 50
+        if random { // q切换账号
+            topLabel = UILabel().addTo(superView: containView).configure { (label) in
+                label.textColor = R.clr.appColor._844501()
+                label.font = UIFont.size13
+                label.text = "当前ID: 1234567"
+            }.layout { (make) in
+                make.left.top.equalToSuperview().offset(20)
+            }
+        }else {
+            topLabel = ExtraSizeLabel().addTo(superView: containView).configure { (label) in
+                label.backgroundColor = R.clr.appColor._ed8b74()
+                label.textColor = UIColor.white
+                label.font = UIFont.size12
+                label.text = "登录状态已经失效，请重新登录！"
+                label.layer.cornerRadius = 12
+                label.clipsToBounds = true
+                label.contentInset = UIEdgeInsetsMake(0, 10, 0, 0)
+            }.layout { (make) in
+                make.left.right.top.equalToSuperview().inset(20)
+                make.height.equalTo(30)
+            }
         }
         
         let shadowContainView = UIView().addTo(superView: containView).configure { (view) in
@@ -44,7 +61,7 @@ class LoginViewController: UIViewController {
             view.layer.cornerRadius = 12
         }.layout { (make) in
             make.left.right.equalToSuperview().inset(20)
-            make.top.equalToSuperview().offset(44)
+            make.top.equalTo(topLabel.snp.bottom).offset(random ? 12 : 5)
             make.height.equalTo(192)
         }
         
@@ -118,6 +135,10 @@ class LoginViewController: UIViewController {
         }.layout { (make) in
             make.top.equalTo(shadowContainView.snp.bottom).offset(20)
             make.centerX.equalToSuperview().multipliedBy(1.6)
+        }
+        
+        containView.layout { (make) in
+            make.bottom.equalTo(twitterButton!.snp.bottom).offset(20)
         }
         
         addCloseButton(layout: { (make) in
