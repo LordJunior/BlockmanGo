@@ -19,7 +19,7 @@ struct R: Rswift.Validatable {
   /// This `R.clr` struct is generated, and contains static references to 1 color palettes.
   /// NOTE: R.clr is deprecated and will be removed in a future R.swift version.
   struct clr {
-    /// This `R.clr.appColor` struct is generated, and contains static references to 80 colors.
+    /// This `R.clr.appColor` struct is generated, and contains static references to 84 colors.
     struct appColor {
       /// <span style='background-color: #000000; color: #FFFFFF; padding: 1px 3px;'>#000000</span> black
       static let black = Rswift.ColorPaletteItemResource(name: "black", red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
@@ -91,6 +91,8 @@ struct R: Rswift.Validatable {
       static let _8f4d00 = Rswift.ColorPaletteItemResource(name: "_8f4d00", red: 0.5607843137, green: 0.3019607843, blue: 0.0, alpha: 1.0)
       /// <span style='background-color: #91660B; color: #6E99F4; padding: 1px 3px;'>#91660B</span> _91660b
       static let _91660b = Rswift.ColorPaletteItemResource(name: "_91660b", red: 0.568627451, green: 0.4, blue: 0.0431372549, alpha: 1.0)
+      /// <span style='background-color: #94D559; color: #6B2AA6; padding: 1px 3px;'>#94D559</span> _94d559
+      static let _94d559 = Rswift.ColorPaletteItemResource(name: "_94d559", red: 0.5803921569, green: 0.8352941176, blue: 0.3490196078, alpha: 1.0)
       /// <span style='background-color: #9A5C00; color: #65A3FF; padding: 1px 3px;'>#9A5C00</span> _9a5c00
       static let _9a5c00 = Rswift.ColorPaletteItemResource(name: "_9a5c00", red: 0.6039215686, green: 0.3607843137, blue: 0.0, alpha: 1.0)
       /// <span style='background-color: #A7A7A7; color: #585858; padding: 1px 3px;'>#A7A7A7</span> _a7a7a7
@@ -115,6 +117,8 @@ struct R: Rswift.Validatable {
       static let _cce1d9 = Rswift.ColorPaletteItemResource(name: "_cce1d9", red: 0.8, green: 0.8823529412, blue: 0.8509803922, alpha: 1.0)
       /// <span style='background-color: #D1A566; color: #2E5A99; padding: 1px 3px;'>#D1A566</span> _d1a566
       static let _d1a566 = Rswift.ColorPaletteItemResource(name: "_d1a566", red: 0.8196078431, green: 0.6470588235, blue: 0.4, alpha: 1.0)
+      /// <span style='background-color: #D3B26C; color: #2C4D93; padding: 1px 3px;'>#D3B26C</span> _d3b26c
+      static let _d3b26c = Rswift.ColorPaletteItemResource(name: "_d3b26c", red: 0.8274509804, green: 0.6980392157, blue: 0.4235294118, alpha: 1.0)
       /// <span style='background-color: #D43636; color: #2BC9C9; padding: 1px 3px;'>#D43636</span> _d43636
       static let _d43636 = Rswift.ColorPaletteItemResource(name: "_d43636", red: 0.831372549, green: 0.2117647059, blue: 0.2117647059, alpha: 1.0)
       /// <span style='background-color: #D52626; color: #2AD9D9; padding: 1px 3px;'>#D52626</span> _d52626
@@ -163,8 +167,12 @@ struct R: Rswift.Validatable {
       static let _FEFEFE = Rswift.ColorPaletteItemResource(name: "_FEFEFE", red: 0.9960784314, green: 0.9960784314, blue: 0.9960784314, alpha: 1.0)
       /// <span style='background-color: #FF0000; color: #00FFFF; padding: 1px 3px;'>#FF0000</span> red
       static let red = Rswift.ColorPaletteItemResource(name: "red", red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
+      /// <span style='background-color: #FF8839; color: #0077C6; padding: 1px 3px;'>#FF8839</span> _ff8839
+      static let _ff8839 = Rswift.ColorPaletteItemResource(name: "_ff8839", red: 1.0, green: 0.5333333333, blue: 0.2235294118, alpha: 1.0)
       /// <span style='background-color: #FFA800; color: #0057FF; padding: 1px 3px;'>#FFA800</span> _fa800
       static let _fa800 = Rswift.ColorPaletteItemResource(name: "_fa800", red: 1.0, green: 0.6588235294, blue: 0.0, alpha: 1.0)
+      /// <span style='background-color: #FFE6B1; color: #00194E; padding: 1px 3px;'>#FFE6B1</span> _ffe6b1
+      static let _ffe6b1 = Rswift.ColorPaletteItemResource(name: "_ffe6b1", red: 1.0, green: 0.9019607843, blue: 0.6941176471, alpha: 1.0)
       /// <span style='background-color: #FFF1DB; color: #000E24; padding: 1px 3px;'>#FFF1DB</span> _fff1db
       static let _fff1db = Rswift.ColorPaletteItemResource(name: "_fff1db", red: 1.0, green: 0.9450980392, blue: 0.8588235294, alpha: 1.0)
       /// <span style='background-color: #FFF2DE; color: #000D21; padding: 1px 3px;'>#FFF2DE</span> _fff2de
@@ -427,6 +435,13 @@ struct R: Rswift.Validatable {
         return UIKit.UIColor(red: 0.568627451, green: 0.4, blue: 0.0431372549, alpha: 1.0)
       }
       
+      /// <span style='background-color: #94D559; color: #6B2AA6; padding: 1px 3px;'>#94D559</span> _94d559
+      /// 
+      /// UIColor(red: 0.5803921569, green: 0.8352941176, blue: 0.3490196078, alpha: 1.0)
+      static func _94d559(_: Void = ()) -> UIKit.UIColor {
+        return UIKit.UIColor(red: 0.5803921569, green: 0.8352941176, blue: 0.3490196078, alpha: 1.0)
+      }
+      
       /// <span style='background-color: #9A5C00; color: #65A3FF; padding: 1px 3px;'>#9A5C00</span> _9a5c00
       /// 
       /// UIColor(red: 0.6039215686, green: 0.3607843137, blue: 0.0, alpha: 1.0)
@@ -509,6 +524,13 @@ struct R: Rswift.Validatable {
       /// UIColor(red: 0.8196078431, green: 0.6470588235, blue: 0.4, alpha: 1.0)
       static func _d1a566(_: Void = ()) -> UIKit.UIColor {
         return UIKit.UIColor(red: 0.8196078431, green: 0.6470588235, blue: 0.4, alpha: 1.0)
+      }
+      
+      /// <span style='background-color: #D3B26C; color: #2C4D93; padding: 1px 3px;'>#D3B26C</span> _d3b26c
+      /// 
+      /// UIColor(red: 0.8274509804, green: 0.6980392157, blue: 0.4235294118, alpha: 1.0)
+      static func _d3b26c(_: Void = ()) -> UIKit.UIColor {
+        return UIKit.UIColor(red: 0.8274509804, green: 0.6980392157, blue: 0.4235294118, alpha: 1.0)
       }
       
       /// <span style='background-color: #D43636; color: #2BC9C9; padding: 1px 3px;'>#D43636</span> _d43636
@@ -679,11 +701,25 @@ struct R: Rswift.Validatable {
         return UIKit.UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
       }
       
+      /// <span style='background-color: #FF8839; color: #0077C6; padding: 1px 3px;'>#FF8839</span> _ff8839
+      /// 
+      /// UIColor(red: 1.0, green: 0.5333333333, blue: 0.2235294118, alpha: 1.0)
+      static func _ff8839(_: Void = ()) -> UIKit.UIColor {
+        return UIKit.UIColor(red: 1.0, green: 0.5333333333, blue: 0.2235294118, alpha: 1.0)
+      }
+      
       /// <span style='background-color: #FFA800; color: #0057FF; padding: 1px 3px;'>#FFA800</span> _fa800
       /// 
       /// UIColor(red: 1.0, green: 0.6588235294, blue: 0.0, alpha: 1.0)
       static func _fa800(_: Void = ()) -> UIKit.UIColor {
         return UIKit.UIColor(red: 1.0, green: 0.6588235294, blue: 0.0, alpha: 1.0)
+      }
+      
+      /// <span style='background-color: #FFE6B1; color: #00194E; padding: 1px 3px;'>#FFE6B1</span> _ffe6b1
+      /// 
+      /// UIColor(red: 1.0, green: 0.9019607843, blue: 0.6941176471, alpha: 1.0)
+      static func _ffe6b1(_: Void = ()) -> UIKit.UIColor {
+        return UIKit.UIColor(red: 1.0, green: 0.9019607843, blue: 0.6941176471, alpha: 1.0)
       }
       
       /// <span style='background-color: #FFF1DB; color: #000E24; padding: 1px 3px;'>#FFF1DB</span> _fff1db
@@ -904,16 +940,20 @@ struct R: Rswift.Validatable {
     static let profile_name_tips = Rswift.ImageResource(bundle: R.hostingBundle, name: "profile_name_tips")
     /// Image `profile_random`.
     static let profile_random = Rswift.ImageResource(bundle: R.hostingBundle, name: "profile_random")
+    /// Image `setting_Facebook_selected`.
+    static let setting_Facebook_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_Facebook_selected")
+    /// Image `setting_Facebook`.
+    static let setting_Facebook = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_Facebook")
+    /// Image `setting_Google+_selected`.
+    static let setting_Google_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_Google+_selected")
+    /// Image `setting_Google+`.
+    static let setting_Google = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_Google+")
+    /// Image `setting_Twitter_selected`.
+    static let setting_Twitter_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_Twitter_selected")
+    /// Image `setting_Twitter`.
+    static let setting_Twitter = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_Twitter")
     /// Image `setting_checked`.
     static let setting_checked = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_checked")
-    /// Image `setting_facebook_selected`.
-    static let setting_facebook_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_facebook_selected")
-    /// Image `setting_facebook`.
-    static let setting_facebook = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_facebook")
-    /// Image `setting_google_selected`.
-    static let setting_google_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_google_selected")
-    /// Image `setting_google`.
-    static let setting_google = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_google")
     /// Image `setting_login_selected`.
     static let setting_login_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_login_selected")
     /// Image `setting_login`.
@@ -922,10 +962,6 @@ struct R: Rswift.Validatable {
     static let setting_option_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_option_selected")
     /// Image `setting_option`.
     static let setting_option = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_option")
-    /// Image `setting_twitter_selected`.
-    static let setting_twitter_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_twitter_selected")
-    /// Image `setting_twitter`.
-    static let setting_twitter = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_twitter")
     /// Image `setting`.
     static let setting = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting")
     /// Image `shop`.
@@ -1245,29 +1281,39 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.setting, compatibleWith: traitCollection)
     }
     
+    /// `UIImage(named: "setting_Facebook", bundle: ..., traitCollection: ...)`
+    static func setting_Facebook(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.setting_Facebook, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "setting_Facebook_selected", bundle: ..., traitCollection: ...)`
+    static func setting_Facebook_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.setting_Facebook_selected, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "setting_Google+", bundle: ..., traitCollection: ...)`
+    static func setting_Google(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.setting_Google, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "setting_Google+_selected", bundle: ..., traitCollection: ...)`
+    static func setting_Google_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.setting_Google_selected, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "setting_Twitter", bundle: ..., traitCollection: ...)`
+    static func setting_Twitter(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.setting_Twitter, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "setting_Twitter_selected", bundle: ..., traitCollection: ...)`
+    static func setting_Twitter_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.setting_Twitter_selected, compatibleWith: traitCollection)
+    }
+    
     /// `UIImage(named: "setting_checked", bundle: ..., traitCollection: ...)`
     static func setting_checked(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.setting_checked, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "setting_facebook", bundle: ..., traitCollection: ...)`
-    static func setting_facebook(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.setting_facebook, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "setting_facebook_selected", bundle: ..., traitCollection: ...)`
-    static func setting_facebook_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.setting_facebook_selected, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "setting_google", bundle: ..., traitCollection: ...)`
-    static func setting_google(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.setting_google, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "setting_google_selected", bundle: ..., traitCollection: ...)`
-    static func setting_google_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.setting_google_selected, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "setting_login", bundle: ..., traitCollection: ...)`
@@ -1288,16 +1334,6 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "setting_option_selected", bundle: ..., traitCollection: ...)`
     static func setting_option_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.setting_option_selected, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "setting_twitter", bundle: ..., traitCollection: ...)`
-    static func setting_twitter(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.setting_twitter, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "setting_twitter_selected", bundle: ..., traitCollection: ...)`
-    static func setting_twitter_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.setting_twitter_selected, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "shop", bundle: ..., traitCollection: ...)`
