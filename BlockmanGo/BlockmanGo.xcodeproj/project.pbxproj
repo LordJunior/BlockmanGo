@@ -219,6 +219,8 @@
 		DDB9456B212FA4570009933A /* ThirdLoginSecurityOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94569212FA4570009933A /* ThirdLoginSecurityOptionTableViewCell.swift */; };
 		DDB9456E212FB0380009933A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9456D212FB0380009933A /* RegisterViewController.swift */; };
 		DDB9456F212FB0380009933A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9456D212FB0380009933A /* RegisterViewController.swift */; };
+		DDB94572212FBB4D0009933A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94571212FBB4D0009933A /* AboutUsViewController.swift */; };
+		DDB94573212FBB4D0009933A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94571212FBB4D0009933A /* AboutUsViewController.swift */; };
 		DDE09F9B21131F1700BD5CF8 /* BlockModsGameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; };
 		DDE09F9C21131F1700BD5CF8 /* BlockModsGameKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DDFB644C2126B6F30036AE0F /* AnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB644B2126B6F30036AE0F /* AnalysisService.swift */; };
@@ -389,6 +391,7 @@
 		DDB94566212EDE840009933A /* ThirdLoginSecurityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLoginSecurityViewController.swift; sourceTree = "<group>"; };
 		DDB94569212FA4570009933A /* ThirdLoginSecurityOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLoginSecurityOptionTableViewCell.swift; sourceTree = "<group>"; };
 		DDB9456D212FB0380009933A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DDB94571212FBB4D0009933A /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		DDFB64452126B3D90036AE0F /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
 		DDFB644B2126B6F30036AE0F /* AnalysisService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisService.swift; sourceTree = "<group>"; };
 		DDFB644F2126C29B0036AE0F /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
@@ -754,6 +757,7 @@
 				DD67B04D212E910D002C12D1 /* Login */,
 				DD67B045212E56D0002C12D1 /* SwitchAccount */,
 				DDB94555212EBF7D0009933A /* AccountSecurityOption */,
+				DDB94570212FBB270009933A /* AboutUs */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -921,6 +925,14 @@
 				DDB9456D212FB0380009933A /* RegisterViewController.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		DDB94570212FBB270009933A /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				DDB94571212FBB4D0009933A /* AboutUsViewController.swift */,
+			);
+			path = AboutUs;
 			sourceTree = "<group>";
 		};
 		DDFB64422126B3B30036AE0F /* ThirdPartyLib */ = {
@@ -1352,6 +1364,7 @@
 				DD456C1A210EBDE6009465FE /* String+ConvertToDigit.swift in Sources */,
 				DD456C1B210EBDE6009465FE /* CopyFileTool.swift in Sources */,
 				DD456C1C210EBDE6009465FE /* GameModesView.swift in Sources */,
+				DDB94573212FBB4D0009933A /* AboutUsViewController.swift in Sources */,
 				DD456C1D210EBDE6009465FE /* GameDetailViewController.swift in Sources */,
 				DD456C1E210EBDE6009465FE /* GameDispatchModel.swift in Sources */,
 				DD456C1F210EBDE6009465FE /* ExtraSizeLabel.swift in Sources */,
@@ -1454,6 +1467,7 @@
 				DD51609C20F46AAB0000B8DC /* String+ConvertToDigit.swift in Sources */,
 				DD74030120FEF21300091B9D /* CopyFileTool.swift in Sources */,
 				DD5160EC20F5FAE60000B8DC /* GameModesView.swift in Sources */,
+				DDB94572212FBB4D0009933A /* AboutUsViewController.swift in Sources */,
 				DD74031120FF637E00091B9D /* GameDetailViewController.swift in Sources */,
 				DDA4B0E02106BF75004346C5 /* GameDispatchModel.swift in Sources */,
 				DD5160A020F48F0F0000B8DC /* ExtraSizeLabel.swift in Sources */,

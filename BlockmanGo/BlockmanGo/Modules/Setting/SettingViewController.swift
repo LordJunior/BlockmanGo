@@ -69,6 +69,8 @@ extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
             TransitionManager.presentInHidePresentingTransition(LoginViewController.self)
         case 1:
             TransitionManager.presentInHidePresentingTransition(AccountSecurityOptionViewController.self)
+        case 2:
+            TransitionManager.presentInHidePresentingTransition(AboutUsViewController.self)
         default:
             break
         }

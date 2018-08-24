@@ -843,7 +843,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 76 images.
+  /// This `R.image` struct is generated, and contains static references to 77 images.
   struct image {
     /// Image `account_info_background`.
     static let account_info_background = Rswift.ImageResource(bundle: R.hostingBundle, name: "account_info_background")
@@ -887,6 +887,8 @@ struct R: Rswift.Validatable {
     static let gender_male = Rswift.ImageResource(bundle: R.hostingBundle, name: "gender_male")
     /// Image `general_alert_background`.
     static let general_alert_background = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_alert_background")
+    /// Image `general_app_icon`.
+    static let general_app_icon = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_app_icon")
     /// Image `general_back`.
     static let general_back = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_back")
     /// Image `general_button_background_normal`.
@@ -1101,6 +1103,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "general_alert_background", bundle: ..., traitCollection: ...)`
     static func general_alert_background(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.general_alert_background, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "general_app_icon", bundle: ..., traitCollection: ...)`
+    static func general_app_icon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.general_app_icon, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "general_back", bundle: ..., traitCollection: ...)`
