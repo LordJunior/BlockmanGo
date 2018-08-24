@@ -59,7 +59,7 @@ class LoginViewController: UIViewController {
         })
         
         let buttonConfig = {(button: UIButton) in
-            button.backgroundColor = R.clr.appColor._22a556()
+            button.backgroundColor = R.clr.appColor._94d559()
             button.layer.cornerRadius = 8
             button.titleLabel?.font = UIFont.size11
             button.setTitleColor(UIColor.white, for: .normal)
@@ -91,7 +91,7 @@ class LoginViewController: UIViewController {
         })
         
         twitterButton = UIButton().addTo(superView: containView).configure { (button) in
-            button.setImage(R.image.setting_twitter(), for: .normal)
+            button.setImage(R.image.setting_Twitter(), for: .normal)
             button.titleLabel?.font = UIFont.size11
             button.setTitleColor(R.clr.appColor._844501(), for: .normal)
             button.setTitle("Twitter", for: .normal)
@@ -101,7 +101,7 @@ class LoginViewController: UIViewController {
         }
         
         facebookButton = UIButton().addTo(superView: containView).configure { (button) in
-            button.setImage(R.image.setting_facebook(), for: .normal)
+            button.setImage(R.image.setting_Facebook(), for: .normal)
             button.titleLabel?.font = UIFont.size11
             button.setTitleColor(R.clr.appColor._844501(), for: .normal)
             button.setTitle("Facebook", for: .normal)
@@ -111,7 +111,7 @@ class LoginViewController: UIViewController {
         }
         
         googleButton = UIButton().addTo(superView: containView).configure { (button) in
-            button.setImage(R.image.setting_google(), for: .normal)
+            button.setImage(R.image.setting_Google(), for: .normal)
             button.titleLabel?.font = UIFont.size11
             button.setTitleColor(R.clr.appColor._844501(), for: .normal)
             button.setTitle("Google+", for: .normal)

@@ -44,7 +44,7 @@ class SwitchAccountViewController: UIViewController {
             make.top.bottom.equalToSuperview().inset(20)
         }
         
-        accountTypeImageView = UIImageView(image: R.image.setting_facebook()).addTo(superView: idContainView).layout(snapKitMaker: { (make) in
+        accountTypeImageView = UIImageView(image: R.image.setting_Facebook()).addTo(superView: idContainView).layout(snapKitMaker: { (make) in
             make.left.equalToSuperview().offset(10)
             make.centerY.equalToSuperview()
             make.size.equalTo(CGSize(width: 34, height: 34))
