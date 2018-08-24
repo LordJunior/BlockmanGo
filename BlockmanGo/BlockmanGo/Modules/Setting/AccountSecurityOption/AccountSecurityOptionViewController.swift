@@ -11,9 +11,12 @@ import UIKit
 class AccountSecurityOptionViewController: UIViewController {
 
     private let accountSecurityOptionTitles = ["设置密码", "邮箱绑定", "第三方绑定"]
+    private weak var securityContentView: UIView?
     private weak var tableView: UITableView?
     private weak var passwordIfSetLabel: UILabel?
     private weak var passwordSecurityController: PasswordSecurityViewController?
+    private weak var mailSecurityController: MailSecurityViewController?
+    private weak var thirdLoginSecurityController: ThirdLoginSecurityViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +45,7 @@ class AccountSecurityOptionViewController: UIViewController {
             make.edges.equalToSuperview()
         }
         
-        let securityContentView = UIImageView(image: R.image.general_alert_background()).addTo(superView: view).layout { (make) in
+        securityContentView = UIImageView(image: R.image.general_alert_background()).addTo(superView: view).layout { (make) in
             make.centerY.equalTo(optionContainView)
             make.size.equalTo(CGSize(width: 310, height: 300))
             make.left.equalTo(optionContainView.snp.right)
@@ -50,7 +53,7 @@ class AccountSecurityOptionViewController: UIViewController {
             imageView.isUserInteractionEnabled = true
         }
         
-        passwordIfSetLabel = UILabel().addTo(superView: securityContentView).configure({ (label) in
+        passwordIfSetLabel = UILabel().addTo(superView: securityContentView!).configure({ (label) in
             label.font = UIFont.size13
             label.textColor = R.clr.appColor._844501()
             label.text = "当前ID: 12456266"
@@ -59,21 +62,53 @@ class AccountSecurityOptionViewController: UIViewController {
         })
         
         addCloseButton(layout: { (make) in
-            make.left.equalTo(securityContentView.snp.right).offset(5)
-            make.top.equalTo(securityContentView)
+            make.left.equalTo(securityContentView!.snp.right).offset(5)
+            make.top.equalTo(securityContentView!)
             make.size.equalTo(closeButtonSize)
         }) { _ in
             TransitionManager.dismiss(animated: true)
         }
         
+        displayPasswordSecurityContent()
+    }
+    
+    private func displayPasswordSecurityContent() {
+        guard self.passwordSecurityController == nil else {
+            securityContentView?.bringSubview(toFront: self.passwordSecurityController!.view)
+            return
+        }
         let passwordSecurityController = PasswordSecurityViewController()
-        addChildViewController(passwordSecurityController)
-        passwordSecurityController.view.addTo(superView: securityContentView).layout { (make) in
+        layoutSecurityContent(passwordSecurityController)
+        self.passwordSecurityController = passwordSecurityController
+    }
+    
+    private func displayMailSecurityContent() {
+        guard self.mailSecurityController == nil else {
+            securityContentView?.bringSubview(toFront: self.mailSecurityController!.view)
+            return
+        }
+        let mailSecurityController = MailSecurityViewController()
+        layoutSecurityContent(mailSecurityController)
+        self.mailSecurityController = mailSecurityController
+    }
+    
+    private func displayThirdLoginSecurityContent() {
+        guard self.thirdLoginSecurityController == nil else {
+            securityContentView?.bringSubview(toFront: self.thirdLoginSecurityController!.view)
+            return
+        }
+        let thirdLoginSecurityController = ThirdLoginSecurityViewController()
+        layoutSecurityContent(thirdLoginSecurityController)
+        self.thirdLoginSecurityController = thirdLoginSecurityController
+    }
+    
+    private func layoutSecurityContent(_ contentController: UIViewController) {
+        addChildViewController(contentController)
+        contentController.view.addTo(superView: securityContentView!).layout { (make) in
             make.top.equalTo(passwordIfSetLabel!.snp.bottom).offset(10)
             make.left.right.bottom.equalToSuperview().inset(20)
         }
-        passwordSecurityController.didMove(toParentViewController: self)
-        self.passwordSecurityController = passwordSecurityController
+        contentController.didMove(toParentViewController: self)
     }
 }
 
@@ -86,5 +121,18 @@ extension AccountSecurityOptionViewController: UITableViewDataSource, UITableVie
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as AccountSecurityOptionTableViewCell
         cell.optionTitle = accountSecurityOptionTitles[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            displayPasswordSecurityContent()
+        case 1:
+            displayMailSecurityContent()
+        case 2:
+            displayThirdLoginSecurityContent()
+        default:
+            break
+        }
     }
 }
