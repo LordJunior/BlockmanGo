@@ -24,7 +24,9 @@ enum Channel: String {
 let userPathPrefix = "/user"
 
 enum UserAPI {
-    case fetchVisitor()
+    case authToken()
+    case fetchUserProfile()
+    
     case register(account: String, passwd: String)
     case registerInfo(nickname: String, gender: Int, picUrl: String, uid: String, token: String)
     case login(account: String, passwd: String, channel: Channel)
@@ -49,7 +51,6 @@ enum UserAPI {
 }
 
 extension UserAPI : TargetType {
-    typealias ResultType = UserModel
     
     var baseURL: URL {
         switch self {
@@ -63,8 +64,11 @@ extension UserAPI : TargetType {
     
     var path: String {
         switch self {
-        case .fetchVisitor():
-            return "\(userPathPrefix)/api/\(apiVersion)/visitor"
+        case .authToken():
+            return "\(userPathPrefix)/api/\(apiVersion)/app/auth-token"
+            
+        case .fetchUserProfile():
+            return "\(userPathPrefix)/api/\(apiVersion)/user/details/info"
             
         case .register(_, _):
             return "\(userPathPrefix)/api/\(apiVersion)/register"
@@ -131,7 +135,7 @@ extension UserAPI : TargetType {
             return .put
         case .unbindEmail():
             return .delete
-        case .fetchDailyTasks(), .fetchRongToken():
+        case .fetchDailyTasks(), .fetchRongToken(), .authToken():
             return .get
         default:
             return .post
@@ -140,8 +144,8 @@ extension UserAPI : TargetType {
     
     var task: Task {
         switch self {
-        case .fetchVisitor():
-            return .requestParameters(parameters: ["os" : DeviceInfo.system, "appType" : "ios", "uuid" : DeviceInfo.uuid, "deviceId" : DeviceInfo.modelName], encoding: JSONEncoding.default)
+        case .fetchUserProfile(), .authToken():
+            return .requestPlain
             
         case let .register(account: uid, passwd: pwd):
             return .requestParameters(parameters: ["uid" : uid, "password" : pwd, "appType" : "ios", "deviceId" : DeviceInfo.modelName, "os" : DeviceInfo.system, "uuid" : DeviceInfo.uuid], encoding: JSONEncoding.default)
@@ -217,8 +221,19 @@ extension UserAPI : TargetType {
     
     var headers: [String : String]? {
         switch self {
-        case .fetchVisitor():
-            fallthrough
+        case .authToken():
+            var header: [String : String] = [:]
+            header["bmg-device-id"] = DeviceInfo.uuid
+            header["bmg-sign"] = DeviceInfo.uuid_SHA1
+            header["bmg-user-id"] = "\(UserManager.shared.userID)"
+            return header
+        
+        case .fetchUserProfile():
+            var header: [String : String] = [:]
+            header["userId"] = "\(UserManager.shared.userID)"
+            header["Access-Token"] = UserManager.shared.accessToken
+            return header
+            
         case .register(account: _, passwd: _):
             fallthrough
         case .login(account: _, passwd: _, channel: _):

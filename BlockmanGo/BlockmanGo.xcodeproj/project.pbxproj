@@ -74,7 +74,7 @@
 		DD456C0F210EBDE6009465FE /* DecorationControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160A920F4A9D50000B8DC /* DecorationControllerManager.swift */; };
 		DD456C10210EBDE6009465FE /* BlockHTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160DD20F5B7030000B8DC /* BlockHTTPError.swift */; };
 		DD456C11210EBDE6009465FE /* CheckForAppUpdatesModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402E420FD930900091B9D /* CheckForAppUpdatesModelManager.swift */; };
-		DD456C12210EBDE6009465FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160DA20F5B5440000B8DC /* UserModel.swift */; };
+		DD456C12210EBDE6009465FE /* AuthTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160DA20F5B5440000B8DC /* AuthTokenModel.swift */; };
 		DD456C13210EBDE6009465FE /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D320FC818E00091B9D /* ProgressView.swift */; };
 		DD456C14210EBDE6009465FE /* LaunchInfiniteTranslationSkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030420FF311100091B9D /* LaunchInfiniteTranslationSkyView.swift */; };
 		DD456C15210EBDE6009465FE /* OpenURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402F220FDDAE800091B9D /* OpenURL.swift */; };
@@ -138,7 +138,7 @@
 		DD5160CF20F5A79B0000B8DC /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160CE20F5A79B0000B8DC /* DeviceInfo.swift */; };
 		DD5160D120F5A7EA0000B8DC /* GameEngineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160D020F5A7EA0000B8DC /* GameEngineInfo.swift */; };
 		DD5160D620F5B2FB0000B8DC /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160D520F5B2FB0000B8DC /* UserManager.swift */; };
-		DD5160DB20F5B5440000B8DC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160DA20F5B5440000B8DC /* UserModel.swift */; };
+		DD5160DB20F5B5440000B8DC /* AuthTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160DA20F5B5440000B8DC /* AuthTokenModel.swift */; };
 		DD5160DE20F5B7030000B8DC /* BlockHTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160DD20F5B7030000B8DC /* BlockHTTPError.swift */; };
 		DD5160E020F5B75B0000B8DC /* BlockHTTPHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160DF20F5B75B0000B8DC /* BlockHTTPHost.swift */; };
 		DD5160E220F5B7A80000B8DC /* BlockHTTPResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160E120F5B7A80000B8DC /* BlockHTTPResult.swift */; };
@@ -221,6 +221,10 @@
 		DDB9456F212FB0380009933A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9456D212FB0380009933A /* RegisterViewController.swift */; };
 		DDB94572212FBB4D0009933A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94571212FBB4D0009933A /* AboutUsViewController.swift */; };
 		DDB94573212FBB4D0009933A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94571212FBB4D0009933A /* AboutUsViewController.swift */; };
+		DDB94577212FF6C80009933A /* HomePageModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94576212FF6C80009933A /* HomePageModelManager.swift */; };
+		DDB94578212FF6C80009933A /* HomePageModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94576212FF6C80009933A /* HomePageModelManager.swift */; };
+		DDB9457A212FFBDA0009933A /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94579212FFBDA0009933A /* ProfileModel.swift */; };
+		DDB9457B212FFBDA0009933A /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94579212FFBDA0009933A /* ProfileModel.swift */; };
 		DDE09F9B21131F1700BD5CF8 /* BlockModsGameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; };
 		DDE09F9C21131F1700BD5CF8 /* BlockModsGameKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DDFB644C2126B6F30036AE0F /* AnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB644B2126B6F30036AE0F /* AnalysisService.swift */; };
@@ -322,7 +326,7 @@
 		DD5160CE20F5A79B0000B8DC /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		DD5160D020F5A7EA0000B8DC /* GameEngineInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEngineInfo.swift; sourceTree = "<group>"; };
 		DD5160D520F5B2FB0000B8DC /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
-		DD5160DA20F5B5440000B8DC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		DD5160DA20F5B5440000B8DC /* AuthTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenModel.swift; sourceTree = "<group>"; };
 		DD5160DD20F5B7030000B8DC /* BlockHTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockHTTPError.swift; sourceTree = "<group>"; };
 		DD5160DF20F5B75B0000B8DC /* BlockHTTPHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockHTTPHost.swift; sourceTree = "<group>"; };
 		DD5160E120F5B7A80000B8DC /* BlockHTTPResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockHTTPResult.swift; sourceTree = "<group>"; };
@@ -392,6 +396,8 @@
 		DDB94569212FA4570009933A /* ThirdLoginSecurityOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLoginSecurityOptionTableViewCell.swift; sourceTree = "<group>"; };
 		DDB9456D212FB0380009933A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DDB94571212FBB4D0009933A /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		DDB94576212FF6C80009933A /* HomePageModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModelManager.swift; sourceTree = "<group>"; };
+		DDB94579212FFBDA0009933A /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		DDFB64452126B3D90036AE0F /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
 		DDFB644B2126B6F30036AE0F /* AnalysisService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisService.swift; sourceTree = "<group>"; };
 		DDFB644F2126C29B0036AE0F /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
@@ -622,6 +628,7 @@
 			isa = PBXGroup;
 			children = (
 				DDA4B0DC2105F5F5004346C5 /* Launch */,
+				DDB94575212FF6AD0009933A /* HomePage */,
 				DD74030920FF483500091B9D /* Bulletin */,
 				DD7402E320FD92BD00091B9D /* CheckForUpdates */,
 				DD5160D420F5B2B80000B8DC /* UserManager */,
@@ -715,7 +722,8 @@
 		DD5160D920F5B5350000B8DC /* User */ = {
 			isa = PBXGroup;
 			children = (
-				DD5160DA20F5B5440000B8DC /* UserModel.swift */,
+				DD5160DA20F5B5440000B8DC /* AuthTokenModel.swift */,
+				DDB94579212FFBDA0009933A /* ProfileModel.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -933,6 +941,14 @@
 				DDB94571212FBB4D0009933A /* AboutUsViewController.swift */,
 			);
 			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		DDB94575212FF6AD0009933A /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				DDB94576212FF6C80009933A /* HomePageModelManager.swift */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 		DDFB64422126B3B30036AE0F /* ThirdPartyLib */ = {
@@ -1311,6 +1327,7 @@
 				DD3255A7210FFB8600739E00 /* GameInQueueViewController.swift in Sources */,
 				DD456BF2210EBDE6009465FE /* BMFileManager+EngineResource.swift in Sources */,
 				DDB9455C212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift in Sources */,
+				DDB94578212FF6C80009933A /* HomePageModelManager.swift in Sources */,
 				DD456BF3210EBDE6009465FE /* LaunchBrandingViewController.swift in Sources */,
 				DD67B04C212E61FA002C12D1 /* String+Crypto.swift in Sources */,
 				DD456BF4210EBDE6009465FE /* LaunchViewController.swift in Sources */,
@@ -1352,7 +1369,7 @@
 				DDB94565212EDE410009933A /* MailSecurityViewController.swift in Sources */,
 				DD456C10210EBDE6009465FE /* BlockHTTPError.swift in Sources */,
 				DD456C11210EBDE6009465FE /* CheckForAppUpdatesModelManager.swift in Sources */,
-				DD456C12210EBDE6009465FE /* UserModel.swift in Sources */,
+				DD456C12210EBDE6009465FE /* AuthTokenModel.swift in Sources */,
 				DD456C13210EBDE6009465FE /* ProgressView.swift in Sources */,
 				DD456C14210EBDE6009465FE /* LaunchInfiniteTranslationSkyView.swift in Sources */,
 				DD456C15210EBDE6009465FE /* OpenURL.swift in Sources */,
@@ -1360,6 +1377,7 @@
 				DD456C17210EBDE6009465FE /* HomePageViewController.swift in Sources */,
 				DD456C18210EBDE6009465FE /* UITableView+Extension.swift in Sources */,
 				DD456C19210EBDE6009465FE /* AppDelegate.swift in Sources */,
+				DDB9457B212FFBDA0009933A /* ProfileModel.swift in Sources */,
 				DDB94560212ED6BF0009933A /* PasswordSecurityViewController.swift in Sources */,
 				DD456C1A210EBDE6009465FE /* String+ConvertToDigit.swift in Sources */,
 				DD456C1B210EBDE6009465FE /* CopyFileTool.swift in Sources */,
@@ -1414,6 +1432,7 @@
 				DD3255A6210FFB8600739E00 /* GameInQueueViewController.swift in Sources */,
 				DD7402FF20FEF05F00091B9D /* BMFileManager+EngineResource.swift in Sources */,
 				DDB9455B212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift in Sources */,
+				DDB94577212FF6C80009933A /* HomePageModelManager.swift in Sources */,
 				DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */,
 				DD67B04B212E61FA002C12D1 /* String+Crypto.swift in Sources */,
 				DD7402D020FC791A00091B9D /* LaunchViewController.swift in Sources */,
@@ -1455,7 +1474,7 @@
 				DDB94564212EDE410009933A /* MailSecurityViewController.swift in Sources */,
 				DD5160DE20F5B7030000B8DC /* BlockHTTPError.swift in Sources */,
 				DD7402E520FD930900091B9D /* CheckForAppUpdatesModelManager.swift in Sources */,
-				DD5160DB20F5B5440000B8DC /* UserModel.swift in Sources */,
+				DD5160DB20F5B5440000B8DC /* AuthTokenModel.swift in Sources */,
 				DD7402D420FC818E00091B9D /* ProgressView.swift in Sources */,
 				DD74030520FF311100091B9D /* LaunchInfiniteTranslationSkyView.swift in Sources */,
 				DD7402F320FDDAE800091B9D /* OpenURL.swift in Sources */,
@@ -1463,6 +1482,7 @@
 				DD51605220EC6B740000B8DC /* HomePageViewController.swift in Sources */,
 				DD51609520F46A310000B8DC /* UITableView+Extension.swift in Sources */,
 				DD51605020EC6B740000B8DC /* AppDelegate.swift in Sources */,
+				DDB9457A212FFBDA0009933A /* ProfileModel.swift in Sources */,
 				DDB9455F212ED6BF0009933A /* PasswordSecurityViewController.swift in Sources */,
 				DD51609C20F46AAB0000B8DC /* String+ConvertToDigit.swift in Sources */,
 				DD74030120FEF21300091B9D /* CopyFileTool.swift in Sources */,

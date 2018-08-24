@@ -15,10 +15,14 @@ struct UserRequester {
 //        return NetServer.requestWithTarget(User.modifyNickname(nickname))
 //    }
     
-    static func fetchVisitorInfo(completion: @escaping RequestJsonCallBack) {
-        Requester.requestWithTarget(UserAPI.fetchVisitor(), completion: completion)
+    static func authToken(completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.authToken(), completion: completion)
     }
-//
+    
+    static func fetchUserProfile(completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.fetchUserProfile(), completion: completion)
+    }
+
 //    class func register(account: String, password: String) -> Single<[String : Any]> {
 //        return NetServer.requestWithTarget(User.register(account: account, passwd: password))
 //    }

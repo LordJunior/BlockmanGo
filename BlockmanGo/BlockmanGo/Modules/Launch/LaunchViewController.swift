@@ -90,8 +90,9 @@ class LaunchViewController: UIViewController {
         checkUpdateController.didMove(toParentViewController: self)
         checkForUpdateController = checkUpdateController
         
-        /// 创建一个新账号
-        launchManager.generateNewAccount()
+        if !UserManager.authorizationExistsAtLocal() {
+            launchManager.generateNewAuthorizationIfNeed()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

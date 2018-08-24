@@ -9,13 +9,18 @@
 import Foundation
 
 struct LaunchModelManager {
-    func generateNewAccount() {
-        UserRequester.fetchVisitorInfo { (result) in
+    
+    /// 首次安装应用会生成一个新的用户
+    /// 其他情况会去检查本地用户token有效性
+    func generateNewAuthorizationIfNeed() {
+        UserRequester.authToken { (result) in
             switch result {
             case .success(let response):
-                let visitorModel = try! response.mapModel(UserModel.self)
-                UserManager.shared.setUserModel(visitorModel)
-            case .failure(_):
+                let authModel = try! response.mapModel(AuthTokenModel.self)
+                UserManager.shared.setAuthorization(authModel)
+            case .failure(.userNotBindDevice):
+                TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: true)
+            default:
                 break
             }
         }

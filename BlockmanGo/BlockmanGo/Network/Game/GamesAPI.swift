@@ -107,10 +107,10 @@ extension GamesAPI: TargetType {
         var header: [String : String] = [:]
         switch self{
         case let .dispatchEnterGameResource(token, _):
-            header["x-shahe-uid"] = UserManager.shared.userID
+            header["x-shahe-uid"] = "\(UserManager.shared.userID)"
             header["x-shahe-token"] = token
         default:
-            header["userId"] = UserManager.shared.userID
+            header["userId"] = "\(UserManager.shared.userID)"
             header["Access-Token"] = UserManager.shared.accessToken
             header["language"] = Locale.current.identifier
         }

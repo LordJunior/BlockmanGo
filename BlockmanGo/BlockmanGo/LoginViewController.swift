@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// parameter为Bool值，是否为验证失败需要重新登录
 class LoginViewController: UIViewController {
 
     private weak var accountTextField: UITextField?
@@ -33,15 +34,7 @@ class LoginViewController: UIViewController {
         
         var topLabel = UILabel()
         let random = (arc4random() % 100) > 50
-        if random { // q切换账号
-            topLabel = UILabel().addTo(superView: containView).configure { (label) in
-                label.textColor = R.clr.appColor._844501()
-                label.font = UIFont.size13
-                label.text = "当前ID: 1234567"
-            }.layout { (make) in
-                make.left.top.equalToSuperview().offset(20)
-            }
-        }else {
+        if let param = parameter as? Bool, param { // 验证失效，重新登录
             topLabel = ExtraSizeLabel().addTo(superView: containView).configure { (label) in
                 label.backgroundColor = R.clr.appColor._ed8b74()
                 label.textColor = UIColor.white
@@ -53,6 +46,14 @@ class LoginViewController: UIViewController {
             }.layout { (make) in
                 make.left.right.top.equalToSuperview().inset(20)
                 make.height.equalTo(30)
+            }
+        }else { // 切换账号
+            topLabel = UILabel().addTo(superView: containView).configure { (label) in
+                label.textColor = R.clr.appColor._844501()
+                label.font = UIFont.size13
+                label.text = "当前ID: 1234567"
+            }.layout { (make) in
+                make.left.top.equalToSuperview().offset(20)
             }
         }
         

@@ -10,6 +10,16 @@ import Foundation
 
 // MARK: Error
 enum BlockHTTPError: Int, Swift.Error {
+    
+    // Auth
+    case userNotBindDevice = 1004 // 用户没有绑定任何设备
+    
+    case accountSameAsUserID = 1005 // userId 和 用户账号 存在相等的情况，有冲突
+    
+    case passwordNotSet = 1006 // 没有设置密码
+    
+    case thirdPartAccountAlreadyBindUser = 1007 // 第三方账号已经绑定了其他user
+    
     // User
     case nicknameInvalid = 3
     case noPermission = 7
@@ -30,7 +40,7 @@ enum BlockHTTPError: Int, Swift.Error {
     case profileNotExist = 1002
     
     // Game
-    case enterGameInQueue = 2
+    case enterGameInQueue = 2 // 因为服务器返回的错误码重复冲突了
     case gameNotExist = 2002
     case alreadyAppreciated = 2005
     case withoutPlayGame = 2008

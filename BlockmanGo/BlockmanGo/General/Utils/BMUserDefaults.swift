@@ -12,6 +12,8 @@ extension BMUserDefaults {
     enum Key: String {
         case engineResourceVersion
         case appShortVersion
+        case authToken
+        case userProfile
     }
 }
 
@@ -61,6 +63,15 @@ struct BMUserDefaults {
     
     public static func integer(forKey key: BMUserDefaults.Key) -> Int {
         return userDefaults.integer(forKey: key.rawValue)
+    }
+    
+    public static func setBool(_ bool: Bool, forKey key: BMUserDefaults.Key) {
+        userDefaults.set(bool, forKey: key.rawValue)
+        userDefaults.synchronize()
+    }
+    
+    public static func bool(forKey key: BMUserDefaults.Key) -> Bool {
+        return userDefaults.bool(forKey: key.rawValue)
     }
     
     public static func removeValue(forKey key: BMUserDefaults.Key) {
