@@ -37,6 +37,10 @@ class UserManager {
         }
     }
 
+    var gender: Gender {
+        return profileModel?.gender ?? .male
+    }
+    
     var accessToken: String {
         get {
             return authModel?.accessToken ?? ""

@@ -11,10 +11,6 @@ import Moya
 
 struct UserRequester {
     
-//    class func modifyNickname(_ nickname: String, completion: (BlockHTTPResult<[String : Any]>)) {
-//        return NetServer.requestWithTarget(User.modifyNickname(nickname))
-//    }
-    
     static func authToken(completion: @escaping RequestJsonCallBack) {
         Requester.requestWithTarget(UserAPI.authToken(), completion: completion)
     }
@@ -23,10 +19,10 @@ struct UserRequester {
         Requester.requestWithTarget(UserAPI.fetchUserProfile(), completion: completion)
     }
 
-//    class func register(account: String, password: String) -> Single<[String : Any]> {
-//        return NetServer.requestWithTarget(User.register(account: account, passwd: password))
-//    }
-//    
+    static func initializeProfile(nickname: String, gender: Int, completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.initializeProfile(nickname: nickname, gender: gender), completion: completion)
+    }
+//
 //    class func registerInfo(nickname: String, picUrl: String, gender: Int, uid: String, token: String) -> Single<[String : Any]> {
 //        return NetServer.requestWithTarget(User.registerInfo(nickname: nickname, gender: gender, picUrl: picUrl, uid: uid, token: token))
 //    }

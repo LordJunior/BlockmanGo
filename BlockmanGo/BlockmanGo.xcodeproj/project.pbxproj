@@ -204,6 +204,8 @@
 		DDA4B0DE2105F60D004346C5 /* LaunchModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */; };
 		DDA4B0E02106BF75004346C5 /* GameDispatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */; };
 		DDA4B0E32106D9A1004346C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B0E52106D9A1004346C5 /* Localizable.strings */; };
+		DDAACFE32133E3180074C5A5 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFE22133E3180074C5A5 /* String+Regex.swift */; };
+		DDAACFE42133E3180074C5A5 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFE22133E3180074C5A5 /* String+Regex.swift */; };
 		DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */; };
 		DDB94558212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */; };
 		DDB94559212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */; };
@@ -387,6 +389,7 @@
 		DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModelManager.swift; sourceTree = "<group>"; };
 		DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDispatchModel.swift; sourceTree = "<group>"; };
 		DDA4B0E42106D9A1004346C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DDAACFE22133E3180074C5A5 /* String+Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
 		DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchBrandingViewController.swift; sourceTree = "<group>"; };
 		DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityOptionViewController.swift; sourceTree = "<group>"; };
 		DDB9455A212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityOptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -602,6 +605,7 @@
 			children = (
 				DD51609A20F46AAB0000B8DC /* String+ConvertToDigit.swift */,
 				DD67B04A212E61F9002C12D1 /* String+Crypto.swift */,
+				DDAACFE22133E3180074C5A5 /* String+Regex.swift */,
 				DD5160CC20F5A6750000B8DC /* Dictionary+Extension.swift */,
 				DD51609320F46A310000B8DC /* UICollectionView+Extension.swift */,
 				DD51609120F46A310000B8DC /* UITableView+Extension.swift */,
@@ -1294,6 +1298,7 @@
 			files = (
 				DD456BD6210EBDE6009465FE /* BMFileManager.swift in Sources */,
 				DD456BD7210EBDE6009465FE /* GamesAPI.swift in Sources */,
+				DDAACFE42133E3180074C5A5 /* String+Regex.swift in Sources */,
 				DD456BD8210EBDE6009465FE /* BulletinModelManager.swift in Sources */,
 				DD456BD9210EBDE6009465FE /* GameViewController.swift in Sources */,
 				DD456BDA210EBDE6009465FE /* UIButton+VerticalLayout.swift in Sources */,
@@ -1399,6 +1404,7 @@
 			files = (
 				DD7402FD20FEEDF500091B9D /* BMFileManager.swift in Sources */,
 				DD5160F620F631F40000B8DC /* GamesAPI.swift in Sources */,
+				DDAACFE32133E3180074C5A5 /* String+Regex.swift in Sources */,
 				DD74030B20FF485200091B9D /* BulletinModelManager.swift in Sources */,
 				DD5160E920F5FA310000B8DC /* GameViewController.swift in Sources */,
 				DD74030D20FF5EC700091B9D /* UIButton+VerticalLayout.swift in Sources */,

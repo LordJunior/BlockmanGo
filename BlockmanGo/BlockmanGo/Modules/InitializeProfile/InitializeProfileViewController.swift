@@ -7,24 +7,42 @@
 //
 
 import UIKit
-import SnapKit
 
+protocol InitializeProfileViewControllerDelegate: class {
+    func initializeProfileViewControllerDidSwitchGender(_ profileController: InitializeProfileViewController)
+    func initializeProfileViewControllerDidEndEditingProfile(_ profileController: InitializeProfileViewController)
+}
+
+
+/// parameter为遵循InitializeProfileViewControllerDelegate的对象
 class InitializeProfileViewController: UIViewController {
 
+    var nickname: String? {
+        return randomInputView?.text
+    }
+    
+    var gender: Gender {
+        return Gender(rawValue: selectedGenderButton?.tag ?? 1)!
+    }
+    
+    weak var delegate: InitializeProfileViewControllerDelegate?
+    
     private weak var selectedGenderButton: UIButton?
     private weak var randomInputView: RandomInputView?
-    private var transparentContainViewCenterYToSuperConstraint: Constraint?
     
     override func viewDidLoad() {
         super.viewDidLoad()
      
         view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        if parameter != nil { // 防止覆盖 外界直接赋值的delegate
+            delegate = parameter as? InitializeProfileViewControllerDelegate
+        }
         
         let transparentContainView = UIView().addTo(superView: view).configure { (view) in
             view.backgroundColor = UIColor.clear
         }.layout { (make) in
             make.size.equalTo(CGSize(width: 270, height: 305))
-            transparentContainViewCenterYToSuperConstraint = make.centerY.equalToSuperview().constraint
+            make.centerY.equalToSuperview()
             make.centerX.equalToSuperview()
         }
         
@@ -69,7 +87,7 @@ class InitializeProfileViewController: UIViewController {
         let nicknameGuidelineLabel = UILabel().addTo(superView: profileContainView).configure { (label) in
             label.font = UIFont.size10
             label.textColor = R.clr.appColor._b17f63()
-            label.text = "仅限6个字母以内"
+            label.text = "6-16个英文字母或数字，不能纯数字"
         }.layout { (make) in
             make.left.right.equalToSuperview().offset(35)
             make.top.equalTo(randomInputView!.snp.bottom).offset(3)
@@ -118,13 +136,14 @@ class InitializeProfileViewController: UIViewController {
     }
     
     @objc private func startButtonClicked() {
-        TransitionManager.dismiss(animated: false)
+        delegate?.initializeProfileViewControllerDidEndEditingProfile(self)
     }
     
     @objc private func switchGender(_ sender: GenderButton) {
         sender.isSelected = true
         selectedGenderButton?.isSelected = false
         selectedGenderButton = sender
+        delegate?.initializeProfileViewControllerDidSwitchGender(self)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -138,16 +157,8 @@ extension InitializeProfileViewController: RandomInputViewDelegate, RandomInputV
     }
     
     func randomInputViewDidBeginInputting(_ randomInputView: RandomInputView) {
-        transparentContainViewCenterYToSuperConstraint?.update(offset: -50)
-        UIView.animate(withDuration: 0.35) {
-            self.view.layoutIfNeeded()
-        }
     }
     
     func randomInputViewDidEndInputting(_ randomInputView: RandomInputView) {
-        transparentContainViewCenterYToSuperConstraint?.update(offset: 0)
-        UIView.animate(withDuration: 0.35) {
-            self.view.layoutIfNeeded()
-        }
     }
 }

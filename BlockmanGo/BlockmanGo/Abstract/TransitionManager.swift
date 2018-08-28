@@ -77,8 +77,8 @@ class TransitionManager: NSObject {
 }
 
 extension TransitionManager {
-    private static var _TransitionManagerRootViewController: CChar = CChar.init(0)
-    private static var _TransitionManagerNavigationClass: CChar = CChar.init(0)
+    private static var _TransitionManagerRootViewController: Void?
+    private static var _TransitionManagerNavigationClass: Void?
     
     static var rootViewController: UIViewController {
         set {

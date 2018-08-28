@@ -26,8 +26,8 @@ let userPathPrefix = "/user"
 enum UserAPI {
     case authToken()
     case fetchUserProfile()
+    case initializeProfile(nickname: String, gender: Int)
     
-    case register(account: String, passwd: String)
     case registerInfo(nickname: String, gender: Int, picUrl: String, uid: String, token: String)
     case login(account: String, passwd: String, channel: Channel)
     case modifyNickname(String)
@@ -70,8 +70,9 @@ extension UserAPI : TargetType {
         case .fetchUserProfile():
             return "\(userPathPrefix)/api/\(apiVersion)/user/details/info"
             
-        case .register(_, _):
-            return "\(userPathPrefix)/api/\(apiVersion)/register"
+        case .initializeProfile(_, _):
+            return "\(userPathPrefix)/api/\(apiVersion)/user/register"
+            
             
         case .registerInfo(nickname: _, gender: _, picUrl: _, uid: _, token: _):
             return "\(userPathPrefix)/api/\(apiVersion)\(userPathPrefix)/register"
@@ -147,8 +148,10 @@ extension UserAPI : TargetType {
         case .fetchUserProfile(), .authToken():
             return .requestPlain
             
-        case let .register(account: uid, passwd: pwd):
-            return .requestParameters(parameters: ["uid" : uid, "password" : pwd, "appType" : "ios", "deviceId" : DeviceInfo.modelName, "os" : DeviceInfo.system, "uuid" : DeviceInfo.uuid], encoding: JSONEncoding.default)
+        case let .initializeProfile(nickname: nickname, gender: gender):
+            return .requestParameters(parameters: ["nickName" : nickname, "sex" : gender], encoding: JSONEncoding.default)
+            
+            
             
         case let .registerInfo(nickname: name, gender: gender, picUrl: picUrl, uid: _, token: _):
             return .requestParameters(parameters: ["nickName" : name, "sex" : gender, "picUrl" : picUrl], encoding: JSONEncoding.default)
@@ -228,14 +231,13 @@ extension UserAPI : TargetType {
             header["bmg-user-id"] = "\(UserManager.shared.userID)"
             return header
         
-        case .fetchUserProfile():
+        case .fetchUserProfile(), .initializeProfile(nickname: _, gender: _):
             var header: [String : String] = [:]
             header["userId"] = "\(UserManager.shared.userID)"
             header["Access-Token"] = UserManager.shared.accessToken
             return header
             
-        case .register(account: _, passwd: _):
-            fallthrough
+            
         case .login(account: _, passwd: _, channel: _):
             fallthrough
         case .resetPassword(_, phone: _, verificationCode: _):

@@ -195,7 +195,7 @@ final class AlertController: UIViewController {
 }
 
 private extension AlertController {
-    private static var presentingControllerOfAlertKey: CChar = CChar.init(0)
+    private static var presentingControllerOfAlertKey: Void?
     
     private static var presentingControllerOfAlert: UIViewController? {
         set {

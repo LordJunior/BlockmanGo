@@ -17,7 +17,7 @@ let closeButtonSize = CGSize(width: 45, height: 47)
 
 extension UIViewController: ClosableProtocol {
     
-    private static var closeHandlerKey: CChar = CChar.init(bitPattern: 0)
+    private static var closeHandlerKey: Void?
     
     private var closeHandler: ((UIButton) -> Void) {
         set {
