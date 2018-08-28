@@ -17,6 +17,7 @@ class LaunchViewController: UIViewController {
     private weak var rightCloudImageView: UIImageView?
     private weak var joinGameButton: UIButton?
     private weak var bulletinButton: UIButton?
+    private weak var loginButton: UIButton?
     
     private let launchManager = LaunchModelManager()
     
@@ -33,19 +34,32 @@ class LaunchViewController: UIViewController {
             make.edges.equalToSuperview()
         })
         
-//        bulletinButton = UIButton().addTo(superView: view).layout(snapKitMaker: { (make) in
-//            make.size.equalTo(CGSize(width: 30, height: 44))
-//            make.top.equalToSuperview()
-//            make.right.equalToSuperview().inset(10)
-//        }).configure({ (button) in
-//            button.setImage(R.image.launch_bulletin(), for: .normal)
-//            button.titleLabel?.font = UIFont.size11
-//            button.setTitleColor(UIColor.white, for: .normal)
-//            button.setTitle(R.string.localizable.bulletion(), for: .normal)
-//            button.transform = CGAffineTransform.init(translationX: 0, y: -44)
-//            button.addTarget(self, action: #selector(bulletinButtonClicked), for: .touchUpInside)
-//            button.centerVertically()
-//        })
+        let suspendButtonConfig = { (button: AdjustLayoutButton) in
+            button.titleLabel?.font = UIFont.size11
+            button.titleLabel?.textAlignment = .center
+            button.setTitleColor(UIColor.white, for: .normal)
+            button.transform = CGAffineTransform.init(translationX: 50, y: 0)
+            button.contentLayout = .imageTopTitleBottom
+        }
+        
+        bulletinButton = AdjustLayoutButton().addTo(superView: view).configure({ (button) in
+            button.setImage(R.image.launch_bulletin(), for: .normal)
+            button.setTitle(R.string.localizable.bulletion(), for: .normal)
+            button.addTarget(self, action: #selector(bulletinButtonClicked), for: .touchUpInside)
+        }).configure(suspendButtonConfig).layout(snapKitMaker: { (make) in
+            make.size.equalTo(CGSize(width: 50, height: 46))
+            make.top.equalToSuperview().offset(15)
+            make.right.equalToSuperview().inset(8)
+        })
+        
+        loginButton = AdjustLayoutButton().addTo(superView: view).configure({ (button) in
+            button.setImage(R.image.setting_login(), for: .normal)
+            button.setTitle(R.string.localizable.log_in(), for: .normal)
+            button.addTarget(self, action: #selector(loginButtonClicked), for: .touchUpInside)
+        }).configure(suspendButtonConfig).layout(snapKitMaker: { (make) in
+            make.size.right.equalTo(bulletinButton!)
+            make.top.equalTo(bulletinButton!.snp.bottom).offset(12)
+        })
         
         logoImageView = UIImageView(image: R.image.launch_logo()).addTo(superView: view).layout { (make) in
             make.center.equalToSuperview()
@@ -104,6 +118,8 @@ class LaunchViewController: UIViewController {
     private func removeCheckForUpdateController() {
         checkForUpdateController?.willMove(toParentViewController: nil)
         checkForUpdateController?.view.removeFromSuperview()
+        checkForUpdateController?.removeFromParentViewController()
+        checkForUpdateController = nil
     }
     
     private func triggerAnimation() {
@@ -111,6 +127,7 @@ class LaunchViewController: UIViewController {
         
         UIView.animate(withDuration: 0.5, delay: 0.8, options: .curveEaseOut, animations: {
             self.bulletinButton?.transform = CGAffineTransform.identity
+            self.loginButton?.transform = CGAffineTransform.identity
         })
         
         UIView.animate(withDuration: 0.8, delay: 0.5, options: .curveEaseOut, animations: {
@@ -139,6 +156,10 @@ class LaunchViewController: UIViewController {
     
     @objc private func bulletinButtonClicked() {
         TransitionManager.present(BulletinViewController.self, animated: false, parameter: self, completion: nil)
+    }
+    
+    @objc private func loginButtonClicked() {
+        TransitionManager.presentInNormalTransition(SwitchAccountViewController.self)
     }
 }
 

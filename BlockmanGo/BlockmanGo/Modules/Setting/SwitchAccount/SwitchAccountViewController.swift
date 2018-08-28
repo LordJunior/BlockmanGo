@@ -44,25 +44,28 @@ class SwitchAccountViewController: UIViewController {
             make.top.bottom.equalToSuperview().inset(20)
         }
         
-        accountTypeImageView = UIImageView(image: R.image.setting_Facebook()).addTo(superView: idContainView).layout(snapKitMaker: { (make) in
+        accountTypeImageView = UIImageView(image: R.image.common_default_userimage()).addTo(superView: idContainView).layout(snapKitMaker: { (make) in
             make.left.equalToSuperview().offset(10)
             make.centerY.equalToSuperview()
             make.size.equalTo(CGSize(width: 34, height: 34))
+        }).configure({ (imageView) in
+            imageView.layer.cornerRadius = 12
+            imageView.clipsToBounds = true
         })
         
         idLabel = UILabel().addTo(superView: idContainView).configure({ (label) in
             label.font = UIFont.size13
             label.textColor = R.clr.appColor._844501()
-            label.text = "ID: 1234567"
+            label.text = "ID: \(UserManager.shared.userID)"
         }).layout(snapKitMaker: { (make) in
             make.left.equalTo(accountTypeImageView!.snp.right).offset(10)
-            make.centerY.equalTo(accountTypeImageView!).offset(-8)
+            make.centerY.equalTo(accountTypeImageView!).offset(UserManager.shared.nickname.isEmpty ? 0 : -8)
         })
         
         nicknameLabel = UILabel().addTo(superView: idContainView).configure({ (label) in
             label.font = UIFont.size12
             label.textColor = R.clr.appColor._aaaaaa()
-            label.text = "昵称: 垃圾游戏"
+            label.text = UserManager.shared.nickname.isEmpty ? nil : "昵称: \(UserManager.shared.nickname)"
         }).layout(snapKitMaker: { (make) in
             make.left.equalTo(idLabel!)
             make.top.equalTo(idLabel!.snp.bottom).offset(5)
@@ -92,6 +95,6 @@ class SwitchAccountViewController: UIViewController {
     }
     
     @objc private func switchAccountButtonClicked() {
-        
+        TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: false)
     }
 }

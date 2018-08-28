@@ -19,7 +19,6 @@
 		DD456BD7210EBDE6009465FE /* GamesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F520F631F40000B8DC /* GamesAPI.swift */; };
 		DD456BD8210EBDE6009465FE /* BulletinModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030A20FF485200091B9D /* BulletinModelManager.swift */; };
 		DD456BD9210EBDE6009465FE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160E820F5FA310000B8DC /* GameViewController.swift */; };
-		DD456BDA210EBDE6009465FE /* UIButton+VerticalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030C20FF5EC700091B9D /* UIButton+VerticalLayout.swift */; };
 		DD456BDB210EBDE6009465FE /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160C220F5A2330000B8DC /* Requester.swift */; };
 		DD456BDC210EBDE6009465FE /* AnimatableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030220FF219A00091B9D /* AnimatableProtocol.swift */; };
 		DD456BDD210EBDE6009465FE /* RandomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EB6182103059700E7AE9B /* RandomInputView.swift */; };
@@ -191,7 +190,6 @@
 		DD74030520FF311100091B9D /* LaunchInfiniteTranslationSkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030420FF311100091B9D /* LaunchInfiniteTranslationSkyView.swift */; };
 		DD74030820FF3DA700091B9D /* BulletinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030720FF3DA700091B9D /* BulletinViewController.swift */; };
 		DD74030B20FF485200091B9D /* BulletinModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030A20FF485200091B9D /* BulletinModelManager.swift */; };
-		DD74030D20FF5EC700091B9D /* UIButton+VerticalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030C20FF5EC700091B9D /* UIButton+VerticalLayout.swift */; };
 		DD74030F20FF620F00091B9D /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030E20FF620F00091B9D /* Delay.swift */; };
 		DD74031120FF637E00091B9D /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74031020FF637E00091B9D /* GameDetailViewController.swift */; };
 		DD74031321002C6B00091B9D /* GameDetailModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74031221002C6B00091B9D /* GameDetailModelManager.swift */; };
@@ -206,6 +204,8 @@
 		DDA4B0E32106D9A1004346C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B0E52106D9A1004346C5 /* Localizable.strings */; };
 		DDAACFE32133E3180074C5A5 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFE22133E3180074C5A5 /* String+Regex.swift */; };
 		DDAACFE42133E3180074C5A5 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFE22133E3180074C5A5 /* String+Regex.swift */; };
+		DDAACFE82134F4F80074C5A5 /* AdjustLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFE72134F4F80074C5A5 /* AdjustLayoutButton.swift */; };
+		DDAACFE92134F4F80074C5A5 /* AdjustLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFE72134F4F80074C5A5 /* AdjustLayoutButton.swift */; };
 		DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */; };
 		DDB94558212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */; };
 		DDB94559212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */; };
@@ -375,7 +375,6 @@
 		DD74030420FF311100091B9D /* LaunchInfiniteTranslationSkyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInfiniteTranslationSkyView.swift; sourceTree = "<group>"; };
 		DD74030720FF3DA700091B9D /* BulletinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinViewController.swift; sourceTree = "<group>"; };
 		DD74030A20FF485200091B9D /* BulletinModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinModelManager.swift; sourceTree = "<group>"; };
-		DD74030C20FF5EC700091B9D /* UIButton+VerticalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+VerticalLayout.swift"; sourceTree = "<group>"; };
 		DD74030E20FF620F00091B9D /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		DD74031020FF637E00091B9D /* GameDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailViewController.swift; sourceTree = "<group>"; };
 		DD74031221002C6B00091B9D /* GameDetailModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailModelManager.swift; sourceTree = "<group>"; };
@@ -390,6 +389,7 @@
 		DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDispatchModel.swift; sourceTree = "<group>"; };
 		DDA4B0E42106D9A1004346C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DDAACFE22133E3180074C5A5 /* String+Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
+		DDAACFE72134F4F80074C5A5 /* AdjustLayoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustLayoutButton.swift; sourceTree = "<group>"; };
 		DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchBrandingViewController.swift; sourceTree = "<group>"; };
 		DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityOptionViewController.swift; sourceTree = "<group>"; };
 		DDB9455A212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityOptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -587,6 +587,7 @@
 			isa = PBXGroup;
 			children = (
 				DD51609E20F48F0F0000B8DC /* ExtraSizeLabel.swift */,
+				DDAACFE72134F4F80074C5A5 /* AdjustLayoutButton.swift */,
 				DD51609F20F48F0F0000B8DC /* NetImageView.swift */,
 				DD51608C20F468300000B8DC /* AccountInfoView.swift */,
 				DD7402D320FC818E00091B9D /* ProgressView.swift */,
@@ -613,7 +614,6 @@
 				DD51609220F46A310000B8DC /* UIView+Layout.swift */,
 				DD5160A220F494CF0000B8DC /* UIFont+Extension.swift */,
 				DD7402FE20FEF05F00091B9D /* BMFileManager+EngineResource.swift */,
-				DD74030C20FF5EC700091B9D /* UIButton+VerticalLayout.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1301,7 +1301,6 @@
 				DDAACFE42133E3180074C5A5 /* String+Regex.swift in Sources */,
 				DD456BD8210EBDE6009465FE /* BulletinModelManager.swift in Sources */,
 				DD456BD9210EBDE6009465FE /* GameViewController.swift in Sources */,
-				DD456BDA210EBDE6009465FE /* UIButton+VerticalLayout.swift in Sources */,
 				DD456BDB210EBDE6009465FE /* Requester.swift in Sources */,
 				DD456BDC210EBDE6009465FE /* AnimatableProtocol.swift in Sources */,
 				DD456BDD210EBDE6009465FE /* RandomInputView.swift in Sources */,
@@ -1316,6 +1315,7 @@
 				DD456BE4210EBDE6009465FE /* GameCollectionViewCell.swift in Sources */,
 				DD456C42210ED44B009465FE /* BlockHUD.swift in Sources */,
 				DD456BE5210EBDE6009465FE /* UIView+Layout.swift in Sources */,
+				DDAACFE92134F4F80074C5A5 /* AdjustLayoutButton.swift in Sources */,
 				DD456BE6210EBDE6009465FE /* LaunchModelManager.swift in Sources */,
 				DD456BE7210EBDE6009465FE /* BlockHTTPHost.swift in Sources */,
 				DD456BE8210EBDE6009465FE /* TransitionManagerStack.swift in Sources */,
@@ -1407,7 +1407,6 @@
 				DDAACFE32133E3180074C5A5 /* String+Regex.swift in Sources */,
 				DD74030B20FF485200091B9D /* BulletinModelManager.swift in Sources */,
 				DD5160E920F5FA310000B8DC /* GameViewController.swift in Sources */,
-				DD74030D20FF5EC700091B9D /* UIButton+VerticalLayout.swift in Sources */,
 				DD5160C620F5A2330000B8DC /* Requester.swift in Sources */,
 				DD74030320FF219A00091B9D /* AnimatableProtocol.swift in Sources */,
 				DD8EB6192103059700E7AE9B /* RandomInputView.swift in Sources */,
@@ -1422,6 +1421,7 @@
 				DD5160F020F60ACF0000B8DC /* GameCollectionViewCell.swift in Sources */,
 				DD51609620F46A310000B8DC /* UIView+Layout.swift in Sources */,
 				DDA4B0DE2105F60D004346C5 /* LaunchModelManager.swift in Sources */,
+				DDAACFE82134F4F80074C5A5 /* AdjustLayoutButton.swift in Sources */,
 				DD5160E020F5B75B0000B8DC /* BlockHTTPHost.swift in Sources */,
 				DD51608620F363FF0000B8DC /* TransitionManagerStack.swift in Sources */,
 				DD7402EF20FDC9D100091B9D /* CheckForResourceUpdateModel.swift in Sources */,

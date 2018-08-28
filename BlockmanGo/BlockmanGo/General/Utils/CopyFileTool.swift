@@ -27,6 +27,10 @@ class CopyFileTool: NSObject, FileManagerDelegate {
         
         fileManager.delegate = self
     }
+
+    deinit {
+        destroyTimer()
+    }
     
     func copyFile(atPath: String, toPath: String) {
         guard fileManager.fileExists(atPath: atPath) else {

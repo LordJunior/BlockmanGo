@@ -16,9 +16,9 @@ class LoginViewController: UIViewController {
     private weak var registerButton: UIButton?
     private weak var mailButton: UIButton?
     private weak var loginButton: UIButton?
-    private weak var twitterButton: UIButton?
-    private weak var facebookButton: UIButton?
-    private weak var googleButton: UIButton?
+    private weak var twitterButton: AdjustLayoutButton?
+    private weak var facebookButton: AdjustLayoutButton?
+    private weak var googleButton: AdjustLayoutButton?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +51,7 @@ class LoginViewController: UIViewController {
             topLabel = UILabel().addTo(superView: containView).configure { (label) in
                 label.textColor = R.clr.appColor._844501()
                 label.font = UIFont.size13
-                label.text = "当前ID: 1234567"
+                label.text = "当前ID: \(UserManager.shared.userID)"
             }.layout { (make) in
                 make.left.top.equalToSuperview().offset(20)
             }
@@ -108,32 +108,35 @@ class LoginViewController: UIViewController {
             make.centerX.equalToSuperview()
         })
         
-        twitterButton = UIButton().addTo(superView: containView).configure { (button) in
-            button.setImage(R.image.setting_Twitter(), for: .normal)
+        let thirdLoginButtonConfig = {(button: AdjustLayoutButton) in
             button.titleLabel?.font = UIFont.size11
             button.setTitleColor(R.clr.appColor._844501(), for: .normal)
+            button.padding = 5
+            button.contentLayout = .imageTopTitleBottom
+        }
+        twitterButton = AdjustLayoutButton().addTo(superView: containView).configure { (button) in
+            button.setImage(R.image.setting_Twitter(), for: .normal)
             button.setTitle("Twitter", for: .normal)
-        }.layout { (make) in
+        }.configure(thirdLoginButtonConfig).layout { (make) in
             make.top.equalTo(shadowContainView.snp.bottom).offset(20)
             make.centerX.equalToSuperview()
+            make.size.equalTo(CGSize(width: 60, height: 60))
         }
         
-        facebookButton = UIButton().addTo(superView: containView).configure { (button) in
+        facebookButton = AdjustLayoutButton().addTo(superView: containView).configure { (button) in
             button.setImage(R.image.setting_Facebook(), for: .normal)
-            button.titleLabel?.font = UIFont.size11
-            button.setTitleColor(R.clr.appColor._844501(), for: .normal)
             button.setTitle("Facebook", for: .normal)
-        }.layout { (make) in
+        }.configure(thirdLoginButtonConfig).layout { (make) in
+            make.size.equalTo(twitterButton!)
             make.top.equalTo(shadowContainView.snp.bottom).offset(20)
             make.centerX.equalToSuperview().multipliedBy(0.4)
         }
         
-        googleButton = UIButton().addTo(superView: containView).configure { (button) in
+        googleButton = AdjustLayoutButton().addTo(superView: containView).configure { (button) in
             button.setImage(R.image.setting_Google(), for: .normal)
-            button.titleLabel?.font = UIFont.size11
-            button.setTitleColor(R.clr.appColor._844501(), for: .normal)
             button.setTitle("Google+", for: .normal)
-        }.layout { (make) in
+        }.configure(thirdLoginButtonConfig).layout { (make) in
+            make.size.equalTo(twitterButton!)
             make.top.equalTo(shadowContainView.snp.bottom).offset(20)
             make.centerX.equalToSuperview().multipliedBy(1.6)
         }
