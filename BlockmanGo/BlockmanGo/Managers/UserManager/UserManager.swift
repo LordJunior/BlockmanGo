@@ -41,6 +41,14 @@ class UserManager {
         return profileModel?.gender ?? .male
     }
     
+    var portraitURL: String {
+        return profileModel?.portraitURL ?? ""
+    }
+    
+    var loginPlatform: LoginPlatformEnum {
+        return profileModel?.platform ?? .app
+    }
+    
     var accessToken: String {
         get {
             return authModel?.accessToken ?? ""
@@ -49,6 +57,11 @@ class UserManager {
 
     static func authorizationExistsAtLocal() -> Bool {
         return BMUserDefaults.data(forKey: .authToken) != nil
+    }
+    
+    /// 当前这个账号是否设置了密码
+    func hasPassword() -> Bool {
+        return profileModel?.hasPassword ?? false
     }
     
     func setNickname(_ newValue: String) {

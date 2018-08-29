@@ -8,9 +8,16 @@
 
 import UIKit
 
-/// parameter为Bool值，是否为验证失败需要重新登录
+protocol LoginViewControllerDelegate: class {
+    func loginViewControllerDidCancel(_ viewController: LoginViewController)
+    func loginViewControllerDidLoginSuccessful(_ viewController: LoginViewController)
+}
+
+/// parameter为(Bool, LoginViewControllerDelegate)元组值，第一个参数 是否为验证失败需要重新登录；第二个参数是传代理对象
 class LoginViewController: UIViewController {
 
+    weak var delegate: LoginViewControllerDelegate?
+    
     private weak var accountTextField: UITextField?
     private weak var passwordTextField: UITextField?
     private weak var registerButton: UIButton?
@@ -20,10 +27,21 @@ class LoginViewController: UIViewController {
     private weak var facebookButton: AdjustLayoutButton?
     private weak var googleButton: AdjustLayoutButton?
     
+    private let loginManager = LoginModelManager()
+    private var isAuthorizationExpired = false
+    
+    deinit {
+        print("LoginViewController deinit")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        if let (isExpired, loginControllerDelegate) = parameter as? (Bool, LoginViewControllerDelegate?) {
+            isAuthorizationExpired = isExpired
+            delegate = loginControllerDelegate
+        }
         
         let containView = UIImageView(image: R.image.general_alert_background()).addTo(superView: view).configure { (imageView) in
             imageView.isUserInteractionEnabled = true
@@ -33,8 +51,7 @@ class LoginViewController: UIViewController {
         }
         
         var topLabel = UILabel()
-        let random = (arc4random() % 100) > 50
-        if let param = parameter as? Bool, param { // 验证失效，重新登录
+        if isAuthorizationExpired { // 验证失效，重新登录
             topLabel = ExtraSizeLabel().addTo(superView: containView).configure { (label) in
                 label.backgroundColor = R.clr.appColor._ed8b74()
                 label.textColor = UIColor.white
@@ -62,16 +79,20 @@ class LoginViewController: UIViewController {
             view.layer.cornerRadius = 12
         }.layout { (make) in
             make.left.right.equalToSuperview().inset(20)
-            make.top.equalTo(topLabel.snp.bottom).offset(random ? 12 : 5)
+            make.top.equalTo(topLabel.snp.bottom).offset(isAuthorizationExpired ? 12 : 5)
             make.height.equalTo(192)
         }
         
         accountTextField = CommonTextField(placeHolder: "输入账号/ID").addTo(superView: shadowContainView).layout(snapKitMaker: { (make) in
             make.left.right.top.equalToSuperview().inset(10)
             make.height.equalTo(40)
+        }).configure({ (textField) in
+            textField.text = "\(UserManager.shared.userID)"
         })
         
-        passwordTextField = CommonTextField(placeHolder: "输入密码").addTo(superView: shadowContainView).layout(snapKitMaker: { (make) in
+        passwordTextField = CommonTextField(placeHolder: "输入密码").addTo(superView: shadowContainView).configure({ (textfield) in
+            textfield.isSecureTextEntry = true
+        }).layout(snapKitMaker: { (make) in
             make.top.equalTo(accountTextField!.snp.bottom).offset(5)
             make.size.centerX.equalTo(accountTextField!)
         })
@@ -84,6 +105,7 @@ class LoginViewController: UIViewController {
         }
         registerButton = UIButton().addTo(superView: shadowContainView).configure(buttonConfig).configure({ (button) in
             button.setTitle("账号注册", for: .normal)
+            button.addTarget(self, action: #selector(registerButtonClicked), for: .touchUpInside)
         }).layout(snapKitMaker: { (make) in
             make.top.equalTo(passwordTextField!.snp.bottom).offset(7)
             make.height.equalTo(20)
@@ -93,6 +115,7 @@ class LoginViewController: UIViewController {
         
         mailButton = UIButton().addTo(superView: shadowContainView).configure(buttonConfig).configure({ (button) in
             button.setTitle("邮箱找回", for: .normal)
+            button.addTarget(self, action: #selector(mailButtonClicked), for: .touchUpInside)
         }).layout(snapKitMaker: { (make) in
             make.top.equalTo(passwordTextField!.snp.bottom).offset(7)
             make.height.equalTo(20)
@@ -101,7 +124,7 @@ class LoginViewController: UIViewController {
         })
         
         loginButton = CommonButton(title: R.string.localizable.log_in()).addTo(superView: shadowContainView).configure({ (button) in
-//            button.addTarget(self, action: #selector(), for: .touchUpInside)
+            button.addTarget(self, action: #selector(loginButtonClicked), for: .touchUpInside)
         }).layout(snapKitMaker: { (make) in
             make.size.equalTo(CGSize(width: 212, height: 42))
             make.top.equalTo(mailButton!.snp.bottom).offset(20)
@@ -150,15 +173,41 @@ class LoginViewController: UIViewController {
             make.top.equalTo(containView)
             make.left.equalTo(containView.snp.right).offset(5)
         }) { _ in
-            TransitionManager.dismiss(animated: true)
+            self.delegate?.loginViewControllerDidCancel(self)
         }
     }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        twitterButton?.centerVertically(padding: 5)
-        facebookButton?.centerVertically(padding: 5)
-        googleButton?.centerVertically(padding: 5)
+    
+    @objc private func registerButtonClicked() {
+        TransitionManager.presentInHidePresentingTransition(RegisterViewController.self)
     }
+    
+    @objc private func mailButtonClicked() {
+        
+    }
+    
+    @objc private func loginButtonClicked() {
+        guard let account = accountTextField?.text, !account.isEmpty else {
+            AlertController.alert(title: "请输入账号", message: nil, from: self)
+            return
+        }
+        guard let password = passwordTextField?.text, !password.isEmpty else {
+            AlertController.alert(title: "请输入密码", message: nil, from: self)
+            return
+        }
+        BlockHUD.showLoading(inView: view)
+        loginManager.login(account: account, password: password) { [unowned self] (result) in
+            BlockHUD.hide(forView: self.view)
+            switch result {
+            case .success(_):
+                self.delegate?.loginViewControllerDidLoginSuccessful(self)
+            case .failure(.accountNotExist):
+                AlertController.alert(title: R.string.localizable.the_account_not_exist(), message: nil, from: self)
+            case .failure(.passwordError):
+                AlertController.alert(title: R.string.localizable.the_password_error(), message: nil, from: self)
+            default:
+                AlertController.alert(title: R.string.localizable.common_request_fail_retry(), message: nil, from: self)
+            }
+        }
+    }
+    
 }

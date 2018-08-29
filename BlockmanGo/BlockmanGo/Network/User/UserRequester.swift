@@ -22,15 +22,17 @@ struct UserRequester {
     static func initializeProfile(nickname: String, gender: Int, completion: @escaping RequestJsonCallBack) {
         Requester.requestWithTarget(UserAPI.initializeProfile(nickname: nickname, gender: gender), completion: completion)
     }
-//
+    
+    static func login(account: String, password: String, channel: Channel = .app, completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.login(account: account, passwd: password, channel: channel), completion: completion)
+    }
+    
 //    class func registerInfo(nickname: String, picUrl: String, gender: Int, uid: String, token: String) -> Single<[String : Any]> {
 //        return NetServer.requestWithTarget(User.registerInfo(nickname: nickname, gender: gender, picUrl: picUrl, uid: uid, token: token))
 //    }
 //    
-//    class func login(account: String, password: String, channel: Channel = .app) -> Single<[String : Any]> {
-//        return NetServer.requestWithTarget(User.login(account: account, passwd: password, channel: channel))
-//    }
-//    
+    
+    
     
 //
 //    class func modifyIntroduction(_ introduction: String) -> Single<[String : Any]> {

@@ -14,6 +14,10 @@ class SwitchAccountViewController: UIViewController {
     private weak var idLabel: UILabel?
     private weak var nicknameLabel: UILabel?
     
+    deinit {
+        print("SwitchAccountViewController deinit")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,7 +63,7 @@ class SwitchAccountViewController: UIViewController {
             label.text = "ID: \(UserManager.shared.userID)"
         }).layout(snapKitMaker: { (make) in
             make.left.equalTo(accountTypeImageView!.snp.right).offset(10)
-            make.centerY.equalTo(accountTypeImageView!).offset(UserManager.shared.nickname.isEmpty ? 0 : -8)
+            make.centerY.equalTo(accountTypeImageView!).offset(UserManager.shared.nickname.isEmpty ? 0 : -9)
         })
         
         nicknameLabel = UILabel().addTo(superView: idContainView).configure({ (label) in
@@ -95,6 +99,20 @@ class SwitchAccountViewController: UIViewController {
     }
     
     @objc private func switchAccountButtonClicked() {
-        TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: false)
+        TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: (false, self))
     }
 }
+
+extension SwitchAccountViewController: LoginViewControllerDelegate {
+    func loginViewControllerDidCancel(_ viewController: LoginViewController) {
+        TransitionManager.dismiss(animated: true)
+    }
+    
+    func loginViewControllerDidLoginSuccessful(_ viewController: LoginViewController) {
+        TransitionManager.dismiss(animated: true) // 先dismiss LoginViewController
+        TransitionManager.dismiss(animated: true) { // 再dismiss SwitchAccountController
+            TransitionManager.currentNavigationController()?.setViewControllers([HomePageViewController()], animated: false)
+        }
+    }
+}
+

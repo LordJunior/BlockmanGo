@@ -14,7 +14,7 @@ class ModalTransitionController: NSObject, UIViewControllerTransitioningDelegate
     
     static let normalTransition = ModalTransitionController()
     
-    private var presentAnimation: UIViewControllerAnimatedTransitioning?
+     var presentAnimation: UIViewControllerAnimatedTransitioning?
     private var dismissAnimation: UIViewControllerAnimatedTransitioning?
     
     required init(hidePresenting: Bool = false) {

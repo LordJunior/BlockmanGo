@@ -47,10 +47,14 @@ class CheckForUpdatesViewController: UIViewController {
         }
         
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+//        checkForAppUpdates()
+    }
+    
+    func startCheckForUpdate() {
         checkForAppUpdates()
     }
     
@@ -62,7 +66,7 @@ class CheckForUpdatesViewController: UIViewController {
                     self.checkForResourceUpdates()
                     return
                 }
-                AlertController.alert(title: R.string.localizable.find_new_version(), message: R.string.localizable.need_to_download_new_version(), from: TransitionManager.rootViewController, showCancelButton: !appUpdateResult.forceUpdateIfNeed)?.done(completion: { (_) in
+                AlertController.alert(title: R.string.localizable.find_new_version(), message: R.string.localizable.need_to_download_new_version(), from: self, showCancelButton: !appUpdateResult.forceUpdateIfNeed)?.done(completion: { (_) in
                     openURL(appUpdateResult.downloadURL)
                 }).cancel(completion: { (_) in
                     if appUpdateResult.forceUpdateIfNeed {
@@ -81,7 +85,7 @@ class CheckForUpdatesViewController: UIViewController {
         self.progressView?.isHidden = false
         if engineResourceManager.copyResourceFromBundleIfNeed() {
             AnalysisService.trackEvent(.resource_win_time)
-            AlertController.alert(title:R.string.localizable.notification() , message: R.string.localizable.unpacking_resources_if_continue(), from: TransitionManager.rootViewController, showCancelButton: true)?.setCancelTitle("Exit").setDoneTitle("OK").done(completion: { (_) in
+            AlertController.alert(title:R.string.localizable.notification() , message: R.string.localizable.unpacking_resources_if_continue(), from: self, showCancelButton: true)?.setCancelTitle("Exit").setDoneTitle("OK").done(completion: { (_) in
                 AnalysisService.trackEvent(.click_ok)
                 self.engineResourceManager.copyBundleResourceToCache()
             }).cancel(completion: { (_) in

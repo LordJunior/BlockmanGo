@@ -15,21 +15,15 @@ enum VerificationCodeType: String {
     case passwordReFound
 }
 
-enum Channel: String {
-    case app
-    case facebook
-    case twitter
-}
-
 let userPathPrefix = "/user"
 
 enum UserAPI {
     case authToken()
     case fetchUserProfile()
     case initializeProfile(nickname: String, gender: Int)
+    case login(account: String, passwd: String, channel: Channel)
     
     case registerInfo(nickname: String, gender: Int, picUrl: String, uid: String, token: String)
-    case login(account: String, passwd: String, channel: Channel)
     case modifyNickname(String)
     case modifyPassword(origin: String, new: String)
     case resetPassword(String, phone: String, verificationCode: String)
@@ -73,13 +67,15 @@ extension UserAPI : TargetType {
         case .initializeProfile(_, _):
             return "\(userPathPrefix)/api/\(apiVersion)/user/register"
             
+        case .login(account: _, passwd: _, channel: _):
+            return "\(userPathPrefix)/api/\(apiVersion)/app/login"
+            
+            
+            
             
         case .registerInfo(nickname: _, gender: _, picUrl: _, uid: _, token: _):
             return "\(userPathPrefix)/api/\(apiVersion)\(userPathPrefix)/register"
             
-        case .login(account: _, passwd: _, channel: _):
-            return "\(userPathPrefix)/api/\(apiVersion)/login"
-
         case .modifyIntroduction(_), .modifyPortrait(_), .modifyNickname(_), .modifyGender(_), .modifyBirthday(_):
             return "\(userPathPrefix)/api/\(apiVersion)\(userPathPrefix)/info"
             
@@ -151,14 +147,14 @@ extension UserAPI : TargetType {
         case let .initializeProfile(nickname: nickname, gender: gender):
             return .requestParameters(parameters: ["nickName" : nickname, "sex" : gender], encoding: JSONEncoding.default)
             
+        case let .login(account: uid, passwd: pwd, channel: channel):
+            return .requestParameters(parameters: ["uid" : uid, "password" : pwd, "platform" : channel.rawValue, "appType" : "ios"], encoding: JSONEncoding.default)
+            
             
             
         case let .registerInfo(nickname: name, gender: gender, picUrl: picUrl, uid: _, token: _):
             return .requestParameters(parameters: ["nickName" : name, "sex" : gender, "picUrl" : picUrl], encoding: JSONEncoding.default)
-            
-        case let .login(account: uid, passwd: pwd, channel: channel):
-            return .requestParameters(parameters: ["uid" : uid, "password" : pwd, "platform" : channel.rawValue, "appType" : "ios"], encoding: JSONEncoding.default)
-            
+
         case let .modifyNickname(newNickname):
             return .requestParameters(parameters: ["nickName" : newNickname], encoding: JSONEncoding.default)
             
@@ -231,6 +227,12 @@ extension UserAPI : TargetType {
             header["bmg-user-id"] = "\(UserManager.shared.userID)"
             return header
         
+        case .login(account: _, passwd: _, channel: _):
+            var header: [String : String] = [:]
+            header["bmg-device-id"] = DeviceInfo.uuid
+            header["bmg-sign"] = DeviceInfo.uuid_SHA1
+            return header
+            
         case .fetchUserProfile(), .initializeProfile(nickname: _, gender: _):
             var header: [String : String] = [:]
             header["userId"] = "\(UserManager.shared.userID)"
@@ -238,8 +240,7 @@ extension UserAPI : TargetType {
             return header
             
             
-        case .login(account: _, passwd: _, channel: _):
-            fallthrough
+            
         case .resetPassword(_, phone: _, verificationCode: _):
             fallthrough
         case .sendResetPasswordEmail(_):

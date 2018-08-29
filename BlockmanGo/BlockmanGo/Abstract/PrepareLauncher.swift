@@ -23,4 +23,12 @@ class PrepareLauncher {
         TransitionManager.navigationClass = MainNavigationController.self
         
     }
+    
+    static func resetRootViewControllerToLaunch() {
+        let launchController = LaunchViewController()
+        launchController.isDisplayingForAuthorizationExpired = true
+        let rootController = MainNavigationController.init(rootViewController: launchController)
+        window?.rootViewController = rootController
+        TransitionManager.rootViewController = rootController
+    }
 }

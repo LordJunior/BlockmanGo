@@ -1,24 +1,21 @@
 //
-//  LaunchManager.swift
+//  LoginModelManager.swift
 //  BlockmanGo
 //
-//  Created by KiBen on 2018/7/23.
+//  Created by KiBen on 2018/8/28.
 //  Copyright © 2018年 SanboxOL. All rights reserved.
 //
 
 import Foundation
 
-struct LaunchModelManager {
-    
-    /// 首次安装应用会生成一个新的用户
-    /// 其他情况会去检查本地用户token有效性
-    func generateNewAuthorizationIfNeed(completion: @escaping (BlockHTTPResult<Bool, BlockHTTPError>) -> Void) {
-        UserRequester.authToken { (result) in
+struct LoginModelManager {
+    func login(account: String, password: String, completion: @escaping (BlockHTTPResult<AuthTokenModel, BlockHTTPError>) -> Void) {
+        UserRequester.login(account: account, password: password) { (result) in
             switch result {
             case .success(let response):
                 let authModel = try! response.mapModel(AuthTokenModel.self)
                 UserManager.shared.setAuthorization(authModel)
-                completion(.success(true))
+                completion(.success(authModel))
             case .failure(let error):
                 completion(.failure(error))
             }

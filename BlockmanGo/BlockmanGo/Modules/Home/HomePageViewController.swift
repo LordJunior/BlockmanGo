@@ -13,21 +13,24 @@ class HomePageViewController: UIViewController {
     private weak var accountInfoView: AccountInfoView?
     
     private let homePageManager = HomePageModelManager()
+    private var refreshAccountInfoObserver: NSObjectProtocol?
+    
+    deinit {
+        NotificationCenter.removeObserver(refreshAccountInfoObserver)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DecorationControllerManager.shared.resumeRendering()
-        DecorationControllerManager.shared.add(toParent: self, layout: { (make) in
-            make.left.right.top.bottom.equalToSuperview()
-        }) {
-            DecorationControllerManager.shared.setGender(UserManager.shared.gender.rawValue)
+        refreshAccountInfoObserver = NotificationCenter.addObserver(notification: .refreshAccountInfo) { (_) in
+            self.refreshAccountInfoViewLayout()
         }
         
-        accountInfoView = AccountInfoView().addTo(superView: view).configure { (infoView) in
-            infoView.nickname = UserManager.shared.nickname
-            infoView.userID = "\(UserManager.shared.userID)"
-        }
+        DecorationControllerManager.shared.removeFromParent()
+        DecorationControllerManager.shared.resumeRendering()
+        DecorationControllerManager.shared.setGender(UserManager.shared.gender.rawValue)
+        
+        accountInfoView = AccountInfoView().addTo(superView: view)
         refreshAccountInfoViewLayout()
         
         /// 设置按钮
@@ -52,16 +55,17 @@ class HomePageViewController: UIViewController {
             make.right.equalToSuperview().inset(64)
         }
         
-        homePageManager.fetchUserProfile { [unowned self] (result) in
-            switch result {
-            case .success(let profile):
-                self.accountInfoView?.userID = "\(profile.userID)"
-                self.accountInfoView?.nickname = profile.nickname
-                self.accountInfoView?.portraitURL = profile.portraitURL
-            case .failure(.profileNotExist): // 新用户，完善信息
-                TransitionManager.presentInNormalTransition(InitializeProfileViewController.self, parameter: self)
-            default:
-                break
+        delay(2) {
+            self.homePageManager.fetchUserProfile { [unowned self] (result) in
+                switch result {
+                case .success(let profile):
+                    self.refreshAccountInfoViewLayout()
+                    DecorationControllerManager.shared.setGender(profile.gender.rawValue)
+                case .failure(.profileNotExist): // 新用户，完善信息
+                    TransitionManager.presentInNormalTransition(InitializeProfileViewController.self, parameter: self)
+                case .failure(let error):
+                    self.defaultParseError(error)
+                }
             }
         }
     }
@@ -88,9 +92,16 @@ class HomePageViewController: UIViewController {
     }
     
     private func refreshAccountInfoViewLayout() {
+        guard UserManager.shared.nickname != accountInfoView?.nickname else {
+            return
+        }
         let nicknameTextSize = (UserManager.shared.nickname as NSString).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : UIFont.size14], context: nil).size
         let idTextSize = ("ID: \(UserManager.shared.userID)" as NSString).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : UIFont.size11], context: nil).size
         let accountViewWidth = nicknameTextSize.width > idTextSize.width ? nicknameTextSize.width : idTextSize.width
+        accountInfoView?.nickname = UserManager.shared.nickname
+        accountInfoView?.userID = "\(UserManager.shared.userID)"
+        accountInfoView?.gender = UserManager.shared.gender
+        accountInfoView?.portraitURL = UserManager.shared.portraitURL
         accountInfoView?.snp.remakeConstraints({ (make) in
             make.top.left.equalToSuperview().inset(5)
             make.size.equalTo(CGSize(width: accountViewWidth + 80, height: 53))
@@ -103,7 +114,7 @@ class HomePageViewController: UIViewController {
     
     @objc private func playButtonClicked(sender: UIButton) {
         AnalysisService.trackEvent(.click_play)
-        TransitionManager.pushViewController(GameViewController.self, animated: false)
+        TransitionManager.presentInNormalTransition(GameViewController.self)
     }
 }
 
@@ -124,10 +135,7 @@ extension HomePageViewController: InitializeProfileViewControllerDelegate {
         }
         homePageManager.initializeProfile(nickname: nickname, gender: profileController.gender) { [unowned self] (result) in
             switch result {
-            case .success(let profile):
-                self.accountInfoView?.userID = "\(profile.userID)"
-                self.accountInfoView?.nickname = profile.nickname
-                self.accountInfoView?.portraitURL = profile.portraitURL
+            case .success(_):
                 self.refreshAccountInfoViewLayout()
                 TransitionManager.dismiss(animated: true)
             case .failure(.nicknameExist): // 昵称存在

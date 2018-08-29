@@ -31,7 +31,8 @@ struct HomePageModelManager {
         case .success(let response):
             let profileModel = try! response.mapModel(ProfileModel.self)
             UserManager.shared.setProfile(profileModel)
-            completion(.success(profileModel))
+            completion(.failure(.unauthorized))
+//            completion(.success(profileModel))
         case .failure(let error):
             completion(.failure(error))
         }

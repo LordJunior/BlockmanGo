@@ -69,7 +69,7 @@ class GameViewController: UIViewController {
     
     @objc private func backButtonClicked() {
         DecorationControllerManager.shared.removeFromParent()
-        TransitionManager.popViewController(animated: false)
+        TransitionManager.dismiss(animated: true)
     }
     
     @objc private func updateCollectionViewConstaint() {
@@ -110,13 +110,13 @@ class GameViewController: UIViewController {
             switch result {
             case .success(let dispatch):
                 if self.isPresentedInQueue {
-                    TransitionManager.dismiss(animated: false)
+                    TransitionManager.dismiss(animated: true)
                 }
                 AnalysisService.trackEvent(.stargame_success)
                 /// 进入游戏
                 let gameController = BMGameViewController.init()
                 gameController.bmDelegate = self
-                gameController.userID = NSNumber.init(value: UInt64(UserManager.shared.userID) ?? 0)
+                gameController.userID = NSNumber.init(value: UserManager.shared.userID)
                 gameController.nickName = UserManager.shared.nickname
                 gameController.userToken = dispatch.signature
                 gameController.gameAddr = dispatch.gameAddr
@@ -129,7 +129,7 @@ class GameViewController: UIViewController {
             case .failure(.enterGameInQueue): /// 进入排队
                 if !self.isPresentedInQueue {
                     self.isPresentedInQueue = true
-                    TransitionManager.present(GameInQueueViewController.self, animated: false, parameter: self, customTransition: ModalTransitionController.normalTransition)
+                    TransitionManager.presentInNormalTransition(GameInQueueViewController.self, parameter: self)
                 }
             case .failure(.gameversionTooLow):
                 AlertController.alert(title: R.string.localizable.game_version_too_low(), message: nil, from: TransitionManager.rootViewController, showCancelButton: true)?.done(completion: { _ in
@@ -239,7 +239,7 @@ extension GameViewController: GameModesViewDelegate {
 // MARK: 游戏详情控制器代理
 extension GameViewController: GameDetailViewControllerDelegate {
     func gameDetailViewControllerPlayGameButtonDidClicked(_ viewController: GameDetailViewController, gameID: String) {
-        TransitionManager.dismiss(animated: false, completion: nil)
+        TransitionManager.dismiss(animated: true)
         AnalysisService.trackEvent(.click_joingame, parameters: ["gameID" : gameID])
         enterGame(gameID: gameID)
     }
@@ -254,7 +254,7 @@ extension GameViewController: GameInQueueViewControllerDelegate {
     func gameInQueueViewControllerCancelButtonDidClicked(_ controller: GameInQueueViewController) {
         preloadDecorationView() /// 预先加载好装饰view
         isPresentedInQueue = false
-        TransitionManager.dismiss(animated: false)
+        TransitionManager.dismiss(animated: true)
     }
 }
 

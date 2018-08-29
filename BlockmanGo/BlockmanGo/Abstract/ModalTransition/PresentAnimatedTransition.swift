@@ -30,6 +30,7 @@ class PresentAnimatedTransition: NSObject, UIViewControllerAnimatedTransitioning
         let animationInterval = transitionDuration(using: transitionContext)
         UIView.animate(withDuration: animationInterval, delay: 0, usingSpringWithDamping: 0.65 , initialSpringVelocity: 0, options: .curveEaseOut, animations: {
             toController?.view.frame = finalFrame
+            fromController?.view.alpha = 1
             fromController?.view.alpha = self.hidePresenting ? 0 : 1
         }) { (finished) in
             if finished {

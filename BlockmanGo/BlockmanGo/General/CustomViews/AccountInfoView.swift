@@ -64,7 +64,7 @@ class AccountInfoView: UIView {
             make.edges.equalToSuperview()
         }
         
-        genderImageView = UIImageView(image: R.image.gender_female()).addTo(superView: backgroundImageView).layout(snapKitMaker: { (make) in
+        genderImageView = UIImageView().addTo(superView: backgroundImageView).layout(snapKitMaker: { (make) in
             make.left.equalToSuperview().offset(32)
             make.bottom.equalToSuperview().inset(5)
         })

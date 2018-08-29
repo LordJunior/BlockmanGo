@@ -20,7 +20,7 @@ class RegisterViewController: UIViewController {
         
         let backgroundView = UIImageView(image: R.image.general_alert_background()).addTo(superView: view).layout { (make) in
             make.center.equalToSuperview()
-            make.size.equalTo(CGSize(width: 296, height: 285))
+            make.size.equalTo(CGSize(width: 296, height: 270))
         }.configure { (imageView) in
             imageView.isUserInteractionEnabled = true
         }
@@ -31,7 +31,7 @@ class RegisterViewController: UIViewController {
             label.font = UIFont.size12
             label.layer.cornerRadius = 12
             label.clipsToBounds = true
-            label.text = "ssfsfsfhjwrke@qq.com"
+            label.text = "注册成功，请设置密码"
             label.contentInset = UIEdgeInsetsMake(0, 10, 0, 0)
         }.layout { (make) in
             make.left.right.top.equalToSuperview().inset(20)
@@ -46,23 +46,9 @@ class RegisterViewController: UIViewController {
             make.left.right.bottom.equalToSuperview().inset(20)
         }
         
-        let idLabel = ExtraSizeLabel().addTo(superView: inputPasswordContainView).configure { (label) in
-            label.backgroundColor = R.clr.appColor._ffe4ab()
-            label.textColor = R.clr.appColor._844501()
-            label.font = UIFont.size14
-            label.layer.cornerRadius = 8
-            label.clipsToBounds = true
-            label.text = "ssfsfsfhjwrke@qq.com"
-            label.contentInset = UIEdgeInsetsMake(0, 10, 0, 0)
-        }.layout { (make) in
+        passwordTextfield = CommonTextField(placeHolder: "输入密码").addTo(superView: inputPasswordContainView).layout(snapKitMaker: { (make) in
             make.left.right.top.equalToSuperview().inset(10)
             make.height.equalTo(40)
-        }
-        
-        passwordTextfield = CommonTextField(placeHolder: "输入密码").addTo(superView: inputPasswordContainView).layout(snapKitMaker: { (make) in
-            make.left.right.equalToSuperview().inset(10)
-            make.height.equalTo(40)
-            make.top.equalTo(idLabel.snp.bottom).offset(5)
         })
         
         confirmPasswordTextfield = CommonTextField(placeHolder: "确认密码").addTo(superView: inputPasswordContainView).layout(snapKitMaker: { (make) in
@@ -71,10 +57,21 @@ class RegisterViewController: UIViewController {
             make.top.equalTo(passwordTextfield!.snp.bottom).offset(5)
         })
         
+        let passwordGuidelineLabel = ExtraSizeLabel().addTo(superView: inputPasswordContainView).configure { (label) in
+            label.textColor = R.clr.appColor._b17f63()
+            label.font = UIFont.size11
+            label.text = "6-16个英文字母或数字"
+        }.layout { (make) in
+            make.left.right.equalToSuperview().inset(10)
+            make.top.equalTo(confirmPasswordTextfield!.snp.bottom).offset(3)
+        }
+        
         CommonButton(title: R.string.localizable.done()).addTo(superView: inputPasswordContainView).layout { (make) in
             make.size.equalTo(CGSize(width: 212, height: 42 ))
             make.centerX.equalToSuperview()
             make.bottom.equalToSuperview().inset(10)
+        }.configure { (button) in
+            button.addTarget(self, action: #selector(registerButtonClicked), for: .touchUpInside)
         }
         
         addCloseButton(layout: { (make) in
@@ -83,6 +80,21 @@ class RegisterViewController: UIViewController {
             make.top.equalTo(backgroundView)
         }) { (_) in
             TransitionManager.dismiss(animated: true)
+        }
+    }
+    
+    @objc private func registerButtonClicked() {
+        guard let password = passwordTextfield?.text, !password.isEmpty else {
+            AlertController.alert(title: "请输入密码", message: nil, from: self)
+            return
+        }
+        guard RegisterModuleManager.verifyPassword(password) else {
+            AlertController.alert(title: "密码不合法，请重新输入", message: nil, from: self)
+            return
+        }
+        guard password == confirmPasswordTextfield?.text else {
+            AlertController.alert(title: "密码不匹配", message: nil, from: self)
+            return
         }
     }
 }

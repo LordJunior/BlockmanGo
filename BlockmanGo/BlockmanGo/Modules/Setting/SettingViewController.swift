@@ -66,7 +66,15 @@ extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: false)
         switch indexPath.section {
         case 0:
-            TransitionManager.presentInHidePresentingTransition(LoginViewController.self)
+            if UserManager.shared.hasPassword() {
+                TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: (false, self))
+            }else {
+                AlertController.alert(title: "该账号未设置密码，切换会导致当前账号丢失，是否继续？", message: nil, from: self, showCancelButton: true)?.setCancelTitle("我不要了").setDoneTitle("去设置").done(completion: { (_) in
+                    TransitionManager.presentInHidePresentingTransition(AccountSecurityOptionViewController.self)
+                }).cancel(completion: { _ in
+                    TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: (false, self))
+                })
+            }
         case 1:
             TransitionManager.presentInHidePresentingTransition(AccountSecurityOptionViewController.self)
         case 2:
@@ -86,5 +94,17 @@ extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
             return 20
         }
         return 5
+    }
+}
+
+extension SettingViewController: LoginViewControllerDelegate {
+    func loginViewControllerDidCancel(_ viewController: LoginViewController) {
+        TransitionManager.dismiss(animated: true)
+    }
+    
+    func loginViewControllerDidLoginSuccessful(_ viewController: LoginViewController) {
+        NotificationCenter.post(notification: .refreshAccountInfo)
+        TransitionManager.dismiss(animated: true) // 先dismiss LoginViewController
+        TransitionManager.dismiss(animated: true) // 再dismiss SettingViewController
     }
 }

@@ -20,7 +20,6 @@ class MainNavigationController: UINavigationController {
 //        navigationBar.backIndicatorTransitionMaskImage = R.image.common_nav_back()?.withRenderingMode(.alwaysOriginal)
 //        navigationBar.titleTextAttributes = [.foregroundColor : R.color.appColor._FEFEFE(), .font : UIFont.size18]
         setNavigationBarHidden(true, animated: false)
-        
     }
     
     override init(rootViewController: UIViewController) {
@@ -47,5 +46,3 @@ class MainNavigationController: UINavigationController {
         return visibleViewController
     }
 }
-
-

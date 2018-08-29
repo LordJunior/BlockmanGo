@@ -9,6 +9,9 @@
 import UIKit
 class LaunchViewController: UIViewController {
 
+    /// 这个属性用于判断是否是 验证失败时，跳到这个界面
+    var isDisplayingForAuthorizationExpired: Bool = false
+    
     private weak var checkForUpdateController: CheckForUpdatesViewController?
     private weak var backgroundImageView: GravityImageView?
     private weak var skyInfiniteView: LaunchInfiniteTranslationSkyView?
@@ -20,10 +23,15 @@ class LaunchViewController: UIViewController {
     private weak var loginButton: UIButton?
     
     private let launchManager = LaunchModelManager()
+    private var shouldRenewAccount = false // 在账号验证失效的时候，用户选择不登录，直接进入游戏，就生成一个新账号
+    
+    deinit {
+        DebugLog("LaunchViewController deinit")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         backgroundImageView = GravityImageView(image: R.image.launch_background()).addTo(superView: view).layout { (make) in
             make.edges.equalToSuperview()
         }.configure { (imageView) in
@@ -94,6 +102,12 @@ class LaunchViewController: UIViewController {
             button.addTarget(self, action: #selector(joinGameButtonClicked), for: .touchUpInside)
         }
 
+        guard !isDisplayingForAuthorizationExpired else {
+            triggerAnimation()
+            TransitionManager.presentInNormalTransition(LoginViewController.self, parameter: (true, self))
+            return
+        }
+        /// 正常的打开APP流程
         /// add检查更新控制器
         let checkUpdateController = CheckForUpdatesViewController()
         checkUpdateController.delegate = self
@@ -104,8 +118,15 @@ class LaunchViewController: UIViewController {
         checkUpdateController.didMove(toParentViewController: self)
         checkForUpdateController = checkUpdateController
         
-        if !UserManager.authorizationExistsAtLocal() {
-            launchManager.generateNewAuthorizationIfNeed()
+        launchManager.generateNewAuthorizationIfNeed { (result) in
+            switch result {
+            case .success(_):
+                checkUpdateController.startCheckForUpdate()
+            case .failure(.userNotBindDevice):
+                TransitionManager.presentInNormalTransition(LoginViewController.self, parameter: (true, self))
+            default:
+                break
+            }
         }
     }
     
@@ -155,7 +176,7 @@ class LaunchViewController: UIViewController {
     }
     
     @objc private func bulletinButtonClicked() {
-        TransitionManager.present(BulletinViewController.self, animated: false, parameter: self, completion: nil)
+        TransitionManager.presentInNormalTransition(BulletinViewController.self, parameter: self)
     }
     
     @objc private func loginButtonClicked() {
@@ -178,7 +199,25 @@ extension LaunchViewController: CheckForUpdatesViewControllerDelegate {
 
 extension LaunchViewController: BulletinViewControllerDelegate {
     func bulletinViewControllerDoneButtonDidClicked(_ viewController: BulletinViewController) {
-        TransitionManager.dismiss(animated: false, completion: nil)
+        TransitionManager.dismiss(animated: true)
     }
 }
 
+extension LaunchViewController: LoginViewControllerDelegate {
+    func loginViewControllerDidCancel(_ viewController: LoginViewController) {
+        shouldRenewAccount = true
+        TransitionManager.dismiss(animated: true)
+        if !isDisplayingForAuthorizationExpired {
+            checkForUpdateController?.startCheckForUpdate()
+        }
+    }
+    
+    func loginViewControllerDidLoginSuccessful(_ viewController: LoginViewController) {
+        TransitionManager.dismiss(animated: true)
+        if isDisplayingForAuthorizationExpired {
+            TransitionManager.currentNavigationController()?.setViewControllers([HomePageViewController()], animated: false)
+        }else {
+            checkForUpdateController?.startCheckForUpdate()
+        }
+    }
+}
