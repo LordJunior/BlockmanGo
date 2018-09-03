@@ -49,6 +49,10 @@ class UserManager {
         return profileModel?.platform ?? .app
     }
     
+    var mailInBinded: String {
+        return profileModel?.email ?? ""
+    }
+    
     var accessToken: String {
         get {
             return authModel?.accessToken ?? ""
@@ -70,6 +74,10 @@ class UserManager {
     
     func didSetPassword() {
         profileModel?.hasPassword = true
+    }
+    
+    func didBindEmail(_ mailAddress: String) {
+        profileModel?.email = mailAddress
     }
     
     func setAuthorization(_ auth: AuthTokenModel) {

@@ -9,9 +9,6 @@
 import Foundation
 
 struct PasswordSecurityModuleManager {
-    static func verifyPassword(_ password: String) -> Bool {
-        return password ~= "^[a-zA-Z0-9]{6,12}$"
-    }
     
     func setPassword(_ password: String, completion: @escaping (BlockHTTPResult<Void, BlockHTTPError>) -> Void) {
         UserRequester.setPassword(password) { (result) in

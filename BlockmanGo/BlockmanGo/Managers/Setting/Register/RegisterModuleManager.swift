@@ -9,7 +9,4 @@
 import Foundation
 
 struct RegisterModuleManager {
-    static func verifyPassword(_ password: String) -> Bool {
-        return password ~= "^[a-zA-Z0-9]{6,12}$"
-    }
 }

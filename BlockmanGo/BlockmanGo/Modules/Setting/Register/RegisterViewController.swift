@@ -88,7 +88,7 @@ class RegisterViewController: UIViewController {
             AlertController.alert(title: "请输入密码", message: nil, from: self)
             return
         }
-        guard RegisterModuleManager.verifyPassword(password) else {
+        guard RegexMatcher.match(password: password) else {
             AlertController.alert(title: "密码不合法，请重新输入", message: nil, from: self)
             return
         }

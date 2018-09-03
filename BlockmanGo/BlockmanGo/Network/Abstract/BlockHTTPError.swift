@@ -30,12 +30,13 @@ enum BlockHTTPError: Int, Swift.Error {
     case phoneNotBind = 104
     case smsSendFailed = 105
     case hasBindedPhone = 106
-    case verificationCodeError = 107
+    case captchaError = 107
     case passwordError = 108
     case emailPatternError = 111
     case emailNotValid = 112
     case emailHasBeenBind = 113
     case userHasBindEmail = 114
+    case userNotBindEmail = 115
     case emailNotBindToUser = 116
     case profileNotExist = 1002
     

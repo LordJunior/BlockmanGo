@@ -202,8 +202,6 @@
 		DDA4B0DE2105F60D004346C5 /* LaunchModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */; };
 		DDA4B0E02106BF75004346C5 /* GameDispatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */; };
 		DDA4B0E32106D9A1004346C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B0E52106D9A1004346C5 /* Localizable.strings */; };
-		DDAACFE32133E3180074C5A5 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFE22133E3180074C5A5 /* String+Regex.swift */; };
-		DDAACFE42133E3180074C5A5 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFE22133E3180074C5A5 /* String+Regex.swift */; };
 		DDAACFE82134F4F80074C5A5 /* AdjustLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFE72134F4F80074C5A5 /* AdjustLayoutButton.swift */; };
 		DDAACFE92134F4F80074C5A5 /* AdjustLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFE72134F4F80074C5A5 /* AdjustLayoutButton.swift */; };
 		DDAACFED213536920074C5A5 /* LoginModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFEC213536920074C5A5 /* LoginModelManager.swift */; };
@@ -222,6 +220,10 @@
 		DDAAD028213697270074C5A5 /* UIViewController+DefaultParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD026213697270074C5A5 /* UIViewController+DefaultParseError.swift */; };
 		DDAAD02C2136C5830074C5A5 /* PasswordSecurityModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02B2136C5830074C5A5 /* PasswordSecurityModuleManager.swift */; };
 		DDAAD02D2136C5830074C5A5 /* PasswordSecurityModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02B2136C5830074C5A5 /* PasswordSecurityModuleManager.swift */; };
+		DDAAD030213D108A0074C5A5 /* MailSecurityModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02F213D108A0074C5A5 /* MailSecurityModuleManager.swift */; };
+		DDAAD031213D108A0074C5A5 /* MailSecurityModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02F213D108A0074C5A5 /* MailSecurityModuleManager.swift */; };
+		DDAAD033213D17A70074C5A5 /* RegexMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD032213D17A70074C5A5 /* RegexMatcher.swift */; };
+		DDAAD034213D17A70074C5A5 /* RegexMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD032213D17A70074C5A5 /* RegexMatcher.swift */; };
 		DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */; };
 		DDB94558212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */; };
 		DDB94559212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */; };
@@ -404,7 +406,6 @@
 		DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModelManager.swift; sourceTree = "<group>"; };
 		DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDispatchModel.swift; sourceTree = "<group>"; };
 		DDA4B0E42106D9A1004346C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DDAACFE22133E3180074C5A5 /* String+Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
 		DDAACFE72134F4F80074C5A5 /* AdjustLayoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustLayoutButton.swift; sourceTree = "<group>"; };
 		DDAACFEC213536920074C5A5 /* LoginModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModelManager.swift; sourceTree = "<group>"; };
 		DDAACFEF213539E00074C5A5 /* VIPEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPEnum.swift; sourceTree = "<group>"; };
@@ -414,6 +415,8 @@
 		DDAAD02321368B750074C5A5 /* LoginPlatformEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPlatformEnum.swift; sourceTree = "<group>"; };
 		DDAAD026213697270074C5A5 /* UIViewController+DefaultParseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DefaultParseError.swift"; sourceTree = "<group>"; };
 		DDAAD02B2136C5830074C5A5 /* PasswordSecurityModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSecurityModuleManager.swift; sourceTree = "<group>"; };
+		DDAAD02F213D108A0074C5A5 /* MailSecurityModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailSecurityModuleManager.swift; sourceTree = "<group>"; };
+		DDAAD032213D17A70074C5A5 /* RegexMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexMatcher.swift; sourceTree = "<group>"; };
 		DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchBrandingViewController.swift; sourceTree = "<group>"; };
 		DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityOptionViewController.swift; sourceTree = "<group>"; };
 		DDB9455A212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityOptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -630,7 +633,6 @@
 			children = (
 				DD51609A20F46AAB0000B8DC /* String+ConvertToDigit.swift */,
 				DD67B04A212E61F9002C12D1 /* String+Crypto.swift */,
-				DDAACFE22133E3180074C5A5 /* String+Regex.swift */,
 				DD5160CC20F5A6750000B8DC /* Dictionary+Extension.swift */,
 				DD51609320F46A310000B8DC /* UICollectionView+Extension.swift */,
 				DD51609120F46A310000B8DC /* UITableView+Extension.swift */,
@@ -714,6 +716,7 @@
 				DD7402FC20FEEDF500091B9D /* BMFileManager.swift */,
 				DD74030020FEF21300091B9D /* CopyFileTool.swift */,
 				DD74030E20FF620F00091B9D /* Delay.swift */,
+				DDAAD032213D17A70074C5A5 /* RegexMatcher.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -954,6 +957,7 @@
 			isa = PBXGroup;
 			children = (
 				DDAAD02A2136C5680074C5A5 /* PasswordSecurity */,
+				DDAAD02E213D106A0074C5A5 /* MailSecurity */,
 			);
 			path = AccountSecurity;
 			sourceTree = "<group>";
@@ -964,6 +968,14 @@
 				DDAAD02B2136C5830074C5A5 /* PasswordSecurityModuleManager.swift */,
 			);
 			path = PasswordSecurity;
+			sourceTree = "<group>";
+		};
+		DDAAD02E213D106A0074C5A5 /* MailSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				DDAAD02F213D108A0074C5A5 /* MailSecurityModuleManager.swift */,
+			);
+			path = MailSecurity;
 			sourceTree = "<group>";
 		};
 		DDB94555212EBF7D0009933A /* AccountSecurityOption */ = {
@@ -1370,7 +1382,6 @@
 			files = (
 				DD456BD6210EBDE6009465FE /* BMFileManager.swift in Sources */,
 				DD456BD7210EBDE6009465FE /* GamesAPI.swift in Sources */,
-				DDAACFE42133E3180074C5A5 /* String+Regex.swift in Sources */,
 				DD456BD8210EBDE6009465FE /* BulletinModelManager.swift in Sources */,
 				DDAACFF1213539E00074C5A5 /* VIPEnum.swift in Sources */,
 				DD456BD9210EBDE6009465FE /* GameViewController.swift in Sources */,
@@ -1378,6 +1389,7 @@
 				DDAAD028213697270074C5A5 /* UIViewController+DefaultParseError.swift in Sources */,
 				DD456BDC210EBDE6009465FE /* AnimatableProtocol.swift in Sources */,
 				DD456BDD210EBDE6009465FE /* RandomInputView.swift in Sources */,
+				DDAAD031213D108A0074C5A5 /* MailSecurityModuleManager.swift in Sources */,
 				DD456BDE210EBDE6009465FE /* NetImageView.swift in Sources */,
 				DD456BDF210EBDE6009465FE /* UICollectionView+Extension.swift in Sources */,
 				DD456BE0210EBDE6009465FE /* GameModesTableCell.swift in Sources */,
@@ -1435,6 +1447,7 @@
 				DDB94559212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */,
 				DD456C04210EBDE6009465FE /* CheckForAppUpdateModel.swift in Sources */,
 				DD456C05210EBDE6009465FE /* JsonMapper.swift in Sources */,
+				DDAAD034213D17A70074C5A5 /* RegexMatcher.swift in Sources */,
 				DD456C06210EBDE6009465FE /* GenderButton.swift in Sources */,
 				DD456C07210EBDE6009465FE /* CheckForUpdatesViewController.swift in Sources */,
 				DD456C08210EBDE6009465FE /* GameDetailModelManager.swift in Sources */,
@@ -1484,7 +1497,6 @@
 			files = (
 				DD7402FD20FEEDF500091B9D /* BMFileManager.swift in Sources */,
 				DD5160F620F631F40000B8DC /* GamesAPI.swift in Sources */,
-				DDAACFE32133E3180074C5A5 /* String+Regex.swift in Sources */,
 				DD74030B20FF485200091B9D /* BulletinModelManager.swift in Sources */,
 				DDAACFF0213539E00074C5A5 /* VIPEnum.swift in Sources */,
 				DD5160E920F5FA310000B8DC /* GameViewController.swift in Sources */,
@@ -1492,6 +1504,7 @@
 				DDAAD027213697270074C5A5 /* UIViewController+DefaultParseError.swift in Sources */,
 				DD74030320FF219A00091B9D /* AnimatableProtocol.swift in Sources */,
 				DD8EB6192103059700E7AE9B /* RandomInputView.swift in Sources */,
+				DDAAD030213D108A0074C5A5 /* MailSecurityModuleManager.swift in Sources */,
 				DD5160A120F48F0F0000B8DC /* NetImageView.swift in Sources */,
 				DD51609720F46A310000B8DC /* UICollectionView+Extension.swift in Sources */,
 				DD5160EE20F5FFD00000B8DC /* GameModesTableCell.swift in Sources */,
@@ -1549,6 +1562,7 @@
 				DDB94558212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */,
 				DD7402ED20FDC9C000091B9D /* CheckForAppUpdateModel.swift in Sources */,
 				DD5160E620F5F0350000B8DC /* JsonMapper.swift in Sources */,
+				DDAAD033213D17A70074C5A5 /* RegexMatcher.swift in Sources */,
 				DD8EB61B21030F3400E7AE9B /* GenderButton.swift in Sources */,
 				DD7402D220FC79D400091B9D /* CheckForUpdatesViewController.swift in Sources */,
 				DD74031321002C6B00091B9D /* GameDetailModelManager.swift in Sources */,

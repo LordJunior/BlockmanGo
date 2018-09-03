@@ -24,6 +24,9 @@ enum UserAPI {
     case login(account: String, passwd: String, channel: Channel)
     case setPassword(String)
     case modifyPassword(origin: String, new: String)
+    case bindEmail(String, String)
+    case unbindEmail()
+    case sendBindEmailCaptcha(String)
     
     
     case registerInfo(nickname: String, gender: Int, picUrl: String, uid: String, token: String)
@@ -37,9 +40,6 @@ enum UserAPI {
     case bindPhone(String, verificationCode: String)
     case unbindPhone(String, verificationCode: String)
     case uploadImage(filePath: String, fileName: String, uid: String, token: String)
-    case fetchBindEmailVerifyCode(String)
-    case bindEmail(String, String)
-    case unbindEmail()
     case sendResetPasswordEmail(String)
     case fetchDailyTasks()
     case signInDailyTask(Int)
@@ -78,6 +78,15 @@ extension UserAPI : TargetType {
         case .modifyPassword(origin: _, new: _):
             return "\(userPathPrefix)/api/\(apiVersion)\(userPathPrefix)/password/modify"
             
+        case .bindEmail(_, _):
+            return "\(userPathPrefix)/api/\(apiVersion)/users/bind/email"
+            
+        case .unbindEmail():
+            return "\(userPathPrefix)//api/\(apiVersion)/users/\(UserManager.shared.userID)/emails"
+            
+        case .sendBindEmailCaptcha(_):
+            return "\(userPathPrefix)/api/\(apiVersion)/emails/{email}"
+            
             
             
         case .registerInfo(nickname: _, gender: _, picUrl: _, uid: _, token: _):
@@ -104,17 +113,7 @@ extension UserAPI : TargetType {
             
         case .uploadImage(filePath: _, fileName: _, uid: _, token: _):
             return ""
-            
-        case .fetchBindEmailVerifyCode(_):
-            return "\(userPathPrefix)/api/\(apiVersion)/emails/{email}"
-            
-        case .bindEmail(_, _):
-            return "\(userPathPrefix)/api/\(apiVersion)/users/bind/email"
-            
-        case .unbindEmail():
-//            return "\(userPathPrefix)//api/\(apiVersion)/users/\(AccountInfoManager.shared.userId.value)/emails"
-            return "\(userPathPrefix)//api/\(apiVersion)/users/emails"
-            
+
         case .sendResetPasswordEmail(_):
             return "\(userPathPrefix)/api/\(apiVersion)/emails/password/reset"
             
@@ -159,6 +158,16 @@ extension UserAPI : TargetType {
         case let .modifyPassword(origin: origin, new: new):
             return .requestParameters(parameters: ["oldPassword" : origin, "newPassword" : new], encoding: JSONEncoding.default)
             
+        case let .bindEmail(email, captcha):
+            return .requestParameters(parameters: ["email" : email, "verifyCode" : captcha], encoding: JSONEncoding.default)
+            
+        case .unbindEmail():
+            return .requestPlain
+            
+        case  .sendBindEmailCaptcha(let mailAddress):
+            return .requestParameters(parameters: ["email" : mailAddress], encoding: URLEncoding.queryString)
+            
+            
             
             
         case let .registerInfo(nickname: name, gender: gender, picUrl: picUrl, uid: _, token: _):
@@ -200,15 +209,6 @@ extension UserAPI : TargetType {
             let formData = MultipartFormData(provider: .file(URL.init(fileURLWithPath: filePath)), name: "file", fileName: fileName, mimeType: "image/jpeg")
             return .uploadMultipart([formData])
             
-        case let .fetchBindEmailVerifyCode(email):
-            return .requestParameters(parameters: ["email" : email], encoding: URLEncoding.queryString)
-            
-        case let .bindEmail(email, verifyCode):
-            return .requestParameters(parameters: ["email" : email, "verifyCode" : verifyCode], encoding: JSONEncoding.default)
-            
-        case .unbindEmail():
-            return .requestPlain
-            
         case let .sendResetPasswordEmail(email):
             return .requestParameters(parameters: ["email" : email], encoding: URLEncoding.queryString)
             
@@ -239,7 +239,7 @@ extension UserAPI : TargetType {
             header["bmg-sign"] = DeviceInfo.uuid_SHA1
             return header
             
-        case .fetchUserProfile(), .initializeProfile(nickname: _, gender: _), .modifyPassword(origin: _, new: _):
+        case .fetchUserProfile(), .initializeProfile(nickname: _, gender: _), .modifyPassword(origin: _, new: _), .bindEmail(_, _), .unbindEmail(), .sendBindEmailCaptcha(_):
             var header: [String : String] = [:]
             header["userId"] = "\(UserManager.shared.userID)"
             header["Access-Token"] = UserManager.shared.accessToken
@@ -278,8 +278,6 @@ extension UserAPI : TargetType {
         case .bindPhone(_, verificationCode: _):
             fallthrough
         case .unbindPhone(_, verificationCode: _):
-            fallthrough
-        case .fetchBindEmailVerifyCode(_):
             fallthrough
         case .bindEmail(_, _):
             fallthrough

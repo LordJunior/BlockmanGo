@@ -56,7 +56,7 @@ class PasswordSecurityViewController: UIViewController {
                 AlertController.alert(title: "请输入新密码", message: nil, from: self)
                 return
             }
-            guard RegisterModuleManager.verifyPassword(newPassword) else {
+            guard RegexMatcher.match(password: newPassword) else {
                 AlertController.alert(title: "密码不合法，请重新输入", message: nil, from: self)
                 return
             }
@@ -82,7 +82,7 @@ class PasswordSecurityViewController: UIViewController {
                 AlertController.alert(title: "请输入密码", message: nil, from: self)
                 return
             }
-            guard RegisterModuleManager.verifyPassword(password) else {
+            guard RegexMatcher.match(password: password) else {
                 AlertController.alert(title: "密码不合法，请重新输入", message: nil, from: self)
                 return
             }

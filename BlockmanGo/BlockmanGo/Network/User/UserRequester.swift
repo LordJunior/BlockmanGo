@@ -35,6 +35,19 @@ struct UserRequester {
         Requester.requestWithTarget(UserAPI.modifyPassword(origin: origin, new: new), completion: completion)
     }
     
+    static func bindEmail(mailAddress: String, captcha: String, completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.bindEmail(mailAddress, captcha), completion: completion)
+    }
+    
+    static func unbindEmail(completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.unbindEmail(), completion: completion)
+    }
+    
+    static func sendBindEmailCaptcha(mailAddress: String, completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.sendBindEmailCaptcha(mailAddress), completion: completion)
+    }
+
+
 //    class func registerInfo(nickname: String, picUrl: String, gender: Int, uid: String, token: String) -> Single<[String : Any]> {
 //        return NetServer.requestWithTarget(User.registerInfo(nickname: nickname, gender: gender, picUrl: picUrl, uid: uid, token: token))
 //    }
@@ -81,18 +94,8 @@ struct UserRequester {
 //        return NetServer.requestWithTarget(User.uploadImage(filePath: filePath, fileName: fileName, uid: uid, token: token))
 //    }
 //    
-//    class func fetchBindEmailVerifyCode(email: String) -> Single<[String : Any]> {
-//        return NetServer.requestWithTarget(User.fetchBindEmailVerifyCode(email), showToast: true)
-//    }
-//    
-//    class func bindEmail(email: String, verifyCode: String) -> Single<[String : Any]> {
-//        return NetServer.requestWithTarget(User.bindEmail(email, verifyCode), showToast: true)
-//    }
-//    
-//    class func unbindEmail() -> Single<[String : Any]> {
-//        return NetServer.requestWithTarget(User.unbindEmail(), showToast: true)
-//    }
-//    
+//
+//
 //    class func sendResetPasswordEmail(email: String) -> Single<[String : Any]> {
 //        return NetServer.requestWithTarget(User.sendResetPasswordEmail(email), showToast: true)
 //    }
