@@ -22,10 +22,12 @@ enum UserAPI {
     case fetchUserProfile()
     case initializeProfile(nickname: String, gender: Int)
     case login(account: String, passwd: String, channel: Channel)
+    case setPassword(String)
+    case modifyPassword(origin: String, new: String)
+    
     
     case registerInfo(nickname: String, gender: Int, picUrl: String, uid: String, token: String)
     case modifyNickname(String)
-    case modifyPassword(origin: String, new: String)
     case resetPassword(String, phone: String, verificationCode: String)
     case modifyIntroduction(String)
     case modifyGender(Int)
@@ -70,6 +72,11 @@ extension UserAPI : TargetType {
         case .login(account: _, passwd: _, channel: _):
             return "\(userPathPrefix)/api/\(apiVersion)/app/login"
             
+        case .setPassword(_):
+            return "\(userPathPrefix)/api/\(apiVersion)/app/set-password"
+            
+        case .modifyPassword(origin: _, new: _):
+            return "\(userPathPrefix)/api/\(apiVersion)\(userPathPrefix)/password/modify"
             
             
             
@@ -78,10 +85,6 @@ extension UserAPI : TargetType {
             
         case .modifyIntroduction(_), .modifyPortrait(_), .modifyNickname(_), .modifyGender(_), .modifyBirthday(_):
             return "\(userPathPrefix)/api/\(apiVersion)\(userPathPrefix)/info"
-            
-        case .modifyPassword(origin: _, new: _):
-            return "\(userPathPrefix)/api/\(apiVersion)\(userPathPrefix)/password/modify"
-            
         case .resetPassword(_, phone: _, verificationCode: _):
             return "\(userPathPrefix)/api/\(apiVersion)\(userPathPrefix)/password"
             
@@ -150,6 +153,12 @@ extension UserAPI : TargetType {
         case let .login(account: uid, passwd: pwd, channel: channel):
             return .requestParameters(parameters: ["uid" : uid, "password" : pwd, "platform" : channel.rawValue, "appType" : "ios"], encoding: JSONEncoding.default)
             
+        case .setPassword(let password):
+            return .requestParameters(parameters: ["userId" : UserManager.shared.userID, "password" : password], encoding: JSONEncoding.default)
+            
+        case let .modifyPassword(origin: origin, new: new):
+            return .requestParameters(parameters: ["oldPassword" : origin, "newPassword" : new], encoding: JSONEncoding.default)
+            
             
             
         case let .registerInfo(nickname: name, gender: gender, picUrl: picUrl, uid: _, token: _):
@@ -169,10 +178,7 @@ extension UserAPI : TargetType {
 
         case let .modifyPortrait(portrait):
             return .requestParameters(parameters: ["picUrl" : portrait], encoding: JSONEncoding.default)
-            
-        case let .modifyPassword(origin: origin, new: new):
-            return .requestParameters(parameters: ["oldPassword" : origin, "newPassword" : new], encoding: JSONEncoding.default)
-            
+
         case let .resetPassword(pwd, phone: phone, verificationCode: code):
             return .requestParameters(parameters: ["password" : pwd, "phone" : phone, "verifyCode" : code], encoding: JSONEncoding.default)
             
@@ -233,12 +239,19 @@ extension UserAPI : TargetType {
             header["bmg-sign"] = DeviceInfo.uuid_SHA1
             return header
             
-        case .fetchUserProfile(), .initializeProfile(nickname: _, gender: _):
+        case .fetchUserProfile(), .initializeProfile(nickname: _, gender: _), .modifyPassword(origin: _, new: _):
             var header: [String : String] = [:]
             header["userId"] = "\(UserManager.shared.userID)"
             header["Access-Token"] = UserManager.shared.accessToken
             return header
             
+        case .setPassword(_):
+            var header: [String : String] = [:]
+            header["bmg-device-id"] = DeviceInfo.uuid
+            header["bmg-sign"] = DeviceInfo.uuid_SHA1
+            header["userId"] = "\(UserManager.shared.userID)"
+            header["Access-Token"] = UserManager.shared.accessToken
+            return header
             
             
         case .resetPassword(_, phone: _, verificationCode: _):
@@ -261,8 +274,6 @@ extension UserAPI : TargetType {
         case .modifyBirthday(_):
             fallthrough
         case .modifyPortrait(_):
-            fallthrough
-        case .modifyPassword(origin: _, new: _):
             fallthrough
         case .bindPhone(_, verificationCode: _):
             fallthrough

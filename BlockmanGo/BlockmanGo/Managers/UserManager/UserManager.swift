@@ -60,12 +60,16 @@ class UserManager {
     }
     
     /// 当前这个账号是否设置了密码
-    func hasPassword() -> Bool {
+    func passwordIfHave() -> Bool {
         return profileModel?.hasPassword ?? false
     }
     
     func setNickname(_ newValue: String) {
         profileModel?.nickname = newValue
+    }
+    
+    func didSetPassword() {
+        profileModel?.hasPassword = true
     }
     
     func setAuthorization(_ auth: AuthTokenModel) {

@@ -27,6 +27,14 @@ struct UserRequester {
         Requester.requestWithTarget(UserAPI.login(account: account, passwd: password, channel: channel), completion: completion)
     }
     
+    static func setPassword(_ password: String, completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.setPassword(password), completion: completion)
+    }
+    
+    static func modifyPassword(origin: String, new: String, completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.modifyPassword(origin: origin, new: new), completion: completion)
+    }
+    
 //    class func registerInfo(nickname: String, picUrl: String, gender: Int, uid: String, token: String) -> Single<[String : Any]> {
 //        return NetServer.requestWithTarget(User.registerInfo(nickname: nickname, gender: gender, picUrl: picUrl, uid: uid, token: token))
 //    }
@@ -51,10 +59,8 @@ struct UserRequester {
 //        return NetServer.requestWithTarget(User.modifyPortrait(portrait))
 //    }
 //    
-//    class func modifyPassword(origin: String, new: String) -> Single<[String : Any]> {
-//        return NetServer.requestWithTarget(User.modifyPassword(origin: origin, new: new))
-//    }
-//    
+    
+//
 //    class func resetPassword(pwd: String, phone: String, verificationCode code: String) -> Single<[String : Any]> {
 //        return NetServer.requestWithTarget(User.resetPassword(pwd, phone: phone, verificationCode: code))
 //    }

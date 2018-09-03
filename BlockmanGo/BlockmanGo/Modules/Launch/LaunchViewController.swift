@@ -125,7 +125,9 @@ class LaunchViewController: UIViewController {
             case .failure(.userNotBindDevice):
                 TransitionManager.presentInNormalTransition(LoginViewController.self, parameter: (true, self))
             default:
-                break
+                if UserManager.authorizationExistsAtLocal() {
+                    checkUpdateController.startCheckForUpdate()
+                }
             }
         }
     }

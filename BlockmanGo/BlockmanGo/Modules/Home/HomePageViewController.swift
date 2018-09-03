@@ -55,17 +55,15 @@ class HomePageViewController: UIViewController {
             make.right.equalToSuperview().inset(64)
         }
         
-        delay(2) {
-            self.homePageManager.fetchUserProfile { [unowned self] (result) in
-                switch result {
-                case .success(let profile):
-                    self.refreshAccountInfoViewLayout()
-                    DecorationControllerManager.shared.setGender(profile.gender.rawValue)
-                case .failure(.profileNotExist): // 新用户，完善信息
-                    TransitionManager.presentInNormalTransition(InitializeProfileViewController.self, parameter: self)
-                case .failure(let error):
-                    self.defaultParseError(error)
-                }
+        self.homePageManager.fetchUserProfile { [unowned self] (result) in
+            switch result {
+            case .success(let profile):
+                self.refreshAccountInfoViewLayout()
+                DecorationControllerManager.shared.setGender(profile.gender.rawValue)
+            case .failure(.profileNotExist): // 新用户，完善信息
+                TransitionManager.presentInNormalTransition(InitializeProfileViewController.self, parameter: self)
+            case .failure(let error):
+                self.defaultParseError(error)
             }
         }
     }
@@ -114,7 +112,7 @@ class HomePageViewController: UIViewController {
     
     @objc private func playButtonClicked(sender: UIButton) {
         AnalysisService.trackEvent(.click_play)
-        TransitionManager.presentInNormalTransition(GameViewController.self)
+        TransitionManager.pushViewController(GameViewController.self, animated: false)
     }
 }
 

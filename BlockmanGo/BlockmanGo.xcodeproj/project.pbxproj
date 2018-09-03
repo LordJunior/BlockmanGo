@@ -220,6 +220,8 @@
 		DDAAD02521368B750074C5A5 /* LoginPlatformEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02321368B750074C5A5 /* LoginPlatformEnum.swift */; };
 		DDAAD027213697270074C5A5 /* UIViewController+DefaultParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD026213697270074C5A5 /* UIViewController+DefaultParseError.swift */; };
 		DDAAD028213697270074C5A5 /* UIViewController+DefaultParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD026213697270074C5A5 /* UIViewController+DefaultParseError.swift */; };
+		DDAAD02C2136C5830074C5A5 /* PasswordSecurityModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02B2136C5830074C5A5 /* PasswordSecurityModuleManager.swift */; };
+		DDAAD02D2136C5830074C5A5 /* PasswordSecurityModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02B2136C5830074C5A5 /* PasswordSecurityModuleManager.swift */; };
 		DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */; };
 		DDB94558212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */; };
 		DDB94559212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */; };
@@ -411,6 +413,7 @@
 		DDAAD02021367E190074C5A5 /* NotificationCenter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Extension.swift"; sourceTree = "<group>"; };
 		DDAAD02321368B750074C5A5 /* LoginPlatformEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPlatformEnum.swift; sourceTree = "<group>"; };
 		DDAAD026213697270074C5A5 /* UIViewController+DefaultParseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DefaultParseError.swift"; sourceTree = "<group>"; };
+		DDAAD02B2136C5830074C5A5 /* PasswordSecurityModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSecurityModuleManager.swift; sourceTree = "<group>"; };
 		DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchBrandingViewController.swift; sourceTree = "<group>"; };
 		DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityOptionViewController.swift; sourceTree = "<group>"; };
 		DDB9455A212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityOptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -926,6 +929,7 @@
 			children = (
 				DDAAD01C213571700074C5A5 /* Register */,
 				DDAACFEB2135366C0074C5A5 /* Login */,
+				DDAAD0292136C5230074C5A5 /* AccountSecurity */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -944,6 +948,22 @@
 				DDAAD01D213571CE0074C5A5 /* RegisterModuleManager.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		DDAAD0292136C5230074C5A5 /* AccountSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				DDAAD02A2136C5680074C5A5 /* PasswordSecurity */,
+			);
+			path = AccountSecurity;
+			sourceTree = "<group>";
+		};
+		DDAAD02A2136C5680074C5A5 /* PasswordSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				DDAAD02B2136C5830074C5A5 /* PasswordSecurityModuleManager.swift */,
+			);
+			path = PasswordSecurity;
 			sourceTree = "<group>";
 		};
 		DDB94555212EBF7D0009933A /* AccountSecurityOption */ = {
@@ -1369,6 +1389,7 @@
 				DD456BE4210EBDE6009465FE /* GameCollectionViewCell.swift in Sources */,
 				DD456C42210ED44B009465FE /* BlockHUD.swift in Sources */,
 				DD456BE5210EBDE6009465FE /* UIView+Layout.swift in Sources */,
+				DDAAD02D2136C5830074C5A5 /* PasswordSecurityModuleManager.swift in Sources */,
 				DDAACFE92134F4F80074C5A5 /* AdjustLayoutButton.swift in Sources */,
 				DD456BE6210EBDE6009465FE /* LaunchModelManager.swift in Sources */,
 				DDAAD02221367E190074C5A5 /* NotificationCenter+Extension.swift in Sources */,
@@ -1482,6 +1503,7 @@
 				DD5160F020F60ACF0000B8DC /* GameCollectionViewCell.swift in Sources */,
 				DD51609620F46A310000B8DC /* UIView+Layout.swift in Sources */,
 				DDA4B0DE2105F60D004346C5 /* LaunchModelManager.swift in Sources */,
+				DDAAD02C2136C5830074C5A5 /* PasswordSecurityModuleManager.swift in Sources */,
 				DDAACFE82134F4F80074C5A5 /* AdjustLayoutButton.swift in Sources */,
 				DD5160E020F5B75B0000B8DC /* BlockHTTPHost.swift in Sources */,
 				DDAAD02121367E190074C5A5 /* NotificationCenter+Extension.swift in Sources */,

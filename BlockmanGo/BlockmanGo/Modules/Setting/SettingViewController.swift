@@ -66,7 +66,7 @@ extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: false)
         switch indexPath.section {
         case 0:
-            if UserManager.shared.hasPassword() {
+            if UserManager.shared.passwordIfHave() {
                 TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: (false, self))
             }else {
                 AlertController.alert(title: "该账号未设置密码，切换会导致当前账号丢失，是否继续？", message: nil, from: self, showCancelButton: true)?.setCancelTitle("我不要了").setDoneTitle("去设置").done(completion: { (_) in

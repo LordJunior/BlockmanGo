@@ -56,7 +56,7 @@ class AccountSecurityOptionViewController: UIViewController {
         passwordIfSetLabel = UILabel().addTo(superView: securityContentView!).configure({ (label) in
             label.font = UIFont.size13
             label.textColor = R.clr.appColor._844501()
-            label.text = "当前ID: 12456266"
+            label.text = "当前ID: \(UserManager.shared.userID)"
         }).layout(snapKitMaker: { (make) in
             make.left.top.equalToSuperview().offset(20)
         })

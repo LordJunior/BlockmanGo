@@ -69,7 +69,7 @@ class GameViewController: UIViewController {
     
     @objc private func backButtonClicked() {
         DecorationControllerManager.shared.removeFromParent()
-        TransitionManager.dismiss(animated: true)
+        TransitionManager.popViewController(animated: false)
     }
     
     @objc private func updateCollectionViewConstaint() {
