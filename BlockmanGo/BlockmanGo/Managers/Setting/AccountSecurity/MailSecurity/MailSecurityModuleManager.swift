@@ -10,7 +10,7 @@ import Foundation
 
 struct MailSecurityModuleManager {
     
-    func sendCaptcha(mailAddress: String, completion: @escaping (BlockHTTPResult<Void, BlockHTTPError>) -> Void) {
+    static func sendCaptcha(mailAddress: String, completion: @escaping (BlockHTTPResult<Void, BlockHTTPError>) -> Void) {
         UserRequester.sendBindEmailCaptcha(mailAddress: mailAddress) { (result) in
             switch result {
             case .success(_):
@@ -21,7 +21,7 @@ struct MailSecurityModuleManager {
         }
     }
     
-    func bindMail(_ mailAddress: String, captcha: String, completion: @escaping (BlockHTTPResult<Void, BlockHTTPError>) -> Void) {
+    static func bindMail(_ mailAddress: String, captcha: String, completion: @escaping (BlockHTTPResult<Void, BlockHTTPError>) -> Void) {
         UserRequester.bindEmail(mailAddress: mailAddress, captcha: captcha) { (result) in
             switch result {
             case .success(_):
@@ -33,7 +33,7 @@ struct MailSecurityModuleManager {
         }
     }
     
-    func unbindMail(completion: @escaping (BlockHTTPResult<Void, BlockHTTPError>) -> Void) {
+    static func unbindMail(completion: @escaping (BlockHTTPResult<Void, BlockHTTPError>) -> Void) {
         UserRequester.unbindEmail(completion: { (result) in
             switch result {
             case .success(_):

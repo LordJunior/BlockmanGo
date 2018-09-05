@@ -16,8 +16,6 @@ class MailSecurityViewController: UIViewController {
     private weak var sendCaptchaButton: UIButton?
     private weak var operationButton: UIButton?
     
-    private let mailModuleManager = MailSecurityModuleManager()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -87,7 +85,7 @@ class MailSecurityViewController: UIViewController {
     @objc private func sendCaptchaButtonClicked() {
         guard mailAddressIfValid() else { return }
         BlockHUD.showLoading(inView: view)
-        mailModuleManager.sendCaptcha(mailAddress: mailAddressTextField!.text!) { (result) in
+        MailSecurityModuleManager.sendCaptcha(mailAddress: mailAddressTextField!.text!) { (result) in
             BlockHUD.hide(forView: self.view)
             switch result {
             case .success(_):
@@ -109,7 +107,7 @@ class MailSecurityViewController: UIViewController {
             guard mailAddressIfValid() else { return }
             guard captchaIfValid() else { return }
             BlockHUD.showLoading(inView: view)
-            mailModuleManager.bindMail(mailAddressTextField!.text!, captcha: captchaTextField!.text!) { (result) in
+            MailSecurityModuleManager.bindMail(mailAddressTextField!.text!, captcha: captchaTextField!.text!) { (result) in
                 BlockHUD.hide(forView: self.view)
                 switch result {
                 case .success(_):
@@ -125,7 +123,7 @@ class MailSecurityViewController: UIViewController {
             }
         }else {
             BlockHUD.showLoading(inView: view)
-            mailModuleManager.unbindMail { [unowned self] (result) in
+            MailSecurityModuleManager.unbindMail { [unowned self] (result) in
                 BlockHUD.hide(forView: self.view)
                 switch result {
                 case .success(_):

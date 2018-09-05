@@ -224,6 +224,10 @@
 		DDAAD031213D108A0074C5A5 /* MailSecurityModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02F213D108A0074C5A5 /* MailSecurityModuleManager.swift */; };
 		DDAAD033213D17A70074C5A5 /* RegexMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD032213D17A70074C5A5 /* RegexMatcher.swift */; };
 		DDAAD034213D17A70074C5A5 /* RegexMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD032213D17A70074C5A5 /* RegexMatcher.swift */; };
+		DDAAD038213F91770074C5A5 /* ThirdLoginSecurityModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD037213F91770074C5A5 /* ThirdLoginSecurityModuleManager.swift */; };
+		DDAAD039213F91770074C5A5 /* ThirdLoginSecurityModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD037213F91770074C5A5 /* ThirdLoginSecurityModuleManager.swift */; };
+		DDAAD03E213FC28A0074C5A5 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD03D213FC2890074C5A5 /* LoginService.swift */; };
+		DDAAD03F213FC28A0074C5A5 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD03D213FC2890074C5A5 /* LoginService.swift */; };
 		DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */; };
 		DDB94558212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */; };
 		DDB94559212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */; };
@@ -417,6 +421,8 @@
 		DDAAD02B2136C5830074C5A5 /* PasswordSecurityModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSecurityModuleManager.swift; sourceTree = "<group>"; };
 		DDAAD02F213D108A0074C5A5 /* MailSecurityModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailSecurityModuleManager.swift; sourceTree = "<group>"; };
 		DDAAD032213D17A70074C5A5 /* RegexMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexMatcher.swift; sourceTree = "<group>"; };
+		DDAAD037213F91770074C5A5 /* ThirdLoginSecurityModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLoginSecurityModuleManager.swift; sourceTree = "<group>"; };
+		DDAAD03D213FC2890074C5A5 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchBrandingViewController.swift; sourceTree = "<group>"; };
 		DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityOptionViewController.swift; sourceTree = "<group>"; };
 		DDB9455A212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityOptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -958,6 +964,7 @@
 			children = (
 				DDAAD02A2136C5680074C5A5 /* PasswordSecurity */,
 				DDAAD02E213D106A0074C5A5 /* MailSecurity */,
+				DDAAD036213F91570074C5A5 /* ThirdLoginSecurity */,
 			);
 			path = AccountSecurity;
 			sourceTree = "<group>";
@@ -976,6 +983,22 @@
 				DDAAD02F213D108A0074C5A5 /* MailSecurityModuleManager.swift */,
 			);
 			path = MailSecurity;
+			sourceTree = "<group>";
+		};
+		DDAAD036213F91570074C5A5 /* ThirdLoginSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				DDAAD037213F91770074C5A5 /* ThirdLoginSecurityModuleManager.swift */,
+			);
+			path = ThirdLoginSecurity;
+			sourceTree = "<group>";
+		};
+		DDAAD03B213FC1E90074C5A5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DDAAD03D213FC2890074C5A5 /* LoginService.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		DDB94555212EBF7D0009933A /* AccountSecurityOption */ = {
@@ -1061,6 +1084,7 @@
 			children = (
 				DDFB64522126C4A30036AE0F /* ThirdPartyService.swift */,
 				DDFB64552126C4AB0036AE0F /* Analysis */,
+				DDAAD03B213FC1E90074C5A5 /* Login */,
 			);
 			path = ThirdPartyServices;
 			sourceTree = "<group>";
@@ -1397,6 +1421,7 @@
 				DD456BE2210EBDE6009465FE /* GameEngineInfo.swift in Sources */,
 				DD456BE3210EBDE6009465FE /* BMUserDefaults.swift in Sources */,
 				DDFB644D2126B6F30036AE0F /* AnalysisService.swift in Sources */,
+				DDAAD03F213FC28A0074C5A5 /* LoginService.swift in Sources */,
 				DD67B02E212D53D0002C12D1 /* SettingViewController.swift in Sources */,
 				DD456BE4210EBDE6009465FE /* GameCollectionViewCell.swift in Sources */,
 				DD456C42210ED44B009465FE /* BlockHUD.swift in Sources */,
@@ -1471,6 +1496,7 @@
 				DD456C14210EBDE6009465FE /* LaunchInfiniteTranslationSkyView.swift in Sources */,
 				DD456C15210EBDE6009465FE /* OpenURL.swift in Sources */,
 				DD456C16210EBDE6009465FE /* Dictionary+Extension.swift in Sources */,
+				DDAAD039213F91770074C5A5 /* ThirdLoginSecurityModuleManager.swift in Sources */,
 				DD456C17210EBDE6009465FE /* HomePageViewController.swift in Sources */,
 				DD456C18210EBDE6009465FE /* UITableView+Extension.swift in Sources */,
 				DD456C19210EBDE6009465FE /* AppDelegate.swift in Sources */,
@@ -1512,6 +1538,7 @@
 				DD5160D120F5A7EA0000B8DC /* GameEngineInfo.swift in Sources */,
 				DD7402F520FEDF1C00091B9D /* BMUserDefaults.swift in Sources */,
 				DDFB644C2126B6F30036AE0F /* AnalysisService.swift in Sources */,
+				DDAAD03E213FC28A0074C5A5 /* LoginService.swift in Sources */,
 				DD67B02D212D53D0002C12D1 /* SettingViewController.swift in Sources */,
 				DD5160F020F60ACF0000B8DC /* GameCollectionViewCell.swift in Sources */,
 				DD51609620F46A310000B8DC /* UIView+Layout.swift in Sources */,
@@ -1586,6 +1613,7 @@
 				DD74030520FF311100091B9D /* LaunchInfiniteTranslationSkyView.swift in Sources */,
 				DD7402F320FDDAE800091B9D /* OpenURL.swift in Sources */,
 				DD5160CD20F5A6750000B8DC /* Dictionary+Extension.swift in Sources */,
+				DDAAD038213F91770074C5A5 /* ThirdLoginSecurityModuleManager.swift in Sources */,
 				DD51605220EC6B740000B8DC /* HomePageViewController.swift in Sources */,
 				DD51609520F46A310000B8DC /* UITableView+Extension.swift in Sources */,
 				DD51605020EC6B740000B8DC /* AppDelegate.swift in Sources */,

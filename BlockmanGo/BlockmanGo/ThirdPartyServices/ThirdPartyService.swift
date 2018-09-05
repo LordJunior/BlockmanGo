@@ -14,8 +14,9 @@ struct ThirdPartyService {
         
     }
     
-    static func initialize(launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
+    static func initialize(application: UIApplication, launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
         IQKeyboardManager.shared.enable = true
+//        LoginService.initializeSDK(<#T##application: UIApplication##UIApplication#>, didFinishLaunchingWithOptions: <#T##[UIApplicationLaunchOptionsKey : Any]?#>)
 #if DEBUG
 #else
         AnalysisService.start() // 启动统计服务

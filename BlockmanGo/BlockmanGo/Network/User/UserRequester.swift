@@ -47,7 +47,14 @@ struct UserRequester {
         Requester.requestWithTarget(UserAPI.sendBindEmailCaptcha(mailAddress), completion: completion)
     }
 
-
+    static func bindThirdLogin(openID: String, token: String, platform: LoginPlatformEnum, completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.bindThirdLogin(openID, token, platform.rawValue), completion: completion)
+    }
+    
+    static func unbindThirdLogin(completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.unbindThirdLogin(), completion: completion)
+    }
+    
 //    class func registerInfo(nickname: String, picUrl: String, gender: Int, uid: String, token: String) -> Single<[String : Any]> {
 //        return NetServer.requestWithTarget(User.registerInfo(nickname: nickname, gender: gender, picUrl: picUrl, uid: uid, token: token))
 //    }

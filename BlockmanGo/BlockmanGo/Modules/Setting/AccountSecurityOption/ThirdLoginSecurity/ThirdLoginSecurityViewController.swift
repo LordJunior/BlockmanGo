@@ -39,6 +39,18 @@ class ThirdLoginSecurityViewController: UIViewController {
             make.bottom.equalToSuperview().inset(10)
         }
     }
+    
+    private func bindThirdLogin() {
+        let login = FBSDKLoginManager()
+        login.logIn(withReadPermissions: ["public_profile"], from: self) { (result, error) in
+            guard error == nil, let result = result else { return }
+            print("facebook userID: \(result.token.userID)  token: \(result.token.tokenString)")
+        }
+    }
+    
+    private func unbindThirdLogin() {
+        
+    }
 }
 
 extension ThirdLoginSecurityViewController: UITableViewDataSource, UITableViewDelegate {
@@ -53,5 +65,20 @@ extension ThirdLoginSecurityViewController: UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as ThirdLoginSecurityOptionTableViewCell
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let optionCell = tableView.cellForRow(at: indexPath) as? ThirdLoginSecurityOptionTableViewCell else {
+            return
+        }
+        if optionCell.isBinding {
+            AlertController.alert(title: "是否解除当前绑定?", message: nil, from: self, showCancelButton: true)?.done(completion: { _ in
+                self.unbindThirdLogin()
+            })
+        }else {
+            AlertController.alert(title: "是否绑定?", message: "绑定以后，您可用于快捷登录", from: self, showCancelButton: true)?.done(completion: { _ in
+                self.bindThirdLogin()
+            })
+        }
     }
 }

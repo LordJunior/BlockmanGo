@@ -13,6 +13,7 @@ pod 'HandyJSON', '~> 4.1.1'
 pod 'FCUUID'
 pod 'MBProgressHUD', '~> 1.1.0'
 pod 'IQKeyboardManagerSwift'
+pod 'FBSDKLoginKit'
   # Pods for BlockmanGo
 
 end
@@ -29,6 +30,7 @@ target 'BlockmanGo_Dev' do
     pod 'FCUUID'
     pod 'MBProgressHUD', '~> 1.1.0'
     pod 'IQKeyboardManagerSwift'
+    pod 'FBSDKLoginKit'
     # Pods for BlockmanGo
     
 end

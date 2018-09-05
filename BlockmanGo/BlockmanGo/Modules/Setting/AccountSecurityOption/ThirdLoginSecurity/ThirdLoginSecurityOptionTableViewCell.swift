@@ -10,6 +10,31 @@ import UIKit
 
 class ThirdLoginSecurityOptionTableViewCell: UITableViewCell {
 
+    var platform: LoginPlatformEnum = .app {
+        didSet {
+            switch platform {
+            case .facebook:
+                optionImageView?.image = R.image.setting_Facebook()
+                optionTitleLabel?.text = "Facobook"
+            case .twitter:
+                optionImageView?.image = R.image.setting_Twitter()
+                optionTitleLabel?.text = "Twitter"
+            case .google:
+                optionImageView?.image = R.image.setting_Google()
+                optionTitleLabel?.text = "Google+"
+            default:
+                break
+            }
+        }
+    }
+    
+    var isBinding: Bool = false {
+        didSet {
+            optionStatusButton?.setTitle(isBinding ? "解绑" : "绑定", for: .normal)
+            optionStatusButton?.backgroundColor = isBinding ? R.clr.appColor._d3b26c() : R.clr.appColor._ff8839()
+        }
+    }
+    
     private weak var backgroundImageView: UIImageView?
     private weak var optionImageView: UIImageView?
     private weak var optionTitleLabel: UILabel?
@@ -49,6 +74,7 @@ class ThirdLoginSecurityOptionTableViewCell: UITableViewCell {
             button.setTitle("Binding", for: .normal)
             button.setTitleColor(UIColor.white, for: .normal)
             button.layer.cornerRadius = 12
+            button.isUserInteractionEnabled = false
         }).layout(snapKitMaker: { (make) in
             make.size.equalTo(CGSize(width: 60, height: 24))
             make.right.equalToSuperview().inset(8)

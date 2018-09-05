@@ -27,6 +27,8 @@ enum UserAPI {
     case bindEmail(String, String)
     case unbindEmail()
     case sendBindEmailCaptcha(String)
+    case bindThirdLogin(String, String, String)
+    case unbindThirdLogin()
     
     
     case registerInfo(nickname: String, gender: Int, picUrl: String, uid: String, token: String)
@@ -86,6 +88,12 @@ extension UserAPI : TargetType {
             
         case .sendBindEmailCaptcha(_):
             return "\(userPathPrefix)/api/\(apiVersion)/emails/{email}"
+            
+        case .bindThirdLogin(_, _, _):
+            return "\(userPathPrefix)/api/v1/app/third-part/bind"
+            
+        case .unbindThirdLogin():
+            return "\(userPathPrefix)/api/v1/app/third-part/unbind"
             
             
             
@@ -167,6 +175,13 @@ extension UserAPI : TargetType {
         case  .sendBindEmailCaptcha(let mailAddress):
             return .requestParameters(parameters: ["email" : mailAddress], encoding: URLEncoding.queryString)
             
+        case .bindThirdLogin(let openID, let token, let platform):
+            return .requestParameters(parameters: ["openId" : openID, "token" : token, "platform" : platform, "appType" : "ios"], encoding: JSONEncoding.default)
+            
+        case .unbindThirdLogin():
+            return .requestPlain
+            
+            
             
             
             
@@ -239,7 +254,7 @@ extension UserAPI : TargetType {
             header["bmg-sign"] = DeviceInfo.uuid_SHA1
             return header
             
-        case .fetchUserProfile(), .initializeProfile(nickname: _, gender: _), .modifyPassword(origin: _, new: _), .bindEmail(_, _), .unbindEmail(), .sendBindEmailCaptcha(_):
+        case .fetchUserProfile(), .initializeProfile(nickname: _, gender: _), .modifyPassword(origin: _, new: _), .bindEmail(_, _), .unbindEmail(), .sendBindEmailCaptcha(_), .bindThirdLogin(_, _, _), .unbindThirdLogin():
             var header: [String : String] = [:]
             header["userId"] = "\(UserManager.shared.userID)"
             header["Access-Token"] = UserManager.shared.accessToken
@@ -278,10 +293,6 @@ extension UserAPI : TargetType {
         case .bindPhone(_, verificationCode: _):
             fallthrough
         case .unbindPhone(_, verificationCode: _):
-            fallthrough
-        case .bindEmail(_, _):
-            fallthrough
-        case .unbindEmail():
             fallthrough
         case .fetchDailyTasks():
             fallthrough
