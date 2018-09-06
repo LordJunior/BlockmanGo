@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ThirdLoginSecurityOptionTableViewCell: UITableViewCell {
+class ThirdSignSecurityOptionTableViewCell: UITableViewCell {
 
     var platform: LoginPlatformEnum = .app {
         didSet {
             switch platform {
             case .facebook:
                 optionImageView?.image = R.image.setting_Facebook()
-                optionTitleLabel?.text = "Facobook"
+                optionTitleLabel?.text = "Facebook"
             case .twitter:
                 optionImageView?.image = R.image.setting_Twitter()
                 optionTitleLabel?.text = "Twitter"

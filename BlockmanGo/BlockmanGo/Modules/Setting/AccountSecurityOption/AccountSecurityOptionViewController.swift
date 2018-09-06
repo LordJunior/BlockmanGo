@@ -16,7 +16,7 @@ class AccountSecurityOptionViewController: UIViewController {
     private weak var passwordIfSetLabel: UILabel?
     private weak var passwordSecurityController: PasswordSecurityViewController?
     private weak var mailSecurityController: MailSecurityViewController?
-    private weak var thirdLoginSecurityController: ThirdLoginSecurityViewController?
+    private weak var thirdSignSecurityController: ThirdSignSecurityViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,13 +93,13 @@ class AccountSecurityOptionViewController: UIViewController {
     }
     
     private func displayThirdLoginSecurityContent() {
-        guard self.thirdLoginSecurityController == nil else {
-            securityContentView?.bringSubview(toFront: self.thirdLoginSecurityController!.view)
+        guard self.thirdSignSecurityController == nil else {
+            securityContentView?.bringSubview(toFront: self.thirdSignSecurityController!.view)
             return
         }
-        let thirdLoginSecurityController = ThirdLoginSecurityViewController()
-        layoutSecurityContent(thirdLoginSecurityController)
-        self.thirdLoginSecurityController = thirdLoginSecurityController
+        let thirdSignSecurityController = ThirdSignSecurityViewController()
+        layoutSecurityContent(thirdSignSecurityController)
+        self.thirdSignSecurityController = thirdSignSecurityController
     }
     
     private func layoutSecurityContent(_ contentController: UIViewController) {

@@ -12,6 +12,26 @@ PODS:
     - FBSDKCoreKit
   - FCUUID (1.3.1):
     - UICKeyChainStore (~> 2.1.0)
+  - GoogleSignIn (4.2.0):
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.4):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.4)
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.4)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.4)
+  - GTMOAuth2 (1.1.6):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.2.0):
+    - GTMSessionFetcher/Full (= 1.2.0)
+  - GTMSessionFetcher/Core (1.2.0)
+  - GTMSessionFetcher/Full (1.2.0):
+    - GTMSessionFetcher/Core (= 1.2.0)
   - HandyJSON (4.1.1)
   - IQKeyboardManagerSwift (6.0.5)
   - Kingfisher (4.6.4)
@@ -31,6 +51,7 @@ PODS:
 DEPENDENCIES:
   - FBSDKLoginKit
   - FCUUID
+  - GoogleSignIn
   - HandyJSON (~> 4.1.1)
   - IQKeyboardManagerSwift
   - Kingfisher (~> 4.6.0)
@@ -45,6 +66,10 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 3b8e6570eedb443f9fc4af196a7bf39f18e3a3d8
   FBSDKLoginKit: 8bccb6064708ab2f4251a7fc4e3b6d8d00ad91ba
   FCUUID: bb054fc90cd7cd99320f9f6ff8e130fe607fba05
+  GoogleSignIn: 591e46382014e591269f862ba6e7bc0fbd793532
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
+  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
   HandyJSON: 3a3de917c4118767ffe41c29b5acba23409649f4
   IQKeyboardManagerSwift: c14eca30f6001457d6ddf25e313f23fb6578c41c
   Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
@@ -56,6 +81,6 @@ SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   UICKeyChainStore: 239558492fa260531a0774cfc611ea83a6eaff3a
 
-PODFILE CHECKSUM: a9f745f4d1b86fb4f06ce8c6cbd9172aba7ffd63
+PODFILE CHECKSUM: 7273a2a13582644c5f94f578046d6b0bb674090e
 
 COCOAPODS: 1.2.1

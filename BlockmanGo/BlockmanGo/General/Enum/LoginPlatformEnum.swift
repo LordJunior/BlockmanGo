@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum LoginPlatformEnum: String {
+enum LoginPlatformEnum: String, Equatable {
     case app
     case qq
     case facebook

@@ -76,6 +76,10 @@ class UserManager {
         profileModel?.hasPassword = true
     }
     
+    func didBindSign(platform: LoginPlatformEnum) {
+        profileModel?.platform = platform
+    }
+    
     func didBindEmail(_ mailAddress: String) {
         profileModel?.email = mailAddress
     }
