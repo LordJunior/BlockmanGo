@@ -230,6 +230,10 @@
 		DDAAD04D2140D6B90074C5A5 /* client_320914605590-7sccs9in33anb56lusf5rhqotnv88d41.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDAAD04A2140D6B80074C5A5 /* client_320914605590-7sccs9in33anb56lusf5rhqotnv88d41.apps.googleusercontent.com.plist */; };
 		DDAAD04F2140E10F0074C5A5 /* GoogleSignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD04E2140E10F0074C5A5 /* GoogleSignService.swift */; };
 		DDAAD0502140E10F0074C5A5 /* GoogleSignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD04E2140E10F0074C5A5 /* GoogleSignService.swift */; };
+		DDAAD05521414DDB0074C5A5 /* ClearCacheModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD05421414DDB0074C5A5 /* ClearCacheModuleManager.swift */; };
+		DDAAD05621414DDB0074C5A5 /* ClearCacheModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD05421414DDB0074C5A5 /* ClearCacheModuleManager.swift */; };
+		DDAAD05921414FF30074C5A5 /* ClearCacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD05821414FF30074C5A5 /* ClearCacheViewController.swift */; };
+		DDAAD05A21414FF30074C5A5 /* ClearCacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD05821414FF30074C5A5 /* ClearCacheViewController.swift */; };
 		DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */; };
 		DDB94558212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */; };
 		DDB94559212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */; };
@@ -426,6 +430,8 @@
 		DDAAD03D213FC2890074C5A5 /* FacebookSignService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookSignService.swift; sourceTree = "<group>"; };
 		DDAAD04A2140D6B80074C5A5 /* client_320914605590-7sccs9in33anb56lusf5rhqotnv88d41.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_320914605590-7sccs9in33anb56lusf5rhqotnv88d41.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		DDAAD04E2140E10F0074C5A5 /* GoogleSignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignService.swift; sourceTree = "<group>"; };
+		DDAAD05421414DDB0074C5A5 /* ClearCacheModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCacheModuleManager.swift; sourceTree = "<group>"; };
+		DDAAD05821414FF30074C5A5 /* ClearCacheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCacheViewController.swift; sourceTree = "<group>"; };
 		DDB043A3210B177F00A8F3A8 /* LaunchBrandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchBrandingViewController.swift; sourceTree = "<group>"; };
 		DDB94557212EBFB20009933A /* AccountSecurityOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityOptionViewController.swift; sourceTree = "<group>"; };
 		DDB9455A212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSecurityOptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -810,6 +816,7 @@
 				DD67B045212E56D0002C12D1 /* SwitchAccount */,
 				DDB94555212EBF7D0009933A /* AccountSecurityOption */,
 				DDB94570212FBB270009933A /* AboutUs */,
+				DDAAD05721414FB00074C5A5 /* ClearCache */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -942,6 +949,7 @@
 				DDAAD01C213571700074C5A5 /* Register */,
 				DDAACFEB2135366C0074C5A5 /* Login */,
 				DDAAD0292136C5230074C5A5 /* AccountSecurity */,
+				DDAAD05B214150B70074C5A5 /* ClearCache */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1003,6 +1011,22 @@
 				DDAAD04E2140E10F0074C5A5 /* GoogleSignService.swift */,
 			);
 			path = Sign;
+			sourceTree = "<group>";
+		};
+		DDAAD05721414FB00074C5A5 /* ClearCache */ = {
+			isa = PBXGroup;
+			children = (
+				DDAAD05821414FF30074C5A5 /* ClearCacheViewController.swift */,
+			);
+			path = ClearCache;
+			sourceTree = "<group>";
+		};
+		DDAAD05B214150B70074C5A5 /* ClearCache */ = {
+			isa = PBXGroup;
+			children = (
+				DDAAD05421414DDB0074C5A5 /* ClearCacheModuleManager.swift */,
+			);
+			path = ClearCache;
 			sourceTree = "<group>";
 		};
 		DDB94555212EBF7D0009933A /* AccountSecurityOption */ = {
@@ -1410,6 +1434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAAD05621414DDB0074C5A5 /* ClearCacheModuleManager.swift in Sources */,
 				DD456BD6210EBDE6009465FE /* BMFileManager.swift in Sources */,
 				DD456BD7210EBDE6009465FE /* GamesAPI.swift in Sources */,
 				DD456BD8210EBDE6009465FE /* BulletinModelManager.swift in Sources */,
@@ -1444,6 +1469,7 @@
 				DD456BEA210EBDE6009465FE /* DebugLog.swift in Sources */,
 				DDAAD01F213571CE0074C5A5 /* RegisterModuleManager.swift in Sources */,
 				DD456BEB210EBDE6009465FE /* MainNavigationController.swift in Sources */,
+				DDAAD05A21414FF30074C5A5 /* ClearCacheViewController.swift in Sources */,
 				DD456BEC210EBDE6009465FE /* MoyaProvider+Sync.swift in Sources */,
 				DD456BED210EBDE6009465FE /* AlertController.swift in Sources */,
 				DD456BEE210EBDE6009465FE /* DeviceInfo.swift in Sources */,
@@ -1527,6 +1553,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAAD05521414DDB0074C5A5 /* ClearCacheModuleManager.swift in Sources */,
 				DD7402FD20FEEDF500091B9D /* BMFileManager.swift in Sources */,
 				DD5160F620F631F40000B8DC /* GamesAPI.swift in Sources */,
 				DD74030B20FF485200091B9D /* BulletinModelManager.swift in Sources */,
@@ -1561,6 +1588,7 @@
 				DD51607620F304A00000B8DC /* MainNavigationController.swift in Sources */,
 				DDAAD01E213571CE0074C5A5 /* RegisterModuleManager.swift in Sources */,
 				DD74037A21009AA800091B9D /* MoyaProvider+Sync.swift in Sources */,
+				DDAAD05921414FF30074C5A5 /* ClearCacheViewController.swift in Sources */,
 				DD7402D620FC8E8C00091B9D /* AlertController.swift in Sources */,
 				DD5160CF20F5A79B0000B8DC /* DeviceInfo.swift in Sources */,
 				DD51611620F747000000B8DC /* GamesRequester.swift in Sources */,

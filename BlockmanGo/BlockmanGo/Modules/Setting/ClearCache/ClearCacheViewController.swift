@@ -1,26 +1,26 @@
 //
-//  SettingViewController.swift
+//  ClearCacheViewController.swift
 //  BlockmanGo
 //
-//  Created by KiBen on 2018/8/22.
+//  Created by KiBen on 2018/9/6.
 //  Copyright © 2018年 SanboxOL. All rights reserved.
 //
 
 import UIKit
 
-class SettingViewController: UIViewController {
-
+class ClearCacheViewController: UIViewController {
+    
     private weak var tableView: UITableView?
-    private let optionTitles = ["切换账号", "切换账号与安全", "关于Blockman GO", "清除缓存"]
+    private let optionTitles = ["图片缓存 (0.0M)", "地图缓存 (0.0M)"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         
         let backgroundView = UIImageView(image: R.image.general_alert_background()).addTo(superView: view).layout { (make) in
             make.center.equalToSuperview()
-            make.size.equalTo(CGSize(width: 296, height: 240))
+            make.size.equalTo(CGSize(width: 296, height: 150))
         }.configure { (imageView) in
             imageView.isUserInteractionEnabled = true
         }
@@ -45,9 +45,27 @@ class SettingViewController: UIViewController {
             TransitionManager.dismiss(animated: true)
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        ClearCacheModuleManager.calculateImageCacheSize { (sizeText) in
+            guard let cell = self.tableView?.cellForRow(at: IndexPath(row: 0, section: 0)) as? SettingOptionTableViewCell else {
+                return
+            }
+            cell.optionTitle = "图片缓存" + " (" + sizeText + ")"
+        }
+        
+        ClearCacheModuleManager.calculateMapCacheSize { (sizeText) in
+            guard let cell = self.tableView?.cellForRow(at: IndexPath(row: 0, section: 1)) as? SettingOptionTableViewCell else {
+                return
+            }
+            cell.optionTitle = self.optionTitles[1] + " (" + sizeText + ")"
+        }
+    }
 }
 
-extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
+extension ClearCacheViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         return optionTitles.count
     }
@@ -64,28 +82,23 @@ extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
+        BlockHUD.showLoading(inView: view)
         switch indexPath.section {
         case 0:
-            if UserManager.shared.passwordIfHave() {
-                TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: (false, self))
-            }else {
-                AlertController.alert(title: "该账号未设置密码，切换会导致当前账号丢失，是否继续？", message: nil, from: self, showCancelButton: true)?.setCancelTitle("我不要了").setDoneTitle("去设置").done(completion: { (_) in
-                    TransitionManager.presentInHidePresentingTransition(AccountSecurityOptionViewController.self)
-                }).cancel(completion: { _ in
-                    TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: (false, self))
-                })
+            ClearCacheModuleManager.clearImageCache {
+                BlockHUD.hide(forView: self.view)
+                (tableView.cellForRow(at: indexPath) as! SettingOptionTableViewCell).optionTitle = self.optionTitles[0]
             }
         case 1:
-            TransitionManager.presentInHidePresentingTransition(AccountSecurityOptionViewController.self)
-        case 2:
-            TransitionManager.presentInHidePresentingTransition(AboutUsViewController.self)
-        case 3:
-            TransitionManager.presentInHidePresentingTransition(ClearCacheViewController.self)
+            ClearCacheModuleManager.clearMapCache {
+                BlockHUD.hide(forView: self.view)
+                (tableView.cellForRow(at: indexPath) as! SettingOptionTableViewCell).optionTitle = self.optionTitles[1]
+            }
         default:
             break
         }
     }
-
+    
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return UIView()
@@ -96,17 +109,5 @@ extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
             return 20
         }
         return 5
-    }
-}
-
-extension SettingViewController: LoginViewControllerDelegate {
-    func loginViewControllerDidCancel(_ viewController: LoginViewController) {
-        TransitionManager.dismiss(animated: true)
-    }
-    
-    func loginViewControllerDidLoginSuccessful(_ viewController: LoginViewController) {
-        NotificationCenter.post(notification: .refreshAccountInfo)
-        TransitionManager.dismiss(animated: true) // 先dismiss LoginViewController
-        TransitionManager.dismiss(animated: true) // 再dismiss SettingViewController
     }
 }
