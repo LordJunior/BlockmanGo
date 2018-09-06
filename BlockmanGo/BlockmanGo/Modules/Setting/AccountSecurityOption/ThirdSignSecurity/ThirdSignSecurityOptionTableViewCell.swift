@@ -10,7 +10,7 @@ import UIKit
 
 class ThirdSignSecurityOptionTableViewCell: UITableViewCell {
 
-    var platform: LoginPlatformEnum = .app {
+    var platform: SignInPlatformEnum = .app {
         didSet {
             switch platform {
             case .facebook:

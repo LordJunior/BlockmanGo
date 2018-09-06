@@ -35,11 +35,11 @@ final class ProfileModel: HandyJSON {
     var diamonds: UInt64 = 0
     var golds: UInt64 = 0
     var userID: UInt64 = 0
-    var gender: Gender = .male
+    var gender: Int = 1
     var telephone: String = ""
     var vip: VIP = .vip
     var hasPassword: Bool = false
-    var platform: LoginPlatformEnum = .app
+    var platform: SignInPlatformEnum = .app
     
     func mapping(mapper: HelpingMapper) {
         mapper <<<
@@ -52,15 +52,21 @@ final class ProfileModel: HandyJSON {
             self.portraitURL <-- "picUrl"
         
         mapper <<<
-            self.gender <-- TransformOf<Gender, Int>(fromJSON: { sex -> Gender in
-                return Gender(rawValue: sex ?? 1) ?? .male
-            }, toJSON: { gender -> Int in
-                return gender?.rawValue ?? 1
-            })
+            self.gender <-- "sex"
+        
+//        mapper <<<
+//            self.gender <-- TransformOf<Gender, Int>(fromJSON: { sex -> Gender in
+//                guard let sex = sex else {
+//                    return .male
+//                }
+//                return Gender(rawValue: sex)!
+//            }, toJSON: { gender -> Int in
+//                return gender?.rawValue ?? 1
+//            })
         
         mapper <<<
-            self.platform <-- TransformOf<LoginPlatformEnum, String>(fromJSON: { platform -> LoginPlatformEnum in
-                return LoginPlatformEnum(rawValue: platform ?? "app") ?? .app
+            self.platform <-- TransformOf<SignInPlatformEnum, String>(fromJSON: { platform -> SignInPlatformEnum in
+                return SignInPlatformEnum(rawValue: platform ?? "app") ?? .app
             }, toJSON: { platform -> String in
                 return platform?.rawValue ?? "app"
             })

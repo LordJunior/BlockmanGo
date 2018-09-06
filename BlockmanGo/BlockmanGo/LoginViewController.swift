@@ -22,6 +22,17 @@ class LoginViewController: UIViewController {
         case facebook
         case twitter
         case google
+        
+        var toSignInPlatform: SignInPlatformEnum {
+            switch self {
+            case .facebook:
+                return SignInPlatformEnum.facebook
+            case .twitter:
+                return SignInPlatformEnum.twitter
+            case .google:
+                return SignInPlatformEnum.google
+            }
+        }
     }
     
     private weak var accountTextField: UITextField?
@@ -194,7 +205,7 @@ class LoginViewController: UIViewController {
     }
     
     @objc private func registerButtonClicked() {
-        TransitionManager.presentInHidePresentingTransition(RegisterViewController.self)
+        TransitionManager.presentInHidePresentingTransition(RegisterViewController.self, parameter: self)
     }
     
     @objc private func mailButtonClicked() {
@@ -202,8 +213,13 @@ class LoginViewController: UIViewController {
     }
     
     @objc private func thirdSignButtonClicked(_ sender: AdjustLayoutButton) {
-        let platform = SignPlatform(rawValue: sender.tag)!
-        switch platform {
+        let currentPlatform = UserManager.shared.loginPlatform /// 全局的一个登录平台枚举
+        let buttonPlatform = SignPlatform(rawValue: sender.tag)! /// 当前类里的登录平台枚举，用于做button的tag
+        guard currentPlatform != .app, currentPlatform == buttonPlatform.toSignInPlatform else {
+            AlertController.alert(title: "请先绑定才能用于登录", message: nil, from: self)
+            return
+        }
+        switch buttonPlatform {
         case .facebook:
             facebookSignInService?.signIn()
         case .google:
@@ -223,11 +239,11 @@ class LoginViewController: UIViewController {
             return
         }
         BlockHUD.showLoading(inView: view)
-        login(account: account, password: password)
+        login(account: account, password: password, platform: .app)
     }
     
-    private func login(account: String, password: String) {
-        LoginModelManager.login(account: account, password: password) { [unowned self] (result) in
+    private func login(account: String, password: String, platform: SignInPlatformEnum) {
+        LoginModelManager.login(account: account, password: password, platform: platform) { [unowned self] (result) in
             BlockHUD.hide(forView: self.view)
             switch result {
             case .success(_):
@@ -239,6 +255,14 @@ class LoginViewController: UIViewController {
             default:
                 AlertController.alert(title: R.string.localizable.common_request_fail_retry(), message: nil, from: self)
             }
+        }
+    }
+}
+
+extension LoginViewController: RegisterViewControllerDelegate {
+    func registerDidSuccessful() {
+        TransitionManager.dismiss(animated: true) {
+            self.delegate?.loginViewControllerDidLoginSuccessful(self)
         }
     }
 }
@@ -257,7 +281,7 @@ extension LoginViewController: GoogleSignServiceDelegate, GoogleSignServiceUIDel
     }
     
     func sign(_ signIn: GoogleSignService, didSignFor openID: String, token: String) {
-        login(account: openID, password: token)
+        login(account: openID, password: token, platform: .google)
     }
     
     func signDidCanceled(_ signIn: GoogleSignService) {
@@ -276,7 +300,7 @@ extension LoginViewController: FacebookSignServiceDelegate {
     }
     
     func sign(_ signIn: FacebookSignService, didSignFor openID: String, token: String) {
-        login(account: openID, password: token)
+        login(account: openID, password: token, platform: .facebook)
     }
     
     func sign(_ signIn: FacebookSignService, didSignFailed: Error) {

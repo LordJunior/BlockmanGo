@@ -9,8 +9,8 @@
 import Foundation
 
 struct LoginModelManager {
-    static func login(account: String, password: String, completion: @escaping (BlockHTTPResult<AuthTokenModel, BlockHTTPError>) -> Void) {
-        UserRequester.login(account: account, password: password) { (result) in
+    static func login(account: String, password: String, platform: SignInPlatformEnum, completion: @escaping (BlockHTTPResult<AuthTokenModel, BlockHTTPError>) -> Void) {
+        UserRequester.login(account: account, password: password, channel: platform) { (result) in
             switch result {
             case .success(let response):
                 let authModel = try! response.mapModel(AuthTokenModel.self)

@@ -66,7 +66,7 @@ class PasswordSecurityViewController: UIViewController {
             }
             
             BlockHUD.showLoading(inView: view)
-            passwordSecurityManager.modifyPassword(origin: password, new: newPassword) { [unowned self] (result) in
+            PasswordSecurityModuleManager.modifyPassword(origin: password, new: newPassword) { [unowned self] (result) in
                 BlockHUD.hide(forView: self.view)
                 switch result {
                 case .success(_):
@@ -92,7 +92,7 @@ class PasswordSecurityViewController: UIViewController {
             }
             
             BlockHUD.showLoading(inView: view)
-            passwordSecurityManager.setPassword(password) {[unowned self] (result) in
+            PasswordSecurityModuleManager.setPassword(password) {[unowned self] (result) in
                 BlockHUD.hide(forView: self.view)
                 switch result {
                 case .success(_):

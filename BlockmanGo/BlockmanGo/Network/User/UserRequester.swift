@@ -15,6 +15,10 @@ struct UserRequester {
         Requester.requestWithTarget(UserAPI.authToken(), completion: completion)
     }
     
+    static func regenerateAuthToken(completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.regenerateAuthToken(), completion: completion)
+    }
+    
     static func fetchUserProfile(completion: @escaping RequestJsonCallBack) {
         Requester.requestWithTarget(UserAPI.fetchUserProfile(), completion: completion)
     }
@@ -23,8 +27,8 @@ struct UserRequester {
         Requester.requestWithTarget(UserAPI.initializeProfile(nickname: nickname, gender: gender), completion: completion)
     }
     
-    static func login(account: String, password: String, channel: Channel = .app, completion: @escaping RequestJsonCallBack) {
-        Requester.requestWithTarget(UserAPI.login(account: account, passwd: password, channel: channel), completion: completion)
+    static func login(account: String, password: String, channel: SignInPlatformEnum = .app, completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.login(account: account, passwd: password, platform: channel.rawValue), completion: completion)
     }
     
     static func setPassword(_ password: String, completion: @escaping RequestJsonCallBack) {
@@ -47,7 +51,7 @@ struct UserRequester {
         Requester.requestWithTarget(UserAPI.sendBindEmailCaptcha(mailAddress), completion: completion)
     }
 
-    static func bindThirdLogin(openID: String, token: String, platform: LoginPlatformEnum, completion: @escaping RequestJsonCallBack) {
+    static func bindThirdLogin(openID: String, token: String, platform: SignInPlatformEnum, completion: @escaping RequestJsonCallBack) {
         Requester.requestWithTarget(UserAPI.bindThirdLogin(openID, token, platform.rawValue), completion: completion)
     }
     

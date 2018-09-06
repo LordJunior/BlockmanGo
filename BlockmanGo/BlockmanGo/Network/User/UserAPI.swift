@@ -19,9 +19,10 @@ let userPathPrefix = "/user"
 
 enum UserAPI {
     case authToken()
+    case regenerateAuthToken()
     case fetchUserProfile()
     case initializeProfile(nickname: String, gender: Int)
-    case login(account: String, passwd: String, channel: Channel)
+    case login(account: String, passwd: String, platform: String)
     case setPassword(String)
     case modifyPassword(origin: String, new: String)
     case bindEmail(String, String)
@@ -65,13 +66,16 @@ extension UserAPI : TargetType {
         case .authToken():
             return "\(userPathPrefix)/api/\(apiVersion)/app/auth-token"
             
+        case .regenerateAuthToken():
+            return "\(userPathPrefix)/api/\(apiVersion)/app/renew"
+            
         case .fetchUserProfile():
             return "\(userPathPrefix)/api/\(apiVersion)/user/details/info"
             
         case .initializeProfile(_, _):
             return "\(userPathPrefix)/api/\(apiVersion)/user/register"
             
-        case .login(account: _, passwd: _, channel: _):
+        case .login(account: _, passwd: _, platform: _):
             return "\(userPathPrefix)/api/\(apiVersion)/app/login"
             
         case .setPassword(_):
@@ -151,14 +155,14 @@ extension UserAPI : TargetType {
     
     var task: Task {
         switch self {
-        case .fetchUserProfile(), .authToken():
+        case .fetchUserProfile(), .authToken(), .regenerateAuthToken():
             return .requestPlain
             
         case let .initializeProfile(nickname: nickname, gender: gender):
             return .requestParameters(parameters: ["nickName" : nickname, "sex" : gender], encoding: JSONEncoding.default)
             
-        case let .login(account: uid, passwd: pwd, channel: channel):
-            return .requestParameters(parameters: ["uid" : uid, "password" : pwd, "platform" : channel.rawValue, "appType" : "ios"], encoding: JSONEncoding.default)
+        case let .login(account: uid, passwd: pwd, platform: platform):
+            return .requestParameters(parameters: ["uid" : uid, "password" : pwd, "platform" : platform, "appType" : "ios"], encoding: JSONEncoding.default)
             
         case .setPassword(let password):
             return .requestParameters(parameters: ["userId" : UserManager.shared.userID, "password" : password], encoding: JSONEncoding.default)
@@ -248,7 +252,7 @@ extension UserAPI : TargetType {
             header["bmg-user-id"] = "\(UserManager.shared.userID)"
             return header
         
-        case .login(account: _, passwd: _, channel: _):
+        case .login(account: _, passwd: _, platform: _), .regenerateAuthToken():
             var header: [String : String] = [:]
             header["bmg-device-id"] = DeviceInfo.uuid
             header["bmg-sign"] = DeviceInfo.uuid_SHA1

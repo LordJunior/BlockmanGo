@@ -27,7 +27,6 @@ class HomePageViewController: UIViewController {
         
         DecorationControllerManager.shared.removeFromParent()
         DecorationControllerManager.shared.resumeRendering()
-        DecorationControllerManager.shared.setGender(UserManager.shared.gender.rawValue)
         
         accountInfoView = AccountInfoView().addTo(superView: view)
         refreshAccountInfoViewLayout()
@@ -69,7 +68,9 @@ class HomePageViewController: UIViewController {
         DecorationControllerManager.shared.resumeRendering()
         DecorationControllerManager.shared.add(toParent: self, layout: { (make) in
             make.left.right.top.bottom.equalToSuperview()
-        })
+        }) {
+            DecorationControllerManager.shared.setGender(UserManager.shared.gender.rawValue)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -83,7 +84,7 @@ class HomePageViewController: UIViewController {
             switch result {
             case .success(let profile):
                 self.refreshAccountInfoViewLayout()
-                DecorationControllerManager.shared.setGender(profile.gender.rawValue)
+                DecorationControllerManager.shared.setGender(profile.gender)
             case .failure(.profileNotExist): // 新用户，完善信息
                 TransitionManager.presentInNormalTransition(InitializeProfileViewController.self, parameter: self)
             case .failure(let error):

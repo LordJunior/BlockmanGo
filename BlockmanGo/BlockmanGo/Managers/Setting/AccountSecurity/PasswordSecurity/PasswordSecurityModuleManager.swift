@@ -10,7 +10,7 @@ import Foundation
 
 struct PasswordSecurityModuleManager {
     
-    func setPassword(_ password: String, completion: @escaping (BlockHTTPResult<Void, BlockHTTPError>) -> Void) {
+    static func setPassword(_ password: String, completion: @escaping (BlockHTTPResult<Void, BlockHTTPError>) -> Void) {
         UserRequester.setPassword(password) { (result) in
             switch result {
             case .success(_):
@@ -21,7 +21,7 @@ struct PasswordSecurityModuleManager {
         }
     }
     
-    func modifyPassword(origin: String, new: String, completion: @escaping (BlockHTTPResult<Void, BlockHTTPError>) -> Void) {
+    static func modifyPassword(origin: String, new: String, completion: @escaping (BlockHTTPResult<Void, BlockHTTPError>) -> Void) {
         UserRequester.modifyPassword(origin: origin, new: new) { (result) in
             switch result {
             case .success(_):

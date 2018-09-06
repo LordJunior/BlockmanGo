@@ -38,14 +38,14 @@ class UserManager {
     }
 
     var gender: Gender {
-        return profileModel?.gender ?? .male
+        return Gender(rawValue: profileModel?.gender ?? 1)!
     }
     
     var portraitURL: String {
         return profileModel?.portraitURL ?? ""
     }
     
-    var loginPlatform: LoginPlatformEnum {
+    var loginPlatform: SignInPlatformEnum {
         return profileModel?.platform ?? .app
     }
     
@@ -76,7 +76,7 @@ class UserManager {
         profileModel?.hasPassword = true
     }
     
-    func didBindSign(platform: LoginPlatformEnum) {
+    func didBindSign(platform: SignInPlatformEnum) {
         profileModel?.platform = platform
     }
     

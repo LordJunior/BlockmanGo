@@ -11,7 +11,7 @@ import GoogleSignIn
 
 class ThirdSignSecurityViewController: UIViewController {
 
-    private let platforms: [LoginPlatformEnum] = [.facebook, .google]
+    private let platforms: [SignInPlatformEnum] = [.facebook, .google]
     private let googleSignInService = GoogleSignService()
     private var facebookSignInService: FacebookSignService?
     
@@ -53,7 +53,7 @@ class ThirdSignSecurityViewController: UIViewController {
         }
     }
     
-    private func bindThirdLogin(platform: LoginPlatformEnum) {
+    private func bindThirdLogin(platform: SignInPlatformEnum) {
         BlockHUD.showLoading(inView: view)
         switch platform {
         case .google:
@@ -63,7 +63,7 @@ class ThirdSignSecurityViewController: UIViewController {
         }
     }
     
-    private func bindThirdSign(openID: String, token: String, platform: LoginPlatformEnum) {
+    private func bindThirdSign(openID: String, token: String, platform: SignInPlatformEnum) {
         ThirdSignSecurityModuleManager.bindThirdLogin(openID: openID, token: token, platform: platform, completion: { (result) in
             BlockHUD.hide(forView: self.view)
             switch result {

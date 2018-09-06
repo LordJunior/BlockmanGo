@@ -7,9 +7,14 @@
 //
 
 import UIKit
+protocol RegisterViewControllerDelegate: class {
+    func registerDidSuccessful()
+}
 
 class RegisterViewController: UIViewController {
 
+    weak var delegate: RegisterViewControllerDelegate?
+    
     private weak var passwordTextfield: UITextField?
     private weak var confirmPasswordTextfield: UITextField?
     
@@ -17,6 +22,9 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        if parameter != nil {
+            delegate = parameter as? RegisterViewControllerDelegate
+        }
         
         let backgroundView = UIImageView(image: R.image.general_alert_background()).addTo(superView: view).layout { (make) in
             make.center.equalToSuperview()
@@ -49,15 +57,19 @@ class RegisterViewController: UIViewController {
         passwordTextfield = CommonTextField(placeHolder: "输入密码").addTo(superView: inputPasswordContainView).layout(snapKitMaker: { (make) in
             make.left.right.top.equalToSuperview().inset(10)
             make.height.equalTo(40)
+        }).configure({ (textField) in
+            textField.isSecureTextEntry = true
         })
         
         confirmPasswordTextfield = CommonTextField(placeHolder: "确认密码").addTo(superView: inputPasswordContainView).layout(snapKitMaker: { (make) in
             make.left.right.equalToSuperview().inset(10)
             make.height.equalTo(40)
             make.top.equalTo(passwordTextfield!.snp.bottom).offset(5)
+        }).configure({ (textField) in
+            textField.isSecureTextEntry = true
         })
         
-        let passwordGuidelineLabel = ExtraSizeLabel().addTo(superView: inputPasswordContainView).configure { (label) in
+        ExtraSizeLabel().addTo(superView: inputPasswordContainView).configure { (label) in
             label.textColor = R.clr.appColor._b17f63()
             label.font = UIFont.size11
             label.text = "6-16个英文字母或数字"
@@ -95,6 +107,37 @@ class RegisterViewController: UIViewController {
         guard password == confirmPasswordTextfield?.text else {
             AlertController.alert(title: "密码不匹配", message: nil, from: self)
             return
+        }
+        /// 注册这一步的流程是
+        /// 在用户填写完密码后，重新调用auth-token接口去生成新账号
+        /// 然后再去设置密码
+        regenerateAuth()
+    }
+    
+    private func regenerateAuth() {
+        BlockHUD.showLoading(inView: view)
+        RegisterModuleManager.regenerateAuthorization { (result) in
+            switch result {
+            case .success(_):
+                self.setPassword()
+            case .failure(let error):
+                BlockHUD.hide(forView: self.view)
+                self.defaultParseError(error)
+            }
+        }
+    }
+    
+    private func setPassword() {
+        PasswordSecurityModuleManager.setPassword(passwordTextfield!.text!) { (result) in
+            BlockHUD.hide(forView: self.view)
+            switch result {
+            case .success(_):
+                AlertController.alert(title: "注册成功", message: nil, from: self)?.done(completion: { _ in
+                    self.delegate?.registerDidSuccessful()
+                })
+            case .failure(let error):
+                self.defaultParseError(error)
+            }
         }
     }
 }

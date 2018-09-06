@@ -1,5 +1,5 @@
 //
-//  LoginPlatformEnum.swift
+//  SignInPlatformEnum.swift
 //  BlockmanGo
 //
 //  Created by KiBen on 2018/8/29.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum LoginPlatformEnum: String, Equatable {
+enum SignInPlatformEnum: String, Equatable {
     case app
     case qq
     case facebook

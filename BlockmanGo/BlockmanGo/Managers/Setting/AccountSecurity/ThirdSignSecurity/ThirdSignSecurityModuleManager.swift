@@ -9,7 +9,7 @@
 import Foundation
 
 struct ThirdSignSecurityModuleManager {
-    static func bindThirdLogin(openID: String, token: String, platform: LoginPlatformEnum, completion: @escaping (BlockHTTPResult<Void, BlockHTTPError>) -> Void) {
+    static func bindThirdLogin(openID: String, token: String, platform: SignInPlatformEnum, completion: @escaping (BlockHTTPResult<Void, BlockHTTPError>) -> Void) {
         UserRequester.bindThirdLogin(openID: openID, token: token, platform: platform) { (result) in
             switch result {
             case .success(_):

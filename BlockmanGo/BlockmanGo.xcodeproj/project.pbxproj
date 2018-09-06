@@ -208,14 +208,12 @@
 		DDAACFEE213536920074C5A5 /* LoginModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFEC213536920074C5A5 /* LoginModelManager.swift */; };
 		DDAACFF0213539E00074C5A5 /* VIPEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFEF213539E00074C5A5 /* VIPEnum.swift */; };
 		DDAACFF1213539E00074C5A5 /* VIPEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFEF213539E00074C5A5 /* VIPEnum.swift */; };
-		DDAACFF3213539F70074C5A5 /* ChannelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFF2213539F70074C5A5 /* ChannelEnum.swift */; };
-		DDAACFF4213539F70074C5A5 /* ChannelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFF2213539F70074C5A5 /* ChannelEnum.swift */; };
 		DDAAD01E213571CE0074C5A5 /* RegisterModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD01D213571CE0074C5A5 /* RegisterModuleManager.swift */; };
 		DDAAD01F213571CE0074C5A5 /* RegisterModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD01D213571CE0074C5A5 /* RegisterModuleManager.swift */; };
 		DDAAD02121367E190074C5A5 /* NotificationCenter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02021367E190074C5A5 /* NotificationCenter+Extension.swift */; };
 		DDAAD02221367E190074C5A5 /* NotificationCenter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02021367E190074C5A5 /* NotificationCenter+Extension.swift */; };
-		DDAAD02421368B750074C5A5 /* LoginPlatformEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02321368B750074C5A5 /* LoginPlatformEnum.swift */; };
-		DDAAD02521368B750074C5A5 /* LoginPlatformEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02321368B750074C5A5 /* LoginPlatformEnum.swift */; };
+		DDAAD02421368B750074C5A5 /* SignInPlatformEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02321368B750074C5A5 /* SignInPlatformEnum.swift */; };
+		DDAAD02521368B750074C5A5 /* SignInPlatformEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02321368B750074C5A5 /* SignInPlatformEnum.swift */; };
 		DDAAD027213697270074C5A5 /* UIViewController+DefaultParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD026213697270074C5A5 /* UIViewController+DefaultParseError.swift */; };
 		DDAAD028213697270074C5A5 /* UIViewController+DefaultParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD026213697270074C5A5 /* UIViewController+DefaultParseError.swift */; };
 		DDAAD02C2136C5830074C5A5 /* PasswordSecurityModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD02B2136C5830074C5A5 /* PasswordSecurityModuleManager.swift */; };
@@ -417,10 +415,9 @@
 		DDAACFE72134F4F80074C5A5 /* AdjustLayoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustLayoutButton.swift; sourceTree = "<group>"; };
 		DDAACFEC213536920074C5A5 /* LoginModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModelManager.swift; sourceTree = "<group>"; };
 		DDAACFEF213539E00074C5A5 /* VIPEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPEnum.swift; sourceTree = "<group>"; };
-		DDAACFF2213539F70074C5A5 /* ChannelEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelEnum.swift; sourceTree = "<group>"; };
 		DDAAD01D213571CE0074C5A5 /* RegisterModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModuleManager.swift; sourceTree = "<group>"; };
 		DDAAD02021367E190074C5A5 /* NotificationCenter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Extension.swift"; sourceTree = "<group>"; };
-		DDAAD02321368B750074C5A5 /* LoginPlatformEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPlatformEnum.swift; sourceTree = "<group>"; };
+		DDAAD02321368B750074C5A5 /* SignInPlatformEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPlatformEnum.swift; sourceTree = "<group>"; };
 		DDAAD026213697270074C5A5 /* UIViewController+DefaultParseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DefaultParseError.swift"; sourceTree = "<group>"; };
 		DDAAD02B2136C5830074C5A5 /* PasswordSecurityModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSecurityModuleManager.swift; sourceTree = "<group>"; };
 		DDAAD02F213D108A0074C5A5 /* MailSecurityModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailSecurityModuleManager.swift; sourceTree = "<group>"; };
@@ -926,8 +923,7 @@
 			children = (
 				DD8EB61D21030F7200E7AE9B /* GenderEnum.swift */,
 				DDAACFEF213539E00074C5A5 /* VIPEnum.swift */,
-				DDAACFF2213539F70074C5A5 /* ChannelEnum.swift */,
-				DDAAD02321368B750074C5A5 /* LoginPlatformEnum.swift */,
+				DDAAD02321368B750074C5A5 /* SignInPlatformEnum.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -1442,7 +1438,7 @@
 				DDAAD02221367E190074C5A5 /* NotificationCenter+Extension.swift in Sources */,
 				DD456BE7210EBDE6009465FE /* BlockHTTPHost.swift in Sources */,
 				DD456BE8210EBDE6009465FE /* TransitionManagerStack.swift in Sources */,
-				DDAAD02521368B750074C5A5 /* LoginPlatformEnum.swift in Sources */,
+				DDAAD02521368B750074C5A5 /* SignInPlatformEnum.swift in Sources */,
 				DD456BE9210EBDE6009465FE /* CheckForResourceUpdateModel.swift in Sources */,
 				DDFFC8E92110C613008B80C0 /* GravityImageView.swift in Sources */,
 				DD456BEA210EBDE6009465FE /* DebugLog.swift in Sources */,
@@ -1520,7 +1516,6 @@
 				DD456C1D210EBDE6009465FE /* GameDetailViewController.swift in Sources */,
 				DD456C1E210EBDE6009465FE /* GameDispatchModel.swift in Sources */,
 				DD456C1F210EBDE6009465FE /* ExtraSizeLabel.swift in Sources */,
-				DDAACFF4213539F70074C5A5 /* ChannelEnum.swift in Sources */,
 				DDFB64542126C4A30036AE0F /* ThirdPartyService.swift in Sources */,
 				DD456C20210EBDE6009465FE /* UserRequester.swift in Sources */,
 				DD456C21210EBDE6009465FE /* R.generated.swift in Sources */,
@@ -1560,7 +1555,7 @@
 				DDAAD02121367E190074C5A5 /* NotificationCenter+Extension.swift in Sources */,
 				DD51608620F363FF0000B8DC /* TransitionManagerStack.swift in Sources */,
 				DD7402EF20FDC9D100091B9D /* CheckForResourceUpdateModel.swift in Sources */,
-				DDAAD02421368B750074C5A5 /* LoginPlatformEnum.swift in Sources */,
+				DDAAD02421368B750074C5A5 /* SignInPlatformEnum.swift in Sources */,
 				DD5160CB20F5A6530000B8DC /* DebugLog.swift in Sources */,
 				DDFFC8E82110C613008B80C0 /* GravityImageView.swift in Sources */,
 				DD51607620F304A00000B8DC /* MainNavigationController.swift in Sources */,
@@ -1638,7 +1633,6 @@
 				DD74031120FF637E00091B9D /* GameDetailViewController.swift in Sources */,
 				DDA4B0E02106BF75004346C5 /* GameDispatchModel.swift in Sources */,
 				DD5160A020F48F0F0000B8DC /* ExtraSizeLabel.swift in Sources */,
-				DDAACFF3213539F70074C5A5 /* ChannelEnum.swift in Sources */,
 				DDFB64532126C4A30036AE0F /* ThirdPartyService.swift in Sources */,
 				DD5160C420F5A2330000B8DC /* UserRequester.swift in Sources */,
 				DD51607B20F3082E0000B8DC /* R.generated.swift in Sources */,

@@ -11,7 +11,7 @@ import UIKit
 class SettingViewController: UIViewController {
 
     private weak var tableView: UITableView?
-    private let optionTitles = ["切换账号", "切换账号与安全", "关于Blockman GO", "清除缓存", "退出游戏"]
+    private let optionTitles = ["切换账号", "切换账号与安全", "关于Blockman GO", "清除缓存"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,7 @@ class SettingViewController: UIViewController {
         
         let backgroundView = UIImageView(image: R.image.general_alert_background()).addTo(superView: view).layout { (make) in
             make.center.equalToSuperview()
-            make.size.equalTo(CGSize(width: 296, height: 285))
+            make.size.equalTo(CGSize(width: 296, height: 240))
         }.configure { (imageView) in
             imageView.isUserInteractionEnabled = true
         }
