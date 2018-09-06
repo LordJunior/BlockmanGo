@@ -9,7 +9,7 @@
 import Foundation
 
 struct LoginModelManager {
-    func login(account: String, password: String, completion: @escaping (BlockHTTPResult<AuthTokenModel, BlockHTTPError>) -> Void) {
+    static func login(account: String, password: String, completion: @escaping (BlockHTTPResult<AuthTokenModel, BlockHTTPError>) -> Void) {
         UserRequester.login(account: account, password: password) { (result) in
             switch result {
             case .success(let response):

@@ -14,19 +14,19 @@ struct HomePageModelManager {
         return nickname ~= "^[a-zA-Z0-9]{6,12}$"
     }
     
-    func fetchUserProfile(completion: @escaping (BlockHTTPResult<ProfileModel, BlockHTTPError>) -> Void) {
+    static func fetchUserProfile(completion: @escaping (BlockHTTPResult<ProfileModel, BlockHTTPError>) -> Void) {
         UserRequester.fetchUserProfile { (result) in
             self.parseProfileResult(result, completion: completion)
         }
     }
     
-    func initializeProfile(nickname: String, gender: Gender, completion: @escaping (BlockHTTPResult<ProfileModel, BlockHTTPError>) -> Void) {
+    static func initializeProfile(nickname: String, gender: Gender, completion: @escaping (BlockHTTPResult<ProfileModel, BlockHTTPError>) -> Void) {
         UserRequester.initializeProfile(nickname: nickname, gender: gender.rawValue) { (result) in
             self.parseProfileResult(result, completion: completion)
         }
     }
     
-    private func parseProfileResult(_ result: BlockHTTPResult<[String : Any], BlockHTTPError>, completion: @escaping (BlockHTTPResult<ProfileModel, BlockHTTPError>) -> Void) {
+    private static func parseProfileResult(_ result: BlockHTTPResult<[String : Any], BlockHTTPError>, completion: @escaping (BlockHTTPResult<ProfileModel, BlockHTTPError>) -> Void) {
         switch result {
         case .success(let response):
             let profileModel = try! response.mapModel(ProfileModel.self)

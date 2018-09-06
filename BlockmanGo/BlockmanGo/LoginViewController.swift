@@ -18,6 +18,12 @@ class LoginViewController: UIViewController {
 
     weak var delegate: LoginViewControllerDelegate?
     
+    private enum SignPlatform: Int {
+        case facebook
+        case twitter
+        case google
+    }
+    
     private weak var accountTextField: UITextField?
     private weak var passwordTextField: UITextField?
     private weak var registerButton: UIButton?
@@ -27,8 +33,9 @@ class LoginViewController: UIViewController {
     private weak var facebookButton: AdjustLayoutButton?
     private weak var googleButton: AdjustLayoutButton?
     
-    private let loginManager = LoginModelManager()
     private var isAuthorizationExpired = false
+    private let googleSignInService = GoogleSignService()
+    private var facebookSignInService: FacebookSignService?
     
     deinit {
         print("LoginViewController deinit")
@@ -37,6 +44,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        googleSignInService.delegate = self
+        googleSignInService.uiDelegate = self
+        facebookSignInService = FacebookSignService(from: self)
+        facebookSignInService?.delegate = self
+        
         view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         if let (isExpired, loginControllerDelegate) = parameter as? (Bool, LoginViewControllerDelegate?) {
             isAuthorizationExpired = isExpired
@@ -137,20 +149,22 @@ class LoginViewController: UIViewController {
             button.padding = 5
             button.contentLayout = .imageTopTitleBottom
         }
-        twitterButton = AdjustLayoutButton().addTo(superView: containView).configure { (button) in
-            button.setImage(R.image.setting_Twitter(), for: .normal)
-            button.setTitle("Twitter", for: .normal)
-        }.configure(thirdLoginButtonConfig).layout { (make) in
-            make.top.equalTo(shadowContainView.snp.bottom).offset(20)
-            make.centerX.equalToSuperview()
-            make.size.equalTo(CGSize(width: 60, height: 60))
-        }
+//        twitterButton = AdjustLayoutButton().addTo(superView: containView).configure { (button) in
+//            button.setImage(R.image.setting_Twitter(), for: .normal)
+//            button.setTitle("Twitter", for: .normal)
+//        }.configure(thirdLoginButtonConfig).layout { (make) in
+//            make.top.equalTo(shadowContainView.snp.bottom).offset(20)
+//            make.centerX.equalToSuperview()
+//            make.size.equalTo(CGSize(width: 60, height: 60))
+//        }
         
         facebookButton = AdjustLayoutButton().addTo(superView: containView).configure { (button) in
             button.setImage(R.image.setting_Facebook(), for: .normal)
             button.setTitle("Facebook", for: .normal)
+            button.tag = SignPlatform.facebook.rawValue
+            button.addTarget(self, action: #selector(thirdSignButtonClicked(_:)), for: .touchUpInside)
         }.configure(thirdLoginButtonConfig).layout { (make) in
-            make.size.equalTo(twitterButton!)
+            make.size.equalTo(CGSize(width: 60, height: 60))
             make.top.equalTo(shadowContainView.snp.bottom).offset(20)
             make.centerX.equalToSuperview().multipliedBy(0.4)
         }
@@ -158,14 +172,16 @@ class LoginViewController: UIViewController {
         googleButton = AdjustLayoutButton().addTo(superView: containView).configure { (button) in
             button.setImage(R.image.setting_Google(), for: .normal)
             button.setTitle("Google+", for: .normal)
+            button.tag = SignPlatform.google.rawValue
+            button.addTarget(self, action: #selector(thirdSignButtonClicked(_:)), for: .touchUpInside)
         }.configure(thirdLoginButtonConfig).layout { (make) in
-            make.size.equalTo(twitterButton!)
+            make.size.equalTo(facebookButton!)
             make.top.equalTo(shadowContainView.snp.bottom).offset(20)
             make.centerX.equalToSuperview().multipliedBy(1.6)
         }
         
         containView.layout { (make) in
-            make.bottom.equalTo(twitterButton!.snp.bottom).offset(20)
+            make.bottom.equalTo(googleButton!.snp.bottom).offset(20)
         }
         
         addCloseButton(layout: { (make) in
@@ -185,6 +201,18 @@ class LoginViewController: UIViewController {
         
     }
     
+    @objc private func thirdSignButtonClicked(_ sender: AdjustLayoutButton) {
+        let platform = SignPlatform(rawValue: sender.tag)!
+        switch platform {
+        case .facebook:
+            facebookSignInService?.signIn()
+        case .google:
+            googleSignInService.signIn()
+        default:
+            break
+        }
+    }
+    
     @objc private func loginButtonClicked() {
         guard let account = accountTextField?.text, !account.isEmpty else {
             AlertController.alert(title: "请输入账号", message: nil, from: self)
@@ -195,7 +223,11 @@ class LoginViewController: UIViewController {
             return
         }
         BlockHUD.showLoading(inView: view)
-        loginManager.login(account: account, password: password) { [unowned self] (result) in
+        login(account: account, password: password)
+    }
+    
+    private func login(account: String, password: String) {
+        LoginModelManager.login(account: account, password: password) { [unowned self] (result) in
             BlockHUD.hide(forView: self.view)
             switch result {
             case .success(_):
@@ -209,5 +241,47 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
 }
+
+extension LoginViewController: GoogleSignServiceDelegate, GoogleSignServiceUIDelegate {
+    func sign(inWillDispath signIn: GoogleSignService) {
+        BlockHUD.showLoading(inView: view)
+    }
+    
+    func sign(_ signIn: GoogleSignService, present viewController: UIViewController) {
+        present(viewController, animated: true, completion: nil)
+    }
+    
+    func sign(_ signIn: GoogleSignService, dismiss viewController: UIViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func sign(_ signIn: GoogleSignService, didSignFor openID: String, token: String) {
+        login(account: openID, password: token)
+    }
+    
+    func signDidCanceled(_ signIn: GoogleSignService) {
+        BlockHUD.hide(forView: self.view)
+    }
+    
+    func sign(_ signIn: GoogleSignService, didSignFailed: Error) {
+        BlockHUD.hide(forView: self.view)
+        AlertController.alert(title: "授权失败，请重试", message: nil, from: self)
+    }
+}
+
+extension LoginViewController: FacebookSignServiceDelegate {
+    func signDidCanceled(_ signIn: FacebookSignService) {
+        BlockHUD.hide(forView: view)
+    }
+    
+    func sign(_ signIn: FacebookSignService, didSignFor openID: String, token: String) {
+        login(account: openID, password: token)
+    }
+    
+    func sign(_ signIn: FacebookSignService, didSignFailed: Error) {
+        BlockHUD.hide(forView: self.view)
+        AlertController.alert(title: "授权失败，请重试", message: nil, from: self)
+    }
+}
+

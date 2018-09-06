@@ -12,7 +12,6 @@ class HomePageViewController: UIViewController {
     
     private weak var accountInfoView: AccountInfoView?
     
-    private let homePageManager = HomePageModelManager()
     private var refreshAccountInfoObserver: NSObjectProtocol?
     
     deinit {
@@ -23,7 +22,7 @@ class HomePageViewController: UIViewController {
         super.viewDidLoad()
         
         refreshAccountInfoObserver = NotificationCenter.addObserver(notification: .refreshAccountInfo) { (_) in
-            self.refreshAccountInfoViewLayout()
+            self.fetchUserProfile()
         }
         
         DecorationControllerManager.shared.removeFromParent()
@@ -55,17 +54,7 @@ class HomePageViewController: UIViewController {
             make.right.equalToSuperview().inset(64)
         }
         
-        self.homePageManager.fetchUserProfile { [unowned self] (result) in
-            switch result {
-            case .success(let profile):
-                self.refreshAccountInfoViewLayout()
-                DecorationControllerManager.shared.setGender(profile.gender.rawValue)
-            case .failure(.profileNotExist): // 新用户，完善信息
-                TransitionManager.presentInNormalTransition(InitializeProfileViewController.self, parameter: self)
-            case .failure(let error):
-                self.defaultParseError(error)
-            }
-        }
+        fetchUserProfile()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -87,6 +76,20 @@ class HomePageViewController: UIViewController {
         super.viewDidAppear(animated)
         
         AnalysisService.trackEvent(.enter_homepage)
+    }
+    
+    private func fetchUserProfile() {
+        HomePageModelManager.fetchUserProfile { [unowned self] (result) in
+            switch result {
+            case .success(let profile):
+                self.refreshAccountInfoViewLayout()
+                DecorationControllerManager.shared.setGender(profile.gender.rawValue)
+            case .failure(.profileNotExist): // 新用户，完善信息
+                TransitionManager.presentInNormalTransition(InitializeProfileViewController.self, parameter: self)
+            case .failure(let error):
+                self.defaultParseError(error)
+            }
+        }
     }
     
     private func refreshAccountInfoViewLayout() {
@@ -131,7 +134,7 @@ extension HomePageViewController: InitializeProfileViewControllerDelegate {
             AlertController.alert(title: "请输入正确的昵称", message: nil, from: profileController)
             return
         }
-        homePageManager.initializeProfile(nickname: nickname, gender: profileController.gender) { [unowned self] (result) in
+        HomePageModelManager.initializeProfile(nickname: nickname, gender: profileController.gender) { [unowned self] (result) in
             switch result {
             case .success(_):
                 self.refreshAccountInfoViewLayout()

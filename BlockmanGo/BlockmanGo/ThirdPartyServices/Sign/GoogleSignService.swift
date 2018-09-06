@@ -18,6 +18,7 @@ protocol GoogleSignServiceUIDelegate: class {
 protocol GoogleSignServiceDelegate: class {
     func sign(_ signIn: GoogleSignService, didSignFor openID: String, token: String)
     func sign(_ signIn: GoogleSignService, didSignFailed: Error)
+    func signDidCanceled(_ signIn: GoogleSignService)
 }
 
 class GoogleSignService: NSObject {
@@ -61,7 +62,11 @@ extension GoogleSignService: GIDSignInUIDelegate {
 extension GoogleSignService: GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
-            delegate?.sign(self, didSignFailed: error)
+            if (error as NSError).code == -5 {
+                delegate?.signDidCanceled(self)
+            }else {
+                delegate?.sign(self, didSignFailed: error)
+            }
         } else {
             delegate?.sign(self, didSignFor: user.userID, token: user.authentication.idToken)
         }

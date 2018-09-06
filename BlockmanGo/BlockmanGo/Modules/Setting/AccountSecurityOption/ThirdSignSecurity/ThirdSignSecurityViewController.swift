@@ -144,7 +144,12 @@ extension ThirdSignSecurityViewController: GoogleSignServiceDelegate, GoogleSign
         bindThirdSign(openID: openID, token: token, platform: .google)
     }
     
+    func signDidCanceled(_ signIn: GoogleSignService) {
+        BlockHUD.hide(forView: self.view)
+    }
+    
     func sign(_ signIn: GoogleSignService, didSignFailed: Error) {
+        BlockHUD.hide(forView: self.view)
         AlertController.alert(title: "绑定失败，请重试", message: nil, from: self)
     }
 }
