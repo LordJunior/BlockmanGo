@@ -30,7 +30,7 @@ enum UserAPI {
     case sendBindEmailCaptcha(String)
     case bindThirdLogin(String, String, String)
     case unbindThirdLogin()
-    
+    case sendResetPasswordEmail(String)
     
     case registerInfo(nickname: String, gender: Int, picUrl: String, uid: String, token: String)
     case modifyNickname(String)
@@ -43,7 +43,7 @@ enum UserAPI {
     case bindPhone(String, verificationCode: String)
     case unbindPhone(String, verificationCode: String)
     case uploadImage(filePath: String, fileName: String, uid: String, token: String)
-    case sendResetPasswordEmail(String)
+    
     case fetchDailyTasks()
     case signInDailyTask(Int)
     case fetchRongToken()
@@ -99,6 +99,10 @@ extension UserAPI : TargetType {
         case .unbindThirdLogin():
             return "\(userPathPrefix)/api/v1/app/third-part/unbind"
             
+        case .sendResetPasswordEmail(_):
+            return "\(userPathPrefix)/api/\(apiVersion)/emails/password/reset"
+            
+            
             
             
         case .registerInfo(nickname: _, gender: _, picUrl: _, uid: _, token: _):
@@ -125,9 +129,6 @@ extension UserAPI : TargetType {
             
         case .uploadImage(filePath: _, fileName: _, uid: _, token: _):
             return ""
-
-        case .sendResetPasswordEmail(_):
-            return "\(userPathPrefix)/api/\(apiVersion)/emails/password/reset"
             
         case .fetchDailyTasks():
             return "\(userPathPrefix)/api/\(apiVersion)/users/new/daily/tasks"
@@ -185,6 +186,9 @@ extension UserAPI : TargetType {
         case .unbindThirdLogin():
             return .requestPlain
             
+        case let .sendResetPasswordEmail(email):
+            return .requestParameters(parameters: ["email" : email, "type" : "bg"], encoding: URLEncoding.queryString)
+            
             
             
             
@@ -228,9 +232,6 @@ extension UserAPI : TargetType {
             let formData = MultipartFormData(provider: .file(URL.init(fileURLWithPath: filePath)), name: "file", fileName: fileName, mimeType: "image/jpeg")
             return .uploadMultipart([formData])
             
-        case let .sendResetPasswordEmail(email):
-            return .requestParameters(parameters: ["email" : email], encoding: URLEncoding.queryString)
-            
         case .fetchDailyTasks(), .signInDailyTask(_):
             return .requestPlain
             
@@ -271,13 +272,16 @@ extension UserAPI : TargetType {
             header["userId"] = "\(UserManager.shared.userID)"
             header["Access-Token"] = UserManager.shared.accessToken
             return header
-            
-            
-        case .resetPassword(_, phone: _, verificationCode: _):
-            fallthrough
+         
         case .sendResetPasswordEmail(_):
             return nil
             
+            
+            
+            
+        case .resetPassword(_, phone: _, verificationCode: _):
+            return nil
+        
         case let .uploadImage(filePath: _, fileName: _, uid: uid, token: token), let .registerInfo(nickname: _, gender: _, picUrl: _, uid: uid, token: token):
             var header: [String : String] = [:]
             header["userId"] = uid

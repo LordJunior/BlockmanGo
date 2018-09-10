@@ -21,4 +21,15 @@ struct LoginModelManager {
             }
         }
     }
+    
+    static func resetPassword(byEmail mail: String, completion: @escaping (BlockHTTPResult<Void, BlockHTTPError>) -> Void) {
+        UserRequester.resetPassword(byEmail: mail) { (result) in
+            switch result {
+            case .success(_):
+                completion(.success(()))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
 }

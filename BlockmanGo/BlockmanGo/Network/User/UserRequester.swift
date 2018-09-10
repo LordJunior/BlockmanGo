@@ -59,6 +59,10 @@ struct UserRequester {
         Requester.requestWithTarget(UserAPI.unbindThirdLogin(), completion: completion)
     }
     
+    static func resetPassword(byEmail mail: String, completion: @escaping RequestJsonCallBack) {
+        Requester.requestWithTarget(UserAPI.sendResetPasswordEmail(mail), completion: completion)
+    }
+    
 //    class func registerInfo(nickname: String, picUrl: String, gender: Int, uid: String, token: String) -> Single<[String : Any]> {
 //        return NetServer.requestWithTarget(User.registerInfo(nickname: nickname, gender: gender, picUrl: picUrl, uid: uid, token: token))
 //    }
@@ -107,9 +111,7 @@ struct UserRequester {
 //    
 //
 //
-//    class func sendResetPasswordEmail(email: String) -> Single<[String : Any]> {
-//        return NetServer.requestWithTarget(User.sendResetPasswordEmail(email), showToast: true)
-//    }
+//
 //    
 //    class func fetchDailyTasks() -> Single<[String : Any]> {
 //        return NetServer.requestWithTarget(User.fetchDailyTasks(), showToast: false)

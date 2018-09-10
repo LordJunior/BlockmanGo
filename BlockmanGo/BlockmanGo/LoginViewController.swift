@@ -209,7 +209,22 @@ class LoginViewController: UIViewController {
     }
     
     @objc private func mailButtonClicked() {
-        
+        guard !UserManager.shared.mailInBinded.isEmpty else {
+            AlertController.alert(title: "该账号未绑定相关邮箱", message: nil, from: self)
+            return
+        }
+        BlockHUD.showLoading(inView: view)
+        LoginModelManager.resetPassword(byEmail: UserManager.shared.mailInBinded) { (result) in
+            BlockHUD.hide(forView: self.view)
+            switch result {
+            case .success(_):
+                AlertController.alert(title: "邮件已发送，请前往邮箱查看", message: nil, from: self)
+            case .failure(.emailNotBindToUser):
+                AlertController.alert(title: "该邮箱未绑定任何账号", message: nil, from: self)
+            case .failure(let error):
+                self.defaultParseError(error)
+            }
+        }
     }
     
     @objc private func thirdSignButtonClicked(_ sender: AdjustLayoutButton) {
