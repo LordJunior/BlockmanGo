@@ -60,7 +60,7 @@ class ClearCacheViewController: UIViewController {
             guard let cell = self.tableView?.cellForRow(at: IndexPath(row: 0, section: 1)) as? SettingOptionTableViewCell else {
                 return
             }
-            cell.optionTitle = self.optionTitles[1] + " (" + sizeText + ")"
+            cell.optionTitle = "地图缓存" + " (" + sizeText + ")"
         }
     }
 }

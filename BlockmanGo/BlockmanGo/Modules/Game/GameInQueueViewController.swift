@@ -30,6 +30,10 @@ class GameInQueueViewController: UIViewController {
     private weak var timer: Timer?
     private var time = 0
     
+    deinit {
+        print("GameInQueueViewController Deinit")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -83,10 +87,20 @@ class GameInQueueViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCallback), userInfo: nil, repeats: true)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        ternimateTimer()
+    }
+    
     @objc private func terminateButtonClick() {
+        ternimateTimer()
+        delegate?.gameInQueueViewControllerCancelButtonDidClicked(self)
+    }
+    
+    private func ternimateTimer() {
         timer?.invalidate()
         timer = nil
-        delegate?.gameInQueueViewControllerCancelButtonDidClicked(self)
     }
     
     @objc private func timerCallback() {
