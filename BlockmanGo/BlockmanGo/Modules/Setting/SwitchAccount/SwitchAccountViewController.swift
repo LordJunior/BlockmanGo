@@ -48,13 +48,14 @@ class SwitchAccountViewController: UIViewController {
             make.top.bottom.equalToSuperview().inset(20)
         }
         
-        accountTypeImageView = UIImageView(image: R.image.common_default_userimage()).addTo(superView: idContainView).layout(snapKitMaker: { (make) in
+        accountTypeImageView = UIImageView().addTo(superView: idContainView).layout(snapKitMaker: { (make) in
             make.left.equalToSuperview().offset(10)
             make.centerY.equalToSuperview()
             make.size.equalTo(CGSize(width: 34, height: 34))
         }).configure({ (imageView) in
             imageView.layer.cornerRadius = 12
             imageView.clipsToBounds = true
+            imageView.image = UIImage(named: UserManager.shared.loginPlatform == .app ? "common_default_userimage" : "general_" + UserManager.shared.loginPlatform.rawValue)
         })
         
         idLabel = UILabel().addTo(superView: idContainView).configure({ (label) in

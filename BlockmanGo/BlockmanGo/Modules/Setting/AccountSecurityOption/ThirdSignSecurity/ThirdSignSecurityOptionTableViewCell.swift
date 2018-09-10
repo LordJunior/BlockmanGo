@@ -14,13 +14,13 @@ class ThirdSignSecurityOptionTableViewCell: UITableViewCell {
         didSet {
             switch platform {
             case .facebook:
-                optionImageView?.image = R.image.setting_Facebook()
+                optionImageView?.image = R.image.general_facebook()
                 optionTitleLabel?.text = "Facebook"
             case .twitter:
-                optionImageView?.image = R.image.setting_Twitter()
+                optionImageView?.image = R.image.general_twitter()
                 optionTitleLabel?.text = "Twitter"
             case .google:
-                optionImageView?.image = R.image.setting_Google()
+                optionImageView?.image = R.image.general_google()
                 optionTitleLabel?.text = "Google+"
             default:
                 break
@@ -56,7 +56,7 @@ class ThirdSignSecurityOptionTableViewCell: UITableViewCell {
             make.left.equalToSuperview().offset(8)
             make.centerY.equalToSuperview()
         }.configure({ (imageView) in
-            imageView.image = R.image.setting_Facebook()
+            imageView.image = R.image.general_facebook()
         })
         
         optionTitleLabel = UILabel().addTo(superView: backgroundImageView!).configure({ (label) in

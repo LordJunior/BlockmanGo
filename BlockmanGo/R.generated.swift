@@ -905,6 +905,14 @@ struct R: Rswift.Validatable {
     static let general_button_background_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_button_background_selected")
     /// Image `general_close`.
     static let general_close = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_close")
+    /// Image `general_facebook_selected`.
+    static let general_facebook_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_facebook_selected")
+    /// Image `general_facebook`.
+    static let general_facebook = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_facebook")
+    /// Image `general_google_selected`.
+    static let general_google_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_google_selected")
+    /// Image `general_google`.
+    static let general_google = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_google")
     /// Image `general_option_selected`.
     static let general_option_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_option_selected")
     /// Image `general_option`.
@@ -913,6 +921,10 @@ struct R: Rswift.Validatable {
     static let general_recharge = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_recharge")
     /// Image `general_red_dot`.
     static let general_red_dot = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_red_dot")
+    /// Image `general_twitter_selected`.
+    static let general_twitter_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_twitter_selected")
+    /// Image `general_twitter`.
+    static let general_twitter = Rswift.ImageResource(bundle: R.hostingBundle, name: "general_twitter")
     /// Image `home_bottom_bar`.
     static let home_bottom_bar = Rswift.ImageResource(bundle: R.hostingBundle, name: "home_bottom_bar")
     /// Image `home_play`.
@@ -977,18 +989,6 @@ struct R: Rswift.Validatable {
     static let profile_name_tips = Rswift.ImageResource(bundle: R.hostingBundle, name: "profile_name_tips")
     /// Image `profile_random`.
     static let profile_random = Rswift.ImageResource(bundle: R.hostingBundle, name: "profile_random")
-    /// Image `setting_Facebook_selected`.
-    static let setting_Facebook_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_Facebook_selected")
-    /// Image `setting_Facebook`.
-    static let setting_Facebook = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_Facebook")
-    /// Image `setting_Google+_selected`.
-    static let setting_Google_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_Google+_selected")
-    /// Image `setting_Google+`.
-    static let setting_Google = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_Google+")
-    /// Image `setting_Twitter_selected`.
-    static let setting_Twitter_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_Twitter_selected")
-    /// Image `setting_Twitter`.
-    static let setting_Twitter = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_Twitter")
     /// Image `setting_checked`.
     static let setting_checked = Rswift.ImageResource(bundle: R.hostingBundle, name: "setting_checked")
     /// Image `setting_login_selected`.
@@ -1138,6 +1138,26 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.general_close, compatibleWith: traitCollection)
     }
     
+    /// `UIImage(named: "general_facebook", bundle: ..., traitCollection: ...)`
+    static func general_facebook(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.general_facebook, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "general_facebook_selected", bundle: ..., traitCollection: ...)`
+    static func general_facebook_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.general_facebook_selected, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "general_google", bundle: ..., traitCollection: ...)`
+    static func general_google(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.general_google, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "general_google_selected", bundle: ..., traitCollection: ...)`
+    static func general_google_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.general_google_selected, compatibleWith: traitCollection)
+    }
+    
     /// `UIImage(named: "general_option", bundle: ..., traitCollection: ...)`
     static func general_option(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.general_option, compatibleWith: traitCollection)
@@ -1156,6 +1176,16 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "general_red_dot", bundle: ..., traitCollection: ...)`
     static func general_red_dot(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.general_red_dot, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "general_twitter", bundle: ..., traitCollection: ...)`
+    static func general_twitter(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.general_twitter, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "general_twitter_selected", bundle: ..., traitCollection: ...)`
+    static func general_twitter_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.general_twitter_selected, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "home_bottom_bar", bundle: ..., traitCollection: ...)`
@@ -1321,36 +1351,6 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "setting", bundle: ..., traitCollection: ...)`
     static func setting(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.setting, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "setting_Facebook", bundle: ..., traitCollection: ...)`
-    static func setting_Facebook(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.setting_Facebook, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "setting_Facebook_selected", bundle: ..., traitCollection: ...)`
-    static func setting_Facebook_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.setting_Facebook_selected, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "setting_Google+", bundle: ..., traitCollection: ...)`
-    static func setting_Google(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.setting_Google, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "setting_Google+_selected", bundle: ..., traitCollection: ...)`
-    static func setting_Google_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.setting_Google_selected, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "setting_Twitter", bundle: ..., traitCollection: ...)`
-    static func setting_Twitter(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.setting_Twitter, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "setting_Twitter_selected", bundle: ..., traitCollection: ...)`
-    static func setting_Twitter_selected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.setting_Twitter_selected, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "setting_checked", bundle: ..., traitCollection: ...)`

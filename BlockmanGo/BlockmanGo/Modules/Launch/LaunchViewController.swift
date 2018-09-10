@@ -50,23 +50,24 @@ class LaunchViewController: UIViewController {
             button.contentLayout = .imageTopTitleBottom
         }
         
-        bulletinButton = AdjustLayoutButton().addTo(superView: view).configure({ (button) in
-            button.setImage(R.image.launch_bulletin(), for: .normal)
-            button.setTitle(R.string.localizable.bulletion(), for: .normal)
-            button.addTarget(self, action: #selector(bulletinButtonClicked), for: .touchUpInside)
-        }).configure(suspendButtonConfig).layout(snapKitMaker: { (make) in
-            make.size.equalTo(CGSize(width: 50, height: 46))
-            make.top.equalToSuperview().offset(15)
-            make.right.equalToSuperview().inset(8)
-        })
+//        bulletinButton = AdjustLayoutButton().addTo(superView: view).configure({ (button) in
+//            button.setImage(R.image.launch_bulletin(), for: .normal)
+//            button.setTitle(R.string.localizable.bulletion(), for: .normal)
+//            button.addTarget(self, action: #selector(bulletinButtonClicked), for: .touchUpInside)
+//        }).configure(suspendButtonConfig).layout(snapKitMaker: { (make) in
+//            make.size.equalTo(CGSize(width: 50, height: 46))
+//            make.top.equalToSuperview().offset(15)
+//            make.right.equalToSuperview().inset(8)
+//        })
         
         loginButton = AdjustLayoutButton().addTo(superView: view).configure({ (button) in
             button.setImage(R.image.setting_login(), for: .normal)
             button.setTitle(R.string.localizable.log_in(), for: .normal)
             button.addTarget(self, action: #selector(loginButtonClicked), for: .touchUpInside)
         }).configure(suspendButtonConfig).layout(snapKitMaker: { (make) in
-            make.size.right.equalTo(bulletinButton!)
-            make.top.equalTo(bulletinButton!.snp.bottom).offset(12)
+            make.size.right.equalTo(CGSize(width: 50, height: 46))
+//            make.top.equalTo(bulletinButton!.snp.bottom).offset(12)
+            make.top.equalToSuperview().offset(15)
         })
         
         logoImageView = UIImageView(image: R.image.launch_logo()).addTo(superView: view).layout { (make) in

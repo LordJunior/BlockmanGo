@@ -170,7 +170,7 @@ class LoginViewController: UIViewController {
 //        }
         
         facebookButton = AdjustLayoutButton().addTo(superView: containView).configure { (button) in
-            button.setImage(R.image.setting_Facebook(), for: .normal)
+            button.setImage(R.image.general_facebook(), for: .normal)
             button.setTitle("Facebook", for: .normal)
             button.tag = SignPlatform.facebook.rawValue
             button.addTarget(self, action: #selector(thirdSignButtonClicked(_:)), for: .touchUpInside)
@@ -181,7 +181,7 @@ class LoginViewController: UIViewController {
         }
         
         googleButton = AdjustLayoutButton().addTo(superView: containView).configure { (button) in
-            button.setImage(R.image.setting_Google(), for: .normal)
+            button.setImage(R.image.general_google(), for: .normal)
             button.setTitle("Google+", for: .normal)
             button.tag = SignPlatform.google.rawValue
             button.addTarget(self, action: #selector(thirdSignButtonClicked(_:)), for: .touchUpInside)
