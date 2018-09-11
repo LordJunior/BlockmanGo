@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         FacebookSignService.applicationDidBecomeActive(application)
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {

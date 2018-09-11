@@ -21,7 +21,7 @@ extension UIViewController: ClosableProtocol {
     
     private var closeHandler: ((UIButton) -> Void) {
         set {
-            objc_setAssociatedObject(self, &(UIViewController.closeHandlerKey), newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+            objc_setAssociatedObject(self, &(UIViewController.closeHandlerKey), newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
         
         get {

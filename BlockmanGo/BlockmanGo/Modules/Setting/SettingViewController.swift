@@ -13,6 +13,10 @@ class SettingViewController: UIViewController {
     private weak var tableView: UITableView?
     private let optionTitles = ["切换账号", "切换账号与安全", "关于Blockman GO", "清除缓存"]
     
+    deinit {
+        DebugLog("SettingViewController Deinit")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -106,7 +110,6 @@ extension SettingViewController: LoginViewControllerDelegate {
     
     func loginViewControllerDidLoginSuccessful(_ viewController: LoginViewController) {
         NotificationCenter.post(notification: .refreshAccountInfo)
-        TransitionManager.dismiss(animated: true) // 先dismiss LoginViewController
-        TransitionManager.dismiss(animated: true) // 再dismiss SettingViewController
+        TransitionManager.dismissToRootViewController(animated: true)
     }
 }

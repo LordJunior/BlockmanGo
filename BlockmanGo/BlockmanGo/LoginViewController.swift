@@ -49,7 +49,7 @@ class LoginViewController: UIViewController {
     private var facebookSignInService: FacebookSignService?
     
     deinit {
-        print("LoginViewController deinit")
+        DebugLog("LoginViewController deinit")
     }
     
     override func viewDidLoad() {
@@ -199,7 +199,7 @@ class LoginViewController: UIViewController {
             make.size.equalTo(closeButtonSize)
             make.top.equalTo(containView)
             make.left.equalTo(containView.snp.right).offset(5)
-        }) { _ in
+        }) { [unowned self] _ in
             self.delegate?.loginViewControllerDidCancel(self)
         }
     }

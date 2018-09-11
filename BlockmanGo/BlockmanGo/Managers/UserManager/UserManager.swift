@@ -18,7 +18,7 @@ class UserManager {
     private init() {
         initializeAuth()
         initializeProfile()
-        NotificationCenter.default.addObserver(self, selector: #selector(applicationWillTerminateCallback), name: NSNotification.Name.UIApplicationWillTerminate, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidEnterBackgroundCallback), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
     }
     
     deinit {
@@ -115,7 +115,7 @@ class UserManager {
         }
     }
     
-    @objc private func applicationWillTerminateCallback() {
+    @objc private func applicationDidEnterBackgroundCallback() {
         persistAuth()
         persistProfile()
     }

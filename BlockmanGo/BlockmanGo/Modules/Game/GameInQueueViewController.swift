@@ -31,7 +31,7 @@ class GameInQueueViewController: UIViewController {
     private var time = 0
     
     deinit {
-        print("GameInQueueViewController Deinit")
+        DebugLog("GameInQueueViewController Deinit")
     }
     
     override func viewDidLoad() {

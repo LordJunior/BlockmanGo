@@ -110,8 +110,7 @@ extension SwitchAccountViewController: LoginViewControllerDelegate {
     }
     
     func loginViewControllerDidLoginSuccessful(_ viewController: LoginViewController) {
-        TransitionManager.dismiss(animated: true) // 先dismiss LoginViewController
-        TransitionManager.dismiss(animated: true) { // 再dismiss SwitchAccountController
+        TransitionManager.dismissToRootViewController(animated: true) {
             TransitionManager.currentNavigationController()?.setViewControllers([HomePageViewController()], animated: false)
         }
     }

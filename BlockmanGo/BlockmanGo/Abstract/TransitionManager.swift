@@ -69,6 +69,14 @@ class TransitionManager: NSObject {
         }
     }
     
+    static func dismissToRootViewController(animated: Bool, completion: (() -> Void)? = nil) {
+        self.stack.popAllViewControllers()
+        self.stack.pushViewController(self.rootViewController)
+        
+        let appearViewController = self.stack.stackTopViewController
+        appearViewController?.dismiss(animated: true, completion: completion)
+    }
+    
     private static func controllerWithType(_ controllerType: UIViewController.Type, parameter: Any?) -> UIViewController {
         let controller = controllerType.init()
         controller.parameter = parameter
