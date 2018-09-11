@@ -2863,7 +2863,7 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let recharge_record_third_refund = Rswift.StringResource(key: "recharge_record_third_refund", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
-      /// Base translation: ThirdPart Bind
+      /// Base translation: ThirdPart Binding
       /// 
       /// Locales: en, Base, zh-Hans
       static let thirdpart_bind = Rswift.StringResource(key: "thirdpart_bind", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
@@ -5607,11 +5607,11 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("recharge_record_third_refund", bundle: R.hostingBundle, value: "Third-Party Payment Refund", comment: "")
       }
       
-      /// Base translation: ThirdPart Bind
+      /// Base translation: ThirdPart Binding
       /// 
       /// Locales: en, Base, zh-Hans
       static func thirdpart_bind(_: Void = ()) -> String {
-        return NSLocalizedString("thirdpart_bind", bundle: R.hostingBundle, value: "ThirdPart Bind", comment: "")
+        return NSLocalizedString("thirdpart_bind", bundle: R.hostingBundle, value: "ThirdPart Binding", comment: "")
       }
       
       /// Base translation: This account doesn't bind the email

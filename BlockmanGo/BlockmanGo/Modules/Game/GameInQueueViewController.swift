@@ -63,7 +63,6 @@ class GameInQueueViewController: UIViewController {
             label.textColor = R.clr.appColor._844501()
             label.font = UIFont.boldSize15
             label.numberOfLines = 0
-            label.text = "正在等待服务器分配资源\n00:00"
             label.textAlignment = .center
         }).layout(snapKitMaker: { (make) in
             make.top.equalToSuperview().offset(20)
@@ -107,7 +106,7 @@ class GameInQueueViewController: UIViewController {
         time += 1
         let minutes = time / 60
         let seconds = time % 60
-        let timeString = String(format: "正在等待服务器分配资源\n%02d:%02d", minutes, seconds)
+        let timeString = R.string.localizable.game_dispatch_in_queue_time(String(format: "%02d:%02d", minutes, seconds))
         inQueueTimeLabel?.text = timeString
         guard time % triggerInterval == 0 else {
             return
