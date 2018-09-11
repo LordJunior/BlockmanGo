@@ -54,7 +54,7 @@ class InitializeProfileViewController: UIViewController {
             button.isUserInteractionEnabled = false
             button.titleLabel?.font = UIFont.size12
             button.setTitleColor(R.clr.appColor._844501(), for: .normal)
-            button.setTitle("你已经成功登录，输入一个昵称吧", for: .normal)
+            button.setTitle(R.string.localizable.sign_in_successful_then_set_nickname(), for: .normal)
             button.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0)
         }
         
@@ -68,14 +68,14 @@ class InitializeProfileViewController: UIViewController {
         let inputNameLabel = UILabel().addTo(superView: profileContainView).configure { (label) in
             label.font = UIFont.size13
             label.textColor = R.clr.appColor._91660b()
-            label.text = "输入昵称:"
+            label.text = R.string.localizable.input_nickname()
         }.layout { (make) in
             make.left.equalToSuperview().offset(30)
             make.top.equalToSuperview().offset(20)
         }
         
         randomInputView = RandomInputView().addTo(superView: profileContainView).configure { (inputView) in
-            inputView.placeholder = "输入昵称"
+            inputView.placeholder = R.string.localizable.input_nickname()
             inputView.delegate = self
             inputView.dataSource = self
         }.layout { (make) in
@@ -87,7 +87,7 @@ class InitializeProfileViewController: UIViewController {
         let nicknameGuidelineLabel = UILabel().addTo(superView: profileContainView).configure { (label) in
             label.font = UIFont.size10
             label.textColor = R.clr.appColor._b17f63()
-            label.text = "6-16个英文字母或数字，不能纯数字"
+            label.text = R.string.localizable.six_to_twelve_digits_and_letters_not_pure_digits()
         }.layout { (make) in
             make.left.right.equalToSuperview().offset(35)
             make.top.equalTo(randomInputView!.snp.bottom).offset(3)
@@ -96,7 +96,7 @@ class InitializeProfileViewController: UIViewController {
         let switchGenderLabel = UILabel().addTo(superView: profileContainView).configure { (label) in
             label.font = UIFont.size13
             label.textColor = R.clr.appColor._91660b()
-            label.text = "选择性别:"
+            label.text = R.string.localizable.choose_gender()
             }.layout { (make) in
             make.left.equalToSuperview().offset(30)
             make.top.equalTo(nicknameGuidelineLabel.snp.bottom).offset(15)
@@ -125,7 +125,7 @@ class InitializeProfileViewController: UIViewController {
             button.setBackgroundImage(R.image.general_button_background_selected(), for: .normal)
             button.titleLabel?.font = UIFont.size14
             button.setTitleColor(R.clr.appColor._844501(), for: .normal)
-            button.setTitle("开始游戏", for: .normal)
+            button.setTitle(R.string.localizable.enter_game(), for: .normal)
             button.titleEdgeInsets = UIEdgeInsetsMake(-2, 0, 0, 0)
             button.addTarget(self, action: #selector(startButtonClicked), for: .touchUpInside)
         }.layout { (make) in

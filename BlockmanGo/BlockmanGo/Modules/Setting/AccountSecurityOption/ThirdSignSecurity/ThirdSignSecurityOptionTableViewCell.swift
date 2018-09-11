@@ -30,7 +30,7 @@ class ThirdSignSecurityOptionTableViewCell: UITableViewCell {
     
     var isBinding: Bool = false {
         didSet {
-            optionStatusButton?.setTitle(isBinding ? "解绑" : "绑定", for: .normal)
+            optionStatusButton?.setTitle(isBinding ? R.string.localizable.unbind() : R.string.localizable.bind(), for: .normal)
             optionStatusButton?.backgroundColor = isBinding ? R.clr.appColor._d3b26c() : R.clr.appColor._ff8839()
         }
     }
@@ -62,7 +62,6 @@ class ThirdSignSecurityOptionTableViewCell: UITableViewCell {
         optionTitleLabel = UILabel().addTo(superView: backgroundImageView!).configure({ (label) in
             label.textColor = R.clr.appColor._844501()
             label.font = UIFont.size13
-            label.text = "垃圾游戏"
         }).layout(snapKitMaker: { (make) in
             make.left.equalTo(optionImageView!.snp.right).offset(10)
             make.centerY.equalToSuperview()

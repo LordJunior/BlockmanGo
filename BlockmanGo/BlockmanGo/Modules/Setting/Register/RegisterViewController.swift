@@ -39,7 +39,7 @@ class RegisterViewController: UIViewController {
             label.font = UIFont.size12
             label.layer.cornerRadius = 12
             label.clipsToBounds = true
-            label.text = "注册成功，请设置密码"
+            label.text = R.string.localizable.register_succeed_then_set_password()
             label.contentInset = UIEdgeInsetsMake(0, 10, 0, 0)
         }.layout { (make) in
             make.left.right.top.equalToSuperview().inset(20)
@@ -54,14 +54,14 @@ class RegisterViewController: UIViewController {
             make.left.right.bottom.equalToSuperview().inset(20)
         }
         
-        passwordTextfield = CommonTextField(placeHolder: "输入密码").addTo(superView: inputPasswordContainView).layout(snapKitMaker: { (make) in
+        passwordTextfield = CommonTextField(placeHolder: R.string.localizable.input_password()).addTo(superView: inputPasswordContainView).layout(snapKitMaker: { (make) in
             make.left.right.top.equalToSuperview().inset(10)
             make.height.equalTo(40)
         }).configure({ (textField) in
             textField.isSecureTextEntry = true
         })
         
-        confirmPasswordTextfield = CommonTextField(placeHolder: "确认密码").addTo(superView: inputPasswordContainView).layout(snapKitMaker: { (make) in
+        confirmPasswordTextfield = CommonTextField(placeHolder: R.string.localizable.confirm_password()).addTo(superView: inputPasswordContainView).layout(snapKitMaker: { (make) in
             make.left.right.equalToSuperview().inset(10)
             make.height.equalTo(40)
             make.top.equalTo(passwordTextfield!.snp.bottom).offset(5)
@@ -72,7 +72,7 @@ class RegisterViewController: UIViewController {
         ExtraSizeLabel().addTo(superView: inputPasswordContainView).configure { (label) in
             label.textColor = R.clr.appColor._b17f63()
             label.font = UIFont.size11
-            label.text = "6-16个英文字母或数字"
+            label.text = R.string.localizable.six_to_twelve_digits_or_letters()
         }.layout { (make) in
             make.left.right.equalToSuperview().inset(10)
             make.top.equalTo(confirmPasswordTextfield!.snp.bottom).offset(3)

@@ -23,17 +23,17 @@ class PasswordSecurityViewController: UIViewController {
         view.backgroundColor = R.clr.appColor._eed5a0()
         view.layer.cornerRadius = 12
         
-        originPasswordTextField = CommonTextField(placeHolder: "输入密码").addTo(superView: view).layout(snapKitMaker: { (make) in
+        originPasswordTextField = CommonTextField(placeHolder: R.string.localizable.input_password()).addTo(superView: view).layout(snapKitMaker: { (make) in
             make.left.top.right.equalToSuperview().inset(10)
             make.height.equalTo(40)
         })
         
-        newPasswordTextField = CommonTextField(placeHolder: "重复密码").addTo(superView: view).layout(snapKitMaker: { (make) in
+        newPasswordTextField = CommonTextField(placeHolder: R.string.localizable.double_input_new_password()).addTo(superView: view).layout(snapKitMaker: { (make) in
             make.size.centerX.equalTo(originPasswordTextField!)
             make.top.equalTo(originPasswordTextField!.snp.bottom).offset(5)
         })
         
-        operationButton = CommonButton(title: "设置密码").addTo(superView: view).layout(snapKitMaker: { (make) in
+        operationButton = CommonButton(title: R.string.localizable.set_password()).addTo(superView: view).layout(snapKitMaker: { (make) in
             make.size.equalTo(CGSize(width: 212, height: 42))
             make.centerX.equalToSuperview()
             make.bottom.equalToSuperview().inset(10)
@@ -49,19 +49,19 @@ class PasswordSecurityViewController: UIViewController {
     @objc private func operationButtonClicked() {
         if UserManager.shared.passwordIfHave() { // 已设置过密码，更新密码
             guard let password = originPasswordTextField?.text, !password.isEmpty else {
-                AlertController.alert(title: "请输入原密码", message: nil, from: self)
+                AlertController.alert(title: R.string.localizable.input_origin_password(), message: nil, from: self)
                 return
             }
             guard let newPassword = newPasswordTextField?.text, !newPassword.isEmpty else {
-                AlertController.alert(title: "请输入新密码", message: nil, from: self)
+                AlertController.alert(title: R.string.localizable.input_new_password(), message: nil, from: self)
                 return
             }
             guard RegexMatcher.match(password: newPassword) else {
-                AlertController.alert(title: "密码不合法，请重新输入", message: nil, from: self)
+                AlertController.alert(title: R.string.localizable.password_format_not_valid(), message: nil, from: self)
                 return
             }
             guard newPassword == confirmPasswordTextField?.text else {
-                AlertController.alert(title: "密码不匹配，请检查", message: nil, from: self)
+                AlertController.alert(title: R.string.localizable.password_not_match(), message: nil, from: self)
                 return
             }
             
@@ -79,15 +79,15 @@ class PasswordSecurityViewController: UIViewController {
             }
         }else {
             guard let password = originPasswordTextField?.text, !password.isEmpty else {
-                AlertController.alert(title: "请输入密码", message: nil, from: self)
+                AlertController.alert(title: R.string.localizable.input_password(), message: nil, from: self)
                 return
             }
             guard RegexMatcher.match(password: password) else {
-                AlertController.alert(title: "密码不合法，请重新输入", message: nil, from: self)
+                AlertController.alert(title: R.string.localizable.password_format_not_valid(), message: nil, from: self)
                 return
             }
             guard password == newPasswordTextField?.text else {
-                AlertController.alert(title: "密码不匹配，请检查", message: nil, from: self)
+                AlertController.alert(title: R.string.localizable.password_not_match(), message: nil, from: self)
                 return
             }
             
@@ -96,7 +96,7 @@ class PasswordSecurityViewController: UIViewController {
                 BlockHUD.hide(forView: self.view)
                 switch result {
                 case .success(_):
-                    AlertController.alert(title: "设置成功", message: nil, from: TransitionManager.rootViewController)
+                    AlertController.alert(title: R.string.localizable.common_success(), message: nil, from: TransitionManager.rootViewController)
                     UserManager.shared.didSetPassword() /// 设置密码
                     self.refreshToModifyPasswordUI()
                     self.clearText()
@@ -114,10 +114,10 @@ class PasswordSecurityViewController: UIViewController {
     }
     
     private func refreshToModifyPasswordUI() {
-        originPasswordTextField?.placeholder = "输入旧密码"
-        newPasswordTextField?.placeholder = "输入新密码"
-        operationButton?.setTitle("确认修改", for: .normal)
-        confirmPasswordTextField = CommonTextField(placeHolder: "重复新密码").addTo(superView: view).layout(snapKitMaker: { (make) in
+        originPasswordTextField?.placeholder = R.string.localizable.input_origin_password()
+        newPasswordTextField?.placeholder = R.string.localizable.input_new_password()
+        operationButton?.setTitle(R.string.localizable.tribe_modify_information(), for: .normal)
+        confirmPasswordTextField = CommonTextField(placeHolder: R.string.localizable.double_input_new_password()).addTo(superView: view).layout(snapKitMaker: { (make) in
             make.size.centerX.equalTo(newPasswordTextField!)
             make.top.equalTo(newPasswordTextField!.snp.bottom).offset(5)
         })

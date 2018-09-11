@@ -79,7 +79,7 @@ class LoginViewController: UIViewController {
                 label.backgroundColor = R.clr.appColor._ed8b74()
                 label.textColor = UIColor.white
                 label.font = UIFont.size12
-                label.text = "登录状态已经失效，请重新登录！"
+                label.text = R.string.localizable.authorization_expired_then_resign()
                 label.layer.cornerRadius = 12
                 label.clipsToBounds = true
                 label.contentInset = UIEdgeInsetsMake(0, 10, 0, 0)
@@ -91,7 +91,7 @@ class LoginViewController: UIViewController {
             topLabel = UILabel().addTo(superView: containView).configure { (label) in
                 label.textColor = R.clr.appColor._844501()
                 label.font = UIFont.size13
-                label.text = "当前ID: \(UserManager.shared.userID)"
+                label.text = R.string.localizable.current_ID() + "\(UserManager.shared.userID)"
             }.layout { (make) in
                 make.left.top.equalToSuperview().offset(20)
             }
@@ -106,14 +106,14 @@ class LoginViewController: UIViewController {
             make.height.equalTo(192)
         }
         
-        accountTextField = CommonTextField(placeHolder: "输入账号/ID").addTo(superView: shadowContainView).layout(snapKitMaker: { (make) in
+        accountTextField = CommonTextField(placeHolder: R.string.localizable.input_account_and_id()).addTo(superView: shadowContainView).layout(snapKitMaker: { (make) in
             make.left.right.top.equalToSuperview().inset(10)
             make.height.equalTo(40)
         }).configure({ (textField) in
             textField.text = "\(UserManager.shared.userID)"
         })
         
-        passwordTextField = CommonTextField(placeHolder: "输入密码").addTo(superView: shadowContainView).configure({ (textfield) in
+        passwordTextField = CommonTextField(placeHolder: R.string.localizable.input_password()).addTo(superView: shadowContainView).configure({ (textfield) in
             textfield.isSecureTextEntry = true
         }).layout(snapKitMaker: { (make) in
             make.top.equalTo(accountTextField!.snp.bottom).offset(5)
@@ -127,7 +127,7 @@ class LoginViewController: UIViewController {
             button.setTitleColor(UIColor.white, for: .normal)
         }
         registerButton = UIButton().addTo(superView: shadowContainView).configure(buttonConfig).configure({ (button) in
-            button.setTitle("账号注册", for: .normal)
+            button.setTitle(R.string.localizable.register_account(), for: .normal)
             button.addTarget(self, action: #selector(registerButtonClicked), for: .touchUpInside)
         }).layout(snapKitMaker: { (make) in
             make.top.equalTo(passwordTextField!.snp.bottom).offset(7)
@@ -137,7 +137,7 @@ class LoginViewController: UIViewController {
         })
         
         mailButton = UIButton().addTo(superView: shadowContainView).configure(buttonConfig).configure({ (button) in
-            button.setTitle("邮箱找回", for: .normal)
+            button.setTitle(R.string.localizable.forget_password_find_by_mail(), for: .normal)
             button.addTarget(self, action: #selector(mailButtonClicked), for: .touchUpInside)
         }).layout(snapKitMaker: { (make) in
             make.top.equalTo(passwordTextField!.snp.bottom).offset(7)
@@ -210,7 +210,7 @@ class LoginViewController: UIViewController {
     
     @objc private func mailButtonClicked() {
         guard !UserManager.shared.mailInBinded.isEmpty else {
-            AlertController.alert(title: "该账号未绑定相关邮箱", message: nil, from: self)
+            AlertController.alert(title: R.string.localizable.account_not_bind_mail(), message: nil, from: self)
             return
         }
         BlockHUD.showLoading(inView: view)
@@ -218,9 +218,9 @@ class LoginViewController: UIViewController {
             BlockHUD.hide(forView: self.view)
             switch result {
             case .success(_):
-                AlertController.alert(title: "邮件已发送，请前往邮箱查看", message: nil, from: self)
+                AlertController.alert(title: R.string.localizable.send_success_check_mail(), message: nil, from: self)
             case .failure(.emailNotBindToUser):
-                AlertController.alert(title: "该邮箱未绑定任何账号", message: nil, from: self)
+                AlertController.alert(title: R.string.localizable.email_not_bind_user(), message: nil, from: self)
             case .failure(let error):
                 self.defaultParseError(error)
             }
@@ -231,7 +231,7 @@ class LoginViewController: UIViewController {
         let currentPlatform = UserManager.shared.loginPlatform /// 全局的一个登录平台枚举
         let buttonPlatform = SignPlatform(rawValue: sender.tag)! /// 当前类里的登录平台枚举，用于做button的tag
         guard currentPlatform != .app, currentPlatform == buttonPlatform.toSignInPlatform else {
-            AlertController.alert(title: "请先绑定才能用于登录", message: nil, from: self)
+            AlertController.alert(title: R.string.localizable.please_bind_first(), message: nil, from: self)
             return
         }
         switch buttonPlatform {
@@ -246,11 +246,11 @@ class LoginViewController: UIViewController {
     
     @objc private func loginButtonClicked() {
         guard let account = accountTextField?.text, !account.isEmpty else {
-            AlertController.alert(title: "请输入账号", message: nil, from: self)
+            AlertController.alert(title: R.string.localizable.input_account_and_id(), message: nil, from: self)
             return
         }
         guard let password = passwordTextField?.text, !password.isEmpty else {
-            AlertController.alert(title: "请输入密码", message: nil, from: self)
+            AlertController.alert(title: R.string.localizable.input_password(), message: nil, from: self)
             return
         }
         BlockHUD.showLoading(inView: view)
@@ -305,7 +305,7 @@ extension LoginViewController: GoogleSignServiceDelegate, GoogleSignServiceUIDel
     
     func sign(_ signIn: GoogleSignService, didSignFailed: Error) {
         BlockHUD.hide(forView: self.view)
-        AlertController.alert(title: "授权失败，请重试", message: nil, from: self)
+        AlertController.alert(title: R.string.localizable.authorize_failed(), message: nil, from: self)
     }
 }
 
@@ -320,7 +320,7 @@ extension LoginViewController: FacebookSignServiceDelegate {
     
     func sign(_ signIn: FacebookSignService, didSignFailed: Error) {
         BlockHUD.hide(forView: self.view)
-        AlertController.alert(title: "授权失败，请重试", message: nil, from: self)
+        AlertController.alert(title: R.string.localizable.authorize_failed(), message: nil, from: self)
     }
 }
 

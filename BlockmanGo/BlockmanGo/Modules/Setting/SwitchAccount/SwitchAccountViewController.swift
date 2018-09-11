@@ -70,7 +70,7 @@ class SwitchAccountViewController: UIViewController {
         nicknameLabel = UILabel().addTo(superView: idContainView).configure({ (label) in
             label.font = UIFont.size12
             label.textColor = R.clr.appColor._aaaaaa()
-            label.text = UserManager.shared.nickname.isEmpty ? nil : "昵称: \(UserManager.shared.nickname)"
+            label.text = UserManager.shared.nickname.isEmpty ? nil : R.string.localizable.nickname() + UserManager.shared.nickname
         }).layout(snapKitMaker: { (make) in
             make.left.equalTo(idLabel!)
             make.top.equalTo(idLabel!.snp.bottom).offset(5)
@@ -82,7 +82,7 @@ class SwitchAccountViewController: UIViewController {
             make.centerY.equalToSuperview()
         }
         
-        CommonButton(title: "切换账号").addTo(superView: containView).configure { (button) in
+        CommonButton(title: R.string.localizable.switch_account()).addTo(superView: containView).configure { (button) in
             button.addTarget(self, action: #selector(switchAccountButtonClicked), for: .touchUpInside)
         }.layout { (make) in
             make.size.equalTo(CGSize(width: 212, height: 42))

@@ -46,7 +46,7 @@ class ThirdSignSecurityViewController: UIViewController {
         UILabel().addTo(superView: view).configure { (label) in
             label.textColor = R.clr.appColor._a36b2e()
             label.font = UIFont.size11
-            label.text = "绑定以后，你可以使用快捷登录"
+            label.text = R.string.localizable.can_signin_directly_after_bind()
         }.layout { (make) in
             make.centerX.equalToSuperview()
             make.bottom.equalToSuperview().inset(10)
@@ -68,10 +68,10 @@ class ThirdSignSecurityViewController: UIViewController {
             BlockHUD.hide(forView: self.view)
             switch result {
             case .success(_):
-                AlertController.alert(title: "绑定成功", message: nil, from: self)
+                AlertController.alert(title: R.string.localizable.bind_success(), message: nil, from: self)
                 self.tableView?.reloadData() // 刷新界面
             case .failure(.thirdPartAccountAlreadyBindUser):
-                AlertController.alert(title: "该\(platform.rawValue)账号已经绑定过其他游戏账号", message: nil, from: self)
+                AlertController.alert(title: R.string.localizable.the_thirdpart_account_has_bound_another_account(platform.rawValue), message: nil, from: self)
             case .failure(let error):
                 self.defaultParseError(error)
             }
@@ -83,7 +83,7 @@ class ThirdSignSecurityViewController: UIViewController {
             BlockHUD.hide(forView: self.view)
             switch result {
             case .success(_):
-                AlertController.alert(title: "解绑成功", message: nil, from: self)
+                AlertController.alert(title: R.string.localizable.unbind_successful(), message: nil, from: self)
                 self.tableView?.reloadData() // 刷新界面
             case .failure(let error):
                 self.defaultParseError(error)
@@ -114,15 +114,15 @@ extension ThirdSignSecurityViewController: UITableViewDataSource, UITableViewDel
             return
         }
         if optionCell.isBinding {
-            AlertController.alert(title: "是否解除当前绑定?", message: nil, from: self, showCancelButton: true)?.done(completion: { _ in
+            AlertController.alert(title: R.string.localizable.release_the_current_binding(), message: nil, from: self, showCancelButton: true)?.done(completion: { _ in
                 self.unbindThirdLogin()
             })
         }else if UserManager.shared.loginPlatform == .app { // 当前账号未绑定第三方
-            AlertController.alert(title: "是否绑定?", message: "绑定以后，您可用于快捷登录", from: self, showCancelButton: true)?.done(completion: { _ in
+            AlertController.alert(title: R.string.localizable.is_it_bound(), message: R.string.localizable.can_signin_directly_after_bind(), from: self, showCancelButton: true)?.done(completion: { _ in
                 self.bindThirdLogin(platform: optionCell.platform)
             })
         }else { // 当前账号已绑定过其他第三方
-            AlertController.alert(title: "请先解除原有的绑定", message: nil, from: self)
+            AlertController.alert(title: R.string.localizable.please_undo_the_original_binding(), message: nil, from: self)
         }
     }
 }
@@ -150,7 +150,7 @@ extension ThirdSignSecurityViewController: GoogleSignServiceDelegate, GoogleSign
     
     func sign(_ signIn: GoogleSignService, didSignFailed: Error) {
         BlockHUD.hide(forView: self.view)
-        AlertController.alert(title: "绑定失败，请重试", message: nil, from: self)
+        AlertController.alert(title: R.string.localizable.bind_failed(), message: nil, from: self)
     }
 }
 
@@ -165,6 +165,6 @@ extension ThirdSignSecurityViewController: FacebookSignServiceDelegate {
     
     func sign(_ signIn: FacebookSignService, didSignFailed: Error) {
         BlockHUD.hide(forView: self.view)
-        AlertController.alert(title: "绑定失败，请重试", message: nil, from: self)
+        AlertController.alert(title: R.string.localizable.bind_failed(), message: nil, from: self)
     }
 }

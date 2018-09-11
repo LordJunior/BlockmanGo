@@ -7,13 +7,13 @@
 */
 
 /* 关于Blocky Mods */
-"about_me" = "About Blockman go";
+"about_me" = "About Blockman GO";
 
 /* 账号: */
 "account" = "Account";
 
 /* 账号与安全 */
-"account_and_security" = "Account and security";
+"account_and_security" = "Account and Security";
 
 /* 账号格式不正确 */
 "account_format_not_valid" = "Format is incorrect";
@@ -28,7 +28,7 @@
 "appreciate" = "Likes";
 
 /* 绑定成功 */
-"bind_success" = "Bind_success";
+"bind_success" = "Bind successful";
 
 /* 生日 */
 "birthday" = "Birthday";
@@ -219,7 +219,7 @@
 "next_step" = "Next";
 
 /* 昵称 */
-"nickname" = "Nickname";
+"nickname" = "Nickname: ";
 
 /* 头像 */
 "portrait" = "Portrait";
@@ -956,3 +956,65 @@
 "mode" = "mode";
 
 "bulletion" = "Board";
+
+"switch_account" = "Switch Account";
+
+"current_ID" = "Current ID: ";
+
+"input_account_and_id" = "Input account or id";
+
+"input_password" = "Input password";
+
+"register_account" = "Register";
+
+"forget_password_find_by_mail" = "Forget?";
+
+"register_succeed_then_set_password" = "Register Successful! Please set password.";
+
+"authorization_expired_then_resign" = "Authorization expired. Please Resign in";
+
+"please_bind_first" = "Please bind first.";
+
+"authorize_failed" = "Authorize failed. Please retry";
+
+"set_password" = "Set Password";
+
+"email_bind" = "Mailbox Binding";
+
+"thirdpart_bind" = "ThirdPart Binding";
+
+"captcha" = "captcha";
+
+"send_capthca" = "Send Captcha";
+
+"bind" = "Bind";
+
+"unbind" = "Unbind";
+
+"can_signin_directly_after_bind" = "You can login conveniently after binding.";
+
+"not_set_password_switch_will_lost" = "The account is not set with a password. Switching will cause the current account to be lost. Do you want to continue?";
+
+"account_not_bind_mail" = "This account doesn't bind the email";
+
+"dont_want_it" = "I don't want";
+
+"unbind_successful" = "Unbind Successful";
+
+"the_thirdpart_account_has_bound_another_account" = "The %@ account has been bound to another account.";
+
+"release_the_current_binding" = "Is the current binding released?";
+
+"is_it_bound" = "Is it bound?";
+
+"please_undo_the_original_binding" = "Please undo the original binding first.";
+
+"bind_failed" = "Bind Failed";
+
+"six_to_twelve_digits_or_letters" = "6-16 letters or numbers";
+
+"sign_in_successful_then_set_nickname" = "Sign in successful! Please set nickname first.";
+
+"six_to_twelve_digits_and_letters_not_pure_digits" = "6-16 letters and numbers, not pure numbers";
+
+"choose_gender" = "Choose gender";

@@ -11,7 +11,7 @@ import UIKit
 class ClearCacheViewController: UIViewController {
     
     private weak var tableView: UITableView?
-    private let optionTitles = ["图片缓存 (0.0M)", "地图缓存 (0.0M)"]
+    private let optionTitles = [R.string.localizable.image_cache() + " (0.0M)", R.string.localizable.map_cache() + " (0.0M)"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,14 +53,14 @@ class ClearCacheViewController: UIViewController {
             guard let cell = self.tableView?.cellForRow(at: IndexPath(row: 0, section: 0)) as? SettingOptionTableViewCell else {
                 return
             }
-            cell.optionTitle = "图片缓存" + " (" + sizeText + ")"
+            cell.optionTitle = R.string.localizable.image_cache() + " (" + sizeText + ")"
         }
         
         ClearCacheModuleManager.calculateMapCacheSize { (sizeText) in
             guard let cell = self.tableView?.cellForRow(at: IndexPath(row: 0, section: 1)) as? SettingOptionTableViewCell else {
                 return
             }
-            cell.optionTitle = "地图缓存" + " (" + sizeText + ")"
+            cell.optionTitle = R.string.localizable.map_cache() + " (" + sizeText + ")"
         }
     }
 }

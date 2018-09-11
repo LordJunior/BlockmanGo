@@ -1433,7 +1433,7 @@ struct R: Rswift.Validatable {
   
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 388 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 418 localization keys.
     struct localizable {
       /// Base translation:    Friend list(%d/%d)
       /// 
@@ -1467,11 +1467,19 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let vip_mvp_discount = Rswift.StringResource(key: "vip_mvp_discount", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: 6-16 letters and numbers, not pure numbers
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let six_to_twelve_digits_and_letters_not_pure_digits = Rswift.StringResource(key: "six_to_twelve_digits_and_letters_not_pure_digits", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: 6-16 letters or numbers
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let six_to_twelve_digits_or_letters = Rswift.StringResource(key: "six_to_twelve_digits_or_letters", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: AVG
       /// 
       /// Locales: en, Base, zh-Hans
       static let category_adventure = Rswift.StringResource(key: "category_adventure", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
-      /// Base translation: About Blockman go
+      /// Base translation: About Blockman GO
       /// 
       /// Locales: en, Base, zh-Hans
       static let about_me = Rswift.StringResource(key: "about_me", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
@@ -1495,7 +1503,7 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let account_name = Rswift.StringResource(key: "account_name", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
-      /// Base translation: Account and security
+      /// Base translation: Account and Security
       /// 
       /// Locales: en, Base, zh-Hans
       static let account_and_security = Rswift.StringResource(key: "account_and_security", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
@@ -1571,10 +1579,18 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let mail_attachment = Rswift.StringResource(key: "mail_attachment", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Authorization expired. Please Resign in
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let authorization_expired_then_resign = Rswift.StringResource(key: "authorization_expired_then_resign", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Authorization fail, please log in
       /// 
       /// Locales: en, Base, zh-Hans
       static let authorization_fail_log_in = Rswift.StringResource(key: "authorization_fail_log_in", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Authorize failed. Please retry
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let authorize_failed = Rswift.StringResource(key: "authorize_failed", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Avartas shop
       /// 
       /// Locales: en, Base, zh-Hans
@@ -1611,7 +1627,15 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let decoration_bill = Rswift.StringResource(key: "decoration_bill", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
-      /// Base translation: Bind_success
+      /// Base translation: Bind
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let bind = Rswift.StringResource(key: "bind", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Bind Failed
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let bind_failed = Rswift.StringResource(key: "bind_failed", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Bind successful
       /// 
       /// Locales: en, Base, zh-Hans
       static let bind_success = Rswift.StringResource(key: "bind_success", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
@@ -1699,6 +1723,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let tribe_list_chief = Rswift.StringResource(key: "tribe_list_chief", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Choose gender
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let choose_gender = Rswift.StringResource(key: "choose_gender", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Clan information
       /// 
       /// Locales: en, Base, zh-Hans
@@ -1783,6 +1811,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let tribe_create_tribe_successful = Rswift.StringResource(key: "tribe_create_tribe_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Current ID: 
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let current_ID = Rswift.StringResource(key: "current_ID", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Customer service
       /// 
       /// Locales: en, Base, zh-Hans
@@ -1919,6 +1951,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let forget_password = Rswift.StringResource(key: "forget_password", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Forget?
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let forget_password_find_by_mail = Rswift.StringResource(key: "forget_password_find_by_mail", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Format is incorrect
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2023,6 +2059,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let tribe_retain = Rswift.StringResource(key: "tribe_retain", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: I don't want
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let dont_want_it = Rswift.StringResource(key: "dont_want_it", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Images  Cache
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2039,6 +2079,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let tribe_task_personal = Rswift.StringResource(key: "tribe_task_personal", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Input account or id
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let input_account_and_id = Rswift.StringResource(key: "input_account_and_id", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Input email
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2055,6 +2099,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let input_origin_password = Rswift.StringResource(key: "input_origin_password", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Input password
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let input_password = Rswift.StringResource(key: "input_password", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Input verification code
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2099,6 +2147,14 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let tribe_notice_invite_you_to_join = Rswift.StringResource(key: "tribe_notice_invite_you_to_join", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Is it bound?
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let is_it_bound = Rswift.StringResource(key: "is_it_bound", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Is the current binding released?
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let release_the_current_binding = Rswift.StringResource(key: "release_the_current_binding", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Jail Break
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2183,6 +2239,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let mailbox = Rswift.StringResource(key: "mailbox", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Mailbox Binding
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let email_bind = Rswift.StringResource(key: "email_bind", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Male
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2275,10 +2335,6 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let next_step = Rswift.StringResource(key: "next_step", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
-      /// Base translation: Nickname
-      /// 
-      /// Locales: en, Base, zh-Hans
-      static let nickname = Rswift.StringResource(key: "nickname", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Nickname can not modify now
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2291,6 +2347,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let the_nickname_not_valid = Rswift.StringResource(key: "the_nickname_not_valid", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Nickname: 
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let nickname = Rswift.StringResource(key: "nickname", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: No authority
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2451,6 +2511,14 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let play_game_after_login = Rswift.StringResource(key: "play_game_after_login", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Please bind first.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let please_bind_first = Rswift.StringResource(key: "please_bind_first", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Please undo the original binding first.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let please_undo_the_original_binding = Rswift.StringResource(key: "please_undo_the_original_binding", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Popular
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2575,6 +2643,14 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let register = Rswift.StringResource(key: "register", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Register
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let register_account = Rswift.StringResource(key: "register_account", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Register Successful! Please set password.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let register_succeed_then_set_password = Rswift.StringResource(key: "register_succeed_then_set_password", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Register succeed
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2643,6 +2719,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let recharge_select_product = Rswift.StringResource(key: "recharge_select_product", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Send Captcha
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let send_capthca = Rswift.StringResource(key: "send_capthca", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Send message
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2655,6 +2735,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let request_send_successful = Rswift.StringResource(key: "request_send_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Set Password
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let set_password = Rswift.StringResource(key: "set_password", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Set as elder
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2679,6 +2763,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let title_shopping_cart = Rswift.StringResource(key: "title_shopping_cart", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Sign in successful! Please set nickname first.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let sign_in_successful_then_set_nickname = Rswift.StringResource(key: "sign_in_successful_then_set_nickname", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Skin color switching (few)
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2719,6 +2807,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let g1001 = Rswift.StringResource(key: "g1001", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Switch Account
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let switch_account = Rswift.StringResource(key: "switch_account", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: TNT Run
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2731,10 +2823,18 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let tribe_task_tribal = Rswift.StringResource(key: "tribe_task_tribal", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: The %@ account has been bound to another account.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let the_thirdpart_account_has_bound_another_account = Rswift.StringResource(key: "the_thirdpart_account_has_bound_another_account", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: The account has bind email
       /// 
       /// Locales: en, Base, zh-Hans
       static let account_has_bind_email = Rswift.StringResource(key: "account_has_bind_email", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: The account is not set with a password. Switching will cause the current account to be lost. Do you want to continue?
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let not_set_password_switch_will_lost = Rswift.StringResource(key: "not_set_password_switch_will_lost", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: The email has been used
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2763,6 +2863,14 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let recharge_record_third_refund = Rswift.StringResource(key: "recharge_record_third_refund", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: ThirdPart Bind
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let thirdpart_bind = Rswift.StringResource(key: "thirdpart_bind", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: This account doesn't bind the email
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let account_not_bind_mail = Rswift.StringResource(key: "account_not_bind_mail", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: This member hasn't joined clan
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2811,14 +2919,18 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let unable_pay_vip_lower_than_yours = Rswift.StringResource(key: "unable_pay_vip_lower_than_yours", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Unbind
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let unbind = Rswift.StringResource(key: "unbind", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: Unbind Successful
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let unbind_successful = Rswift.StringResource(key: "unbind_successful", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Unbind email?
       /// 
       /// Locales: en, Base, zh-Hans
       static let is_unbind_email = Rswift.StringResource(key: "is_unbind_email", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
-      /// Base translation: Unbinding
-      /// 
-      /// Locales: en, Base, zh-Hans
-      static let unbind = Rswift.StringResource(key: "unbind", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: Unknown
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2935,6 +3047,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let tribe_no_like_then_create_one = Rswift.StringResource(key: "tribe_no_like_then_create_one", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: You can login conveniently after binding.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let can_signin_directly_after_bind = Rswift.StringResource(key: "can_signin_directly_after_bind", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: You do not authorize this application to access the device's album, please go to "Settings" for authorization.
       /// 
       /// Locales: en, Base, zh-Hans
@@ -2967,6 +3083,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en, Base, zh-Hans
       static let g1013 = Rswift.StringResource(key: "g1013", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
+      /// Base translation: captcha
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static let captcha = Rswift.StringResource(key: "captcha", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "Base", "zh-Hans"], comment: nil)
       /// Base translation: has dissolved clan
       /// 
       /// Locales: en, Base, zh-Hans
@@ -3044,6 +3164,20 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("vip_mvp_discount", bundle: R.hostingBundle, value: "20% discount buy decoration", comment: "")
       }
       
+      /// Base translation: 6-16 letters and numbers, not pure numbers
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func six_to_twelve_digits_and_letters_not_pure_digits(_: Void = ()) -> String {
+        return NSLocalizedString("six_to_twelve_digits_and_letters_not_pure_digits", bundle: R.hostingBundle, value: "6-16 letters and numbers, not pure numbers", comment: "")
+      }
+      
+      /// Base translation: 6-16 letters or numbers
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func six_to_twelve_digits_or_letters(_: Void = ()) -> String {
+        return NSLocalizedString("six_to_twelve_digits_or_letters", bundle: R.hostingBundle, value: "6-16 letters or numbers", comment: "")
+      }
+      
       /// Base translation: AVG
       /// 
       /// Locales: en, Base, zh-Hans
@@ -3051,11 +3185,11 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("category_adventure", bundle: R.hostingBundle, value: "AVG", comment: "")
       }
       
-      /// Base translation: About Blockman go
+      /// Base translation: About Blockman GO
       /// 
       /// Locales: en, Base, zh-Hans
       static func about_me(_: Void = ()) -> String {
-        return NSLocalizedString("about_me", bundle: R.hostingBundle, value: "About Blockman go", comment: "")
+        return NSLocalizedString("about_me", bundle: R.hostingBundle, value: "About Blockman GO", comment: "")
       }
       
       /// Base translation: Accept
@@ -3093,11 +3227,11 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("account_name", bundle: R.hostingBundle, value: "Account", comment: "")
       }
       
-      /// Base translation: Account and security
+      /// Base translation: Account and Security
       /// 
       /// Locales: en, Base, zh-Hans
       static func account_and_security(_: Void = ()) -> String {
-        return NSLocalizedString("account_and_security", bundle: R.hostingBundle, value: "Account and security", comment: "")
+        return NSLocalizedString("account_and_security", bundle: R.hostingBundle, value: "Account and Security", comment: "")
       }
       
       /// Base translation: Account exist
@@ -3226,11 +3360,25 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("mail_attachment", bundle: R.hostingBundle, value: "Attachment:", comment: "")
       }
       
+      /// Base translation: Authorization expired. Please Resign in
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func authorization_expired_then_resign(_: Void = ()) -> String {
+        return NSLocalizedString("authorization_expired_then_resign", bundle: R.hostingBundle, value: "Authorization expired. Please Resign in", comment: "")
+      }
+      
       /// Base translation: Authorization fail, please log in
       /// 
       /// Locales: en, Base, zh-Hans
       static func authorization_fail_log_in(_: Void = ()) -> String {
         return NSLocalizedString("authorization_fail_log_in", bundle: R.hostingBundle, value: "Authorization fail, please log in", comment: "")
+      }
+      
+      /// Base translation: Authorize failed. Please retry
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func authorize_failed(_: Void = ()) -> String {
+        return NSLocalizedString("authorize_failed", bundle: R.hostingBundle, value: "Authorize failed. Please retry", comment: "")
       }
       
       /// Base translation: Avartas shop
@@ -3296,11 +3444,25 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("decoration_bill", bundle: R.hostingBundle, value: "Bill", comment: "")
       }
       
-      /// Base translation: Bind_success
+      /// Base translation: Bind
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func bind(_: Void = ()) -> String {
+        return NSLocalizedString("bind", bundle: R.hostingBundle, value: "Bind", comment: "")
+      }
+      
+      /// Base translation: Bind Failed
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func bind_failed(_: Void = ()) -> String {
+        return NSLocalizedString("bind_failed", bundle: R.hostingBundle, value: "Bind Failed", comment: "")
+      }
+      
+      /// Base translation: Bind successful
       /// 
       /// Locales: en, Base, zh-Hans
       static func bind_success(_: Void = ()) -> String {
-        return NSLocalizedString("bind_success", bundle: R.hostingBundle, value: "Bind_success", comment: "")
+        return NSLocalizedString("bind_success", bundle: R.hostingBundle, value: "Bind successful", comment: "")
       }
       
       /// Base translation: Birthday
@@ -3450,6 +3612,13 @@ struct R: Rswift.Validatable {
         return String(format: NSLocalizedString("tribe_list_chief", bundle: R.hostingBundle, value: "Chief: %@", comment: ""), locale: R.applicationLocale, value1)
       }
       
+      /// Base translation: Choose gender
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func choose_gender(_: Void = ()) -> String {
+        return NSLocalizedString("choose_gender", bundle: R.hostingBundle, value: "Choose gender", comment: "")
+      }
+      
       /// Base translation: Clan information
       /// 
       /// Locales: en, Base, zh-Hans
@@ -3595,6 +3764,13 @@ struct R: Rswift.Validatable {
       /// Locales: en, Base, zh-Hans
       static func tribe_create_tribe_successful(_: Void = ()) -> String {
         return NSLocalizedString("tribe_create_tribe_successful", bundle: R.hostingBundle, value: "Create successfully!\nNow, Invite your friends to join.", comment: "")
+      }
+      
+      /// Base translation: Current ID: 
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func current_ID(_: Void = ()) -> String {
+        return NSLocalizedString("current_ID", bundle: R.hostingBundle, value: "Current ID: ", comment: "")
       }
       
       /// Base translation: Customer service
@@ -3835,6 +4011,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("forget_password", bundle: R.hostingBundle, value: "Forget password", comment: "")
       }
       
+      /// Base translation: Forget?
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func forget_password_find_by_mail(_: Void = ()) -> String {
+        return NSLocalizedString("forget_password_find_by_mail", bundle: R.hostingBundle, value: "Forget?", comment: "")
+      }
+      
       /// Base translation: Format is incorrect
       /// 
       /// Locales: en, Base, zh-Hans
@@ -4017,6 +4200,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("tribe_retain", bundle: R.hostingBundle, value: "Hold:", comment: "")
       }
       
+      /// Base translation: I don't want
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func dont_want_it(_: Void = ()) -> String {
+        return NSLocalizedString("dont_want_it", bundle: R.hostingBundle, value: "I don't want", comment: "")
+      }
+      
       /// Base translation: Images  Cache
       /// 
       /// Locales: en, Base, zh-Hans
@@ -4045,6 +4235,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("tribe_task_personal", bundle: R.hostingBundle, value: "Individual", comment: "")
       }
       
+      /// Base translation: Input account or id
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func input_account_and_id(_: Void = ()) -> String {
+        return NSLocalizedString("input_account_and_id", bundle: R.hostingBundle, value: "Input account or id", comment: "")
+      }
+      
       /// Base translation: Input email
       /// 
       /// Locales: en, Base, zh-Hans
@@ -4071,6 +4268,13 @@ struct R: Rswift.Validatable {
       /// Locales: en, Base, zh-Hans
       static func input_origin_password(_: Void = ()) -> String {
         return NSLocalizedString("input_origin_password", bundle: R.hostingBundle, value: "Input origin password", comment: "")
+      }
+      
+      /// Base translation: Input password
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func input_password(_: Void = ()) -> String {
+        return NSLocalizedString("input_password", bundle: R.hostingBundle, value: "Input password", comment: "")
       }
       
       /// Base translation: Input verification code
@@ -4148,6 +4352,20 @@ struct R: Rswift.Validatable {
       /// Locales: en, Base, zh-Hans
       static func tribe_notice_invite_you_to_join(_ value1: String) -> String {
         return String(format: NSLocalizedString("tribe_notice_invite_you_to_join", bundle: R.hostingBundle, value: "Invite you to join %@ clan", comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// Base translation: Is it bound?
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func is_it_bound(_: Void = ()) -> String {
+        return NSLocalizedString("is_it_bound", bundle: R.hostingBundle, value: "Is it bound?", comment: "")
+      }
+      
+      /// Base translation: Is the current binding released?
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func release_the_current_binding(_: Void = ()) -> String {
+        return NSLocalizedString("release_the_current_binding", bundle: R.hostingBundle, value: "Is the current binding released?", comment: "")
       }
       
       /// Base translation: Jail Break
@@ -4295,6 +4513,13 @@ struct R: Rswift.Validatable {
       /// Locales: en, Base, zh-Hans
       static func mailbox(_: Void = ()) -> String {
         return NSLocalizedString("mailbox", bundle: R.hostingBundle, value: "Mailbox", comment: "")
+      }
+      
+      /// Base translation: Mailbox Binding
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func email_bind(_: Void = ()) -> String {
+        return NSLocalizedString("email_bind", bundle: R.hostingBundle, value: "Mailbox Binding", comment: "")
       }
       
       /// Base translation: Male
@@ -4458,13 +4683,6 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("next_step", bundle: R.hostingBundle, value: "Next", comment: "")
       }
       
-      /// Base translation: Nickname
-      /// 
-      /// Locales: en, Base, zh-Hans
-      static func nickname(_: Void = ()) -> String {
-        return NSLocalizedString("nickname", bundle: R.hostingBundle, value: "Nickname", comment: "")
-      }
-      
       /// Base translation: Nickname can not modify now
       /// 
       /// Locales: en, Base, zh-Hans
@@ -4484,6 +4702,13 @@ struct R: Rswift.Validatable {
       /// Locales: en, Base, zh-Hans
       static func the_nickname_not_valid(_: Void = ()) -> String {
         return NSLocalizedString("the_nickname_not_valid", bundle: R.hostingBundle, value: "Nickname not valid", comment: "")
+      }
+      
+      /// Base translation: Nickname: 
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func nickname(_: Void = ()) -> String {
+        return NSLocalizedString("nickname", bundle: R.hostingBundle, value: "Nickname: ", comment: "")
       }
       
       /// Base translation: No authority
@@ -4766,6 +4991,20 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("play_game_after_login", bundle: R.hostingBundle, value: "Play this game after login", comment: "")
       }
       
+      /// Base translation: Please bind first.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func please_bind_first(_: Void = ()) -> String {
+        return NSLocalizedString("please_bind_first", bundle: R.hostingBundle, value: "Please bind first.", comment: "")
+      }
+      
+      /// Base translation: Please undo the original binding first.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func please_undo_the_original_binding(_: Void = ()) -> String {
+        return NSLocalizedString("please_undo_the_original_binding", bundle: R.hostingBundle, value: "Please undo the original binding first.", comment: "")
+      }
+      
       /// Base translation: Popular
       /// 
       /// Locales: en, Base, zh-Hans
@@ -4983,6 +5222,20 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("register", bundle: R.hostingBundle, value: "Register", comment: "")
       }
       
+      /// Base translation: Register
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func register_account(_: Void = ()) -> String {
+        return NSLocalizedString("register_account", bundle: R.hostingBundle, value: "Register", comment: "")
+      }
+      
+      /// Base translation: Register Successful! Please set password.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func register_succeed_then_set_password(_: Void = ()) -> String {
+        return NSLocalizedString("register_succeed_then_set_password", bundle: R.hostingBundle, value: "Register Successful! Please set password.", comment: "")
+      }
+      
       /// Base translation: Register succeed
       /// 
       /// Locales: en, Base, zh-Hans
@@ -5102,6 +5355,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("recharge_select_product", bundle: R.hostingBundle, value: "Select", comment: "")
       }
       
+      /// Base translation: Send Captcha
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func send_capthca(_: Void = ()) -> String {
+        return NSLocalizedString("send_capthca", bundle: R.hostingBundle, value: "Send Captcha", comment: "")
+      }
+      
       /// Base translation: Send message
       /// 
       /// Locales: en, Base, zh-Hans
@@ -5121,6 +5381,13 @@ struct R: Rswift.Validatable {
       /// Locales: en, Base, zh-Hans
       static func request_send_successful(_: Void = ()) -> String {
         return NSLocalizedString("request_send_successful", bundle: R.hostingBundle, value: "Send successful", comment: "")
+      }
+      
+      /// Base translation: Set Password
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func set_password(_: Void = ()) -> String {
+        return NSLocalizedString("set_password", bundle: R.hostingBundle, value: "Set Password", comment: "")
       }
       
       /// Base translation: Set as elder
@@ -5163,6 +5430,13 @@ struct R: Rswift.Validatable {
       /// Locales: en, Base, zh-Hans
       static func title_shopping_cart(_: Void = ()) -> String {
         return NSLocalizedString("title_shopping_cart", bundle: R.hostingBundle, value: "Shopping cart", comment: "")
+      }
+      
+      /// Base translation: Sign in successful! Please set nickname first.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func sign_in_successful_then_set_nickname(_: Void = ()) -> String {
+        return NSLocalizedString("sign_in_successful_then_set_nickname", bundle: R.hostingBundle, value: "Sign in successful! Please set nickname first.", comment: "")
       }
       
       /// Base translation: Skin color switching (few)
@@ -5235,6 +5509,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("g1001", bundle: R.hostingBundle, value: "Survival Games", comment: "")
       }
       
+      /// Base translation: Switch Account
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func switch_account(_: Void = ()) -> String {
+        return NSLocalizedString("switch_account", bundle: R.hostingBundle, value: "Switch Account", comment: "")
+      }
+      
       /// Base translation: TNT Run
       /// 
       /// Locales: en, Base, zh-Hans
@@ -5256,11 +5537,25 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("tribe_task_tribal", bundle: R.hostingBundle, value: "Team", comment: "")
       }
       
+      /// Base translation: The %@ account has been bound to another account.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func the_thirdpart_account_has_bound_another_account(_ value1: String) -> String {
+        return String(format: NSLocalizedString("the_thirdpart_account_has_bound_another_account", bundle: R.hostingBundle, value: "The %@ account has been bound to another account.", comment: ""), locale: R.applicationLocale, value1)
+      }
+      
       /// Base translation: The account has bind email
       /// 
       /// Locales: en, Base, zh-Hans
       static func account_has_bind_email(_: Void = ()) -> String {
         return NSLocalizedString("account_has_bind_email", bundle: R.hostingBundle, value: "The account has bind email", comment: "")
+      }
+      
+      /// Base translation: The account is not set with a password. Switching will cause the current account to be lost. Do you want to continue?
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func not_set_password_switch_will_lost(_: Void = ()) -> String {
+        return NSLocalizedString("not_set_password_switch_will_lost", bundle: R.hostingBundle, value: "The account is not set with a password. Switching will cause the current account to be lost. Do you want to continue?", comment: "")
       }
       
       /// Base translation: The email has been used
@@ -5310,6 +5605,20 @@ struct R: Rswift.Validatable {
       /// Locales: en, Base, zh-Hans
       static func recharge_record_third_refund(_: Void = ()) -> String {
         return NSLocalizedString("recharge_record_third_refund", bundle: R.hostingBundle, value: "Third-Party Payment Refund", comment: "")
+      }
+      
+      /// Base translation: ThirdPart Bind
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func thirdpart_bind(_: Void = ()) -> String {
+        return NSLocalizedString("thirdpart_bind", bundle: R.hostingBundle, value: "ThirdPart Bind", comment: "")
+      }
+      
+      /// Base translation: This account doesn't bind the email
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func account_not_bind_mail(_: Void = ()) -> String {
+        return NSLocalizedString("account_not_bind_mail", bundle: R.hostingBundle, value: "This account doesn't bind the email", comment: "")
       }
       
       /// Base translation: This member hasn't joined clan
@@ -5396,18 +5705,25 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("unable_pay_vip_lower_than_yours", bundle: R.hostingBundle, value: "Unable to purchase a VIP lower than yours", comment: "")
       }
       
+      /// Base translation: Unbind
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func unbind(_: Void = ()) -> String {
+        return NSLocalizedString("unbind", bundle: R.hostingBundle, value: "Unbind", comment: "")
+      }
+      
+      /// Base translation: Unbind Successful
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func unbind_successful(_: Void = ()) -> String {
+        return NSLocalizedString("unbind_successful", bundle: R.hostingBundle, value: "Unbind Successful", comment: "")
+      }
+      
       /// Base translation: Unbind email?
       /// 
       /// Locales: en, Base, zh-Hans
       static func is_unbind_email(_: Void = ()) -> String {
         return NSLocalizedString("is_unbind_email", bundle: R.hostingBundle, value: "Unbind email?", comment: "")
-      }
-      
-      /// Base translation: Unbinding
-      /// 
-      /// Locales: en, Base, zh-Hans
-      static func unbind(_: Void = ()) -> String {
-        return NSLocalizedString("unbind", bundle: R.hostingBundle, value: "Unbinding", comment: "")
       }
       
       /// Base translation: Unknown
@@ -5613,6 +5929,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("tribe_no_like_then_create_one", bundle: R.hostingBundle, value: "You can chat with clan members,unlock more free avatars after creating or joining clan.These are the clans we recommended for you!", comment: "")
       }
       
+      /// Base translation: You can login conveniently after binding.
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func can_signin_directly_after_bind(_: Void = ()) -> String {
+        return NSLocalizedString("can_signin_directly_after_bind", bundle: R.hostingBundle, value: "You can login conveniently after binding.", comment: "")
+      }
+      
       /// Base translation: You do not authorize this application to access the device's album, please go to "Settings" for authorization.
       /// 
       /// Locales: en, Base, zh-Hans
@@ -5667,6 +5990,13 @@ struct R: Rswift.Validatable {
       /// Locales: en, Base, zh-Hans
       static func g1013(_: Void = ()) -> String {
         return NSLocalizedString("g1013", bundle: R.hostingBundle, value: "Zombies infection", comment: "")
+      }
+      
+      /// Base translation: captcha
+      /// 
+      /// Locales: en, Base, zh-Hans
+      static func captcha(_: Void = ()) -> String {
+        return NSLocalizedString("captcha", bundle: R.hostingBundle, value: "captcha", comment: "")
       }
       
       /// Base translation: has dissolved clan

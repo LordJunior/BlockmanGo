@@ -55,7 +55,7 @@ class AboutUsViewController: UIViewController {
             label.font = UIFont.size10
             label.textColor = R.clr.appColor._a36b2e()
             label.numberOfLines = 0
-            label.text = "Copyright© 2010-2018"
+            label.text = "Copyright© 2015-2018"
         }).layout(snapKitMaker: { (make) in
             make.bottom.equalToSuperview().inset(10)
             make.centerX.equalToSuperview()

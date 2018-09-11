@@ -10,7 +10,7 @@ import UIKit
 
 class AccountSecurityOptionViewController: UIViewController {
 
-    private let accountSecurityOptionTitles = ["设置密码", "邮箱绑定", "第三方绑定"]
+    private let accountSecurityOptionTitles = [R.string.localizable.set_password(), R.string.localizable.email_bind(), R.string.localizable.thirdpart_bind()]
     private weak var securityContentView: UIView?
     private weak var tableView: UITableView?
     private weak var passwordIfSetLabel: UILabel?
@@ -26,7 +26,7 @@ class AccountSecurityOptionViewController: UIViewController {
         let optionContainView = UIImageView(image: R.image.general_alert_background()).addTo(superView: view).layout { (make) in
             make.centerY.equalToSuperview()
             make.centerX.equalToSuperview().multipliedBy(0.5)
-            make.size.equalTo(CGSize(width: 140, height: 300))
+            make.size.equalTo(CGSize(width: 160, height: 300))
         }.configure { (imageView) in
             imageView.isUserInteractionEnabled = true
         }
@@ -56,7 +56,7 @@ class AccountSecurityOptionViewController: UIViewController {
         passwordIfSetLabel = UILabel().addTo(superView: securityContentView!).configure({ (label) in
             label.font = UIFont.size13
             label.textColor = R.clr.appColor._844501()
-            label.text = "当前ID: \(UserManager.shared.userID)"
+            label.text = R.string.localizable.current_ID() + "\(UserManager.shared.userID)"
         }).layout(snapKitMaker: { (make) in
             make.left.top.equalToSuperview().offset(20)
         })

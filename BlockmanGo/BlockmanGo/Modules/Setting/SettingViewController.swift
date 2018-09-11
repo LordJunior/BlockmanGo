@@ -11,7 +11,7 @@ import UIKit
 class SettingViewController: UIViewController {
 
     private weak var tableView: UITableView?
-    private let optionTitles = ["切换账号", "切换账号与安全", "关于Blockman GO", "清除缓存"]
+    private let optionTitles = [R.string.localizable.switch_account(), R.string.localizable.account_and_security(), R.string.localizable.about_me(), R.string.localizable.clear_cache()]
     
     deinit {
         DebugLog("SettingViewController Deinit")
@@ -73,7 +73,7 @@ extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
             if UserManager.shared.passwordIfHave() {
                 TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: (false, self))
             }else {
-                AlertController.alert(title: "该账号未设置密码，切换会导致当前账号丢失，是否继续？", message: nil, from: self, showCancelButton: true)?.setCancelTitle("我不要了").setDoneTitle("去设置").done(completion: { (_) in
+                AlertController.alert(title: R.string.localizable.not_set_password_switch_will_lost(), message: nil, from: self, showCancelButton: true)?.setCancelTitle(R.string.localizable.dont_want_it()).setDoneTitle(R.string.localizable.set_password()).done(completion: { (_) in
                     TransitionManager.presentInHidePresentingTransition(AccountSecurityOptionViewController.self)
                 }).cancel(completion: { _ in
                     TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: (false, self))
