@@ -30,6 +30,8 @@ class InitializeProfileViewController: UIViewController {
     private weak var selectedGenderButton: UIButton?
     private weak var randomInputView: RandomInputView?
     
+    private let initializeProfileManager = InitializeProfleModuleManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
      
@@ -76,7 +78,6 @@ class InitializeProfileViewController: UIViewController {
         
         randomInputView = RandomInputView().addTo(superView: profileContainView).configure { (inputView) in
             inputView.placeholder = R.string.localizable.input_nickname()
-            inputView.delegate = self
             inputView.dataSource = self
         }.layout { (make) in
             make.left.right.equalToSuperview().inset(30)
@@ -151,14 +152,8 @@ class InitializeProfileViewController: UIViewController {
     }
 }
 
-extension InitializeProfileViewController: RandomInputViewDelegate, RandomInputViewDataSource {
+extension InitializeProfileViewController: RandomInputViewDataSource {
     func randomInputTextForRandoming(_ randomInputView: RandomInputView) -> String? {
-        return String(arc4random() % 99999)
-    }
-    
-    func randomInputViewDidBeginInputting(_ randomInputView: RandomInputView) {
-    }
-    
-    func randomInputViewDidEndInputting(_ randomInputView: RandomInputView) {
+        return initializeProfileManager.fetchRandomName()
     }
 }

@@ -128,11 +128,11 @@ extension HomePageViewController: InitializeProfileViewControllerDelegate {
     
     func initializeProfileViewControllerDidEndEditingProfile(_ profileController: InitializeProfileViewController) {
         guard let nickname = profileController.nickname, !nickname.isEmpty else {
-            AlertController.alert(title: "请填写昵称", message: nil, from: profileController)
+            AlertController.alert(title: R.string.localizable.input_nickname(), message: nil, from: profileController)
             return
         }
-        guard HomePageModelManager.verifyNickname(nickname), nickname.toUInt64() == 0 else {
-            AlertController.alert(title: "请输入正确的昵称", message: nil, from: profileController)
+        guard RegexMatcher.match(nickname: nickname), nickname.toUInt64() == 0 else {
+            AlertController.alert(title: R.string.localizable.the_nickname_not_valid(), message: nil, from: profileController)
             return
         }
         HomePageModelManager.initializeProfile(nickname: nickname, gender: profileController.gender) { [unowned self] (result) in

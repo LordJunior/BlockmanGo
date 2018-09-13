@@ -79,6 +79,12 @@ class RandomInputView: UIView {
         })
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        text = dataSource?.randomInputTextForRandoming(self)
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -89,7 +95,7 @@ class RandomInputView: UIView {
     }
     
     @objc private func randomButtonClicked() {
-        textFiled?.text = dataSource?.randomInputTextForRandoming(self)
+        text = dataSource?.randomInputTextForRandoming(self)
     }
 }
 

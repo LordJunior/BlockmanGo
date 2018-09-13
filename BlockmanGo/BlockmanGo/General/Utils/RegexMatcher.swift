@@ -23,7 +23,7 @@ struct RegexMatcher {
 
 extension RegexMatcher {
     static func match(nickname: String) -> Bool {
-        let nicknameRegex = "^[a-zA-Z0-9]{6,12}$"
+        let nicknameRegex = "^[a-zA-Z0-9_]{6,16}$"
         return match(text: nickname, regex: nicknameRegex)
     }
     

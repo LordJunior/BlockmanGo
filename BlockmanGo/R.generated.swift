@@ -816,7 +816,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 3 files.
+  /// This `R.file` struct is generated, and contains static references to 5 files.
   struct file {
     /// Resource file `AppColor.clr`.
     static let appColorClr = Rswift.FileResource(bundle: R.hostingBundle, name: "AppColor", pathExtension: "clr")
@@ -824,6 +824,10 @@ struct R: Rswift.Validatable {
     static let engineResource = Rswift.FileResource(bundle: R.hostingBundle, name: "EngineResource", pathExtension: "")
     /// Resource file `client_320914605590-7sccs9in33anb56lusf5rhqotnv88d41.apps.googleusercontent.com.plist`.
     static let client_3209146055907sccs9in33anb56lusf5rhqotnv88d41AppsGoogleusercontentComPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "client_320914605590-7sccs9in33anb56lusf5rhqotnv88d41.apps.googleusercontent.com", pathExtension: "plist")
+    /// Resource file `rdm_first_name.txt`.
+    static let rdm_first_nameTxt = Rswift.FileResource(bundle: R.hostingBundle, name: "rdm_first_name", pathExtension: "txt")
+    /// Resource file `rdm_second_name.txt`.
+    static let rdm_second_nameTxt = Rswift.FileResource(bundle: R.hostingBundle, name: "rdm_second_name", pathExtension: "txt")
     
     /// `bundle.url(forResource: "AppColor", withExtension: "clr")`
     static func appColorClr(_: Void = ()) -> Foundation.URL? {
@@ -840,6 +844,18 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "client_320914605590-7sccs9in33anb56lusf5rhqotnv88d41.apps.googleusercontent.com", withExtension: "plist")`
     static func client_3209146055907sccs9in33anb56lusf5rhqotnv88d41AppsGoogleusercontentComPlist(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.client_3209146055907sccs9in33anb56lusf5rhqotnv88d41AppsGoogleusercontentComPlist
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "rdm_first_name", withExtension: "txt")`
+    static func rdm_first_nameTxt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.rdm_first_nameTxt
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "rdm_second_name", withExtension: "txt")`
+    static func rdm_second_nameTxt(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.rdm_second_nameTxt
       return fileResource.bundle.url(forResource: fileResource)
     }
     
