@@ -36,13 +36,13 @@ struct InitializeProfleModuleManager {
     }
     
     private func randomLetters(length: Int) -> String {
-        let letters: NSString = "abcdefghijklmnopqrstuvwxyz"
-        let len = UInt32(letters.length)
+        let letters = "abcdefghijklmnopqrstuvwxyz"
+        let len = UInt32(letters.count)
         var randomLetters = ""
         for _ in 0 ..< length {
             let rand = Int(arc4random_uniform(len))
-            var nextChar = letters.character(at: rand)
-            randomLetters += NSString(characters: &nextChar, length: 1) as String
+            let character = letters[letters.index(letters.startIndex, offsetBy: rand)]
+            randomLetters += String(character)
         }
         return randomLetters
     }
