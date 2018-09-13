@@ -17,11 +17,11 @@ struct ClearCacheModuleManager {
     }
     
     private static func cacheSizeText(_ size: UInt) -> String {
-        return String(format: "%.1f MB", Float(size) / 1024.0 / 1024.0)
+        return String(format: "%.1f M", Float(size) / 1024.0 / 1024.0)
     }
     
     private static func cacheSizeText(_ size: UInt64) -> String {
-        return  String(format: "%.1f MB", Double(size) / 1024.0 / 1024.0)
+        return  String(format: "%.1f M", Double(size) / 1024.0 / 1024.0)
     }
     
     static func calculateImageCacheSize(completion handler: @escaping ((_ size: String) -> Void)) {

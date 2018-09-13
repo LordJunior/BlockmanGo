@@ -70,13 +70,17 @@ extension SettingViewController: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: false)
         switch indexPath.section {
         case 0:
+            TransitionManager.dismiss(animated: true)
             if UserManager.shared.passwordIfHave() {
-                TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: (false, self))
+                PrepareLauncher.resetRootViewControllerToLaunch(isAuthorizationExpired: false)
+//                TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: (false, self))
             }else {
-                AlertController.alert(title: R.string.localizable.not_set_password_switch_will_lost(), message: nil, from: self, showCancelButton: true)?.setCancelTitle(R.string.localizable.dont_want_it()).setDoneTitle(R.string.localizable.set_password()).done(completion: { (_) in
-                    TransitionManager.presentInHidePresentingTransition(AccountSecurityOptionViewController.self)
+                TransitionManager.dismiss(animated: true)
+                AlertController.alert(title: R.string.localizable.not_set_password_switch_will_lost(), message: nil, from: TransitionManager.rootViewController, showCancelButton: true)?.setCancelTitle(R.string.localizable.dont_want_it()).setDoneTitle(R.string.localizable.set_password()).done(completion: { (_) in
+                    TransitionManager.presentInNormalTransition(AccountSecurityOptionViewController.self)
                 }).cancel(completion: { _ in
-                    TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: (false, self))
+                    PrepareLauncher.resetRootViewControllerToLaunch()
+//                    TransitionManager.presentInHidePresentingTransition(LoginViewController.self, parameter: (false, self))
                 })
             }
         case 1:

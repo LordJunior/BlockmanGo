@@ -140,6 +140,8 @@ class GameViewController: UIViewController {
                 }).cancel(completion: { (_) in
                     self.preloadDecorationView()
                 })
+            case .failure(.unauthorized):
+                PrepareLauncher.resetRootViewControllerToLaunch()
             default:
                 AlertController.alert(title: R.string.localizable.enter_game_fail_retry(), message: nil, from: TransitionManager.rootViewController)?.done(completion: { (_) in
                     self.preloadDecorationView()

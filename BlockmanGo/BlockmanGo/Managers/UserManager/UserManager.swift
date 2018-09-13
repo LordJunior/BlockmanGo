@@ -25,6 +25,10 @@ class UserManager {
         NotificationCenter.default.removeObserver(self)
     }
     
+    var account: String {
+        return profileModel?.account ?? ""
+    }
+    
     var userID: UInt64 {
         get {
             return authModel?.userId ?? 0

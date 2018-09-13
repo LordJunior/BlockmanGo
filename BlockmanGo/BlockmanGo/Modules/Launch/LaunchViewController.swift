@@ -8,10 +8,13 @@
 
 import UIKit
 class LaunchViewController: UIViewController {
-
+    
+    /// 这个属性用于判断是否是 正常启动显示这个界面
+    var isDisplayingForNormalLaunch: Bool = true
+    
     /// 这个属性用于判断是否是 验证失败时，跳到这个界面
     var isDisplayingForAuthorizationExpired: Bool = false
-    
+
     private weak var checkForUpdateController: CheckForUpdatesViewController?
     private weak var backgroundImageView: GravityImageView?
     private weak var skyInfiniteView: LaunchInfiniteTranslationSkyView?
@@ -23,7 +26,7 @@ class LaunchViewController: UIViewController {
     private weak var loginButton: UIButton?
     
     private let launchManager = LaunchModelManager()
-    private var shouldRenewAccount = false // 在账号验证失效的时候，用户选择不登录，直接进入游戏，就生成一个新账号
+    private var shouldResignBeforeEnterGame = false // 如果该值为真，那么就必须登录完才能进游戏
     
     deinit {
         DebugLog("LaunchViewController deinit")
@@ -90,7 +93,7 @@ class LaunchViewController: UIViewController {
         }
         
         joinGameButton = UIButton().addTo(superView: view).layout { (make) in
-            make.top.equalTo(logoImageView!.snp.bottom).offset(65)
+            make.bottom.equalToSuperview().inset(25)
             make.centerX.equalToSuperview()
             make.width.equalToSuperview().multipliedBy(0.45)
             make.height.equalTo(40)
@@ -103,9 +106,10 @@ class LaunchViewController: UIViewController {
             button.addTarget(self, action: #selector(joinGameButtonClicked), for: .touchUpInside)
         }
 
-        guard !isDisplayingForAuthorizationExpired else {
+        guard isDisplayingForNormalLaunch else {
             triggerAnimation()
-            TransitionManager.presentInNormalTransition(LoginViewController.self, parameter: (true, self))
+            self.shouldResignBeforeEnterGame = isDisplayingForAuthorizationExpired
+            TransitionManager.presentInNormalTransition(LoginViewController.self, parameter: (isDisplayingForAuthorizationExpired, self))
             return
         }
         /// 正常的打开APP流程
@@ -119,18 +123,7 @@ class LaunchViewController: UIViewController {
         checkUpdateController.didMove(toParentViewController: self)
         checkForUpdateController = checkUpdateController
         
-        launchManager.generateNewAuthorizationIfNeed { (result) in
-            switch result {
-            case .success(_):
-                checkUpdateController.startCheckForUpdate()
-            case .failure(.userNotBindDevice):
-                TransitionManager.presentInNormalTransition(LoginViewController.self, parameter: (true, self))
-            default:
-                if UserManager.authorizationExistsAtLocal() {
-                    checkUpdateController.startCheckForUpdate()
-                }
-            }
-        }
+        checkUpdateController.startCheckForUpdate()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -171,6 +164,10 @@ class LaunchViewController: UIViewController {
     }
     
     @objc private func joinGameButtonClicked() {
+        guard !shouldResignBeforeEnterGame else {
+            TransitionManager.presentInNormalTransition(LoginViewController.self, parameter: (true, self))
+            return
+        }
         skyInfiniteView?.stopTranslating()
         backgroundImageView?.stopGravityMotion()
         DecorationControllerManager.shared.removeFromParent()
@@ -185,10 +182,26 @@ class LaunchViewController: UIViewController {
     @objc private func loginButtonClicked() {
         TransitionManager.presentInNormalTransition(SwitchAccountViewController.self)
     }
+    
+    private func checkAuthorization() {
+        launchManager.generateNewAuthorizationIfNeed {[unowned self] (result) in
+            switch result {
+            case .success(_):
+                break
+            case .failure(.userNotBindDevice):
+                self.shouldResignBeforeEnterGame = true
+                TransitionManager.presentInNormalTransition(LoginViewController.self, parameter: (true, self))
+            default:
+                self.shouldResignBeforeEnterGame = true
+                break
+            }
+        }
+    }
 }
 
 extension LaunchViewController: CheckForUpdatesViewControllerDelegate {
     func checkForUpdatesDidFinished() {
+        checkAuthorization()
         removeCheckForUpdateController()
         // 先提前创建好装饰view
         DecorationControllerManager.shared.add(toParent: self, layout: { (make) in
@@ -208,19 +221,12 @@ extension LaunchViewController: BulletinViewControllerDelegate {
 
 extension LaunchViewController: LoginViewControllerDelegate {
     func loginViewControllerDidCancel(_ viewController: LoginViewController) {
-        shouldRenewAccount = true
         TransitionManager.dismiss(animated: true)
-        if !isDisplayingForAuthorizationExpired {
-            checkForUpdateController?.startCheckForUpdate()
-        }
     }
     
     func loginViewControllerDidLoginSuccessful(_ viewController: LoginViewController) {
         TransitionManager.dismiss(animated: true)
-        if isDisplayingForAuthorizationExpired {
-            TransitionManager.currentNavigationController()?.setViewControllers([HomePageViewController()], animated: false)
-        }else {
-            checkForUpdateController?.startCheckForUpdate()
-        }
+        shouldResignBeforeEnterGame = false
+        joinGameButtonClicked()
     }
 }

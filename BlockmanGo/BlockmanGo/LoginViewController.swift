@@ -110,7 +110,7 @@ class LoginViewController: UIViewController {
             make.left.right.top.equalToSuperview().inset(10)
             make.height.equalTo(40)
         }).configure({ (textField) in
-            textField.text = "\(UserManager.shared.userID)"
+            textField.text = UserManager.shared.account.isEmpty ? "\(UserManager.shared.userID)" : UserManager.shared.account
         })
         
         passwordTextField = CommonTextField(placeHolder: R.string.localizable.input_password()).addTo(superView: shadowContainView).configure({ (textfield) in

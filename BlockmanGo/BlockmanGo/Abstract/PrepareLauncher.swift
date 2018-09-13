@@ -24,9 +24,10 @@ class PrepareLauncher {
         
     }
     
-    static func resetRootViewControllerToLaunch() {
+    static func resetRootViewControllerToLaunch(isAuthorizationExpired isExpired: Bool = true) {
         let launchController = LaunchViewController()
-        launchController.isDisplayingForAuthorizationExpired = true
+        launchController.isDisplayingForNormalLaunch = false
+        launchController.isDisplayingForAuthorizationExpired = isExpired
         let rootController = MainNavigationController.init(rootViewController: launchController)
         window?.rootViewController = rootController
         TransitionManager.rootViewController = rootController

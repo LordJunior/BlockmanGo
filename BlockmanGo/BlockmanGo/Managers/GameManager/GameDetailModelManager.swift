@@ -22,7 +22,7 @@ struct GameDetailModelManager {
     }
     
     func likesGame(gameID: String, completion: @escaping (BlockHTTPResult<Int, BlockHTTPError>) -> Void) {
-        GamesRequester.fetchGameDetails(gameID: gameID) { (result) in
+        GamesRequester.likesGame(gameID: gameID) { (result) in
             switch result {
             case .success(let response):
                 completion(.success(response["data"] as! Int))

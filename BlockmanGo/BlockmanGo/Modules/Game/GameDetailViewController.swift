@@ -136,12 +136,12 @@ class GameDetailViewController: UIViewController {
     
     private func refreshViewsWithModel(_ detailModel: GameDetailModel) {
         playButton?.isEnabled = true
-//        likesButton?.isEnabled = true
+        likesButton?.isEnabled = true
         thumbnailImageView?.imageWithUrlString(detailModel.gameCoverPic)
         nameLabel?.text = detailModel.gameTitle
         modeLabel?.text = detailModel.gameTypes.joined(separator: " | ")
         likesButton?.setTitle(String(detailModel.praiseNumber), for: .normal)
-//        likesButton?.isEnabled = !detailModel.appreciate
+        likesButton?.isEnabled = !detailModel.appreciate
         detailsTextView?.attributedText = detailModel.gameDetail
     }
     
@@ -151,6 +151,7 @@ class GameDetailViewController: UIViewController {
             switch result {
             case .success(let likesNumber):
                 self.likesButton?.setTitle(String(likesNumber), for: .normal)
+                self.likesButton?.isEnabled = false
             case .failure(.alreadyAppreciated):
                 self.likesButton?.isEnabled = false
                 AlertController.alert(title: R.string.localizable.you_have_been_appreciate(), message: nil, from: self)

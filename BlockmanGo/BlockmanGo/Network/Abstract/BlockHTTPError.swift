@@ -22,6 +22,7 @@ enum BlockHTTPError: Int, Swift.Error {
     
     // User
     case nicknameInvalid = 3
+    case tokenInvalid = 6
     case noPermission = 7
     case nicknameExist = 1003
     case accountExist = 101

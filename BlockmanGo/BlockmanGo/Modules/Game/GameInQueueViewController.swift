@@ -64,6 +64,7 @@ class GameInQueueViewController: UIViewController {
             label.font = UIFont.boldSize15
             label.numberOfLines = 0
             label.textAlignment = .center
+            label.text = R.string.localizable.game_dispatch_in_queue_time("00:00")
         }).layout(snapKitMaker: { (make) in
             make.top.equalToSuperview().offset(20)
             make.centerY.equalToSuperview()
