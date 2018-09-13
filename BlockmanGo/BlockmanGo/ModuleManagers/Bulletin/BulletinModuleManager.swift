@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct BulletinModelManager {
-    func fetchBulletin(completion: @escaping (NSAttributedString?) -> Void) {
+struct BulletinModuleManager {
+    static func fetchBulletin(completion: @escaping (NSAttributedString?) -> Void) {
         ConfigurationRequester.fetchBulletin { (result) in
             switch result {
             case .success(let response):

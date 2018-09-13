@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct LoginModelManager {
+struct LoginModuleManager {
     static func login(account: String, password: String, platform: SignInPlatformEnum, completion: @escaping (BlockHTTPResult<AuthTokenModel, BlockHTTPError>) -> Void) {
         UserRequester.login(account: account, password: password, channel: platform) { (result) in
             switch result {

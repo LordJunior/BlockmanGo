@@ -25,7 +25,6 @@ class LaunchViewController: UIViewController {
     private weak var bulletinButton: UIButton?
     private weak var loginButton: UIButton?
     
-    private let launchManager = LaunchModelManager()
     private var shouldResignBeforeEnterGame = false // 如果该值为真，那么就必须登录完才能进游戏
     
     deinit {
@@ -184,7 +183,7 @@ class LaunchViewController: UIViewController {
     }
     
     private func checkAuthorization() {
-        launchManager.generateNewAuthorizationIfNeed {[unowned self] (result) in
+        LaunchModuleManager.generateNewAuthorizationIfNeed {[unowned self] (result) in
             switch result {
             case .success(_):
                 break

@@ -17,7 +17,7 @@ class CheckForUpdatesViewController: UIViewController {
     weak var delegate: CheckForUpdatesViewControllerDelegate?
     
     private weak var progressView: ProgressView?
-    private let checkForUpdateManager = CheckForAppUpdatesModelManager()
+    private let checkForUpdateManager = CheckForAppUpdatesModuleManager()
     private let engineResourceManager = EngineResourceModelManager()
     
     override func viewDidLoad() {

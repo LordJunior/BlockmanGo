@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct LaunchModelManager {
+struct LaunchModuleManager {
     
     /// 首次安装应用会生成一个新的用户
     /// 其他情况会去检查本地用户token有效性
-    func generateNewAuthorizationIfNeed(completion: @escaping (BlockHTTPResult<Bool, BlockHTTPError>) -> Void) {
+    static func generateNewAuthorizationIfNeed(completion: @escaping (BlockHTTPResult<Bool, BlockHTTPError>) -> Void) {
         UserRequester.authToken { (result) in
             switch result {
             case .success(let response):

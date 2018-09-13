@@ -80,7 +80,7 @@ class HomePageViewController: UIViewController {
     }
     
     private func fetchUserProfile() {
-        HomePageModelManager.fetchUserProfile { [unowned self] (result) in
+        HomePageModuleManager.fetchUserProfile { [unowned self] (result) in
             switch result {
             case .success(let profile):
                 self.refreshAccountInfoViewLayout()
@@ -135,7 +135,7 @@ extension HomePageViewController: InitializeProfileViewControllerDelegate {
             AlertController.alert(title: R.string.localizable.the_nickname_not_valid(), message: nil, from: profileController)
             return
         }
-        HomePageModelManager.initializeProfile(nickname: nickname, gender: profileController.gender) { [unowned self] (result) in
+        HomePageModuleManager.initializeProfile(nickname: nickname, gender: profileController.gender) { [unowned self] (result) in
             switch result {
             case .success(_):
                 self.refreshAccountInfoViewLayout()

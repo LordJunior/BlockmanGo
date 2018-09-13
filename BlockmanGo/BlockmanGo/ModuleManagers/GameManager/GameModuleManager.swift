@@ -8,7 +8,7 @@
 
 import Foundation
 
-class GameModelManager {
+class GameModuleManager {
     private var gamesCache: [Int : [GameModel]] = [:] // key为游戏mode value为[GameModel]
     
     func fetchGamesWithMode(_ mode: Int, completion: @escaping (BlockHTTPResult<[GameModel], BlockHTTPError>) -> Void) {

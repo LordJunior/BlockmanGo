@@ -23,7 +23,7 @@
 		DD3BAF73212DCA1900672C26 /* SwitchAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BAF71212DCA1900672C26 /* SwitchAccountViewController.swift */; };
 		DD456BD6210EBDE6009465FE /* BMFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402FC20FEEDF500091B9D /* BMFileManager.swift */; };
 		DD456BD7210EBDE6009465FE /* GamesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F520F631F40000B8DC /* GamesAPI.swift */; };
-		DD456BD8210EBDE6009465FE /* BulletinModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030A20FF485200091B9D /* BulletinModelManager.swift */; };
+		DD456BD8210EBDE6009465FE /* BulletinModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030A20FF485200091B9D /* BulletinModuleManager.swift */; };
 		DD456BD9210EBDE6009465FE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160E820F5FA310000B8DC /* GameViewController.swift */; };
 		DD456BDB210EBDE6009465FE /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160C220F5A2330000B8DC /* Requester.swift */; };
 		DD456BDC210EBDE6009465FE /* AnimatableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030220FF219A00091B9D /* AnimatableProtocol.swift */; };
@@ -36,7 +36,7 @@
 		DD456BE3210EBDE6009465FE /* BMUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402F420FEDF1C00091B9D /* BMUserDefaults.swift */; };
 		DD456BE4210EBDE6009465FE /* GameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160EF20F60ACF0000B8DC /* GameCollectionViewCell.swift */; };
 		DD456BE5210EBDE6009465FE /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51609220F46A310000B8DC /* UIView+Layout.swift */; };
-		DD456BE6210EBDE6009465FE /* LaunchModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */; };
+		DD456BE6210EBDE6009465FE /* LaunchModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DD2105F60D004346C5 /* LaunchModuleManager.swift */; };
 		DD456BE7210EBDE6009465FE /* BlockHTTPHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160DF20F5B75B0000B8DC /* BlockHTTPHost.swift */; };
 		DD456BE8210EBDE6009465FE /* TransitionManagerStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51608520F363FF0000B8DC /* TransitionManagerStack.swift */; };
 		DD456BE9210EBDE6009465FE /* CheckForResourceUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402EE20FDC9D100091B9D /* CheckForResourceUpdateModel.swift */; };
@@ -69,16 +69,16 @@
 		DD456C05210EBDE6009465FE /* JsonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160E520F5F0350000B8DC /* JsonMapper.swift */; };
 		DD456C06210EBDE6009465FE /* GenderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EB61A21030F3400E7AE9B /* GenderButton.swift */; };
 		DD456C07210EBDE6009465FE /* CheckForUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D120FC79D400091B9D /* CheckForUpdatesViewController.swift */; };
-		DD456C08210EBDE6009465FE /* GameDetailModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74031221002C6B00091B9D /* GameDetailModelManager.swift */; };
+		DD456C08210EBDE6009465FE /* GameDetailModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74031221002C6B00091B9D /* GameDetailModuleManager.swift */; };
 		DD456C09210EBDE6009465FE /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402F020FDD41500091B9D /* AppInfo.swift */; };
 		DD456C0A210EBDE6009465FE /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160D520F5B2FB0000B8DC /* UserManager.swift */; };
 		DD456C0B210EBDE6009465FE /* DismissAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D920FCC58C00091B9D /* DismissAnimatedTransition.swift */; };
-		DD456C0C210EBDE6009465FE /* GameModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F220F6319E0000B8DC /* GameModelManager.swift */; };
+		DD456C0C210EBDE6009465FE /* GameModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F220F6319E0000B8DC /* GameModuleManager.swift */; };
 		DD456C0D210EBDE6009465FE /* GameDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74031421002E7C00091B9D /* GameDetailModel.swift */; };
 		DD456C0E210EBDE6009465FE /* EngineResourceManagerResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402F720FEEBE300091B9D /* EngineResourceManagerResourceManager.swift */; };
 		DD456C0F210EBDE6009465FE /* DecorationControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160A920F4A9D50000B8DC /* DecorationControllerManager.swift */; };
 		DD456C10210EBDE6009465FE /* BlockHTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160DD20F5B7030000B8DC /* BlockHTTPError.swift */; };
-		DD456C11210EBDE6009465FE /* CheckForAppUpdatesModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402E420FD930900091B9D /* CheckForAppUpdatesModelManager.swift */; };
+		DD456C11210EBDE6009465FE /* CheckForAppUpdatesModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402E420FD930900091B9D /* CheckForAppUpdatesModuleManager.swift */; };
 		DD456C12210EBDE6009465FE /* AuthTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160DA20F5B5440000B8DC /* AuthTokenModel.swift */; };
 		DD456C13210EBDE6009465FE /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D320FC818E00091B9D /* ProgressView.swift */; };
 		DD456C14210EBDE6009465FE /* LaunchInfiniteTranslationSkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030420FF311100091B9D /* LaunchInfiniteTranslationSkyView.swift */; };
@@ -152,7 +152,7 @@
 		DD5160EC20F5FAE60000B8DC /* GameModesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160EB20F5FAE60000B8DC /* GameModesView.swift */; };
 		DD5160EE20F5FFD00000B8DC /* GameModesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160ED20F5FFD00000B8DC /* GameModesTableCell.swift */; };
 		DD5160F020F60ACF0000B8DC /* GameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160EF20F60ACF0000B8DC /* GameCollectionViewCell.swift */; };
-		DD5160F320F6319E0000B8DC /* GameModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F220F6319E0000B8DC /* GameModelManager.swift */; };
+		DD5160F320F6319E0000B8DC /* GameModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F220F6319E0000B8DC /* GameModuleManager.swift */; };
 		DD5160F620F631F40000B8DC /* GamesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F520F631F40000B8DC /* GamesAPI.swift */; };
 		DD5160F920F6F1CD0000B8DC /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5160F820F6F1CD0000B8DC /* GameModel.swift */; };
 		DD51611620F747000000B8DC /* GamesRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51611520F747000000B8DC /* GamesRequester.swift */; };
@@ -180,7 +180,7 @@
 		DD7402DE20FCC58C00091B9D /* DismissAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402D920FCC58C00091B9D /* DismissAnimatedTransition.swift */; };
 		DD7402E020FCC58C00091B9D /* ModalTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402DB20FCC58C00091B9D /* ModalTransitionController.swift */; };
 		DD7402E220FCC58C00091B9D /* PresentAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402DD20FCC58C00091B9D /* PresentAnimatedTransition.swift */; };
-		DD7402E520FD930900091B9D /* CheckForAppUpdatesModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402E420FD930900091B9D /* CheckForAppUpdatesModelManager.swift */; };
+		DD7402E520FD930900091B9D /* CheckForAppUpdatesModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402E420FD930900091B9D /* CheckForAppUpdatesModuleManager.swift */; };
 		DD7402E920FDA62000091B9D /* ConfigurationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402E720FDA62000091B9D /* ConfigurationAPI.swift */; };
 		DD7402EA20FDA62000091B9D /* ConfigurationRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402E820FDA62000091B9D /* ConfigurationRequester.swift */; };
 		DD7402ED20FDC9C000091B9D /* CheckForAppUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7402EC20FDC9C000091B9D /* CheckForAppUpdateModel.swift */; };
@@ -195,23 +195,23 @@
 		DD74030320FF219A00091B9D /* AnimatableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030220FF219A00091B9D /* AnimatableProtocol.swift */; };
 		DD74030520FF311100091B9D /* LaunchInfiniteTranslationSkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030420FF311100091B9D /* LaunchInfiniteTranslationSkyView.swift */; };
 		DD74030820FF3DA700091B9D /* BulletinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030720FF3DA700091B9D /* BulletinViewController.swift */; };
-		DD74030B20FF485200091B9D /* BulletinModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030A20FF485200091B9D /* BulletinModelManager.swift */; };
+		DD74030B20FF485200091B9D /* BulletinModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030A20FF485200091B9D /* BulletinModuleManager.swift */; };
 		DD74030F20FF620F00091B9D /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74030E20FF620F00091B9D /* Delay.swift */; };
 		DD74031120FF637E00091B9D /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74031020FF637E00091B9D /* GameDetailViewController.swift */; };
-		DD74031321002C6B00091B9D /* GameDetailModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74031221002C6B00091B9D /* GameDetailModelManager.swift */; };
+		DD74031321002C6B00091B9D /* GameDetailModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74031221002C6B00091B9D /* GameDetailModuleManager.swift */; };
 		DD74031521002E7D00091B9D /* GameDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74031421002E7C00091B9D /* GameDetailModel.swift */; };
 		DD74037A21009AA800091B9D /* MoyaProvider+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74037921009AA800091B9D /* MoyaProvider+Sync.swift */; };
 		DD74038021018A1100091B9D /* EngineResource in Resources */ = {isa = PBXBuildFile; fileRef = DD74037F21018A1100091B9D /* EngineResource */; };
 		DD8EB6192103059700E7AE9B /* RandomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EB6182103059700E7AE9B /* RandomInputView.swift */; };
 		DD8EB61B21030F3400E7AE9B /* GenderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EB61A21030F3400E7AE9B /* GenderButton.swift */; };
 		DD8EB61E21030F7200E7AE9B /* GenderEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EB61D21030F7200E7AE9B /* GenderEnum.swift */; };
-		DDA4B0DE2105F60D004346C5 /* LaunchModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */; };
+		DDA4B0DE2105F60D004346C5 /* LaunchModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DD2105F60D004346C5 /* LaunchModuleManager.swift */; };
 		DDA4B0E02106BF75004346C5 /* GameDispatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */; };
 		DDA4B0E32106D9A1004346C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B0E52106D9A1004346C5 /* Localizable.strings */; };
 		DDAACFE82134F4F80074C5A5 /* AdjustLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFE72134F4F80074C5A5 /* AdjustLayoutButton.swift */; };
 		DDAACFE92134F4F80074C5A5 /* AdjustLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFE72134F4F80074C5A5 /* AdjustLayoutButton.swift */; };
-		DDAACFED213536920074C5A5 /* LoginModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFEC213536920074C5A5 /* LoginModelManager.swift */; };
-		DDAACFEE213536920074C5A5 /* LoginModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFEC213536920074C5A5 /* LoginModelManager.swift */; };
+		DDAACFED213536920074C5A5 /* LoginModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFEC213536920074C5A5 /* LoginModuleManager.swift */; };
+		DDAACFEE213536920074C5A5 /* LoginModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFEC213536920074C5A5 /* LoginModuleManager.swift */; };
 		DDAACFF0213539E00074C5A5 /* VIPEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFEF213539E00074C5A5 /* VIPEnum.swift */; };
 		DDAACFF1213539E00074C5A5 /* VIPEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAACFEF213539E00074C5A5 /* VIPEnum.swift */; };
 		DDAAD01E213571CE0074C5A5 /* RegisterModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAD01D213571CE0074C5A5 /* RegisterModuleManager.swift */; };
@@ -257,8 +257,8 @@
 		DDB9456F212FB0380009933A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9456D212FB0380009933A /* RegisterViewController.swift */; };
 		DDB94572212FBB4D0009933A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94571212FBB4D0009933A /* AboutUsViewController.swift */; };
 		DDB94573212FBB4D0009933A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94571212FBB4D0009933A /* AboutUsViewController.swift */; };
-		DDB94577212FF6C80009933A /* HomePageModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94576212FF6C80009933A /* HomePageModelManager.swift */; };
-		DDB94578212FF6C80009933A /* HomePageModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94576212FF6C80009933A /* HomePageModelManager.swift */; };
+		DDB94577212FF6C80009933A /* HomePageModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94576212FF6C80009933A /* HomePageModuleManager.swift */; };
+		DDB94578212FF6C80009933A /* HomePageModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94576212FF6C80009933A /* HomePageModuleManager.swift */; };
 		DDB9457A212FFBDA0009933A /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94579212FFBDA0009933A /* ProfileModel.swift */; };
 		DDB9457B212FFBDA0009933A /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB94579212FFBDA0009933A /* ProfileModel.swift */; };
 		DDE09F9B21131F1700BD5CF8 /* BlockModsGameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD51606120EF631E0000B8DC /* BlockModsGameKit.framework */; };
@@ -374,7 +374,7 @@
 		DD5160EB20F5FAE60000B8DC /* GameModesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModesView.swift; sourceTree = "<group>"; };
 		DD5160ED20F5FFD00000B8DC /* GameModesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModesTableCell.swift; sourceTree = "<group>"; };
 		DD5160EF20F60ACF0000B8DC /* GameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionViewCell.swift; sourceTree = "<group>"; };
-		DD5160F220F6319E0000B8DC /* GameModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModelManager.swift; sourceTree = "<group>"; };
+		DD5160F220F6319E0000B8DC /* GameModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleManager.swift; sourceTree = "<group>"; };
 		DD5160F520F631F40000B8DC /* GamesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesAPI.swift; sourceTree = "<group>"; };
 		DD5160F820F6F1CD0000B8DC /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		DD51611520F747000000B8DC /* GamesRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesRequester.swift; sourceTree = "<group>"; };
@@ -396,7 +396,7 @@
 		DD7402D920FCC58C00091B9D /* DismissAnimatedTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimatedTransition.swift; sourceTree = "<group>"; };
 		DD7402DB20FCC58C00091B9D /* ModalTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransitionController.swift; sourceTree = "<group>"; };
 		DD7402DD20FCC58C00091B9D /* PresentAnimatedTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAnimatedTransition.swift; sourceTree = "<group>"; };
-		DD7402E420FD930900091B9D /* CheckForAppUpdatesModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckForAppUpdatesModelManager.swift; sourceTree = "<group>"; };
+		DD7402E420FD930900091B9D /* CheckForAppUpdatesModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckForAppUpdatesModuleManager.swift; sourceTree = "<group>"; };
 		DD7402E720FDA62000091B9D /* ConfigurationAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationAPI.swift; sourceTree = "<group>"; };
 		DD7402E820FDA62000091B9D /* ConfigurationRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationRequester.swift; sourceTree = "<group>"; };
 		DD7402EC20FDC9C000091B9D /* CheckForAppUpdateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckForAppUpdateModel.swift; sourceTree = "<group>"; };
@@ -411,10 +411,10 @@
 		DD74030220FF219A00091B9D /* AnimatableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableProtocol.swift; sourceTree = "<group>"; };
 		DD74030420FF311100091B9D /* LaunchInfiniteTranslationSkyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInfiniteTranslationSkyView.swift; sourceTree = "<group>"; };
 		DD74030720FF3DA700091B9D /* BulletinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinViewController.swift; sourceTree = "<group>"; };
-		DD74030A20FF485200091B9D /* BulletinModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinModelManager.swift; sourceTree = "<group>"; };
+		DD74030A20FF485200091B9D /* BulletinModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinModuleManager.swift; sourceTree = "<group>"; };
 		DD74030E20FF620F00091B9D /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		DD74031020FF637E00091B9D /* GameDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailViewController.swift; sourceTree = "<group>"; };
-		DD74031221002C6B00091B9D /* GameDetailModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailModelManager.swift; sourceTree = "<group>"; };
+		DD74031221002C6B00091B9D /* GameDetailModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailModuleManager.swift; sourceTree = "<group>"; };
 		DD74031421002E7C00091B9D /* GameDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailModel.swift; sourceTree = "<group>"; };
 		DD74037921009AA800091B9D /* MoyaProvider+Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Sync.swift"; sourceTree = "<group>"; };
 		DD74037F21018A1100091B9D /* EngineResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EngineResource; sourceTree = "<group>"; };
@@ -422,11 +422,11 @@
 		DD8EB6182103059700E7AE9B /* RandomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomInputView.swift; sourceTree = "<group>"; };
 		DD8EB61A21030F3400E7AE9B /* GenderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderButton.swift; sourceTree = "<group>"; };
 		DD8EB61D21030F7200E7AE9B /* GenderEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderEnum.swift; sourceTree = "<group>"; };
-		DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModelManager.swift; sourceTree = "<group>"; };
+		DDA4B0DD2105F60D004346C5 /* LaunchModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModuleManager.swift; sourceTree = "<group>"; };
 		DDA4B0DF2106BF75004346C5 /* GameDispatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDispatchModel.swift; sourceTree = "<group>"; };
 		DDA4B0E42106D9A1004346C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DDAACFE72134F4F80074C5A5 /* AdjustLayoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustLayoutButton.swift; sourceTree = "<group>"; };
-		DDAACFEC213536920074C5A5 /* LoginModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModelManager.swift; sourceTree = "<group>"; };
+		DDAACFEC213536920074C5A5 /* LoginModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleManager.swift; sourceTree = "<group>"; };
 		DDAACFEF213539E00074C5A5 /* VIPEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPEnum.swift; sourceTree = "<group>"; };
 		DDAAD01D213571CE0074C5A5 /* RegisterModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModuleManager.swift; sourceTree = "<group>"; };
 		DDAAD02021367E190074C5A5 /* NotificationCenter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Extension.swift"; sourceTree = "<group>"; };
@@ -450,7 +450,7 @@
 		DDB94569212FA4570009933A /* ThirdSignSecurityOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSignSecurityOptionTableViewCell.swift; sourceTree = "<group>"; };
 		DDB9456D212FB0380009933A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DDB94571212FBB4D0009933A /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
-		DDB94576212FF6C80009933A /* HomePageModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModelManager.swift; sourceTree = "<group>"; };
+		DDB94576212FF6C80009933A /* HomePageModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModuleManager.swift; sourceTree = "<group>"; };
 		DDB94579212FFBDA0009933A /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		DDFB64452126B3D90036AE0F /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
 		DDFB644B2126B6F30036AE0F /* AnalysisService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisService.swift; sourceTree = "<group>"; };
@@ -556,7 +556,7 @@
 				DD51607C20F30AB00000B8DC /* Abstract */,
 				DD51607720F304A60000B8DC /* Modules */,
 				DD5160D820F5B52B0000B8DC /* Models */,
-				DD5160A820F4A9AA0000B8DC /* Managers */,
+				DD5160A820F4A9AA0000B8DC /* ModuleManagers */,
 				DD5160BC20F5A18F0000B8DC /* Network */,
 				DD51608820F458810000B8DC /* General */,
 				DD51608E20F469E40000B8DC /* Extensions */,
@@ -691,7 +691,7 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		DD5160A820F4A9AA0000B8DC /* Managers */ = {
+		DD5160A820F4A9AA0000B8DC /* ModuleManagers */ = {
 			isa = PBXGroup;
 			children = (
 				DDA4B0DC2105F5F5004346C5 /* Launch */,
@@ -704,7 +704,7 @@
 				DD5160F120F631890000B8DC /* GameManager */,
 				DD5160A920F4A9D50000B8DC /* DecorationControllerManager.swift */,
 			);
-			path = Managers;
+			path = ModuleManagers;
 			sourceTree = "<group>";
 		};
 		DD5160B520F4D6200000B8DC /* Game */ = {
@@ -801,8 +801,8 @@
 		DD5160F120F631890000B8DC /* GameManager */ = {
 			isa = PBXGroup;
 			children = (
-				DD5160F220F6319E0000B8DC /* GameModelManager.swift */,
-				DD74031221002C6B00091B9D /* GameDetailModelManager.swift */,
+				DD5160F220F6319E0000B8DC /* GameModuleManager.swift */,
+				DD74031221002C6B00091B9D /* GameDetailModuleManager.swift */,
 			);
 			path = GameManager;
 			sourceTree = "<group>";
@@ -916,7 +916,7 @@
 		DD7402F920FEEC5400091B9D /* APP */ = {
 			isa = PBXGroup;
 			children = (
-				DD7402E420FD930900091B9D /* CheckForAppUpdatesModelManager.swift */,
+				DD7402E420FD930900091B9D /* CheckForAppUpdatesModuleManager.swift */,
 			);
 			path = APP;
 			sourceTree = "<group>";
@@ -932,7 +932,7 @@
 		DD74030920FF483500091B9D /* Bulletin */ = {
 			isa = PBXGroup;
 			children = (
-				DD74030A20FF485200091B9D /* BulletinModelManager.swift */,
+				DD74030A20FF485200091B9D /* BulletinModuleManager.swift */,
 			);
 			path = Bulletin;
 			sourceTree = "<group>";
@@ -958,7 +958,7 @@
 		DDA4B0DC2105F5F5004346C5 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
-				DDA4B0DD2105F60D004346C5 /* LaunchModelManager.swift */,
+				DDA4B0DD2105F60D004346C5 /* LaunchModuleManager.swift */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -977,7 +977,7 @@
 		DDAACFEB2135366C0074C5A5 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				DDAACFEC213536920074C5A5 /* LoginModelManager.swift */,
+				DDAACFEC213536920074C5A5 /* LoginModuleManager.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1105,7 +1105,7 @@
 		DDB94575212FF6AD0009933A /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				DDB94576212FF6C80009933A /* HomePageModelManager.swift */,
+				DDB94576212FF6C80009933A /* HomePageModuleManager.swift */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -1461,7 +1461,7 @@
 				DDAAD05621414DDB0074C5A5 /* ClearCacheModuleManager.swift in Sources */,
 				DD456BD6210EBDE6009465FE /* BMFileManager.swift in Sources */,
 				DD456BD7210EBDE6009465FE /* GamesAPI.swift in Sources */,
-				DD456BD8210EBDE6009465FE /* BulletinModelManager.swift in Sources */,
+				DD456BD8210EBDE6009465FE /* BulletinModuleManager.swift in Sources */,
 				DDAACFF1213539E00074C5A5 /* VIPEnum.swift in Sources */,
 				DD456BD9210EBDE6009465FE /* GameViewController.swift in Sources */,
 				DD456BDB210EBDE6009465FE /* Requester.swift in Sources */,
@@ -1483,7 +1483,7 @@
 				DD456BE5210EBDE6009465FE /* UIView+Layout.swift in Sources */,
 				DDAAD02D2136C5830074C5A5 /* PasswordSecurityModuleManager.swift in Sources */,
 				DDAACFE92134F4F80074C5A5 /* AdjustLayoutButton.swift in Sources */,
-				DD456BE6210EBDE6009465FE /* LaunchModelManager.swift in Sources */,
+				DD456BE6210EBDE6009465FE /* LaunchModuleManager.swift in Sources */,
 				DDAAD02221367E190074C5A5 /* NotificationCenter+Extension.swift in Sources */,
 				DD456BE7210EBDE6009465FE /* BlockHTTPHost.swift in Sources */,
 				DD456BE8210EBDE6009465FE /* TransitionManagerStack.swift in Sources */,
@@ -1503,7 +1503,7 @@
 				DD3255A7210FFB8600739E00 /* GameInQueueViewController.swift in Sources */,
 				DD456BF2210EBDE6009465FE /* BMFileManager+EngineResource.swift in Sources */,
 				DDB9455C212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift in Sources */,
-				DDB94578212FF6C80009933A /* HomePageModelManager.swift in Sources */,
+				DDB94578212FF6C80009933A /* HomePageModuleManager.swift in Sources */,
 				DD456BF3210EBDE6009465FE /* LaunchBrandingViewController.swift in Sources */,
 				DDAAD0502140E10F0074C5A5 /* GoogleSignService.swift in Sources */,
 				DD67B04C212E61FA002C12D1 /* String+Crypto.swift in Sources */,
@@ -1524,7 +1524,7 @@
 				DD456BFF210EBDE6009465FE /* BulletinViewController.swift in Sources */,
 				DD456C00210EBDE6009465FE /* UIView+Chainable.swift in Sources */,
 				DD456C01210EBDE6009465FE /* GameModel.swift in Sources */,
-				DDAACFEE213536920074C5A5 /* LoginModelManager.swift in Sources */,
+				DDAACFEE213536920074C5A5 /* LoginModuleManager.swift in Sources */,
 				DD456C02210EBDE6009465FE /* ReusableProtocol.swift in Sources */,
 				DD456C03210EBDE6009465FE /* AccountInfoView.swift in Sources */,
 				DDB94559212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */,
@@ -1533,14 +1533,14 @@
 				DDAAD034213D17A70074C5A5 /* RegexMatcher.swift in Sources */,
 				DD456C06210EBDE6009465FE /* GenderButton.swift in Sources */,
 				DD456C07210EBDE6009465FE /* CheckForUpdatesViewController.swift in Sources */,
-				DD456C08210EBDE6009465FE /* GameDetailModelManager.swift in Sources */,
+				DD456C08210EBDE6009465FE /* GameDetailModuleManager.swift in Sources */,
 				DDB9456F212FB0380009933A /* RegisterViewController.swift in Sources */,
 				DD456C09210EBDE6009465FE /* AppInfo.swift in Sources */,
 				DD456C0A210EBDE6009465FE /* UserManager.swift in Sources */,
 				DD456C0B210EBDE6009465FE /* DismissAnimatedTransition.swift in Sources */,
 				DDB94568212EDE840009933A /* ThirdSignSecurityViewController.swift in Sources */,
 				DD3BAF73212DCA1900672C26 /* SwitchAccountViewController.swift in Sources */,
-				DD456C0C210EBDE6009465FE /* GameModelManager.swift in Sources */,
+				DD456C0C210EBDE6009465FE /* GameModuleManager.swift in Sources */,
 				DD67B03F212D68FF002C12D1 /* SettingOptionTableViewCell.swift in Sources */,
 				DD67B050212E944B002C12D1 /* LoginViewController.swift in Sources */,
 				DD456C0D210EBDE6009465FE /* GameDetailModel.swift in Sources */,
@@ -1548,7 +1548,7 @@
 				DD456C0F210EBDE6009465FE /* DecorationControllerManager.swift in Sources */,
 				DDB94565212EDE410009933A /* MailSecurityViewController.swift in Sources */,
 				DD456C10210EBDE6009465FE /* BlockHTTPError.swift in Sources */,
-				DD456C11210EBDE6009465FE /* CheckForAppUpdatesModelManager.swift in Sources */,
+				DD456C11210EBDE6009465FE /* CheckForAppUpdatesModuleManager.swift in Sources */,
 				DD456C12210EBDE6009465FE /* AuthTokenModel.swift in Sources */,
 				DD456C13210EBDE6009465FE /* ProgressView.swift in Sources */,
 				DD456C14210EBDE6009465FE /* LaunchInfiniteTranslationSkyView.swift in Sources */,
@@ -1581,7 +1581,7 @@
 				DDAAD05521414DDB0074C5A5 /* ClearCacheModuleManager.swift in Sources */,
 				DD7402FD20FEEDF500091B9D /* BMFileManager.swift in Sources */,
 				DD5160F620F631F40000B8DC /* GamesAPI.swift in Sources */,
-				DD74030B20FF485200091B9D /* BulletinModelManager.swift in Sources */,
+				DD74030B20FF485200091B9D /* BulletinModuleManager.swift in Sources */,
 				DDAACFF0213539E00074C5A5 /* VIPEnum.swift in Sources */,
 				DD5160E920F5FA310000B8DC /* GameViewController.swift in Sources */,
 				DD5160C620F5A2330000B8DC /* Requester.swift in Sources */,
@@ -1600,7 +1600,7 @@
 				DD67B02D212D53D0002C12D1 /* SettingViewController.swift in Sources */,
 				DD5160F020F60ACF0000B8DC /* GameCollectionViewCell.swift in Sources */,
 				DD51609620F46A310000B8DC /* UIView+Layout.swift in Sources */,
-				DDA4B0DE2105F60D004346C5 /* LaunchModelManager.swift in Sources */,
+				DDA4B0DE2105F60D004346C5 /* LaunchModuleManager.swift in Sources */,
 				DDAAD02C2136C5830074C5A5 /* PasswordSecurityModuleManager.swift in Sources */,
 				DDAACFE82134F4F80074C5A5 /* AdjustLayoutButton.swift in Sources */,
 				DD5160E020F5B75B0000B8DC /* BlockHTTPHost.swift in Sources */,
@@ -1623,7 +1623,7 @@
 				DD3255A6210FFB8600739E00 /* GameInQueueViewController.swift in Sources */,
 				DD7402FF20FEF05F00091B9D /* BMFileManager+EngineResource.swift in Sources */,
 				DDB9455B212EC0FF0009933A /* AccountSecurityOptionTableViewCell.swift in Sources */,
-				DDB94577212FF6C80009933A /* HomePageModelManager.swift in Sources */,
+				DDB94577212FF6C80009933A /* HomePageModuleManager.swift in Sources */,
 				DDB043A5210B177F00A8F3A8 /* LaunchBrandingViewController.swift in Sources */,
 				DDAAD04F2140E10F0074C5A5 /* GoogleSignService.swift in Sources */,
 				DD67B04B212E61FA002C12D1 /* String+Crypto.swift in Sources */,
@@ -1644,7 +1644,7 @@
 				DD74030820FF3DA700091B9D /* BulletinViewController.swift in Sources */,
 				DD51609820F46A310000B8DC /* UIView+Chainable.swift in Sources */,
 				DD5160F920F6F1CD0000B8DC /* GameModel.swift in Sources */,
-				DDAACFED213536920074C5A5 /* LoginModelManager.swift in Sources */,
+				DDAACFED213536920074C5A5 /* LoginModuleManager.swift in Sources */,
 				DD51609B20F46AAB0000B8DC /* ReusableProtocol.swift in Sources */,
 				DD51608D20F468300000B8DC /* AccountInfoView.swift in Sources */,
 				DDB94558212EBFB20009933A /* AccountSecurityOptionViewController.swift in Sources */,
@@ -1653,14 +1653,14 @@
 				DDAAD033213D17A70074C5A5 /* RegexMatcher.swift in Sources */,
 				DD8EB61B21030F3400E7AE9B /* GenderButton.swift in Sources */,
 				DD7402D220FC79D400091B9D /* CheckForUpdatesViewController.swift in Sources */,
-				DD74031321002C6B00091B9D /* GameDetailModelManager.swift in Sources */,
+				DD74031321002C6B00091B9D /* GameDetailModuleManager.swift in Sources */,
 				DDB9456E212FB0380009933A /* RegisterViewController.swift in Sources */,
 				DD7402F120FDD41500091B9D /* AppInfo.swift in Sources */,
 				DD5160D620F5B2FB0000B8DC /* UserManager.swift in Sources */,
 				DD7402DE20FCC58C00091B9D /* DismissAnimatedTransition.swift in Sources */,
 				DDB94567212EDE840009933A /* ThirdSignSecurityViewController.swift in Sources */,
 				DD3BAF72212DCA1900672C26 /* SwitchAccountViewController.swift in Sources */,
-				DD5160F320F6319E0000B8DC /* GameModelManager.swift in Sources */,
+				DD5160F320F6319E0000B8DC /* GameModuleManager.swift in Sources */,
 				DD67B03E212D68FF002C12D1 /* SettingOptionTableViewCell.swift in Sources */,
 				DD67B04F212E944B002C12D1 /* LoginViewController.swift in Sources */,
 				DD74031521002E7D00091B9D /* GameDetailModel.swift in Sources */,
@@ -1668,7 +1668,7 @@
 				DD5160AA20F4A9D50000B8DC /* DecorationControllerManager.swift in Sources */,
 				DDB94564212EDE410009933A /* MailSecurityViewController.swift in Sources */,
 				DD5160DE20F5B7030000B8DC /* BlockHTTPError.swift in Sources */,
-				DD7402E520FD930900091B9D /* CheckForAppUpdatesModelManager.swift in Sources */,
+				DD7402E520FD930900091B9D /* CheckForAppUpdatesModuleManager.swift in Sources */,
 				DD5160DB20F5B5440000B8DC /* AuthTokenModel.swift in Sources */,
 				DD7402D420FC818E00091B9D /* ProgressView.swift in Sources */,
 				DD74030520FF311100091B9D /* LaunchInfiniteTranslationSkyView.swift in Sources */,

@@ -13,7 +13,7 @@ import StoreKit
 class GameViewController: UIViewController {
 
     private weak var collectionView: UICollectionView?
-    private var gameModelManager = GameModelManager()
+    private var gameModelManager = GameModuleManager()
     private var isPresentedInQueue = false
     private var games: [GameModel] = []
     private var enteringGameID = ""

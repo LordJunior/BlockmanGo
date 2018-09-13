@@ -16,8 +16,6 @@ class BulletinViewController: UIViewController {
 
     weak var delegate: BulletinViewControllerDelegate?
     
-    private let bulletinModelManager = BulletinModelManager()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -72,7 +70,7 @@ class BulletinViewController: UIViewController {
             make.centerX.equalToSuperview()
         }
         
-        bulletinModelManager.fetchBulletin { (attributedBulletin) in
+        BulletinModuleManager.fetchBulletin { (attributedBulletin) in
             bulletinContentTextView.attributedText = attributedBulletin
         }
     }

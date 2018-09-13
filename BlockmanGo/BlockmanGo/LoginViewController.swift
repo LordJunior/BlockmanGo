@@ -214,7 +214,7 @@ class LoginViewController: UIViewController {
             return
         }
         BlockHUD.showLoading(inView: view)
-        LoginModelManager.resetPassword(byEmail: UserManager.shared.mailInBinded) { (result) in
+        LoginModuleManager.resetPassword(byEmail: UserManager.shared.mailInBinded) { (result) in
             BlockHUD.hide(forView: self.view)
             switch result {
             case .success(_):
@@ -258,7 +258,7 @@ class LoginViewController: UIViewController {
     }
     
     private func login(account: String, password: String, platform: SignInPlatformEnum) {
-        LoginModelManager.login(account: account, password: password, platform: platform) { [unowned self] (result) in
+        LoginModuleManager.login(account: account, password: password, platform: platform) { [unowned self] (result) in
             BlockHUD.hide(forView: self.view)
             switch result {
             case .success(_):

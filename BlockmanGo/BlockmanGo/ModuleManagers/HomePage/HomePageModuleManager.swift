@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct HomePageModelManager {
+struct HomePageModuleManager {
     
     static func fetchUserProfile(completion: @escaping (BlockHTTPResult<ProfileModel, BlockHTTPError>) -> Void) {
         UserRequester.fetchUserProfile { (result) in

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CheckForAppUpdatesModelManager {
+class CheckForAppUpdatesModuleManager {
     typealias AppUpdatesResult = (updateIfNeed: Bool, forceUpdateIfNeed: Bool, downloadURL: String)
 
     private var appVersionForItunes: String?
