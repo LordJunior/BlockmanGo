@@ -19,6 +19,7 @@ class UserManager {
         initializeAuth()
         initializeProfile()
         NotificationCenter.default.addObserver(self, selector: #selector(applicationDidEnterBackgroundCallback), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidEnterBackgroundCallback), name: NSNotification.Name.UIApplicationWillTerminate, object: nil)
     }
     
     deinit {
