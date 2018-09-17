@@ -1,27 +1,27 @@
 TipType	TipTemplateId	Notice	zh_CN	en_US	pt_BR	ru_RU	ko_KR	de_DE	fr_FR	es_ES	it_IT	in_ID	th_TH	tr_TR	vi_VN	ja_JP
 枚举类型(游戏独有的id合成方式，等于游戏id+三位，比如g1019,id组成就是1019XXX)	模板说明	备注	中文	英文	葡萄牙语	俄语	韩语	德语	法语	西语	意大利语	印尼语	泰语	土耳其	越南语	日语
-1023501	BuildingBattle	建筑战争	建筑战争	Building Battle	Building Battle	Building Battle	Building Battle	Building Battle	Building Battle	Building Battle	Building Battle	Building Battle	Building Battle	Building Battle	Building Battle	Building Battle
-1023502	BuildingBattleReadyTime		▢FF00FF00你有▢FFFF0000%1s秒▢FF00FF00的时间准备	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare
-1023503	BuildingBattleBuildTip		▢FF00FF00你还有▢FFFF0000%1s秒▢FF00FF00的时间建筑	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build
-1023504	BuildingBattleReadytoGrade		▢FF00FF00时间到，准备开始打分	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade
-1023505	BuildingBattleStartGuess		▢FF00FF00竞猜环节开始	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !
-1023506	BuildingBattleGuessLeft		▢FF00FF00竞猜环节还有▢FFFF0000%1s秒▢FF00FF00时间	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess
-1023507	BuildingBattleStartGradeOther		请给玩家打分	Grade for other players	Grade for other players	Grade for other players	Grade for other players	Grade for other players	Grade for other players	Grade for other players	Grade for other players	Grade for other players	Grade for other players	Grade for other players	Grade for other players	Grade for other players
-1023508	BuildingBattleStartGradeSelf		等待其他玩家打分	Wait for other players	Wait for other players	Wait for other players	Wait for other players	Wait for other players	Wait for other players	Wait for other players	Wait for other players	Wait for other players	Wait for other players	Wait for other players	Wait for other players	Wait for other players
-1023509	BuildingBattleGradeTip		这是什么鬼！	What the hell	What the hell	What the hell	What the hell	What the hell	What the hell	What the hell	What the hell	What the hell	What the hell	What the hell	What the hell	What the hell
-1023510	BuildingBattleGradeTip		不行	Bad	Bad	Bad	Bad	Bad	Bad	Bad	Bad	Bad	Bad	Bad	Bad	Bad
-1023511	BuildingBattleGradeTip		过关	Pass	Pass	Pass	Pass	Pass	Pass	Pass	Pass	Pass	Pass	Pass	Pass	Pass
-1023512	BuildingBattleGradeTip		挺好的	Good	Good	Good	Good	Good	Good	Good	Good	Good	Good	Good	Good	Good
-1023513	BuildingBattleGradeTip		棒	Very good	Very good	Very good	Very good	Very good	Very good	Very good	Very good	Very good	Very good	Very good	Very good	Very good
-1023514	BuildingBattleGradeTip		神作啊！	Perfect	Perfect	Perfect	Perfect	Perfect	Perfect	Perfect	Perfect	Perfect	Perfect	Perfect	Perfect	Perfect
-1023515	BuildingBattleGradeFinalTip		最终打分是▢FFFF0000这是什么鬼！	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell
-1023516	BuildingBattleGradeFinalTip		最终打分是▢FFFF0000不行	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad
-1023517	BuildingBattleGradeFinalTip		最终打分是▢FFFF0000过关	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass
-1023518	BuildingBattleGradeFinalTip		最终打分是▢FFFF0000挺好的	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good
-1023519	BuildingBattleGradeFinalTip		最终打分是▢FFFF0000棒	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good
-1023520	BuildingBattleGradeFinalTip		最终打分是▢FFFF0000神作啊！	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect
-1023521	BuildingBattleWinner		▢FF00FF00第一名：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s
-1023522	BuildingBattleCanNotGradeSelf		▢FFFF0000无法给自己打分	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!
+1023501	BuildingBattle	建筑战争	建筑战争	Building Battle	Building Battle	Build Battle	Building Battle	Building Battle	Building Battle	Building Battle	Building Battle	Build Battle	Build Battle	Building Battle	Building Battle	Building Battle
+1023502	BuildingBattleReadyTime		▢FF00FF00你有▢FFFF0000%1s秒▢FF00FF00的时间准备	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00У вас ▢FFFF0000%1s сек▢FF00FF00 чтобы приготовиться	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00คุณมี▢FFFF0000%1sวินาที▢FF00FF00ที่จะเตรียมตัว	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to prepare
+1023503	BuildingBattleBuildTip		▢FF00FF00你还有▢FFFF0000%1s秒▢FF00FF00的时间建筑	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00У вас ▢FFFF0000%1s сек▢FF00FF00 чтобы строить	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00คุณยังมี▢FFFF0000%1sวินาที▢FF00FF00ที่จะก่อสร้าง	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build	▢FF00FF00You have ▢FFFF0000%1s seconds▢FF00FF00 to build
+1023504	BuildingBattleReadytoGrade		▢FF00FF00时间到，准备开始打分	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Время вышло，приготовьтесь оценивать	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00ถึงเวลา เตรียมที่จะให้คะแนน	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade	▢FF00FF00Time out，Ready to grade
+1023505	BuildingBattleStartGuess		▢FF00FF00竞猜环节开始	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Угадайте, кто станет победителем прямо сейчас!	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00ขั้นตอนการเดาคำถามเริ่มขึ้น	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !	▢FF00FF00Guess Start !
+1023506	BuildingBattleGuessLeft		▢FF00FF00竞猜环节还有▢FFFF0000%1s秒▢FF00FF00时间	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00У вас ▢FFFF0000%1s сек▢FF00FF00 чтобы угадать победителя	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00ขั้นตอนการเดาคำถามยังมี▢FFFF0000%1sวินาที▢FF00FF00เวลา	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess	▢FF00FF00You have ▢FFFF0000%1s secs▢FF00FF00 to guess
+1023507	BuildingBattleStartGradeOther		请给玩家打分	Grade for other players	Grade for other players	Оценка других игроков	Grade for other players	Grade for other players	Grade for other players	Grade for other players	Grade for other players	Grade for other players	โปรดให้คะแนนแก่ผู้เล่น	Grade for other players	Grade for other players	Grade for other players
+1023508	BuildingBattleStartGradeSelf		等待其他玩家打分	Wait for other players	Wait for other players	Ожидание других игроков	Wait for other players	Wait for other players	Wait for other players	Wait for other players	Wait for other players	Wait for other players	รอผู้เล่นอื่นให้คะแนน	Wait for other players	Wait for other players	Wait for other players
+1023509	BuildingBattleGradeTip		这是什么鬼！	What the hell	What the hell	Что за чертовщина	What the hell	What the hell	What the hell	What the hell	What the hell	What the hell	นี่คือผีอะไร	What the hell	What the hell	What the hell
+1023510	BuildingBattleGradeTip		不行	Bad	Bad	Плохо	Bad	Bad	Bad	Bad	Bad	Bad	ไม่ได้	Bad	Bad	Bad
+1023511	BuildingBattleGradeTip		过关	Pass	Pass	Пойдет	Pass	Pass	Pass	Pass	Pass	Pass	ผ่าน	Pass	Pass	Pass
+1023512	BuildingBattleGradeTip		挺好的	Good	Good	Хорошо	Good	Good	Good	Good	Good	Good	ดีมาก	Good	Good	Good
+1023513	BuildingBattleGradeTip		棒	Very good	Very good	Очень хорошо	Very good	Very good	Very good	Very good	Very good	Very good	เก่ง	Very good	Very good	Very good
+1023514	BuildingBattleGradeTip		神作啊！	Perfect	Perfect	Идеально	Perfect	Perfect	Perfect	Perfect	Perfect	Perfect	ยอดเยี่ยม	Perfect	Perfect	Perfect
+1023515	BuildingBattleGradeFinalTip		最终打分是▢FFFF0000这是什么鬼！	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Финальная оценка ▢FFFF0000что за чертовщина	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	คะแนนสุดท้ายที่ให้คือ▢FFFF0000นี่คือผีอะไร	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell	Final Score ▢FFFF0000what the hell
+1023516	BuildingBattleGradeFinalTip		最终打分是▢FFFF0000不行	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Финальная оценка ▢FFFF0000плохо	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	คะแนนสุดท้ายที่ให้คือ▢FFFF0000ไม่ได้	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad	Final Score ▢FFFF0000bad
+1023517	BuildingBattleGradeFinalTip		最终打分是▢FFFF0000过关	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Финальная оценка ▢FFFF0000пойдет	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	คะแนนสุดท้ายที่ให้คือ▢FFFF0000ผ่าน	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass	Final Score ▢FFFF0000pass
+1023518	BuildingBattleGradeFinalTip		最终打分是▢FFFF0000挺好的	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Финальная оценка ▢FFFF0000хорошо	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	คะแนนสุดท้ายที่ให้คือ▢FFFF0000ดีมาก	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good	Final Score ▢FFFF0000good
+1023519	BuildingBattleGradeFinalTip		最终打分是▢FFFF0000棒	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Финальная оценка ▢FFFF0000очень хорошо	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	คะแนนสุดท้ายที่ให้คือ▢FFFF0000เก่ง	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good	Final Score ▢FFFF0000very good
+1023520	BuildingBattleGradeFinalTip		最终打分是▢FFFF0000神作啊！	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Финальная оценка ▢FFFF0000идеально	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	คะแนนสุดท้ายที่ให้คือ▢FFFF0000ยอดเยี่ยม	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect	Final Score ▢FFFF0000perfect
+1023521	BuildingBattleWinner		▢FF00FF00第一名：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Победитель:▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00ที่หนึ่ง：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s	▢FF00FF00Winner：▢FFFF0000%1s
+1023522	BuildingBattleCanNotGradeSelf		▢FFFF0000无法给自己打分	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Нельзя голосовать за себя!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000ไม่สามารถให้คะแนนแก่ตนเองได้	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!	▢FFFF0000Can not score yourself!
 																
 																
 																
@@ -29,63 +29,63 @@ TipType	TipTemplateId	Notice	zh_CN	en_US	pt_BR	ru_RU	ko_KR	de_DE	fr_FR	es_ES	it_
 																
 																
 		#1023001~1023500题库														
-1023001	BuildingBattleQuestion	苹果	苹果	Apple	Apple	Apple	Apple	Apple	Apple	Apple	Apple	Apple	Apple	Apple	Apple	Apple
-1023002	BuildingBattleQuestion	香蕉	香蕉	Banana	Banana	Banana	Banana	Banana	Banana	Banana	Banana	Banana	Banana	Banana	Banana	Banana
-1023003	BuildingBattleQuestion	西瓜	西瓜	Watermelon	Watermelon	Watermelon	Watermelon	Watermelon	Watermelon	Watermelon	Watermelon	Watermelon	Watermelon	Watermelon	Watermelon	Watermelon
-1023004	BuildingBattleQuestion	葡萄	葡萄	Grapes	Grapes	Grapes	Grapes	Grapes	Grapes	Grapes	Grapes	Grapes	Grapes	Grapes	Grapes	Grapes
-1023005	BuildingBattleQuestion	菠萝	菠萝	Pineapple	Pineapple	Pineapple	Pineapple	Pineapple	Pineapple	Pineapple	Pineapple	Pineapple	Pineapple	Pineapple	Pineapple	Pineapple
-1023006	BuildingBattleQuestion	医生	医生	Doctor	Doctor	Doctor	Doctor	Doctor	Doctor	Doctor	Doctor	Doctor	Doctor	Doctor	Doctor	Doctor
-1023007	BuildingBattleQuestion	护士	护士	Nurse	Nurse	Nurse	Nurse	Nurse	Nurse	Nurse	Nurse	Nurse	Nurse	Nurse	Nurse	Nurse
-1023008	BuildingBattleQuestion	警察	警察	Police	Police	Police	Police	Police	Police	Police	Police	Police	Police	Police	Police	Police
-1023009	BuildingBattleQuestion	公主	公主	Princess	Princess	Princess	Princess	Princess	Princess	Princess	Princess	Princess	Princess	Princess	Princess	Princess
-1023010	BuildingBattleQuestion	国王	国王	King	King	King	King	King	King	King	King	King	King	King	King	King
-1023011	BuildingBattleQuestion	雪人	雪人	Snowman	Snowman	Snowman	Snowman	Snowman	Snowman	Snowman	Snowman	Snowman	Snowman	Snowman	Snowman	Snowman
-1023012	BuildingBattleQuestion	猫	猫	Cat	Cat	Cat	Cat	Cat	Cat	Cat	Cat	Cat	Cat	Cat	Cat	Cat
-1023013	BuildingBattleQuestion	狗	狗	Dog	Dog	Dog	Dog	Dog	Dog	Dog	Dog	Dog	Dog	Dog	Dog	Dog
-1023014	BuildingBattleQuestion	牛	牛	Cow	Cow	Cow	Cow	Cow	Cow	Cow	Cow	Cow	Cow	Cow	Cow	Cow
-1023015	BuildingBattleQuestion	羊	羊	Sheep	Sheep	Sheep	Sheep	Sheep	Sheep	Sheep	Sheep	Sheep	Sheep	Sheep	Sheep	Sheep
-1023016	BuildingBattleQuestion	企鹅	企鹅	Penguin	Penguin	Penguin	Penguin	Penguin	Penguin	Penguin	Penguin	Penguin	Penguin	Penguin	Penguin	Penguin
-1023017	BuildingBattleQuestion	猪	猪	Pig	Pig	Pig	Pig	Pig	Pig	Pig	Pig	Pig	Pig	Pig	Pig	Pig
-1023018	BuildingBattleQuestion	恐龙	恐龙	Dinosaur	Dinosaur	Dinosaur	Dinosaur	Dinosaur	Dinosaur	Dinosaur	Dinosaur	Dinosaur	Dinosaur	Dinosaur	Dinosaur	Dinosaur
-1023019	BuildingBattleQuestion	床	床	Bed	Bed	Bed	Bed	Bed	Bed	Bed	Bed	Bed	Bed	Bed	Bed	Bed
-1023020	BuildingBattleQuestion	衣柜	衣柜	Wardrobe	Wardrobe	Wardrobe	Wardrobe	Wardrobe	Wardrobe	Wardrobe	Wardrobe	Wardrobe	Wardrobe	Wardrobe	Wardrobe	Wardrobe
-1023021	BuildingBattleQuestion	沙发	沙发	Sofa	Sofa	Sofa	Sofa	Sofa	Sofa	Sofa	Sofa	Sofa	Sofa	Sofa	Sofa	Sofa
-1023022	BuildingBattleQuestion	书桌	书桌	Desk	Desk	Desk	Desk	Desk	Desk	Desk	Desk	Desk	Desk	Desk	Desk	Desk
-1023023	BuildingBattleQuestion	椅子	椅子	Chair	Chair	Chair	Chair	Chair	Chair	Chair	Chair	Chair	Chair	Chair	Chair	Chair
-1023024	BuildingBattleQuestion	伞	伞	Umbrella	Umbrella	Umbrella	Umbrella	Umbrella	Umbrella	Umbrella	Umbrella	Umbrella	Umbrella	Umbrella	Umbrella	Umbrella
-1023025	BuildingBattleQuestion	杯子	杯子	Cup	Cup	Cup	Cup	Cup	Cup	Cup	Cup	Cup	Cup	Cup	Cup	Cup
-1023026	BuildingBattleQuestion	公交车	公交车	Bus	Bus	Bus	Bus	Bus	Bus	Bus	Bus	Bus	Bus	Bus	Bus	Bus
-1023027	BuildingBattleQuestion	大卡车	大卡车	Trucks	Trucks	Trucks	Trucks	Trucks	Trucks	Trucks	Trucks	Trucks	Trucks	Trucks	Trucks	Trucks
-1023028	BuildingBattleQuestion	小汽车	小汽车	Car	Car	Car	Car	Car	Car	Car	Car	Car	Car	Car	Car	Car
-1023029	BuildingBattleQuestion	救护车	救护车	Ambulance	Ambulance	Ambulance	Ambulance	Ambulance	Ambulance	Ambulance	Ambulance	Ambulance	Ambulance	Ambulance	Ambulance	Ambulance
-1023030	BuildingBattleQuestion	警车	警车	Police car	Police car	Police car	Police car	Police car	Police car	Police car	Police car	Police car	Police car	Police car	Police car	Police car
-1023031	BuildingBattleQuestion	飞机	飞机	Plane	Plane	Plane	Plane	Plane	Plane	Plane	Plane	Plane	Plane	Plane	Plane	Plane
-1023032	BuildingBattleQuestion	钻石剑	钻石剑	Diamond sword	Diamond sword	Diamond sword	Diamond sword	Diamond sword	Diamond sword	Diamond sword	Diamond sword	Diamond sword	Diamond sword	Diamond sword	Diamond sword	Diamond sword
-1023033	BuildingBattleQuestion	房子	房子	House	House	House	House	House	House	House	House	House	House	House	House	House
-1023034	BuildingBattleQuestion	树	树	Tree	Tree	Tree	Tree	Tree	Tree	Tree	Tree	Tree	Tree	Tree	Tree	Tree
-1023035	BuildingBattleQuestion	篮球	篮球	Basketball	Basketball	Basketball	Basketball	Basketball	Basketball	Basketball	Basketball	Basketball	Basketball	Basketball	Basketball	Basketball
-1023036	BuildingBattleQuestion	云朵	云朵	Clouds	Clouds	Clouds	Clouds	Clouds	Clouds	Clouds	Clouds	Clouds	Clouds	Clouds	Clouds	Clouds
-1023037	BuildingBattleQuestion	钻石	钻石	Diamond	Diamond	Diamond	Diamond	Diamond	Diamond	Diamond	Diamond	Diamond	Diamond	Diamond	Diamond	Diamond
-1023038	BuildingBattleQuestion	橄榄球	橄榄球	Rugby	Rugby	Rugby	Rugby	Rugby	Rugby	Rugby	Rugby	Rugby	Rugby	Rugby	Rugby	Rugby
-1023039	BuildingBattleQuestion	南瓜	南瓜	Pumpkin	Pumpkin	Pumpkin	Pumpkin	Pumpkin	Pumpkin	Pumpkin	Pumpkin	Pumpkin	Pumpkin	Pumpkin	Pumpkin	Pumpkin
-1023040	BuildingBattleQuestion	草莓	草莓	Strawberry	Strawberry	Strawberry	Strawberry	Strawberry	Strawberry	Strawberry	Strawberry	Strawberry	Strawberry	Strawberry	Strawberry	Strawberry
-1023041	BuildingBattleQuestion	大象	大象	Elephant	Elephant	Elephant	Elephant	Elephant	Elephant	Elephant	Elephant	Elephant	Elephant	Elephant	Elephant	Elephant
-1023042	BuildingBattleQuestion	电脑	电脑	Computer	Computer	Computer	Computer	Computer	Computer	Computer	Computer	Computer	Computer	Computer	Computer	Computer
-1023043	BuildingBattleQuestion	蜘蛛	蜘蛛	Spider	Spider	Spider	Spider	Spider	Spider	Spider	Spider	Spider	Spider	Spider	Spider	Spider
-1023044	BuildingBattleQuestion	狮子	狮子	Lion	Lion	Lion	Lion	Lion	Lion	Lion	Lion	Lion	Lion	Lion	Lion	Lion
-1023045	BuildingBattleQuestion	老虎	老虎	Tiger	Tiger	Tiger	Tiger	Tiger	Tiger	Tiger	Tiger	Tiger	Tiger	Tiger	Tiger	Tiger
-1023046	BuildingBattleQuestion	青蛙	青蛙	Frog	Frog	Frog	Frog	Frog	Frog	Frog	Frog	Frog	Frog	Frog	Frog	Frog
-1023047	BuildingBattleQuestion	山	山	Mountain	Mountain	Mountain	Mountain	Mountain	Mountain	Mountain	Mountain	Mountain	Mountain	Mountain	Mountain	Mountain
-1023048	BuildingBattleQuestion	机器人	机器人	Robot	Robot	Robot	Robot	Robot	Robot	Robot	Robot	Robot	Robot	Robot	Robot	Robot
-1023049	BuildingBattleQuestion	僵尸	僵尸	Zombies	Zombies	Zombies	Zombies	Zombies	Zombies	Zombies	Zombies	Zombies	Zombies	Zombies	Zombies	Zombies
-1023050	BuildingBattleQuestion	绿巨人	绿巨人	The hulk	The hulk	The hulk	The hulk	The hulk	The hulk	The hulk	The hulk	The hulk	The hulk	The hulk	The hulk	The hulk
-1023051	BuildingBattleQuestion	手机	手机	Mobile phone	Mobile phone	Mobile phone	Mobile phone	Mobile phone	Mobile phone	Mobile phone	Mobile phone	Mobile phone	Mobile phone	Mobile phone	Mobile phone	Mobile phone
-1023052	BuildingBattleQuestion	电视	电视	Television	Television	Television	Television	Television	Television	Television	Television	Television	Television	Television	Television	Television
-1023053	BuildingBattleQuestion	衣服	衣服	Clothes	Clothes	Clothes	Clothes	Clothes	Clothes	Clothes	Clothes	Clothes	Clothes	Clothes	Clothes	Clothes
-1023054	BuildingBattleQuestion	橘子	橘子	Orange	Orange	Orange	Orange	Orange	Orange	Orange	Orange	Orange	Orange	Orange	Orange	Orange
-1023055	BuildingBattleQuestion	坦克	坦克	Tank	Tank	Tank	Tank	Tank	Tank	Tank	Tank	Tank	Tank	Tank	Tank	Tank
-1023056	BuildingBattleQuestion	松鼠	松鼠	Squirrel	Squirrel	Squirrel	Squirrel	Squirrel	Squirrel	Squirrel	Squirrel	Squirrel	Squirrel	Squirrel	Squirrel	Squirrel
-1023057	BuildingBattleQuestion	人	人	People	People	People	People	People	People	People	People	People	People	People	People	People
-1023058	BuildingBattleQuestion	枪	枪	Gun	Gun	Gun	Gun	Gun	Gun	Gun	Gun	Gun	Gun	Gun	Gun	Gun
-1023059	BuildingBattleQuestion	水果	水果	Fruits	Fruits	Fruits	Fruits	Fruits	Fruits	Fruits	Fruits	Fruits	Fruits	Fruits	Fruits	Fruits
-1023060	BuildingBattleQuestion	蔬菜	蔬菜	Vegetables	Vegetables	Vegetables	Vegetables	Vegetables	Vegetables	Vegetables	Vegetables	Vegetables	Vegetables	Vegetables	Vegetables	Vegetables
+1023001	BuildingBattleQuestion	苹果	苹果	Apple	Apple	Яблоко	Apple	Apple	Apple	Apple	Apple	Apple	แอปเปิ้ล	Apple	Apple	Apple
+1023002	BuildingBattleQuestion	香蕉	香蕉	Banana	Banana	Банан	Banana	Banana	Banana	Banana	Banana	Banana	กล้วย	Banana	Banana	Banana
+1023003	BuildingBattleQuestion	西瓜	西瓜	Watermelon	Watermelon	Арбуз	Watermelon	Watermelon	Watermelon	Watermelon	Watermelon	Watermelon	แตงโม	Watermelon	Watermelon	Watermelon
+1023004	BuildingBattleQuestion	葡萄	葡萄	Grapes	Grapes	Виноград	Grapes	Grapes	Grapes	Grapes	Grapes	Grapes	องุ่น	Grapes	Grapes	Grapes
+1023005	BuildingBattleQuestion	菠萝	菠萝	Pineapple	Pineapple	Ананас	Pineapple	Pineapple	Pineapple	Pineapple	Pineapple	Pineapple	สับปะรด	Pineapple	Pineapple	Pineapple
+1023006	BuildingBattleQuestion	医生	医生	Doctor	Doctor	Доктор	Doctor	Doctor	Doctor	Doctor	Doctor	Doctor	หมอ	Doctor	Doctor	Doctor
+1023007	BuildingBattleQuestion	护士	护士	Nurse	Nurse	Медсестра	Nurse	Nurse	Nurse	Nurse	Nurse	Nurse	พยาบาล	Nurse	Nurse	Nurse
+1023008	BuildingBattleQuestion	警察	警察	Police	Police	Полицейский	Police	Police	Police	Police	Police	Police	ตำรวจ	Police	Police	Police
+1023009	BuildingBattleQuestion	公主	公主	Princess	Princess	Принцесса	Princess	Princess	Princess	Princess	Princess	Princess	เข้าหญิง	Princess	Princess	Princess
+1023010	BuildingBattleQuestion	国王	国王	King	King	Король	King	King	King	King	King	King	กษัตริย์	King	King	King
+1023011	BuildingBattleQuestion	雪人	雪人	Snowman	Snowman	Снеговик	Snowman	Snowman	Snowman	Snowman	Snowman	Snowman	คนหิมะ	Snowman	Snowman	Snowman
+1023012	BuildingBattleQuestion	猫	猫	Cat	Cat	Кот	Cat	Cat	Cat	Cat	Cat	Cat	แมว	Cat	Cat	Cat
+1023013	BuildingBattleQuestion	狗	狗	Dog	Dog	Собака	Dog	Dog	Dog	Dog	Dog	Dog	หมา	Dog	Dog	Dog
+1023014	BuildingBattleQuestion	牛	牛	Cow	Cow	Корова	Cow	Cow	Cow	Cow	Cow	Cow	ควาย	Cow	Cow	Cow
+1023015	BuildingBattleQuestion	羊	羊	Sheep	Sheep	Овца	Sheep	Sheep	Sheep	Sheep	Sheep	Sheep	แกะ	Sheep	Sheep	Sheep
+1023016	BuildingBattleQuestion	企鹅	企鹅	Penguin	Penguin	Пингвин	Penguin	Penguin	Penguin	Penguin	Penguin	Penguin	นกเพนกวิน	Penguin	Penguin	Penguin
+1023017	BuildingBattleQuestion	猪	猪	Pig	Pig	Свинья	Pig	Pig	Pig	Pig	Pig	Pig	หมู	Pig	Pig	Pig
+1023018	BuildingBattleQuestion	恐龙	恐龙	Dinosaur	Dinosaur	Динозавр	Dinosaur	Dinosaur	Dinosaur	Dinosaur	Dinosaur	Dinosaur	ไดโนเสาร์	Dinosaur	Dinosaur	Dinosaur
+1023019	BuildingBattleQuestion	床	床	Bed	Bed	Кровать	Bed	Bed	Bed	Bed	Bed	Bed	เตียง	Bed	Bed	Bed
+1023020	BuildingBattleQuestion	衣柜	衣柜	Wardrobe	Wardrobe	Шкаф	Wardrobe	Wardrobe	Wardrobe	Wardrobe	Wardrobe	Wardrobe	ตู้เสื้อ	Wardrobe	Wardrobe	Wardrobe
+1023021	BuildingBattleQuestion	沙发	沙发	Sofa	Sofa	Диван	Sofa	Sofa	Sofa	Sofa	Sofa	Sofa	โซฟา	Sofa	Sofa	Sofa
+1023022	BuildingBattleQuestion	书桌	书桌	Desk	Desk	стол	Desk	Desk	Desk	Desk	Desk	Desk	โต๊ะ	Desk	Desk	Desk
+1023023	BuildingBattleQuestion	椅子	椅子	Chair	Chair	Стульчик	Chair	Chair	Chair	Chair	Chair	Chair	เก้าอี้	Chair	Chair	Chair
+1023024	BuildingBattleQuestion	伞	伞	Umbrella	Umbrella	Зонтик	Umbrella	Umbrella	Umbrella	Umbrella	Umbrella	Umbrella	ร่ม	Umbrella	Umbrella	Umbrella
+1023025	BuildingBattleQuestion	杯子	杯子	Cup	Cup	Кружка	Cup	Cup	Cup	Cup	Cup	Cup	แก้ว	Cup	Cup	Cup
+1023026	BuildingBattleQuestion	公交车	公交车	Bus	Bus	Автобус	Bus	Bus	Bus	Bus	Bus	Bus	รถประจำทาง	Bus	Bus	Bus
+1023027	BuildingBattleQuestion	大卡车	大卡车	Trucks	Trucks	Грузовики	Trucks	Trucks	Trucks	Trucks	Trucks	Trucks	รถบรรทุกขนาดใหญ่	Trucks	Trucks	Trucks
+1023028	BuildingBattleQuestion	小汽车	小汽车	Car	Car	Автомобиль	Car	Car	Car	Car	Car	Car	รถยนต์เล็ก	Car	Car	Car
+1023029	BuildingBattleQuestion	救护车	救护车	Ambulance	Ambulance	Скорая помощь	Ambulance	Ambulance	Ambulance	Ambulance	Ambulance	Ambulance	รถพยาบาล	Ambulance	Ambulance	Ambulance
+1023030	BuildingBattleQuestion	警车	警车	Police car	Police car	Полицейская машина	Police car	Police car	Police car	Police car	Police car	Police car	รถตำรวจ	Police car	Police car	Police car
+1023031	BuildingBattleQuestion	飞机	飞机	Plane	Plane	Самолёт	Plane	Plane	Plane	Plane	Plane	Plane	เครื่องบิน	Plane	Plane	Plane
+1023032	BuildingBattleQuestion	钻石剑	钻石剑	Diamond sword	Diamond sword	Алмазный меч	Diamond sword	Diamond sword	Diamond sword	Diamond sword	Diamond sword	Diamond sword	ดาบเพชร	Diamond sword	Diamond sword	Diamond sword
+1023033	BuildingBattleQuestion	房子	房子	House	House	Дом	House	House	House	House	House	House	เรือน	House	House	House
+1023034	BuildingBattleQuestion	树	树	Tree	Tree	Дерево	Tree	Tree	Tree	Tree	Tree	Tree	ต้นไม้	Tree	Tree	Tree
+1023035	BuildingBattleQuestion	篮球	篮球	Basketball	Basketball	Баскетбол	Basketball	Basketball	Basketball	Basketball	Basketball	Basketball	บาสเกตบอล	Basketball	Basketball	Basketball
+1023036	BuildingBattleQuestion	云朵	云朵	Clouds	Clouds	Облака	Clouds	Clouds	Clouds	Clouds	Clouds	Clouds	ดอกเมฆ	Clouds	Clouds	Clouds
+1023037	BuildingBattleQuestion	钻石	钻石	Diamond	Diamond	Алмаз	Diamond	Diamond	Diamond	Diamond	Diamond	Diamond	เพชร	Diamond	Diamond	Diamond
+1023038	BuildingBattleQuestion	橄榄球	橄榄球	Rugby	Rugby	Регби	Rugby	Rugby	Rugby	Rugby	Rugby	Rugby	บอลมะกอก	Rugby	Rugby	Rugby
+1023039	BuildingBattleQuestion	南瓜	南瓜	Pumpkin	Pumpkin	Тыква	Pumpkin	Pumpkin	Pumpkin	Pumpkin	Pumpkin	Pumpkin	ฟักทอง	Pumpkin	Pumpkin	Pumpkin
+1023040	BuildingBattleQuestion	草莓	草莓	Strawberry	Strawberry	Клубника	Strawberry	Strawberry	Strawberry	Strawberry	Strawberry	Strawberry	สตรอเบอร์รี่	Strawberry	Strawberry	Strawberry
+1023041	BuildingBattleQuestion	大象	大象	Elephant	Elephant	Слон	Elephant	Elephant	Elephant	Elephant	Elephant	Elephant	ช้าง	Elephant	Elephant	Elephant
+1023042	BuildingBattleQuestion	电脑	电脑	Computer	Computer	Компьютер	Computer	Computer	Computer	Computer	Computer	Computer	คอมพิวเตอร์	Computer	Computer	Computer
+1023043	BuildingBattleQuestion	蜘蛛	蜘蛛	Spider	Spider	Паук	Spider	Spider	Spider	Spider	Spider	Spider	แมงมุม	Spider	Spider	Spider
+1023044	BuildingBattleQuestion	狮子	狮子	Lion	Lion	Лев	Lion	Lion	Lion	Lion	Lion	Lion	สิงห์	Lion	Lion	Lion
+1023045	BuildingBattleQuestion	老虎	老虎	Tiger	Tiger	Тигр	Tiger	Tiger	Tiger	Tiger	Tiger	Tiger	เสือ	Tiger	Tiger	Tiger
+1023046	BuildingBattleQuestion	青蛙	青蛙	Frog	Frog	Лягушка	Frog	Frog	Frog	Frog	Frog	Frog	กบ	Frog	Frog	Frog
+1023047	BuildingBattleQuestion	山	山	Mountain	Mountain	Гора	Mountain	Mountain	Mountain	Mountain	Mountain	Mountain	ภูเขา	Mountain	Mountain	Mountain
+1023048	BuildingBattleQuestion	机器人	机器人	Robot	Robot	Робот	Robot	Robot	Robot	Robot	Robot	Robot	หุ่นยนต์	Robot	Robot	Robot
+1023049	BuildingBattleQuestion	僵尸	僵尸	Zombies	Zombies	Зомби	Zombies	Zombies	Zombies	Zombies	Zombies	Zombies	ซากศพ	Zombies	Zombies	Zombies
+1023050	BuildingBattleQuestion	绿巨人	绿巨人	The hulk	The hulk	Халк	The hulk	The hulk	The hulk	The hulk	The hulk	The hulk	ยักษ์เขียว	The hulk	The hulk	The hulk
+1023051	BuildingBattleQuestion	手机	手机	Mobile phone	Mobile phone	Мобильный телефон	Mobile phone	Mobile phone	Mobile phone	Mobile phone	Mobile phone	Mobile phone	โทรศัพท์	Mobile phone	Mobile phone	Mobile phone
+1023052	BuildingBattleQuestion	电视	电视	Television	Television	Телевизор	Television	Television	Television	Television	Television	Television	โทรทัศน์	Television	Television	Television
+1023053	BuildingBattleQuestion	衣服	衣服	Clothes	Clothes	Одежда	Clothes	Clothes	Clothes	Clothes	Clothes	Clothes	เสื้อ	Clothes	Clothes	Clothes
+1023054	BuildingBattleQuestion	橘子	橘子	Orange	Orange	Апельсин	Orange	Orange	Orange	Orange	Orange	Orange	ส้ม	Orange	Orange	Orange
+1023055	BuildingBattleQuestion	坦克	坦克	Tank	Tank	Танк	Tank	Tank	Tank	Tank	Tank	Tank	รถถัง	Tank	Tank	Tank
+1023056	BuildingBattleQuestion	松鼠	松鼠	Squirrel	Squirrel	Белочка	Squirrel	Squirrel	Squirrel	Squirrel	Squirrel	Squirrel	กระรอก	Squirrel	Squirrel	Squirrel
+1023057	BuildingBattleQuestion	人	人	People	People	Люди	People	People	People	People	People	People	คน	People	People	People
+1023058	BuildingBattleQuestion	枪	枪	Gun	Gun	Оружие	Gun	Gun	Gun	Gun	Gun	Gun	ปีน	Gun	Gun	Gun
+1023059	BuildingBattleQuestion	水果	水果	Fruits	Fruits	Фрукты	Fruits	Fruits	Fruits	Fruits	Fruits	Fruits	ผลไม้	Fruits	Fruits	Fruits
+1023060	BuildingBattleQuestion	蔬菜	蔬菜	Vegetables	Vegetables	Овощи	Vegetables	Vegetables	Vegetables	Vegetables	Vegetables	Vegetables	ผัก	Vegetables	Vegetables	Vegetables

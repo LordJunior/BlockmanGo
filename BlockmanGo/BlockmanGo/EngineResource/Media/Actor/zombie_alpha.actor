@@ -1,6 +1,6 @@
 <?xml version = "1.0" encoding = "GB2312"?>
 <ActorTemplates>
-	<ActorTemplate name="zombie_beta.actor" Originalscale="1 1 1" Skeleton="zombie.skel" AttackScale="1" TextHeight="0" IsShowShadow="true" WoundBone="" WoundAngle="25" SelectedRingSize="1" SoundName1="" SoundName2="" SoundName3="" SoundName4="" SoundName5="" SoundFileNum="0" Volume="0.8" MinDistance="1" MaxDistance="16" IntervalTime="2" Alpha="1">
+	<ActorTemplate name="zombie_alpha.actor" Originalscale="1 1 1" Skeleton="zombie.skel" AttackScale="1" TextHeight="0" IsShowShadow="true" WoundBone="" WoundAngle="25" SelectedRingSize="1" SoundName1="" SoundName2="" SoundName3="" SoundName4="" SoundName5="" SoundFileNum="0" Volume="0.8" MinDistance="1" MaxDistance="16" IntervalTime="2" Alpha="1">
 		<BodyParts>
 			<BodyPart MasterName="body" SlaveName="1" DefaultUse="true" EdgeColor="0 1 0.25098 1" ColorParams="1 1 1 1">
 				<Skin MeshName = "zombie.skin" ChangeColor = "2.10195e-44 8.87022e-43 3.46623e+30 0" UVSpeed = "0 0">
@@ -8,7 +8,7 @@
 			</BodyPart>
 			<BodyPart MasterName="hair" SlaveName="1" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
-					<FileName value="hat01.mesh"/>
+					<FileName value="06_hair_boy.mesh"/>
 					<SocketName value="b_Head"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>

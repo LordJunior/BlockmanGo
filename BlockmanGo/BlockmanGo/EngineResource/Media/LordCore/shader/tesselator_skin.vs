@@ -2,25 +2,24 @@
 
 #define MAX_BONE_NUM 60
 
-attribute vec3 inPosition;
-attribute vec3 inNormal;
-attribute vec4 inColor;
+attribute vec4 inPosition;
+attribute vec4 inNormal;
 attribute vec2 inTexCoord;
-attribute float inBlendIndices;
+attribute vec4 inColor;
 
 uniform mat4 matWVP;
 uniform mat4 matWorld;
-uniform vec4 fogParam[3];
+uniform vec4 fogParam;
+uniform vec3 cameraPos;
 uniform vec3 mainLightDir;
 uniform vec4 mainLightColor;
-uniform vec3 subLightDir;
 uniform vec4 subLightColor;
-uniform vec4 brightness;
-uniform vec4 ambient;
+uniform vec4 extraSkyBlockLight;
+uniform vec4 extraVertexColor;
+
 uniform vec4 boneMatRows[3*MAX_BONE_NUM];
 
-varying vec4 oFogColor;
-varying vec4 color;
+varying vec4 lightColor;
 varying vec2 texCoord;
 
 vec3 MulBone3(vec3 vInputPos, int nMatrix)
@@ -50,27 +49,37 @@ float ComputeFog(vec3 camToWorldPos, vec3 param)
 
 void main(void)
 {
-	vec3 vPos;
-	vec4 vWorldPos;
-	vec3 vNorm;
-	int BoneIndices = int(inBlendIndices);
-
-	vPos = MulBone4(vec4(inPosition, 1.0), BoneIndices);
-	vWorldPos = matWorld * vec4(vPos, 1.0);
-	vNorm = MulBone3(inNormal, BoneIndices);
-	vNorm = mat3(matWorld) * vNorm;
-	vNorm = normalize(vNorm);
+	vec3 blockPos = (inPosition.xyz / 127.0 - 1.0) * 8.0;
+	vec3 vNormal = inNormal.xyz / 127.0 - 1.0;
+	vNormal = normalize(vNormal);
+	texCoord = inTexCoord / 2048.0;
+	vec3 color = inColor.rgb / 255.0;
+	color *= extraVertexColor.rgb;
+	int BoneIndices = int(inColor.a);
+		
+	vec3 vPos = MulBone4(vec4(blockPos, 1.0), BoneIndices);
+	vec4 vWorldPos = matWorld * vec4(vPos, 1.0);
+	vNormal = MulBone3(vNormal, BoneIndices);
+	vNormal = mat3(matWorld) * vNormal;
 	
 	gl_Position = matWVP * vec4(vPos, 1.0);
 
-	texCoord = inTexCoord;
 	
-	float mainParam = max(dot(mainLightDir, vNorm), 0.0);
-	float subParam = max(dot(subLightDir, vNorm), 0.0);
+	// lighting params
+	// sky light correction.
+	float sky_light = max(0.35, smoothstep(0.0, 1.0, (inPosition.w / 255.0) * extraSkyBlockLight.r));
+	float block_light = (inNormal.w / 255.0) * extraSkyBlockLight.g *  0.5;;
+	float oa = 0.5 * extraSkyBlockLight.b;
 
-	color = mainParam * mainLightColor + subParam * subLightColor + ambient;
-	color.a = 1.0;
-	color = color * inColor * brightness;
-	oFogColor =  vec4(fogParam[1].rgb, ComputeFog(vWorldPos.xyz - fogParam[2].xyz, fogParam[0].xyz));
+	// lighting
+	float ndl = clamp(dot(mainLightDir, vNormal) + 0.25, 0.4, 1.0);
+	vec3 directL = sky_light *  mainLightColor.xyz * mainLightColor.w * ndl * oa;
+	vec3 indirectL = subLightColor.xyz * subLightColor.w * sky_light * oa;
+	float voxel_l = block_light * mix(4.0, 2.0, sky_light);
+	float fakeNdotL = clamp(abs(vNormal.z) + vNormal.y, 0.4, 1.0);
+	voxel_l = voxel_l * (fakeNdotL * 0.5 + 0.5) * 0.5 * oa;
+	vec3 voxel_light = vec3(voxel_l, voxel_l, voxel_l);
+	lightColor.xyz =(directL + indirectL + voxel_light) * color.rgb;
+	lightColor.w = ComputeFog(vWorldPos.xyz - cameraPos, fogParam.xyz);
 }
 

@@ -24,6 +24,13 @@
 	  },
 	  {
         "Type": "FreeType",
+        "Name": "HT16",
+        "Filename": "angsab.ttf",
+		"Language": "th_TH",
+        "Size": 16
+	  },
+	  {
+        "Type": "FreeType",
         "Name": "HT20",
         "Filename": "FZY4JW.ttf",
 		"Language": "zh_CN,en_US,zh_TW",
@@ -45,6 +52,13 @@
 	  },
 	  {
         "Type": "FreeType",
+        "Name": "HT16",
+        "Filename": "angsab.ttf",
+		"Language": "th_TH",
+        "Size": 20
+	  },
+	  {
+        "Type": "FreeType",
         "Name": "HT24",
         "Filename": "FZY4JW.ttf",
 		"Language": "zh_CN,en_US,zh_TW",
@@ -62,6 +76,13 @@
         "Name": "HT24",
         "Filename": "ko.TTF",
 		"Language": "ko_KR",
+        "Size": 24
+	  },
+	  {
+        "Type": "FreeType",
+        "Name": "HT16",
+        "Filename": "angsab.ttf",
+		"Language": "th_TH",
         "Size": 24
 	  }
     ],
@@ -105,7 +126,8 @@
 	  { "Filename": "creepy_aliens.json"},
 	  { "Filename": "flagwar.json"},
 	  { "Filename": "throwpot.json"},
-	  { "Filename": "buildwar.json"}
+	  { "Filename": "buildwar.json"},
+	  { "Filename": "shoot_warning.json"}
     ]
   }
 }

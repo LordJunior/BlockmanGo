@@ -185,6 +185,10 @@
                                 {
                                     "Name": "TextBorderColor",
                                     "Value": "0.211765 0.211765 0.211765 1"
+                                },
+                                {
+                                    "Name": "TextLineExtraSpace",
+                                    "Value": "0"
                                 }
                             ]
                         }
@@ -283,6 +287,10 @@
                                 {
                                     "Name": "TextVertAlignment",
                                     "Value": "Centre"
+                                },
+                                {
+                                    "Name": "TextLineExtraSpace",
+                                    "Value": "0"
                                 }
                             ]
                         },
@@ -419,6 +427,10 @@
                                 {
                                     "Name": "TextVertAlignment",
                                     "Value": "Bottom"
+                                },
+                                {
+                                    "Name": "TextLineExtraSpace",
+                                    "Value": "0"
                                 }
                             ]
                         },
@@ -456,11 +468,11 @@
                                 },
                                 {
                                     "Name": "ProgressBackImage",
-                                    "Value": "set:gameloading.json image:SliderBg"
+                                    "Value": "set:new_gui_material.json image:progress_nor"
                                 },
                                 {
                                     "Name": "ProgressImage",
-                                    "Value": "set:gameloading.json image:SliderFg"
+                                    "Value": "set:new_gui_material.json image:progress_pre"
                                 }
                             ]
                         }

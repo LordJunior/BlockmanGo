@@ -1,7 +1,1 @@
-budokai.score.rank.name=Score    Rank
-budokai.wins.rank.name=Wins    Rank
-budokai.no.1.rank.name=No.1    Rank
-
-budokai.score.rank.title=Score Rank
-budokai.wins.rank.title=Wins Rank
-budokai.no.1.rank.title=No.1 Rank
+item.purple.pickaxe.name=Purple Pickaxe

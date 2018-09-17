@@ -153,7 +153,7 @@ SoundId	IsRepeat	RepeatInterval_min	RepeatInterval_max	SoundFile	Type	SubType	De
 10007	1	35	10	Media/Sound/bgm/theme_snowballbattle_waiting			等待进入音乐	
 10008	1	35	10	Media/Sound/bgm/theme_zombie			主题音乐	
 10009	1	35	10	Media/Sound/bgm/theme_zombie_waiting			等待进入音乐	
-10010	1	35	10	Media/Sound/bgm/theme_skywar			主题音乐	
+10010	1	0	0	Media/Sound/bgm/theme_skywar			主题音乐	
 10011	1	35	10	Media/Sound/bgm/theme_skywar_waiting			等待进入音乐	
 10012	1	35	10	Media/Sound/bgm/theme_TNTrun			主题音乐	
 10013	1	35	10	Media/Sound/bgm/theme_sanddigger			主题音乐	

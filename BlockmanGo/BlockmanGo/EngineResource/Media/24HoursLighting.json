@@ -1,0 +1,28 @@
+{
+    "LightSettings": [
+        { "time": "0", "MainLightColor": "0.94,0.89,0.769,0.141", "SubLightColor": "0.531,0.765,0.751,0.145", "SkyColor" : "10,10,30", "CloudLight" : "0.1", "FogColor" : "20,20,30" },
+        { "time": "1", "MainLightColor": "0.94,0.89,0.769,0.141", "SubLightColor": "0.531,0.765,0.751,0.145", "SkyColor" : "10,10,30", "CloudLight" : "0.1", "FogColor" : "20,20,30" },
+        { "time": "2", "MainLightColor": "0.94,0.89,0.769,0.141", "SubLightColor": "0.531,0.765,0.751,0.145", "SkyColor" : "10,10,30", "CloudLight" : "0.1", "FogColor" : "20,20,30" },
+        { "time": "3", "MainLightColor": "0.94,0.89,0.769,0.241", "SubLightColor": "0.531,0.765,0.751,0.245", "SkyColor" : "10,10,30", "CloudLight" : "0.1", "FogColor" : "20,20,30" },
+        { "time": "4", "MainLightColor": "0.94,0.89,0.769,0.341", "SubLightColor": "0.531,0.765,0.751,0.345", "SkyColor" : "20,20,60", "CloudLight" : "0.2", "FogColor" : "40,40,60" },
+        { "time": "5", "MainLightColor": "0.94,0.89,0.769,0.641", "SubLightColor": "0.531,0.765,0.751,0.445", "SkyColor" : "30,30,80", "CloudLight" : "0.4", "FogColor" : "60,60,80" },
+        { "time": "6", "MainLightColor": "0.94,0.59,0.569,0.941", "SubLightColor": "0.531,0.765,0.751,0.545", "SkyColor" : "40,40,120", "CloudLight" : "0.6", "FogColor" : "90,90,120" },
+        { "time": "7", "MainLightColor": "0.94,0.79,0.769,1.241", "SubLightColor": "0.531,0.765,0.751,0.645", "SkyColor" : "60,60,200", "CloudLight" : "0.7", "FogColor" : "160,160,200" },
+        { "time": "8", "MainLightColor": "0.94,0.89,0.769,1.341", "SubLightColor": "0.531,0.765,0.751,0.645", "SkyColor" : "70,70,240", "CloudLight" : "0.8", "FogColor" : "180,180,240" },
+        { "time": "9", "MainLightColor": "0.94,0.89,0.769,1.441", "SubLightColor": "0.531,0.765,0.751,0.645", "SkyColor" : "100,100,255", "CloudLight" : "0.9", "FogColor" : "200,200,255" },
+        { "time": "10", "MainLightColor": "0.94,0.89,0.769,1.541", "SubLightColor": "0.531,0.765,0.751,0.645", "SkyColor" : "140,140,255", "CloudLight" : "1.0", "FogColor" : "200,200,255" },
+        { "time": "11", "MainLightColor": "0.94,0.89,0.769,1.741", "SubLightColor": "0.531,0.765,0.751,0.645", "SkyColor" : "160,160,255", "CloudLight" : "1.0", "FogColor" : "200,200,255" },
+        { "time": "12", "MainLightColor": "0.93,0.95,0.8,1.641", "SubLightColor": "0.996,0.996,0.945,0.645", "SkyColor" : "116,201,255", "CloudLight" : "1.0", "FogColor" : "240,240,229" },
+        { "time": "13", "MainLightColor": "0.94,0.89,0.769,1.641", "SubLightColor": "0.531,0.765,0.751,0.745", "SkyColor" : "160,160,255", "CloudLight" : "1.0", "FogColor" : "200,200,255" },
+        { "time": "14", "MainLightColor": "0.94,0.89,0.769,1.641", "SubLightColor": "0.531,0.765,0.751,0.845", "SkyColor" : "160,160,255", "CloudLight" : "0.9", "FogColor" : "200,200,255" },
+        { "time": "15", "MainLightColor": "0.94,0.89,0.769,1.641", "SubLightColor": "0.531,0.765,0.751,0.645", "SkyColor" : "160,160,255", "CloudLight" : "0.85", "FogColor" : "200,200,255" },
+        { "time": "16", "MainLightColor": "0.94,0.89,0.769,1.641", "SubLightColor": "0.531,0.765,0.751,0.645", "SkyColor" : "160,160,255", "CloudLight" : "0.8", "FogColor" : "200,200,255" },
+        { "time": "17", "MainLightColor": "0.94,0.79,0.669,1.541", "SubLightColor": "0.531,0.765,0.751,0.645", "SkyColor" : "160,130,255", "CloudLight" : "0.75", "FogColor" : "190,190,255" },
+        { "time": "18", "MainLightColor": "0.94,0.89,0.769,1.441", "SubLightColor": "0.531,0.765,0.751,0.645", "SkyColor" : "160,130,230", "CloudLight" : "0.65", "FogColor" : "180,180,230" },
+        { "time": "19", "MainLightColor": "0.94,0.89,0.769,1.141", "SubLightColor": "0.531,0.765,0.751,0.445", "SkyColor" : "160,100,160", "CloudLight" : "0.55", "FogColor" : "180,130,160" },
+        { "time": "20", "MainLightColor": "0.94,0.89,0.769,0.841", "SubLightColor": "0.531,0.765,0.751,0.345", "SkyColor" : "160,100,100", "CloudLight" : "0.4", "FogColor" : "160,120,120" },
+        { "time": "21", "MainLightColor": "0.94,0.89,0.769,0.541", "SubLightColor": "0.531,0.765,0.751,0.245", "SkyColor" : "80,60,90", "CloudLight" : "0.3", "FogColor" : "80,60,90" },
+        { "time": "22", "MainLightColor": "0.94,0.89,0.769,0.441", "SubLightColor": "0.531,0.765,0.751,0.145", "SkyColor" : "40,45,80", "CloudLight" : "0.2", "FogColor" : "40,45,80" },
+        { "time": "23", "MainLightColor": "0.94,0.89,0.769,0.241", "SubLightColor": "0.531,0.765,0.751,0.145", "SkyColor" : "20,20,60", "CloudLight" : "0.1", "FogColor" : "40,40,60" }
+    ]
+}

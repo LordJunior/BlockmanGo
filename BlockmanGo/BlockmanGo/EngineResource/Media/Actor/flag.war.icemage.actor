@@ -1,19 +1,19 @@
 <?xml version = "1.0" encoding = "GB2312"?>
 <ActorTemplates>
-	<ActorTemplate name="flag.war.icemage.actor" Originalscale="1 1 1" Skeleton="girl.skel" AttackScale="1" TextHeight="0" IsShowShadow="true" WoundBone="" WoundAngle="25" SelectedRingSize="1" SoundName1="" SoundName2="" SoundName3="" SoundName4="" SoundName5="" SoundFileNum="0" Volume="0.8" MinDistance="1" MaxDistance="16" IntervalTime="2" Alpha="1">
+	<ActorTemplate name="flag.war.icemage.actor" Originalscale="1 1 1" Skeleton="girl_01.skel" AttackScale="1" TextHeight="0" IsShowShadow="true" WoundBone="" WoundAngle="25" SelectedRingSize="1" SoundName1="" SoundName2="" SoundName3="" SoundName4="" SoundName5="" SoundFileNum="0" Volume="0.8" MinDistance="1" MaxDistance="16" IntervalTime="2" Alpha="1">
 		<BodyParts>
 			<BodyPart MasterName="clothes_pants" SlaveName="17" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<Skin MeshName = "girl_trousers17.skin" ChangeColor = "2.10195e-44 4.17447e-42 7.20161e+22 0" UVSpeed = "0 0">
+				<Skin MeshName = "17_trousers_girl.skin" ChangeColor = "2.10195e-44 4.57664e-42 1.85872e+25 0" UVSpeed = "0 0">
 				</Skin>
 			</BodyPart>
 			<BodyPart MasterName="clothes_tops" SlaveName="17" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<Skin MeshName = "girl_trunk17.skin" ChangeColor = "2.10195e-44 4.18007e-42 7.20161e+22 0" UVSpeed = "0 0">
+				<Skin MeshName = "17_trunk_girl.skin" ChangeColor = "2.10195e-44 4.58225e-42 1.85872e+25 0" UVSpeed = "0 0">
 				</Skin>
 			</BodyPart>
 			<BodyPart MasterName="custom_decorate_hat" SlaveName="2" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="hat_flagwar_02.mesh"/>
-					<SocketName value="s_Head"/>
+					<SocketName value="s_head"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
 					<Position_Z value="0"/>
@@ -25,8 +25,8 @@
 			</BodyPart>
 			<BodyPart MasterName="custom_face" SlaveName="10" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
-					<FileName value="girl_face10.mesh"/>
-					<SocketName value="s_Head"/>
+					<FileName value="10_face_girl.mesh"/>
+					<SocketName value="s_head"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
 					<Position_Z value="0"/>
@@ -37,25 +37,12 @@
 				</StaticMesh>
 			</BodyPart>
 			<BodyPart MasterName="custom_hair" SlaveName="11" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<Skin MeshName = "girl_hair11.skin" ChangeColor = "2.10195e-44 4.78543e-42 7.20161e+22 0" UVSpeed = "0 0">
+				<Skin MeshName = "11_hair_girl.skin" ChangeColor = "2.10195e-44 4.58645e-42 1.85872e+25 0" UVSpeed = "0 0">
 				</Skin>
-			</BodyPart>
-			<BodyPart MasterName="custom_hand" SlaveName="1" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="gun_flagwar_01.mesh"/>
-					<SocketName value="s_Hand_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
 			</BodyPart>
 			<BodyPart MasterName="custom_shoes" SlaveName="4" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
-					<FileName value="shoes_d04_l.mesh"/>
+					<FileName value="04_shoes_l_widget.mesh"/>
 					<SocketName value="s_foot_l"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
@@ -66,7 +53,7 @@
 					<scale value="1"/>
 				</StaticMesh>
 				<StaticMesh>
-					<FileName value="shoes_d04_r.mesh"/>
+					<FileName value="04_shoes_r_widget.mesh"/>
 					<SocketName value="s_foot_r"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
@@ -83,13 +70,8 @@
 				<Animation Name = "girl_stand05.anim" BeginTime = "0" Times = "1" Length = "12.4" FadeTime = "0.25" Channel = "" TimeScale = "1">
 				</Animation>
 			</Skill>
-			<Skill Name="idle2" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "girl_stand10.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "" TimeScale = "1">
-				</Animation>
-			</Skill>
 		</Skills>
 		<Anims>
-				<Anim Name="girl_stand10.anim"/>
 				<Anim Name="girl_stand05.anim"/>
 		</Anims>
 	</ActorTemplate>

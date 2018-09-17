@@ -1,0 +1,14 @@
+ActorName	Width	Length	Height	Remark
+Actor文件名	宽度（>0）	长度（>0）	高度（>0）	备注信息
+boy.actor	0.6	0.6	1.8	男主人公
+girl.actor	0.6	0.6	1.8	女主人公
+car01.actor	2	4	1.3	白色警车
+demon.actor	1	1	2	恶魔
+egg_blue.actor	0.6	0.6	0.8	蓝色龙蛋
+egg_green.actor	0.6	0.6	0.8	绿色龙蛋
+egg_red.actor	0.6	0.6	0.8	红色龙蛋
+egg_yellow.actor	0.6	0.6	0.8	黄色龙蛋
+superwall_sentry.actor	2	2	2.5	战墙防御塔
+superwall_sentry_die.actor	1	2	2	战墙防御塔废墟
+superwall_wither.actor	1	2	2.5	战墙凋零
+superwall_wither_die.actor	1	2	1	战墙凋零废墟

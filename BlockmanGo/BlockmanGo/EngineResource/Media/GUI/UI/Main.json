@@ -4032,148 +4032,6 @@
                     "Window": [
                         {
                             "Type": "StaticImage",
-                            "Name": "Main-Rifle-CrossHair",
-                            "Property": [
-                                {
-                                    "Name": "Area",
-                                    "Value": "{{0,0},{0,0},{0,66},{0,66}}"
-                                },
-                                {
-                                    "Name": "WndOpenSound",
-                                    "Value": "0"
-                                },
-                                {
-                                    "Name": "WndCloseSound",
-                                    "Value": "0"
-                                },
-                                {
-                                    "Name": "ImageName",
-                                    "Value": "set:creepy_aliens.json image:gun_1"
-                                },
-                                {
-                                    "Name": "HexgonTopImage",
-                                    "Value": ""
-                                },
-                                {
-                                    "Name": "HexgonTopColor",
-                                    "Value": "1 1 1 1"
-                                },
-                                {
-                                    "Name": "HexgonSideImage",
-                                    "Value": ""
-                                },
-                                {
-                                    "Name": "HexgonSideColor",
-                                    "Value": "1 1 1 1"
-                                },
-                                {
-                                    "Name": "HexgonOverlayerImage",
-                                    "Value": ""
-                                },
-                                {
-                                    "Name": "HexgonOverlayerColor",
-                                    "Value": "1 1 1 1"
-                                }
-                            ]
-                        },
-                        {
-                            "Type": "StaticImage",
-                            "Name": "Main-Shotgun-CrossHair",
-                            "Property": [
-                                {
-                                    "Name": "Area",
-                                    "Value": "{{0,-11},{0,-11},{0,77},{0,77}}"
-                                },
-                                {
-                                    "Name": "WndOpenSound",
-                                    "Value": "0"
-                                },
-                                {
-                                    "Name": "WndCloseSound",
-                                    "Value": "0"
-                                },
-                                {
-                                    "Name": "StretchType",
-                                    "Value": "NineGrid"
-                                },
-                                {
-                                    "Name": "ImageName",
-                                    "Value": "set:gui_material.json image:breakBlockProgressNor"
-                                },
-                                {
-                                    "Name": "HexgonTopImage",
-                                    "Value": ""
-                                },
-                                {
-                                    "Name": "HexgonTopColor",
-                                    "Value": "1 1 1 1"
-                                },
-                                {
-                                    "Name": "HexgonSideImage",
-                                    "Value": ""
-                                },
-                                {
-                                    "Name": "HexgonSideColor",
-                                    "Value": "1 1 1 1"
-                                },
-                                {
-                                    "Name": "HexgonOverlayerImage",
-                                    "Value": ""
-                                },
-                                {
-                                    "Name": "HexgonOverlayerColor",
-                                    "Value": "1 1 1 1"
-                                }
-                            ]
-                        },
-                        {
-                            "Type": "StaticImage",
-                            "Name": "Main-Machine-CrossHair",
-                            "Property": [
-                                {
-                                    "Name": "Area",
-                                    "Value": "{{0,0},{0,0},{0,66},{0,66}}"
-                                },
-                                {
-                                    "Name": "WndOpenSound",
-                                    "Value": "0"
-                                },
-                                {
-                                    "Name": "WndCloseSound",
-                                    "Value": "0"
-                                },
-                                {
-                                    "Name": "ImageName",
-                                    "Value": "set:creepy_aliens.json image:gun_3"
-                                },
-                                {
-                                    "Name": "HexgonTopImage",
-                                    "Value": ""
-                                },
-                                {
-                                    "Name": "HexgonTopColor",
-                                    "Value": "1 1 1 1"
-                                },
-                                {
-                                    "Name": "HexgonSideImage",
-                                    "Value": ""
-                                },
-                                {
-                                    "Name": "HexgonSideColor",
-                                    "Value": "1 1 1 1"
-                                },
-                                {
-                                    "Name": "HexgonOverlayerImage",
-                                    "Value": ""
-                                },
-                                {
-                                    "Name": "HexgonOverlayerColor",
-                                    "Value": "1 1 1 1"
-                                }
-                            ]
-                        },
-                        {
-                            "Type": "StaticImage",
                             "Name": "Main-Common-CrossHair",
                             "Property": [
                                 {
@@ -4191,6 +4049,476 @@
                                 {
                                     "Name": "ImageName",
                                     "Value": "set:MainControlImageSet.json image:cross_hair.png"
+                                },
+                                {
+                                    "Name": "HexgonTopImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonTopColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonSideImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonSideColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonOverlayerImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonOverlayerColor",
+                                    "Value": "1 1 1 1"
+                                }
+                            ]
+                        },
+						{
+                            "Type": "StaticImage",
+                            "Name": "Main-MoveTop-CrossHair",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,22},{0,5},{0,44},{0,27}}"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "ImageName",
+                                    "Value": "set:creepy_aliens.json image:gun_top"
+                                },
+                                {
+                                    "Name": "HexgonTopImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonTopColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonSideImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonSideColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonOverlayerImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonOverlayerColor",
+                                    "Value": "1 1 1 1"
+                                }
+                            ]
+                        },
+                        {
+                            "Type": "StaticImage",
+                            "Name": "Main-MoveLeft-CrossHair",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,5},{0,22},{0,27},{0,44}}"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "ImageName",
+                                    "Value": "set:creepy_aliens.json image:gun_left"
+                                },
+                                {
+                                    "Name": "HexgonTopImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonTopColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonSideImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonSideColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonOverlayerImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonOverlayerColor",
+                                    "Value": "1 1 1 1"
+                                }
+                            ]
+                        },
+                        {
+                            "Type": "StaticImage",
+                            "Name": "Main-MoveBottom-CrossHair",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,22},{0,39},{0,44},{0,61}}"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "ImageName",
+                                    "Value": "set:creepy_aliens.json image:gun_bottom"
+                                },
+                                {
+                                    "Name": "HexgonTopImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonTopColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonSideImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonSideColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonOverlayerImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonOverlayerColor",
+                                    "Value": "1 1 1 1"
+                                }
+                            ]
+                        },
+                        {
+                            "Type": "StaticImage",
+                            "Name": "Main-MoveRight-CrossHair",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,39},{0,22},{0,61},{0,44}}"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "ImageName",
+                                    "Value": "set:creepy_aliens.json image:gun_right"
+                                },
+                                {
+                                    "Name": "HexgonTopImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonTopColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonSideImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonSideColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonOverlayerImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonOverlayerColor",
+                                    "Value": "1 1 1 1"
+                                }
+                            ]
+                        },
+						{
+                            "Type": "StaticImage",
+                            "Name": "Main-Shotgun-MoveTop-CrossHair",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,14},{0,0},{0,50},{0,8}}"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "StretchType",
+                                    "Value": "NineGrid"
+                                },
+                                {
+                                    "Name": "ImageName",
+                                    "Value": "set:creepy_aliens.json image:shotgun_top"
+                                },
+                                {
+                                    "Name": "HexgonTopImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonTopColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonSideImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonSideColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonOverlayerImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonOverlayerColor",
+                                    "Value": "1 1 1 1"
+                                }
+                            ]
+                        },
+						{
+                            "Type": "StaticImage",
+                            "Name": "Main-Shotgun-MoveLeft-CrossHair",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,0},{0,15},{0,8},{0,51}}"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "StretchType",
+                                    "Value": "NineGrid"
+                                },
+                                {
+                                    "Name": "ImageName",
+                                    "Value": "set:creepy_aliens.json image:shotgun_left"
+                                },
+                                {
+                                    "Name": "HexgonTopImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonTopColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonSideImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonSideColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonOverlayerImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonOverlayerColor",
+                                    "Value": "1 1 1 1"
+                                }
+                            ]
+                        },
+						{
+                            "Type": "StaticImage",
+                            "Name": "Main-Shotgun-MoveBottom-CrossHair",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,14},{0,58},{0,50},{0,66}}"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "StretchType",
+                                    "Value": "NineGrid"
+                                },
+                                {
+                                    "Name": "ImageName",
+                                    "Value": "set:creepy_aliens.json image:shotgun_bottom"
+                                },
+                                {
+                                    "Name": "HexgonTopImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonTopColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonSideImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonSideColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonOverlayerImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonOverlayerColor",
+                                    "Value": "1 1 1 1"
+                                }
+                            ]
+                        },
+						{
+                            "Type": "StaticImage",
+                            "Name": "Main-Shotgun-MoveRight-CrossHair",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,57},{0,15},{0,65},{0,51}}"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "StretchType",
+                                    "Value": "NineGrid"
+                                },
+                                {
+                                    "Name": "ImageName",
+                                    "Value": "set:creepy_aliens.json image:shotgun_right"
+                                },
+                                {
+                                    "Name": "HexgonTopImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonTopColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonSideImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonSideColor",
+                                    "Value": "1 1 1 1"
+                                },
+                                {
+                                    "Name": "HexgonOverlayerImage",
+                                    "Value": ""
+                                },
+                                {
+                                    "Name": "HexgonOverlayerColor",
+                                    "Value": "1 1 1 1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+				{
+                    "Type": "Layout",
+                    "Name": "Main-Warning",
+                    "Property": [
+                        {
+                            "Name": "Area",
+                            "Value": "{{0,0},{0,0},{0,66},{0,66}}"
+                        },
+						{
+                            "Name": "Touchable",
+                            "Value": "false"
+                        },
+                        {
+                            "Name": "VerticalAlignment",
+                            "Value": "Centre"
+                        },
+                        {
+                            "Name": "HorizontalAlignment",
+                            "Value": "Centre"
+                        },
+                        {
+                            "Name": "WndOpenSound",
+                            "Value": "0"
+                        },
+                        {
+                            "Name": "WndCloseSound",
+                            "Value": "0"
+                        }
+                    ],
+                    "Window": [
+						{
+                            "Type": "StaticImage",
+                            "Name": "Main-Shoot-Warning",
+                            "Property": [
+                                {
+                                    "Name": "Area",
+                                    "Value": "{{0,-42},{0,-42},{0,108},{0,108}}"
+                                },
+								{
+                                    "Name": "Touchable",
+                                    "Value": "false"
+                                },
+                                {
+                                    "Name": "WndOpenSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "WndCloseSound",
+                                    "Value": "0"
+                                },
+                                {
+                                    "Name": "StretchType",
+                                    "Value": "NineGrid"
+                                },
+                                {
+                                    "Name": "ImageName",
+                                    "Value": "set:shoot_warning.json image:FullImage"
                                 },
                                 {
                                     "Name": "HexgonTopImage",

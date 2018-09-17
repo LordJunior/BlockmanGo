@@ -1,45 +1,19 @@
 <?xml version = "1.0" encoding = "GB2312"?>
 <ActorTemplates>
-	<ActorTemplate name="flag.war.swordsman.actor" Originalscale="1 1 1" Skeleton="angel.skel" AttackScale="1" TextHeight="0" IsShowShadow="true" WoundBone="" WoundAngle="25" SelectedRingSize="1" SoundName1="" SoundName2="" SoundName3="" SoundName4="" SoundName5="" SoundFileNum="0" Volume="0.8" MinDistance="1" MaxDistance="16" IntervalTime="2" Alpha="1">
+	<ActorTemplate name="flag.war.swordsman.actor" Originalscale="1 1 1" Skeleton="boy_01.skel" AttackScale="1" TextHeight="0" IsShowShadow="true" WoundBone="" WoundAngle="25" SelectedRingSize="1" SoundName1="" SoundName2="" SoundName3="" SoundName4="" SoundName5="" SoundFileNum="0" Volume="0.8" MinDistance="1" MaxDistance="16" IntervalTime="2" Alpha="1">
 		<BodyParts>
 			<BodyPart MasterName="clothes_pants" SlaveName="20" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<Skin MeshName = "boy_trousers20.skin" ChangeColor = "2.10195e-44 2.06593e-41 7.20161e+22 0" UVSpeed = "0 0">
+				<Skin MeshName = "20_trousers_boy.skin" ChangeColor = "2.10195e-44 2.06635e-41 1.85872e+25 0" UVSpeed = "0 0">
 				</Skin>
 			</BodyPart>
 			<BodyPart MasterName="clothes_tops" SlaveName="20" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<Skin MeshName = "boy_trunk20.skin" ChangeColor = "2.10195e-44 2.06635e-41 7.20161e+22 0" UVSpeed = "0 0">
+				<Skin MeshName = "20_trunk_boy.skin" ChangeColor = "2.10195e-44 2.06692e-41 1.85872e+25 0" UVSpeed = "0 0">
 				</Skin>
-			</BodyPart>
-			<BodyPart MasterName="custom_decorate_hat" SlaveName="1" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="hat_flagwar_01.mesh"/>
-					<SocketName value="s_Head"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="custom_decorate_hat" SlaveName="2" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="hat_flagwar_02.mesh"/>
-					<SocketName value="s_Head"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
 			</BodyPart>
 			<BodyPart MasterName="custom_face" SlaveName="3" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
-					<FileName value="boy_face03.mesh"/>
-					<SocketName value="s_Head"/>
+					<FileName value="03_face_boy.mesh"/>
+					<SocketName value="s_head"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
 					<Position_Z value="0"/>
@@ -51,21 +25,8 @@
 			</BodyPart>
 			<BodyPart MasterName="custom_hair" SlaveName="8" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
-					<FileName value="hair02.mesh"/>
-					<SocketName value="s_Head"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="custom_hand" SlaveName="1" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="gun_flagwar_01.mesh"/>
-					<SocketName value="s_Hand_r"/>
+					<FileName value="08_hair_widget.mesh"/>
+					<SocketName value="s_head"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
 					<Position_Z value="0"/>
@@ -78,7 +39,7 @@
 			<BodyPart MasterName="custom_hand" SlaveName="2" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
 					<FileName value="gun_flagwar_02.mesh"/>
-					<SocketName value="s_Hand_l"/>
+					<SocketName value="s_hand_l"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
 					<Position_Z value="0"/>
@@ -90,7 +51,7 @@
 			</BodyPart>
 			<BodyPart MasterName="custom_shoes" SlaveName="12" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
 				<StaticMesh>
-					<FileName value="shoes_d12_l.mesh"/>
+					<FileName value="12_shoes_l_widget.mesh"/>
 					<SocketName value="s_foot_l"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
@@ -101,45 +62,8 @@
 					<scale value="1"/>
 				</StaticMesh>
 				<StaticMesh>
-					<FileName value="shoes_d12_r.mesh"/>
+					<FileName value="12_shoes_r_widget.mesh"/>
 					<SocketName value="s_foot_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="custom_shoes" SlaveName="18" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="shoes_flagwar_01l.mesh"/>
-					<SocketName value="s_foot_l"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-				<StaticMesh>
-					<FileName value="shoes_flagwar_01r.mesh"/>
-					<SocketName value="s_foot_r"/>
-					<Position_X value="0"/>
-					<Position_Y value="0"/>
-					<Position_Z value="0"/>
-					<yaw value="0"/>
-					<pitch value="0"/>
-					<roll value="0"/>
-					<scale value="1"/>
-				</StaticMesh>
-			</BodyPart>
-			<BodyPart MasterName="custom_wing" SlaveName="11" DefaultUse="false" EdgeColor="1 1 1 1" ColorParams="1 1 1 1">
-				<StaticMesh>
-					<FileName value="bag_flagwar_01.mesh"/>
-					<SocketName value="s_back"/>
 					<Position_X value="0"/>
 					<Position_Y value="0"/>
 					<Position_Z value="0"/>
@@ -151,166 +75,12 @@
 			</BodyPart>
 		</BodyParts>
 		<Skills>
-			<Skill Name="aim1" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="aim2" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="aim3" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="attack" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_attack01.anim" BeginTime = "0" Times = "1" Length = "0.766" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="attack2" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_attack01.anim" BeginTime = "0" Times = "1" Length = "0.766" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="block1" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="block2" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="block3" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="dig" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="drink" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="drink_end" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="eat" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="eat_end" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="fly" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="fly_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="hitdown" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_hitdown01.anim" BeginTime = "0" Times = "1" Length = "0.966" FadeTime = "0.25" Channel = "" TimeScale = "1">
-				</Animation>
-			</Skill>
 			<Skill Name="idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "boy_stand05.anim" BeginTime = "0" Times = "1" Length = "11.4" FadeTime = "0.25" Channel = "" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="idle2" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="jump1" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="jump2" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "-1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="jump3" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="jump_attack" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="pistol_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="pistol_reload" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="pistol_shoot" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="run" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_walk02.anim" BeginTime = "0" Times = "-1" Length = "0.433" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="run_attack" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="smg_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="smg_reload" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="smg_shoot" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="sneak" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="sprint" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_walk02.anim" BeginTime = "0" Times = "1" Length = "0.433" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="swim" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="swim_idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="throw" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_stand01.anim" BeginTime = "0" Times = "1" Length = "1.1" FadeTime = "0.25" Channel = "upper" TimeScale = "1">
-				</Animation>
-			</Skill>
-			<Skill Name="walk" EnableWound="false" UserDefineTime="-2" TextMode="0">
-				<Animation Name = "demon_walk01.anim" BeginTime = "0" Times = "-1" Length = "0.633" FadeTime = "0.25" Channel = "lower" TimeScale = "1">
+				<Animation Name = "boy_stand05.anim" BeginTime = "0" Times = "1" Length = "11.366" FadeTime = "0.25" Channel = "" TimeScale = "1">
 				</Animation>
 			</Skill>
 		</Skills>
 		<Anims>
-				<Anim Name="demon_attack01.anim"/>
-				<Anim Name="demon_stand01.anim"/>
-				<Anim Name="demon_hitdown01.anim"/>
-				<Anim Name="demon_walk01.anim"/>
-				<Anim Name="demon_walk02.anim"/>
-				<Anim Name="boy_stand10.anim"/>
-				<Anim Name="boy_stand09.anim"/>
-				<Anim Name="boy_stand01.anim"/>
-				<Anim Name="boy_stand08.anim"/>
-				<Anim Name="boy_stand02.anim"/>
-				<Anim Name="boy_stand03.anim"/>
-				<Anim Name="boy_stand04.anim"/>
-				<Anim Name="boy_attack05.anim"/>
-				<Anim Name="boy_attack06.anim"/>
 				<Anim Name="boy_stand05.anim"/>
 		</Anims>
 	</ActorTemplate>

@@ -1421,4 +1421,7 @@ budokai.no.1.rank.name=▢FFFFD700Final    Wins    Rank
 
 budokai.score.rank.title=Score Rank
 budokai.wins.rank.title=Wins Rank
-budokai.no.1.rank.title=Final Wins Rank
+budokai.no.1.rank.title=Final Wins Rank  
+gui_str_super_shop_shop=Super Shop  
+gui_shop_switch=Toggle  
+item.purple.pickaxe.name=Purple Pickaxe

@@ -63,26 +63,32 @@
     "Tess_Solid": {
       "shader": {
         "vs": "tesselator.vs",
-        "ps": "tesselator_alphatest.ps"
+        "ps": "tesselator_alphatest_normal.ps"
       }
     },
     "Tess_UV_Anim": {
       "shader": {
         "vs": "tesselator_uv.vs",
-        "ps": "tesselator_alphatest.ps"
+        "ps": "tesselator_alphatest_normal.ps"
       }
     },
 	"Tess_Transparent_UV_Anim" :
 	{
 		"shader": {
         "vs": "tesselator_uv.vs",
-        "ps": "tesselator.ps"
+        "ps": "tesselator_normal.ps"
       }
 	},
     "Tess_Transparent": {
       "shader": {
         "vs": "tesselator.vs",
-        "ps": "tesselator_alphatest.ps"
+        "ps": "tesselator_alphatest_normal.ps"
+      }
+    },
+    "Tess_Fx": {
+      "shader": {
+        "vs": "tesselator_fx.vs",
+        "ps": "tesselator_fx.ps"
       }
     },
     "Tess_Sky": {

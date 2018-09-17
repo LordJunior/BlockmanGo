@@ -26,7 +26,8 @@ void main(void)
 	
 	color = inColor * ambient;
 
-	oFogColor =  vec4(fogParam[1].rgb, ComputeFog(worldPos.xyz-fogParam[2].xyz, fogParam[0].xyz));
+	vec3 fogParam2 = fogParam[0].xyz * vec3(1.0, 5.0, 1.0);
+	oFogColor =  vec4(fogParam[1].rgb, ComputeFog(worldPos.xyz-fogParam[2].xyz, fogParam2));
 }
 
 

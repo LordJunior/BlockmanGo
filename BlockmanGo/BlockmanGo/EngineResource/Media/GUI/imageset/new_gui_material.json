@@ -1983,6 +1983,86 @@
 				"w":60,
 				"h":60
 			}
+		},
+		"progress_nor":{
+			"frame": {
+				"x":147,
+				"y":13,
+				"w":13,
+				"h":12
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w":13,
+				"h":12
+			}
+		},
+		"progress_pre":{
+			"frame": {
+				"x":161,
+				"y":13,
+				"w":13,
+				"h":12
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w":13,
+				"h":12
+			}
+		},
+		"icon_attack":{
+			"frame": {
+				"x":791,
+				"y":1,
+				"w":28,
+				"h":28
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w":28,
+				"h":28
+			}
+		},
+		"bg_defense_progress":{
+			"frame": {
+				"x":758,
+				"y":462,
+				"w":8,
+				"h":18
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w":8,
+				"h":18
+			}
+		},
+		"bg_attack_progress":{
+			"frame": {
+				"x":758,
+				"y":480,
+				"w":8,
+				"h":18
+			},
+			"offset": {
+				"x": 0,
+				"y": 0
+			},
+			"sourceSize": {
+				"w":8,
+				"h":18
+			}
 		}
 	},
 	"meta": {

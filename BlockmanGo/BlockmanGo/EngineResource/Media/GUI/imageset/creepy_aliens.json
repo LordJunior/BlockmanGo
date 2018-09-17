@@ -36,6 +36,54 @@
 	"offset": {"x":0,"y":0},
 	"sourceSize": {"w":66,"h":66}
 },
+"gun_top":
+{
+	"frame": {"x":161,"y":0,"w":22,"h":22},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":22,"h":22}
+},
+"gun_left":
+{
+	"frame": {"x":139,"y":22,"w":22,"h":22},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":22,"h":22}
+},
+"gun_bottom":
+{
+	"frame": {"x":161,"y":44,"w":22,"h":22},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":22,"h":22}
+},
+"gun_right":
+{
+	"frame": {"x":183,"y":22,"w":22,"h":22},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":22,"h":22}
+},
+"shotgun_top":
+{
+	"frame": {"x":22,"y":0,"w":36,"h":8},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":36,"h":8}
+},
+"shotgun_left":
+{
+	"frame": {"x":8,"y":15,"w":8,"h":36},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":8,"h":36}
+},
+"shotgun_bottom":
+{
+	"frame": {"x":22,"y":58,"w":36,"h":8},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":36,"h":8}
+},
+"shotgun_right":
+{
+	"frame": {"x":65,"y":15,"w":8,"h":36},
+	"offset": {"x":0,"y":0},
+	"sourceSize": {"w":8,"h":36}
+},
 "map_name":
 {
 	"frame": {"x":0,"y":66,"w":170,"h":43},

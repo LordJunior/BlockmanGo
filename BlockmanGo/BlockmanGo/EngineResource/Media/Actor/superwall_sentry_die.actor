@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "GB2312"?>
+<ActorTemplates>
+	<ActorTemplate name="superwall_sentry_die.actor" Originalscale="1 1 1" Skeleton="1500_sentry.skel" AttackScale="1" TextHeight="0" IsShowShadow="true" WoundBone="" WoundAngle="25" SelectedRingSize="1" SoundName1="" SoundName2="" SoundName3="" SoundName4="" SoundName5="" SoundFileNum="0" Volume="0.8" MinDistance="1" MaxDistance="16" IntervalTime="2" Alpha="1">
+		<BodyParts>
+			<BodyPart MasterName="superwall" SlaveName="sentry_die" DefaultUse="true" EdgeColor="1 1 1 1" ColorParams="1 1 1 1" Group="">
+				<Skin MeshName = "1500_sentry_death_widget.skin" ChangeColor = "2.10195e-44 9.26258e-43 3.22818e+21 0" UVSpeed = "0 0">
+				</Skin>
+			</BodyPart>
+		</BodyParts>
+		<Skills>
+			<Skill Name="hitdown" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "1500_sentry_death_widget_stand01.anim" BeginTime = "0" Times = "1" Length = "3.366" FadeTime = "0.25" Channel = "" TimeScale = "1">
+				</Animation>
+			</Skill>
+			<Skill Name="idle" EnableWound="false" UserDefineTime="-2" TextMode="0">
+				<Animation Name = "1500_sentry_death_widget_stand01.anim" BeginTime = "0" Times = "-1" Length = "3.366" FadeTime = "0.25" Channel = "" TimeScale = "1">
+				</Animation>
+			</Skill>
+		</Skills>
+		<Anims>
+				<Anim Name="1500_sentry_death_widget_stand01.anim"/>
+		</Anims>
+	</ActorTemplate>
+</ActorTemplates>

@@ -1415,3 +1415,7 @@ item.skill_06.name=Cloak
 item.skill_07.name=Speed up
 item.skill_08.name=Immobility
 item.skill_09.name=Mind control
+  
+gui_str_super_shop_shop=Super Shop  
+gui_shop_switch=Toggle  
+item.purple.pickaxe.name=Purple Pickaxe
