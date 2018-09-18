@@ -20,9 +20,7 @@ class GameModuleManager {
         GamesRequester.fetchGamesWithMode(mode) { [weak self] (result) in
             switch result {
             case .success(let json):
-                let games = try! (json["data"] as! [String : Any]).mapModelArray(GameModel.self).filter({ (game) -> Bool in
-                    game.visitorEnter
-                })
+                let games = try! (json["data"] as! [String : Any]).mapModelArray(GameModel.self)
                 self?.gamesCache[mode] = games
                 completion(.success(games))
             case .failure(let error):
